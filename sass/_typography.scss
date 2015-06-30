@@ -1,0 +1,64 @@
+//============================//
+//  UCFBands V2 | Typography  //
+//============================//
+
+
+//========//
+//  BODY  //
+//========//
+
+body {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+}
+
+
+
+//============//
+//  HEADINGS  //
+//============//
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Oswald', 'Arial', sans-serif;
+}
+
+
+
+//===========//
+//  ANCHORS  //
+//===========//
+
+a {
+    color: $ucf-gold;
+    text-decoration: none;
+}
+
+p a,
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a
+{
+    color: $ucf-gold-darker;
+    border-bottom: 2px solid $trans-full;
+    
+    @include transition-ease-in-out;
+    
+    &:hover {
+        color: inherit;
+        border-bottom-color: $ucf-gold;
+    }
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+    border-bottom-width: 3px;
+    
+    &:hover {
+        color: $ucf-gray;
+    }
+}
+
+.entry-title a {
+    
+    &:hover {
+        color: $ucf-gray;
+    }  
+}
+    

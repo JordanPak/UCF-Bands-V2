@@ -1,0 +1,116 @@
+//===========================//
+//  UCFBands V2 | Structure  //
+//===========================//
+
+
+//========//
+//  BODY  //
+//========//
+
+body {
+    background: $ucf-gray;
+}
+
+
+//==========//
+//  HEADER  //
+//==========//
+
+.site-header {
+	z-index: 1;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: $site-header-width;
+    color: $white;
+    text-align: center;
+    background: $ucf-gray;
+    
+    a {
+        color: $white;
+    }
+    
+    .wrap {
+        margin: 0;
+        padding: 0;
+    }
+} // .site-header
+
+.site-header .header-widget-area {
+    float: none;
+    text-align: left;
+    width: 100%;
+}
+
+.title-area {
+    margin: 0;
+    padding: 12px 0 0 0;
+    display: block;
+    width: 100%;
+}
+
+.header-image .site-title > a {
+    margin: 0;
+    padding: 0;
+    min-height: 150px;
+    height: auto;
+    width: 100%;
+    background-position: center;
+    background-size: 82%;
+    border: none;
+}
+
+.site-description {
+    color: $white;
+}
+
+
+
+//==============//
+//  SITE INNER  //
+//==============//
+
+.site-inner,
+.wrap {
+    margin: 0;
+    max-width: none;
+}
+
+.site-inner {
+    clear: none;
+    margin-left: $site-header-width;
+    background: $ucf-gray-light;
+    min-height: 1100px;
+    padding: 40px;
+    border-left: 4px solid $ucf-gold;
+}
+
+
+
+//===========//
+//  CONTENT  //
+//===========//
+
+.content {
+    
+}
+
+
+
+//=========//
+//  ENTRY  //
+//=========//
+
+.entry {
+    margin-bottom: $space-default;
+    padding: $space-default;
+}
+
+
+//==========//
+//  FOOTER  //
+//==========//
+
+.site-footer {
+    display: none;
+}

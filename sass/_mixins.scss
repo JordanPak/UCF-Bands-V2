@@ -1,0 +1,19 @@
+//========================//
+//  UCFBands V2 | Mixins  //
+//========================//
+
+@mixin block {
+    background-color: $white;
+    box-shadow: 0 1px 6px $trans-shadow;
+    border: 1px solid $border-gray;
+}
+
+
+
+//===============//
+//  TRANSITIONS  //
+//===============//
+
+@mixin transition-ease-in-out {
+    transition: all ease-in-out 200ms;
+}

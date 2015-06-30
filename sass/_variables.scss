@@ -1,0 +1,50 @@
+//===========================//
+//  UCFBands V2 | Variables  //
+//===========================//
+
+
+//==========//
+//  COLORS  //
+//==========//
+
+// Basic 
+$white:             #FFFFFF;
+$black:             #000000;
+
+
+// Gold
+$ucf-gold:          #FFCA06;
+$ucf-gold-darker:   #EFBC00;
+
+
+// Gray
+$ucf-gray:          #221E1F;
+$ucf-gray-darker:   #141414;
+$ucf-gray-med:      lighten($ucf-gray, 50);
+$ucf-gray-light:    rgb(245,245,245);
+
+$border-gray:       #D4D4D4;
+
+
+// Transparencies
+$trans-full:        rgba(0,0,0,0);
+$trans-shadow:      rgba(0,0,0,0.175);
+
+
+// Defaults
+$body-text:         #333333;
+
+
+
+//=============//
+//  STRUCTURE  //
+//=============//
+
+// Spacing
+$space-default:     40px;
+$space-default-half:20px;
+
+
+// Header (.site-header)
+$site-header-width: 330px;
+$site-header-width-med: $site-header-width - 100;
