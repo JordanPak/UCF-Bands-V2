@@ -26,3 +26,10 @@ add_theme_support( 'custom-background' );
 
 //* Add support for 3-column footer widgets
 add_theme_support( 'genesis-footer-widgets', 3 );
+
+
+// Add Top Bar
+add_action( 'genesis_before_header', 'add_top_bar' );
+function add_top_bar() {
+    echo '<div id="top-bar"></div>';
+}

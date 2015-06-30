@@ -1353,6 +1353,13 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 body {
   background: #221E1F; }
 
+#top-bar {
+  position: fixed;
+  width: 100%;
+  height: 2px;
+  background: #000000;
+  z-index: 5000; }
+
 .site-header {
   z-index: 1;
   position: absolute;
