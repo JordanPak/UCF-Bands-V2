@@ -14,6 +14,6 @@
 //  TRANSITIONS  //
 //===============//
 
-@mixin transition-ease-in-out {
-    transition: all ease-in-out 200ms;
+@mixin transition-ease-in-out($speed: 200ms) {
+    transition: all ease-in-out $speed;
 }

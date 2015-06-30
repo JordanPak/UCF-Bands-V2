@@ -1,0 +1,43 @@
+//============================//
+//  UCFBands V2 | Navigation  //
+//============================//
+
+#menu-main-menu {
+    
+    .menu-item {
+        text-align: center;
+        display: block;
+        width: 100%;
+        border-bottom: 1px solid $ucf-gray-darker;       
+        
+        &:last-child {
+            border-bottom: none;
+        }
+        
+        a {
+            padding: 18px;
+            color: $white;
+            font-family: $font-family-serif;
+            font-weight: 400;
+            font-size: 1.2em;
+            text-shadow: $text-shaodw-dark-med;
+
+            @include transition-ease-in-out(300ms);
+
+            &:hover {
+                background-color: $ucf-gray-darker;
+            }
+
+        } // a
+        
+        &.current-menu-item a {
+            background-color: $ucf-gold;
+            text-shadow: $text-shadow-gold-med;
+        }
+        
+    } // .menu-item
+    
+
+    
+
+} // #menu-main-menu

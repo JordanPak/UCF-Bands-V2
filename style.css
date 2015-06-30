@@ -1321,6 +1321,36 @@ li.comment {
   .sidebar .widget.enews-widget {
     padding: 40px; } }
 body {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Droid Serif", "Georgia", "Times", serif; }
+
+a {
+  color: #FFCA06;
+  text-decoration: none; }
+
+p a,
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  color: #EFBC00;
+  border-bottom: 2px solid transparent;
+  transition: all ease-in-out 200ms; }
+  p a:hover,
+  h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
+    color: inherit;
+    border-bottom-color: #FFCA06; }
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  border-bottom-width: 3px; }
+  h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
+    color: #221E1F; }
+
+.entry-title a:hover {
+  color: #221E1F; }
+
+body {
   background: #221E1F; }
 
 .site-header {
@@ -1345,7 +1375,7 @@ body {
 
 .title-area {
   margin: 0;
-  padding: 12px 0 0 0;
+  padding: 12px 0 8px 0;
   display: block;
   width: 100%; }
 
@@ -1356,7 +1386,7 @@ body {
   height: auto;
   width: 100%;
   background-position: center;
-  background-size: 82%;
+  background-size: 81.5%;
   border: none; }
 
 .site-description {
@@ -1382,33 +1412,25 @@ body {
 .site-footer {
   display: none; }
 
-body {
-  font-family: 'Arial', sans-serif;
-  font-size: 16px; }
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Oswald', 'Arial', sans-serif; }
-
-a {
-  color: #FFCA06;
-  text-decoration: none; }
-
-p a,
-h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
-  color: #EFBC00;
-  border-bottom: 2px solid transparent;
-  transition: all ease-in-out 200ms; }
-  p a:hover,
-  h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
-    color: inherit;
-    border-bottom-color: #FFCA06; }
-
-h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
-  border-bottom-width: 3px; }
-  h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
-    color: #221E1F; }
-
-.entry-title a:hover {
-  color: #221E1F; }
+#menu-main-menu .menu-item {
+  text-align: center;
+  display: block;
+  width: 100%;
+  border-bottom: 1px solid #141414; }
+  #menu-main-menu .menu-item:last-child {
+    border-bottom: none; }
+  #menu-main-menu .menu-item a {
+    padding: 18px;
+    color: #FFFFFF;
+    font-family: "Droid Serif", "Georgia", "Times", serif;
+    font-weight: 400;
+    font-size: 1.2em;
+    text-shadow: 0 0 3px #000000, 1px 1px 1px rgba(0, 0, 0, 0.4), 0 0 3px #000000, 2px 2px 1px rgba(0, 0, 0, 0.4);
+    transition: all ease-in-out 300ms; }
+    #menu-main-menu .menu-item a:hover {
+      background-color: #141414; }
+  #menu-main-menu .menu-item.current-menu-item a {
+    background-color: #FFCA06;
+    text-shadow: 0 0 3px #EFBC00, 1px 1px 1px #EFBC00, 0 0 3px #EFBC00, 2px 2px 1px #EFBC00; }
 
 /*# sourceMappingURL=style.css.map */

@@ -48,3 +48,26 @@ $space-default-half:20px;
 // Header (.site-header)
 $site-header-width: 330px;
 $site-header-width-med: $site-header-width - 100;
+
+
+
+//=================//
+//  FONT FAMILIES  //
+//=================//
+
+$font-family-sans-serif:    'Roboto', 'Arial', sans-serif;
+$font-family-serif:         'Droid Serif', 'Georgia', 'Times', serif;
+
+
+
+//===========//
+//  SHADOWS  //
+//===========//
+
+// Gold
+$text-shadow-gold-med:  0 0 3px $ucf-gold-darker, 1px 1px 1px $ucf-gold-darker, 0 0 3px $ucf-gold-darker, 2px 2px 1px $ucf-gold-darker;
+
+// Dark
+$text-shaodw-dark-med:  0 0 3px $black, 1px 1px 1px rgba(0,0,0,0.4), 0 0 3px $black, 2px 2px 1px rgba(0,0,0,0.4);
+
+
