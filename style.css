@@ -1407,10 +1407,36 @@ body {
 .site-inner {
   clear: none;
   margin-left: 330px;
-  background: whitesmoke;
   min-height: 1100px;
   padding: 40px;
-  border-left: 4px solid #FFCA06; }
+  border-left: 4px solid #FFCA06;
+  background: whitesmoke;
+  background-image: url("images/pegasus-bg.png");
+  background-repeat: no-repeat;
+  background-position: -100px 25px; }
+
+.content {
+  float: left;
+  clear: both;
+  margin-left: 0;
+  width: 74.35897435897436%; }
+  .content .post, .content .page {
+    background-color: #FFFFFF;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+    border: 1px solid #D4D4D4; }
+  .content .type-page h1 {
+    border-bottom: 1px solid whitesmoke;
+    padding-bottom: 20px;
+    margin-bottom: 20px; }
+
+.sidebar-primary {
+  float: left;
+  margin-left: 2.564102564102564%;
+  width: 23.076923076923077%; }
+  .sidebar-primary .widget {
+    background-color: #FFFFFF;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+    border: 1px solid #D4D4D4; }
 
 .entry {
   margin-bottom: 40px;

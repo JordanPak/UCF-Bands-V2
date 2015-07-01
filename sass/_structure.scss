@@ -87,10 +87,13 @@ body {
 .site-inner {
     clear: none;
     margin-left: $site-header-width;
-    background: $ucf-gray-light;
     min-height: 1100px;
     padding: 40px;
     border-left: 4px solid $ucf-gold;
+    background: $ucf-gray-light;
+    background-image: url('images/pegasus-bg.png');
+    background-repeat: no-repeat;
+    background-position: -100px 25px;
 }
 
 
@@ -101,8 +104,31 @@ body {
 
 .content {
     
+    @include col('three-fourths', true);
+    
+    .post, .page {
+        @include block();
+    }
+    
+    .type-page h1 {
+        border-bottom: 1px solid $ucf-gray-light;
+        padding-bottom: $space-default-half;
+        margin-bottom: $space-default-half;
+    }
 }
 
+
+//============//
+//  SIDEBARS  //
+//============//
+
+.sidebar-primary {
+    @include col('one-fourth');
+    
+    .widget {
+        @include block();
+    }
+}
 
 
 //=========//

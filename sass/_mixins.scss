@@ -17,3 +17,62 @@
 @mixin transition-ease-in-out($speed: 200ms) {
     transition: all ease-in-out $speed;
 }
+
+
+
+//===========//
+//  COLUMNS  //
+//===========//
+
+@mixin col($width, $is-first: false) {
+    
+    float: left;
+    
+    @if $width == 'one-whole' {
+        $is-first: true;
+    }
+    
+    @if $is-first == true {
+        clear: both;
+        margin-left: 0;
+    } @else {
+        margin-left: 2.564102564102564%;   
+    }
+    
+    @if $width == 'one-half' or
+        $width == 'three-sixths' or
+        $width == 'two-fourths' {
+        width: 48.717948717948715%;
+    }
+    
+    @else if $width == 'one-third' or
+        $width == 'two-sixths' {
+        width: 31.623931623931625%;
+    }
+    
+    @else if $width == 'four-sixths' or
+        $width == 'two-thirds' {
+        width: 65.81196581196582%;
+    }
+    
+    @else if $width == 'one-fourth' {
+        width: 23.076923076923077%;
+    }
+    
+    @else if $width == 'three-fourths' {
+        width: 74.35897435897436%;
+    }
+    
+    @else if $width == 'one-sixth' {
+        width: 14.52991452991453%;
+    }
+    
+    @else if $width == 'five-sixths' {
+        width: 82.90598290598291%;
+    }
+    
+    @else if $width == 'one-whole' {
+        width: 100%;
+    }
+    
+} // col
