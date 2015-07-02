@@ -49,3 +49,7 @@ function add_top_bar() {
 
 
 // ISOTOPE: Add div.grid
+
+
+/** Remove Edit Link */
+add_filter( 'edit_post_link', '__return_false' );

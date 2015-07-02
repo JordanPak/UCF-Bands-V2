@@ -42,6 +42,11 @@ body {
         margin: 0;
         padding: 0;
     }
+    
+    @media only screen and (max-width: $breakpoint-medium) {
+        width: $site-header-width-med;
+    }
+    
 } // .site-header
 
 .site-header .header-widget-area {
@@ -66,6 +71,16 @@ body {
     background-position: center;
     background-size: 81.5%;
     border: none;
+    
+    @include transition-ease-in-out();
+    
+    &:hover {
+        background-color: $ucf-gray-darker;
+    }
+    
+    @media only screen and (max-width: $breakpoint-medium) {
+        min-height: 100px;
+    }
 }
 
 .site-description {
@@ -88,12 +103,22 @@ body {
     clear: none;
     margin-left: $site-header-width;
     min-height: 1100px;
-    padding: 40px;
+    padding: $space-default;
     border-left: 4px solid $ucf-gold;
     background: $ucf-gray-light;
     background-image: url('images/pegasus-bg.png');
     background-repeat: no-repeat;
     background-position: -100px 25px;
+    box-shadow: inset 1px 0 lighten($ucf-gray-med, .9), inset 3px 0 4px $trans-shadow;
+    
+    @media only screen and (max-width: $breakpoint-medium) {
+        margin-left: $site-header-width-med;
+    }
+    
+    @media only screen and (max-width: $breakpoint-small) {
+        padding: $space-default-half;
+    }
+    
 }
 
 
@@ -118,6 +143,7 @@ body {
 }
 
 
+
 //============//
 //  SIDEBARS  //
 //============//
@@ -131,6 +157,7 @@ body {
 }
 
 
+
 //=========//
 //  ENTRY  //
 //=========//
@@ -138,7 +165,14 @@ body {
 .entry {
     margin-bottom: $space-default;
     padding: $space-default;
+    
+    @media only screen and (max-width: $breakpoint-small) {
+        margin-bottom: $space-default-half;
+        padding: $space-default-half;
+    }
+    
 }
+
 
 
 //==========//

@@ -1374,6 +1374,9 @@ body {
   .site-header .wrap {
     margin: 0;
     padding: 0; }
+  @media only screen and (max-width: 1200px) {
+    .site-header {
+      width: 230px; } }
 
 .site-header .header-widget-area {
   float: none;
@@ -1394,7 +1397,13 @@ body {
   width: 100%;
   background-position: center;
   background-size: 81.5%;
-  border: none; }
+  border: none;
+  transition: all ease-in-out 200ms; }
+  .header-image .site-title > a:hover {
+    background-color: #141414; }
+  @media only screen and (max-width: 1200px) {
+    .header-image .site-title > a {
+      min-height: 100px; } }
 
 .site-description {
   color: #FFFFFF; }
@@ -1413,13 +1422,26 @@ body {
   background: whitesmoke;
   background-image: url("images/pegasus-bg.png");
   background-repeat: no-repeat;
-  background-position: -100px 25px; }
+  background-position: -100px 25px;
+  box-shadow: inset 1px 0 #a89c9f, inset 3px 0 4px rgba(0, 0, 0, 0.175); }
+  @media only screen and (max-width: 1200px) {
+    .site-inner {
+      margin-left: 230px; } }
+  @media only screen and (max-width: 768px) {
+    .site-inner {
+      padding: 20px; } }
 
 .content {
   float: left;
   clear: both;
   margin-left: 0;
   width: 74.35897435897436%; }
+  @media only screen and (max-width: 1200px) {
+    .content {
+      float: none;
+      clear: both;
+      width: 100%;
+      margin-left: 0; } }
   .content .post, .content .page {
     background-color: #FFFFFF;
     box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
@@ -1433,6 +1455,12 @@ body {
   float: left;
   margin-left: 2.564102564102564%;
   width: 23.076923076923077%; }
+  @media only screen and (max-width: 1200px) {
+    .sidebar-primary {
+      float: none;
+      clear: both;
+      width: 100%;
+      margin-left: 0; } }
   .sidebar-primary .widget {
     background-color: #FFFFFF;
     box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
@@ -1441,6 +1469,10 @@ body {
 .entry {
   margin-bottom: 40px;
   padding: 40px; }
+  @media only screen and (max-width: 768px) {
+    .entry {
+      margin-bottom: 20px;
+      padding: 20px; } }
 
 .site-footer {
   display: none; }
@@ -1450,6 +1482,8 @@ body {
   display: block;
   width: 100%;
   border-bottom: 1px solid #141414; }
+  #menu-main-menu .menu-item:first-child {
+    border-top: 1px solid #141414; }
   #menu-main-menu .menu-item:last-child {
     border-bottom: none; }
   #menu-main-menu .menu-item a {
@@ -1462,6 +1496,10 @@ body {
     transition: all ease-in-out 300ms; }
     #menu-main-menu .menu-item a:hover {
       background-color: #141414; }
+    @media only screen and (max-width: 1200px) {
+      #menu-main-menu .menu-item a {
+        padding: 13px;
+        font-size: 1em; } }
   #menu-main-menu .menu-item.current-menu-item a {
     background-color: #FFCA06;
     text-shadow: 0 0 3px #EFBC00, 1px 1px 1px #EFBC00, 0 0 3px #EFBC00, 2px 2px 1px #EFBC00; }

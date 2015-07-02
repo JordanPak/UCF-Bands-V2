@@ -71,3 +71,17 @@ $text-shadow-gold-med:  0 0 3px $ucf-gold-darker, 1px 1px 1px $ucf-gold-darker, 
 $text-shaodw-dark-med:  0 0 3px $black, 1px 1px 1px rgba(0,0,0,0.4), 0 0 3px $black, 2px 2px 1px rgba(0,0,0,0.4);
 
 
+
+//==========================//
+//  RESPONSIVE BREAKPOINTS  //
+//==========================//
+
+// Usage
+// @media only screen and (max-width: $breakpoint-size)
+
+
+//  BREAKPOINT                      DESCRIPTION
+//  ----------------------------------------------------------
+    $breakpoint-small: 768px;   //  Smallest up to Medium
+    $breakpoint-medium: 1200px; //  Medium up to Large (Desktop)
+    $breakpoint-large: 1366px;  //  Large (Desktop) and Greater
