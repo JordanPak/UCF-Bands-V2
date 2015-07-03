@@ -8,6 +8,12 @@
     border: 1px solid $border-gray;
 }
 
+@mixin block-remove {
+    background: none;
+    box-shadow: none;
+    border: none;
+}
+
 
 
 //===============//
