@@ -26,7 +26,7 @@ body {
 
 .site-header {
 	z-index: 1;
-    position: absolute;
+    position: fixed;
     margin: 0;
     padding: 0;
     width: $site-header-width;
@@ -180,5 +180,79 @@ body {
 //==========//
 
 .site-footer {
-    display: none;
+    position: fixed;
+    margin: 0;
+    padding: $space-default;
+    left: 0;
+    bottom: 0;
+    width: $site-header-width;
+    background: none;
+    color: $ucf-gray-med;
+    text-align: left;
+    font-size: .95em;
+    line-height: 1.25em;
+    font-family: $font-family-serif;
+    text-shadow: $text-shaodw-dark-med;
+    
+    a {
+        color: $white;
+        border-bottom: 2px solid $trans-full;
+        
+        @include transition_ease_in_out();
+        
+        &:hover {
+            border-color: $ucf-gold;
+        }
+    }
+    
+    address {
+        box-sizing: border-box;
+        font-style: normal;
+        margin-bottom: 10px;
+        
+        a {
+            color: inherit;
+            border: none;
+            
+            &:hover {
+                color: $white;
+            }
+        }
+    }
+    
+    @media only screen and (max-width: $breakpoint-medium) {
+        width: $site-header-width-med;
+        padding: $space-default-half;
+    }
 }
+
+#footer-social {
+    height: auto;
+    overflow: auto;
+    
+    a {
+        display: inline-block;
+        margin-right: 10px;
+        padding: 12px;
+        width: 42px;
+        font-size: .9em;
+        text-align: center;
+        border-radius: 7px;
+        border: none;
+        color: $white;
+        background-color: rgba(0,0,0,0.5);
+        
+        @include transition-ease-in-out();
+        
+        &:hover {
+            color: $ucf-gold;
+        }
+    }
+}
+
+
+
+
+
+
+
