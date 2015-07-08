@@ -2,8 +2,14 @@
 //* Start the engine
 include_once( get_template_directory() . '/lib/init.php' );
 
-//* Footer Settings
+
+//-- INCLUDES --//
+
+//* THEME SETTINGS
 require_once( CHILD_DIR . '/theme-settings/footer.php' );
+
+// SHORTCODES
+require_once( CHILD_DIR . '/shortcodes/block.php' );
 
 
 //* Child theme (do not remove)
@@ -150,3 +156,12 @@ function ucfbands_footer() {
 
 /** Remove Edit Link */
 add_filter( 'edit_post_link', '__return_false' );
+
+
+
+//-- FIRE UP CMB2! --//
+if ( file_exists(  __DIR__ . '/cmb2/init.php' ) ) {
+  require_once  __DIR__ . '/cmb2/init.php';
+} elseif ( file_exists(  __DIR__ . '/CMB2/init.php' ) ) {
+  require_once  __DIR__ . '/CMB2/init.php';
+}

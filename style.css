@@ -626,6 +626,11 @@ th {
 .five-sixths {
   width: 82.90598290598291%; }
 
+.one-whole {
+  width: 100%;
+  margin-left: 0;
+  clear: both; }
+
 .first {
   clear: both;
   margin-left: 0; }
@@ -1451,6 +1456,35 @@ body {
     padding-bottom: 20px;
     margin-bottom: 20px; }
 
+.page-template-page_grid h1 {
+  margin-bottom: 40px;
+  font-size: 2.5em; }
+
+.entry {
+  margin-bottom: 40px;
+  padding: 40px; }
+  @media only screen and (max-width: 768px) {
+    .entry {
+      margin-bottom: 20px;
+      padding: 20px; } }
+
+.block {
+  background-color: #FFFFFF;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+  border: 1px solid #D4D4D4; }
+
+.blocks .block {
+  background-color: #FFFFFF;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+  border: 1px solid #D4D4D4;
+  padding-top: 45px;
+  padding-bottom: 45px; }
+.blocks .block-featured {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border-top: 5px solid #FFCA06;
+  border-bottom: 5px solid #221E1F; }
+
 .sidebar-primary {
   float: left;
   margin-left: 2.564102564102564%;
@@ -1465,14 +1499,6 @@ body {
     background-color: #FFFFFF;
     box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
     border: 1px solid #D4D4D4; }
-
-.entry {
-  margin-bottom: 40px;
-  padding: 40px; }
-  @media only screen and (max-width: 768px) {
-    .entry {
-      margin-bottom: 20px;
-      padding: 20px; } }
 
 .site-footer {
   position: fixed;
