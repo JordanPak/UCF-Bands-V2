@@ -79,6 +79,8 @@
     
     @else if $width == 'one-whole' {
         width: 100%;
+        margin-left: 0;
+        clear: both;
     }
     
     @media only screen and (max-width: $breakpoint-medium) {
