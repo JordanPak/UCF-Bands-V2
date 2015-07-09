@@ -195,6 +195,7 @@ function be_ucfbands_footer_settings_box() {
  * UCFBands Footer Settings Output
  * @author Jordan Pakrosnis
  * @link http://ucfbands.com/
+ *
  */
 function ucfbands_footer() {
     
