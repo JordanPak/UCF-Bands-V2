@@ -95,16 +95,25 @@ body {
 .page-title {
 
     padding: $space-default;
-    background: $ucf-gray;
+    background-color: $ucf-gray;
+    background-repeat: no-repeat;
+    background-position: center top;
     border-bottom: 5px solid $ucf-gray-darker;
     
     @include site-inner-inset-shadow(true);
     
-    h1 {
+    &.page-title-lg {
+        padding: ($space-default + 32px) $space-default;
+    }
+    
+    h1.entry-title {
         display: block;
         margin: 0;
         padding: 0;
         color: $white;
+        text-shadow: $text-shadow-dark-lg;
+        font-size: 2.75em;
+        cursor: default;
     }
    
 }
@@ -124,12 +133,8 @@ body {
     clear: none;
     margin-left: $site-header-width;
     padding-top: 0;
-    min-height: 1100px;
     border-left: 4px solid $ucf-gold;
     background: $ucf-gray-light;
-    background-image: url('images/pegasus-bg.png');
-    background-repeat: no-repeat;
-    background-position: -100px 25px;
 
     @include site-inner-inset-shadow();
     
@@ -151,6 +156,11 @@ body {
 .content-sidebar-wrap {
     padding: $space-default;
     overflow: auto;
+    min-height: 1200px;
+    
+    background-image: url('images/pegasus-bg.png');
+    background-repeat: no-repeat;
+    background-position: -100px 25px;
 }
 
 
