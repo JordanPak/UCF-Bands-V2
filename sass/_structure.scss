@@ -88,6 +88,27 @@ body {
 }
 
 
+//==============//
+//  PAGE TITLE  //
+//==============//
+
+.page-title {
+
+    padding: $space-default;
+    background: $ucf-gray;
+    border-bottom: 5px solid $ucf-gray-darker;
+    
+    @include site-inner-inset-shadow(true);
+    
+    h1 {
+        display: block;
+        margin: 0;
+        padding: 0;
+        color: $white;
+    }
+   
+}
+
 
 //==============//
 //  SITE INNER  //
@@ -109,7 +130,8 @@ body {
     background-image: url('images/pegasus-bg.png');
     background-repeat: no-repeat;
     background-position: -100px 25px;
-    box-shadow: inset 1px 0 lighten($ucf-gray-med, .9), inset 3px 0 4px $trans-shadow;
+
+    @include site-inner-inset-shadow();
     
     @media only screen and (max-width: $breakpoint-medium) {
         margin-left: $site-header-width-med;
@@ -151,15 +173,6 @@ body {
     }
 } // .content
 
-
-.page-template-page_grid { 
-    
-    h1 {
-        margin-bottom: $space-default;
-        font-size: 2.5em;
-    }
-    
-}
 
 //.page-template-page_grid {
 //    
