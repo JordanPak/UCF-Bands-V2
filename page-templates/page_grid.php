@@ -3,7 +3,6 @@
  * Template Name: Grid
  */
 
-
 // INCLUDES //
 
 // Masonry

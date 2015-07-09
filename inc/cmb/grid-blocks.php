@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Register Block as repeatable group fields
  */
@@ -10,6 +11,7 @@ function ucfbands_blocks_metabox() {
 		'title'        => __( 'Blocks', 'ucfbands-blocks' ),
 		'object_types' => array( 'page' ),
 		'show_on'      => array( 'key' => 'page-template', 'value' => 'page-templates/page_grid.php' ),
+        'priority'     => 'high',
 	) );
 
 	$group_field_id = $cmb_group->add_field( array(
@@ -62,7 +64,7 @@ function ucfbands_blocks_metabox() {
 	$cmb_group->add_group_field( $group_field_id, array(
 		'name' => __( 'Block Content', 'ucfbands-blocks' ),
 		'id'   => 'block-content',
-		'type' => 'wysiwyg'
+		'type' => 'textarea' //'type' => 'wysiwyg'
 	) );
     
 }
