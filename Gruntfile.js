@@ -7,10 +7,6 @@ module.exports = function (grunt) {
 		// SASS TASK
 		sass: {
 			dist: {
-                // Disabled b/c comments are removed & breaks WP Listing
-                //options: {
-                //    style: 'compressed'
-                //},
 				files: {
 					'style.css' : 'sass/style.scss'
 				}

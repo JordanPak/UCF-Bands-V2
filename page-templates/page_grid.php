@@ -3,21 +3,22 @@
  * Template Name: Grid
  */
 
-// Do not display SIDEBAR or ENTRY CONTENT
+// REMOVE SIDEBAR & POST CONTENT //
 remove_action( 'genesis_sidebar', 'genesis_do_sidebar' );
 remove_action( 'genesis_entry_content', 'genesis_do_post_content' );
 remove_action( 'genesis_loop', 'genesis_do_loop' );
 
 
+// PUT PAGE TITLE BEFORE CONTENT //
 add_action( 'genesis_before_content', 'show_page_title');
 function show_page_title() {
     
     genesis_do_post_title();
     
-    
 } // show_page_title()
 
 
+// SHOW BOXES //
 add_action( 'genesis_after_content', 'show_boxes');
 function show_boxes() {
     
@@ -25,17 +26,12 @@ function show_boxes() {
 	$post = get_post();
 
 	// Get blocks attached to this page.
-	$blocks = get_post_meta( $post->ID, '_ucfbands_block_meta', true );   
+	$blocks = get_post_meta( $post->ID, '_ucfbands_blocks_meta', true );   
     
     // Leave if there's no boxes
     if ( empty( $blocks ) ) {
 		echo 'No Boxes';
-	}
-    
-    
-    // Testing
-    //print_r($blocks);
-    
+    }
     
     echo '<section class="blocks">';
     
@@ -81,12 +77,9 @@ function show_boxes() {
         
         //echo '<h3 class="fullname">' . esc_attr( $block['title'] ) . '</h3>';
 		
-	}    
-}
+	} // foreach block    
 
-
-    echo '</main>';
-
+} // show_boxes()
 
 
 //-- Load Framework --//

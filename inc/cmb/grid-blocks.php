@@ -2,8 +2,8 @@
 /**
  * Register Block as repeatable group fields
  */
-function ucfbands_block_metabox() {
-	$prefix = '_ucfbands_block_';
+function ucfbands_blocks_metabox() {
+	$prefix = '_ucfbands_blocks_';
 
 	$cmb_group = new_cmb2_box( array(
 		'id'           => $prefix . 'metabox',
@@ -34,13 +34,14 @@ function ucfbands_block_metabox() {
 		'name' => __( 'Icon', 'ucfbands-blocks' ),
 		'id'   => 'icon',
 		'type' => 'text',
-        'desc' => 'The FontAwesome icon suffix (Ex: "file-text" instead of "fa fa-file-text"'
+        'desc' => 'The <a href="http://fortawesome.github.io/Font-Awesome/icons/" target="_BLANK">FontAwesome</a> icon suffix (Ex: "file-text" instead of "fa fa-file-text")'
 	) );
 
 	$cmb_group->add_group_field( $group_field_id, array(
 		'name' => __( 'Featured', 'ucfbands-blocks' ),
 		'id'   => 'featured',
-		'type' => 'checkbox'
+		'type' => 'checkbox',
+        'desc' => 'Enables black and gold bars at the top and bottom of the block.'
 	) );
     
 	$cmb_group->add_group_field( $group_field_id, array(
@@ -71,4 +72,4 @@ function ucfbands_block_metabox() {
 	) );
     
 }
-add_action( 'cmb2_init', 'ucfbands_block_metabox' );
+add_action( 'cmb2_init', 'ucfbands_blocks_metabox' );
