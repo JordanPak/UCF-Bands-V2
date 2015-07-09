@@ -6,7 +6,7 @@ Exclusive Genesis child theme for the [University of Central Florida Bands](http
 
 ------
 
-##Templates
+##Templates (Test)
 
 **Default**
 - Default with Sidebar
