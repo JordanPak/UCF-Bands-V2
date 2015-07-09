@@ -88,6 +88,52 @@ body {
 }
 
 
+//==============//
+//  PAGE TITLE  //
+//==============//
+
+.page-title {
+    overflow: auto;
+    padding: $space-default;
+    background-color: $ucf-gray;
+    background-repeat: no-repeat;
+    background-position: center top;
+    border-bottom: 5px solid $ucf-gray-darker;
+    
+    @include site-inner-inset-shadow(true);
+    
+    &.page-title-lg {
+        padding: ($space-default + 32px) $space-default;
+    }
+    
+    h1.entry-title {
+        display: block;
+        margin: 0;
+        padding: 0;
+        color: $white;
+        text-shadow: $text-shadow-dark-lg;
+        font-size: 2.75em;
+        cursor: default;
+    }
+    
+    .conductor-name {
+        display: inline-block;
+        margin-left: 4px;
+        font-style: italic;
+        color: $white;
+        text-shadow: $text-shadow-dark-med;
+        cursor: default;
+
+        //margin-top: 10px;
+        //font-weight: 700;        
+        //padding: 3px 8px;
+        //background: rgba(0,0,0,0.5);
+        //border-radius: 5px;
+        //border-bottom: 2px solid rgba(0,0,0,0.7);
+    }
+   
+}
+
 
 //==============//
 //  SITE INNER  //
@@ -103,13 +149,10 @@ body {
     clear: none;
     margin-left: $site-header-width;
     padding-top: 0;
-    min-height: 1100px;
     border-left: 4px solid $ucf-gold;
     background: $ucf-gray-light;
-    background-image: url('images/pegasus-bg.png');
-    background-repeat: no-repeat;
-    background-position: -100px 25px;
-    box-shadow: inset 1px 0 lighten($ucf-gray-med, .9), inset 3px 0 4px $trans-shadow;
+
+    @include site-inner-inset-shadow();
     
     @media only screen and (max-width: $breakpoint-medium) {
         margin-left: $site-header-width-med;
@@ -129,6 +172,11 @@ body {
 .content-sidebar-wrap {
     padding: $space-default;
     overflow: auto;
+    min-height: 1200px;
+    
+    background-image: url('images/pegasus-bg.png');
+    background-repeat: no-repeat;
+    background-position: -100px 25px;
 }
 
 
@@ -151,15 +199,6 @@ body {
     }
 } // .content
 
-
-.page-template-page_grid { 
-    
-    h1 {
-        margin-bottom: $space-default;
-        font-size: 2.5em;
-    }
-    
-}
 
 //.page-template-page_grid {
 //    
@@ -209,6 +248,10 @@ body {
         
         border-top: 5px solid $ucf-gold;
         border-bottom: 5px solid $ucf-gray;
+    }
+    
+    h2 { 
+        cursor: default;
     }
 }
 
@@ -307,7 +350,7 @@ body {
     font-size: .95em;
     line-height: 1.25em;
     font-family: $font-family-serif;
-    text-shadow: $text-shaodw-dark-med;
+    text-shadow: $text-shadow-dark-med;
     
     a {
         color: $white;
