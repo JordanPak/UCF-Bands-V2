@@ -191,28 +191,67 @@ body {
     
 }
 
-.block {
+.masonry-block-sizer, .masonry-block {
+    width: 22%;
+}
+
+.masonry-gutter-sizer { 
+    width: 3%;
+}
+
+.masonry-block {
     @include block();
+    margin-bottom: $space-default;
+    padding: $space-default;
 }
 
-.blocks {
-    
-    .block {
-        @include block();
-
-        padding-top: $space-default + 5px;
-        padding-bottom: $space-default + 5px;
-    }
-    
-    .block-featured {
-        
-        padding-top: $space-default;
-        padding-bottom: $space-default;
-        
-        border-top: 5px solid $ucf-gold;
-        border-bottom: 5px solid $ucf-gray;
-    }    
+.masonry-block-size--one-fourth {
+    width: 22%;
 }
+
+.masonry-block-size--one-third {
+    width: 30.3333333333%;
+}
+
+.masonry-block-size--two-fourths,
+.masonry-block-size--one-half {
+    width: 47%;
+}
+
+.masonry-block-size--two-thirds {
+    width: 57.6666666667%;
+}
+
+.masonry-block-size--three-fourths {
+    width: 66%;
+}
+
+.masony-block-size--one-whole {
+    width: 100%;
+}
+
+//.block {
+//    @include block();
+//}
+//
+//.blocks {
+//    
+//    .block {
+//        @include block();
+//
+//        padding-top: $space-default + 5px;
+//        padding-bottom: $space-default + 5px;
+//    }
+//    
+//    .block-featured {
+//        
+//        padding-top: $space-default;
+//        padding-bottom: $space-default;
+//        
+//        border-top: 5px solid $ucf-gold;
+//        border-bottom: 5px solid $ucf-gray;
+//    }    
+//}
 
 
 
