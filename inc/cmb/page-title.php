@@ -39,8 +39,27 @@ function ucfbands_page_title_metabox() {
         'desc' => 'Check box if the page title should not be shown.',
         'id'   => $prefix . 'remove_page_title',
         'type' => 'checkbox'
-    ) );    
+    ) );
+    
+	$cmb->add_field( array(
+		'name' => 'Icon',
+        'desc' => 'The <a href="http://fortawesome.github.io/Font-Awesome/icons/" target="_BLANK">FontAwesome</a> icon suffix (Ex: "file-text" instead of "fa fa-file-text")',
+		'id'   => $prefix . 'icon',
+		'type' => 'text'
+	) );
 
+    $cmb->add_field( array(
+        'name'             => 'Icon Position',
+        'id'               => $prefix . 'icon_position',
+        'type'             => 'radio',
+        'show_option_none' => false,
+        'default'          => 'after',
+        'options'          => array(
+            'before' => __( 'Before Title', 'before' ),
+            'after'   => __( 'After Title', 'after' ),
+        ),
+    ) );
+    
     $cmb->add_field( array(
         'name'    => 'Conductor Name',
         'desc'    => '<b>Optional</b>. Name of conductor.',

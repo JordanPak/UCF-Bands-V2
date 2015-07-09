@@ -1438,7 +1438,8 @@ body {
     margin-left: 4px;
     font-style: italic;
     color: #FFFFFF;
-    text-shadow: 0 0 3px #000000, 1px 1px 1px rgba(0, 0, 0, 0.4), 0 0 3px #000000, 2px 2px 1px rgba(0, 0, 0, 0.4); }
+    text-shadow: 0 0 3px #000000, 1px 1px 1px rgba(0, 0, 0, 0.4), 0 0 3px #000000, 2px 2px 1px rgba(0, 0, 0, 0.4);
+    cursor: default; }
 
 .site-inner,
 .wrap {
@@ -1504,6 +1505,8 @@ body {
     padding-bottom: 40px;
     border-top: 5px solid #FFCA06;
     border-bottom: 5px solid #221E1F; }
+  .block h2 {
+    cursor: default; }
 
 .masonry-block-sizer, .masonry-block {
   width: 22%; }
