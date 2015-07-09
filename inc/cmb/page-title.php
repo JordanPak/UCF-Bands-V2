@@ -45,7 +45,7 @@ function ucfbands_page_title_metabox() {
         'name'    => 'Conductor Name',
         'desc'    => '<b>Optional</b>. Name of conductor.',
         'default' => '',
-        'id'      => 'conductor_name',
+        'id'      => $prefix . 'conductor_name',
         'type'    => 'text_medium'
     ) );    
 }

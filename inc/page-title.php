@@ -22,7 +22,8 @@ function ucfbands_custom_page_title() {
     
     
     // Get Title Settings Meta
-    $remove_page_title = get_post_meta( $post_ID, '_ucfbands_page_title_remove_page_title', true );
+    $remove_page_title  = get_post_meta( $post_ID, '_ucfbands_page_title_remove_page_title', true );
+    $conductor_name     = get_post_meta( $post_ID, '_ucfbands_page_title_conductor_name', true );
     
     
     // Get Featured Image Background
@@ -34,14 +35,22 @@ function ucfbands_custom_page_title() {
     }
     
     
+    // Conductor Name
+    if ($conductor_name) {
+        $conductor_name = '<span class="conductor-name"><i class="fa fa-user"></i>&nbsp;&nbsp;Conductor: ' . $conductor_name . '</span>';   
+    }
+    
+    
     // Remove Page Title
     if ($remove_page_title == false) {
         
         ?>
         
         <section class="<?php echo $page_title_section_classes; ?>" style="<?php echo $page_featured_image; ?>">
-
+            
             <?php genesis_do_post_title(); ?>
+            
+            <?php echo $conductor_name; ?>
 
         </section>
 
