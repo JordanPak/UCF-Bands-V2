@@ -598,8 +598,7 @@ th {
 .two-fourths,
 .two-sixths,
 .two-thirds {
-  float: left;
-  margin-left: 2.564102564102564%; }
+  float: left; }
 
 .one-half,
 .three-sixths,
@@ -1468,22 +1467,37 @@ body {
       margin-bottom: 20px;
       padding: 20px; } }
 
-.block {
-  background-color: #FFFFFF;
-  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
-  border: 1px solid #D4D4D4; }
+.masonry-block-sizer, .masonry-block {
+  width: 22%; }
 
-.blocks .block {
+.masonry-gutter-sizer {
+  width: 3%; }
+
+.masonry-block {
   background-color: #FFFFFF;
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
   border: 1px solid #D4D4D4;
-  padding-top: 45px;
-  padding-bottom: 45px; }
-.blocks .block-featured {
-  padding-top: 40px;
-  padding-bottom: 40px;
-  border-top: 5px solid #FFCA06;
-  border-bottom: 5px solid #221E1F; }
+  margin-bottom: 40px;
+  padding: 40px; }
+
+.masonry-block-size--one-fourth {
+  width: 22%; }
+
+.masonry-block-size--one-third {
+  width: 30.3333333333%; }
+
+.masonry-block-size--two-fourths,
+.masonry-block-size--one-half {
+  width: 47%; }
+
+.masonry-block-size--two-thirds {
+  width: 57.6666666667%; }
+
+.masonry-block-size--three-fourths {
+  width: 66%; }
+
+.masony-block-size--one-whole {
+  width: 100%; }
 
 .sidebar-primary {
   float: left;

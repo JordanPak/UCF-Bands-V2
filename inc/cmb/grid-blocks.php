@@ -50,18 +50,12 @@ function ucfbands_blocks_metabox() {
 		'type' => 'select',
         'default' => 'one-fourth',
         'options' => array(
-            'one-whole'     => __( 'One Whole', 'cmb' ),
-            'one-half'      => __( 'One Half', 'cmb' ),
-            'three-sixths'  => __( 'Three Sixths', 'cmb' ),
-            'two-fourths'   => __( 'Two Fourths', 'cmb' ),
-            'one-third'     => __( 'One Third', 'cmb' ),
-            'two-sixths'    => __( 'Two Sixths', 'cmb' ),
-            'four-sixths'   => __( 'Four Sixths', 'cmb' ),
-            'two-thirds'    => __( 'Two Thirds', 'cmb' ),
             'one-fourth'    => __( 'One Fourth', 'cmb' ),
-            'three-fourths' => __( 'Three Fourrths', 'cmb' ),
-            'one-sixth'     => __( 'One Sixth', 'cmb' ),
-            'five-sixths'   => __( 'Five Sixths', 'cmb' ),
+            'one-third'     => __( 'One Third', 'cmb' ),
+            'one-half'      => __( 'One Half', 'cmb' ),
+            'two-thirds'    => __( 'Two Thirds', 'cmb' ),
+            'three-fourths' => __( 'Three Fourths', 'cmb' ),
+            'one-whole'     => __( 'One Whole', 'cmb' ),
         ),
 	) );
     

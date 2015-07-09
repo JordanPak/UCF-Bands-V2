@@ -3,6 +3,13 @@
  * Template Name: Grid
  */
 
+
+// INCLUDES //
+
+// Masonry
+require_once( CHILD_DIR . '/inc/masonry.php' );
+
+
 // REMOVE SIDEBAR & POST CONTENT //
 remove_action( 'genesis_sidebar', 'genesis_do_sidebar' );
 remove_action( 'genesis_entry_content', 'genesis_do_post_content' );
@@ -18,8 +25,14 @@ function show_page_title() {
 } // show_page_title()
 
 
-// SHOW BOXES //
+
 add_action( 'genesis_after_content', 'show_boxes');
+/**
+ * Show Boxes on Grid Template
+ *
+ * @author Jordan Pakrosnis
+ * @link http://ucfbands.com/
+ */
 function show_boxes() {
     
     // Get post object.
@@ -30,10 +43,16 @@ function show_boxes() {
     
     // Leave if there's no boxes
     if ( empty( $blocks ) ) {
-		echo 'No Boxes';
+		echo '<div class="block">No Blocks Found</div>';
+        return;
     }
     
-    echo '<section class="blocks">';
+    
+    // Masonry Grid Container
+    echo '<section class="masonry-blocks">';
+    echo '<div class="masonry-block-sizer"></div>';
+    echo '<div class="masonry-gutter-sizer"></div>';
+    
     
     //-- BLOCK LOOP --//
     $counter = 1;
@@ -42,7 +61,8 @@ function show_boxes() {
         
         
         // SET CLASSES
-        $block_classes = 'entry ' . 'block ' . esc_attr( $block['width'] );
+        //$block_classes = 'entry ' . 'block ' . esc_attr( $block['width'] );
+        $block_classes = 'masonry-block masonry-block-size--' . esc_attr( $block['width']);
         
         if ( esc_attr( $block['featured'] ) == true ) {
             $block_classes .= ' block-featured';
@@ -74,10 +94,13 @@ function show_boxes() {
         </div><!-- /BLOCK -->
         
 		<?php
-        
-        //echo '<h3 class="fullname">' . esc_attr( $block['title'] ) . '</h3>';
 		
-	} // foreach block    
+	} // foreach block
+    
+    
+    // End Masonry Grid Container
+    echo '</div>';
+    
 
 } // show_boxes()
 
