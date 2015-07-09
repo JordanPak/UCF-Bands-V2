@@ -1,5 +1,10 @@
 <?php
 
+// Remove default footer and add custom footer
+remove_action( 'genesis_footer', 'genesis_do_footer' );
+add_action( 'genesis_footer', 'ucfbands_footer' );
+
+
 /**
  * UCFBands Footer Settings Defaults
  * @author Jordan Pakrosnis
@@ -14,8 +19,8 @@ function be_ucfbands_footer_settings_defaults( $defaults ) {
     //--  LIST OF SETTINGS  --//
     
     // SOCIAL URLS
-	$defaults['ucfbands_footer_facebook_url'] = '';
-	$defaults['ucfbands_footer_twitter_url'] = '';
+	$defaults['ucfbands_footer_facebook_url'] = 'facebook.com/ucfmarchingknights';
+	$defaults['ucfbands_footer_twitter_url'] = 'twitter.com/marchingknights';
 	$defaults['ucfbands_footer_youtube_url'] = '';
     
     
@@ -185,3 +190,94 @@ function be_ucfbands_footer_settings_box() {
 }
 
 
+
+/**
+ * UCFBands Footer Settings Output
+ * @author Jordan Pakrosnis
+ * @link http://ucfbands.com/
+ */
+function ucfbands_footer() {
+    
+    //-- GET OPTIONS --//
+    
+    // Social
+    $footer_facebook_url = genesis_get_option( 'ucfbands_footer_facebook_url', GENESIS_SETTINGS_FIELD );
+    $footer_twitter_url = genesis_get_option( 'ucfbands_footer_twitter_url', GENESIS_SETTINGS_FIELD );
+    $footer_youtube_url = genesis_get_option( 'ucfbands_footer_youtube_url', GENESIS_SETTINGS_FIELD );
+    
+    // Address & Google Map
+    $footer_address_url = genesis_get_option( 'ucfbands_footer_address_url', GENESIS_SETTINGS_FIELD );
+    $footer_address_name1 = genesis_get_option( 'ucfbands_footer_address_name1', GENESIS_SETTINGS_FIELD );
+    $footer_address_name2 = genesis_get_option( 'ucfbands_footer_address_name2', GENESIS_SETTINGS_FIELD );
+    $footer_address_street = genesis_get_option( 'ucfbands_footer_address_street', GENESIS_SETTINGS_FIELD );
+    $footer_address_city_state_zip = genesis_get_option( 'ucfbands_footer_address_city_state_zip', GENESIS_SETTINGS_FIELD );
+    $footer_google_map_code = genesis_get_option( 'ucfbands_footer_google_map_code', GENESIS_SETTINGS_FIELD );
+    
+    // Website Credits
+    $footer_credits_text = genesis_get_option( 'ucfbands_footer_credits_text', GENESIS_SETTINGS_FIELD );
+    $footer_credits_url = genesis_get_option( 'ucfbands_footer_credits_url', GENESIS_SETTINGS_FIELD );
+    
+    // Copyright Name
+    $footer_copyright_name = genesis_get_option( 'ucfbands_footer_copyright_name', GENESIS_SETTINGS_FIELD );
+    
+    
+	// Footer HTML
+    echo '<footer class="site-footer" role="contentinfo" itemscope="itemscope" itemtype="http://schema.org/WPFooter"><div class="wrap">';
+
+    
+    
+    //-- OUTPUT OPTIONS --//
+
+    // Social
+    if ( $footer_facebook_url || $footer_twitter_url || $footer_youtube_url ) {
+    
+        echo '<div id="footer-social">';
+        
+        if ( $footer_facebook_url ) {
+            echo '<a href="' . $footer_facebook_url . '" target="_BLANK"><i class="fa fa-facebook fa-lg"></i></a>';
+        }
+        if ( $footer_twitter_url ) {
+            echo '<a href="' . esc_url( $footer_twitter_url ) . '" target="_BLANK"><i class="fa fa-twitter fa-lg"></i></a>';
+        }
+        if ( $footer_youtube_url ) {
+            echo '<a href="' . esc_url( $footer_youtube_url ) . '" target="_BLANK"><i class="fa fa-youtube-play fa-lg"></i></a>';
+        }
+        
+        echo '</div>'; // #footer-social
+        
+    } // Social
+    
+    
+    echo '<br>';
+    
+    
+    // Address
+    echo '<address><a href="' . esc_url( $footer_address_url ) . '" target="_BLANK">';
+    
+    if ( $footer_address_name1 ) {
+        echo $footer_address_name1 . '<br>';
+    }
+    if ( $footer_address_name2 ) {
+        echo $footer_address_name2 . '<br>';
+    }
+    if ( $footer_address_street ) {
+        echo $footer_address_street . '<br>';
+    }
+    if ( $footer_address_city_state_zip ) {
+        echo $footer_address_city_state_zip . '<br>';
+    }
+    
+    echo '</a></address>';
+    
+    
+    if ( $footer_credits_text ) {
+        echo '<a href="' . esc_url( $footer_credits_url ) . '">' . $footer_credits_text . '</a>';
+    }
+    if ( $footer_copyright_name ) {
+        echo ' | &copy; ' . $footer_copyright_name . ' ' . date('Y');    
+    }
+    
+    // End Footer HTML
+    echo '</div></footer>';
+
+} // ucfbands_footer()
