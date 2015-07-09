@@ -1354,6 +1354,9 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 .entry-title a:hover {
   color: #221E1F; }
 
+i.mkmc-note {
+  border-bottom: 1px solid #FFCA06; }
+
 body {
   background: #221E1F; }
 
@@ -1467,6 +1470,16 @@ body {
       margin-bottom: 20px;
       padding: 20px; } }
 
+.block {
+  background-color: #FFFFFF;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+  border: 1px solid #D4D4D4; }
+  .block.block-featured {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-top: 5px solid #FFCA06;
+    border-bottom: 5px solid #221E1F; }
+
 .masonry-block-sizer, .masonry-block {
   width: 22%; }
 
@@ -1474,9 +1487,6 @@ body {
   width: 3%; }
 
 .masonry-block {
-  background-color: #FFFFFF;
-  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
-  border: 1px solid #D4D4D4;
   margin-bottom: 40px;
   padding: 40px; }
 

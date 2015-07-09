@@ -18,7 +18,7 @@ remove_action( 'genesis_loop', 'genesis_do_loop' );
 // PUT PAGE TITLE BEFORE CONTENT //
 add_action( 'genesis_before_content', 'show_page_title');
 function show_page_title() {
-    
+
     genesis_do_post_title();
     
 } // show_page_title()
@@ -42,7 +42,16 @@ function show_boxes() {
     
     // Leave if there's no boxes
     if ( empty( $blocks ) ) {
-		echo '<div class="block">No Blocks Found</div>';
+		echo '<div class="entry block one-fourth">';
+        echo '<h3>Coming Soon&nbsp;&nbsp;<i class="fa fa-wrench"></i></h3>';
+        
+        
+        if ( is_user_logged_in() ) {
+            echo '<br>';
+            echo '<i class="mkmc-note">MKMC Note: There are no blocks found on this page. This page <b>does not</b> show its main content.</i>';
+        }
+        
+        echo '</div>';
         return;
     }
     
@@ -54,46 +63,44 @@ function show_boxes() {
     
     
     //-- BLOCK LOOP --//
-    $counter = 1;
-    
-	foreach ( $blocks as $block ) {
+	foreach ( $blocks as $block ) {       
+        
+        // Get Block Meta Data
+        $block_title =          $block['title'];
+        $block_icon =           esc_attr( $block['icon'] );
+        $block_width =          esc_attr( $block['width'] );
+        $block_is_featured =    esc_attr( $block['featured'] );
+        $block_content =        esc_attr( $block['block-content'] );
         
         
-        // SET CLASSES
-        //$block_classes = 'entry ' . 'block ' . esc_attr( $block['width'] );
-        $block_classes = 'masonry-block masonry-block-size--' . esc_attr( $block['width']);
+        // SET INITIAL CLASSES
+        $block_classes = 'block masonry-block masonry-block-size--' . $block_width;
         
-        if ( esc_attr( $block['featured'] ) == true ) {
+        // Featured?
+        if ($block_is_featured == true ) {
             $block_classes .= ' block-featured';
         }
         
-        if ($counter == 1) {
-            $block_classes .= ' first';
-        }
-        
-        $counter++;
-        
-        // SET ICON
-        $block_icon = esc_attr( $block['icon'] );
-        
+        // Block Icon?
         if ($block_icon) {
             $block_icon = '&nbsp;&nbsp;<i class="fa fa-' . $block_icon . '"></i>';
+        } else {
+            $block_icon = '';   
         }
         
         ?>
-
         
-        <!-- START BLOCK -->
+        <!-- MASONRY BLOCK -->
         <div class="<?php echo $block_classes; ?>">
 
-            <h2><?php echo $block['title']; ?><?php echo $block_icon; ?></h2>
+            <h2><?php echo $block_title . $block_icon; ?></h2>
             
-            <?php echo esc_attr( $block['block-content'] ); ?>
+            <?php echo $block_content; ?>
         
         </div><!-- /BLOCK -->
         
 		<?php
-		
+        
 	} // foreach block
     
     
@@ -104,5 +111,5 @@ function show_boxes() {
 } // show_boxes()
 
 
-//-- Load Framework --//
+//-- LOAD FRAMEWORK --//
 genesis();

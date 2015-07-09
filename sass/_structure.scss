@@ -191,6 +191,21 @@ body {
     
 }
 
+.block {
+    @include block();
+    
+    &.block-featured {
+        padding-top: $space-default;
+        padding-bottom: $space-default;
+        
+        border-top: 5px solid $ucf-gold;
+        border-bottom: 5px solid $ucf-gray;
+    }
+}
+
+
+// MASONRY STYLES
+
 .masonry-block-sizer, .masonry-block {
     width: 22%;
 }
@@ -200,7 +215,6 @@ body {
 }
 
 .masonry-block {
-    @include block();
     margin-bottom: $space-default;
     padding: $space-default;
 }
@@ -230,10 +244,6 @@ body {
     width: 100%;
 }
 
-//.block {
-//    @include block();
-//}
-//
 //.blocks {
 //    
 //    .block {
