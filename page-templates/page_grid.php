@@ -3,8 +3,6 @@
  * Template Name: Grid
  */
 
-// INCLUDES //
-
 // Masonry
 require_once( CHILD_DIR . '/inc/masonry.php' );
 
@@ -15,13 +13,8 @@ remove_action( 'genesis_entry_content', 'genesis_do_post_content' );
 remove_action( 'genesis_loop', 'genesis_do_loop' );
 
 
-// PUT PAGE TITLE BEFORE CONTENT //
-add_action( 'genesis_before_content_sidebar_wrap', 'show_page_title');
-function show_page_title() {
-
-    genesis_do_post_title();
-    
-} // show_page_title()
+// Page Title
+require_once( CHILD_DIR . '/inc/page-title.php' );
 
 
 
