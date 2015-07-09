@@ -16,7 +16,7 @@ remove_action( 'genesis_loop', 'genesis_do_loop' );
 
 
 // PUT PAGE TITLE BEFORE CONTENT //
-add_action( 'genesis_before_content', 'show_page_title');
+add_action( 'genesis_before_content_sidebar_wrap', 'show_page_title');
 function show_page_title() {
 
     genesis_do_post_title();

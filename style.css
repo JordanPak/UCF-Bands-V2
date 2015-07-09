@@ -1423,8 +1423,8 @@ body {
 .site-inner {
   clear: none;
   margin-left: 330px;
+  padding-top: 0;
   min-height: 1100px;
-  padding: 40px;
   border-left: 4px solid #FFCA06;
   background: whitesmoke;
   background-image: url("images/pegasus-bg.png");
@@ -1437,6 +1437,10 @@ body {
   @media only screen and (max-width: 768px) {
     .site-inner {
       padding: 20px; } }
+
+.content-sidebar-wrap {
+  padding: 40px;
+  overflow: auto; }
 
 .content {
   float: left;
