@@ -1,7 +1,7 @@
 <?php
 
 /*
- *  UCFBands Custom Page Title
+ *  UCFBands Custom Page Title Settings
  */
 
 

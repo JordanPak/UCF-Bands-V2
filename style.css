@@ -1468,6 +1468,9 @@ body {
   background-repeat: no-repeat;
   background-position: -100px 25px; }
 
+body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
+  padding: 0; }
+
 .content {
   float: left;
   clear: both;
