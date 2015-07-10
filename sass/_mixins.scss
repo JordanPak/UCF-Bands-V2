@@ -14,14 +14,24 @@
     border: none;
 }
 
-@mixin site-inner-inset-shadow($dark-border: false) {
+@mixin site-inner-inset-shadow($dark-border: false, $dark-fade: false) {
     
     @if $dark-border == false {
-        box-shadow: inset 1px 0 lighten($ucf-gray-med, .9), inset 7px 0 5px -7px rgba(0,0,0,.5);  
+        box-shadow:
+            inset 1px 0 lighten($ucf-gray-med, .9),
+            inset 7px 0 5px -7px rgba(0,0,0,.5);  
     } @else {
-        box-shadow: inset 1px 0 $black, inset 7px 0 5px -7px rgba(0,0,0,.5);  
+        box-shadow:
+            inset 1px 0 $black,
+            inset 7px 0 5px -7px rgba(0,0,0,.5);  
     }
-
+    
+    @if $dark-fade == true {
+        box-shadow:
+            inset 1px 0 $black,
+            inset 7px 0 5px -7px rgba(0,0,0,.5),
+            inset 750px 0 300px -250px rgba(0, 0, 0, 0.55);
+    }
 }
 
 
