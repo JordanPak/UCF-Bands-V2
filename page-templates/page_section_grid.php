@@ -1,6 +1,6 @@
 <?php
 /*
- * Template Name: Block Grid
+ * Template Name: Section Page (Block Grid)
  */
 
 // Masonry

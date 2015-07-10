@@ -10,7 +10,10 @@ function ucfbands_blocks_metabox() {
 		'id'           => $prefix . 'metabox',
 		'title'        => __( 'Blocks', 'ucfbands-blocks' ),
 		'object_types' => array( 'page' ),
-		'show_on'      => array( 'key' => 'page-template', 'value' => 'page-templates/page_grid.php' ),
+		'show_on'      => array(
+            'key' => 'page-template', 
+            'value' => array('page-templates/page_section_grid.php', 'page-templates/page_grid.php'),
+        ),
         'priority'     => 'high',
 	) );
 

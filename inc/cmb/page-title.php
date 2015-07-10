@@ -17,7 +17,10 @@ function ucfbands_page_title_metabox() {
         'object_types'  => array( 'page' ),
         'context'       => 'normal',
         'priority'      => 'high',
-        'show_on'      => array( 'key' => 'page-template', 'value' => 'page-templates/page_grid.php' ),
+		'show_on'      => array(
+            'key' => 'page-template', 
+            'value' => array('page-templates/page_section_grid.php', 'page-templates/page_grid.php'),
+        ),
     ) );
 
 //    $cmb->add_field( array(
