@@ -179,6 +179,12 @@ body {
     background-position: -100px 25px;
 }
 
+body.page-template-page_section_grid .content-sidebar-wrap {
+    padding: $masonry-gutter-width;
+    padding-right: 0;
+}
+
+
 body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
     padding: 0;
 }
@@ -236,20 +242,22 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
     margin-bottom: $space-default;
     padding: $space-default;
     
-    @media only screen and (max-width: $breakpoint-small) {
+    
+    @media only screen and (max-width: $breakpoint-medium) {
         margin-bottom: $space-default-half;
         padding: $space-default-half;
     }
     
+    @media only screen and (max-width: $breakpoint-small) {
+        margin-bottom: $space-default-half;
+        padding: $space-default-half;
+    }
 }
 
 .block {
     @include block();
     
-    &.block-featured {
-        padding-top: $space-default;
-        padding-bottom: $space-default;
-        
+    &.block-featured {        
         border-top: 5px solid $ucf-gold;
         border-bottom: 5px solid $ucf-gray;
     }
@@ -261,44 +269,80 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
 
 
 // MASONRY STYLES
-
 .masonry-block-sizer, .masonry-block {
-    width: 22%;
+    width: $masonry-block-width-default;
 }
 
 .masonry-gutter-sizer { 
-    width: 3%;
+    width: $masonry-gutter-width;
 }
 
 .masonry-block {
     margin-bottom: $space-default;
     padding: $space-default;
+    
+    @media only screen and (max-width: $breakpoint-medium) {
+        margin-bottom: $space-default-half;
+        padding: $space-default-half;
+    }
 }
 
 .masonry-block-size--one-fourth {
-    width: 22%;
+    width: $masonry-block-width--one-fourth;
+    
+    @media only screen and (max-width: $breakpoint-medium) {
+        width: $masonry-block-width--one-half;
+    }
+    
+    @media only screen and (max-width: $breakpoint-large) {
+        width: $masonry-block-width--one-half;
+    }
 }
 
 .masonry-block-size--one-third {
-    width: 30.3333333333%;
+    width: $masonry-block-width--one-third;
+    
+    @media only screen and (max-width: $breakpoint-medium) {
+        width: $masonry-block-width--one-half;
+    }
+    
+    @media only screen and (max-width: $breakpoint-large) {
+        width: $masonry-block-width--one-half;
+    }
 }
 
 .masonry-block-size--two-fourths,
 .masonry-block-size--one-half {
-    width: 47%;
+    width: $masonry-block-width--one-half;
 }
 
 .masonry-block-size--two-thirds {
-    width: 57.6666666667%;
+    width: $masonry-block-width--two-thirds;
 }
 
 .masonry-block-size--three-fourths {
-    width: 66%;
+    width: $masonry-block-width--three-fourths;
 }
 
 .masony-block-size--one-whole {
-    width: 100%;
+    width: $masonry-block-width--one-whole;
 }
+
+.masonry-block-size--two-fourths,
+.masonry-block-size--one-half,
+.masonry-block-size--two-thirds,
+.masonry-block-size--three-fourths,
+.masony-block-size--one-whole {
+    
+    @media only screen and (max-width: $breakpoint-medium) {
+        width: $masonry-block-width--one-whole;   
+    }
+    
+    @media only screen and (max-width: $breakpoint-large) {
+        width: $masonry-block-width--one-whole;   
+    }
+}
+    
 
 //.blocks {
 //    

@@ -1468,6 +1468,10 @@ body {
   background-repeat: no-repeat;
   background-position: -100px 25px; }
 
+body.page-template-page_section_grid .content-sidebar-wrap {
+  padding: 3%;
+  padding-right: 0; }
+
 body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
   padding: 0; }
 
@@ -1494,6 +1498,10 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
 .entry {
   margin-bottom: 40px;
   padding: 40px; }
+  @media only screen and (max-width: 1200px) {
+    .entry {
+      margin-bottom: 20px;
+      padding: 20px; } }
   @media only screen and (max-width: 768px) {
     .entry {
       margin-bottom: 20px;
@@ -1504,8 +1512,6 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
   border: 1px solid #D4D4D4; }
   .block.block-featured {
-    padding-top: 40px;
-    padding-bottom: 40px;
     border-top: 5px solid #FFCA06;
     border-bottom: 5px solid #221E1F; }
   .block h2 {
@@ -1520,25 +1526,56 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
 .masonry-block {
   margin-bottom: 40px;
   padding: 40px; }
+  @media only screen and (max-width: 1200px) {
+    .masonry-block {
+      margin-bottom: 20px;
+      padding: 20px; } }
 
 .masonry-block-size--one-fourth {
   width: 22%; }
+  @media only screen and (max-width: 1200px) {
+    .masonry-block-size--one-fourth {
+      width: 47%; } }
+  @media only screen and (max-width: 1366px) {
+    .masonry-block-size--one-fourth {
+      width: 47%; } }
 
 .masonry-block-size--one-third {
-  width: 30.3333333333%; }
+  width: 30.33333%; }
+  @media only screen and (max-width: 1200px) {
+    .masonry-block-size--one-third {
+      width: 47%; } }
+  @media only screen and (max-width: 1366px) {
+    .masonry-block-size--one-third {
+      width: 47%; } }
 
 .masonry-block-size--two-fourths,
 .masonry-block-size--one-half {
   width: 47%; }
 
 .masonry-block-size--two-thirds {
-  width: 57.6666666667%; }
+  width: 63.66667%; }
 
 .masonry-block-size--three-fourths {
-  width: 66%; }
+  width: 72%; }
 
 .masony-block-size--one-whole {
-  width: 100%; }
+  width: 97%; }
+
+@media only screen and (max-width: 1200px) {
+  .masonry-block-size--two-fourths,
+  .masonry-block-size--one-half,
+  .masonry-block-size--two-thirds,
+  .masonry-block-size--three-fourths,
+  .masony-block-size--one-whole {
+    width: 97%; } }
+@media only screen and (max-width: 1366px) {
+  .masonry-block-size--two-fourths,
+  .masonry-block-size--one-half,
+  .masonry-block-size--two-thirds,
+  .masonry-block-size--three-fourths,
+  .masony-block-size--one-whole {
+    width: 97%; } }
 
 .sidebar-primary {
   float: left;
