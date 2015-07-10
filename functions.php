@@ -61,6 +61,9 @@ add_filter( 'edit_post_link', '__return_false' );
 //  MORE UCFBANDS  //
 //-----------------//
 
+// Font Style Check
+require_once( CHILD_DIR . '/inc/font-style.php' );
+
 // ADD TOP BAR
 add_action( 'genesis_before_header', 'add_top_bar' );
 function add_top_bar() {
