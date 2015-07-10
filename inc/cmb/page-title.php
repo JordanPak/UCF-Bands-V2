@@ -1,19 +1,19 @@
 <?php
 
 /**
- *  UCFBands Register Page Title Metabox
+ *  UCFBands Register Page Settings Metabox
  *
  *  @author Jordan Pakrosnis
  */
-function ucfbands_page_title_metabox() {
-	$prefix = '_ucfbands_page_title_';
+function ucfbands_page_settings_metabox() {
+	$prefix = '_ucfbands_page_settings_';
 
 	/**
      * Initiate the metabox
      */
     $cmb = new_cmb2_box( array(
         'id'            => $prefix . 'metabox',
-        'title'         => __( 'Page Title Settings', 'ucfbands-page-title' ),
+        'title'         => __( 'Page Settings', 'ucfbands-page-settings' ),
         'object_types'  => array( 'page' ),
         'context'       => 'normal',
         'priority'      => 'high',
@@ -45,14 +45,14 @@ function ucfbands_page_title_metabox() {
     ) );
     
 	$cmb->add_field( array(
-		'name' => 'Icon',
+		'name' => 'Title Icon',
         'desc' => 'The <a href="http://fortawesome.github.io/Font-Awesome/icons/" target="_BLANK">FontAwesome</a> icon suffix (Ex: "file-text" instead of "fa fa-file-text")',
 		'id'   => $prefix . 'icon',
 		'type' => 'text'
 	) );
 
     $cmb->add_field( array(
-        'name'             => 'Icon Position',
+        'name'             => 'Title Icon Position',
         'id'               => $prefix . 'icon_position',
         'type'             => 'radio',
         'show_option_none' => false,
@@ -71,4 +71,4 @@ function ucfbands_page_title_metabox() {
         'type'    => 'text_medium'
     ) );    
 }
-add_action( 'cmb2_init', 'ucfbands_page_title_metabox' );
+add_action( 'cmb2_init', 'ucfbands_page_settings_metabox' );
