@@ -17,6 +17,21 @@ remove_action( 'genesis_loop', 'genesis_do_loop' );
 require_once( CHILD_DIR . '/inc/page-title.php' );
 
 
+// Disable Grid Padding
+add_filter( 'body_class', 'body_class_disable_grid_padding' );
+function body_class_disable_grid_padding( $classes ) {
+    
+    $post_ID = get_the_ID();
+    
+    $disable_grid_padding = get_post_meta( $post_ID, '_ucfbands_blocks_disable_grid_padding', true );
+    
+    if ($disable_grid_padding) {
+        $classes[] = 'content-sidebar-wrap-disable-padding';   
+    }
+    
+    return $classes;
+}
+
 
 add_action( 'genesis_after_content', 'show_blocks');
 /**
