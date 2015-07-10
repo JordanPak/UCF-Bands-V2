@@ -11,8 +11,18 @@ body {
     font-family: $font-family-sans-serif;
     font-weight: 400;
     font-size: 16px;
+    
+    &.font-style-athletic {
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: $font-family-athletic;   
+        }
+        
+        h1 {
+            letter-spacing: .035em;
+        }
+    }
 }
-
 
 
 //============//

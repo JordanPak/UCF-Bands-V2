@@ -69,6 +69,19 @@ function ucfbands_page_settings_metabox() {
         'default' => '',
         'id'      => $prefix . 'conductor_name',
         'type'    => 'text_medium'
-    ) );    
+    ) );
+    
+    $cmb->add_field( array(
+        'name'             => 'Font Style',
+        'id'               => $prefix . 'font_style',
+        'type'             => 'radio',
+        'show_option_none' => false,
+        'default'          => 'default',
+        'options'          => array(
+            'default' => __( 'Default (Serif)', 'cmb' ),
+            'athletic'   => __( 'Athletic', 'cmb' ),
+        ),
+    ) );
+
 }
 add_action( 'cmb2_init', 'ucfbands_page_settings_metabox' );

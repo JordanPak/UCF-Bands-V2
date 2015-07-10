@@ -1328,6 +1328,10 @@ body {
   font-family: "Roboto", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px; }
+  body.font-style-athletic h1, body.font-style-athletic h2, body.font-style-athletic h3, body.font-style-athletic h4, body.font-style-athletic h5, body.font-style-athletic h6 {
+    font-family: "Oswald", "Roboto", sans-serif; }
+  body.font-style-athletic h1 {
+    letter-spacing: .035em; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Droid Serif", "Georgia", "Times", serif; }

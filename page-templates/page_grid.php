@@ -7,6 +7,10 @@
 require_once( CHILD_DIR . '/inc/masonry.php' );
 
 
+// Font Style
+require_once( CHILD_DIR . '/inc/font-style.php' );
+
+
 // REMOVE SIDEBAR & POST CONTENT //
 remove_action( 'genesis_sidebar', 'genesis_do_sidebar' );
 remove_action( 'genesis_entry_content', 'genesis_do_post_content' );
