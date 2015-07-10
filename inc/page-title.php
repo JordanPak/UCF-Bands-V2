@@ -21,11 +21,15 @@ function ucfbands_custom_page_title() {
     $page_title_section_classes = 'page-title';
     
     
+    // Set Meta ID
+    $meta_id_prefix = '_ucfbands_page_settings_';
+    
+    
     // GET TITLE SETTINGS META
-    $remove_page_title  = get_post_meta( $post_ID, '_ucfbands_page_title_remove_page_title', true );
-    $icon               = get_post_meta( $post_ID, '_ucfbands_page_title_icon', true );
-    $icon_position      = get_post_meta( $post_ID, '_ucfbands_page_title_icon_position', true );
-    $conductor_name     = get_post_meta( $post_ID, '_ucfbands_page_title_conductor_name', true );
+    $remove_page_title  = get_post_meta( $post_ID, $meta_id_prefix . 'remove_page_title', true );
+    $icon               = get_post_meta( $post_ID, $meta_id_prefix . 'icon', true );
+    $icon_position      = get_post_meta( $post_ID, $meta_id_prefix . 'icon_position', true );
+    $conductor_name     = get_post_meta( $post_ID, $meta_id_prefix . 'conductor_name', true );
     
     
     // CONFIGURE ICON

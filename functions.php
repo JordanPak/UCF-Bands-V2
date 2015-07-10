@@ -16,7 +16,7 @@ require_once( CHILD_DIR . '/inc/theme-settings/footer.php' );
 
 // CUSTOM META BOXES (CMB2)
 require_once( CHILD_DIR . '/inc/cmb/grid-blocks.php' );
-require_once( CHILD_DIR . '/inc/cmb/page-title.php' );
+require_once( CHILD_DIR . '/inc/cmb/page-settings.php' );
 
 // SHORTCODES
 //require_once( CHILD_DIR . '/inc/shortcodes/file.php' );
