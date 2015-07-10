@@ -1468,6 +1468,10 @@ body {
   background-repeat: no-repeat;
   background-position: -100px 25px; }
 
+body.page-template-page_section_grid .content-sidebar-wrap {
+  padding: 3%;
+  padding-right: 0; }
+
 body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
   padding: 0; }
 
@@ -1532,10 +1536,10 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
   width: 47%; }
 
 .masonry-block-size--two-thirds {
-  width: 57.6666666667%; }
+  width: 63.6666666667%; }
 
 .masonry-block-size--three-fourths {
-  width: 66%; }
+  width: 72%; }
 
 .masony-block-size--one-whole {
   width: 100%; }
