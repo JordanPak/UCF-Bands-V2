@@ -1503,6 +1503,11 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
     padding-bottom: 20px;
     margin-bottom: 20px; }
 
+.error404 article {
+  background-color: #FFFFFF;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+  border: 1px solid #D4D4D4; }
+
 .entry {
   margin-bottom: 40px;
   padding: 40px; }

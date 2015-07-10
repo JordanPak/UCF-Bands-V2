@@ -207,6 +207,13 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
     }
 } // .content
 
+.error404 {
+    
+    article {
+        @include block();
+    }
+    
+}
 
 //.page-template-page_grid {
 //    
