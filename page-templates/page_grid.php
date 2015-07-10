@@ -18,14 +18,14 @@ require_once( CHILD_DIR . '/inc/page-title.php' );
 
 
 
-add_action( 'genesis_after_content', 'show_boxes');
+add_action( 'genesis_after_content', 'show_blocks');
 /**
- * Show Boxes on Grid Template
+ * Show Blocks on Grid Template
  *
  * @author Jordan Pakrosnis
  * @link http://ucfbands.com/
  */
-function show_boxes() {
+function show_blocks() {
     
     // Get post object.
 	$post = get_post();
@@ -102,6 +102,7 @@ function show_boxes() {
     
 
 } // show_boxes()
+
 
 
 //-- LOAD FRAMEWORK --//
