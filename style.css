@@ -1657,6 +1657,9 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
     #footer-social a:hover {
       color: #FFCA06; }
 
+.nav-primary {
+  background: none; }
+
 #menu-main-menu .menu-item {
   text-align: center;
   display: block;
