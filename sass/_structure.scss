@@ -107,6 +107,10 @@ body {
         padding: ($space-default + 32px);// $space-default;
     }
     
+    &.remove-background-fade {
+        @include site-inner-inset-shadow(true, false);
+    }
+    
     h1.entry-title {
         display: block;
         margin: 0;

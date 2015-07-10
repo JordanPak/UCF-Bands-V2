@@ -29,6 +29,7 @@ function ucfbands_custom_page_title() {
     $remove_page_title  = get_post_meta( $post_ID, $meta_id_prefix . 'remove_page_title', true );
     $icon               = get_post_meta( $post_ID, $meta_id_prefix . 'icon', true );
     $icon_position      = get_post_meta( $post_ID, $meta_id_prefix . 'icon_position', true );
+    $remove_page_title_background_fade = get_post_meta( $post_ID, $meta_id_prefix . 'remove_page_title_background_fade', true );
     $conductor_name     = get_post_meta( $post_ID, $meta_id_prefix . 'conductor_name', true );
     
     
@@ -59,6 +60,12 @@ function ucfbands_custom_page_title() {
     if ($page_featured_image) {
         $page_featured_image = 'background-image: url(' . $page_featured_image . ') ';
         $page_title_section_classes .= ' page-title-lg';
+    }
+    
+    
+    // REMOVE PAGE TITLE BACKGROUND FADE
+    if ($remove_page_title_background_fade == true) {
+        $page_title_section_classes .= ' remove-background-fade';   
     }
     
     
