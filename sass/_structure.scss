@@ -95,15 +95,20 @@ body {
 .page-title {
     overflow: auto;
     padding: $space-default;
+    padding-left: $space-default + 32px;
     background-color: $ucf-gray;
     background-repeat: no-repeat;
     background-position: center top;
     border-bottom: 5px solid $ucf-gray-darker;
     
-    @include site-inner-inset-shadow(true);
+    @include site-inner-inset-shadow(true, true);
     
     &.page-title-lg {
-        padding: ($space-default + 32px) $space-default;
+        padding: ($space-default + 32px);// $space-default;
+    }
+    
+    &.remove-background-fade {
+        @include site-inner-inset-shadow(true, false);
     }
     
     h1.entry-title {
@@ -123,13 +128,6 @@ body {
         color: $white;
         text-shadow: $text-shadow-dark-med;
         cursor: default;
-
-        //margin-top: 10px;
-        //font-weight: 700;        
-        //padding: 3px 8px;
-        //background: rgba(0,0,0,0.5);
-        //border-radius: 5px;
-        //border-bottom: 2px solid rgba(0,0,0,0.7);
     }
    
 }

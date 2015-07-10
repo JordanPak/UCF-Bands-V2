@@ -51,6 +51,14 @@ function ucfbands_page_settings_metabox() {
     ) );
     
     $cmb->add_field( array(
+        'name' => 'Remove Page Title Background Fade',
+        'desc' => 'Check box to remove the dark shadow on the left side of the page title.',
+        'id'   => $prefix . 'remove_page_title_background_fade',
+        'type' => 'checkbox',
+        'show_on_cb' => 'cmb_exclude_default_page',
+    ) );    
+    
+    $cmb->add_field( array(
         'name'    => 'Conductor Name',
         'desc'    => '<b>Optional</b>. Name of conductor.',
         'default' => '',
