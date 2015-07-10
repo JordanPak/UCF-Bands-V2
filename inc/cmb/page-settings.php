@@ -1,5 +1,9 @@
 <?php
 
+// Include show_on_cb Filters
+require_once( CHILD_DIR . '/inc/cmb/show-on-cb.php' );
+
+
 /**
  *  UCFBands Register Page Settings Metabox
  *
@@ -41,14 +45,16 @@ function ucfbands_page_settings_metabox() {
         'name' => 'Remove Page Title',
         'desc' => 'Check box if the page title should not be shown.',
         'id'   => $prefix . 'remove_page_title',
-        'type' => 'checkbox'
+        'type' => 'checkbox',
+        'show_on_cb' => 'cmb_exclude_default_page',
     ) );
     
 	$cmb->add_field( array(
-		'name' => 'Title Icon',
-        'desc' => 'The <a href="http://fortawesome.github.io/Font-Awesome/icons/" target="_BLANK">FontAwesome</a> icon suffix (Ex: "file-text" instead of "fa fa-file-text")',
-		'id'   => $prefix . 'icon',
-		'type' => 'text'
+		'name'        => 'Title Icon',
+        'desc'        => 'The <a href="http://fortawesome.github.io/Font-Awesome/icons/" target="_BLANK">FontAwesome</a> icon suffix (Ex: "file-text" instead of "fa fa-file-text")',
+		'id'          => $prefix . 'icon',
+		'type'        => 'text',
+        'show_on_cb'  => 'cmb_exclude_default_page',
 	) );
 
     $cmb->add_field( array(
@@ -61,6 +67,7 @@ function ucfbands_page_settings_metabox() {
             'before' => __( 'Before Title', 'before' ),
             'after'   => __( 'After Title', 'after' ),
         ),
+        'show_on_cb'  => 'cmb_exclude_default_page',
     ) );
     
     $cmb->add_field( array(
@@ -68,7 +75,8 @@ function ucfbands_page_settings_metabox() {
         'desc'    => '<b>Optional</b>. Name of conductor.',
         'default' => '',
         'id'      => $prefix . 'conductor_name',
-        'type'    => 'text_medium'
+        'type'    => 'text_medium',
+        'show_on_cb'  => 'cmb_exclude_default_page',
     ) );
     
     $cmb->add_field( array(
