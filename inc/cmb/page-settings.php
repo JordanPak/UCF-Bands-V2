@@ -54,7 +54,6 @@ function ucfbands_page_settings_metabox() {
         'desc'        => 'The <a href="http://fortawesome.github.io/Font-Awesome/icons/" target="_BLANK">FontAwesome</a> icon suffix (Ex: "file-text" instead of "fa fa-file-text")',
 		'id'          => $prefix . 'icon',
 		'type'        => 'text',
-        'show_on_cb'  => 'cmb_exclude_default_page',
 	) );
 
     $cmb->add_field( array(
@@ -67,7 +66,6 @@ function ucfbands_page_settings_metabox() {
             'before' => __( 'Before Title', 'before' ),
             'after'   => __( 'After Title', 'after' ),
         ),
-        'show_on_cb'  => 'cmb_exclude_default_page',
     ) );
     
     $cmb->add_field( array(

@@ -67,6 +67,7 @@ function ucfbands_custom_page_title() {
         
         ?>
         
+        
         <section class="<?php echo $page_title_section_classes; ?>" style="<?php echo $page_featured_image; ?>">
             
             <h1 class="entry-title" itemprop="headline">

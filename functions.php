@@ -79,6 +79,11 @@ function add_top_bar() {
     echo '<div id="top-bar"></div>';
 }
 
+
+// Icon settings support for default page template
+require_once( CHILD_DIR . '/inc/page-title-default.php' );
+
+
 // CMB2
 if ( file_exists(  __DIR__ . '/cmb2/init.php' ) ) {
   require_once  __DIR__ . '/cmb2/init.php';
