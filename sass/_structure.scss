@@ -242,20 +242,22 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
     margin-bottom: $space-default;
     padding: $space-default;
     
-    @media only screen and (max-width: $breakpoint-small) {
+    
+    @media only screen and (max-width: $breakpoint-medium) {
         margin-bottom: $space-default-half;
         padding: $space-default-half;
     }
     
+    @media only screen and (max-width: $breakpoint-small) {
+        margin-bottom: $space-default-half;
+        padding: $space-default-half;
+    }
 }
 
 .block {
     @include block();
     
-    &.block-featured {
-        padding-top: $space-default;
-        padding-bottom: $space-default;
-        
+    &.block-featured {        
         border-top: 5px solid $ucf-gold;
         border-bottom: 5px solid $ucf-gray;
     }
@@ -278,6 +280,11 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
 .masonry-block {
     margin-bottom: $space-default;
     padding: $space-default;
+    
+    @media only screen and (max-width: $breakpoint-medium) {
+        margin-bottom: $space-default-half;
+        padding: $space-default-half;
+    }
 }
 
 .masonry-block-size--one-fourth {
