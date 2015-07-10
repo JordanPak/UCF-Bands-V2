@@ -11,6 +11,18 @@ include_once( get_template_directory() . '/lib/init.php' );
 //  UCFBANDS INCLUDES  //
 //---------------------//
 
+// MENUS
+add_theme_support( 'genesis-menus', array(
+    'main-menu'         => __( 'Main Menu (Left Sidebar)', 'genesis' ),
+    'concert-band'      => __( 'Concert Band Section Menu', 'genesis' ),
+    'symphonic-band'    => __( 'Symphonic Band Section Menu', 'genesis' ),
+    'wind-ensemble'     => __( 'Wind Ensemble Section Menu', 'genesis' ),
+    'marching-knights'  => __( 'Marching Knights Section Menu', 'genesis' ),
+    'jammin-knights'    => __( 'Jammin\' Knights Section Menu', 'genesis' ),
+    'mkmc'              => __( 'MKMC Section Menu', 'genesis' )
+) );
+
+
 // THEME SETTINGS
 require_once( CHILD_DIR . '/inc/theme-settings/footer.php' );
 
