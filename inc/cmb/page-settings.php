@@ -21,25 +21,7 @@ function ucfbands_page_settings_metabox() {
         'object_types'  => array( 'page' ),
         'context'       => 'normal',
         'priority'      => 'high',
-//		'show_on'      => array(
-//            'key' => 'page-template', 
-//            'value' => array('page-templates/page_section_grid.php', 'page-templates/page_grid.php'),
-//        ),
     ) );
-
-//    $cmb->add_field( array(
-//        'name'             => 'Display Style',
-//        'desc'             => 'Select an option',
-//        'id'               => 'display_style',
-//        'type'             => 'select',
-//        'show_option_none' => false,
-//        'default'          => 'default',
-//        'options'          => array(
-//            'default'           => __( 'Default', 'cmb' ),
-//            'featured-image-bg' => __( 'Featured Image Background', 'cmb' ),
-//            'solid-color-bg'    => __( 'Solid Color Backvground', 'cmb' ),
-//        ),
-//    ) );
 
     $cmb->add_field( array(
         'name' => 'Remove Page Title',

@@ -28,8 +28,6 @@ define( 'CHILD_THEME_URL', 'http://ucfbands.com/' );
 define( 'CHILD_THEME_VERSION', '2.0.0' );
 
 
-
-
 // FOR TESTING - SHOW TEMPLATE
 //add_action( 'genesis_after_content', 'show_page_template');
 //function show_page_template() {
