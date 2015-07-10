@@ -281,29 +281,61 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
 }
 
 .masonry-block-size--one-fourth {
-    width: 22%;
+    width: $masonry-block-width--one-fourth;
+    
+    @media only screen and (max-width: $breakpoint-medium) {
+        width: $masonry-block-width--one-half;
+    }
+    
+    @media only screen and (max-width: $breakpoint-large) {
+        width: $masonry-block-width--one-half;
+    }
 }
 
 .masonry-block-size--one-third {
-    width: 30.3333333333%;
+    width: $masonry-block-width--one-third;
+    
+    @media only screen and (max-width: $breakpoint-medium) {
+        width: $masonry-block-width--one-half;
+    }
+    
+    @media only screen and (max-width: $breakpoint-large) {
+        width: $masonry-block-width--one-half;
+    }
 }
 
 .masonry-block-size--two-fourths,
 .masonry-block-size--one-half {
-    width: 47%;
+    width: $masonry-block-width--one-half;
 }
 
 .masonry-block-size--two-thirds {
-    width: 63.6666666667%;
+    width: $masonry-block-width--two-thirds;
 }
 
 .masonry-block-size--three-fourths {
-    width: 72%;
+    width: $masonry-block-width--three-fourths;
 }
 
 .masony-block-size--one-whole {
-    width: 100%;
+    width: $masonry-block-width--one-whole;
 }
+
+.masonry-block-size--two-fourths,
+.masonry-block-size--one-half,
+.masonry-block-size--two-thirds,
+.masonry-block-size--three-fourths,
+.masony-block-size--one-whole {
+    
+    @media only screen and (max-width: $breakpoint-medium) {
+        width: $masonry-block-width--one-whole;   
+    }
+    
+    @media only screen and (max-width: $breakpoint-large) {
+        width: $masonry-block-width--one-whole;   
+    }
+}
+    
 
 //.blocks {
 //    

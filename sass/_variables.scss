@@ -51,8 +51,17 @@ $site-header-width-med: $site-header-width - 100;
 
 
 // Masonry Grid
-$masonry-block-width-default: 22%;
-$masonry-gutter-width:        3%;
+$masonry-gutter-width: 3%;
+
+$masonry-block-width--one-fourth:       25%             - $masonry-gutter-width;
+$masonry-block-width--one-third:        33.3333333333%  - $masonry-gutter-width;
+$masonry-block-width--one-half:         50%             - $masonry-gutter-width;
+$masonry-block-width--two-fourths:      $masonry-block-width--one-half;
+$masonry-block-width--two-thirds:       66.6666666667%  - $masonry-gutter-width;
+$masonry-block-width--three-fourths:    75%             - $masonry-gutter-width;
+$masonry-block-width--one-whole:        100%            - $masonry-gutter-width;
+
+$masonry-block-width-default: $masonry-block-width--one-fourth;
 
 
 //=================//
