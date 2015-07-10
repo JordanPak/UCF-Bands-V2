@@ -21,11 +21,8 @@ require_once( CHILD_DIR . '/inc/page-title.php' );
 add_filter( 'body_class', 'body_class_disable_grid_padding' );
 function body_class_disable_grid_padding( $classes ) {
     
-    //$classes[] = '';
-    
     $post_ID = get_the_ID();
-    $post = get_post();
-
+    
     $disable_grid_padding = get_post_meta( $post_ID, '_ucfbands_blocks_disable_grid_padding', true );
     
     if ($disable_grid_padding) {
