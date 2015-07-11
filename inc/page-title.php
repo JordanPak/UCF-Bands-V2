@@ -86,7 +86,25 @@ function ucfbands_custom_page_title() {
             </h1>
             
             <?php echo $conductor_name; ?>
+            
+            <?php
 
+                $post = get_post();
+
+                $section_menu_args = array(
+                    'menu'            => $post->post_name,
+                    'container'       => 'nav',
+                    'container_class' => 'section-menu',
+//                    'menu_class'      => 'section-menu',
+                    'echo'            => true,
+                    'depth'           => 2,
+//                    'walker'          => ''
+                );
+
+                // Output Menu
+                wp_nav_menu( $section_menu_args );
+            
+            ?>
         </section>
 
 

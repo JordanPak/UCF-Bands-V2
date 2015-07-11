@@ -18,7 +18,7 @@ require_once( CHILD_DIR . '/inc/page-title.php' );
 
 
 // Section Menu
-section_menu_configuration();
+//section_menu_configuration();
 
 
 // Disable Grid Padding

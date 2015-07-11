@@ -1420,6 +1420,9 @@ body {
   color: #FFFFFF; }
 
 .page-title {
+  position: fixed;
+  width: 100%;
+  z-index: 500;
   overflow: auto;
   padding: 40px;
   padding-left: 72px;
@@ -1694,6 +1697,9 @@ nav.section-menu {
   background-color: #221E1F;
   border: none;
   box-shadow: inset 0px -5px #141414;
+  position: absolute;
+  right: 0;
+  bottom: 0;
   box-shadow: inset 1px 0 #000000, inset 7px 0 5px -7px rgba(0, 0, 0, 0.5); }
   nav.section-menu ul li {
     display: inline-block;
