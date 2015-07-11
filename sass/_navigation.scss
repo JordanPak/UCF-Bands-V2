@@ -65,16 +65,16 @@ nav.section-menu {
 	padding: 0;
 //    padding-left: $masonry-gutter-width;//$space-default + 7px;
 //	width: 100%;
-	background-color: $ucf-gray;
+//	background-color: $ucf-gray;
 	border: none;
 //    border-right: 5px solid $ucf-gold;
-	box-shadow: inset 0px -5px #141414;
+//	box-shadow: inset 0px -5px #141414;
     
     position: absolute;
     right: 0;
     bottom: 0;
     
-    @include site-inner-inset-shadow(true);
+//    @include site-inner-inset-shadow(true);
     
     ul {
     
@@ -94,6 +94,7 @@ nav.section-menu {
                 letter-spacing: .03em;
                 font-weight: 700;
                 text-decoration: none;
+                text-shadow: $text-shadow-dark-med;
                 
                 @include transition-ease-in-out();
                 
@@ -115,7 +116,7 @@ nav.section-menu {
             &.featured {
                 
                 a {
-                    background: $ucf-gray-darker;
+//                    background: $ucf-gray-darker;
                 }
             }
             
