@@ -31,17 +31,40 @@ add_action( 'genesis_header', 'genesis_do_nav', 12 );
 
 
 
-// REGISTER MAIN MENU
-//add_filter( 'genesis_after_header', 'register_main_menu' );
-//function register_main_menu() {
-//  echo '<div class="">';
-//	$args = array(
-//			'theme_location'  => 'main-menu',
-//			'container'       => 'nav',
-//			'container_class' => 'wrap',
-//			'menu_class'      => 'menu genesis-nav-menu menu-tertiary',
-//			'depth'           => 1,
-//		);
-//	wp_nav_menu( $args );
-//  echo '</div>';
-//}
+
+
+/**
+ * Section Menu Configuration & Output
+ * 
+ * @author Jordan Pakrosnis
+ */
+function section_menu_configuration() {
+
+
+    add_action( 'genesis_before_content_sidebar_wrap', 'add_section_menu', 11);
+    /**
+     * Add Section Menu
+     * Matches a menu and location to the Section Page slug
+     *
+     * @author Jordan Pakrosnis
+     */
+    function add_section_menu() {
+
+        $post = get_post();
+
+        $section_menu_args = array(
+            'menu'            => $post->post_name,
+            'container'       => 'nav',
+            'container_class' => 'section-menu',
+//            'menu_class'      => 'section-menu',
+            'echo'            => true,
+            'depth'           => 2,
+    //        'walker'          => ''
+        );
+
+        // Output Menu
+        wp_nav_menu( $section_menu_args );
+
+    } // add_section_menu()
+    
+} // section_menu_configuration()
