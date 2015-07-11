@@ -60,14 +60,17 @@
 // SECTION MENU //
 
 nav.section-menu {
-	display: block;
-	margin: 0;
+	display: inline-block;
+    margin: 0;
 	padding: 0;
-	padding-left: $space-default-half - 10px;
-	width: 100%;
+    padding-left: $masonry-gutter-width;//$space-default + 7px;
+//	width: 100%;
 	background-color: $ucf-gray;
 	border: none;
+    border-right: 5px solid $ucf-gold;
 	box-shadow: inset 0px -5px #141414;
+    
+    @include site-inner-inset-shadow(true);
     
     ul {
     
@@ -94,19 +97,28 @@ nav.section-menu {
                     text-decoration: none;
                     box-shadow: inset 0px -5px $ucf-gold;
                     color: $ucf-gold;
-//                    background-color: $ucf-gray-darker;
                 }
-                
+     
             } // a
+        
+            &.current-menu-item {
+                a {
+                    color: $ucf-gold;
+                    box-shadow: inset 0px -5px $ucf-gold;
+                }
+            }
+            
+            &.featured {
+                
+                a {
+                    background: $ucf-gray-darker;
+                }
+            }
             
         } // li
     
     } // ul
 }
-
-
-
-
 
 //nav.sub ul li {
 //	padding: 0px;

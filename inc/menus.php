@@ -31,8 +31,6 @@ add_action( 'genesis_header', 'genesis_do_nav', 12 );
 
 
 
-
-
 /**
  * Section Menu Configuration & Output
  * 
