@@ -14,7 +14,7 @@
     border: none;
 }
 
-@mixin site-inner-inset-shadow($dark-border: false, $dark-fade: false) {
+@mixin site-inner-inset-shadow($dark-border: false, $dark-fade-left: false, $dark-fade-bottom: false) {
     
     @if $dark-border == false {
         box-shadow:
@@ -26,11 +26,18 @@
             inset 7px 0 5px -7px rgba(0,0,0,.5);  
     }
     
-    @if $dark-fade == true {
+    @if $dark-fade-left == true {
         box-shadow:
             inset 1px 0 $black,
             inset 7px 0 5px -7px rgba(0,0,0,.5),
             inset 750px 0 300px -250px rgba(0, 0, 0, 0.55);
+    }
+    
+    @if $dark-fade-bottom == true {
+        box-shadow:
+            inset 1px 0 $black, inset 7px 0 5px -7px rgba(0, 0, 0, 0.5),
+            inset 750px 0 300px -250px rgba(0, 0, 0, 0.55),
+            inset 0 -50px 75px rgba(0,0,0,0.8);
     }
 }
 

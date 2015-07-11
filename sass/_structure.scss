@@ -101,7 +101,7 @@ body {
     background-position: center top;
     border-bottom: 5px solid $ucf-gray-darker;
     
-    @include site-inner-inset-shadow(true, true);
+    @include site-inner-inset-shadow(true, true, true);
     
     &.page-title-lg {
         padding: ($space-default + 32px);// $space-default;

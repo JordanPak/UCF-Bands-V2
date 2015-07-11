@@ -1428,7 +1428,8 @@ body {
   background-position: center top;
   border-bottom: 5px solid #141414;
   box-shadow: inset 1px 0 #000000, inset 7px 0 5px -7px rgba(0, 0, 0, 0.5);
-  box-shadow: inset 1px 0 #000000, inset 7px 0 5px -7px rgba(0, 0, 0, 0.5), inset 750px 0 300px -250px rgba(0, 0, 0, 0.55); }
+  box-shadow: inset 1px 0 #000000, inset 7px 0 5px -7px rgba(0, 0, 0, 0.5), inset 750px 0 300px -250px rgba(0, 0, 0, 0.55);
+  box-shadow: inset 1px 0 #000000, inset 7px 0 5px -7px rgba(0, 0, 0, 0.5), inset 750px 0 300px -250px rgba(0, 0, 0, 0.55), inset 0 -50px 75px rgba(0, 0, 0, 0.8); }
   .page-title.page-title-lg {
     padding: 72px; }
   .page-title.remove-background-fade {
@@ -1688,13 +1689,10 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
     text-shadow: 0 0 3px #EFBC00, 1px 1px 1px #EFBC00, 0 0 3px #EFBC00, 2px 2px 1px #EFBC00; }
 
 nav.section-menu {
-  display: inline-block;
   margin: 0;
   padding: 0;
-  padding-left: 3%;
   background-color: #221E1F;
   border: none;
-  border-right: 5px solid #FFCA06;
   box-shadow: inset 0px -5px #141414;
   box-shadow: inset 1px 0 #000000, inset 7px 0 5px -7px rgba(0, 0, 0, 0.5); }
   nav.section-menu ul li {
