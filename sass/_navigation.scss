@@ -2,6 +2,9 @@
 //  UCFBands V2 | Navigation  //
 //============================//
 
+
+// PRIMARY MENU //
+
 .nav-primary {
     background: none;
 }
@@ -49,8 +52,93 @@
         }
         
     } // .menu-item
-    
-
-    
 
 } // #menu-main-menu
+
+
+
+// SECTION MENU //
+
+nav.section-menu {
+	display: block;
+	margin: 0;
+	padding: 0;
+	padding-left: $space-default-half - 10px;
+	width: 100%;
+	background-color: $ucf-gray;
+	border: none;
+	box-shadow: inset 0px -5px #141414;
+    
+    ul {
+    
+        li {
+            display: inline-block;
+            margin: 0;
+            padding: 0;
+            
+            a {
+                display: inline-block;
+                margin: 0;
+                padding: 15px;
+                padding-top: 9px;
+                padding-bottom: 13px;
+                color: $white;
+                font-size: 1.05em;
+                letter-spacing: .03em;
+                font-weight: 700;
+                text-decoration: none;
+                
+                @include transition-ease-in-out();
+                
+                &:hover {
+                    text-decoration: none;
+                    box-shadow: inset 0px -5px $ucf-gold;
+                    color: $ucf-gold;
+//                    background-color: $ucf-gray-darker;
+                }
+                
+            } // a
+            
+        } // li
+    
+    } // ul
+}
+
+
+
+
+
+//nav.sub ul li {
+//	padding: 0px;
+//	margin: 0px;
+//	display: inline-block;
+//}
+//
+//nav.sub ul li a {
+//	margin: 0px;
+//	display: block;
+//	padding: 15px;
+//	padding-top: 9px;
+//	padding-bottom: 13px; /* RECOLOR */
+//	color: #fff;
+//	font-weight: bold;
+//	text-decoration: none;
+//    -webkit-transition: 250ms ease-in-out;
+//    -moz-transition: 250ms ease-in-out;
+//    -o-transition: 250ms ease-in-out;
+//	transition: 250ms ease-in-out;
+//}
+//
+//nav.sub ul li a:hover {
+//	text-decoration: none;
+//	/*border-bottom: 5px solid #ffca06; /* RECOLOR */
+//	box-shadow: inset 0px -5px #ffca06;
+//	color: #ffca06;
+//}
+//
+//nav.sub ul li.current-menu-item a {
+//	text-decoration: none;
+//	/*border-bottom: 5px solid #ffca06; /* RECOLOR */
+//	box-shadow: inset 0px -5px #ffca06;
+//	color: #ffca06;
+//}

@@ -1687,4 +1687,34 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
     background-color: #FFCA06;
     text-shadow: 0 0 3px #EFBC00, 1px 1px 1px #EFBC00, 0 0 3px #EFBC00, 2px 2px 1px #EFBC00; }
 
+nav.section-menu {
+  display: block;
+  margin: 0;
+  padding: 0;
+  padding-left: 10px;
+  width: 100%;
+  background-color: #221E1F;
+  border: none;
+  box-shadow: inset 0px -5px #141414; }
+  nav.section-menu ul li {
+    display: inline-block;
+    margin: 0;
+    padding: 0; }
+    nav.section-menu ul li a {
+      display: inline-block;
+      margin: 0;
+      padding: 15px;
+      padding-top: 9px;
+      padding-bottom: 13px;
+      color: #FFFFFF;
+      font-size: 1.05em;
+      letter-spacing: .03em;
+      font-weight: 700;
+      text-decoration: none;
+      transition: all ease-in-out 200ms; }
+      nav.section-menu ul li a:hover {
+        text-decoration: none;
+        box-shadow: inset 0px -5px #FFCA06;
+        color: #FFCA06; }
+
 /*# sourceMappingURL=style.css.map */
