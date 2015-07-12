@@ -14,26 +14,35 @@ add_action( 'genesis_before_content_sidebar_wrap', 'ucfbands_custom_page_title')
  */
 function ucfbands_custom_page_title() {
 
-    // CHILD PAGE CHECKER
+    
+    // SET PAGE TITLE VARS //
     
     // Get array of parent IDs
     $page_parents = get_post_ancestors( $post );
     
-    // If the first spot is null, there's no parents, so set $post_ID
-    // to the current page's id.
-    if( $page_parents[0] == '' ) {
-        $post_ID = get_the_ID();
+    // If the first spot is not null, there's a parent.
+    if( $page_parents[0] != '' ) {
+        $page_has_parent = true;
     }
     
-    // If the first spot isn't null, get the parent's info
-    else {
+    // SET VARS: Page has no parent (dashboard?)
+    if( $page_has_parent == false ) {
         
-        $page_is_child = true;
-        
-        // Set Post ID
-        $post_ID = $page_parents[0];
-        
+        // Post ID
+        $post_ID = get_the_ID();
+        $page_title = get_the_title( $post_ID );
+        $post = get_post( $post_ID );
+        $page_slug = $post->post_name;
     }
+    
+    // SET VARS: Page is child
+    else {
+        $post_ID = $page_parents[0];
+        $page_title = get_the_title( $post_ID );
+        $parent_post = get_post( $post_ID );
+        $page_slug = $parent_post->post_name;
+    }
+    
     
     
     // Section Classes
@@ -101,7 +110,7 @@ function ucfbands_custom_page_title() {
                 <h1 class="entry-title" itemprop="headline">
                     <?php
                         echo $icon_before;
-                        echo get_the_title( $page_parents[0] );
+                        echo $page_title;
                         echo $icon_after;
                     ?>
                 </h1>
@@ -118,7 +127,7 @@ function ucfbands_custom_page_title() {
                 $post = get_post();
 
                 $section_menu_args = array(
-                    'menu'            => $post->post_name,
+                    'menu'            => $page_slug,
                     'container'       => 'nav',
                     'container_class' => 'section-menu',
                     'menu_class'      => 'menu clearfix',
