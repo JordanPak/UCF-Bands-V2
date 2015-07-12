@@ -101,7 +101,7 @@ function ucfbands_custom_page_title() {
                     'menu'            => $post->post_name,
                     'container'       => 'nav',
                     'container_class' => 'section-menu',
-//                    'menu_class'      => 'section-menu',
+                    'menu_class'      => 'menu clearfix',
                     'echo'            => true,
                     'depth'           => 2,
 //                    'walker'          => ''
