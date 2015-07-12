@@ -94,7 +94,8 @@ function ucfbands_custom_page_title() {
             
             
             <?php
-
+                
+                // OUTPUT SECTION MENU
                 $post = get_post();
 
                 $section_menu_args = array(
