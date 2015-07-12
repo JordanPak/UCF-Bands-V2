@@ -60,21 +60,12 @@
 // SECTION MENU //
 
 nav.section-menu {
-//	display: inline-block;
-    margin: 0;
-	padding: 0;
-//    padding-left: $masonry-gutter-width;//$space-default + 7px;
-//	width: 100%;
-//	background-color: $ucf-gray;
-	border: none;
-//    border-right: 5px solid $ucf-gold;
-//	box-shadow: inset 0px -5px #141414;
-    
     position: absolute;
     right: 0;
-    bottom: 0;
-    
-//    @include site-inner-inset-shadow(true);
+    bottom: -5px;
+    margin: 0;
+	padding: 0;
+	border: none;    
     
     ul {
     
