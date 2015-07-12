@@ -99,9 +99,13 @@ body {
     z-index: 500;
     
     width: 100%;
-    padding-left: $site-header-width;
+    padding-left: $site-header-width + 4px;
     
     @include transition-ease-in-out(400ms);
+    
+    @media only screen and (max-width: $breakpoint-medium) {
+        padding-left: $site-header-width-med + 4px;   
+    }
 }
 
 .page-title {
@@ -113,7 +117,7 @@ body {
     background-position: center top;
     border-bottom: 5px solid $ucf-gray-darker;
     
-    height: 230px;
+    //height: 230px;
     
     @include site-inner-inset-shadow(true, true, true);
     @include transition-ease-in-out(400ms);
