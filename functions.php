@@ -56,6 +56,15 @@ function ucfbands_global_styles() {
 } // ucfbands_global_styles()
 
 
+// ENQUEUE GLOBAL SCRIPTS
+add_action( 'wp_enqueue_scripts', 'ucfbands_global_scripts' );
+function ucfbands_global_scripts() {
+    
+    // Header Shrink
+    wp_enqueue_script( 'header-shrink', get_stylesheet_directory_uri() . '/inc/js/header-shrink.js', array( 'jquery' ), CHILD_THEME_VERSION );
+    
+} // ucfbands_global_scripts()
+
 
 //-----------------------//
 //  EXTRA GENESIS STUFF  //

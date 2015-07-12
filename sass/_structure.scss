@@ -100,6 +100,8 @@ body {
     
     width: 100%;
     padding-left: $site-header-width;
+    
+    @include transition-ease-in-out(400ms);
 }
 
 .page-title {
@@ -114,6 +116,7 @@ body {
     height: 230px;
     
     @include site-inner-inset-shadow(true, true, true);
+    @include transition-ease-in-out(400ms);
     
     &.page-title-lg {
         padding: ($space-default + 32px);// $space-default;
@@ -131,6 +134,8 @@ body {
         text-shadow: $text-shadow-dark-lg;
         font-size: 2.75em;
         cursor: default;
+        
+        @include transition-ease-in-out(400ms);
     }
     
     .conductor-name {
@@ -140,6 +145,22 @@ body {
         color: $white;
         text-shadow: $text-shadow-dark-med;
         cursor: default;
+        
+        @include transition-ease-in-out(400ms);
+    }
+    
+    &.shrink {
+        padding: $space-default-half;
+        padding-left: $space-default;
+        height: auto;
+        
+        h1.entry-title {
+            font-size: 1.5em;   
+        }
+        
+        .conductor-name {
+            display: none;
+        }
     }
    
 }
