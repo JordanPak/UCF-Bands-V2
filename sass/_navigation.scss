@@ -65,14 +65,35 @@ nav.section-menu {
     bottom: -5px;
     margin: 0;
 	padding: 0;
-	border: none;    
+	border: none;
+    
+    @media only screen and (max-width: $breakpoint-medium) {
+        position: static;
+        margin-bottom: -5px;
+    }
     
     ul {
+        height: auto;
+        overflow: visible;
+        
+        @media only screen and (max-width: $breakpoint-medium) {
+            background: $ucf-gray;
+            border-top: 4px solid $ucf-gray-darker;
+        }
     
         li {
             display: inline-block;
+            float: left;
             margin: 0;
             padding: 0;
+            
+            @media only screen and (max-width: $breakpoint-medium) {
+                width: 25%;
+            }
+            
+            @media only screen and (max-width: $breakpoint-small) {
+                width: 50%;   
+            }
             
             a {
                 display: inline-block;
@@ -94,6 +115,13 @@ nav.section-menu {
                     box-shadow: inset 0px -5px $ucf-gold;
                     color: $ucf-gold;
                 }
+                
+                @media only screen and (max-width: $breakpoint-medium) {
+                    width: 100%;
+                    text-align: center;
+                    text-shadow: none;
+                    box-shadow: inset 0 -5px 0 $ucf-gray-darker;
+                }
      
             } // a
         
@@ -101,13 +129,6 @@ nav.section-menu {
                 a {
                     color: $ucf-gold;
                     box-shadow: inset 0px -5px $ucf-gold;
-                }
-            }
-            
-            &.featured {
-                
-                a {
-//                    background: $ucf-gray-darker;
                 }
             }
             

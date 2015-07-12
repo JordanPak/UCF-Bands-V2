@@ -74,29 +74,25 @@ function ucfbands_custom_page_title() {
         
         ?>
         
-        <div class="title-wrap">
         <section class="<?php echo $page_title_section_classes; ?>" style="<?php echo $page_featured_image; ?>">
             
-            <h1 class="entry-title" itemprop="headline">
-                <?php
-                    echo $icon_before;
-                    echo the_title();
-                    echo $icon_after;
-                ?>
-            </h1>
             
-            <?php echo $conductor_name; ?>
-            
-<!--
-            <nav class="section-menu">
-                <ul class="section-menu">
+            <div class="page-title-inner">
                 
-                    <li><a href="#"><i class="fa fa-bars"></i> Band Menu</a></li>
-                    
-                </ul>
-            </nav>
+                <h1 class="entry-title" itemprop="headline">
+                    <?php
+                        echo $icon_before;
+                        echo the_title();
+                        echo $icon_after;
+                    ?>
+                </h1>
+
+
+                <?php echo $conductor_name; ?>
+                
+            </div>
             
--->
+            
             <?php
 
                 $post = get_post();
@@ -115,8 +111,8 @@ function ucfbands_custom_page_title() {
                 wp_nav_menu( $section_menu_args );
             
             ?>
+            
         </section>
-        </div>
 
         <?php
         
