@@ -14,8 +14,27 @@ add_action( 'genesis_before_content_sidebar_wrap', 'ucfbands_custom_page_title')
  */
 function ucfbands_custom_page_title() {
 
-    // Post ID
-    $post_ID = get_the_ID();
+    // CHILD PAGE CHECKER
+    
+    // Get array of parent IDs
+    $page_parents = get_post_ancestors( $post );
+    
+    // If the first spot is null, there's no parents, so set $post_ID
+    // to the current page's id.
+    if( $page_parents[0] == '' ) {
+        $post_ID = get_the_ID();
+    }
+    
+    // If the first spot isn't null, get the parent's info
+    else {
+        
+        $page_is_child = true;
+        
+        // Set Post ID
+        $post_ID = $page_parents[0];
+        
+    }
+    
     
     // Section Classes
     $page_title_section_classes = 'page-title';
@@ -82,7 +101,7 @@ function ucfbands_custom_page_title() {
                 <h1 class="entry-title" itemprop="headline">
                     <?php
                         echo $icon_before;
-                        echo the_title();
+                        echo get_the_title( $page_parents[0] );
                         echo $icon_after;
                     ?>
                 </h1>

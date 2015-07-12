@@ -41,6 +41,19 @@ define( 'CHILD_THEME_VERSION', '2.0.0' );
 //    echo '<h2 style="color: red;">' . $post->post_name . '</h2>';
 //}
 
+add_action( 'genesis_after_content', 'show_page_parent');
+function show_page_parent() {
+    $page_parents = get_post_ancestors( $post );
+    
+    $post_ID = get_the_ID( $page_parents[0] );
+    
+    if( $page_parents[0] == '' ){
+        echo '<h2>NO PARENTS</h2>';
+    } else {
+//        echo '<h2>' . $page_parents[0] . '</h2>';
+//        echo '<h2>' . $post_ID . '</h2>';
+    }
+}
 
 
 // ENQUEUE GLOBAL STYLES
