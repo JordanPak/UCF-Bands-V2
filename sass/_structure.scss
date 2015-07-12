@@ -99,7 +99,8 @@ body {
     padding-left: $space-default + 32px;
     background-color: $ucf-gray;
     background-repeat: no-repeat;
-    background-position: center top;
+    background-position: top right;
+    background-attachment: fixed;
     border-bottom: 5px solid $ucf-gray-darker;
     
     @include site-inner-inset-shadow(true, true, true);

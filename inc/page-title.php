@@ -87,6 +87,16 @@ function ucfbands_custom_page_title() {
             
             <?php echo $conductor_name; ?>
             
+<!--
+            <nav class="section-menu">
+                <ul class="section-menu">
+                
+                    <li><a href="#"><i class="fa fa-bars"></i> Band Menu</a></li>
+                    
+                </ul>
+            </nav>
+            
+-->
             <?php
 
                 $post = get_post();
