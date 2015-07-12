@@ -74,21 +74,46 @@ function ucfbands_custom_page_title() {
         
         ?>
         
-        
         <section class="<?php echo $page_title_section_classes; ?>" style="<?php echo $page_featured_image; ?>">
             
-            <h1 class="entry-title" itemprop="headline">
-                <?php
-                    echo $icon_before;
-                    echo the_title();
-                    echo $icon_after;
-                ?>
-            </h1>
             
-            <?php echo $conductor_name; ?>
+            <div class="page-title-inner">
+                
+                <h1 class="entry-title" itemprop="headline">
+                    <?php
+                        echo $icon_before;
+                        echo the_title();
+                        echo $icon_after;
+                    ?>
+                </h1>
 
+
+                <?php echo $conductor_name; ?>
+                
+            </div>
+            
+            
+            <?php
+                
+                // OUTPUT SECTION MENU
+                $post = get_post();
+
+                $section_menu_args = array(
+                    'menu'            => $post->post_name,
+                    'container'       => 'nav',
+                    'container_class' => 'section-menu',
+                    'menu_class'      => 'menu clearfix',
+                    'echo'            => true,
+                    'depth'           => 2,
+//                    'walker'          => ''
+                );
+
+                // Output Menu
+                wp_nav_menu( $section_menu_args );
+            
+            ?>
+            
         </section>
-
 
         <?php
         

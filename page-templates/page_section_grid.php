@@ -17,6 +17,10 @@ remove_action( 'genesis_loop', 'genesis_do_loop' );
 require_once( CHILD_DIR . '/inc/page-title.php' );
 
 
+// Section Menu
+//section_menu_configuration();
+
+
 // Disable Grid Padding
 add_filter( 'body_class', 'body_class_disable_grid_padding' );
 function body_class_disable_grid_padding( $classes ) {
