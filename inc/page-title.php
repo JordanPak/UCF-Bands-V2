@@ -37,7 +37,10 @@ function ucfbands_custom_page_title() {
     
     // SET VARS: Page is child
     else {
-        $post_ID = $page_parents[0];
+        
+        // End returns the last element (greatest parent) to add compatibility for
+        // Child pages of a child page.
+        $post_ID = end( $page_parents );
         $page_title = get_the_title( $post_ID );
         $parent_post = get_post( $post_ID );
         $page_slug = $parent_post->post_name;
