@@ -79,10 +79,29 @@ add_theme_support( 'genesis-responsive-viewport' );
 // Remove Edit Link
 add_filter( 'edit_post_link', '__return_false' );
 
+//* Unregister secondary sidebar
+unregister_sidebar( 'sidebar-alt' );
+
 // Remove Genesis Layout Settings
 remove_theme_support( 'genesis-inpost-layouts' );
 
-
+//// Unregister content/sidebar layout setting
+//genesis_unregister_layout( 'content-sidebar' );
+ 
+// Unregister sidebar/content layout setting
+genesis_unregister_layout( 'sidebar-content' );
+ 
+// Unregister content/sidebar/sidebar layout setting
+genesis_unregister_layout( 'content-sidebar-sidebar' );
+ 
+// Unregister sidebar/sidebar/content layout setting
+genesis_unregister_layout( 'sidebar-sidebar-content' );
+ 
+// Unregister sidebar/content/sidebar layout setting
+genesis_unregister_layout( 'sidebar-content-sidebar' );
+ 
+// Unregister full-width content layout setting
+genesis_unregister_layout( 'full-width-content' );
 
     
 //-----------------//
