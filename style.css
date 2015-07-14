@@ -1477,7 +1477,8 @@ body {
   background-repeat: no-repeat;
   background-position: -100px 25px; }
 
-body.page-template-page_section_grid .content-sidebar-wrap {
+body.page-template-page_section_grid .content-sidebar-wrap,
+body.page-template-page_grid .content-sidebar-wrap {
   padding: 3%;
   padding-right: 0; }
 
