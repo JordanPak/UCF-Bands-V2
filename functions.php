@@ -79,8 +79,12 @@ add_theme_support( 'genesis-responsive-viewport' );
 // Remove Edit Link
 add_filter( 'edit_post_link', '__return_false' );
 
+// Remove Genesis Layout Settings
+remove_theme_support( 'genesis-inpost-layouts' );
 
 
+
+    
 //-----------------//
 //  MORE UCFBANDS  //
 //-----------------//
