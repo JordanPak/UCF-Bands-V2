@@ -20,7 +20,7 @@ function ucfbands_page_settings_metabox() {
         'title'         => __( 'Page Settings', 'ucfbands-page-settings' ),
         'object_types'  => array( 'page' ),
         'context'       => 'normal',
-        'priority'      => 'high',
+        'priority'      => 'core',
     ) );
 
     $cmb->add_field( array(

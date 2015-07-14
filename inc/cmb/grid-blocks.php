@@ -15,7 +15,7 @@ function ucfbands_blocks_metabox() {
             'key' => 'page-template', 
             'value' => array('page-templates/page_section_grid.php', 'page-templates/page_grid.php'),
         ),
-        'priority'     => 'high',
+        'priority'     => 'core',
 	) );
 
     
