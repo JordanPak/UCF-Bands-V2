@@ -58,7 +58,7 @@ function ucfbands_custom_page_title() {
     
     
     // GET TITLE SETTINGS META
-    $remove_page_title  = get_post_meta( $post_ID, $meta_id_prefix . 'remove_page_title', true );
+    $remove_page_title  = get_post_meta( get_the_ID(), $meta_id_prefix . 'remove_page_title', true );
     $icon               = get_post_meta( $post_ID, $meta_id_prefix . 'icon', true );
     $icon_position      = get_post_meta( $post_ID, $meta_id_prefix . 'icon_position', true );
     $remove_page_title_background_fade = get_post_meta( $post_ID, $meta_id_prefix . 'remove_page_title_background_fade', true );
@@ -101,7 +101,29 @@ function ucfbands_custom_page_title() {
     }
     
     
-    // DISPLAY PAGE TITLE
+    // CONFIGURE SECTION MENU
+    $current_template = basename( get_page_template() );
+    
+    if ( ($current_template == 'page_section.php') || ($current_template == 'page_section_grid.php') ) {
+        $display_section_menu = true;
+    }
+        
+    if ($display_section_menu == true) {
+    
+        $section_menu_args = array(
+            'menu'            => $page_slug,
+            'container'       => 'nav',
+            'container_class' => 'section-menu',
+            'menu_class'      => 'menu genesis-nav-menu clearfix',
+            'echo'            => true,
+            'depth'           => 2,
+    //                    'walker'          => ''
+        );
+        
+    } // if
+    
+    
+    // DISPLAY PAGE TITLE //
     if ($remove_page_title == false) {
         
         ?>
@@ -119,32 +141,20 @@ function ucfbands_custom_page_title() {
                     ?>
                 </h1>
 
-
                 <?php echo $conductor_name; ?>
                 
             </div>
             
-            
-            <?php
-                
-                // OUTPUT SECTION MENU
-                $post = get_post();
 
-                $section_menu_args = array(
-                    'menu'            => $page_slug,
-                    'container'       => 'nav',
-                    'container_class' => 'section-menu',
-                    'menu_class'      => 'menu genesis-nav-menu clearfix',
-                    'echo'            => true,
-                    'depth'           => 2,
-//                    'walker'          => ''
-                );
-
-                // Output Menu
-                wp_nav_menu( $section_menu_args );
-            
+            <?php 
+              
+            // OUTPUT SECTION MENU
+            if ($display_section_menu == true) {
+                wp_nav_menu( $section_menu_args ); 
+            }
+        
             ?>
-            
+    
         </section>
 
         <?php

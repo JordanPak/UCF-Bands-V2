@@ -27,7 +27,7 @@ function body_class_disable_grid_padding( $classes ) {
     
     $post_ID = get_the_ID();
     
-    $disable_grid_padding = get_post_meta( $post_ID, '_ucfbands_blocks_disable_grid_padding', true );
+    $disable_grid_padding = get_post_meta( $post_ID, '_ucfbands_page_settings_disable_grid_padding', true );
     
     if ($disable_grid_padding) {
         $classes[] = 'content-sidebar-wrap-disable-padding';   
