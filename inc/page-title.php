@@ -58,7 +58,7 @@ function ucfbands_custom_page_title() {
     
     
     // GET TITLE SETTINGS META
-    $remove_page_title  = get_post_meta( $post_ID, $meta_id_prefix . 'remove_page_title', true );
+    $remove_page_title  = get_post_meta( get_the_ID(), $meta_id_prefix . 'remove_page_title', true );
     $icon               = get_post_meta( $post_ID, $meta_id_prefix . 'icon', true );
     $icon_position      = get_post_meta( $post_ID, $meta_id_prefix . 'icon_position', true );
     $remove_page_title_background_fade = get_post_meta( $post_ID, $meta_id_prefix . 'remove_page_title_background_fade', true );
