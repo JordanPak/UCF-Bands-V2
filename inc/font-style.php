@@ -16,7 +16,16 @@ add_filter( 'body_class', 'body_class_font_style' );
  */
 function body_class_font_style( $classes ) {
     
-    $post_ID = get_the_ID();
+    // Get Parent meta if child
+    $page_parents = get_post_ancestors( $post );
+    
+    if ($page_parents[0] != '') {
+        $post_ID = end( $page_parents );
+    }
+    
+    else {
+        $post_ID = get_the_ID();   
+    }
     
     $font_style = get_post_meta( $post_ID, '_ucfbands_page_settings_font_style', true );
     

@@ -129,6 +129,40 @@ nav.section-menu {
                 }
             }
             
+            .sub-menu {
+                width: 150px;
+                
+                @include block();
+                
+                li {
+                    border-bottom: 1px solid $ucf-gray-light;
+                    
+                    a {
+                        display: inline-block;
+                        width: 148px;
+                        padding: $space-default-half - 6px;
+                        text-shadow: none;
+                        color: darken($ucf-gray-med, 20);
+                        box-shadow: none;
+                        border: 0;
+
+                        &:hover {
+                            background: $ucf-gray-light;
+                            color: $ucf-gray;
+                        }
+                    } // a
+                    
+                    &.current-menu-item {
+                        
+                        a:hover {
+                            color: $ucf-gray;
+                        }
+                    }
+                    
+                } // li
+                
+            } // .sub-menu
+            
         } // li
     
     } // ul

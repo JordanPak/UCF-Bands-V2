@@ -14,8 +14,40 @@ add_action( 'genesis_before_content_sidebar_wrap', 'ucfbands_custom_page_title')
  */
 function ucfbands_custom_page_title() {
 
-    // Post ID
-    $post_ID = get_the_ID();
+    
+    // SET PAGE TITLE VARS //
+    
+    // Get array of parent IDs
+    $page_parents = get_post_ancestors( $post );
+    
+    // If the first spot is not null, there's a parent.
+    if( $page_parents[0] != '' ) {
+        $page_has_parent = true;
+    }
+    
+    // SET VARS: Page has no parent (dashboard?)
+    if( $page_has_parent == false ) {
+        
+        // Post ID
+        $post_ID = get_the_ID();
+        $page_title = get_the_title( $post_ID );
+        $post = get_post( $post_ID );
+        $page_slug = $post->post_name;
+    }
+    
+    // SET VARS: Page is child
+    else {
+        
+        // End returns the last element (greatest parent) to add compatibility for
+        // Child pages of a child page.
+        $post_ID = end( $page_parents );
+        
+        $page_title = get_the_title( $post_ID );
+        $parent_post = get_post( $post_ID );
+        $page_slug = $parent_post->post_name;
+    }
+    
+    
     
     // Section Classes
     $page_title_section_classes = 'page-title';
@@ -82,7 +114,7 @@ function ucfbands_custom_page_title() {
                 <h1 class="entry-title" itemprop="headline">
                     <?php
                         echo $icon_before;
-                        echo the_title();
+                        echo $page_title;
                         echo $icon_after;
                     ?>
                 </h1>
@@ -99,10 +131,10 @@ function ucfbands_custom_page_title() {
                 $post = get_post();
 
                 $section_menu_args = array(
-                    'menu'            => $post->post_name,
+                    'menu'            => $page_slug,
                     'container'       => 'nav',
                     'container_class' => 'section-menu',
-                    'menu_class'      => 'menu clearfix',
+                    'menu_class'      => 'menu genesis-nav-menu clearfix',
                     'echo'            => true,
                     'depth'           => 2,
 //                    'walker'          => ''

@@ -77,6 +77,7 @@ function ucfbands_page_settings_metabox() {
             'default' => __( 'Default (Serif)', 'cmb' ),
             'athletic'   => __( 'Athletic', 'cmb' ),
         ),
+        'show_on_cb' => 'cmb_exclude_section_child_page',
     ) );
 
 }
