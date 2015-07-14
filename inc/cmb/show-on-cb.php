@@ -83,8 +83,6 @@ function cmb_exclude_section_child_page( $field ) {
         
     } // if()
     
-    else {
-        return 1;   
-    }
+    return 1;   
     
 } // cmb_exclude_section_child_page()
