@@ -20,7 +20,7 @@ function body_class_font_style( $classes ) {
     $page_parents = get_post_ancestors( $post );
     
     if ($page_parents[0] != '') {
-        $post_ID = $page_parents[0];
+        $post_ID = end( $page_parents );
     }
     
     else {
