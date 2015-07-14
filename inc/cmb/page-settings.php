@@ -20,7 +20,7 @@ function ucfbands_page_settings_metabox() {
         'title'         => __( 'Page Settings', 'ucfbands-page-settings' ),
         'object_types'  => array( 'page' ),
         'context'       => 'normal',
-        'priority'      => 'high',
+        'priority'      => 'core',
     ) );
 
     $cmb->add_field( array(
@@ -52,7 +52,7 @@ function ucfbands_page_settings_metabox() {
     
     $cmb->add_field( array(
         'name' => 'Remove Page Title Background Fade',
-        'desc' => 'Check box to remove the dark shadow on the left side of the page title.',
+        'desc' => '<br>Check box to remove the dark shadow on the left side of the page title.<br><b>If the current page is a child, this option is inherited by the parent page.</b>',
         'id'   => $prefix . 'remove_page_title_background_fade',
         'type' => 'checkbox',
         'show_on_cb' => 'cmb_exclude_default_page',
@@ -60,7 +60,7 @@ function ucfbands_page_settings_metabox() {
     
     $cmb->add_field( array(
         'name'    => 'Conductor Name',
-        'desc'    => '<b>Optional</b>. Name of conductor.',
+        'desc'    => '<br><b>Optional</b>. Name of conductor.<br><b>If the current page is a child, this option is inherited by the parent page.</b>',
         'default' => '',
         'id'      => $prefix . 'conductor_name',
         'type'    => 'text_medium',
@@ -69,6 +69,7 @@ function ucfbands_page_settings_metabox() {
     
     $cmb->add_field( array(
         'name'             => 'Font Style',
+        'desc'             => '<b>If the current page is a child, this option is inherited by the parent page.</b>',
         'id'               => $prefix . 'font_style',
         'type'             => 'radio',
         'show_option_none' => false,
