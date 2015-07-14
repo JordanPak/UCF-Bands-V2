@@ -101,7 +101,29 @@ function ucfbands_custom_page_title() {
     }
     
     
-    // DISPLAY PAGE TITLE
+    // CONFIGURE SECTION MENU
+    $current_template = basename( get_page_template() );
+    
+    if ( ($current_template == 'page_section.php') || ($current_template == 'page_section_grid.php') ) {
+        $display_section_menu = true;
+    }
+        
+    if ($display_section_menu == true) {
+    
+        $section_menu_args = array(
+            'menu'            => $page_slug,
+            'container'       => 'nav',
+            'container_class' => 'section-menu',
+            'menu_class'      => 'menu genesis-nav-menu clearfix',
+            'echo'            => true,
+            'depth'           => 2,
+    //                    'walker'          => ''
+        );
+        
+    } // if
+    
+    
+    // DISPLAY PAGE TITLE //
     if ($remove_page_title == false) {
         
         ?>
@@ -124,27 +146,16 @@ function ucfbands_custom_page_title() {
                 
             </div>
             
-            
-            <?php
-                
-                // OUTPUT SECTION MENU
-                $post = get_post();
 
-                $section_menu_args = array(
-                    'menu'            => $page_slug,
-                    'container'       => 'nav',
-                    'container_class' => 'section-menu',
-                    'menu_class'      => 'menu genesis-nav-menu clearfix',
-                    'echo'            => true,
-                    'depth'           => 2,
-//                    'walker'          => ''
-                );
-
-                // Output Menu
-                wp_nav_menu( $section_menu_args );
-            
+            <?php 
+              
+            // OUTPUT SECTION MENU
+            if ($display_section_menu == true) {
+                wp_nav_menu( $section_menu_args ); 
+            }
+        
             ?>
-            
+    
         </section>
 
         <?php
