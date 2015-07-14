@@ -57,4 +57,34 @@ function cmb_exclude_default_page( $field ) {
         
     } // switch
     
-}
+} // cmb_exclude_default_page()
+
+
+/**
+ * Exclude setting on section child page
+ * @param  object $field Current field object
+ * @return bool
+ * @author Jordan Pakrosnis
+ */
+function cmb_exclude_section_child_page( $field ) {
+    
+    // Get Current Template
+    $current_template = basename( get_page_template() );
+    
+    // If it's a section page or section grid, check if it's a child
+    // Exclude on these templates
+    if( ($current_template == 'page_section.php') || ($current_template == 'page_section_grid.php') ) {
+        
+        $page_parents = get_post_ancestors( $post );
+        
+        if( $page_parents[0] != '' ) {
+            return 0;
+        }
+        
+    } // if()
+    
+    else {
+        return 1;   
+    }
+    
+} // cmb_exclude_section_child_page()
