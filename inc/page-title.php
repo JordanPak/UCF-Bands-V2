@@ -141,7 +141,6 @@ function ucfbands_custom_page_title() {
                     ?>
                 </h1>
 
-
                 <?php echo $conductor_name; ?>
                 
             </div>

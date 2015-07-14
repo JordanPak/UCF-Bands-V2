@@ -80,5 +80,13 @@ function ucfbands_page_settings_metabox() {
         'show_on_cb' => 'cmb_exclude_section_child_page',
     ) );
 
+    $cmb->add_field( array(
+        'name' => 'Disable Grid Area Padding',
+        'desc' => 'Check this to disable the spacing around the grid',
+        'id'   => $prefix . 'disable_grid_padding',
+        'type' => 'checkbox',
+        'show_on_cb' => 'cmb_exclude_default_page',
+    ) );    
+    
 }
 add_action( 'cmb2_init', 'ucfbands_page_settings_metabox' );

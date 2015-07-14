@@ -19,13 +19,6 @@ function ucfbands_blocks_metabox() {
 	) );
 
     
-    $cmb_group->add_field( array(
-        'name' => 'Disable Grid Area Padding',
-        'desc' => 'Check this to disable the spacing around the grid',
-        'id'   => $prefix . 'disable_grid_padding',
-        'type' => 'checkbox'
-    ) );
-    
 	$group_field_id = $cmb_group->add_field( array(
 		'id'          => $prefix . 'meta',
 		'type'        => 'group',
