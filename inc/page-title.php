@@ -133,7 +133,7 @@ function ucfbands_custom_page_title() {
                     'menu'            => $page_slug,
                     'container'       => 'nav',
                     'container_class' => 'section-menu',
-                    'menu_class'      => 'menu clearfix',
+                    'menu_class'      => 'menu genesis-nav-menu clearfix',
                     'echo'            => true,
                     'depth'           => 2,
 //                    'walker'          => ''
