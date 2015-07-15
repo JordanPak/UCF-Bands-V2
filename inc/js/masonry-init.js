@@ -22,9 +22,10 @@
 jQuery(function($) {
 //    var $container = $('section.masonry-blocks');
  
-    jQuery('.masonry-blocks').masonry({
+    jQuery('.masonry-grid').masonry({
         itemSelector: '.masonry-block',
-        columnWidth: '.masonry-blocks-sizer',
+        columnWidth: '.masonry-grid-sizer',
+        gutter: '.masonry-gutter-sizer',
         percentPosition: true,
     });
 });

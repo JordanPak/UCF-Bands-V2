@@ -69,8 +69,8 @@ function show_blocks() {
     
     
     // Masonry Grid Container
-    echo '<section class="masonry-blocks">';
-        echo '<div class="masonry-blocks-sizer"></div>';
+    echo '<section class="masonry-grid">';
+        echo '<div class="masonry-grid-sizer"></div>';
         echo '<div class="masonry-gutter-sizer"></div>';
     
     
