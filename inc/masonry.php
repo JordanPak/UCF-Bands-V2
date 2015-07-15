@@ -94,7 +94,11 @@ function show_masonry_grid() {
         <div class="<?php echo $block_classes; ?>">
 
             <h2><?php echo $block_title . $block_icon; ?></h2>
-            <?php echo '<h4 style="color:red;">' . $block_width . '</h4>'; ?>
+            
+            
+            <?php // FOR TESTING: Show Block Width ?>
+            <?php //echo '<h4 style="color:red;">' . $block_width . '</h4>'; ?>
+            
             
             <?php echo $block_content; ?>
         
