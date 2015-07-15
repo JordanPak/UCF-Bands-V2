@@ -22,10 +22,10 @@
 jQuery(function($) {
 //    var $container = $('section.masonry-blocks');
  
-    jQuery('.masonry-grid').masonry({
+    jQuery('.masonry-6col-grid').masonry({
         itemSelector: '.masonry-block',
-        columnWidth: '.masonry-grid-sizer',
-        gutter: '.masonry-gutter-sizer',
+        columnWidth: '.masonry-6col-grid-sizer',
+        gutter: '.masonry-6col-gutter-sizer',
         percentPosition: true,
     });
 });
