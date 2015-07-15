@@ -1,0 +1,152 @@
+//=========================//
+//  UCFBands V2 | Masonry  //
+//=========================//
+
+* {
+    box-sizing: border-box;
+}
+
+// Grid Clearfix
+.masonry-6col-grid:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.masonry-block {
+    margin-bottom: $space-default;
+    padding: $space-default;
+    float: left;
+
+//    height: 350px;
+    
+    @media only screen and (max-width: $breakpoint-medium) {
+        margin-bottom: $space-default-half;
+        padding: $space-default-half;
+    }
+
+}
+
+
+// 6-COL GRID WIDTHS
+.masonry-6col-grid {
+    
+    // Grid Sizer & Default Block
+    .masonry-6col-grid-sizer, .masonry-block {
+        width: $masonry-6col-grid-sizer;
+    }
+    
+    // Gutter Sizer
+    .masonry-6col-gutter-sizer {
+        width: $masonry-gutter-width;   
+    }
+
+    // One Third
+    .masonry-block-size--one-third {
+        width: $masonry-6col-block-width--two-sixths;
+        
+        @media only screen and (max-width: $breakpoint-medium) {
+            width: $masonry-6col-block-width--three-sixths;
+        }
+    }
+    
+    // One Half
+    .masonry-block-size--one-half {
+        width: $masonry-6col-block-width--three-sixths;
+        
+        @media only screen and (max-width: $breakpoint-medium) {
+            width: $masonry-6col-block-width--six-sixths;
+        }
+    }
+    
+    // Two Thirds
+    .masonry-block-size--two-thirds {
+        width: $masonry-6col-block-width--four-sixths;
+
+        @media only screen and (max-width: $breakpoint-medium) {
+            width: $masonry-6col-block-width--six-sixths;
+        }
+    }
+    
+    // One Whole
+    .masonry-block-size--one-whole {
+        width: $masonry-6col-block-width--six-sixths;
+    }
+    
+    // GLOBAL QUERIES
+    .masonry-block-size--one-third,
+    .masonry-block-size--one-half,
+    .masonry-block-size--two-thirds,
+    .masonry-block-size--one-whole {
+        
+        @media only screen and (max-width: $breakpoint-small) {
+            width: $masonry-6col-block-width--six-sixths;
+        }        
+        
+    } // Global Queries    
+    
+} // .masonry-6col-grid
+
+
+
+// 4-COL GRID WIDTHS
+.masonry-4col-grid {
+    
+    // Grid Sizer & Default Block
+    .masonry-4col-grid-sizer, .masonry-block {
+        width: $masonry-4col-grid-sizer;
+    }
+    
+    // Gutter Sizer
+    .masonry-4col-gutter-sizer {
+        width: $masonry-gutter-width;   
+    }
+    
+    // One Fourth
+    .masonry-block-size--one-fourth {
+        width: $masonry-4col-block-width--one-fourth;   
+    
+        @media only screen and (max-width: $breakpoint-large) {
+            width: $masonry-4col-block-width--two-fourths;
+        }
+        
+        @media only screen and (max-width: $breakpoint-medium) {
+            width: $masonry-4col-block-width--two-fourths;
+        } 
+    } // one-fourth
+    
+    // One Half
+    .masonry-block-size--one-half {
+        width: $masonry-4col-block-width--two-fourths;
+        
+        @media only screen and (max-width: $breakpoint-medium) {
+            width: $masonry-4col-block-width--four-fourths;
+        }
+    }
+    
+    // Three Fourths
+    .masonry-block-size--three-fourths {
+        width: $masonry-4col-block-width--three-fourths;   
+    
+        @media only screen and (max-width: $breakpoint-large) {
+            width: $masonry-4col-block-width--four-fourths;
+        }
+    }
+    
+    // One Whole
+    .masonry-block-size--one-whole {
+        width: $masonry-4col-block-width--four-fourths;   
+    }
+    
+    // GLOBAL QUERIES
+    .masonry-block-size--one-fourth,
+    .masonry-block-size--one-half,
+    .masonry-block-size--three-fourths,
+    .masonry-block-size--one-whole {
+        
+        @media only screen and (max-width: $breakpoint-small) {
+            width: $masonry-4col-block-width--four-fourths;
+        }         
+    } // Global Queries
+    
+} // .masonry-4col-grid
