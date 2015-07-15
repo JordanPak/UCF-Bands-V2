@@ -13,6 +13,18 @@
     clear: both;
 }
 
+.masonry-block {
+    margin-bottom: $space-default;
+    padding: $space-default;
+    float: left;
+
+    @media only screen and (max-width: $breakpoint-medium) {
+        margin-bottom: $space-default-half;
+        padding: $space-default-half;
+    }
+
+}
+
 
 // 6-COL GRID WIDTHS
 .masonry-6col-grid {
@@ -26,26 +38,32 @@
     .masonry-6col-gutter-sizer {
         width: $masonry-gutter-width;   
     }
-    
-    .masonry-block {
-        margin-bottom: $space-default;
-        padding: $space-default;
-        float: left;
-    }
 
     // One Third
     .masonry-block-size--one-third {
-        width: $masonry-6col-block-width--two-sixths;   
+        width: $masonry-6col-block-width--two-sixths;
+        
+        @media only screen and (max-width: $breakpoint-medium) {
+            width: $masonry-6col-block-width--three-sixths;
+        }
     }
     
     // One Half
     .masonry-block-size--one-half {
         width: $masonry-6col-block-width--three-sixths;
+        
+        @media only screen and (max-width: $breakpoint-medium) {
+            width: $masonry-6col-block-width--six-sixths;
+        }
     }
     
     // Two Thirds
     .masonry-block-size--two-thirds {
         width: $masonry-6col-block-width--four-sixths;
+
+        @media only screen and (max-width: $breakpoint-medium) {
+            width: $masonry-6col-block-width--six-sixths;
+        }
     }
     
     // One Whole
@@ -53,7 +71,20 @@
         width: $masonry-6col-block-width--six-sixths;
     }
     
+    // GLOBAL QUERIES
+    .masonry-block-size--one-third,
+    .masonry-block-size--one-half,
+    .masonry-block-size--two-thirds,
+    .masonry-block-size--one-whole {
+        
+        @media only screen and (max-width: $breakpoint-small) {
+            width: $masonry-6col-block-width--six-sixths;
+        }        
+        
+    } // Global Queries    
+    
 } // .masonry-6col-grid
+
 
 
 // 4-COL GRID WIDTHS
@@ -69,25 +100,35 @@
         width: $masonry-gutter-width;   
     }
     
-    .masonry-block {
-        margin-bottom: $space-default;
-        padding: $space-default;
-        float: left;
-    }
-    
     // One Fourth
     .masonry-block-size--one-fourth {
         width: $masonry-4col-block-width--one-fourth;   
-    }
+    
+        @media only screen and (max-width: $breakpoint-large) {
+            width: $masonry-4col-block-width--two-fourths;
+        }
+        
+        @media only screen and (max-width: $breakpoint-medium) {
+            width: $masonry-4col-block-width--two-fourths;
+        } 
+    } // one-fourth
     
     // One Half
     .masonry-block-size--one-half {
-        width: $masonry-4col-block-width--two-fourths;   
+        width: $masonry-4col-block-width--two-fourths;
+        
+        @media only screen and (max-width: $breakpoint-medium) {
+            width: $masonry-4col-block-width--four-fourths;
+        }
     }
     
     // Three Fourths
     .masonry-block-size--three-fourths {
         width: $masonry-4col-block-width--three-fourths;   
+    
+        @media only screen and (max-width: $breakpoint-large) {
+            width: $masonry-4col-block-width--four-fourths;
+        }
     }
     
     // One Whole
@@ -95,82 +136,15 @@
         width: $masonry-4col-block-width--four-fourths;   
     }
     
+    // GLOBAL QUERIES
+    .masonry-block-size--one-fourth,
+    .masonry-block-size--one-half,
+    .masonry-block-size--three-fourths,
+    .masonry-block-size--one-whole {
+        
+        @media only screen and (max-width: $breakpoint-small) {
+            width: $masonry-4col-block-width--four-fourths;
+        }         
+    } // Global Queries
+    
 } // .masonry-4col-grid
-
-
-
-//// OLD MASONRY STYLES
-
-//.masonry-blocks-sizer, .masonry-block {
-//    width: $masonry-block-width-default;
-//}
-//
-//.masonry-gutter-sizer { 
-//    width: $masonry-gutter-width;
-//}
-//
-//.masonry-block {
-//    margin-bottom: $space-default;
-//    padding: $space-default;
-//    
-//    @media only screen and (max-width: $breakpoint-medium) {
-//        margin-bottom: $space-default-half;
-//        padding: $space-default-half;
-//    }
-//}
-//
-//.masonry-block-size--one-fourth {
-//    width: $masonry-block-width--one-fourth;
-//    
-//    @media only screen and (max-width: $breakpoint-medium) {
-//        width: $masonry-block-width--one-half;
-//    }
-//    
-//    @media only screen and (max-width: $breakpoint-large) {
-//        width: $masonry-block-width--one-half;
-//    }
-//}
-//
-//.masonry-block-size--one-third {
-//    width: $masonry-block-width--one-third;
-//    
-//    @media only screen and (max-width: $breakpoint-medium) {
-//        width: $masonry-block-width--one-half;
-//    }
-//    
-//    @media only screen and (max-width: $breakpoint-large) {
-//        width: $masonry-block-width--one-half;
-//    }
-//}
-//
-//.masonry-block-size--two-fourths,
-//.masonry-block-size--one-half {
-//    width: $masonry-block-width--one-half;
-//}
-//
-//.masonry-block-size--two-thirds {
-//    width: $masonry-block-width--two-thirds;
-//}
-//
-//.masonry-block-size--three-fourths {
-//    width: $masonry-block-width--three-fourths;
-//}
-//
-//.masonry-block-size--one-whole {
-//    width: $masonry-block-width--one-whole;
-//}
-//
-//.masonry-block-size--two-fourths,
-//.masonry-block-size--one-half,
-//.masonry-block-size--two-thirds,
-//.masonry-block-size--three-fourths,
-//.masony-block-size--one-whole {
-//    
-//    @media only screen and (max-width: $breakpoint-medium) {
-//        width: $masonry-block-width--one-whole;   
-//    }
-//    
-//    @media only screen and (max-width: $breakpoint-large) {
-//        width: $masonry-block-width--one-whole;   
-//    }
-//}
