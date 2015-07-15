@@ -287,42 +287,42 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
     width: $masonry-block-width-default;
 }
 
-//.gutter-sizer { 
-//    width: $masonry-gutter-width;
-//}
+.masonry-gutter-sizer { 
+    width: $masonry-gutter-width;
+}
 
 .masonry-block {
-//    margin-bottom: $space-default;
+    margin-bottom: $space-default;
     padding: $space-default;
     
-    @media only screen and (max-width: $breakpoint-medium) {
-        margin-bottom: $space-default-half;
-        padding: $space-default-half;
-    }
+//    @media only screen and (max-width: $breakpoint-medium) {
+//        margin-bottom: $space-default-half;
+//        padding: $space-default-half;
+//    }
 }
 
 .masonry-block-size--one-fourth {
     width: $masonry-block-width--one-fourth;
     
-    @media only screen and (max-width: $breakpoint-medium) {
-        width: $masonry-block-width--one-half;
-    }
-    
-    @media only screen and (max-width: $breakpoint-large) {
-        width: $masonry-block-width--one-half;
-    }
+//    @media only screen and (max-width: $breakpoint-medium) {
+//        width: $masonry-block-width--one-half;
+//    }
+//    
+//    @media only screen and (max-width: $breakpoint-large) {
+//        width: $masonry-block-width--one-half;
+//    }
 }
 
 .masonry-block-size--one-third {
     width: $masonry-block-width--one-third;
     
-    @media only screen and (max-width: $breakpoint-medium) {
-        width: $masonry-block-width--one-half;
-    }
-    
-    @media only screen and (max-width: $breakpoint-large) {
-        width: $masonry-block-width--one-half;
-    }
+//    @media only screen and (max-width: $breakpoint-medium) {
+//        width: $masonry-block-width--one-half;
+//    }
+//    
+//    @media only screen and (max-width: $breakpoint-large) {
+//        width: $masonry-block-width--one-half;
+//    }
 }
 
 .masonry-block-size--two-fourths,
@@ -348,13 +348,13 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
 .masonry-block-size--three-fourths,
 .masony-block-size--one-whole {
     
-    @media only screen and (max-width: $breakpoint-medium) {
-        width: $masonry-block-width--one-whole;   
-    }
-    
-    @media only screen and (max-width: $breakpoint-large) {
-        width: $masonry-block-width--one-whole;   
-    }
+//    @media only screen and (max-width: $breakpoint-medium) {
+//        width: $masonry-block-width--one-whole;   
+//    }
+//    
+//    @media only screen and (max-width: $breakpoint-large) {
+//        width: $masonry-block-width--one-whole;   
+//    }
 }
     
 

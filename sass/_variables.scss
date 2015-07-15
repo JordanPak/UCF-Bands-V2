@@ -50,18 +50,37 @@ $site-header-width: 330px;
 $site-header-width-med: $site-header-width - 100;
 
 
-// Masonry Grid
-$masonry-gutter-width: 0%; //2.5%;
 
-$masonry-block-width--one-fourth:       25%             - $masonry-gutter-width;
-$masonry-block-width--one-third:        33.3333333333%  - $masonry-gutter-width;
-$masonry-block-width--one-half:         50%             - $masonry-gutter-width;
-$masonry-block-width--two-fourths:      $masonry-block-width--one-half;
-$masonry-block-width--two-thirds:       66.6666666667%  - $masonry-gutter-width;
-$masonry-block-width--three-fourths:    75%             - $masonry-gutter-width;
-$masonry-block-width--one-whole:        100%            - $masonry-gutter-width;
+//================//
+//  MASONRY GRID  //
+//================//
 
-$masonry-block-width-default: $masonry-block-width--one-third;
+
+// GUTTER
+$masonry-gutter-width: 0%; // Default 2.5%
+
+
+//== WIDTHS/COLUMNS ==//
+
+// 6-Col Layout Sizer
+$masonry-6col-block-sizer:                  16.66666666666667%; // 1/6
+
+// 6-Col Layout Widths
+$masonry-6col-block-width--two-sixths:      ($masonry-6col-block-sizer * 2) - $masonry-gutter-width; // One Third
+$masonry-6col-block-width--three-sixths:    ($masonry-6col-block-sizer * 3) - $masonry-gutter-width; // One Half
+$masonry-6col-block-width--four-sixths:     ($masonry-6col-block-sizer * 4) - $masonry-gutter-width; // Two Thirds
+$masonry-6col-block-width--six-sixths:      ($masonry-6col-block-sizer * 6) - $masonry-gutter-width; // One Whole
+
+
+// 4-Col Layout Sizer
+$masonry-4col-block-sizer:                  25%; // 1/4
+
+// 4-Col Layout Widths
+$masonry-4col-block-width--one-fourth:      ($masonry-4col-block-sizer * 1) - $masonry-gutter-width; // One Fourth
+$masonry-4col-block-width--two-fourths:     ($masonry-4col-block-sizer * 2) - $masonry-gutter-width; // One Half
+$masonry-4col-block-width--three-fourths:   ($masonry-4col-block-sizer * 3) - $masonry-gutter-width; // Three Fourths
+$masonry-4col-block-width--four-fourths:    ($masonry-4col-block-sizer * 4) - $masonry-gutter-width; // One Whole
+
 
 
 //=================//
