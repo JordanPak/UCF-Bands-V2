@@ -26,8 +26,8 @@ function ucfbands_blocks_metabox() {
             <span style="color: #000;"><b>Note:</b> If a block width is set outside of its compatible layout (ex: "One Third" on a 4-Column Layout), errors will occur!</span>',
         'default'   => '6-column',
         'options'   => array(
-            '6-column' => __( '6-Column &emsp; (Widths: One Third, One Half, Two Thirds, &amp; One Whole)', 'cmb' ),
-            '4-column' => __( '4-Column &emsp; (Widths: One Fourth, One Half, Three Fourths, &amp; One Whole)', 'cmb' ),
+            '6col' => __( '6-Column &emsp; (Widths: One Third, One Half, Two Thirds, &amp; One Whole)', 'cmb' ),
+            '4col' => __( '4-Column &emsp; (Widths: One Fourth, One Half, Three Fourths, &amp; One Whole)', 'cmb' ),
         )
     ) );
     

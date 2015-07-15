@@ -68,10 +68,15 @@ function show_blocks() {
     }
     
     
-    // Masonry Grid Container
-    echo '<section class="masonry-6col-grid">';
-        echo '<div class="masonry-6col-grid-sizer"></div>';
-        echo '<div class="masonry-6col-gutter-sizer"></div>';
+    // MASONRY GRID CONTAINER //
+    
+    // Get Layout Option
+    $masonry_column_layout = get_post_meta( $post->ID, '_ucfbands_blocks_column_layout', true );
+    
+    // Use Layout Option with container output
+    echo '<section class="masonry-' . $masonry_column_layout . '-grid">';
+        echo '<div class="masonry-' . $masonry_column_layout . '-grid-sizer"></div>';
+        echo '<div class="masonry-' . $masonry_column_layout . '-gutter-sizer"></div>';
     
     
     //-- BLOCK LOOP --//
