@@ -2,20 +2,15 @@
 //  UCFBands V2 | Masonry  //
 //=========================//
 
+* {
+    box-sizing: border-box;
+}
+
 // Grid Clearfix
 .masonry-6col-grid:after {
     content: '';
     display: block;
     clear: both;
-}
-
-
-// GENERAL //
-
-.masonry-block {
-    margin-bottom: $space-default;
-    padding: $space-default;
-    float: left;
 }
 
 
@@ -32,6 +27,12 @@
         width: $masonry-gutter-width;   
     }
     
+    .masonry-block {
+        margin-bottom: $space-default;
+        padding: $space-default;
+        float: left;
+    }
+
     // One Third
     .masonry-block-size--one-third {
         width: $masonry-6col-block-width--two-sixths;   
@@ -68,6 +69,12 @@
         width: $masonry-gutter-width;   
     }
     
+    .masonry-block {
+        margin-bottom: $space-default;
+        padding: $space-default;
+        float: left;
+    }
+    
     // One Fourth
     .masonry-block-size--one-fourth {
         width: $masonry-4col-block-width--one-fourth;   
@@ -92,7 +99,8 @@
 
 
 
-//// MASONRY STYLES
+//// OLD MASONRY STYLES
+
 //.masonry-blocks-sizer, .masonry-block {
 //    width: $masonry-block-width-default;
 //}

@@ -1479,7 +1479,7 @@ body {
 
 body.page-template-page_section_grid .content-sidebar-wrap,
 body.page-template-page_grid .content-sidebar-wrap {
-  padding: 0%;
+  padding: 2.5%;
   padding-right: 0; }
 
 body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
@@ -1599,41 +1599,47 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
     #footer-social a:hover {
       color: #FFCA06; }
 
+* {
+  box-sizing: border-box; }
+
 .masonry-6col-grid:after {
   content: '';
   display: block;
   clear: both; }
 
-.masonry-block {
+.masonry-6col-grid .masonry-6col-grid-sizer, .masonry-6col-grid .masonry-block {
+  width: 14.16667%; }
+.masonry-6col-grid .masonry-6col-gutter-sizer {
+  width: 2.5%; }
+.masonry-6col-grid .masonry-block {
   margin-bottom: 40px;
   padding: 40px;
   float: left; }
-
-.masonry-6col-grid .masonry-6col-grid-sizer, .masonry-6col-grid .masonry-block {
-  width: 16.66667%; }
-.masonry-6col-grid .masonry-6col-gutter-sizer {
-  width: 0%; }
 .masonry-6col-grid .masonry-block-size--one-third {
-  width: 33.33333%; }
+  width: 30.83333%; }
 .masonry-6col-grid .masonry-block-size--one-half {
-  width: 50.0%; }
+  width: 47.5%; }
 .masonry-6col-grid .masonry-block-size--two-thirds {
-  width: 66.66667%; }
+  width: 64.16667%; }
 .masonry-6col-grid .masonry-block-size--one-whole {
-  width: 100.0%; }
+  width: 97.5%; }
 
 .masonry-4col-grid .masonry-4col-grid-sizer, .masonry-4col-grid .masonry-block {
-  width: 25%; }
+  width: 22.5%; }
 .masonry-4col-grid .masonry-4col-gutter-sizer {
-  width: 0%; }
+  width: 2.5%; }
+.masonry-4col-grid .masonry-block {
+  margin-bottom: 40px;
+  padding: 40px;
+  float: left; }
 .masonry-4col-grid .masonry-block-size--one-fourth {
-  width: 25%; }
+  width: 22.5%; }
 .masonry-4col-grid .masonry-block-size--one-half {
-  width: 50%; }
+  width: 47.5%; }
 .masonry-4col-grid .masonry-block-size--three-fourths {
-  width: 75%; }
+  width: 72.5%; }
 .masonry-4col-grid .masonry-block-size--one-whole {
-  width: 100%; }
+  width: 97.5%; }
 
 .nav-primary {
   background: none; }
