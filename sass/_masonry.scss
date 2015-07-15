@@ -18,6 +18,8 @@
     padding: $space-default;
     float: left;
 
+//    height: 350px;
+    
     @media only screen and (max-width: $breakpoint-medium) {
         margin-bottom: $space-default-half;
         padding: $space-default-half;
