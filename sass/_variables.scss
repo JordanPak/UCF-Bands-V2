@@ -51,7 +51,7 @@ $site-header-width-med: $site-header-width - 100;
 
 
 // Masonry Grid
-$masonry-gutter-width: 2.5%;
+$masonry-gutter-width: 0%; //2.5%;
 
 $masonry-block-width--one-fourth:       25%             - $masonry-gutter-width;
 $masonry-block-width--one-third:        33.3333333333%  - $masonry-gutter-width;
@@ -61,7 +61,7 @@ $masonry-block-width--two-thirds:       66.6666666667%  - $masonry-gutter-width;
 $masonry-block-width--three-fourths:    75%             - $masonry-gutter-width;
 $masonry-block-width--one-whole:        100%            - $masonry-gutter-width;
 
-$masonry-block-width-default: $masonry-block-width--one-fourth;
+$masonry-block-width-default: $masonry-block-width--one-third;
 
 
 //=================//

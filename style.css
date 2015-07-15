@@ -1479,7 +1479,7 @@ body {
 
 body.page-template-page_section_grid .content-sidebar-wrap,
 body.page-template-page_grid .content-sidebar-wrap {
-  padding: 2.5%;
+  padding: 0%;
   padding-right: 0; }
 
 body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
@@ -1532,14 +1532,10 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
   .block h2 {
     cursor: default; }
 
-.masonry-block-sizer, .masonry-block {
-  width: 22.5%; }
-
-.masonry-gutter-sizer {
-  width: 2.5%; }
+.masonry-blocks-sizer, .masonry-block {
+  width: 33.33333%; }
 
 .masonry-block {
-  margin-bottom: 40px;
   padding: 40px; }
   @media only screen and (max-width: 1200px) {
     .masonry-block {
@@ -1547,35 +1543,35 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
       padding: 20px; } }
 
 .masonry-block-size--one-fourth {
-  width: 22.5%; }
+  width: 25%; }
   @media only screen and (max-width: 1200px) {
     .masonry-block-size--one-fourth {
-      width: 47.5%; } }
+      width: 50%; } }
   @media only screen and (max-width: 1366px) {
     .masonry-block-size--one-fourth {
-      width: 47.5%; } }
+      width: 50%; } }
 
 .masonry-block-size--one-third {
-  width: 30.83333%; }
+  width: 33.33333%; }
   @media only screen and (max-width: 1200px) {
     .masonry-block-size--one-third {
-      width: 47.5%; } }
+      width: 50%; } }
   @media only screen and (max-width: 1366px) {
     .masonry-block-size--one-third {
-      width: 47.5%; } }
+      width: 50%; } }
 
 .masonry-block-size--two-fourths,
 .masonry-block-size--one-half {
-  width: 47.5%; }
+  width: 50%; }
 
 .masonry-block-size--two-thirds {
-  width: 64.16667%; }
+  width: 66.66667%; }
 
 .masonry-block-size--three-fourths {
-  width: 72.5%; }
+  width: 75%; }
 
 .masonry-block-size--one-whole {
-  width: 97.5%; }
+  width: 100%; }
 
 @media only screen and (max-width: 1200px) {
   .masonry-block-size--two-fourths,
@@ -1583,14 +1579,14 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
   .masonry-block-size--two-thirds,
   .masonry-block-size--three-fourths,
   .masony-block-size--one-whole {
-    width: 97.5%; } }
+    width: 100%; } }
 @media only screen and (max-width: 1366px) {
   .masonry-block-size--two-fourths,
   .masonry-block-size--one-half,
   .masonry-block-size--two-thirds,
   .masonry-block-size--three-fourths,
   .masony-block-size--one-whole {
-    width: 97.5%; } }
+    width: 100%; } }
 
 .sidebar-primary {
   float: left;

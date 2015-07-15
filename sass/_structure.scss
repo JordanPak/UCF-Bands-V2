@@ -283,16 +283,16 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
 
 
 // MASONRY STYLES
-.masonry-block-sizer, .masonry-block {
+.masonry-blocks-sizer, .masonry-block {
     width: $masonry-block-width-default;
 }
 
-.masonry-gutter-sizer { 
-    width: $masonry-gutter-width;
-}
+//.gutter-sizer { 
+//    width: $masonry-gutter-width;
+//}
 
 .masonry-block {
-    margin-bottom: $space-default;
+//    margin-bottom: $space-default;
     padding: $space-default;
     
     @media only screen and (max-width: $breakpoint-medium) {
