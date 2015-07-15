@@ -19,6 +19,7 @@
 //});
 
 
+// 6-COL GRID
 jQuery(function($) {
 //    var $container = $('section.masonry-blocks');
  
@@ -26,6 +27,19 @@ jQuery(function($) {
         itemSelector: '.masonry-block',
         columnWidth: '.masonry-6col-grid-sizer',
         gutter: '.masonry-6col-gutter-sizer',
+        percentPosition: true,
+    });
+});
+
+
+// 4-COL GRID
+jQuery(function($) {
+//    var $container = $('section.masonry-blocks');
+ 
+    jQuery('.masonry-4col-grid').masonry({
+        itemSelector: '.masonry-block',
+        columnWidth: '.masonry-4col-grid-sizer',
+        gutter: '.masonry-4col-gutter-sizer',
         percentPosition: true,
     });
 });
