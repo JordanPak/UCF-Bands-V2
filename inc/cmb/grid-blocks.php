@@ -23,13 +23,11 @@ function ucfbands_blocks_metabox() {
         'id'        => $prefix . 'column_layout',
         'type'      => 'radio',
         'desc'      => '
-            <b>6-Column Compatible Block Widths:</b> One Third, One Half, Two Thirds, One Whole.<br>
-            <b>4-Column Compatible Block Widths:</b> One Fourth, One Half, Three Fourths, One Whole.<br>
             <span style="color: #000;"><b>Note:</b> If a block width is set outside of its compatible layout (ex: "One Third" on a 4-Column Layout), errors will occur!</span>',
         'default'   => '6-column',
         'options'   => array(
-            '6-column' => __( '6-Column', 'cmb' ),
-            '4-column' => __( '4-Column', 'cmb' ),
+            '6-column' => __( '6-Column &emsp; (Widths: One Third, One Half, Two Thirds, &amp; One Whole)', 'cmb' ),
+            '4-column' => __( '4-Column &emsp; (Widths: One Fourth, One Half, Three Fourths, &amp; One Whole)', 'cmb' ),
         )
     ) );
     
