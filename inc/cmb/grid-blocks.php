@@ -17,7 +17,21 @@ function ucfbands_blocks_metabox() {
         ),
         'priority'     => 'core',
 	) );
-
+    
+    $cmb_group->add_field( array(
+        'name'      => 'Column Layout',
+        'id'        => $prefix . 'column_layout',
+        'type'      => 'radio',
+        'desc'      => '
+            <b>6-Column Compatible Block Widths:</b> One Third, One Half, Two Thirds, One Whole.<br>
+            <b>4-Column Compatible Block Widths:</b> One Fourth, One Half, Three Fourths, One Whole.<br>
+            <span style="color: #000;"><b>Note:</b> If a block width is set outside of its compatible layout (ex: "One Third" on a 4-Column Layout), errors will occur!</span>',
+        'default'   => '6-column',
+        'options'   => array(
+            '6-column' => __( '6-Column', 'cmb' ),
+            '4-column' => __( '4-Column', 'cmb' ),
+        )
+    ) );
     
 	$group_field_id = $cmb_group->add_field( array(
 		'id'          => $prefix . 'meta',
@@ -55,13 +69,13 @@ function ucfbands_blocks_metabox() {
 		'name' => __( 'Width', 'ucfbands-blocks' ),
 		'id'   => 'width',
 		'type' => 'select',
-        'default' => 'one-fourth',
+        'default' => 'one-third',
         'options' => array(
-            'one-fourth'    => __( 'One Fourth', 'cmb' ),
-            'one-third'     => __( 'One Third', 'cmb' ),
+            'one-third'     => __( 'One Third &emsp; (6-Column Only)', 'cmb' ),
+            'two-thirds'    => __( 'Two Thirds &emsp; (6-Column Only)', 'cmb' ),
+            'one-fourth'    => __( 'One Fourth &emsp; (4-Column Only)', 'cmb' ),
+            'three-fourths' => __( 'Three Fourths &emsp; (4-Column Only)', 'cmb' ),
             'one-half'      => __( 'One Half', 'cmb' ),
-            'two-thirds'    => __( 'Two Thirds', 'cmb' ),
-            'three-fourths' => __( 'Three Fourths', 'cmb' ),
             'one-whole'     => __( 'One Whole', 'cmb' ),
         ),
 	) );
