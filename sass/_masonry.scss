@@ -1,0 +1,98 @@
+//=========================//
+//  UCFBands V2 | Masonry  //
+//=========================//
+
+// MASONRY STYLES
+.masonry-blocks-sizer, .masonry-block {
+    width: $masonry-block-width-default;
+}
+
+.masonry-gutter-sizer { 
+    width: $masonry-gutter-width;
+}
+
+.masonry-block {
+    margin-bottom: $space-default;
+    padding: $space-default;
+    
+//    @media only screen and (max-width: $breakpoint-medium) {
+//        margin-bottom: $space-default-half;
+//        padding: $space-default-half;
+//    }
+}
+
+.masonry-block-size--one-fourth {
+    width: $masonry-block-width--one-fourth;
+    
+//    @media only screen and (max-width: $breakpoint-medium) {
+//        width: $masonry-block-width--one-half;
+//    }
+//    
+//    @media only screen and (max-width: $breakpoint-large) {
+//        width: $masonry-block-width--one-half;
+//    }
+}
+
+.masonry-block-size--one-third {
+    width: $masonry-block-width--one-third;
+    
+//    @media only screen and (max-width: $breakpoint-medium) {
+//        width: $masonry-block-width--one-half;
+//    }
+//    
+//    @media only screen and (max-width: $breakpoint-large) {
+//        width: $masonry-block-width--one-half;
+//    }
+}
+
+.masonry-block-size--two-fourths,
+.masonry-block-size--one-half {
+    width: $masonry-block-width--one-half;
+}
+
+.masonry-block-size--two-thirds {
+    width: $masonry-block-width--two-thirds;
+}
+
+.masonry-block-size--three-fourths {
+    width: $masonry-block-width--three-fourths;
+}
+
+.masonry-block-size--one-whole {
+    width: $masonry-block-width--one-whole;
+}
+
+.masonry-block-size--two-fourths,
+.masonry-block-size--one-half,
+.masonry-block-size--two-thirds,
+.masonry-block-size--three-fourths,
+.masony-block-size--one-whole {
+    
+//    @media only screen and (max-width: $breakpoint-medium) {
+//        width: $masonry-block-width--one-whole;   
+//    }
+//    
+//    @media only screen and (max-width: $breakpoint-large) {
+//        width: $masonry-block-width--one-whole;   
+//    }
+}
+    
+
+//.blocks {
+//    
+//    .block {
+//        @include block();
+//
+//        padding-top: $space-default + 5px;
+//        padding-bottom: $space-default + 5px;
+//    }
+//    
+//    .block-featured {
+//        
+//        padding-top: $space-default;
+//        padding-bottom: $space-default;
+//        
+//        border-top: 5px solid $ucf-gold;
+//        border-bottom: 5px solid $ucf-gray;
+//    }    
+//}
