@@ -71,40 +71,61 @@ function show_masonry_grid() {
         $block_width =          esc_attr( $block['width'] );
         $block_is_featured =    esc_attr( $block['featured'] );
         $block_content =        esc_attr( $block['block-content'] );
+        $block_is_breaker =     esc_attr( $block['breaker'] );
         
         
-        // SET INITIAL CLASSES
-        $block_classes = 'block masonry-block masonry-block-size--' . $block_width;
-        
-        // Featured?
-        if ($block_is_featured == true ) {
-            $block_classes .= ' block-featured';
-        }
-        
-        // Block Icon?
-        if ($block_icon) {
-            $block_icon = '&nbsp;&nbsp;<i class="fa fa-' . $block_icon . '"></i>';
-        } else {
-            $block_icon = '';   
-        }
-        
-        ?>
-        
-        <!-- MASONRY BLOCK -->
-        <div class="<?php echo $block_classes; ?>">
+        // If the block isn't a "breaker", proceed as normal
+        if ($block_is_breaker == false) {
+            
+            // SET INITIAL CLASSES
+            $block_classes = 'block masonry-block masonry-block-size--' . $block_width;
 
-            <h2><?php echo $block_title . $block_icon; ?></h2>
-            
-            
-            <?php // FOR TESTING: Show Block Width ?>
-            <?php //echo '<h4 style="color:red;">' . $block_width . '</h4>'; ?>
-            
-            
-            <?php echo $block_content; ?>
+            // Featured?
+            if ($block_is_featured == true ) {
+                $block_classes .= ' block-featured';
+            }
+
+            // Block Icon?
+            if ($block_icon) {
+                $block_icon = '&nbsp;&nbsp;<i class="fa fa-' . $block_icon . '"></i>';
+            } else {
+                $block_icon = '';   
+            }
+
+            ?>
+
+            <!-- MASONRY BLOCK -->
+            <div class="<?php echo $block_classes; ?>">
+
+                <h2><?php echo $block_title . $block_icon; ?></h2>
+
+
+                <?php // FOR TESTING: Show Block Width ?>
+                <?php //echo '<h4 style="color:red;">' . $block_width . '</h4>'; ?>
+
+
+                <?php echo $block_content; ?>
+
+            </div><!-- /BLOCK -->
+
+            <?php
+
+        } // if block is breaker
         
-        </div><!-- /BLOCK -->
         
-		<?php
+        // Block is a breaker
+        else {
+            
+            ?>
+
+            <!-- MASONRY BLOCK -->
+            <div class="masonry-block masonry-block-size--one-whole masonry-breaker-block"></div><!-- /BLOCK -->
+
+            <?php   
+            
+        } // else
+        
+        
         
 	} // foreach block
     

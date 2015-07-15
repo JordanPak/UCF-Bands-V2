@@ -84,5 +84,12 @@ function ucfbands_blocks_metabox() {
 		'type' => 'textarea' //'type' => 'wysiwyg'
 	) );
     
+	$cmb_group->add_group_field( $group_field_id, array(
+		'name' => __( 'Breaker Block', 'ucfbands-blocks' ),
+		'id'   => 'breaker',
+		'type' => 'checkbox',
+        'desc' => 'Turn this block into a "row breaker", which separates the blocks this block is between.'
+	) );
+    
 }
 add_action( 'cmb2_init', 'ucfbands_blocks_metabox' );

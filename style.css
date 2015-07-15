@@ -1675,6 +1675,10 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
   .masonry-4col-grid .masonry-block-size--one-whole {
     width: 97%; } }
 
+.masonry-breaker-block {
+  margin: 0;
+  padding: 0; }
+
 .nav-primary {
   background: none; }
 
