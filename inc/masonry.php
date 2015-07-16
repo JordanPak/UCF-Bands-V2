@@ -113,8 +113,19 @@ function show_masonry_grid() {
 
                 
                 <!-- BLOCK MARKDOWN CONTENT -->
-                <?php echo do_shortcode( $Parsedown->text( $block_content ) ); ?>
-
+                <?php 
+                    
+                // ALTERNATIVE: echo do_shortcode( $Parsedown->text( $block_content ) );
+                
+                // Parse block content into Markdown HTML
+                $block_content = $Parsedown->text($block_content);
+            
+            
+                // Apply 'the_content' filter to render shortcodes
+                echo apply_filters('the_content', $block_content);
+                
+                ?>
+                
             </div><!-- /BLOCK -->
 
             <?php
