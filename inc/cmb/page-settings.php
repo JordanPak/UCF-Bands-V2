@@ -72,7 +72,10 @@ function ucfbands_page_settings_metabox() {
     
     $cmb->add_field( array(
         'name'    => 'Conductor/Director Name(s)',
-        'desc'    => '<br><b>Optional.<b> If the current page is a child, this option is inherited by the parent page.</b>',
+        'desc'    => '
+            <br>"Conductors" or "Directors" (plural) will only be used if there is an <u><b>&</b></u> entered between the names.
+            <br><b>Optional. If the current page is a child, this option is inherited by the parent page.</b>
+        ',
         'default' => '',
         'id'      => $prefix . 'conductor_name',
         'type'    => 'text_medium',
