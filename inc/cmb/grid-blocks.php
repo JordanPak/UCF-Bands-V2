@@ -87,7 +87,7 @@ function ucfbands_blocks_metabox() {
 
 	$cmb_group->add_group_field( $group_field_id, array(
 		'name' => __( 'Remove Block Background &amp; Padding', 'ucfbands-blocks' ),
-		'id'   => 'remove_background_padding',
+		'id'   => 'remove-background',
 		'type' => 'checkbox',
         'desc' => 'Remove the white background &amp; shadow, along with the padding to be compatible with a block-filled shortcode.',
 	) );
