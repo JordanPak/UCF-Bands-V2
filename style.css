@@ -1453,6 +1453,9 @@ body {
     text-shadow: 0 0 3px #000000, 1px 1px 1px rgba(0, 0, 0, 0.4), 0 0 3px #000000, 2px 2px 1px rgba(0, 0, 0, 0.4);
     cursor: default; }
 
+.ucfbands-slider-wrap {
+  box-shadow: inset 2px 0 #000000, inset 7px 0 5px -7px rgba(0, 0, 0, 0.5), 0 1px 0 #000000, 0 6px 0 #FFCA06, 0 7px 0 #a59a9d, 0 8px 6px rgba(0, 0, 0, 0.175); }
+
 .site-inner,
 .wrap {
   margin: 0;
