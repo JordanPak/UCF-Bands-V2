@@ -122,6 +122,10 @@ function add_top_bar() {
 require_once( CHILD_DIR . '/inc/page-title-default.php' );
 
 
+// Page Slider
+require_once( CHILD_DIR . '/inc/page-slider.php' );
+
+
 // CMB2
 if ( file_exists(  __DIR__ . '/cmb2/init.php' ) ) {
   require_once  __DIR__ . '/cmb2/init.php';

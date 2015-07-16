@@ -6,7 +6,7 @@
 
 
 // Add page title before content_sidebar_wrap
-add_action( 'genesis_before_content_sidebar_wrap', 'ucfbands_custom_page_title');
+add_action( 'genesis_before_content_sidebar_wrap', 'ucfbands_custom_page_title', 10);
 /**
  *  UCFBands Custom Page Title
  *  

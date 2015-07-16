@@ -80,6 +80,13 @@ function ucfbands_page_settings_metabox() {
         ),
         'show_on_cb' => 'cmb_exclude_section_child_page',
     ) );
+    
+	$cmb->add_field( array(
+		'name'        => 'Slider Shortcode',
+        'desc'        => 'Slider will be placed below the page title',
+		'id'          => $prefix . 'slider_shortcode',
+		'type'        => 'text',
+	) );    
 
     $cmb->add_field( array(
         'name' => 'Disable Grid Area Padding',
