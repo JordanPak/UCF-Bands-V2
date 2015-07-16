@@ -103,14 +103,17 @@ function show_masonry_grid() {
             <!-- MASONRY BLOCK -->
             <div class="<?php echo $block_classes; ?>">
 
+                
+                <!-- BLOCK TITLE & ICON -->
                 <h2><?php echo $block_title . $block_icon; ?></h2>
 
 
                 <?php // FOR TESTING: Show Block Width ?>
                 <?php //echo '<h4 style="color:red;">' . $block_width . '</h4>'; ?>
 
-
-                <?php echo $Parsedown->text( $block_content ); ?>
+                
+                <!-- BLOCK MARKDOWN CONTENT -->
+                <?php echo do_shortcode( $Parsedown->text( $block_content ) ); ?>
 
             </div><!-- /BLOCK -->
 
