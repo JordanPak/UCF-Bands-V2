@@ -81,7 +81,8 @@ function ucfbands_blocks_metabox() {
 	$cmb_group->add_group_field( $group_field_id, array(
 		'name' => __( 'Block Content', 'ucfbands-blocks' ),
 		'id'   => 'block-content',
-		'type' => 'textarea' //'type' => 'wysiwyg'
+		'type' => 'textarea', //'type' => 'wysiwyg'
+        'desc' => 'This text area supports <b><a href="https://help.github.com/articles/github-flavored-markdown/" target="_BLANK">GithHub Flavored Markdown</a></b> and shortcodes. Markdown is required to format the block text.'
 	) );
     
 	$cmb_group->add_group_field( $group_field_id, array(
