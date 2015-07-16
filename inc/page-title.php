@@ -58,11 +58,12 @@ function ucfbands_custom_page_title() {
     
     
     // GET TITLE SETTINGS META
-    $remove_page_title  = get_post_meta( get_the_ID(), $meta_id_prefix . 'remove_page_title', true );
-    $icon               = get_post_meta( $post_ID, $meta_id_prefix . 'icon', true );
-    $icon_position      = get_post_meta( $post_ID, $meta_id_prefix . 'icon_position', true );
-    $remove_page_title_background_fade = get_post_meta( $post_ID, $meta_id_prefix . 'remove_page_title_background_fade', true );
-    $conductor_name     = get_post_meta( $post_ID, $meta_id_prefix . 'conductor_name', true );
+    $remove_page_title                  = get_post_meta( get_the_ID(), $meta_id_prefix . 'remove_page_title', true );
+    $icon                               = get_post_meta( $post_ID, $meta_id_prefix . 'icon', true );
+    $icon_position                      = get_post_meta( $post_ID, $meta_id_prefix . 'icon_position', true );
+    $remove_page_title_background_fade  = get_post_meta( $post_ID, $meta_id_prefix . 'remove_page_title_background_fade', true );
+    $conductor_or_director              = get_post_meta( $post_ID, $meta_id_prefix . 'conductor_or_director', true );
+    $conductor_name                     = get_post_meta( $post_ID, $meta_id_prefix . 'conductor_name', true );
     
     
     // CONFIGURE ICON
@@ -82,8 +83,35 @@ function ucfbands_custom_page_title() {
     
     // CONFIGURE CONDUCTOR NAME
     if ($conductor_name) {
-        $conductor_name = '<span class="conductor-name"><i class="fa fa-user"></i>&nbsp;&nbsp;Conductor: ' . $conductor_name . '</span>';   
-    }
+        
+        // Span opening, icon, and space
+        $conductor_director_output = '<span class="conductor-name"><i class="fa fa-user"></i>&nbsp;&nbsp;';
+        
+        // If "Conductor"
+        if( $conductor_or_director == 'conductor' ) {
+            $conductor_director_output .= 'Conductor';
+        }
+        
+        // If "Director"
+        else {
+            $conductor_director_output .= 'Director';
+        }
+        
+        // Check for multiple names
+        if ( strpos($conductor_name, '&') == true ) {
+            $conductor_director_output .= 's: ';
+        }
+        else {
+            $conductor_director_output .= ': ';
+        }
+        
+        // Apply names
+        $conductor_director_output .= $conductor_name;
+        
+        // Finish the output
+        $conductor_director_output .= '</span>';
+    
+    } // If Conductor/Director name(s) are entered
     
         
     // CONFIGURE FEATURED IMAGE BACKGROUND
@@ -141,7 +169,7 @@ function ucfbands_custom_page_title() {
                     ?>
                 </h1>
 
-                <?php echo $conductor_name; ?>
+                <?php echo $conductor_director_output; ?>
                 
             </div>
             

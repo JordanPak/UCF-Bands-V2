@@ -57,10 +57,25 @@ function ucfbands_page_settings_metabox() {
         'type' => 'checkbox',
         'show_on_cb' => 'cmb_exclude_default_page',
     ) );    
+
+    $cmb->add_field( array(
+        'name'             => 'Conductor/Director',
+        'id'               => $prefix . 'conductor_or_director',
+        'type'             => 'radio',
+        'show_option_none' => false,
+        'default'          => 'conductor',
+        'options'          => array(
+            'conductor' => __( 'Use "Conductor"', 'cmb' ),
+            'director'   => __( 'Use "Director"', 'cmb' ),
+        ),
+    ) );
     
     $cmb->add_field( array(
-        'name'    => 'Conductor Name',
-        'desc'    => '<br><b>Optional</b>. Name of conductor.<br><b>If the current page is a child, this option is inherited by the parent page.</b>',
+        'name'    => 'Conductor/Director Name(s)',
+        'desc'    => '
+            <br>"Conductors" or "Directors" (plural) will only be used if there is an <u><b>&</b></u> entered between the names.
+            <br><b>Optional. If the current page is a child, this option is inherited by the parent page.</b>
+        ',
         'default' => '',
         'id'      => $prefix . 'conductor_name',
         'type'    => 'text_medium',
