@@ -112,19 +112,23 @@ function show_masonry_grid() {
                 <?php //echo '<h4 style="color:red;">' . $block_width . '</h4>'; ?>
 
                 
-                <!-- BLOCK MARKDOWN CONTENT -->
-                <?php 
-                    
-                // ALTERNATIVE: echo do_shortcode( $Parsedown->text( $block_content ) );
-                
-                // Parse block content into Markdown HTML
-                $block_content = $Parsedown->text($block_content);
+                <div class="entry-content">
             
-            
-                // Apply 'the_content' filter to render shortcodes
-                echo apply_filters('the_content', $block_content);
+                    <!-- BLOCK MARKDOWN CONTENT -->
+                    <?php 
+
+                    // ALTERNATIVE: echo do_shortcode( $Parsedown->text( $block_content ) );
+
+                    // Parse block content into Markdown HTML
+                    $block_content = $Parsedown->text($block_content);
+
+
+                    // Apply 'the_content' filter to render shortcodes
+                    echo apply_filters('the_content', $block_content);
+
+                    ?>
                 
-                ?>
+                </div><!-- /.entry-content -->
                 
             </div><!-- /BLOCK -->
 
