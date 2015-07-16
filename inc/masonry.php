@@ -29,6 +29,12 @@ add_action( 'genesis_after_content', 'show_masonry_grid');
  */
 function show_masonry_grid() {
     
+    
+    // Include Parsedown
+    require_once( CHILD_DIR . '/inc/parsedown/Parsedown.php' );
+    $Parsedown = new Parsedown();
+    
+    
     // Get post object.
 	$post = get_post();
 
@@ -72,7 +78,7 @@ function show_masonry_grid() {
         $block_is_featured =    esc_attr( $block['featured'] );
         $block_content =        esc_attr( $block['block-content'] );
         $block_is_breaker =     esc_attr( $block['breaker'] );
-        
+       
         
         // If the block isn't a "breaker", proceed as normal
         if ($block_is_breaker == false) {
@@ -104,7 +110,7 @@ function show_masonry_grid() {
                 <?php //echo '<h4 style="color:red;">' . $block_width . '</h4>'; ?>
 
 
-                <?php echo $block_content; ?>
+                <?php echo $Parsedown->text( $block_content ); ?>
 
             </div><!-- /BLOCK -->
 
