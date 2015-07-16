@@ -29,6 +29,12 @@ add_action( 'genesis_after_content', 'show_masonry_grid');
  */
 function show_masonry_grid() {
     
+    
+    // Include Parsedown
+    require_once( CHILD_DIR . '/inc/parsedown/Parsedown.php' );
+    $Parsedown = new Parsedown();
+    
+    
     // Get post object.
 	$post = get_post();
 
@@ -72,7 +78,7 @@ function show_masonry_grid() {
         $block_is_featured =    esc_attr( $block['featured'] );
         $block_content =        esc_attr( $block['block-content'] );
         $block_is_breaker =     esc_attr( $block['breaker'] );
-        
+       
         
         // If the block isn't a "breaker", proceed as normal
         if ($block_is_breaker == false) {
@@ -97,15 +103,33 @@ function show_masonry_grid() {
             <!-- MASONRY BLOCK -->
             <div class="<?php echo $block_classes; ?>">
 
+                
+                <!-- BLOCK TITLE & ICON -->
                 <h2><?php echo $block_title . $block_icon; ?></h2>
 
 
                 <?php // FOR TESTING: Show Block Width ?>
                 <?php //echo '<h4 style="color:red;">' . $block_width . '</h4>'; ?>
 
+                
+                <div class="entry-content">
+            
+                    <!-- BLOCK MARKDOWN CONTENT -->
+                    <?php 
 
-                <?php echo $block_content; ?>
+                    // ALTERNATIVE: echo do_shortcode( $Parsedown->text( $block_content ) );
 
+                    // Parse block content into Markdown HTML
+                    $block_content = $Parsedown->text($block_content);
+
+
+                    // Apply 'the_content' filter to render shortcodes
+                    echo apply_filters('the_content', $block_content);
+
+                    ?>
+                
+                </div><!-- /.entry-content -->
+                
             </div><!-- /BLOCK -->
 
             <?php
