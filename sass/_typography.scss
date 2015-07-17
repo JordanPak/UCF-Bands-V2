@@ -122,6 +122,45 @@ hr {
     border-bottom: 1px solid $ucf-gray-med-light;
 }
 
+
+
+
+//=================//
+//  CONTENT BOXES  //
+//=================//
+ 
+.content-box-blue,
+.content-box-gray,
+.content-box-green,
+.content-box-red,
+.content-box-gold {
+    margin: 0 0 $space-default-half + 10px;
+    overflow: hidden;
+    padding: $space-default-half;
+    border: 1px solid $ucf-gray;
+}
+ 
+.content-box-gray {
+}
+
+.content-box-gold {
+    border-color: $ucf-gold
+}
+
+.content-box-blue {
+    border-color: $blue;
+}
+ 
+.content-box-green {
+    border-color: $green;
+}
+ 
+.content-box-red {
+    border-color: $red;
+}
+ 
+
+
 //================//
 //  MKMC & ADMIN  //
 //================//

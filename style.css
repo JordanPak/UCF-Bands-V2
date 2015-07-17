@@ -1378,6 +1378,28 @@ hr {
   border: 0;
   border-bottom: 1px solid #d5d0d1; }
 
+.content-box-blue,
+.content-box-gray,
+.content-box-green,
+.content-box-red,
+.content-box-gold {
+  margin: 0 0 30px;
+  overflow: hidden;
+  padding: 20px;
+  border: 1px solid #221E1F; }
+
+.content-box-gold {
+  border-color: #FFCA06; }
+
+.content-box-blue {
+  border-color: #428BCA; }
+
+.content-box-green {
+  border-color: #5CB85C; }
+
+.content-box-red {
+  border-color: #D41F1A; }
+
 i.mkmc-note {
   border-bottom: 1px solid #FFCA06; }
 
