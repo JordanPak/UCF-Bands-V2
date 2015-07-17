@@ -73,9 +73,39 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 }
 
 
+
 //=============================//
 //  UNORDERED & ORDERED LISTS  //
 //=============================//
+
+.entry-content ul {
+
+    > li {
+        list-style-image: url('images/bullets/bullet-black.png');
+    }
+    
+    &.blue > li {
+            list-style-image: url('images/bullets/bullet-blue.png');
+    }
+    
+    &.green > li {
+            list-style-image: url('images/bullets/bullet-green.png');
+    }
+
+    &.red > li {
+            list-style-image: url('images/bullets/bullet-red.png');
+    }
+
+    &.gold > li {
+            list-style-image: url('images/bullets/bullet-gold.png');
+    }
+    
+    &.checkmark > li {
+            list-style-image: url('images/bullets/bullet-checkmark.png');
+    }
+    
+} // .entry-content ul
+
 
 
 //===================//

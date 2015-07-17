@@ -1358,6 +1358,19 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 .entry-title a:hover {
   color: #221E1F; }
 
+.entry-content ul > li {
+  list-style-image: url("images/bullets/bullet-black.png"); }
+.entry-content ul.blue > li {
+  list-style-image: url("images/bullets/bullet-blue.png"); }
+.entry-content ul.green > li {
+  list-style-image: url("images/bullets/bullet-green.png"); }
+.entry-content ul.red > li {
+  list-style-image: url("images/bullets/bullet-red.png"); }
+.entry-content ul.gold > li {
+  list-style-image: url("images/bullets/bullet-gold.png"); }
+.entry-content ul.checkmark > li {
+  list-style-image: url("images/bullets/bullet-checkmark.png"); }
+
 hr {
   margin: 40px 0;
   border: 0;
