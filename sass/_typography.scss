@@ -30,7 +30,6 @@ body {
 //============//
 
 h1, h2, h3, h4, h5, h6 {
-//    font-family: 'Oswald', 'Arial', sans-serif;
     font-family: $font-family-serif;
 }
 
@@ -72,6 +71,180 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
         color: $ucf-gray;
     }  
 }
+
+
+
+//=============================//
+//  UNORDERED & ORDERED LISTS  //
+//=============================//
+
+.entry-content ul {
+
+    > li {
+        list-style-image: url('images/bullets/bullet-gold.png');
+    }
+    
+    &.blue > li {
+            list-style-image: url('images/bullets/bullet-blue.png');
+    }
+    
+    &.green > li {
+            list-style-image: url('images/bullets/bullet-green.png');
+    }
+
+    &.red > li {
+            list-style-image: url('images/bullets/bullet-red.png');
+    }
+
+    &.gold > li {
+            list-style-image: url('images/bullets/bullet-gold.png');
+    }
+    
+    &.black > li {
+            list-style-image: url('images/bullets/bullet-black.png');
+    }
+    
+    &.checkmark > li {
+            list-style-image: url('images/bullets/bullet-checkmark.png');
+    }
+    
+} // .entry-content ul
+
+
+
+//===================//
+//  HORIZONTAL RULE  //
+//===================//
+
+hr {
+    margin: $space-default 0;
+    border: 0;
+    border-bottom: 1px solid $ucf-gray-med-light;
+}
+
+
+
+//===========//
+//  BUTTONS  //
+//===========//
+ 
+.button {
+
+    @include button();
+    @include transition-ease-in-out(175ms);
+
+    
+    //-- SIZES --//
+    
+    // Small
+    &.button-sm {
+        padding: ($space-default-half - 17px) ($space-default-half - 10px);
+    }
+    
+    // Medium
+    &.button-med {
+        padding: ($space-default-half - 12px) ($space-default-half - 2px);
+    }
+    
+    // Large
+    &.button-lg {
+        padding: ($space-default-half - 10px) $space-default-half;
+        font-size: 1.20em; // 1.125em;
+        font-weight: normal;
+        font-family: $font-family-serif;
+    }
+    
+    
+    //-- ALTERNATIVE COLORS --//
+    &.button-gold {
+        @include button($white, $text-shadow-gold-med, $ucf-gold, $ucf-gold-darker);
+    }
+    
+    &.button-red {
+        @include button($white, $text-shadow-red-med, $red, $red-darker);
+    }
+    
+    &.button-green {
+        @include button($white, $text-shadow-green-med, $green, $green-darker);
+    }
+    
+    &.button-blue {
+        @include button($white, $text-shadow-blue-med, $blue, $blue-darker);
+    }
+    
+    
+    //-- OUTLINE --//
+    &.button-outline {
+        @include button-outline();   
+        
+        &.button-gold {
+            @include button-outline($ucf-gold);
+        }
+        &.button-red {
+            @include button-outline($red);
+        }
+        &.button-green {
+            @include button-outline($green);
+        }
+        &.button-blue {
+            @include button-outline($blue);
+        }
+        
+    } // .button-outline
+
+} // .button
+
+
+// Athletic Font family on Lg button
+body {
+    
+    &.font-style-athletic {
+        
+        .button {
+            
+            &.button-lg {
+                font-family: $font-family-athletic;
+            }
+        }
+        
+    }
+}
+
+
+//=================//
+//  CONTENT BOXES  //
+//=================//
+ 
+.content-box-blue,
+.content-box-gray,
+.content-box-green,
+.content-box-red,
+.content-box-gold {
+    margin: 0 0 $space-default-half + 10px;
+    overflow: hidden;
+    padding: $space-default-half;
+    border: 1px solid $ucf-gray;
+}
+ 
+.content-box-gray {
+}
+
+.content-box-gold {
+    border-color: $ucf-gold
+}
+
+.content-box-blue {
+    border-color: $blue;
+}
+ 
+.content-box-green {
+    border-color: $green;
+}
+ 
+.content-box-red {
+    border-color: $red;
+}
+ 
 
 
 //================//

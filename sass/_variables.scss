@@ -7,10 +7,12 @@
 //  COLORS  //
 //==========//
 
-// Basic 
+//-- BASIC --// 
 $white:             #FFFFFF;
 $black:             #000000;
 
+
+//-- PRIMARY --//
 
 // Gold
 $ucf-gold:          #FFCA06;
@@ -20,19 +22,61 @@ $ucf-gold-darker:   #EFBC00;
 // Gray
 $ucf-gray:          #221E1F;
 $ucf-gray-darker:   #141414;
+$ucf-gray-darkest:  #111111;
 $ucf-gray-med:      lighten($ucf-gray, 50);
+$ucf-gray-med-light:lighten($ucf-gray, 70);
 $ucf-gray-light:    rgb(245,245,245);
 
 $border-gray:       #D4D4D4;
 
 
-// Transparencies
+//-- SUPPORT --//
+
+// Red
+$red:               #D41F1A;
+$red-darker:        darken($red, 10);
+$red-darkest:       darken($red, 20);
+
+// Green
+$green:             #5CB85C;
+$green-darker:      darken($green, 10);
+$green-darkest:     darken($green, 20);
+
+// Blue
+$blue:              #428BCA;
+$blue-darker:       darken($blue, 10);
+$blue-darkest:      darken($blue, 20);
+
+
+//-- TRANSPARENCIES --//
 $trans-full:        rgba(0,0,0,0);
 $trans-shadow:      rgba(0,0,0,0.175);
 
 
-// Defaults
+//-- DEFAULTS --//
 $body-text:         #333333;
+
+
+
+//===========//
+//  SHADOWS  //
+//===========//
+
+// Gold
+$text-shadow-gold-med: 0 0 3px $ucf-gold-darker, 1px 1px 1px $ucf-gold-darker, 0 0 3px $ucf-gold-darker, 2px 2px 1px $ucf-gold-darker;
+
+// Red
+$text-shadow-red-med: 0 0 3px $red-darker, 1px 1px 1px $red-darker, 0 0 3px $red-darker, 2px 2px 1px $red-darker;
+
+// Green
+$text-shadow-green-med: 0 0 3px $green-darker, 1px 1px 1px $green-darker, 0 0 3px $green-darker, 2px 2px 1px $green-darker;
+
+// Blue
+$text-shadow-blue-med: 0 0 3px $blue-darker, 1px 1px 1px $blue-darker, 0 0 3px $blue-darker, 2px 2px 1px $blue-darker;
+
+// Dark
+$text-shadow-dark-med: 0 0 3px $black, 1px 1px 1px rgba(0,0,0,0.4), 0 0 3px $black, 2px 2px 1px rgba(0,0,0,0.4);
+$text-shadow-dark-lg:  0 0 8px $black, 0 0 2px $black, 1px 1px 2px rgba(0, 0, 0, 0.5), 2px 2px 3px rgba(0, 0, 0, 0.4);
 
 
 
@@ -96,16 +140,6 @@ $font-family-serif:         'Droid Serif', 'Georgia', 'Times', serif;
 $font-family-athletic:      'Oswald', 'Roboto', sans-serif;
 
 
-//===========//
-//  SHADOWS  //
-//===========//
-
-// Gold
-$text-shadow-gold-med: 0 0 3px $ucf-gold-darker, 1px 1px 1px $ucf-gold-darker, 0 0 3px $ucf-gold-darker, 2px 2px 1px $ucf-gold-darker;
-
-// Dark
-$text-shadow-dark-med: 0 0 3px $black, 1px 1px 1px rgba(0,0,0,0.4), 0 0 3px $black, 2px 2px 1px rgba(0,0,0,0.4);
-$text-shadow-dark-lg:  0 0 8px $black, 0 0 2px $black, 1px 1px 2px rgba(0, 0, 0, 0.5), 2px 2px 3px rgba(0, 0, 0, 0.4);
 
 
 //==========================//

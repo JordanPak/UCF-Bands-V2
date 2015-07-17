@@ -2,6 +2,11 @@
 //  UCFBands V2 | Mixins  //
 //========================//
 
+
+//==========//
+//  BLOCKS  //
+//==========//
+
 @mixin block {
     background-color: $white;
     box-shadow: 0 1px 6px $trans-shadow;
@@ -13,6 +18,91 @@
     box-shadow: none;
     border: none;
 }
+
+
+//===========//
+//  BUTTONS  //
+//===========//
+
+@mixin button(
+    $text-color:                $white,
+    $text-shadow:               $text-shadow-dark-med,
+    $background-color:          $ucf-gray,
+    $border-color:              $black
+){
+    
+    // DEFAULTS
+    text-transform: none;
+    font-weight: 700;
+    padding: ($space-default-half - 12px) ($space-default-half - 2px);
+    
+    
+    // REGULAR STUFF
+    color: $text-color;
+    text-shadow: $text-shadow;
+    background-color: $background-color;
+    border: 1px solid $border-color;
+    
+    
+    // HOVER //
+    &:hover {
+        
+        // Defaults
+        background-color: $ucf-gold;
+        border-color: $ucf-gold-darker;
+        text-shadow: $text-shadow-gold-med;
+        
+        // Text Shadow, Background, & Border
+        @if $background-color == $ucf-gold {
+            text-shadow: $text-shadow-dark-med;
+            background-color: $black;
+            border-color: $black;
+        }
+        
+        @if $background-color == $green {
+            text-shadow: $text-shadow-green-med;
+            background-color: $green-darker;
+            border-color: $green-darkest;
+        }        
+
+        @if $background-color == $red {
+            text-shadow: $text-shadow-red-med;
+            background-color: $red-darker;
+            border-color: $red-darkest;
+        }
+        
+        @if $background-color == $blue {
+            text-shadow: $text-shadow-blue-med;
+            background-color: $blue-darker;
+            border-color: $blue-darkest;
+        }
+
+    } // :hover
+    
+} // button()
+
+
+@mixin button-outline($color: $ucf-gray) {
+        
+    // DEFAULTS
+    background: none;
+    border: solid 2px $color;
+    color: $color;
+    text-shadow: none;
+    
+    // HOVER 
+    &:hover {
+        background: $color;
+        color: $white;        
+    } // :hover
+    
+} // button-outline()
+
+
+
+//===========//
+//  SHADOWS  //
+//===========//
 
 @mixin site-inner-inset-shadow($dark-border: false, $dark-fade-left: false, $dark-fade-bottom: false) {
     
