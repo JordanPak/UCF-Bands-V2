@@ -1,21 +1,21 @@
 <?php
 
 /*
- *  UCFBands Custom Page Title Settings
+ *  UCFBands Custom Page Header Settings
  */
 
 
 // Add page title before content_sidebar_wrap
-add_action( 'genesis_before_content_sidebar_wrap', 'ucfbands_custom_page_title', 10);
+add_action( 'genesis_before_content_sidebar_wrap', 'ucfbands_custom_page_header', 10);
 /**
- *  UCFBands Custom Page Title
+ *  UCFBands Custom Page Header
  *  
  *  @author Jordan Pakrosnis
  */
-function ucfbands_custom_page_title() {
+function ucfbands_custom_page_header() {
 
     
-    // SET PAGE TITLE VARS //
+    // SET PAGE HEADER VARS //
     
     // Get array of parent IDs
     $page_parents = get_post_ancestors( $post );
