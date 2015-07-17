@@ -1723,6 +1723,13 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
     box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
     border: 1px solid #D4D4D4; }
 
+.entry-content img {
+  border: 1px solid whitesmoke;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); }
+  .entry-content img.no-border {
+    border: none;
+    box-shadow: none; }
+
 .site-footer {
   position: fixed;
   margin: 0;

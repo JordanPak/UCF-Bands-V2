@@ -175,6 +175,7 @@ hr {
     
     //-- OUTLINE --//
     &.button-outline {
+        
         @include button-outline();   
         
         &.button-gold {
