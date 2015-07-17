@@ -21,6 +21,7 @@ $ucf-gold-darker:   #EFBC00;
 $ucf-gray:          #221E1F;
 $ucf-gray-darker:   #141414;
 $ucf-gray-med:      lighten($ucf-gray, 50);
+$ucf-gray-med-light:lighten($ucf-gray, 70);
 $ucf-gray-light:    rgb(245,245,245);
 
 $border-gray:       #D4D4D4;

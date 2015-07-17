@@ -1358,6 +1358,11 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 .entry-title a:hover {
   color: #221E1F; }
 
+hr {
+  margin: 40px 0;
+  border: 0;
+  border-bottom: 1px solid #d5d0d1; }
+
 i.mkmc-note {
   border-bottom: 1px solid #FFCA06; }
 
