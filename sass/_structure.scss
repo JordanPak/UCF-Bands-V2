@@ -290,6 +290,13 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
     h2 { 
         cursor: default;
     }
+    
+    &.block-remove-background-padding {
+        padding: 0;
+        border: 0;
+        background: none;
+        box-shadow: none;
+    }
 }
 
 

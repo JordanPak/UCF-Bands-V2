@@ -72,12 +72,13 @@ function show_masonry_grid() {
 	foreach ( $blocks as $block ) {       
         
         // Get Block Meta Data
-        $block_title =          $block['title'];
-        $block_icon =           esc_attr( $block['icon'] );
-        $block_width =          esc_attr( $block['width'] );
-        $block_is_featured =    esc_attr( $block['featured'] );
-        $block_content =        esc_attr( $block['block-content'] );
-        $block_is_breaker =     esc_attr( $block['breaker'] );
+        $block_title                        = esc_attr( $block['title'] );
+        $block_icon                         = esc_attr( $block['icon'] );
+        $block_width                        = esc_attr( $block['width'] );
+        $block_is_featured                  = esc_attr( $block['featured'] );
+        $block_content                      = esc_attr( $block['block-content'] );
+        $block_remove_background_padding    = esc_attr( $block['remove-background'] );
+        $block_is_breaker                   = esc_attr( $block['breaker'] );
        
         
         // If the block isn't a "breaker", proceed as normal
@@ -89,6 +90,11 @@ function show_masonry_grid() {
             // Featured?
             if ($block_is_featured == true ) {
                 $block_classes .= ' block-featured';
+            }
+            
+            // Background/Padding Disabled?
+            if ($block_remove_background_padding) {
+                $block_classes .= ' block-remove-background-padding';
             }
 
             // Block Icon?

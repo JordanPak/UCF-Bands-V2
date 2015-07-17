@@ -84,8 +84,15 @@ function ucfbands_blocks_metabox() {
 		'type' => 'textarea', //'type' => 'wysiwyg'
         'desc' => 'This text area supports <b><a href="https://help.github.com/articles/github-flavored-markdown/" target="_BLANK">GithHub Flavored Markdown</a></b> and shortcodes. Markdown is required to format the block text.'
 	) );
-    
+
 	$cmb_group->add_group_field( $group_field_id, array(
+		'name' => __( 'Remove Block Background &amp; Padding', 'ucfbands-blocks' ),
+		'id'   => 'remove-background',
+		'type' => 'checkbox',
+        'desc' => 'Remove the white background &amp; shadow, along with the padding to be compatible with a block-filled shortcode.',
+	) );
+    
+    $cmb_group->add_group_field( $group_field_id, array(
 		'name' => __( 'Breaker Block', 'ucfbands-blocks' ),
 		'id'   => 'breaker',
 		'type' => 'checkbox',

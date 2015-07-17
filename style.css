@@ -1534,6 +1534,11 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
     border-bottom: 5px solid #221E1F; }
   .block h2 {
     cursor: default; }
+  .block.block-remove-background-padding {
+    padding: 0;
+    border: 0;
+    background: none;
+    box-shadow: none; }
 
 .sidebar-primary {
   float: left;
