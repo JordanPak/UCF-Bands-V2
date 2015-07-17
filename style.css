@@ -1378,6 +1378,132 @@ hr {
   border: 0;
   border-bottom: 1px solid #d5d0d1; }
 
+.button {
+  text-transform: none;
+  font-weight: 700;
+  padding: 8px 18px;
+  color: #FFFFFF;
+  text-shadow: 0 0 3px #000000, 1px 1px 1px rgba(0, 0, 0, 0.4), 0 0 3px #000000, 2px 2px 1px rgba(0, 0, 0, 0.4);
+  background-color: #221E1F;
+  border: 1px solid #000000;
+  transition: all ease-in-out 175ms; }
+  .button:hover {
+    background-color: #FFCA06;
+    border-color: #EFBC00;
+    text-shadow: 0 0 3px #EFBC00, 1px 1px 1px #EFBC00, 0 0 3px #EFBC00, 2px 2px 1px #EFBC00; }
+  .button.button-sm {
+    padding: 3px 10px; }
+  .button.button-med {
+    padding: 8px 18px; }
+  .button.button-lg {
+    padding: 10px 20px;
+    font-size: 1.20em;
+    font-weight: normal;
+    font-family: "Droid Serif", "Georgia", "Times", serif; }
+  .button.button-gold {
+    text-transform: none;
+    font-weight: 700;
+    padding: 8px 18px;
+    color: #FFFFFF;
+    text-shadow: 0 0 3px #EFBC00, 1px 1px 1px #EFBC00, 0 0 3px #EFBC00, 2px 2px 1px #EFBC00;
+    background-color: #FFCA06;
+    border: 1px solid #EFBC00; }
+    .button.button-gold:hover {
+      background-color: #FFCA06;
+      border-color: #EFBC00;
+      text-shadow: 0 0 3px #EFBC00, 1px 1px 1px #EFBC00, 0 0 3px #EFBC00, 2px 2px 1px #EFBC00;
+      text-shadow: 0 0 3px #000000, 1px 1px 1px rgba(0, 0, 0, 0.4), 0 0 3px #000000, 2px 2px 1px rgba(0, 0, 0, 0.4);
+      background-color: #000000;
+      border-color: #000000; }
+  .button.button-red {
+    text-transform: none;
+    font-weight: 700;
+    padding: 8px 18px;
+    color: #FFFFFF;
+    text-shadow: 0 0 3px #a71814, 1px 1px 1px #a71814, 0 0 3px #a71814, 2px 2px 1px #a71814;
+    background-color: #D41F1A;
+    border: 1px solid #a71814; }
+    .button.button-red:hover {
+      background-color: #FFCA06;
+      border-color: #EFBC00;
+      text-shadow: 0 0 3px #EFBC00, 1px 1px 1px #EFBC00, 0 0 3px #EFBC00, 2px 2px 1px #EFBC00;
+      text-shadow: 0 0 3px #a71814, 1px 1px 1px #a71814, 0 0 3px #a71814, 2px 2px 1px #a71814;
+      background-color: #a71814;
+      border-color: #79120f; }
+  .button.button-green {
+    text-transform: none;
+    font-weight: 700;
+    padding: 8px 18px;
+    color: #FFFFFF;
+    text-shadow: 0 0 3px #449d44, 1px 1px 1px #449d44, 0 0 3px #449d44, 2px 2px 1px #449d44;
+    background-color: #5CB85C;
+    border: 1px solid #449d44; }
+    .button.button-green:hover {
+      background-color: #FFCA06;
+      border-color: #EFBC00;
+      text-shadow: 0 0 3px #EFBC00, 1px 1px 1px #EFBC00, 0 0 3px #EFBC00, 2px 2px 1px #EFBC00;
+      text-shadow: 0 0 3px #449d44, 1px 1px 1px #449d44, 0 0 3px #449d44, 2px 2px 1px #449d44;
+      background-color: #449d44;
+      border-color: #357935; }
+  .button.button-blue {
+    text-transform: none;
+    font-weight: 700;
+    padding: 8px 18px;
+    color: #FFFFFF;
+    text-shadow: 0 0 3px #3071a9, 1px 1px 1px #3071a9, 0 0 3px #3071a9, 2px 2px 1px #3071a9;
+    background-color: #428BCA;
+    border: 1px solid #3071a9; }
+    .button.button-blue:hover {
+      background-color: #FFCA06;
+      border-color: #EFBC00;
+      text-shadow: 0 0 3px #EFBC00, 1px 1px 1px #EFBC00, 0 0 3px #EFBC00, 2px 2px 1px #EFBC00;
+      text-shadow: 0 0 3px #3071a9, 1px 1px 1px #3071a9, 0 0 3px #3071a9, 2px 2px 1px #3071a9;
+      background-color: #3071a9;
+      border-color: #245682; }
+  .button.button-outline {
+    background: none;
+    border: solid 2px #221E1F;
+    color: #221E1F;
+    text-shadow: none; }
+    .button.button-outline:hover {
+      background: #221E1F;
+      color: #FFFFFF; }
+    .button.button-outline.button-gold {
+      background: none;
+      border: solid 2px #FFCA06;
+      color: #FFCA06;
+      text-shadow: none; }
+      .button.button-outline.button-gold:hover {
+        background: #FFCA06;
+        color: #FFFFFF; }
+    .button.button-outline.button-red {
+      background: none;
+      border: solid 2px #D41F1A;
+      color: #D41F1A;
+      text-shadow: none; }
+      .button.button-outline.button-red:hover {
+        background: #D41F1A;
+        color: #FFFFFF; }
+    .button.button-outline.button-green {
+      background: none;
+      border: solid 2px #5CB85C;
+      color: #5CB85C;
+      text-shadow: none; }
+      .button.button-outline.button-green:hover {
+        background: #5CB85C;
+        color: #FFFFFF; }
+    .button.button-outline.button-blue {
+      background: none;
+      border: solid 2px #428BCA;
+      color: #428BCA;
+      text-shadow: none; }
+      .button.button-outline.button-blue:hover {
+        background: #428BCA;
+        color: #FFFFFF; }
+
+body.font-style-athletic .button.button-lg {
+  font-family: "Oswald", "Roboto", sans-serif; }
+
 .content-box-blue,
 .content-box-gray,
 .content-box-green,

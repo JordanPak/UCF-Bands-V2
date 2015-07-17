@@ -124,6 +124,92 @@ hr {
 
 
 
+//===========//
+//  BUTTONS  //
+//===========//
+ 
+.button {
+
+    @include button();
+    @include transition-ease-in-out(175ms);
+
+    
+    //-- SIZES --//
+    
+    // Small
+    &.button-sm {
+        padding: ($space-default-half - 17px) ($space-default-half - 10px);
+    }
+    
+    // Medium
+    &.button-med {
+        padding: ($space-default-half - 12px) ($space-default-half - 2px);
+    }
+    
+    // Large
+    &.button-lg {
+        padding: ($space-default-half - 10px) $space-default-half;
+        font-size: 1.20em; // 1.125em;
+        font-weight: normal;
+        font-family: $font-family-serif;
+    }
+    
+    
+    //-- ALTERNATIVE COLORS --//
+    &.button-gold {
+        @include button($white, $text-shadow-gold-med, $ucf-gold, $ucf-gold-darker);
+    }
+    
+    &.button-red {
+        @include button($white, $text-shadow-red-med, $red, $red-darker);
+    }
+    
+    &.button-green {
+        @include button($white, $text-shadow-green-med, $green, $green-darker);
+    }
+    
+    &.button-blue {
+        @include button($white, $text-shadow-blue-med, $blue, $blue-darker);
+    }
+    
+    
+    //-- OUTLINE --//
+    &.button-outline {
+        @include button-outline();   
+        
+        &.button-gold {
+            @include button-outline($ucf-gold);
+        }
+        &.button-red {
+            @include button-outline($red);
+        }
+        &.button-green {
+            @include button-outline($green);
+        }
+        &.button-blue {
+            @include button-outline($blue);
+        }
+        
+    } // .button-outline
+
+} // .button
+
+
+// Athletic Font family on Lg button
+body {
+    
+    &.font-style-athletic {
+        
+        .button {
+            
+            &.button-lg {
+                font-family: $font-family-athletic;
+            }
+        }
+        
+    }
+}
+
 
 //=================//
 //  CONTENT BOXES  //
