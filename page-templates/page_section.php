@@ -8,8 +8,8 @@
 remove_action( 'genesis_sidebar', 'genesis_do_sidebar' );
 
 
-// Page Title
-require_once( CHILD_DIR . '/inc/page-title.php' );
+// Page Header
+require_once( CHILD_DIR . '/inc/page-header.php' );
 
 
 //-- LOAD FRAMEWORK --//

@@ -119,7 +119,7 @@ function add_top_bar() {
 
 
 // Icon settings support for default page template
-require_once( CHILD_DIR . '/inc/page-title-default.php' );
+require_once( CHILD_DIR . '/inc/page-header-default.php' );
 
 
 // Page Slider

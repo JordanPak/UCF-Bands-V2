@@ -9,8 +9,8 @@ remove_action( 'genesis_entry_content', 'genesis_do_post_content' );
 remove_action( 'genesis_loop', 'genesis_do_loop' );
 
 
-// Page Title
-require_once( CHILD_DIR . '/inc/page-title.php' );
+// Page Header
+require_once( CHILD_DIR . '/inc/page-header.php' );
 
 
 // Disable Grid Padding
@@ -27,6 +27,10 @@ function body_class_disable_grid_padding( $classes ) {
     
     return $classes;
 }
+
+
+// Page Title
+require_once( CHILD_DIR . '/inc/page-title.php' );
 
 
 // Masonry Init & Output

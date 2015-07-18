@@ -1336,6 +1336,14 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: "Droid Serif", "Georgia", "Times", serif; }
 
+h1.section-page-title {
+  margin-bottom: 40px;
+  text-shadow: 0 0 8px #FFFFFF, 0 0 2px #FFFFFF, 1px 1px 2px #FFFFFF, 2px 2px 3px #FFFFFF; }
+  @media only screen and (max-width: 768px) {
+    h1.section-page-title {
+      text-align: center;
+      margin-top: 20px; } }
+
 a {
   color: #FFCA06;
   text-decoration: none; }
