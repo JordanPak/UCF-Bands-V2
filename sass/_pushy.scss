@@ -7,7 +7,7 @@
 
 .pushy{
     position: fixed;
-    width: 200px;
+    width: $site-header-width-mobile;
     height: 100%;
     top: 0;
     z-index: 9999;
@@ -19,6 +19,7 @@
     box-shadow: inset -10px 0 6px -9px rgba(0, 0, 0, .7);
     overflow: auto;
     -webkit-overflow-scrolling: touch; /* enables momentum scrolling in iOS overflow elements */
+    right: 0;
 }
 
 .pushy a{
@@ -37,12 +38,12 @@
 
 /* Menu Movement */
 
-.pushy-left{
-    -webkit-transform: translate3d(-200px,0,0);
-    -moz-transform: translate3d(-200px,0,0);
-    -ms-transform: translate3d(-200px,0,0);
-    -o-transform: translate3d(-200px,0,0);
-    transform: translate3d(-200px,0,0);
+.pushy-right{
+    -webkit-transform: translate3d($site-header-width-mobile,0,0);
+    -moz-transform: translate3d($site-header-width-mobile,0,0);
+    -ms-transform: translate3d($site-header-width-mobile,0,0);
+    -o-transform: translate3d($site-header-width-mobile,0,0);
+    transform: translate3d($site-header-width-mobile,0,0);
 }
 
 .pushy-open{
@@ -51,14 +52,16 @@
     -ms-transform: translate3d(0,0,0);
     -o-transform: translate3d(0,0,0);
     transform: translate3d(0,0,0);
+    
+    box-shadow: 0 0 15px $black;
 }
 
 .container-push, .push-push{
-    -webkit-transform: translate3d(200px,0,0);
-    -moz-transform: translate3d(200px,0,0);
-    -ms-transform: translate3d(200px,0,0);
-    -o-transform: translate3d(200px,0,0);
-    transform: translate3d(200px,0,0);
+    -webkit-transform: translate3d(-$site-header-width-mobile,0,0);
+    -moz-transform: translate3d(-$site-header-width-mobile,0,0);
+    -ms-transform: translate3d(-$site-header-width-mobile,0,0);
+    -o-transform: translate3d(-$site-header-width-mobile,0,0);
+    transform: translate3d(-$site-header-width-mobile,0,0);
 }
 
 /* Menu Transitions */

@@ -1331,7 +1331,7 @@ li.comment {
 /* Menu Appearance */
 .pushy {
   position: fixed;
-  width: 200px;
+  width: 260px;
   height: 100%;
   top: 0;
   z-index: 9999;
@@ -1343,7 +1343,8 @@ li.comment {
   box-shadow: inset -10px 0 6px -9px rgba(0, 0, 0, 0.7);
   overflow: auto;
   -webkit-overflow-scrolling: touch;
-  /* enables momentum scrolling in iOS overflow elements */ }
+  /* enables momentum scrolling in iOS overflow elements */
+  right: 0; }
 
 .pushy a {
   display: block;
@@ -1358,26 +1359,27 @@ li.comment {
   color: #FFF; }
 
 /* Menu Movement */
-.pushy-left {
-  -webkit-transform: translate3d(-200px, 0, 0);
-  -moz-transform: translate3d(-200px, 0, 0);
-  -ms-transform: translate3d(-200px, 0, 0);
-  -o-transform: translate3d(-200px, 0, 0);
-  transform: translate3d(-200px, 0, 0); }
+.pushy-right {
+  -webkit-transform: translate3d(260px, 0, 0);
+  -moz-transform: translate3d(260px, 0, 0);
+  -ms-transform: translate3d(260px, 0, 0);
+  -o-transform: translate3d(260px, 0, 0);
+  transform: translate3d(260px, 0, 0); }
 
 .pushy-open {
   -webkit-transform: translate3d(0, 0, 0);
   -moz-transform: translate3d(0, 0, 0);
   -ms-transform: translate3d(0, 0, 0);
   -o-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0); }
+  transform: translate3d(0, 0, 0);
+  box-shadow: 0 0 15px #000000; }
 
 .container-push, .push-push {
-  -webkit-transform: translate3d(200px, 0, 0);
-  -moz-transform: translate3d(200px, 0, 0);
-  -ms-transform: translate3d(200px, 0, 0);
-  -o-transform: translate3d(200px, 0, 0);
-  transform: translate3d(200px, 0, 0); }
+  -webkit-transform: translate3d(-260px, 0, 0);
+  -moz-transform: translate3d(-260px, 0, 0);
+  -ms-transform: translate3d(-260px, 0, 0);
+  -o-transform: translate3d(-260px, 0, 0);
+  transform: translate3d(-260px, 0, 0); }
 
 /* Menu Transitions */
 .pushy, #container, .push {
@@ -2155,9 +2157,7 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
 
 nav.pushy.nav-primary {
   background: #221E1F;
-  width: 260px;
-  box-shadow: 0 0 15px #000000;
-  border-right: 4px solid #FFCA06; }
+  border-left: 4px solid #FFCA06; }
   @media only screen and (max-width: 768px) {
     nav.pushy.nav-primary.nav-primary {
       display: block; } }
@@ -2165,14 +2165,6 @@ nav.pushy.nav-primary {
     border-top: 0; }
   nav.pushy.nav-primary .menu-item a {
     padding: 14px; }
-
-.pushy-left {
-  transform: translate3d(-260px, 0, 0);
-  /* Don't forget the vendor prefixes */ }
-
-.container-push, .push-push {
-  transform: translate3d(-260px, 0, 0);
-  /* Don't forget the vendor prefixes */ }
 
 nav.section-menu {
   position: absolute;

@@ -114,9 +114,7 @@
 
 nav.pushy.nav-primary {
     background: $ucf-gray;
-    width: $site-header-width-mobile;
-    box-shadow: 0 0 15px $black;
-    border-right: 4px solid $ucf-gold;
+    border-left: 4px solid $ucf-gold;
    
     &.nav-primary {
         
@@ -134,19 +132,9 @@ nav.pushy.nav-primary {
         a {
             padding: 14px;
         }
-    }
+    } // .menu-item
     
 } // nav.pushy
-
-.pushy-left{
-    transform: translate3d(-$site-header-width-mobile, 0, 0);
-    /* Don't forget the vendor prefixes */
-}
-
-.container-push, .push-push{
-    transform: translate3d(-$site-header-width-mobile, 0, 0);
-    /* Don't forget the vendor prefixes */
-}
 
 
 // SECTION MENU //

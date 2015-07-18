@@ -70,7 +70,7 @@ function ucfbands_mobile_menu() {
     $mobile_menu_args = array(
         'menu'              => 'primary',
         'container'         => 'nav',
-        'container_class'   => 'pushy pushy-left nav-primary',
+        'container_class'   => 'pushy pushy-right nav-primary',
         'menu_id'           => 'mobile-menu',
         'menu_class'        => 'genesis-nav-menu',
         'echo'              => true,
