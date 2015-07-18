@@ -126,6 +126,10 @@ require_once( CHILD_DIR . '/inc/page-header-default.php' );
 require_once( CHILD_DIR . '/inc/page-slider.php' );
 
 
+// Pre-Content Shortcode
+require_once( CHILD_DIR . '/inc/pre-content-shortcode.php' );
+
+
 // CMB2
 if ( file_exists(  __DIR__ . '/cmb2/init.php' ) ) {
   require_once  __DIR__ . '/cmb2/init.php';

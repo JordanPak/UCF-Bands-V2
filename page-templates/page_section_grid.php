@@ -33,10 +33,6 @@ function body_class_disable_grid_padding( $classes ) {
 require_once( CHILD_DIR . '/inc/page-title.php' );
 
 
-// Pre-Content Shortcode
-require_once( CHILD_DIR . '/inc/pre-content-shortcode.php' );
-
-
 // Masonry Init & Output
 require_once( CHILD_DIR . '/inc/masonry.php' );
 
