@@ -33,6 +33,20 @@ h1, h2, h3, h4, h5, h6 {
     font-family: $font-family-serif;
 }
 
+h1 {
+    
+    &.section-page-title {
+        margin-bottom: $space-default;
+        text-shadow: $text-shadow-white-lg;
+        
+        @media only screen and (max-width: $breakpoint-small) {
+            text-align: center;
+            margin-top: $space-default-half;
+        }
+    }
+    
+} // h1
+
 
 //===========//
 //  ANCHORS  //
