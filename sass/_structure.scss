@@ -253,6 +253,7 @@ body {
     @media only screen and (max-width: $breakpoint-small) {
         margin-left: 0;
         border-left: 0;
+        border-bottom: 5px solid $ucf-gold;
     }
     
 }
@@ -265,7 +266,7 @@ body {
 .content-sidebar-wrap {
     padding: $space-default;
     overflow: auto;
-    min-height: 1200px;
+    min-height: 1000px;
     
     background-image: url('images/pegasus-bg.png');
     background-repeat: no-repeat;
@@ -459,7 +460,19 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
         width: $site-header-width-med;
         padding: $space-default-half;
     }
-}
+    
+    @media only screen and (max-width: $breakpoint-small) {
+        position: static;
+        padding: $space-default;
+        width: 100%;
+        border-top: 5px solid $ucf-gray-darkest;
+        
+        .wrap {
+            padding: 0;
+        }
+    }
+    
+} // .site-footer
 
 #footer-social {
     height: auto;

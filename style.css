@@ -1718,12 +1718,13 @@ body {
   @media only screen and (max-width: 768px) {
     .site-inner {
       margin-left: 0;
-      border-left: 0; } }
+      border-left: 0;
+      border-bottom: 5px solid #FFCA06; } }
 
 .content-sidebar-wrap {
   padding: 40px;
   overflow: auto;
-  min-height: 1200px;
+  min-height: 1000px;
   background-image: url("images/pegasus-bg.png");
   background-repeat: no-repeat;
   background-position: -100px 25px; }
@@ -1858,6 +1859,14 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
     .site-footer {
       width: 230px;
       padding: 20px; } }
+  @media only screen and (max-width: 768px) {
+    .site-footer {
+      position: static;
+      padding: 40px;
+      width: 100%;
+      border-top: 5px solid #111111; }
+      .site-footer .wrap {
+        padding: 0; } }
 
 #footer-social {
   height: auto;
