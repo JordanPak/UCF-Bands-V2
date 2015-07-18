@@ -32,16 +32,48 @@ add_action( 'genesis_header', 'genesis_do_nav', 12 );
 
 
 
-add_action( 'genesis_header', 'ucfbands_mobile_menu', 14 );
+add_action( 'genesis_header', 'ucfbands_mobile_menu_button', 14 );
 /**
- * UCFBands Mobile Menu
- * Outputs the Primary Navigation Menu into the Pushy Menu
+ * UCFBands Mobile Menu Button
+ * Outputs the Primary Navigation Menu Button for the` Pushy Menu
+ *
+ * @author Jordan Pakrosnis
+ */
+function ucfbands_mobile_menu_button() {
+    
+    // Output Button
+    echo '<div class="menu-btn"><i class="fa fa-hamburger"></i> Menu</div>';
+    
+} // ucfbands_mobile_menu_button()
+
+
+
+add_action( 'genesis_before', 'ucfbands_mobile_menu' );
+/**
+ * UCFBands Mobile Menu Button
+ * Outputs the Primary Navigation Menu Button for the` Pushy Menu
  *
  * @author Jordan Pakrosnis
  */
 function ucfbands_mobile_menu() {
+
+    // Configure Menu
+    $mobile_menu_args = array(
+        'menu'              => 'primary',
+        'container'         => 'nav',
+        'container_class'   => 'pushy pushy-left',
+        'menu_id'           => 'mobile-menu',
+        'menu_class'        => '',
+        'echo'              => true,
+        'depth'             => 1,
+    );
     
-    echo '<h2>TESTING BEFORE HEADER CLOSE</h2>';
+    // Output Menu
+    wp_nav_menu( $mobile_menu_args );
+    
+    
+    // Output Site Overlay
+    echo '<div class="site-overlay"></div>';
     
 } // ucfbands_mobile_menu()
 
