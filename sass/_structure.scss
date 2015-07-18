@@ -137,7 +137,22 @@ body {
         text-shadow: $text-shadow-dark-med;
         cursor: default;
     }
-} // .page-title
+    
+    a {
+        
+        h1.entry-title {
+            
+            @include transition-ease-in-out();
+
+            &:hover {
+                color: $ucf-gold;
+                cursor: pointer;
+            }
+        } // h1.entry-title
+        
+    } // a
+    
+} // .page-header
 
 
 
