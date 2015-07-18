@@ -7,7 +7,7 @@
 add_action( 'genesis_before_content', 'ucfbands_page_title');
 /**
  * Output Page Title
- * Outputs page title; intended for grid templates
+ * Outputs page title; intended for section grid templates
  *
  * @author Jordan Pakrosnis
  * @link http://ucfbands.com/
@@ -18,38 +18,49 @@ function ucfbands_page_title() {
     $post_ID = get_the_ID();
     
     
+    
     // GET OPTIONS META
+    $meta_id_prefix = '_ucfbands_page_settings_';
+    
+    $remove_title  = get_post_meta( $post_ID, $meta_id_prefix . 'remove_page_title', true );
     $icon           = get_post_meta( $post_ID, $meta_id_prefix . 'icon', true );
     $icon_position  = get_post_meta( $post_ID, $meta_id_prefix . 'icon_position', true );
                 
     
-    // CONFIGURE ICON
-    if ($icon) { 
-        $icon = '<i class="fa fa-' . $icon . '"></i>';
-        
-        if ($icon_position === 'before') {
-            $icon_before = $icon . '&nbsp;&nbsp;';
-            $icon_after = '';
-        }
-        else {
-            $icon_before = '';
-            $icon_after = '&nbsp;&nbsp;' . $icon;
-        }
-    }
-        
+    // PROCEED IF NOT REMOVED
+    if ($remove_title == false) {
     
-    // OUTPUT TITLE
-    ?>
+        
+        // CONFIGURE ICON
+        if ($icon) { 
+            $icon = '<i class="fa fa-' . $icon . '"></i>';
 
-    <h1 class="entry-title" itemprop="headline">
-        <?php
-            echo $icon_before;
-            echo get_the_title();
-            echo $icon_after;
+            if ($icon_position === 'before') {
+                $icon_before = $icon . '&nbsp;&nbsp;';
+                $icon_after = '';
+            }
+            else {
+                $icon_before = '';
+                $icon_after = '&nbsp;&nbsp;' . $icon;
+            }
+        } // if icon set
+
+
+        // OUTPUT TITLE
         ?>
-    </h1>
+
+        <h1 class="entry-title section-page-title" itemprop="headline">
+            <?php
+                echo $icon_before;
+                echo get_the_title();
+                echo $icon_after;
+            ?>
+        </h1>
 
 
-    <?php
+        <?php
+        
+        
+    } // if title is removed
     
 } // ucfbands_page_title()

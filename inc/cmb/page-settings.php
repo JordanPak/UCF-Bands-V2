@@ -43,6 +43,14 @@ function ucfbands_page_settings_metabox() {
     ) );
 
     $cmb->add_field( array(
+        'name' => 'Remove Section Page Title',
+        'desc' => 'Only applies to section pages. Check box if this section page\'s title should not be shown.',
+        'id'   => $prefix . 'remove_page_title',
+        'type' => 'checkbox',
+        'show_on_cb' => 'cmb_exclude_default_page',
+    ) );
+    
+    $cmb->add_field( array(
         'name' => 'Remove Page Header',
         'desc' => 'Check box if the page header should not be shown.',
         'id'   => $prefix . 'remove_page_header',
