@@ -56,7 +56,7 @@ function ucfbands_custom_page_header() {
     
     
     // Section Classes
-    $page_header_section_classes = 'page-title';
+    $page_header_section_classes = 'page-header';
     
     
     // Set Meta ID

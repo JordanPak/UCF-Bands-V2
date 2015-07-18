@@ -88,15 +88,13 @@ body {
 }
 
 
-//==============//
-//  PAGE TITLE  //
-//==============//
+//===============//
+//  PAGE HEADER  //
+//===============//
 
-.page-title {
+.page-header {
     position: relative;
     overflow: visible;//auto;
-//    padding: $space-default;
-//    padding-left: $space-default + 32px;
     background-color: $ucf-gray;
     background-repeat: no-repeat;
     background-position: top right;
