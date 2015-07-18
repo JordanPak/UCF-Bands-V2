@@ -1560,6 +1560,9 @@ i.mkmc-note {
 
 body {
   background: #221E1F; }
+  @media only screen and (max-width: 768px) {
+    body {
+      padding-top: 74px; } }
 
 #top-bar {
   position: fixed;
@@ -1567,6 +1570,9 @@ body {
   height: 2px;
   background: #000000;
   z-index: 5000; }
+  @media only screen and (max-width: 768px) {
+    #top-bar {
+      display: none; } }
 
 .site-header {
   z-index: 700;
@@ -1585,6 +1591,13 @@ body {
   @media only screen and (max-width: 1200px) {
     .site-header {
       width: 230px; } }
+  @media only screen and (max-width: 768px) {
+    .site-header {
+      top: 0;
+      width: 100%;
+      min-height: 0;
+      padding-left: 10px;
+      border-bottom: 4px solid #FFCA06; } }
 
 .site-header .header-widget-area {
   float: none;
@@ -1596,6 +1609,12 @@ body {
   padding: 12px 0 8px 0;
   display: block;
   width: 100%; }
+
+@media only screen and (max-width: 768px) {
+  .header-full-width .title-area {
+    float: left;
+    width: auto;
+    padding: 0; } }
 
 .header-image .site-title > a {
   margin: 0;
@@ -1612,6 +1631,14 @@ body {
   @media only screen and (max-width: 1200px) {
     .header-image .site-title > a {
       min-height: 100px; } }
+  @media only screen and (max-width: 768px) {
+    .header-image .site-title > a {
+      min-height: 0;
+      height: 70px;
+      width: 125px;
+      background-size: 100%; }
+      .header-image .site-title > a:hover {
+        background-color: #221E1F; } }
 
 .site-description {
   color: #FFFFFF; }
@@ -1673,6 +1700,10 @@ body {
   @media only screen and (max-width: 1200px) {
     .site-inner {
       margin-left: 230px; } }
+  @media only screen and (max-width: 768px) {
+    .site-inner {
+      margin-left: 0;
+      border-left: 0; } }
 
 .content-sidebar-wrap {
   padding: 40px;
@@ -1898,6 +1929,9 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
 
 .nav-primary {
   background: none; }
+  @media only screen and (max-width: 768px) {
+    .nav-primary {
+      display: none; } }
 
 #menu-main-menu .menu-item {
   text-align: center;

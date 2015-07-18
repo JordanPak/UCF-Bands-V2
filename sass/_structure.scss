@@ -9,6 +9,10 @@
 
 body {
     background: $ucf-gray;
+    
+    @media only screen and (max-width: $breakpoint-small) {
+        padding-top: $site-header-mobile-height + 4px; // Header Height + border 
+    }
 }
 
 
@@ -22,6 +26,10 @@ body {
     height: 2px;
     background: $black;
     z-index: 5000;
+    
+    @media only screen and (max-width: $breakpoint-small) {
+        display: none;
+    }
 }
 
 .site-header {
@@ -47,6 +55,14 @@ body {
         width: $site-header-width-med;
     }
     
+    @media only screen and (max-width: $breakpoint-small) {
+        top: 0;
+        width: 100%;
+        min-height: 0;
+        padding-left: 10px;
+        border-bottom: 4px solid $ucf-gold;
+    } // breakpoint-small
+    
 } // .site-header
 
 .site-header .header-widget-area {
@@ -60,6 +76,15 @@ body {
     padding: 12px 0 8px 0;
     display: block;
     width: 100%;
+}
+
+.header-full-width .title-area {
+    
+    @media only screen and (max-width: $breakpoint-small) {
+        float: left;
+        width: auto;
+        padding: 0;
+    }
 }
 
 .header-image .site-title > a {
@@ -80,6 +105,17 @@ body {
     
     @media only screen and (max-width: $breakpoint-medium) {
         min-height: 100px;
+    }
+    
+    @media only screen and (max-width: $breakpoint-small) {
+        min-height: 0;
+        height: $site-header-mobile-height;
+        width: 125px;
+        background-size: 100%;
+        
+        &:hover {
+            background-color: $ucf-gray;
+        }
     }
 }
 
@@ -190,7 +226,8 @@ body {
     }
     
     @media only screen and (max-width: $breakpoint-small) {
-//        padding: $space-default-half;
+        margin-left: 0;
+        border-left: 0;
     }
     
 }
