@@ -16,15 +16,9 @@ function ucfbands_pre_content_shortcode() {
     
     ?>
     
-    <section style="text-align: center; display: block; width: 100%; padding: 150px; background-color: #FFCA06;">
-        
-        <h2 style="text-align: center; color: white; font-size: 4em;">BE THE #BOOGIE THAT BE</h2>
-        
-        <br>
-        
-        <a style="color: white; border-color: white;" class="button button-lg button-outline" href="#">JOIN THE MKS NOW</a>
+    <div class="pre-content-shortcode">
 
-    </section>
+    </div><!-- /.pre-content-shortcode -->
 
     <?php
     
