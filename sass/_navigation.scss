@@ -113,6 +113,8 @@
 
 
 nav.pushy {
+    
+    width: $site-header-width-med;
    
     &.nav-primary {
         
@@ -123,6 +125,15 @@ nav.pushy {
     
 } // nav.pushy
 
+.pushy-left{
+    transform: translate3d(-$site-header-width-med, 0, 0);
+    /* Don't forget the vendor prefixes */
+}
+
+.container-push, .push-push{
+    transform: translate3d(-$site-header-width-med, 0, 0);
+    /* Don't forget the vendor prefixes */
+}
 
 
 // SECTION MENU //

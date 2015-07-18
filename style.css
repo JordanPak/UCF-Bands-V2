@@ -2153,9 +2153,19 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
     .menu-btn {
       display: block; } }
 
-@media only screen and (max-width: 768px) {
-  nav.pushy.nav-primary {
-    display: block; } }
+nav.pushy {
+  width: 230px; }
+  @media only screen and (max-width: 768px) {
+    nav.pushy.nav-primary {
+      display: block; } }
+
+.pushy-left {
+  transform: translate3d(-230px, 0, 0);
+  /* Don't forget the vendor prefixes */ }
+
+.container-push, .push-push {
+  transform: translate3d(-230px, 0, 0);
+  /* Don't forget the vendor prefixes */ }
 
 nav.section-menu {
   position: absolute;
