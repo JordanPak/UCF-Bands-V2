@@ -342,60 +342,8 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
         margin-bottom: $space-default-half;
         padding: $space-default-half;
     }
-}
+} // .entry
 
-.block {
-    @include block();
-    
-    &.block-featured {        
-        border-top: 5px solid $ucf-gold;
-        border-bottom: 5px solid $ucf-gray;
-    }
-    
-    h2 { 
-        cursor: default;
-    }
-    
-    &.block-remove-background-padding {
-        padding: 0;
-        border: 0;
-        background: none;
-        box-shadow: none;
-    }
-}
-
-
-
-//============//
-//  SIDEBARS  //
-//============//
-
-.sidebar-primary {
-    @include col('one-fourth');
-    
-    .widget {
-        @include block();
-    }
-    
-    @media only screen and (max-width: $breakpoint-extra-large) {
-        clear: both;
-        width: 100%;
-        margin: 0;
-    }
-    
-    @media only screen and (max-width: $breakpoint-medium) {
-        
-        .widget {
-            padding: $space-default-half;   
-        }
-    }
-}
-
-
-
-//=======================//
-//  ENTRY CONTENT MEDIA  //
-//=======================//
 
 .entry-content {
     
@@ -426,7 +374,61 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
         }
     }
     
+    p:last-child {
+        margin-bottom: 0;
+    }
+    
 } // .entry-content
+
+
+
+.block {
+    @include block();
+    
+    &.block-featured {        
+        border-top: 5px solid $ucf-gold;
+        border-bottom: 5px solid $ucf-gray;
+    }
+    
+    h2 { 
+        cursor: default;
+    }
+    
+    &.block-remove-background-padding {
+        padding: 0;
+        border: 0;
+        background: none;
+        box-shadow: none;
+    }
+    
+} // .block
+
+
+
+//============//
+//  SIDEBARS  //
+//============//
+
+.sidebar-primary {
+    @include col('one-fourth');
+    
+    .widget {
+        @include block();
+    }
+    
+    @media only screen and (max-width: $breakpoint-extra-large) {
+        clear: both;
+        width: 100%;
+        margin: 0;
+    }
+    
+    @media only screen and (max-width: $breakpoint-medium) {
+        
+        .widget {
+            padding: $space-default-half;   
+        }
+    }
+}
 
 
 
