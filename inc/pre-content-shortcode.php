@@ -14,14 +14,19 @@ add_action( 'genesis_before_content_sidebar_wrap', 'ucfbands_pre_content_shortco
  */
 function ucfbands_pre_content_shortcode() {
     
-    ?>
+    // Get Meta Option
+    $pre_content_shortcode = get_post_meta( get_the_ID(), '_ucfbands_page_settings_pre_content_shortcode', true );
     
-    <div class="pre-content-shortcode">
+    
+    // If the shortcode exists, put it here.
+    if ($pre_content_shortcode != '') {
         
-        <h1>LOOK AT DIS PIFF</h1>
+        echo '<div class="pre-content-shortcode">';
         
-    </div><!-- /.pre-content-shortcode -->
+            echo do_shortcode( $pre_content_shortcode );
+        
+        echo '</div>';
+        
+    } // if slider shortcode exists    
 
-    <?php
-    
 } // ucfbands_pre_content_shortcode()
