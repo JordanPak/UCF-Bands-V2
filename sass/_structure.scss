@@ -167,7 +167,7 @@ body {
     
     .conductor-name {
         display: inline-block;
-        margin-left: 4px;
+        margin: 2px 0 0 4px;
         font-style: italic;
         color: $white;
         text-shadow: $text-shadow-dark-med;
@@ -184,9 +184,26 @@ body {
                 color: $ucf-gold;
                 cursor: pointer;
             }
+            
         } // h1.entry-title
         
     } // a
+    
+    
+    @media only screen and (max-width: $breakpoint-small) {
+        
+        text-align: center;
+        box-shadow: inset 0 0 500px 500px rgba(0,0,0,0.4);
+        
+        .conductor-name {
+            margin: 5px 0 0 0;
+        }
+        
+        &.page-header-lg .page-header-inner {
+            padding: ($space-default + 10px) $space-default;   
+        }
+            
+    } // breakpoint-small
     
 } // .page-header
 
