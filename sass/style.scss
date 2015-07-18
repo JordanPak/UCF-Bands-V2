@@ -10,11 +10,20 @@ License: GPL-2.0+
 License URI: http://www.gnu.org/licenses/gpl-2.0.html  
 */
 
+// Default Genesis Sample Styling
 @import 'default';
 
-// Custom Stuff
+
+// Variables & Mixins
 @import 'variables';
 @import 'mixins';
+
+
+// Plugins
+@import 'pushy';
+
+
+// UCFBands Custom
 @import 'typography';
 @import 'structure';
 @import 'masonry';
