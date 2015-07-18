@@ -33,6 +33,9 @@ function ucfbands_custom_page_header() {
         $header_title = get_the_title( $post_ID );
         $post = get_post( $post_ID );
         $page_slug = $post->post_name;
+        
+        $header_link_before = '';
+        $header_link_after = '';
     }
     
     // SET VARS: Page is child
@@ -45,6 +48,9 @@ function ucfbands_custom_page_header() {
         $header_title = get_the_title( $post_ID );
         $parent_post = get_post( $post_ID );
         $page_slug = $parent_post->post_name;
+        
+        $header_link_before = '<a href="' . get_permalink( $parent_post ) . '">';
+        $header_link_after = '</a>';
     }
     
     
@@ -161,13 +167,17 @@ function ucfbands_custom_page_header() {
             
             <div class="page-title-inner">
                 
-                <h1 class="entry-title" itemprop="headline">
-                    <?php
-                        echo $icon_before;
-                        echo $header_title;
-                        echo $icon_after;
-                    ?>
-                </h1>
+                <?php echo $header_link_before; ?>
+                
+                    <h1 class="entry-title" itemprop="headline">
+                        <?php
+                            echo $icon_before;
+                            echo $header_title;
+                            echo $icon_after;
+                        ?>
+                    </h1>
+                
+                <?php echo $header_link_after; ?>
 
                 <?php echo $conductor_director_output; ?>
                 

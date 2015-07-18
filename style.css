@@ -1366,6 +1366,12 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 .entry-title a:hover {
   color: #221E1F; }
 
+.page-title a h1.entry-title {
+  transition: all ease-in-out 200ms; }
+  .page-title a h1.entry-title:hover {
+    color: #FFCA06;
+    cursor: pointer; }
+
 .entry-content ul > li {
   list-style-image: url("images/bullets/bullet-gold.png"); }
 .entry-content ul.blue > li {
