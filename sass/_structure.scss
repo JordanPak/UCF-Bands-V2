@@ -389,7 +389,7 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
             box-shadow: none;
         }
         
-        @media only screen and (max-width: $breakpoint-small) {
+        @media only screen and (max-width: $breakpoint-extra-small) {
             clear: both;
             float: none;
             margin-left: 0;
@@ -399,7 +399,7 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
     
     .wp-caption {
         
-        @media only screen and (max-width: $breakpoint-small) {
+        @media only screen and (max-width: $breakpoint-extra-small) {
             clear: both;
             float: none;
             margin-left: 0;
