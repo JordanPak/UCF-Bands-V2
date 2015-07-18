@@ -2090,16 +2090,16 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
     .nav-primary {
       display: none; } }
 
-#menu-main-menu .menu-item {
+.nav-primary .genesis-nav-menu .menu-item {
   text-align: center;
   display: block;
   width: 100%;
   border-bottom: 1px solid #141414; }
-  #menu-main-menu .menu-item:first-child {
+  .nav-primary .genesis-nav-menu .menu-item:first-child {
     border-top: 1px solid #141414; }
-  #menu-main-menu .menu-item:last-child {
+  .nav-primary .genesis-nav-menu .menu-item:last-child {
     border-bottom: none; }
-  #menu-main-menu .menu-item a {
+  .nav-primary .genesis-nav-menu .menu-item a {
     padding: 18px;
     color: #FFFFFF;
     font-family: "Droid Serif", "Georgia", "Times", serif;
@@ -2107,13 +2107,13 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
     font-size: 1.2em;
     text-shadow: 0 0 3px #000000, 1px 1px 1px rgba(0, 0, 0, 0.4), 0 0 3px #000000, 2px 2px 1px rgba(0, 0, 0, 0.4);
     transition: all ease-in-out 300ms; }
-    #menu-main-menu .menu-item a:hover {
+    .nav-primary .genesis-nav-menu .menu-item a:hover {
       background-color: #141414; }
     @media only screen and (max-width: 1200px) {
-      #menu-main-menu .menu-item a {
+      .nav-primary .genesis-nav-menu .menu-item a {
         padding: 13px;
         font-size: 1em; } }
-  #menu-main-menu .menu-item.current-menu-item a {
+  .nav-primary .genesis-nav-menu .menu-item.current-menu-item a, .nav-primary .genesis-nav-menu .menu-item.current-menu item > a {
     background-color: #FFCA06;
     text-shadow: 0 0 3px #EFBC00, 1px 1px 1px #EFBC00, 0 0 3px #EFBC00, 2px 2px 1px #EFBC00; }
 

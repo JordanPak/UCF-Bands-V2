@@ -13,7 +13,7 @@
     }
 }
 
-#menu-main-menu {
+.nav-primary .genesis-nav-menu {
     
     .menu-item {
         text-align: center;
@@ -50,7 +50,7 @@
 
         } // a
         
-        &.current-menu-item a {
+        &.current-menu-item a, &.current-menu item > a {
             background-color: $ucf-gold;
             text-shadow: $text-shadow-gold-med;
         }
