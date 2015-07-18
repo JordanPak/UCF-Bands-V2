@@ -9,6 +9,10 @@
 
 body {
     background: $ucf-gray;
+    
+    @media only screen and (max-width: $breakpoint-small) {
+        padding-top: $site-header-mobile-height + 4px; // Header Height + border 
+    }
 }
 
 
@@ -22,6 +26,10 @@ body {
     height: 2px;
     background: $black;
     z-index: 5000;
+    
+    @media only screen and (max-width: $breakpoint-small) {
+        display: none;
+    }
 }
 
 .site-header {
@@ -47,6 +55,14 @@ body {
         width: $site-header-width-med;
     }
     
+    @media only screen and (max-width: $breakpoint-small) {
+        top: 0;
+        width: 100%;
+        min-height: 0;
+        padding-left: 10px;
+        border-bottom: 4px solid $ucf-gold;
+    } // breakpoint-small
+    
 } // .site-header
 
 .site-header .header-widget-area {
@@ -60,6 +76,15 @@ body {
     padding: 12px 0 8px 0;
     display: block;
     width: 100%;
+}
+
+.header-full-width .title-area {
+    
+    @media only screen and (max-width: $breakpoint-small) {
+        float: left;
+        width: auto;
+        padding: 0;
+    }
 }
 
 .header-image .site-title > a {
@@ -80,6 +105,17 @@ body {
     
     @media only screen and (max-width: $breakpoint-medium) {
         min-height: 100px;
+    }
+    
+    @media only screen and (max-width: $breakpoint-small) {
+        min-height: 0;
+        height: $site-header-mobile-height;
+        width: 125px;
+        background-size: 100%;
+        
+        &:hover {
+            background-color: $ucf-gray;
+        }
     }
 }
 
@@ -112,8 +148,20 @@ body {
         
         .page-header-inner {
             padding: ($space-default + 32px);// $space-default;
-        }
-    }
+        
+            @media only screen and (max-width: $breakpoint-small) {
+                padding: ($space-default + 10px) $space-default;
+            }
+            
+            @media only screen and (max-width: $breakpoint-extra-small) {
+                padding: $space-default;
+            }
+            
+            @media only screen and (max-width: $breakpoint-extra-extra-small) {
+                padding: $space-default-half;
+            }
+        } // .page-header-inner
+    } // .page-header-lg
     
     &.remove-background-fade {
         @include site-inner-inset-shadow(true, false);
@@ -131,7 +179,7 @@ body {
     
     .conductor-name {
         display: inline-block;
-        margin-left: 4px;
+        margin: 2px 0 0 4px;
         font-style: italic;
         color: $white;
         text-shadow: $text-shadow-dark-med;
@@ -148,9 +196,22 @@ body {
                 color: $ucf-gold;
                 cursor: pointer;
             }
+            
         } // h1.entry-title
         
     } // a
+    
+    
+    @media only screen and (max-width: $breakpoint-small) {
+        
+        text-align: center;
+        box-shadow: inset 0 0 500px 500px rgba(0,0,0,0.4);
+        
+        .conductor-name {
+            margin: 5px 0 0 0;
+        }
+        
+    } // breakpoint-small
     
 } // .page-header
 
@@ -190,7 +251,9 @@ body {
     }
     
     @media only screen and (max-width: $breakpoint-small) {
-//        padding: $space-default-half;
+        margin-left: 0;
+        border-left: 0;
+        border-bottom: 5px solid $ucf-gold;
     }
     
 }
@@ -203,11 +266,15 @@ body {
 .content-sidebar-wrap {
     padding: $space-default;
     overflow: auto;
-    min-height: 1200px;
+    min-height: 1000px;
     
     background-image: url('images/pegasus-bg.png');
     background-repeat: no-repeat;
     background-position: -100px 25px;
+    
+    @media only screen and (max-width: $breakpoint-small-medium) {
+        padding: $space-default-half;
+    }
 }
 
 body.page-template-page_section_grid .content-sidebar-wrap,
@@ -239,6 +306,12 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
         padding-bottom: $space-default-half;
         margin-bottom: $space-default-half;
     }
+    
+    @media only screen and (max-width: $breakpoint-extra-large) {
+        margin: 0;
+        width: 100%;
+    }
+    
 } // .content
 
 .error404 {
@@ -269,7 +342,45 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
         margin-bottom: $space-default-half;
         padding: $space-default-half;
     }
-}
+} // .entry
+
+
+.entry-content {
+    
+    img {
+        border: 1px solid $ucf-gray-light;
+        box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        
+        &.no-border {
+            border: none;
+            box-shadow: none;
+        }
+        
+        @media only screen and (max-width: $breakpoint-extra-small) {
+            clear: both;
+            float: none;
+            margin-left: 0;
+            margin-right: 0;
+        }
+    }
+    
+    .wp-caption {
+        
+        @media only screen and (max-width: $breakpoint-extra-small) {
+            clear: both;
+            float: none;
+            margin-left: 0;
+            margin-right: 0;
+        }
+    }
+    
+    p:last-child {
+        margin-bottom: 0;
+    }
+    
+} // .entry-content
+
+
 
 .block {
     @include block();
@@ -289,7 +400,8 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
         background: none;
         box-shadow: none;
     }
-}
+    
+} // .block
 
 
 
@@ -303,27 +415,20 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
     .widget {
         @include block();
     }
-}
-
-
-
-//=======================//
-//  ENTRY CONTENT MEDIA  //
-//=======================//
-
-.entry-content {
     
-    img {
-        border: 1px solid $ucf-gray-light;
-        box-shadow: 0 0 10px rgba(0,0,0,0.2);
-        
-        &.no-border {
-            border: none;
-            box-shadow: none;
-        }
+    @media only screen and (max-width: $breakpoint-extra-large) {
+        clear: both;
+        width: 100%;
+        margin: 0;
     }
     
-} // .entry-content
+    @media only screen and (max-width: $breakpoint-medium) {
+        
+        .widget {
+            padding: $space-default-half;   
+        }
+    }
+}
 
 
 
@@ -376,7 +481,19 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
         width: $site-header-width-med;
         padding: $space-default-half;
     }
-}
+    
+    @media only screen and (max-width: $breakpoint-small) {
+        position: static;
+        padding: $space-default;
+        width: 100%;
+        border-top: 5px solid $ucf-gray-darkest;
+        
+        .wrap {
+            padding: 0;
+        }
+    }
+    
+} // .site-footer
 
 #footer-social {
     height: auto;

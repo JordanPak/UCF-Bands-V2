@@ -220,10 +220,6 @@ function ucfbands_footer() {
     
     // Copyright Name
     $footer_copyright_name = genesis_get_option( 'ucfbands_footer_copyright_name', GENESIS_SETTINGS_FIELD );
-    
-    
-	// Footer HTML
-    echo '<footer class="site-footer" role="contentinfo" itemscope="itemscope" itemtype="http://schema.org/WPFooter"><div class="wrap">';
 
     
     
@@ -278,7 +274,5 @@ function ucfbands_footer() {
         echo ' | &copy; ' . $footer_copyright_name . ' ' . date('Y');    
     }
     
-    // End Footer HTML
-    echo '</div></footer>';
 
 } // ucfbands_footer()
