@@ -111,6 +111,13 @@ function ucfbands_page_settings_metabox() {
 		'id'          => $prefix . 'slider_shortcode',
 		'type'        => 'text',
 	) );    
+    
+	$cmb->add_field( array(
+		'name'        => 'Pre-Content Shortcode',
+        'desc'        => 'Shortcode will be executed after the header and before the page content or blocks.',
+		'id'          => $prefix . 'pre_content_shortcode',
+		'type'        => 'text',
+	) ); 
 
     $cmb->add_field( array(
         'name' => 'Disable Grid Area Padding',

@@ -172,6 +172,7 @@ hr {
     
     
     //-- ALTERNATIVE COLORS --//
+    
     &.button-gold {
         @include button($white, $text-shadow-gold-med, $ucf-gold, $ucf-gold-darker);
     }
@@ -188,6 +189,10 @@ hr {
         @include button($white, $text-shadow-blue-med, $blue, $blue-darker);
     }
     
+    &.button-white {
+        @include button($ucf-gray-med, none, $white, $ucf-gray-med);
+    }
+    
     
     //-- OUTLINE --//
     &.button-outline {
@@ -197,14 +202,21 @@ hr {
         &.button-gold {
             @include button-outline($ucf-gold);
         }
+        
         &.button-red {
             @include button-outline($red);
         }
+        
         &.button-green {
             @include button-outline($green);
         }
+        
         &.button-blue {
             @include button-outline($blue);
+        }
+        
+        &.button-white {
+            @include button-outline($white);   
         }
         
     } // .button-outline

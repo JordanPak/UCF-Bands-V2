@@ -1468,6 +1468,18 @@ hr {
       text-shadow: 0 0 3px #3071a9, 1px 1px 1px #3071a9, 0 0 3px #3071a9, 2px 2px 1px #3071a9;
       background-color: #3071a9;
       border-color: #245682; }
+  .button.button-white {
+    text-transform: none;
+    font-weight: 700;
+    padding: 8px 18px;
+    color: #a59a9d;
+    text-shadow: none;
+    background-color: #FFFFFF;
+    border: 1px solid #a59a9d; }
+    .button.button-white:hover {
+      background-color: #FFCA06;
+      border-color: #EFBC00;
+      text-shadow: 0 0 3px #EFBC00, 1px 1px 1px #EFBC00, 0 0 3px #EFBC00, 2px 2px 1px #EFBC00; }
   .button.button-outline {
     background: none;
     border: solid 2px #221E1F;
@@ -1508,6 +1520,15 @@ hr {
       .button.button-outline.button-blue:hover {
         background: #428BCA;
         color: #FFFFFF; }
+    .button.button-outline.button-white {
+      background: none;
+      border: solid 2px #FFFFFF;
+      color: #FFFFFF;
+      text-shadow: none; }
+      .button.button-outline.button-white:hover {
+        background: #FFFFFF;
+        color: #FFFFFF;
+        color: #141414; }
 
 body.font-style-athletic .button.button-lg {
   font-family: "Oswald", "Roboto", sans-serif; }

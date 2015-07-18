@@ -93,7 +93,12 @@
     // HOVER 
     &:hover {
         background: $color;
-        color: $white;        
+        color: $white;
+        
+        @if $color == $white {
+            color: $ucf-gray-darker;    
+        }
+        
     } // :hover
     
 } // button-outline()
