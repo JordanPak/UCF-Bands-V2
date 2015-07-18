@@ -63,6 +63,17 @@ body {
         border-bottom: 4px solid $ucf-gold;
     } // breakpoint-small
     
+
+    // If the height is too small for the width with full menu
+    @media only screen and (max-height: $breakpoint-height-medium) and (max-height: $breakpoint-medium) {
+        position: absolute;
+    }    
+    
+    // If the height is too small for the width with full menu
+    @media only screen and (max-height: $breakpoint-height-large) and (max-height: $breakpoint-large) {
+        position: absolute;
+    }
+    
 } // .site-header
 
 .site-header .header-widget-area {
@@ -448,10 +459,10 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
     left: 0;
     bottom: 0;
     width: $site-header-width;
-    background: none;
+    background: $ucf-gray;
     color: $ucf-gray-med;
     text-align: left;
-    font-size: .95em;
+    font-size: .9em;
     line-height: 1.25em;
     font-family: $font-family-serif;
     text-shadow: $text-shadow-dark-med;
@@ -485,6 +496,7 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
     @media only screen and (max-width: $breakpoint-medium) {
         width: $site-header-width-med;
         padding: $space-default-half;
+        font-size: .8em;
     }
     
     @media only screen and (max-width: $breakpoint-small) {
@@ -492,11 +504,23 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
         padding: $space-default;
         width: 100%;
         border-top: 5px solid $ucf-gray-darkest;
+        font-size: 1em;
         
         .wrap {
             padding: 0;
         }
-    }
+    }  
+    
+    // If the height is too small for the width with full menu
+    @media only screen and (max-height: $breakpoint-height-medium) and (max-height: $breakpoint-large) {
+        z-index: 750;
+        box-shadow: 0 -20px 20px -20px $black;
+    }  
+    // If the height is too small for the width with full menu
+    @media only screen and (max-height: $breakpoint-height-large) and (min-height: $breakpoint-medium) {
+        z-index: 750;
+        box-shadow: 0 -20px 20px -20px $black;
+    }  
     
 } // .site-footer
 
@@ -523,10 +547,3 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
         }
     }
 }
-
-
-
-
-
-
-
