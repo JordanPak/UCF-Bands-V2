@@ -5,7 +5,7 @@
  */
 
 
-// Add page title before content_sidebar_wrap
+// Add page header before content_sidebar_wrap
 add_action( 'genesis_before_content_sidebar_wrap', 'ucfbands_custom_page_header', 10);
 /**
  *  UCFBands Custom Page Header
@@ -63,7 +63,7 @@ function ucfbands_custom_page_header() {
     $meta_id_prefix = '_ucfbands_page_settings_';
     
     
-    // GET TITLE SETTINGS META
+    // GET HEADER SETTINGS META
     $remove_page_header                 = get_post_meta( get_the_ID(), $meta_id_prefix . 'remove_page_header', true );
     $icon                               = get_post_meta( $post_ID, $meta_id_prefix . 'icon', true );
     $icon_position                      = get_post_meta( $post_ID, $meta_id_prefix . 'icon_position', true );
@@ -129,7 +129,7 @@ function ucfbands_custom_page_header() {
     }
     
     
-    // REMOVE PAGE TITLE BACKGROUND FADE
+    // REMOVE PAGE HEADER BACKGROUND FADE
     if ($remove_page_header_background_fade == true) {
         $page_header_section_classes .= ' remove-background-fade';   
     }
@@ -157,7 +157,7 @@ function ucfbands_custom_page_header() {
     } // if
     
     
-    // DISPLAY PAGE TITLE //
+    // DISPLAY PAGE HEADER //
     if ($remove_page_header == false) {
         
         ?>
@@ -197,6 +197,6 @@ function ucfbands_custom_page_header() {
 
         <?php
         
-    } // if Remove Page Title
+    } // if Remove Page Header
     
 } // ucfbands_custom_page_header()
