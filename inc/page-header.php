@@ -30,7 +30,7 @@ function ucfbands_custom_page_header() {
         
         // Post ID
         $post_ID = get_the_ID();
-        $page_title = get_the_title( $post_ID );
+        $header_title = get_the_title( $post_ID );
         $post = get_post( $post_ID );
         $page_slug = $post->post_name;
     }
@@ -42,7 +42,7 @@ function ucfbands_custom_page_header() {
         // Child pages of a child page.
         $post_ID = end( $page_parents );
         
-        $page_title = get_the_title( $post_ID );
+        $header_title = get_the_title( $post_ID );
         $parent_post = get_post( $post_ID );
         $page_slug = $parent_post->post_name;
     }
@@ -50,7 +50,7 @@ function ucfbands_custom_page_header() {
     
     
     // Section Classes
-    $page_title_section_classes = 'page-title';
+    $page_header_section_classes = 'page-title';
     
     
     // Set Meta ID
@@ -58,10 +58,10 @@ function ucfbands_custom_page_header() {
     
     
     // GET TITLE SETTINGS META
-    $remove_page_title                  = get_post_meta( get_the_ID(), $meta_id_prefix . 'remove_page_title', true );
+    $remove_page_header                 = get_post_meta( get_the_ID(), $meta_id_prefix . 'remove_page_header', true );
     $icon                               = get_post_meta( $post_ID, $meta_id_prefix . 'icon', true );
     $icon_position                      = get_post_meta( $post_ID, $meta_id_prefix . 'icon_position', true );
-    $remove_page_title_background_fade  = get_post_meta( $post_ID, $meta_id_prefix . 'remove_page_title_background_fade', true );
+    $remove_page_header_background_fade = get_post_meta( $post_ID, $meta_id_prefix . 'remove_page_header_background_fade', true );
     $conductor_or_director              = get_post_meta( $post_ID, $meta_id_prefix . 'conductor_or_director', true );
     $conductor_name                     = get_post_meta( $post_ID, $meta_id_prefix . 'conductor_name', true );
     
@@ -119,13 +119,13 @@ function ucfbands_custom_page_header() {
     
     if ($page_featured_image) {
         $page_featured_image = 'background-image: url(' . $page_featured_image . ') ';
-        $page_title_section_classes .= ' page-title-lg';
+        $page_header_section_classes .= ' page-title-lg';
     }
     
     
     // REMOVE PAGE TITLE BACKGROUND FADE
-    if ($remove_page_title_background_fade == true) {
-        $page_title_section_classes .= ' remove-background-fade';   
+    if ($remove_page_header_background_fade == true) {
+        $page_header_section_classes .= ' remove-background-fade';   
     }
     
     
@@ -152,11 +152,11 @@ function ucfbands_custom_page_header() {
     
     
     // DISPLAY PAGE TITLE //
-    if ($remove_page_title == false) {
+    if ($remove_page_header == false) {
         
         ?>
         
-        <section class="<?php echo $page_title_section_classes; ?>" style="<?php echo $page_featured_image; ?>">
+        <section class="<?php echo $page_header_section_classes; ?>" style="<?php echo $page_featured_image; ?>">
             
             
             <div class="page-title-inner">
@@ -164,7 +164,7 @@ function ucfbands_custom_page_header() {
                 <h1 class="entry-title" itemprop="headline">
                     <?php
                         echo $icon_before;
-                        echo $page_title;
+                        echo $header_title;
                         echo $icon_after;
                     ?>
                 </h1>
@@ -189,4 +189,4 @@ function ucfbands_custom_page_header() {
         
     } // if Remove Page Title
     
-} // ucfbands_custom_page_title()
+} // ucfbands_custom_page_header()
