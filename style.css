@@ -2153,18 +2153,26 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
     .menu-btn {
       display: block; } }
 
-nav.pushy {
-  width: 230px; }
+nav.pushy.nav-primary {
+  position: fixed;
+  background: #221E1F;
+  width: 260px;
+  box-shadow: 0 0 15px #000000;
+  border-right: 4px solid #FFCA06; }
   @media only screen and (max-width: 768px) {
-    nav.pushy.nav-primary {
+    nav.pushy.nav-primary.nav-primary {
       display: block; } }
+  nav.pushy.nav-primary .menu-item:first-child {
+    border-top: 0; }
+  nav.pushy.nav-primary .menu-item a {
+    padding: 14px; }
 
 .pushy-left {
-  transform: translate3d(-230px, 0, 0);
+  transform: translate3d(-260px, 0, 0);
   /* Don't forget the vendor prefixes */ }
 
 .container-push, .push-push {
-  transform: translate3d(-230px, 0, 0);
+  transform: translate3d(-260px, 0, 0);
   /* Don't forget the vendor prefixes */ }
 
 nav.section-menu {
