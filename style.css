@@ -1612,10 +1612,10 @@ body {
   box-shadow: inset 1px 0 #000000, inset 7px 0 5px -7px rgba(0, 0, 0, 0.5);
   box-shadow: inset 1px 0 #000000, inset 7px 0 5px -7px rgba(0, 0, 0, 0.5), inset 750px 0 300px -250px rgba(0, 0, 0, 0.55);
   box-shadow: inset 1px 0 #000000, inset 7px 0 5px -7px rgba(0, 0, 0, 0.5), inset 750px 0 300px -250px rgba(0, 0, 0, 0.55), inset 0 -50px 75px rgba(0, 0, 0, 0.8); }
-  .page-header .page-title-inner {
+  .page-header .page-header-inner {
     padding: 40px;
     padding-left: 72px; }
-  .page-header.page-title-lg .page-title-inner {
+  .page-header.page-header-lg .page-header-inner {
     padding: 72px; }
   .page-header.remove-background-fade {
     box-shadow: inset 1px 0 #000000, inset 7px 0 5px -7px rgba(0, 0, 0, 0.5); }

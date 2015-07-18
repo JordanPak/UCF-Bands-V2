@@ -125,7 +125,7 @@ function ucfbands_custom_page_header() {
     
     if ($page_featured_image) {
         $page_featured_image = 'background-image: url(' . $page_featured_image . ') ';
-        $page_header_section_classes .= ' page-title-lg';
+        $page_header_section_classes .= ' page-header-lg';
     }
     
     
@@ -165,7 +165,7 @@ function ucfbands_custom_page_header() {
         <section class="<?php echo $page_header_section_classes; ?>" style="<?php echo $page_featured_image; ?>">
             
             
-            <div class="page-title-inner">
+            <div class="page-header-inner">
                 
                 <?php echo $header_link_before; ?>
                 

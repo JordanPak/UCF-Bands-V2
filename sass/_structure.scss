@@ -103,14 +103,14 @@ body {
     
     @include site-inner-inset-shadow(true, true, true);
     
-    .page-title-inner {
+    .page-header-inner {
         padding: $space-default;
         padding-left: $space-default + 32px;
     }
     
-    &.page-title-lg {
+    &.page-header-lg {
         
-        .page-title-inner {
+        .page-header-inner {
             padding: ($space-default + 32px);// $space-default;
         }
     }
