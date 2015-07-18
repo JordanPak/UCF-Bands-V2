@@ -95,9 +95,9 @@ $space-default-half:20px;
 
 
 // Header (.site-header)
-$site-header-width: 330px;
-$site-header-width-med: $site-header-width - 100;
-
+$site-header-width:         330px;
+$site-header-width-med:     $site-header-width - 100;
+$site-header-mobile-height: 70px;
 
 
 //================//
@@ -155,8 +155,13 @@ $font-family-athletic:      'Oswald', 'Roboto', sans-serif;
 // @media only screen and (max-width: $breakpoint-size)
 
 
-//  BREAKPOINT                      DESCRIPTION
-//  ----------------------------------------------------------
-    $breakpoint-small: 768px;   //  Smallest up to Medium
-    $breakpoint-medium: 1200px; //  Medium up to Large (Desktop)
-    $breakpoint-large: 1366px;  //  Large (Desktop) and Greater
+//  BREAKPOINT                      Width       DESCRIPTION
+//  ----------------------------------------------------------------------------------
+    $breakpoint-extra-extra-small:  380px;      // Extra Extra Small up to Extra Small
+    $breakpoint-extra-small:        600px;      // Extra Small up tp Small
+    $breakpoint-small:              768px;      // Small up to Small Medium
+    $breakpoint-small-medium:       980px;      // Small Medium up to Medium
+    $breakpoint-medium:             1200px;     // Medium up to Large (Desktop)
+    $breakpoint-large:              1366px;     // Large (Desktop) to Extra Large
+    $breakpoint-extra-large:        1500px;     // Extra Large to Extra Extra Large)
+    $breakpoint-extra-extra-large:  1920px;     // Extra Extra Large and Greater
