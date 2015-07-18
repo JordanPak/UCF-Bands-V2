@@ -42,7 +42,16 @@ add_action( 'genesis_header', 'ucfbands_mobile_menu_button', 14 );
 function ucfbands_mobile_menu_button() {
     
     // Output Button
-    echo '<div class="menu-btn"><i class="fa fa-hamburger"></i> Menu</div>';
+    ?>
+
+    <button type="button" class="menu-btn">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </button>
+
+    <?php
     
 } // ucfbands_mobile_menu_button()
 

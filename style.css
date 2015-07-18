@@ -2117,6 +2117,46 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
     background-color: #FFCA06;
     text-shadow: 0 0 3px #EFBC00, 1px 1px 1px #EFBC00, 0 0 3px #EFBC00, 2px 2px 1px #EFBC00; }
 
+.menu-btn {
+  display: none;
+  position: relative;
+  float: right;
+  margin-top: 18px;
+  margin-right: 18px;
+  padding: 9px 10px;
+  margin-bottom: 8px;
+  background-color: #141414;
+  background-image: none;
+  border: 1px solid #FFCA06;
+  border-radius: 0px; }
+  .menu-btn .icon-bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+    background-color: #FFFFFF; }
+  .menu-btn .icon-bar + .icon-bar {
+    margin-top: 4px; }
+  .menu-btn .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0; }
+  .menu-btn:hover, .menu-btn:focus {
+    background-color: #FFCA06;
+    border-color: #EFBC00; }
+  @media only screen and (max-width: 768px) {
+    .menu-btn {
+      display: block; } }
+
+@media only screen and (max-width: 768px) {
+  nav.pushy.nav-primary {
+    display: block; } }
+
 nav.section-menu {
   position: absolute;
   right: 0;
