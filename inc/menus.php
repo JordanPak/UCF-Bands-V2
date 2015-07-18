@@ -31,6 +31,22 @@ add_action( 'genesis_header', 'genesis_do_nav', 12 );
 
 
 
+
+add_action( 'genesis_header', 'ucfbands_mobile_menu', 14 );
+/**
+ * UCFBands Mobile Menu
+ * Outputs the Primary Navigation Menu into the Pushy Menu
+ *
+ * @author Jordan Pakrosnis
+ */
+function ucfbands_mobile_menu() {
+    
+    echo '<h2>TESTING BEFORE HEADER CLOSE</h2>';
+    
+} // ucfbands_mobile_menu()
+
+
+
 /**
  * Section Menu Configuration & Output
  * 
