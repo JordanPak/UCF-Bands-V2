@@ -362,6 +362,23 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
             border: none;
             box-shadow: none;
         }
+        
+        @media only screen and (max-width: $breakpoint-small) {
+            clear: both;
+            float: none;
+            margin-left: 0;
+            margin-right: 0;
+        }
+    }
+    
+    .wp-caption {
+        
+        @media only screen and (max-width: $breakpoint-small) {
+            clear: both;
+            float: none;
+            margin-left: 0;
+            margin-right: 0;
+        }
     }
     
 } // .entry-content
