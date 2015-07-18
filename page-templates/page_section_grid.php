@@ -29,6 +29,10 @@ function body_class_disable_grid_padding( $classes ) {
 }
 
 
+// Page Title
+require_once( CHILD_DIR . '/inc/page-title.php' );
+
+
 // Masonry Init & Output
 require_once( CHILD_DIR . '/inc/masonry.php' );
 
