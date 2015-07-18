@@ -1982,13 +1982,15 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
   @media only screen and (max-width: 1200px) {
     .site-footer {
       width: 230px;
-      padding: 20px; } }
+      padding: 20px;
+      font-size: .8em; } }
   @media only screen and (max-width: 768px) {
     .site-footer {
       position: static;
       padding: 40px;
       width: 100%;
-      border-top: 5px solid #111111; }
+      border-top: 5px solid #111111;
+      font-size: 1em; }
       .site-footer .wrap {
         padding: 0; } }
 
