@@ -272,7 +272,7 @@ body {
     background-repeat: no-repeat;
     background-position: -100px 25px;
     
-    @media only screen and (max-width: $breakpoint-small) {
+    @media only screen and (max-width: $breakpoint-small-medium) {
         padding: $space-default-half;
     }
 }
@@ -306,6 +306,12 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
         padding-bottom: $space-default-half;
         margin-bottom: $space-default-half;
     }
+    
+    @media only screen and (max-width: $breakpoint-extra-large) {
+        margin: 0;
+        width: 100%;
+    }
+    
 } // .content
 
 .error404 {
@@ -369,6 +375,19 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
     
     .widget {
         @include block();
+    }
+    
+    @media only screen and (max-width: $breakpoint-extra-large) {
+        clear: both;
+        width: 100%;
+        margin: 0;
+    }
+    
+    @media only screen and (max-width: $breakpoint-medium) {
+        
+        .widget {
+            padding: $space-default-half;   
+        }
     }
 }
 

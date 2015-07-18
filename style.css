@@ -1728,7 +1728,7 @@ body {
   background-image: url("images/pegasus-bg.png");
   background-repeat: no-repeat;
   background-position: -100px 25px; }
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 980px) {
     .content-sidebar-wrap {
       padding: 20px; } }
 
@@ -1759,6 +1759,10 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
     border-bottom: 1px solid whitesmoke;
     padding-bottom: 20px;
     margin-bottom: 20px; }
+  @media only screen and (max-width: 1500px) {
+    .content {
+      margin: 0;
+      width: 100%; } }
 
 .error404 article {
   background-color: #FFFFFF;
@@ -1806,6 +1810,14 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
     background-color: #FFFFFF;
     box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
     border: 1px solid #D4D4D4; }
+  @media only screen and (max-width: 1500px) {
+    .sidebar-primary {
+      clear: both;
+      width: 100%;
+      margin: 0; } }
+  @media only screen and (max-width: 1200px) {
+    .sidebar-primary .widget {
+      padding: 20px; } }
 
 .entry-content img {
   border: 1px solid whitesmoke;
