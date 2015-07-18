@@ -148,8 +148,20 @@ body {
         
         .page-header-inner {
             padding: ($space-default + 32px);// $space-default;
-        }
-    }
+        
+            @media only screen and (max-width: $breakpoint-small) {
+                padding: ($space-default + 10px) $space-default;
+            }
+            
+            @media only screen and (max-width: $breakpoint-extra-small) {
+                padding: $space-default;
+            }
+            
+            @media only screen and (max-width: $breakpoint-extra-extra-small) {
+                padding: $space-default-half;
+            }
+        } // .page-header-inner
+    } // .page-header-lg
     
     &.remove-background-fade {
         @include site-inner-inset-shadow(true, false);
@@ -199,10 +211,6 @@ body {
             margin: 5px 0 0 0;
         }
         
-        &.page-header-lg .page-header-inner {
-            padding: ($space-default + 10px) $space-default;   
-        }
-            
     } // breakpoint-small
     
 } // .page-header

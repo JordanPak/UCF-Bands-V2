@@ -155,8 +155,10 @@ $font-family-athletic:      'Oswald', 'Roboto', sans-serif;
 // @media only screen and (max-width: $breakpoint-size)
 
 
-//  BREAKPOINT                      DESCRIPTION
-//  ----------------------------------------------------------
-    $breakpoint-small: 768px;   //  Smallest up to Medium
-    $breakpoint-medium: 1200px; //  Medium up to Large (Desktop)
-    $breakpoint-large: 1366px;  //  Large (Desktop) and Greater
+//  BREAKPOINT                      Width       DESCRIPTION
+//  ----------------------------------------------------------------------------------
+    $breakpoint-extra-extra-small:  380px;      // Extra Extra Small up to Extra Small
+    $breakpoint-extra-small:        600px;      // Extra Small up tp Small
+    $breakpoint-small:              768px;      // Small up to Medium
+    $breakpoint-medium:             1200px;     // Medium up to Large (Desktop)
+    $breakpoint-large:              1366px;     // Large (Desktop) and Greater
