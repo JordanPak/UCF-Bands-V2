@@ -1945,13 +1945,13 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
   background-attachment: fixed !important;
   background-position: center !important;
   background-clip: border-box !important; }
-  .hero.hero-padding-sm {
+  .hero.hero-sm {
     padding: 40px; }
-  .hero.hero-padding-med {
+  .hero.hero-med {
     padding: 80px; }
-  .hero.hero-padding-lg {
+  .hero.hero-lg {
     padding: 120px; }
-    .hero.hero-padding-lg h2 {
+    .hero.hero-lg h2 {
       font-size: 4.2em; }
   .hero.hero-gold {
     background: #FFCA06; }
@@ -1983,19 +1983,19 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
     .hero .button.button-outline.button-white:hover {
       text-shadow: none; }
   @media only screen and (max-width: 1200px) {
-    .hero.hero-padding-lg {
+    .hero.hero-lg {
       padding: 80px; }
-      .hero.hero-padding-lg h2 {
+      .hero.hero-lg h2 {
         font-size: 3.2em; } }
   @media only screen and (max-width: 600px) {
-    .hero.hero-padding-med, .hero.hero-padding-lg {
+    .hero.hero-med, .hero.hero-lg {
       padding: 40px; }
     .hero h2 {
       font-size: 2.75em; }
     .hero p {
       font-size: 1.2em; } }
   @media only screen and (max-width: 380px) {
-    .hero.hero-padding-lg, .hero.hero-padding-med, .hero.hero-padding-sm {
+    .hero.hero-lg, .hero.hero-med, .hero.hero-sm {
       padding: 30px; }
     .hero h2 {
       font-size: 2em; }

@@ -448,15 +448,15 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
     
     
     // PADDING
-    &.hero-padding-sm {
+    &.hero-sm {
         padding: $space-default;
     }
     
-    &.hero-padding-med {
+    &.hero-med {
         padding: ($space-default * 2);
     }
     
-    &.hero-padding-lg {
+    &.hero-lg {
         padding: ($space-default * 3);
         
         h2 {
@@ -518,7 +518,7 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
     // MEDIA QUERIES
     @media only screen and (max-width: $breakpoint-medium) {
         
-        &.hero-padding-lg {
+        &.hero-lg {
             padding: ($space-default * 2);
             
             h2 {
@@ -530,7 +530,7 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
     
     @media only screen and (max-width: $breakpoint-extra-small) {
         
-        &.hero-padding-med, &.hero-padding-lg {
+        &.hero-med, &.hero-lg {
             padding: $space-default;
         }
         
@@ -546,7 +546,7 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
     
     @media only screen and (max-width: $breakpoint-extra-extra-small) {
         
-        &.hero-padding-lg, &.hero-padding-med, &.hero-padding-sm {
+        &.hero-lg, &.hero-med, &.hero-sm {
             padding: ($space-default-half + 10px);
         }
         
