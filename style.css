@@ -1950,13 +1950,29 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
     padding: 120px; }
   .hero.hero-gold {
     background: #FFCA06; }
+    .hero.hero-gold h2, .hero.hero-gold p {
+      text-shadow: 0 1px 8px #EFBC00, 0 0 2px #EFBC00; }
+    .hero.hero-gold .button {
+      box-shadow: 0 1px 5px #EFBC00; }
+  .hero.hero-gray {
+    background: #221E1F; }
+  .hero.hero-red {
+    background: #D41F1A; }
+  .hero.hero-green {
+    background: #5CB85C; }
+  .hero.hero-blue {
+    background: #428BCA; }
   .hero h2 {
     font-size: 3.2em;
-    color: #FFFFFF; }
+    color: #FFFFFF;
+    text-shadow: 0 2px 7px rgba(0, 0, 0, 0.3), 0 0 3px rgba(0, 0, 0, 0.2); }
   .hero p {
     margin: 0;
     font-size: 1.5em;
-    color: #FFFFFF; }
+    color: #FFFFFF;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.4); }
+  .hero .button {
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3); }
 
 .sidebar-primary {
   float: left;

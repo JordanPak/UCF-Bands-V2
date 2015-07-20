@@ -454,12 +454,37 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
     // COLOR
     &.hero-gold {
         background: $ucf-gold;
+        
+        h2, p {
+            text-shadow: 0 1px 8px $ucf-gold-darker, 0 0 2px $ucf-gold-darker;
+        }
+        
+        .button {
+            box-shadow: 0 1px 5px $ucf-gold-darker;            
+        }
+    }
+    
+    &.hero-gray {
+        background: $ucf-gray;   
+    }
+    
+    &.hero-red {
+        background: $red;
+    }
+    
+    &.hero-green {
+        background: $green;
+    }
+    
+    &.hero-blue {
+        background: $blue;
     }
     
     // TITLE
     h2 {
         font-size: 3.2em;
         color: $white;   
+        text-shadow: 0 2px 7px rgba(0,0,0,0.3), 0 0 3px rgba(0,0,0,0.2);    
     }
     
     // CONTENT
@@ -467,6 +492,11 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
         margin: 0;
         font-size: 1.5em;
         color: $white;
+        text-shadow: 0 1px 4px rgba(0,0,0,0.4);//, 0 0 2px rgba(0,0,0,0.2);
+    }
+    
+    .button {
+        box-shadow: 0 1px 5px rgba(0,0,0,0.3);
     }
     
 } // .hero
