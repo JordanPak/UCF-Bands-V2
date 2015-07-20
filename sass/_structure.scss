@@ -438,7 +438,10 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
 //    box-shadow: 2px 2px 0 2px $ucf-gray-med-light;
     box-shadow: 4px 0px 4px rgba(0,0,0,0.5); //, inset 0 -1px $ucf-gray-med-light;
     
-    background-position: center;
+//    background-size: 100% !important;
+    background-attachment: fixed !important;
+    background-position: center !important;
+    background-clip: border-box !important;
     
     // PADDING
     &.hero-padding-sm {
@@ -462,7 +465,7 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
         }
         
         .button {
-            box-shadow: 0 1px 5px $ucf-gold-darker;            
+            box-shadow: 0 1px 5px $ucf-gold-darker;
         }
     }
     
@@ -501,6 +504,7 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
     
     .button {
         box-shadow: 0 1px 5px rgba(0,0,0,0.25);
+        letter-spacing: .05em;
     }
     
 } // .hero
