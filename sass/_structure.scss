@@ -445,7 +445,7 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
     
     // PADDING
     &.hero-padding-sm {
-        padding: $space-default;   
+        padding: $space-default;
     }
     
     &.hero-padding-med {
@@ -504,6 +504,16 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
         }
     }
     
+    
+    // MEDIA QUERIES
+    @media only screen and (max-width: $breakpoint-extra-small) {
+        
+        &.hero-padding-med {
+            padding: $space-default;
+        }
+    
+    } // extra-small
+
 } // .hero
 
 
