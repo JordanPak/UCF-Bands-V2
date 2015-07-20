@@ -1936,7 +1936,14 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
 .hero {
   display: block;
   width: 100%;
-  clear: both; }
+  padding: 40px;
+  clear: both;
+  text-align: center;
+  color: #FFFFFF; }
+  .hero.hero-gold {
+    background: #FFCA06; }
+  .hero h2 {
+    color: #FFFFFF; }
 
 .sidebar-primary {
   float: left;

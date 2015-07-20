@@ -430,8 +430,33 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
     // GENERAL
     display: block;
     width: 100%;
+    padding: $space-default;
     clear: both;
+    text-align: center;
+    color: $white;
     
+    // PADDING
+    &.hero-padding-sm {
+        
+    }
+    
+    &.hero-padding-med {
+        
+    }
+    
+    &.hero-padding-lg {
+        
+    }
+    
+    // COLOR
+    &.hero-gold {
+        background: $ucf-gold;
+    }
+    
+    // TITLE
+    h2 {
+        color: $white;   
+    }
     
 } // .hero
 
