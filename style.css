@@ -1939,7 +1939,9 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
   padding: 40px;
   clear: both;
   text-align: center;
-  color: #FFFFFF; }
+  color: #FFFFFF;
+  border-bottom: 5px solid #EFBC00;
+  box-shadow: 4px 0px 4px rgba(0, 0, 0, 0.5); }
   .hero.hero-gold {
     background: #FFCA06; }
   .hero h2 {

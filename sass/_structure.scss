@@ -434,6 +434,9 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
     clear: both;
     text-align: center;
     color: $white;
+    border-bottom: 5px solid $ucf-gold-darker;
+//    box-shadow: 2px 2px 0 2px $ucf-gray-med-light;
+    box-shadow: 4px 0px 4px rgba(0,0,0,0.5); //, inset 0 -1px $ucf-gray-med-light;
     
     // PADDING
     &.hero-padding-sm {
