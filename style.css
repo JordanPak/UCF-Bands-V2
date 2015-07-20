@@ -1933,6 +1933,11 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
     background: none;
     box-shadow: none; }
 
+.hero {
+  display: block;
+  width: 100%;
+  clear: both; }
+
 .sidebar-primary {
   float: left;
   margin-left: 2.564102564102564%;
