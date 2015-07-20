@@ -439,7 +439,7 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
     
     // Borders
     border-bottom: 5px solid $ucf-gold-darker;
-    box-shadow: 4px 0px 4px rgba(0,0,0,0.5);
+    box-shadow: 4px 0 4px rgba(0,0,0,0.5);
     
     // Background
     background-attachment: fixed !important;
@@ -466,22 +466,27 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
     
     // COLOR
     &.hero-gold {
-        background: $ucf-gold;
+        border-top: 5px solid $ucf-gold;
+        background: $ucf-gold-darker;
     }
     
     &.hero-gray {
+        border-top: 5px solid $black;
         background: $ucf-gray;   
     }
     
     &.hero-red {
+        border-top: 5px solid $red-darker;
         background: $red;
     }
     
     &.hero-green {
+        border-top: 5px solid $green-darker;
         background: $green;
     }
     
     &.hero-blue {
+        border-top: 5px solid $blue-darker;
         background: $blue;
     }
     

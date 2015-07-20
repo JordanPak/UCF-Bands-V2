@@ -1941,7 +1941,7 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
   text-align: center;
   color: #FFFFFF;
   border-bottom: 5px solid #EFBC00;
-  box-shadow: 4px 0px 4px rgba(0, 0, 0, 0.5);
+  box-shadow: 4px 0 4px rgba(0, 0, 0, 0.5);
   background-attachment: fixed !important;
   background-position: center !important;
   background-clip: border-box !important; }
@@ -1954,14 +1954,19 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
     .hero.hero-lg h2 {
       font-size: 4.2em; }
   .hero.hero-gold {
-    background: #FFCA06; }
+    border-top: 5px solid #FFCA06;
+    background: #EFBC00; }
   .hero.hero-gray {
+    border-top: 5px solid #000000;
     background: #221E1F; }
   .hero.hero-red {
+    border-top: 5px solid #a71814;
     background: #D41F1A; }
   .hero.hero-green {
+    border-top: 5px solid #449d44;
     background: #5CB85C; }
   .hero.hero-blue {
+    border-top: 5px solid #3071a9;
     background: #428BCA; }
   .hero h2 {
     margin-bottom: 20px;
