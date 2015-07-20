@@ -458,6 +458,10 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
     
     &.hero-padding-lg {
         padding: ($space-default * 3);
+        
+        h2 {
+            font-size: 4.2em;
+        }
     }
     
     // COLOR
@@ -483,6 +487,7 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
     
     // TITLE
     h2 {
+        margin-bottom: $space-default-half;
         font-size: 3.2em;
         color: $white;   
         text-shadow: 0 1px 7px rgba(0,0,0,0.2), 0 0 3px rgba(0,0,0,0.15);
@@ -515,6 +520,10 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
         
         &.hero-padding-lg {
             padding: ($space-default * 2);
+            
+            h2 {
+                font-size: 3.2em;
+            }
         }
     
     } // medium

@@ -1951,6 +1951,8 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
     padding: 80px; }
   .hero.hero-padding-lg {
     padding: 120px; }
+    .hero.hero-padding-lg h2 {
+      font-size: 4.2em; }
   .hero.hero-gold {
     background: #FFCA06; }
   .hero.hero-gray {
@@ -1962,6 +1964,7 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
   .hero.hero-blue {
     background: #428BCA; }
   .hero h2 {
+    margin-bottom: 20px;
     font-size: 3.2em;
     color: #FFFFFF;
     text-shadow: 0 1px 7px rgba(0, 0, 0, 0.2), 0 0 3px rgba(0, 0, 0, 0.15);
@@ -1981,7 +1984,9 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
       text-shadow: none; }
   @media only screen and (max-width: 1200px) {
     .hero.hero-padding-lg {
-      padding: 80px; } }
+      padding: 80px; }
+      .hero.hero-padding-lg h2 {
+        font-size: 3.2em; } }
   @media only screen and (max-width: 600px) {
     .hero.hero-padding-med, .hero.hero-padding-lg {
       padding: 40px; }
