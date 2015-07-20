@@ -116,7 +116,7 @@ function ucfbands_page_settings_metabox() {
 		'name'        => 'Pre-Content Shortcode',
         'desc'        => 'Shortcode will be executed after the header and before the page content or blocks.',
 		'id'          => $prefix . 'pre_content_shortcode',
-		'type'        => 'text',
+		'type'        => 'textarea_small',
 	) ); 
 
     $cmb->add_field( array(
