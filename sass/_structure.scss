@@ -440,15 +440,15 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
     
     // PADDING
     &.hero-padding-sm {
-        
+        padding: $space-default;   
     }
     
     &.hero-padding-med {
-        
+        padding: ($space-default * 2);
     }
     
     &.hero-padding-lg {
-        
+        padding: ($space-default * 3);
     }
     
     // COLOR
@@ -458,7 +458,15 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
     
     // TITLE
     h2 {
+        font-size: 3.2em;
         color: $white;   
+    }
+    
+    // CONTENT
+    p {
+        margin: 0;
+        font-size: 1.5em;
+        color: $white;
     }
     
 } // .hero

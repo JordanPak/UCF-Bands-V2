@@ -1942,9 +1942,20 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
   color: #FFFFFF;
   border-bottom: 5px solid #EFBC00;
   box-shadow: 4px 0px 4px rgba(0, 0, 0, 0.5); }
+  .hero.hero-padding-sm {
+    padding: 40px; }
+  .hero.hero-padding-med {
+    padding: 80px; }
+  .hero.hero-padding-lg {
+    padding: 120px; }
   .hero.hero-gold {
     background: #FFCA06; }
   .hero h2 {
+    font-size: 3.2em;
+    color: #FFFFFF; }
+  .hero p {
+    margin: 0;
+    font-size: 1.5em;
     color: #FFFFFF; }
 
 .sidebar-primary {
