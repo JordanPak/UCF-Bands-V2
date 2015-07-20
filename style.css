@@ -1978,8 +1978,11 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
     letter-spacing: .05em; }
     .hero .button.button-outline.button-white:hover {
       text-shadow: none; }
+  @media only screen and (max-width: 1200px) {
+    .hero.hero-padding-lg {
+      padding: 80px; } }
   @media only screen and (max-width: 600px) {
-    .hero.hero-padding-med {
+    .hero.hero-padding-med, .hero.hero-padding-lg {
       padding: 40px; }
     .hero h2 {
       font-size: 2.75em; }

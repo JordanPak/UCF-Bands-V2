@@ -506,9 +506,17 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
     
     
     // MEDIA QUERIES
+    @media only screen and (max-width: $breakpoint-medium) {
+        
+        &.hero-padding-lg {
+            padding: ($space-default * 2);
+        }
+    
+    } // medium
+    
     @media only screen and (max-width: $breakpoint-extra-small) {
         
-        &.hero-padding-med {
+        &.hero-padding-med, &.hero-padding-lg {
             padding: $space-default;
         }
         
