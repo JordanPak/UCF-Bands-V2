@@ -511,8 +511,36 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
         &.hero-padding-med {
             padding: $space-default;
         }
+        
+        h2 {
+            font-size: 2.75em;
+        }
+        
+        p {
+            font-size: 1.2em;
+        }
     
     } // extra-small
+    
+    @media only screen and (max-width: $breakpoint-extra-extra-small) {
+        
+        &.hero-padding-lg, &.hero-padding-med, &.hero-padding-sm {
+            padding: ($space-default-half + 10px);
+        }
+        
+        h2 {
+            font-size: 2em;
+        }
+        
+        p {
+            font-size: 1em;
+        }
+        
+        .button {
+            padding: 5px 10px;
+        }
+    
+    } // extra-extra-small
 
 } // .hero
 

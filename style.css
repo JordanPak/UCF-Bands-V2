@@ -1980,7 +1980,20 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
       text-shadow: none; }
   @media only screen and (max-width: 600px) {
     .hero.hero-padding-med {
-      padding: 40px; } }
+      padding: 40px; }
+    .hero h2 {
+      font-size: 2.75em; }
+    .hero p {
+      font-size: 1.2em; } }
+  @media only screen and (max-width: 380px) {
+    .hero.hero-padding-lg, .hero.hero-padding-med, .hero.hero-padding-sm {
+      padding: 30px; }
+    .hero h2 {
+      font-size: 2em; }
+    .hero p {
+      font-size: 1em; }
+    .hero .button {
+      padding: 5px 10px; } }
 
 .sidebar-primary {
   float: left;
