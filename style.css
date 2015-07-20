@@ -1953,12 +1953,6 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
     padding: 120px; }
   .hero.hero-gold {
     background: #FFCA06; }
-    .hero.hero-gold h2, .hero.hero-gold p, .hero.hero-gold .button {
-      text-shadow: 0 1px 8px #EFBC00, 0 0 2px #EFBC00; }
-    .hero.hero-gold .button {
-      box-shadow: 0 1px 5px #EFBC00; }
-      .hero.hero-gold .button:hover {
-        text-shadow: none; }
   .hero.hero-gray {
     background: #221E1F; }
   .hero.hero-red {

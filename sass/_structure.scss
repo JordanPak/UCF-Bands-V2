@@ -459,18 +459,6 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
     // COLOR
     &.hero-gold {
         background: $ucf-gold;
-        
-        h2, p, .button {
-            text-shadow: 0 1px 8px $ucf-gold-darker, 0 0 2px $ucf-gold-darker;
-        }
-        
-        .button {
-            box-shadow: 0 1px 5px $ucf-gold-darker;
-            
-            &:hover {
-                text-shadow: none;
-            }
-        }
     }
     
     &.hero-gray {
