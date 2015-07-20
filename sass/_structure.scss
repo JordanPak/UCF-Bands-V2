@@ -460,12 +460,16 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
     &.hero-gold {
         background: $ucf-gold;
         
-        h2, p {
+        h2, p, .button {
             text-shadow: 0 1px 8px $ucf-gold-darker, 0 0 2px $ucf-gold-darker;
         }
         
         .button {
             box-shadow: 0 1px 5px $ucf-gold-darker;
+            
+            &:hover {
+                text-shadow: none;
+            }
         }
     }
     
@@ -504,6 +508,7 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
     
     .button {
         box-shadow: 0 1px 5px rgba(0,0,0,0.25);
+        text-shadow: 0 1px 7px rgba(0,0,0,0.2), 0 0 3px rgba(0,0,0,0.15);
         letter-spacing: .05em;
     }
     
