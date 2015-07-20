@@ -427,21 +427,25 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
 
 .hero {
     
-    // GENERAL
+    // Structure
     display: block;
     width: 100%;
     padding: $space-default;
     clear: both;
+    
+    // Text
     text-align: center;
     color: $white;
-    border-bottom: 5px solid $ucf-gold-darker;
-//    box-shadow: 2px 2px 0 2px $ucf-gray-med-light;
-    box-shadow: 4px 0px 4px rgba(0,0,0,0.5); //, inset 0 -1px $ucf-gray-med-light;
     
-//    background-size: 100% !important;
+    // Borders
+    border-bottom: 5px solid $ucf-gold-darker;
+    box-shadow: 4px 0px 4px rgba(0,0,0,0.5);
+    
+    // Background
     background-attachment: fixed !important;
     background-position: center !important;
     background-clip: border-box !important;
+    
     
     // PADDING
     &.hero-padding-sm {
@@ -494,6 +498,7 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
         cursor: default;
     }
     
+    // BUTTON
     .button.button-outline.button-white {
         margin-bottom: 10px;
         box-shadow: 0 1px 5px rgba(0,0,0,0.25);
