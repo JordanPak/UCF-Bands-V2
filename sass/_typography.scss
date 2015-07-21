@@ -152,14 +152,23 @@ hr {
     
     //-- SIZES --//
     
+    // Extra Small
+    &.button-xsm {
+        padding: 2px 4px;
+        font-size: .45em;
+        font-weight: normal;
+    }
+    
     // Small
     &.button-sm {
         padding: ($space-default-half - 17px) ($space-default-half - 10px);
+        font-size: .75em;
     }
     
     // Medium
     &.button-med {
         padding: ($space-default-half - 12px) ($space-default-half - 2px);
+        font-weight: 700;
     }
     
     // Large
@@ -240,6 +249,15 @@ body {
 } // body
 
 
+.block-title {
+    
+    .button-xsm {
+        position: relative;
+        top: -4px;
+        margin-left: 4px;
+    }
+    
+} // .block-title
 
 
 
