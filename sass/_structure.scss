@@ -571,6 +571,11 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
 
 } // .hero
 
+.entry .hero {
+    box-shadow: none;
+    padding-left: -$space-default;
+}
+
 
 
 //============//

@@ -2009,6 +2009,10 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
     .hero .button {
       padding: 5px 10px; } }
 
+.entry .hero {
+  box-shadow: none;
+  padding-left: -40px; }
+
 .sidebar-primary {
   float: left;
   margin-left: 2.564102564102564%;
