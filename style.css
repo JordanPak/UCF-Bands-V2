@@ -2109,9 +2109,15 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
   padding-left: -40px; }
 
 .announcement-wrap {
-  margin-bottom: 30px; }
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid whitesmoke; }
+  .announcement-wrap:first-child {
+    padding-top: 20px; }
   .announcement-wrap:last-child {
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none; }
 
 * {
   box-sizing: border-box; }

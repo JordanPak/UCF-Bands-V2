@@ -2,10 +2,23 @@
 //  UCFBands V2 | Announcement  //
 //==============================//
 
+.announcements-wrap {
+       
+}
+
 .announcement-wrap {
-    margin-bottom: ($space-default-half + 10px);
+    margin-bottom: ($space-default-half);// + 5px);
+    padding-bottom: $space-default-half;
+    border-bottom: 1px solid $ucf-gray-light;
+    
+    &:first-child {
+        padding-top: $space-default-half;
+    }
     
     &:last-child {
         margin-bottom: 0;
+        padding-bottom: 0;
+        border-bottom: none;
     }
-}
+
+} // .announcement-wrap
