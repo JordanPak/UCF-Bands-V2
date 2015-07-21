@@ -2026,6 +2026,86 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
     #footer-social a:hover {
       color: #FFCA06; }
 
+.hero {
+  display: block;
+  width: 100%;
+  padding: 40px;
+  clear: both;
+  text-align: center;
+  color: #FFFFFF;
+  border-bottom: 5px solid #EFBC00;
+  box-shadow: 4px 0 4px rgba(0, 0, 0, 0.5);
+  background-attachment: fixed !important;
+  background-position: center !important;
+  background-clip: border-box !important; }
+  .hero.hero-sm {
+    padding: 40px; }
+  .hero.hero-med {
+    padding: 80px; }
+  .hero.hero-lg {
+    padding: 120px; }
+    .hero.hero-lg h2 {
+      font-size: 4.2em; }
+  .hero.hero-gold {
+    border-top: 5px solid #FFCA06;
+    background: #EFBC00; }
+  .hero.hero-gray {
+    border-top: 5px solid #000000;
+    background: #221E1F; }
+  .hero.hero-red {
+    border-top: 5px solid #79120f;
+    background: #D41F1A; }
+  .hero.hero-green {
+    border-top: 5px solid #357935;
+    background: #5CB85C; }
+  .hero.hero-blue {
+    border-top: 5px solid #245682;
+    background: #428BCA; }
+  .hero h2 {
+    margin-bottom: 20px;
+    font-size: 3.2em;
+    color: #FFFFFF;
+    text-shadow: 0 1px 7px rgba(0, 0, 0, 0.2), 0 0 3px rgba(0, 0, 0, 0.15);
+    cursor: default; }
+  .hero p {
+    margin: 0;
+    font-size: 1.5em;
+    color: #FFFFFF;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+    cursor: default; }
+  .hero .button.button-outline.button-white {
+    margin-bottom: 10px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+    letter-spacing: .05em; }
+    .hero .button.button-outline.button-white:hover {
+      text-shadow: none; }
+  @media only screen and (max-width: 1200px) {
+    .hero.hero-lg {
+      padding: 80px; }
+      .hero.hero-lg h2 {
+        font-size: 3.2em; } }
+  @media only screen and (max-width: 600px) {
+    .hero.hero-med, .hero.hero-lg {
+      padding: 40px; }
+    .hero h2 {
+      font-size: 2.75em; }
+    .hero p {
+      font-size: 1.2em; } }
+  @media only screen and (max-width: 380px) {
+    .hero.hero-lg, .hero.hero-med, .hero.hero-sm {
+      padding: 30px; }
+    .hero h2 {
+      font-size: 2em; }
+    .hero p {
+      font-size: 1em; }
+    .hero .button {
+      padding: 5px 10px; } }
+
+.entry .hero {
+  box-shadow: none;
+  padding-left: -40px; }
+
 * {
   box-sizing: border-box; }
 
