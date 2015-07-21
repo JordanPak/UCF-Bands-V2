@@ -1495,7 +1495,6 @@ hr {
 .button {
   text-transform: none;
   font-weight: 700;
-  padding: 8px 18px;
   color: #FFFFFF;
   text-shadow: 0 0 3px #000000, 1px 1px 1px rgba(0, 0, 0, 0.4), 0 0 3px #000000, 2px 2px 1px rgba(0, 0, 0, 0.4);
   background-color: #221E1F;
@@ -1517,7 +1516,6 @@ hr {
   .button.button-gold {
     text-transform: none;
     font-weight: 700;
-    padding: 8px 18px;
     color: #FFFFFF;
     text-shadow: 0 0 3px #EFBC00, 1px 1px 1px #EFBC00, 0 0 3px #EFBC00, 2px 2px 1px #EFBC00;
     background-color: #FFCA06;
@@ -1532,7 +1530,6 @@ hr {
   .button.button-red {
     text-transform: none;
     font-weight: 700;
-    padding: 8px 18px;
     color: #FFFFFF;
     text-shadow: 0 0 3px #a71814, 1px 1px 1px #a71814, 0 0 3px #a71814, 2px 2px 1px #a71814;
     background-color: #D41F1A;
@@ -1547,7 +1544,6 @@ hr {
   .button.button-green {
     text-transform: none;
     font-weight: 700;
-    padding: 8px 18px;
     color: #FFFFFF;
     text-shadow: 0 0 3px #449d44, 1px 1px 1px #449d44, 0 0 3px #449d44, 2px 2px 1px #449d44;
     background-color: #5CB85C;
@@ -1562,7 +1558,6 @@ hr {
   .button.button-blue {
     text-transform: none;
     font-weight: 700;
-    padding: 8px 18px;
     color: #FFFFFF;
     text-shadow: 0 0 3px #3071a9, 1px 1px 1px #3071a9, 0 0 3px #3071a9, 2px 2px 1px #3071a9;
     background-color: #428BCA;
@@ -1577,7 +1572,6 @@ hr {
   .button.button-white {
     text-transform: none;
     font-weight: 700;
-    padding: 8px 18px;
     color: #a59a9d;
     text-shadow: none;
     background-color: #FFFFFF;
