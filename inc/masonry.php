@@ -111,7 +111,7 @@ function show_masonry_grid() {
 
                 
                 <!-- BLOCK TITLE & ICON -->
-                <h2><?php echo $block_title . $block_icon; ?></h2>
+                <h2 class="block-header"><?php echo $block_title . $block_icon; ?></h2>
 
 
                 <?php // FOR TESTING: Show Block Width ?>
