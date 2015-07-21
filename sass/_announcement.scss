@@ -1,0 +1,11 @@
+//==============================//
+//  UCFBands V2 | Announcement  //
+//==============================//
+
+.announcement-wrap {
+    margin-bottom: ($space-default-half + 10px);
+    
+    &:last-child {
+        margin-bottom: 0;
+    }
+}

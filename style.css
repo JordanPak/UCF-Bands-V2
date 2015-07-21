@@ -2108,6 +2108,11 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
   box-shadow: none;
   padding-left: -40px; }
 
+.announcement-wrap {
+  margin-bottom: 30px; }
+  .announcement-wrap:last-child {
+    margin-bottom: 0; }
+
 * {
   box-sizing: border-box; }
 
