@@ -62,7 +62,7 @@ a {
 p a,
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a
 {
-    color: $ucf-gold-darker;
+    color: $body-text;
     border-bottom: 2px solid $trans-full;
     
     @include transition-ease-in-out;
@@ -71,6 +71,11 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a
         color: inherit;
         border-bottom-color: $ucf-gold;
     }
+       
+}
+
+p a {
+    color: $ucf-gold-darker;
 }
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {

@@ -1456,13 +1456,16 @@ a {
 
 p a,
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
-  color: #EFBC00;
+  color: #333333;
   border-bottom: 2px solid transparent;
   transition: all ease-in-out 200ms; }
   p a:hover,
   h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
     color: inherit;
     border-bottom-color: #FFCA06; }
+
+p a {
+  color: #EFBC00; }
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   border-bottom-width: 3px; }
