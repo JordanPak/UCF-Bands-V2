@@ -37,3 +37,24 @@ function be_ucfbands_jetpack_settings_metabox_registration( $_genesis_theme_sett
 
 }
 add_action( 'genesis_theme_settings_metaboxes', 'be_ucfbands_jetpack_settings_metabox_registration' );
+
+
+
+/**
+ * UCFBands Jetpack Settings Metabox Callback
+ * @see be_register_social_settings_box()
+ * @author Jordan Pakrosnis
+ * @link http://ucfbands.com/
+ *
+ */
+function be_ucfbands_jetpack_settings_box() {
+	?>
+
+    <p><b>Development Mode</b></p>
+    
+    <p><?php _e( 'Enable Development Mode &nbsp;', 'be-genesis-child' );?>
+        <input type="checkbox" name="<?php echo GENESIS_SETTINGS_FIELD; ?>[ucfbands_jetpack_dev_mode]">
+    </p>
+
+	<?php
+}
