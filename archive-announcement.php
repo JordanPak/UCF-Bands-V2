@@ -72,7 +72,9 @@ function archive_masonry_grid() {
             <!-- MASONRY BLOCK -->
             <div class="block masonry-block masonry-block-size--one-third">
 
-
+                
+                <!-- BLOCK TITLE -->
+                <h2 class="block-header"><?php echo the_title(); ?></h2>
 
 
             </div><!-- / .block.masonry-block -->
