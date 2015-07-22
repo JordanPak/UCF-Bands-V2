@@ -16,7 +16,6 @@ require_once( CHILD_DIR . '/inc/menus.php' );
 
 // THEME SETTINGS
 require_once( CHILD_DIR . '/inc/theme-settings/footer.php' );
-require_once( CHILD_DIR . '/inc/theme-settings/jetpack-dev.php' );
 
 // CUSTOM META BOXES (CMB2)
 require_once( CHILD_DIR . '/inc/cmb/grid-blocks.php' );
