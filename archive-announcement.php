@@ -16,6 +16,9 @@ remove_action ('genesis_loop', 'genesis_do_loop');
 
 
 
+//-- INCLUDE MASONRY --//
+require_once( CHILD_DIR . '/inc/masonry.php' );
+
 
 //-- LOAD FRAMEWORK --//
 genesis();
