@@ -1456,13 +1456,16 @@ a {
 
 p a,
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
-  color: #EFBC00;
+  color: #333333;
   border-bottom: 2px solid transparent;
   transition: all ease-in-out 200ms; }
   p a:hover,
   h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
     color: inherit;
     border-bottom-color: #FFCA06; }
+
+p a {
+  color: #EFBC00; }
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   border-bottom-width: 3px; }
@@ -1494,7 +1497,6 @@ hr {
 
 .button {
   text-transform: none;
-  font-weight: 700;
   color: #FFFFFF;
   text-shadow: 0 0 3px #000000, 1px 1px 1px rgba(0, 0, 0, 0.4), 0 0 3px #000000, 2px 2px 1px rgba(0, 0, 0, 0.4);
   background-color: #221E1F;
@@ -1504,10 +1506,16 @@ hr {
     background-color: #FFCA06;
     border-color: #EFBC00;
     text-shadow: 0 0 3px #EFBC00, 1px 1px 1px #EFBC00, 0 0 3px #EFBC00, 2px 2px 1px #EFBC00; }
+  .button.button-xsm {
+    padding: 2px 4px;
+    font-size: .45em;
+    font-weight: normal; }
   .button.button-sm {
-    padding: 3px 10px; }
+    padding: 3px 10px;
+    font-size: .75em; }
   .button.button-med {
-    padding: 8px 18px; }
+    padding: 8px 18px;
+    font-weight: 700; }
   .button.button-lg {
     padding: 10px 20px;
     font-size: 1.20em;
@@ -1515,7 +1523,6 @@ hr {
     font-family: "Droid Serif", "Georgia", "Times", serif; }
   .button.button-gold {
     text-transform: none;
-    font-weight: 700;
     color: #FFFFFF;
     text-shadow: 0 0 3px #EFBC00, 1px 1px 1px #EFBC00, 0 0 3px #EFBC00, 2px 2px 1px #EFBC00;
     background-color: #FFCA06;
@@ -1529,7 +1536,6 @@ hr {
       border-color: #000000; }
   .button.button-red {
     text-transform: none;
-    font-weight: 700;
     color: #FFFFFF;
     text-shadow: 0 0 3px #a71814, 1px 1px 1px #a71814, 0 0 3px #a71814, 2px 2px 1px #a71814;
     background-color: #D41F1A;
@@ -1543,7 +1549,6 @@ hr {
       border-color: #79120f; }
   .button.button-green {
     text-transform: none;
-    font-weight: 700;
     color: #FFFFFF;
     text-shadow: 0 0 3px #449d44, 1px 1px 1px #449d44, 0 0 3px #449d44, 2px 2px 1px #449d44;
     background-color: #5CB85C;
@@ -1557,7 +1562,6 @@ hr {
       border-color: #357935; }
   .button.button-blue {
     text-transform: none;
-    font-weight: 700;
     color: #FFFFFF;
     text-shadow: 0 0 3px #3071a9, 1px 1px 1px #3071a9, 0 0 3px #3071a9, 2px 2px 1px #3071a9;
     background-color: #428BCA;
@@ -1571,7 +1575,6 @@ hr {
       border-color: #245682; }
   .button.button-white {
     text-transform: none;
-    font-weight: 700;
     color: #a59a9d;
     text-shadow: none;
     background-color: #FFFFFF;
@@ -1632,6 +1635,11 @@ hr {
 
 body.font-style-athletic .button.button-lg {
   font-family: "Oswald", "Roboto", sans-serif; }
+
+.block-title .button-xsm {
+  position: relative;
+  top: -4px;
+  margin-left: 4px; }
 
 .content-box-blue,
 .content-box-gray,
@@ -2099,6 +2107,35 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
 .entry .hero {
   box-shadow: none;
   padding-left: -40px; }
+
+.announcements-wrap h2 {
+  margin-bottom: 25px; }
+
+.announcement-wrap {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid whitesmoke; }
+  .announcement-wrap:first-child {
+    padding-top: 20px; }
+  .announcement-wrap:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none; }
+  .announcement-wrap p a {
+    color: inherit; }
+    .announcement-wrap p a:hover {
+      color: #EFBC00;
+      border: 0; }
+
+.announcement-title {
+  margin-bottom: 6px; }
+
+.announcement-date {
+  padding: 0 0 0 10px;
+  float: right;
+  font-size: .8em;
+  font-weight: 700;
+  text-transform: uppercase; }
 
 * {
   box-sizing: border-box; }

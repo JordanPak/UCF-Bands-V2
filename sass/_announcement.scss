@@ -1,0 +1,49 @@
+//==============================//
+//  UCFBands V2 | Announcement  //
+//==============================//
+
+.announcements-wrap {
+    
+    h2 {
+        margin-bottom: $space-default-half + 5px;
+    }
+    
+} // .announcements-wrap
+
+.announcement-wrap {
+    margin-bottom: ($space-default-half);// + 5px);
+    padding-bottom: $space-default-half;
+    border-bottom: 1px solid $ucf-gray-light;
+    
+    &:first-child {
+        padding-top: $space-default-half;
+    }
+    
+    &:last-child {
+        margin-bottom: 0;
+        padding-bottom: 0;
+        border-bottom: none;
+    }
+    
+    p a {
+        color: inherit;
+        
+        &:hover {
+            color: $ucf-gold-darker;
+            border: 0;
+        }
+    }
+
+} // .announcement-wrap
+
+.announcement-title {
+    margin-bottom: 6px;
+}
+
+.announcement-date {
+    padding: 0 0 0 10px;
+    float: right;
+    font-size: .8em;
+    font-weight: 700;
+    text-transform: uppercase;
+}
