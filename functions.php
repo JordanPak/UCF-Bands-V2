@@ -11,6 +11,10 @@ include_once( get_template_directory() . '/lib/init.php' );
 //  UCFBANDS INCLUDES  //
 //---------------------//
 
+// Jetpack Development Mode
+add_filter( 'jetpack_development_mode', '__return_true' );
+
+
 // MENUS
 require_once( CHILD_DIR . '/inc/menus.php' );
 
