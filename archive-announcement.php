@@ -55,7 +55,7 @@ function archive_masonry_grid() {
         // MASONRY GRID CONTAINER //
     
         // Column Layout
-        $masonry_column_layout = '4col';
+        $masonry_column_layout = '6col';
 
         // Use Layout Option with container output
         echo '<section class="masonry-' . $masonry_column_layout . '-grid">';
@@ -70,7 +70,7 @@ function archive_masonry_grid() {
             ?>
             
             <!-- MASONRY BLOCK -->
-            <div class="block masonry-block masonry-block-size--one-fourth">
+            <div class="block masonry-block masonry-block-size--one-third">
 
 
 
