@@ -32,6 +32,7 @@ function body_class_disable_grid_padding( $classes ) {
 
 // Masonry Init & Output
 require_once( CHILD_DIR . '/inc/masonry.php' );
+require_once( CHILD_DIR . '/inc/masonry-blocks.php' );
 
 
 //-- LOAD FRAMEWORK --//
