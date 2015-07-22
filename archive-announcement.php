@@ -67,7 +67,18 @@ function archive_masonry_grid() {
         // LOOP THROUGH POSTS //
         while ( $announcements->have_posts() ): $announcements->the_post(); global $post;
         
-        
+            ?>
+            
+            <!-- MASONRY BLOCK -->
+            <div class="block masonry-block masonry-block-size--one-fourth">
+
+
+
+
+            </div><!-- / .block.masonry-block -->
+            
+
+            <?php
         
         endwhile;
                
