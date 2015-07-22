@@ -13,6 +13,28 @@ remove_action ('genesis_loop', 'genesis_do_loop');
 
 
 
+// Add page header before content_sidebar_wrap
+add_action( 'genesis_before_content_sidebar_wrap', 'ucfbands_custom_page_header', 10);
+function ucfbands_custom_page_header() {
+    
+    ?>
+    
+    <section class="page-header page-header-lg" style="">
+                
+        <div class="page-header-inner">
+
+            <h1 class="entry-title" itemprop="headline">Announcements</h1>
+
+        </div>
+
+    </section>
+
+    <?php
+
+} // ucfbands_custom_page_header()
+
+
+
 add_action( 'genesis_before_content', 'archive_masonry_grid');
 /**
  * Archive Masonry Grid
@@ -42,6 +64,7 @@ function archive_masonry_grid() {
         'orderby'           => 'meta_value_num',
         'order'             => 'DSC',
         'posts_per_page'    => 16,
+//        'paged'             => true,
     );
     
     // Query/Get Post IDs
