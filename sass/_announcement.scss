@@ -28,5 +28,14 @@
 } // .announcement-wrap
 
 .announcement-title {
+    margin-bottom: 0;
     font-weight: 700;
+}
+
+.announcement-date {
+    padding: 0 0 0 10px;
+    float: right;
+    font-size: .8em;
+    font-weight: 700;
+    text-transform: uppercase;
 }
