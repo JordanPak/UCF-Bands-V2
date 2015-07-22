@@ -49,7 +49,19 @@
 }
 
 
-.post-type-archive-announcement .announcement-date {
-    float: none;
-    padding: 0;
-}
+.post-type-archive-announcement {
+    
+    .block-header {
+        margin: 0;
+    }
+    
+    .announcement-date {
+        float: none;
+        padding: 0;
+    }
+    
+    .entry-content {
+        margin-top: $space-default-half;
+    }
+    
+} // .post-type-archive-announcement
