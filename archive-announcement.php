@@ -130,10 +130,24 @@ function archive_masonry_grid() {
         echo '</section>';
         
     
-        // Add Pagination
-        echo '<div class="archive-pagination pagination">';
-        echo posts_nav_link( '&nbsp; &nbsp; &nbsp;', 'Newer Announcements', 'Older Announcements' );
-        echo '</div>';
+    
+        // PAGINATION //
+        ?>    
+        
+        <!-- Pagination Container -->
+        <div class="archive-pagination pagination">
+            <ul>
+                
+                <!-- Previous Posts -->
+                <li><?php previous_posts_link( 'Newer Announcements' ); ?></li>
+                
+                <!-- Older Announcements -->
+                <li><?php next_posts_link( 'Older Announcements' ); ?></li>
+
+            </ul>
+        </div><!-- /.archive-pagination.pagination -->
+        
+        <?php
     
     
     endif; // if posts found
