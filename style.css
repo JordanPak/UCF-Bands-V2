@@ -1850,8 +1850,7 @@ body {
     .content-sidebar-wrap {
       padding: 20px; } }
 
-body.page-template-page_section_grid .content-sidebar-wrap,
-body.page-template-page_grid .content-sidebar-wrap {
+body.masonry-page .content-sidebar-wrap {
   padding: 3%;
   padding-right: 0; }
 

@@ -18,3 +18,21 @@ function ucfbands_masonry_scripts() {
     wp_enqueue_script( 'jquery-masonry-init', get_stylesheet_directory_uri() . '/inc/js/masonry-init.js', array( 'jquery-masonry' ), true );
     
 } // ucfbands_masonry_scripts()
+
+
+
+//-- ADD MASONRY PAGE BODY CLASS--//
+add_filter( 'body_class', 'body_class_masonry_page' );
+/**
+ * UCFBands Genesis Child Theme 
+ * Add masonry-page class to masonry pages
+ *
+ * @author Jordan Pakrosnis
+ */
+function body_class_masonry_page( $classes ) {
+
+    $classes[] = 'masonry-page';   
+    
+    return $classes;
+    
+} // body_class_masonry_page()

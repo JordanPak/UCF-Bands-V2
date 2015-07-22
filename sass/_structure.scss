@@ -293,8 +293,7 @@ body {
     }
 }
 
-body.page-template-page_section_grid .content-sidebar-wrap,
-body.page-template-page_grid .content-sidebar-wrap {
+body.masonry-page .content-sidebar-wrap {
     padding: $masonry-gutter-width;
     padding-right: 0;
 }
