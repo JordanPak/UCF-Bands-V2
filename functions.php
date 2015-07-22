@@ -63,6 +63,9 @@ function ucfbands_global_scripts() {
     // Pushy
     wp_enqueue_script( 'pushy', get_stylesheet_directory_uri() . '/inc/js/pushy.min.js', array( 'jquery' ), CHILD_THEME_VERSION );
     
+    // Infinite Scroll
+    wp_enqueue_script( 'infinite-scroll',  get_stylesheet_directory_uri() . '/inc/js/jquery.infinitescroll.min.js', array(), null, true );
+    
 } // ucfbands_global_scripts()
 
 
