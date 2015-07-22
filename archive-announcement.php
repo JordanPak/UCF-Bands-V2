@@ -7,8 +7,14 @@
  *  @author Jordan Pakrosnis
 */
 
-// REMOVE SIDEBAR //
+// REMOVE SIDEBAR & STANDARD LOOP //
 remove_action( 'genesis_sidebar', 'genesis_do_sidebar' );
+remove_action ('genesis_loop', 'genesis_do_loop');
+
+
+
+
+
 
 
 //-- LOAD FRAMEWORK --//
