@@ -2109,7 +2109,7 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
   padding-left: -40px; }
 
 .announcements-wrap h2 {
-  margin-bottom: 20px; }
+  margin-bottom: 25px; }
 
 .announcement-wrap {
   margin-bottom: 20px;
@@ -2121,10 +2121,14 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
     margin-bottom: 0;
     padding-bottom: 0;
     border-bottom: none; }
+  .announcement-wrap p a {
+    color: inherit; }
+    .announcement-wrap p a:hover {
+      color: #EFBC00;
+      border: 0; }
 
 .announcement-title {
-  margin-bottom: 0;
-  font-weight: 700; }
+  margin-bottom: 6px; }
 
 .announcement-date {
   padding: 0 0 0 10px;

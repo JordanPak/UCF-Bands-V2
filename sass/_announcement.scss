@@ -5,7 +5,7 @@
 .announcements-wrap {
     
     h2 {
-        margin-bottom: $space-default-half;
+        margin-bottom: $space-default-half + 5px;
     }
     
 } // .announcements-wrap
@@ -24,12 +24,20 @@
         padding-bottom: 0;
         border-bottom: none;
     }
+    
+    p a {
+        color: inherit;
+        
+        &:hover {
+            color: $ucf-gold-darker;
+            border: 0;
+        }
+    }
 
 } // .announcement-wrap
 
 .announcement-title {
-    margin-bottom: 0;
-    font-weight: 700;
+    margin-bottom: 6px;
 }
 
 .announcement-date {
