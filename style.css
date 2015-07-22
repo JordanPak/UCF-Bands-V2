@@ -2137,6 +2137,10 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
   font-weight: 700;
   text-transform: uppercase; }
 
+.post-type-archive-announcement .announcement-date {
+  float: none;
+  padding: 0; }
+
 * {
   box-sizing: border-box; }
 

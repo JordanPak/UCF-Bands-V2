@@ -83,7 +83,7 @@ function archive_masonry_grid() {
                 
                 <!-- DATE -->
                 <span class="announcement-date">
-                    <i class="fa fa-calendar"></i>
+                    <i class="fa fa-calendar"></i>&nbsp; <?php echo mysql2date( 'F j, Y', $post->post_date ) ?>
                 </span>
                 
                 
