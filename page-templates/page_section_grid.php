@@ -35,6 +35,7 @@ require_once( CHILD_DIR . '/inc/page-title.php' );
 
 // Masonry Init & Output
 require_once( CHILD_DIR . '/inc/masonry.php' );
+require_once( CHILD_DIR . '/inc/masonry-blocks.php' );
 
 
 //-- LOAD FRAMEWORK --//
