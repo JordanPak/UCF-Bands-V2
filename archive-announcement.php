@@ -49,7 +49,7 @@ function archive_masonry_grid() {
     
     
     // If there's announcements, do the grid
-    if ( $announcements->have_posts() ) {
+    if ( $announcements->have_posts() ):
         
         
         // MASONRY GRID CONTAINER //
@@ -65,8 +65,12 @@ function archive_masonry_grid() {
 
         
         // LOOP THROUGH POSTS //
-        while ( $announcements->have_posts() ): $announcements->the_post(); global $post;
-        
+        while ( $announcements->have_posts() ): $announcements->the_post(); //global $post;
+            
+                    
+            // Get the current post
+            $post = get_post();
+            
             ?>
             
             <!-- MASONRY BLOCK -->
@@ -74,7 +78,21 @@ function archive_masonry_grid() {
 
                 
                 <!-- BLOCK TITLE -->
-                <h2 class="block-header"><?php echo the_title(); ?></h2>
+                <h3 class="block-header"><?php the_title(); ?></h3>
+                
+                
+                <!-- DATE -->
+                <span class="announcement-date">
+                    <i class="fa fa-calendar"></i>
+                </span>
+                
+                
+                <!-- BLOCK CONTENT -->
+                <div class="entry-content">
+                
+                    <?php echo $post->post_content; ?>
+                
+                </div><!-- /.entry-content -->
 
 
             </div><!-- / .block.masonry-block -->
@@ -88,7 +106,8 @@ function archive_masonry_grid() {
         // End Grid
         echo '</section>';
         
-    } // if posts found
+    
+    endif; // if posts found
     
 
 } // archive_masonry_grid()
