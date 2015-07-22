@@ -2108,6 +2108,9 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
   box-shadow: none;
   padding-left: -40px; }
 
+.announcements-wrap h2 {
+  margin-bottom: 20px; }
+
 .announcement-wrap {
   margin-bottom: 20px;
   padding-bottom: 20px;
@@ -2118,6 +2121,9 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
     margin-bottom: 0;
     padding-bottom: 0;
     border-bottom: none; }
+
+.announcement-title {
+  font-weight: 700; }
 
 * {
   box-sizing: border-box; }

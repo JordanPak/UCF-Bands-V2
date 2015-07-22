@@ -3,8 +3,12 @@
 //==============================//
 
 .announcements-wrap {
-       
-}
+    
+    h2 {
+        margin-bottom: $space-default-half;
+    }
+    
+} // .announcements-wrap
 
 .announcement-wrap {
     margin-bottom: ($space-default-half);// + 5px);
@@ -22,3 +26,7 @@
     }
 
 } // .announcement-wrap
+
+.announcement-title {
+    font-weight: 700;
+}
