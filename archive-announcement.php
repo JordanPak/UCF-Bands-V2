@@ -62,6 +62,18 @@ function archive_masonry_grid() {
             echo '<div class="masonry-' . $masonry_column_layout . '-grid-sizer"></div>';
             echo '<div class="masonry-' . $masonry_column_layout . '-gutter-sizer"></div>';
 
+
+        
+        // LOOP THROUGH POSTS //
+        while ( $announcements->have_posts() ): $announcements->the_post(); global $post;
+        
+        
+        
+        endwhile;
+               
+        
+        // End Grid
+        echo '</section>';
         
     } // if posts found
     
