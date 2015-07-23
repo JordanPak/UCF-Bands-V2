@@ -1770,76 +1770,6 @@ body.masonry-page .pagination {
     .sidebar-primary .widget {
       padding: 20px; } }
 
-.site-footer {
-  position: fixed;
-  margin: 0;
-  padding: 40px;
-  left: 0;
-  bottom: 0;
-  width: 330px;
-  background: #221E1F;
-  color: #a59a9d;
-  text-align: left;
-  font-size: .9em;
-  line-height: 1.25em;
-  font-family: "Droid Serif", "Georgia", "Times", serif;
-  text-shadow: 0 0 3px #000000, 1px 1px 1px rgba(0, 0, 0, 0.4), 0 0 3px #000000, 2px 2px 1px rgba(0, 0, 0, 0.4); }
-  .site-footer a {
-    color: #FFFFFF;
-    border-bottom: 2px solid transparent;
-    transition: all ease-in-out 200ms; }
-    .site-footer a:hover {
-      border-color: #FFCA06; }
-  .site-footer address {
-    box-sizing: border-box;
-    font-style: normal;
-    margin-bottom: 10px; }
-    .site-footer address a {
-      color: inherit;
-      border: none; }
-      .site-footer address a:hover {
-        color: #FFFFFF; }
-  @media only screen and (max-width: 1200px) {
-    .site-footer {
-      width: 230px;
-      padding: 20px;
-      font-size: .8em; } }
-  @media only screen and (max-width: 768px) {
-    .site-footer {
-      position: static;
-      padding: 40px;
-      width: 100%;
-      border-top: 5px solid #111111;
-      font-size: 1em; }
-      .site-footer .wrap {
-        padding: 0; } }
-  @media only screen and (max-height: 740px) and (max-height: 1366px) {
-    .site-footer {
-      z-index: 750;
-      box-shadow: 0 -20px 20px -20px #000000; } }
-  @media only screen and (max-height: 850px) and (min-height: 1200px) {
-    .site-footer {
-      z-index: 750;
-      box-shadow: 0 -20px 20px -20px #000000; } }
-
-#footer-social {
-  height: auto;
-  overflow: auto; }
-  #footer-social a {
-    display: inline-block;
-    margin-right: 10px;
-    padding: 10px;
-    width: 40px;
-    font-size: .9em;
-    text-align: center;
-    border-radius: 7px;
-    border: none;
-    color: #FFFFFF;
-    background-color: rgba(0, 0, 0, 0.5);
-    transition: all ease-in-out 200ms; }
-    #footer-social a:hover {
-      color: #FFCA06; }
-
 #top-bar {
   position: fixed;
   width: 100%;
@@ -2030,6 +1960,76 @@ body.masonry-page .pagination {
     border: 0;
     background: none;
     box-shadow: none; }
+
+.site-footer {
+  position: fixed;
+  margin: 0;
+  padding: 40px;
+  left: 0;
+  bottom: 0;
+  width: 330px;
+  background: #221E1F;
+  color: #a59a9d;
+  text-align: left;
+  font-size: .9em;
+  line-height: 1.25em;
+  font-family: "Droid Serif", "Georgia", "Times", serif;
+  text-shadow: 0 0 3px #000000, 1px 1px 1px rgba(0, 0, 0, 0.4), 0 0 3px #000000, 2px 2px 1px rgba(0, 0, 0, 0.4); }
+  .site-footer a {
+    color: #FFFFFF;
+    border-bottom: 2px solid transparent;
+    transition: all ease-in-out 200ms; }
+    .site-footer a:hover {
+      border-color: #FFCA06; }
+  .site-footer address {
+    box-sizing: border-box;
+    font-style: normal;
+    margin-bottom: 10px; }
+    .site-footer address a {
+      color: inherit;
+      border: none; }
+      .site-footer address a:hover {
+        color: #FFFFFF; }
+  @media only screen and (max-width: 1200px) {
+    .site-footer {
+      width: 230px;
+      padding: 20px;
+      font-size: .8em; } }
+  @media only screen and (max-width: 768px) {
+    .site-footer {
+      position: static;
+      padding: 40px;
+      width: 100%;
+      border-top: 5px solid #111111;
+      font-size: 1em; }
+      .site-footer .wrap {
+        padding: 0; } }
+  @media only screen and (max-height: 740px) and (max-height: 1366px) {
+    .site-footer {
+      z-index: 750;
+      box-shadow: 0 -20px 20px -20px #000000; } }
+  @media only screen and (max-height: 850px) and (min-height: 1200px) {
+    .site-footer {
+      z-index: 750;
+      box-shadow: 0 -20px 20px -20px #000000; } }
+
+#footer-social {
+  height: auto;
+  overflow: auto; }
+  #footer-social a {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 10px;
+    width: 40px;
+    font-size: .9em;
+    text-align: center;
+    border-radius: 7px;
+    border: none;
+    color: #FFFFFF;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: all ease-in-out 200ms; }
+    #footer-social a:hover {
+      color: #FFCA06; }
 
 .hero {
   display: block;
