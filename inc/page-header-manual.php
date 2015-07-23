@@ -6,7 +6,7 @@
 
 
 // Add page header before content_sidebar_wrap
-add_action( 'genesis_before_content_sidebar_wrap', 'ucfbands_custom_page_header', 10);
+add_action( 'genesis_before_content_sidebar_wrap', 'ucfbands_page_header_manual', 10);
 
 /*
  *  UCFBands Theme "Manual" Heade
@@ -17,11 +17,36 @@ add_action( 'genesis_before_content_sidebar_wrap', 'ucfbands_custom_page_header'
  *
  *  @author Jordan Pakrosnis
 */
-function ucfbands_custom_page_header( $title, $image, $large ) {
+function ucfbands_page_header_manual( $title, $image, $large ) {
     
+    // LOGIC //
+    
+    // "Large" Class
+    if ($large == true) {
+        $large = ' page-header-lg';   
+    } else 
+        $large = '';
+    
+    
+    // Background Image
+    if ($image != '') {
+        
+        if (
+            ( strpos( $image, 'http://' ) === true ) || 
+            ( strpos( $image, 'https://' ) === true ) {
+                $image = ' style="background-image="' . $image . '"';
+            }
+            else
+                $image = '';
+    } else
+        $image = '';
+    
+    
+            
+    // OUTPUT //
     ?>
     
-<section class="page-header <?php if($large == true){ echo 'page-header-lg'; } ?>" style="">
+    <section class="page-header<?php echo $large; ?>"<?php echo $image; ?>>
                 
         <div class="page-header-inner">
 
@@ -33,4 +58,4 @@ function ucfbands_custom_page_header( $title, $image, $large ) {
 
     <?php
 
-} // ucfbands_custom_page_header()
+} // ucfbands_page_header_manual()
