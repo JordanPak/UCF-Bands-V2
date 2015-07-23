@@ -11,9 +11,8 @@ remove_action( 'genesis_sidebar', 'genesis_do_sidebar' );
 remove_action ('genesis_loop', 'genesis_do_loop');
 
 
-
-
-
+// Manual Page Header
+require_once( CHILD_DIR . '/inc/page-header-manual.php' );
 
 
 add_action( 'genesis_before_content', 'archive_masonry_grid');
