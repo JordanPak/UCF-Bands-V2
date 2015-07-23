@@ -1714,39 +1714,6 @@ body.masonry-page .content-sidebar-wrap {
 body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
   padding: 0; }
 
-.content {
-  float: left;
-  clear: both;
-  margin-left: 0;
-  width: 74.35897435897436%; }
-  @media only screen and (max-width: 1200px) {
-    .content {
-      float: none;
-      clear: both;
-      width: 100%;
-      margin-left: 0; } }
-  .content .post, .content .page {
-    background-color: #FFFFFF;
-    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
-    border: 1px solid #D4D4D4; }
-  .content .type-page h1 {
-    border-bottom: 1px solid whitesmoke;
-    padding-bottom: 20px;
-    margin-bottom: 20px; }
-  @media only screen and (max-width: 1500px) {
-    .content {
-      margin: 0;
-      width: 100%; } }
-
-.error404 article {
-  background-color: #FFFFFF;
-  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
-  border: 1px solid #D4D4D4; }
-
-body.masonry-page .pagination {
-  margin: 0;
-  text-align: center; }
-
 .sidebar-primary {
   float: left;
   margin-left: 2.564102564102564%;
@@ -1960,6 +1927,39 @@ body.masonry-page .pagination {
     border: 0;
     background: none;
     box-shadow: none; }
+
+.content {
+  float: left;
+  clear: both;
+  margin-left: 0;
+  width: 74.35897435897436%; }
+  @media only screen and (max-width: 1200px) {
+    .content {
+      float: none;
+      clear: both;
+      width: 100%;
+      margin-left: 0; } }
+  .content .post, .content .page {
+    background-color: #FFFFFF;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+    border: 1px solid #D4D4D4; }
+  .content .type-page h1 {
+    border-bottom: 1px solid whitesmoke;
+    padding-bottom: 20px;
+    margin-bottom: 20px; }
+  @media only screen and (max-width: 1500px) {
+    .content {
+      margin: 0;
+      width: 100%; } }
+
+.error404 article {
+  background-color: #FFFFFF;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+  border: 1px solid #D4D4D4; }
+
+body.masonry-page .pagination {
+  margin: 0;
+  text-align: center; }
 
 .site-footer {
   position: fixed;

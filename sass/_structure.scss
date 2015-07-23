@@ -87,45 +87,6 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
 }
 
 
-//===========//
-//  CONTENT  //
-//===========//
-
-.content {
-    
-    @include col('three-fourths', true);
-    
-    .post, .page {
-        @include block();
-    }
-    
-    .type-page h1 {
-        border-bottom: 1px solid $ucf-gray-light;
-        padding-bottom: $space-default-half;
-        margin-bottom: $space-default-half;
-    }
-    
-    @media only screen and (max-width: $breakpoint-extra-large) {
-        margin: 0;
-        width: 100%;
-    }
-    
-} // .content
-
-.error404 {
-    
-    article {
-        @include block();
-    }
-    
-}
-
-body.masonry-page .pagination {
-    margin: 0;
-    text-align: center;
-}
-
-
 
 //============//
 //  SIDEBARS  //

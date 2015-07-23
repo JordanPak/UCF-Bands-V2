@@ -1,6 +1,9 @@
-//===============================//
-//  UCFBANDS V2 | ENTRY & BLOCK  //
-//===============================//
+//=========================================//
+//  UCFBANDS V2 | CONTENT, ENTRY, & BLOCK  //
+//=========================================//
+
+
+//-- ENTRY --//
 
 .entry {
     margin-bottom: $space-default;
@@ -56,6 +59,10 @@
     
 } // .entry-content
 
+
+
+//-- BLOCK --//
+
 .block {
     
     @include block();
@@ -77,3 +84,41 @@
     }
     
 } // .block
+
+
+
+//-- CONTENT --//
+
+.content {
+    
+    @include col('three-fourths', true);
+    
+    .post, .page {
+        @include block();
+    }
+    
+    .type-page h1 {
+        border-bottom: 1px solid $ucf-gray-light;
+        padding-bottom: $space-default-half;
+        margin-bottom: $space-default-half;
+    }
+    
+    @media only screen and (max-width: $breakpoint-extra-large) {
+        margin: 0;
+        width: 100%;
+    }
+    
+} // .content
+
+.error404 {
+    
+    article {
+        @include block();
+    }
+    
+} // .error404
+
+body.masonry-page .pagination {
+    margin: 0;
+    text-align: center;
+}
