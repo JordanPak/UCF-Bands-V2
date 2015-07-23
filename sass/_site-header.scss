@@ -12,7 +12,8 @@
     @media only screen and (max-width: $breakpoint-small) {
         display: none;
     }
-}
+    
+} // #top-bar
 
 .site-header {
 	z-index: 700;
@@ -78,7 +79,8 @@
         width: auto;
         padding: 0;
     }
-}
+    
+} // .header-full-width .title-area
 
 .header-image .site-title > a {
     margin: 0;
@@ -109,8 +111,10 @@
         &:hover {
             background-color: $ucf-gray;
         }
-    }
-}
+        
+    } // breakpoint-small
+    
+} // .header-image .site-title > a
 
 .site-description {
     color: $white;
