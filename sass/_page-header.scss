@@ -34,7 +34,9 @@
             @media only screen and (max-width: $breakpoint-extra-extra-small) {
                 padding: $space-default-half;
             }
+            
         } // .page-header-inner
+        
     } // .page-header-lg
     
     &.remove-background-fade {
@@ -53,7 +55,8 @@
         @media only screen and (max-width: $breakpoint-extra-small) {
             font-size: 2.5em;
         }
-    }
+        
+    } // h1.entry-title
     
     .conductor-name {
         display: inline-block;
