@@ -13,7 +13,9 @@ body {
     @media only screen and (max-width: $breakpoint-small) {
         padding-top: $site-header-mobile-height + 4px; // Header Height + border 
     }
-}
+    
+} // body
+
 
 
 //==========//
@@ -55,7 +57,8 @@ body {
         border-bottom: 5px solid $ucf-gold;
     }
     
-}
+} // .site-inner
+
 
 
 //================================//
@@ -74,7 +77,8 @@ body {
     @media only screen and (max-width: $breakpoint-small-medium) {
         padding: $space-default-half;
     }
-}
+    
+} // .content-sidebar-wrap
 
 body.masonry-page .content-sidebar-wrap {
     padding: $masonry-gutter-width;
@@ -110,5 +114,7 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
         .widget {
             padding: $space-default-half;   
         }
-    }
-}
+        
+    } // breakpoint-medium
+    
+} // .sidebar-primary
