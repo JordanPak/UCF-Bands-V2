@@ -1,0 +1,78 @@
+//===============================//
+//  UCFBANDS V2 | ENTRY & BLOCK  //
+//===============================//
+
+.entry {
+    margin-bottom: $space-default;
+    padding: $space-default;
+    
+    
+    @media only screen and (max-width: $breakpoint-medium) {
+        margin-bottom: $space-default-half;
+        padding: $space-default-half;
+    }
+    
+    @media only screen and (max-width: $breakpoint-small) {
+        margin-bottom: $space-default-half;
+        padding: $space-default-half;
+    }
+} // .entry
+
+
+.entry-content {
+    
+    img {
+        border: 1px solid $ucf-gray-light;
+        box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        
+        &.no-border {
+            border: none;
+            box-shadow: none;
+        }
+        
+        @media only screen and (max-width: $breakpoint-extra-small) {
+            clear: both;
+            float: none;
+            margin-left: 0;
+            margin-right: 0;
+        }
+    }
+    
+    .wp-caption {
+        
+        @media only screen and (max-width: $breakpoint-extra-small) {
+            clear: both;
+            float: none;
+            margin-left: 0;
+            margin-right: 0;
+        }
+    }
+    
+    p:last-child {
+        margin-bottom: 0;
+    }
+    
+} // .entry-content
+
+
+
+.block {
+    @include block();
+    
+    &.block-featured {        
+        border-top: 5px solid $ucf-gold;
+        border-bottom: 5px solid $ucf-gray;
+    }
+    
+    h2 { 
+        cursor: default;
+    }
+    
+    &.block-remove-background-padding {
+        padding: 0;
+        border: 0;
+        background: none;
+        box-shadow: none;
+    }
+    
+} // .block

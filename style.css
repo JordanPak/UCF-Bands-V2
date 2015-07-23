@@ -2031,6 +2031,54 @@ body.masonry-page .pagination {
       .page-header .conductor-name {
         margin: 5px 0 0 0; } }
 
+.entry {
+  margin-bottom: 40px;
+  padding: 40px; }
+  @media only screen and (max-width: 1200px) {
+    .entry {
+      margin-bottom: 20px;
+      padding: 20px; } }
+  @media only screen and (max-width: 768px) {
+    .entry {
+      margin-bottom: 20px;
+      padding: 20px; } }
+
+.entry-content img {
+  border: 1px solid whitesmoke;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); }
+  .entry-content img.no-border {
+    border: none;
+    box-shadow: none; }
+  @media only screen and (max-width: 600px) {
+    .entry-content img {
+      clear: both;
+      float: none;
+      margin-left: 0;
+      margin-right: 0; } }
+@media only screen and (max-width: 600px) {
+  .entry-content .wp-caption {
+    clear: both;
+    float: none;
+    margin-left: 0;
+    margin-right: 0; } }
+.entry-content p:last-child {
+  margin-bottom: 0; }
+
+.block {
+  background-color: #FFFFFF;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+  border: 1px solid #D4D4D4; }
+  .block.block-featured {
+    border-top: 5px solid #FFCA06;
+    border-bottom: 5px solid #221E1F; }
+  .block h2 {
+    cursor: default; }
+  .block.block-remove-background-padding {
+    padding: 0;
+    border: 0;
+    background: none;
+    box-shadow: none; }
+
 .hero {
   display: block;
   width: 100%;
