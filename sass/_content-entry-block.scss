@@ -1,0 +1,124 @@
+//=========================================//
+//  UCFBANDS V2 | CONTENT, ENTRY, & BLOCK  //
+//=========================================//
+
+
+//-- ENTRY --//
+
+.entry {
+    margin-bottom: $space-default;
+    padding: $space-default;
+    
+    @media only screen and (max-width: $breakpoint-medium) {
+        margin-bottom: $space-default-half;
+        padding: $space-default-half;
+    }
+    
+    @media only screen and (max-width: $breakpoint-small) {
+        margin-bottom: $space-default-half;
+        padding: $space-default-half;
+    }
+    
+} // .entry
+
+
+.entry-content {
+    
+    img {
+        border: 1px solid $ucf-gray-light;
+        box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        
+        &.no-border {
+            border: none;
+            box-shadow: none;
+        }
+        
+        @media only screen and (max-width: $breakpoint-extra-small) {
+            clear: both;
+            float: none;
+            margin-left: 0;
+            margin-right: 0;
+        } // breakpoint-extra-small
+        
+    } // img
+    
+    .wp-caption {
+        
+        @media only screen and (max-width: $breakpoint-extra-small) {
+            clear: both;
+            float: none;
+            margin-left: 0;
+            margin-right: 0;
+        } // breakpoint-extra-small
+        
+    } // .wp-caption
+    
+    p:last-child {
+        margin-bottom: 0;
+    }
+    
+} // .entry-content
+
+
+
+//-- BLOCK --//
+
+.block {
+    
+    @include block();
+    
+    &.block-featured {        
+        border-top: 5px solid $ucf-gold;
+        border-bottom: 5px solid $ucf-gray;
+    }
+    
+    h2 { 
+        cursor: default;
+    }
+    
+    &.block-remove-background-padding {
+        padding: 0;
+        border: 0;
+        background: none;
+        box-shadow: none;
+    }
+    
+} // .block
+
+
+
+//-- CONTENT --//
+
+.content {
+    
+    @include col('three-fourths', true);
+    
+    .post, .page {
+        @include block();
+    }
+    
+    .type-page h1 {
+        border-bottom: 1px solid $ucf-gray-light;
+        padding-bottom: $space-default-half;
+        margin-bottom: $space-default-half;
+    }
+    
+    @media only screen and (max-width: $breakpoint-extra-large) {
+        margin: 0;
+        width: 100%;
+    }
+    
+} // .content
+
+.error404 {
+    
+    article {
+        @include block();
+    }
+    
+} // .error404
+
+body.masonry-page .pagination {
+    margin: 0;
+    text-align: center;
+}

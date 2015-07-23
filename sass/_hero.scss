@@ -39,7 +39,9 @@
         h2 {
             font-size: 4.2em;
         }
-    }
+        
+    } // .hero-lg
+    
     
     // COLOR
     &.hero-gold {
@@ -67,6 +69,7 @@
         background: $blue;
     }
     
+    
     // TITLE
     h2 {
         margin-bottom: $space-default-half;
@@ -76,6 +79,7 @@
         cursor: default;
     }
     
+    
     // CONTENT
     p {
         margin: 0;
@@ -84,6 +88,7 @@
         text-shadow: 0 1px 4px rgba(0,0,0,0.4);
         cursor: default;
     }
+    
     
     // BUTTON
     .button.button-outline.button-white {
@@ -106,7 +111,8 @@
             h2 {
                 font-size: 3.2em;
             }
-        }
+            
+        } // .hero-lg
     
     } // medium
     

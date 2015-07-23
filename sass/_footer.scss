@@ -1,0 +1,106 @@
+//========================//
+//  UCFBANDS V2 | FOOTER  //
+//========================//
+
+.site-footer {
+    position: fixed;
+    margin: 0;
+    padding: $space-default;
+    left: 0;
+    bottom: 0;
+    width: $site-header-width;
+    background: $ucf-gray;
+    color: $ucf-gray-med;
+    text-align: left;
+    font-size: .9em;
+    line-height: 1.25em;
+    font-family: $font-family-serif;
+    text-shadow: $text-shadow-dark-med;
+    
+    a {
+        color: $white;
+        border-bottom: 2px solid $trans-full;
+        
+        @include transition_ease_in_out();
+        
+        &:hover {
+            border-color: $ucf-gold;
+        }
+        
+    } // a
+    
+    address {
+        box-sizing: border-box;
+        font-style: normal;
+        margin-bottom: 10px;
+        
+        a {
+            color: inherit;
+            border: none;
+            
+            &:hover {
+                color: $white;
+            }
+        
+        } // a
+        
+    } // address
+    
+    @media only screen and (max-width: $breakpoint-medium) {
+        width: $site-header-width-med;
+        padding: $space-default-half;
+        font-size: .8em;
+    }
+    
+    @media only screen and (max-width: $breakpoint-small) {
+        position: static;
+        padding: $space-default;
+        width: 100%;
+        border-top: 5px solid $ucf-gray-darkest;
+        font-size: 1em;
+        
+        .wrap {
+            padding: 0;
+        }
+        
+    } // breakpoint-small
+    
+    // If the height is too small for the width with full menu
+    @media only screen and (max-height: $breakpoint-height-medium) and (max-height: $breakpoint-large) {
+        z-index: 750;
+        box-shadow: 0 -20px 20px -20px $black;
+    } 
+    
+    // If the height is too small for the width with full menu
+    @media only screen and (max-height: $breakpoint-height-large) and (min-height: $breakpoint-medium) {
+        z-index: 750;
+        box-shadow: 0 -20px 20px -20px $black;
+    }  
+    
+} // .site-footer
+
+#footer-social {
+    height: auto;
+    overflow: auto;
+    
+    a {
+        display: inline-block;
+        margin-right: 10px;
+        padding: 10px;
+        width: 40px;
+        font-size: .9em;
+        text-align: center;
+        border-radius: 7px;
+        border: none;
+        color: $white;
+        background-color: rgba(0,0,0,0.5);
+        
+        @include transition-ease-in-out();
+        
+        &:hover {
+            color: $ucf-gold;
+        }
+        
+    } // a
+
+} // #footer-social 

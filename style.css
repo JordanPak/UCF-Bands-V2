@@ -1672,6 +1672,71 @@ body {
     body {
       padding-top: 74px; } }
 
+.ucfbands-slider-wrap {
+  box-shadow: inset 2px 0 #000000, inset 7px 0 5px -7px rgba(0, 0, 0, 0.5), 0 1px 0 #000000, 0 6px 0 #FFCA06, 0 7px 0 #a59a9d, 0 8px 6px rgba(0, 0, 0, 0.175); }
+
+.site-inner,
+.wrap {
+  margin: 0;
+  max-width: none; }
+
+.site-inner {
+  clear: none;
+  margin-left: 330px;
+  padding: 0;
+  border-left: 5px solid #FFCA06;
+  background: whitesmoke;
+  box-shadow: inset 1px 0 #a89c9f, inset 7px 0 5px -7px rgba(0, 0, 0, 0.5); }
+  @media only screen and (max-width: 1200px) {
+    .site-inner {
+      margin-left: 230px; } }
+  @media only screen and (max-width: 768px) {
+    .site-inner {
+      margin-left: 0;
+      border-left: 0;
+      border-bottom: 5px solid #FFCA06; } }
+
+.content-sidebar-wrap {
+  padding: 40px;
+  overflow: auto;
+  min-height: 1000px;
+  background-image: url("images/pegasus-bg.png");
+  background-repeat: no-repeat;
+  background-position: -100px 25px; }
+  @media only screen and (max-width: 980px) {
+    .content-sidebar-wrap {
+      padding: 20px; } }
+
+body.masonry-page .content-sidebar-wrap {
+  padding: 3%;
+  padding-right: 0; }
+
+body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
+  padding: 0; }
+
+.sidebar-primary {
+  float: left;
+  margin-left: 2.564102564102564%;
+  width: 23.076923076923077%; }
+  @media only screen and (max-width: 1200px) {
+    .sidebar-primary {
+      float: none;
+      clear: both;
+      width: 100%;
+      margin-left: 0; } }
+  .sidebar-primary .widget {
+    background-color: #FFFFFF;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+    border: 1px solid #D4D4D4; }
+  @media only screen and (max-width: 1500px) {
+    .sidebar-primary {
+      clear: both;
+      width: 100%;
+      margin: 0; } }
+  @media only screen and (max-width: 1200px) {
+    .sidebar-primary .widget {
+      padding: 20px; } }
+
 #top-bar {
   position: fixed;
   width: 100%;
@@ -1815,81 +1880,6 @@ body {
       .page-header .conductor-name {
         margin: 5px 0 0 0; } }
 
-.ucfbands-slider-wrap {
-  box-shadow: inset 2px 0 #000000, inset 7px 0 5px -7px rgba(0, 0, 0, 0.5), 0 1px 0 #000000, 0 6px 0 #FFCA06, 0 7px 0 #a59a9d, 0 8px 6px rgba(0, 0, 0, 0.175); }
-
-.site-inner,
-.wrap {
-  margin: 0;
-  max-width: none; }
-
-.site-inner {
-  clear: none;
-  margin-left: 330px;
-  padding: 0;
-  border-left: 5px solid #FFCA06;
-  background: whitesmoke;
-  box-shadow: inset 1px 0 #a89c9f, inset 7px 0 5px -7px rgba(0, 0, 0, 0.5); }
-  @media only screen and (max-width: 1200px) {
-    .site-inner {
-      margin-left: 230px; } }
-  @media only screen and (max-width: 768px) {
-    .site-inner {
-      margin-left: 0;
-      border-left: 0;
-      border-bottom: 5px solid #FFCA06; } }
-
-.content-sidebar-wrap {
-  padding: 40px;
-  overflow: auto;
-  min-height: 1000px;
-  background-image: url("images/pegasus-bg.png");
-  background-repeat: no-repeat;
-  background-position: -100px 25px; }
-  @media only screen and (max-width: 980px) {
-    .content-sidebar-wrap {
-      padding: 20px; } }
-
-body.masonry-page .content-sidebar-wrap {
-  padding: 3%;
-  padding-right: 0; }
-
-body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
-  padding: 0; }
-
-.content {
-  float: left;
-  clear: both;
-  margin-left: 0;
-  width: 74.35897435897436%; }
-  @media only screen and (max-width: 1200px) {
-    .content {
-      float: none;
-      clear: both;
-      width: 100%;
-      margin-left: 0; } }
-  .content .post, .content .page {
-    background-color: #FFFFFF;
-    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
-    border: 1px solid #D4D4D4; }
-  .content .type-page h1 {
-    border-bottom: 1px solid whitesmoke;
-    padding-bottom: 20px;
-    margin-bottom: 20px; }
-  @media only screen and (max-width: 1500px) {
-    .content {
-      margin: 0;
-      width: 100%; } }
-
-.error404 article {
-  background-color: #FFFFFF;
-  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
-  border: 1px solid #D4D4D4; }
-
-body.masonry-page .pagination {
-  margin: 0;
-  text-align: center; }
-
 .entry {
   margin-bottom: 40px;
   padding: 40px; }
@@ -1938,28 +1928,38 @@ body.masonry-page .pagination {
     background: none;
     box-shadow: none; }
 
-.sidebar-primary {
+.content {
   float: left;
-  margin-left: 2.564102564102564%;
-  width: 23.076923076923077%; }
+  clear: both;
+  margin-left: 0;
+  width: 74.35897435897436%; }
   @media only screen and (max-width: 1200px) {
-    .sidebar-primary {
+    .content {
       float: none;
       clear: both;
       width: 100%;
       margin-left: 0; } }
-  .sidebar-primary .widget {
+  .content .post, .content .page {
     background-color: #FFFFFF;
     box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
     border: 1px solid #D4D4D4; }
+  .content .type-page h1 {
+    border-bottom: 1px solid whitesmoke;
+    padding-bottom: 20px;
+    margin-bottom: 20px; }
   @media only screen and (max-width: 1500px) {
-    .sidebar-primary {
-      clear: both;
-      width: 100%;
-      margin: 0; } }
-  @media only screen and (max-width: 1200px) {
-    .sidebar-primary .widget {
-      padding: 20px; } }
+    .content {
+      margin: 0;
+      width: 100%; } }
+
+.error404 article {
+  background-color: #FFFFFF;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+  border: 1px solid #D4D4D4; }
+
+body.masonry-page .pagination {
+  margin: 0;
+  text-align: center; }
 
 .site-footer {
   position: fixed;

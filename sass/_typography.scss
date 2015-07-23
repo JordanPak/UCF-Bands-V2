@@ -21,8 +21,10 @@ body {
         h1 {
             letter-spacing: .035em;
         }
-    }
-}
+    
+    } // .font-style-athletic
+    
+} // body
 
 
 
@@ -44,7 +46,8 @@ h1 {
             text-align: center;
             margin-top: $space-default-half;
         }
-    }
+        
+    } // .section-page-title
     
 } // h1
 
@@ -72,7 +75,7 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a
         border-bottom-color: $ucf-gold;
     }
        
-}
+} // header anchords
 
 p a {
     color: $ucf-gold-darker;
@@ -84,14 +87,16 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
     &:hover {
         color: $ucf-gray;
     }
-}
+    
+} // header anchors
 
 .entry-title a {
     
     &:hover {
         color: $ucf-gray;
-    }  
-}
+    }
+    
+} // .entry-title a
 
 
 
@@ -248,9 +253,11 @@ body {
             &.button-lg {
                 font-family: $font-family-athletic;
             }
-        }
+            
+        } // .button
         
     } // .font-style-athletic
+    
 } // body
 
 
@@ -309,4 +316,3 @@ body {
 i.mkmc-note {
     border-bottom: 1px solid $ucf-gold;
 }
-

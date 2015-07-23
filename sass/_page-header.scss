@@ -1,0 +1,98 @@
+//=============================//
+//  UCFBANDS V2 | PAGE HEADER  //
+//=============================//
+
+.page-header {
+    position: relative;
+    overflow: visible;//auto;
+    background-color: $ucf-gray;
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-attachment: fixed;
+    border-bottom: 5px solid $ucf-gray-darker;
+    
+    @include site-inner-inset-shadow(true, true, true);
+    
+    .page-header-inner {
+        padding: $space-default;
+        padding-left: $space-default + 32px;
+    }
+    
+    &.page-header-lg {
+        
+        .page-header-inner {
+            padding: ($space-default + 32px);// $space-default;
+        
+            @media only screen and (max-width: $breakpoint-small) {
+                padding: ($space-default + 25px) $space-default;
+            }
+            
+            @media only screen and (max-width: $breakpoint-extra-small) {
+                padding: ($space-default + 10px) $space-default;
+            }
+            
+            @media only screen and (max-width: $breakpoint-extra-extra-small) {
+                padding: $space-default-half;
+            }
+            
+        } // .page-header-inner
+        
+    } // .page-header-lg
+    
+    &.remove-background-fade {
+        @include site-inner-inset-shadow(true, false);
+    }
+    
+    h1.entry-title {
+        display: block;
+        margin: 0;
+        padding: 0;
+        color: $white;
+        text-shadow: $text-shadow-dark-lg;
+        font-size: 2.75em;
+        cursor: default;
+        
+        @media only screen and (max-width: $breakpoint-extra-small) {
+            font-size: 2.5em;
+        }
+        
+    } // h1.entry-title
+    
+    .conductor-name {
+        display: inline-block;
+        margin: 2px 0 0 4px;
+        font-style: italic;
+        color: $white;
+        text-shadow: $text-shadow-dark-med;
+        cursor: default;
+    }
+    
+    a {
+        
+        h1.entry-title {
+            
+            @include transition-ease-in-out();
+
+            &:hover {
+                color: $ucf-gold;
+                cursor: pointer;
+            }
+            
+        } // h1.entry-title
+        
+    } // a
+    
+    
+    @media only screen and (max-width: $breakpoint-small) {
+        
+        background-position: top center;
+        text-align: center;
+        box-shadow: inset 0 0 500px 500px rgba(0,0,0,0.4);
+        
+        .conductor-name {
+            margin: 5px 0 0 0;
+        }
+        
+    } // breakpoint-small
+    
+} // .page-header
