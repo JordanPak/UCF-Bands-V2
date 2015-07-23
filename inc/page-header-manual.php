@@ -17,15 +17,15 @@ add_action( 'genesis_before_content_sidebar_wrap', 'ucfbands_custom_page_header'
  *
  *  @author Jordan Pakrosnis
 */
-function ucfbands_custom_page_header( $title, $image, $size ) {
+function ucfbands_custom_page_header( $title, $image, $large ) {
     
     ?>
     
-    <section class="page-header page-header-lg" style="">
+<section class="page-header <?php if($large == true){ echo 'page-header-lg'; } ?>" style="">
                 
         <div class="page-header-inner">
 
-            <h1 class="entry-title" itemprop="headline">Announcements</h1>
+            <h1 class="entry-title" itemprop="headline">$title</h1>
 
         </div>
 
