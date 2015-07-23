@@ -1850,8 +1850,7 @@ body {
     .content-sidebar-wrap {
       padding: 20px; } }
 
-body.page-template-page_section_grid .content-sidebar-wrap,
-body.page-template-page_grid .content-sidebar-wrap {
+body.masonry-page .content-sidebar-wrap {
   padding: 3%;
   padding-right: 0; }
 
@@ -1886,6 +1885,10 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
   background-color: #FFFFFF;
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
   border: 1px solid #D4D4D4; }
+
+body.masonry-page .pagination {
+  margin: 0;
+  text-align: center; }
 
 .entry {
   margin-bottom: 40px;
@@ -2136,6 +2139,14 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
   font-size: .8em;
   font-weight: 700;
   text-transform: uppercase; }
+
+.post-type-archive-announcement .block-header {
+  margin: 0; }
+.post-type-archive-announcement .announcement-date {
+  float: none;
+  padding: 0; }
+.post-type-archive-announcement .entry-content {
+  margin-top: 20px; }
 
 * {
   box-sizing: border-box; }
