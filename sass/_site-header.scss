@@ -1,0 +1,117 @@
+//=============================//
+//  UCFBANDS V2 | SITE HEADER  //
+//=============================//
+
+#top-bar {
+    position: fixed;
+    width: 100%;
+    height: 2px;
+    background: $black;
+    z-index: 5000;
+    
+    @media only screen and (max-width: $breakpoint-small) {
+        display: none;
+    }
+}
+
+.site-header {
+	z-index: 700;
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    width: $site-header-width;
+    color: $white;
+    text-align: center;
+    background: $ucf-gray;
+    
+    a {
+        color: $white;
+    }
+    
+    .wrap {
+        margin: 0;
+        padding: 0;
+    }
+    
+    @media only screen and (max-width: $breakpoint-medium) {
+        width: $site-header-width-med;
+    }
+    
+    @media only screen and (max-width: $breakpoint-small) {
+        top: 0;
+        width: 100%;
+        min-height: 0;
+        padding-left: 10px;
+        border-bottom: 4px solid $ucf-gold;
+    } // breakpoint-small
+    
+
+    // If the height is too small for the width with full menu
+    @media only screen and (max-height: $breakpoint-height-medium) and (max-height: $breakpoint-medium) {
+        position: absolute;
+    }    
+    
+    // If the height is too small for the width with full menu
+    @media only screen and (max-height: $breakpoint-height-large) and (max-height: $breakpoint-large) {
+        position: absolute;
+    }
+    
+} // .site-header
+
+.site-header .header-widget-area {
+    float: none;
+    text-align: left;
+    width: 100%;
+}
+
+.title-area {
+    margin: 0;
+    padding: 12px 0 8px 0;
+    display: block;
+    width: 100%;
+}
+
+.header-full-width .title-area {
+    
+    @media only screen and (max-width: $breakpoint-small) {
+        float: left;
+        width: auto;
+        padding: 0;
+    }
+}
+
+.header-image .site-title > a {
+    margin: 0;
+    padding: 0;
+    min-height: 150px;
+    height: auto;
+    width: 100%;
+    background-position: center;
+    background-size: 81.5%;
+    border: none;
+    
+    @include transition-ease-in-out();
+    
+    &:hover {
+        background-color: $ucf-gray-darker;
+    }
+    
+    @media only screen and (max-width: $breakpoint-medium) {
+        min-height: 100px;
+    }
+    
+    @media only screen and (max-width: $breakpoint-small) {
+        min-height: 0;
+        height: $site-header-mobile-height;
+        width: 125px;
+        background-size: 100%;
+        
+        &:hover {
+            background-color: $ucf-gray;
+        }
+    }
+}
+
+.site-description {
+    color: $white;
+}
