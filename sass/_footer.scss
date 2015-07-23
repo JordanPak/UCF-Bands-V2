@@ -26,7 +26,8 @@
         &:hover {
             border-color: $ucf-gold;
         }
-    }
+        
+    } // a
     
     address {
         box-sizing: border-box;
@@ -40,8 +41,10 @@
             &:hover {
                 color: $white;
             }
-        }
-    }
+        
+        } // a
+        
+    } // address
     
     @media only screen and (max-width: $breakpoint-medium) {
         width: $site-header-width-med;
@@ -59,13 +62,15 @@
         .wrap {
             padding: 0;
         }
-    }  
+        
+    } // breakpoint-small
     
     // If the height is too small for the width with full menu
     @media only screen and (max-height: $breakpoint-height-medium) and (max-height: $breakpoint-large) {
         z-index: 750;
         box-shadow: 0 -20px 20px -20px $black;
-    }  
+    } 
+    
     // If the height is too small for the width with full menu
     @media only screen and (max-height: $breakpoint-height-large) and (min-height: $breakpoint-medium) {
         z-index: 750;
@@ -95,5 +100,7 @@
         &:hover {
             color: $ucf-gold;
         }
-    }
-}
+        
+    } // a
+
+} // #footer-social 
