@@ -1,8 +1,7 @@
 <?php
 
 /*
- *  UCFBands Theme Functionality
- *  Archive: Announcements
+ *  UCFBands Theme Archive: Announcements
  *    
  *  @author Jordan Pakrosnis
 */

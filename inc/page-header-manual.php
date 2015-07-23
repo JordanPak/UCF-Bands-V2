@@ -1,8 +1,23 @@
 <?php
+/*
+ *  UCFBands Theme "Manual" Header
+ *  @author Jordan Pakrosnis
+*/
+
 
 // Add page header before content_sidebar_wrap
 add_action( 'genesis_before_content_sidebar_wrap', 'ucfbands_custom_page_header', 10);
-function ucfbands_custom_page_header() {
+
+/*
+ *  UCFBands Theme "Manual" Heade
+ *
+ *  @param title: String with Page Title
+ *  @param image: String with Background image url
+ *  @param large: Bool which sets section class as "page-header-large" if true
+ *
+ *  @author Jordan Pakrosnis
+*/
+function ucfbands_custom_page_header( $title, $image, $size ) {
     
     ?>
     
