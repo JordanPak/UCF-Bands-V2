@@ -1,8 +1,7 @@
 <?php
 
 /*
- *  UCFBands Theme Functionality
- *  Archive: Announcements
+ *  UCFBands Theme Archive: Announcements
  *    
  *  @author Jordan Pakrosnis
 */
@@ -13,14 +12,24 @@ remove_action ('genesis_loop', 'genesis_do_loop');
 
 
 
+// Manual Page Header
+//require_once( CHILD_DIR . '/inc/page-header-manual.php' );
+
+
 // Add page header before content_sidebar_wrap
-add_action( 'genesis_before_content_sidebar_wrap', 'ucfbands_custom_page_header', 10);
-function ucfbands_custom_page_header() {
-    
+add_action( 'genesis_before_content_sidebar_wrap', 'ucfbands_page_header_manual' );
+
+/*
+ *  UCFBands Theme "Manual" Header
+ *
+ *  @author Jordan Pakrosnis
+*/
+function ucfbands_page_header_manual() {
+
     ?>
-    
-    <section class="page-header page-header-lg" style="">
-                
+
+    <section class="page-header page-header-lg">
+
         <div class="page-header-inner">
 
             <h1 class="entry-title" itemprop="headline">Announcements</h1>
@@ -31,7 +40,7 @@ function ucfbands_custom_page_header() {
 
     <?php
 
-} // ucfbands_custom_page_header()
+} // ucfbands_page_header_manual()
 
 
 
