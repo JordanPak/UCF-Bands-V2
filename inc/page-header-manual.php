@@ -6,7 +6,7 @@
  
 
 // Add page header before content_sidebar_wrap
-add_action( 'genesis_before_content_sidebar_wrap', 'ucfbands_page_header_manual', 10);
+add_action( 'genesis_before_content_sidebar_wrap', 'ucfbands_page_header_manual', 10, 3);
 
 /*
  *  UCFBands Theme "Manual" Header

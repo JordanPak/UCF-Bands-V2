@@ -12,7 +12,35 @@ remove_action ('genesis_loop', 'genesis_do_loop');
 
 
 // Manual Page Header
-require_once( CHILD_DIR . '/inc/page-header-manual.php' );
+//require_once( CHILD_DIR . '/inc/page-header-manual.php' );
+
+
+// Add page header before content_sidebar_wrap
+add_action( 'genesis_before_content_sidebar_wrap', 'ucfbands_page_header_manual' );
+
+/*
+ *  UCFBands Theme "Manual" Header
+ *
+ *  @author Jordan Pakrosnis
+*/
+function ucfbands_page_header_manual() {
+
+    ?>
+
+    <section class="page-header page-header-lg">
+
+        <div class="page-header-inner">
+
+            <h1 class="entry-title" itemprop="headline">Announcements</h1>
+
+        </div>
+
+    </section>
+
+    <?php
+
+} // ucfbands_page_header_manual()
+
 
 
 add_action( 'genesis_before_content', 'archive_masonry_grid');
