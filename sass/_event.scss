@@ -17,31 +17,41 @@
         .more-info {
             display: inline-block;
             position: relative;
+            right: -5px;
             z-index: 100;
             float: right;
+            padding-right: 5px;
+            
+            @include transition-ease-in-out();
             
             a {
                 color: $ucf-gray-med-light;
                 
                 &:hover {
-                    color: $ucf-gray;
+                    color: $white;
                     
-                    .see-event-details {
+                    .event-details {
                         display: inline;
                     }
                     
                 } // a:hover
                 
-                .see-event-details {
+                @include transition-ease-in-out();
+                
+                .event-details {
                     display: none;
                     position: absolute;
                     right: 0;
-                    width: 160px;
+                    width: 135px;
                     padding-left: 10px;
-                    padding-right: 10px;
-                    background: $ucf-gray-light;
+                    padding-right: 15px;
+                    color: $white;
+                    background: $ucf-gray;
                     border-radius: 15px;
                     box-shadow: 0 0 10px 10px $white;
+                    
+                    @include transition-ease-in-out();
+                    
                 } // .see-event-details
                  
             } // a

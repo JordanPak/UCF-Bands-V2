@@ -2161,24 +2161,30 @@ body.masonry-page .pagination {
   .events-shortcode-wrap .entry-wrapper .more-info {
     display: inline-block;
     position: relative;
+    right: -5px;
     z-index: 100;
-    float: right; }
+    float: right;
+    padding-right: 5px;
+    transition: all ease-in-out 200ms; }
     .events-shortcode-wrap .entry-wrapper .more-info a {
-      color: #d5d0d1; }
+      color: #d5d0d1;
+      transition: all ease-in-out 200ms; }
       .events-shortcode-wrap .entry-wrapper .more-info a:hover {
-        color: #221E1F; }
-        .events-shortcode-wrap .entry-wrapper .more-info a:hover .see-event-details {
+        color: #FFFFFF; }
+        .events-shortcode-wrap .entry-wrapper .more-info a:hover .event-details {
           display: inline; }
-      .events-shortcode-wrap .entry-wrapper .more-info a .see-event-details {
+      .events-shortcode-wrap .entry-wrapper .more-info a .event-details {
         display: none;
         position: absolute;
         right: 0;
-        width: 160px;
+        width: 135px;
         padding-left: 10px;
-        padding-right: 10px;
-        background: whitesmoke;
+        padding-right: 15px;
+        color: #FFFFFF;
+        background: #221E1F;
         border-radius: 15px;
-        box-shadow: 0 0 10px 10px #FFFFFF; }
+        box-shadow: 0 0 10px 10px #FFFFFF;
+        transition: all ease-in-out 200ms; }
   .events-shortcode-wrap .entry-wrapper .right-info {
     display: block;
     float: left; }
