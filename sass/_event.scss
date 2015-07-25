@@ -22,13 +22,14 @@
     float: left;
     margin-right: $space-default-half;
     padding: $space-default-half;
-    border: 2px solid $ucf-gray-light;
+    border: 1px solid $ucf-gray-light;
     font-family: $font-family-serif;
     font-size: 1.2em;
+    font-weight: 700;
+    color: $white;
     
     &.date-badge-ucf-gray {
-        color: $ucf-gray;
-        border-color: $ucf-gray;
+        background-color: $ucf-gray;
     }
     
 } // .date-badge
