@@ -13,6 +13,13 @@
         padding: $space-default-half;
         
         @include block();
+        
+        
+        .right-info {
+            display: block;
+            float: left;
+        }
+        
     } // .entry-wrapper
     
 } // .events-shortcode-wrap
