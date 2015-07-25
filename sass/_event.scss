@@ -17,12 +17,15 @@
         .more-info {
             display: inline-block;
             float: right;
-            color: $ucf-gray-med-light;
             
             a {
+                color: $ucf-gray-med-light;
                 
-                
-            }
+                &:hover {
+                    color: $ucf-gray;   
+                }
+                 
+            } // a
             
         } // .more-info
         
