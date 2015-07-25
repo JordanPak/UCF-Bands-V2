@@ -2173,7 +2173,8 @@ body.masonry-page .pagination {
   font-family: "Droid Serif", "Georgia", "Times", serif;
   font-size: 1.2em;
   font-weight: 700;
-  color: #FFFFFF; }
+  color: #FFFFFF;
+  text-align: center; }
   .date-badge.date-badge-ucf-gray {
     background-color: #221E1F;
     border-color: #000000;
