@@ -22,7 +22,8 @@
     float: left;
     margin-right: $space-default-half;
     padding: $space-default-half;
-    border: 1px solid $ucf-gray-light;
+    background-color: $ucf-gray-light;
+    border: 1px solid $ucf-gray-med;
     font-family: $font-family-serif;
     font-size: 1.2em;
     font-weight: 700;
@@ -31,26 +32,31 @@
     &.date-badge-ucf-gray {
         background-color: $ucf-gray;
         border-color: $black;
+        text-shadow: $text-shadow-dark-med;
     }
     
     &.date-badge-gold {
         background-color: $ucf-gold;
         border-color: $ucf-gold-darker;
+        text-shadow: $text-shadow-gold-med;
     }
     
     &.date-badge-green {
         background-color: $green;  
         border-color: $green-darker;
+        text-shadow: $text-shadow-green-med;
     }
     
     &.date-badge-red {
         background-color: $red;
         border-color: $red-darker;
+        text-shadow: $text-shadow-red-med;
     }
     
     &.date-badge-blue {
         background-color: $blue;   
         border-color: $blue-darker;
+        text-shadow: $text-shadow-blue-med;
     }
     
 } // .date-badge

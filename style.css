@@ -2163,26 +2163,32 @@ body.masonry-page .pagination {
   float: left;
   margin-right: 20px;
   padding: 20px;
-  border: 1px solid whitesmoke;
+  background-color: whitesmoke;
+  border: 1px solid #a59a9d;
   font-family: "Droid Serif", "Georgia", "Times", serif;
   font-size: 1.2em;
   font-weight: 700;
   color: #FFFFFF; }
   .date-badge.date-badge-ucf-gray {
     background-color: #221E1F;
-    border-color: #000000; }
+    border-color: #000000;
+    text-shadow: 0 0 3px #000000, 1px 1px 1px rgba(0, 0, 0, 0.4), 0 0 3px #000000, 2px 2px 1px rgba(0, 0, 0, 0.4); }
   .date-badge.date-badge-gold {
     background-color: #FFCA06;
-    border-color: #EFBC00; }
+    border-color: #EFBC00;
+    text-shadow: 0 0 3px #EFBC00, 1px 1px 1px #EFBC00, 0 0 3px #EFBC00, 2px 2px 1px #EFBC00; }
   .date-badge.date-badge-green {
     background-color: #5CB85C;
-    border-color: #449d44; }
+    border-color: #449d44;
+    text-shadow: 0 0 3px #449d44, 1px 1px 1px #449d44, 0 0 3px #449d44, 2px 2px 1px #449d44; }
   .date-badge.date-badge-red {
     background-color: #D41F1A;
-    border-color: #a71814; }
+    border-color: #a71814;
+    text-shadow: 0 0 3px #a71814, 1px 1px 1px #a71814, 0 0 3px #a71814, 2px 2px 1px #a71814; }
   .date-badge.date-badge-blue {
     background-color: #428BCA;
-    border-color: #3071a9; }
+    border-color: #3071a9;
+    text-shadow: 0 0 3px #3071a9, 1px 1px 1px #3071a9, 0 0 3px #3071a9, 2px 2px 1px #3071a9; }
 
 * {
   box-sizing: border-box; }
