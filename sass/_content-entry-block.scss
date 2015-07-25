@@ -81,7 +81,12 @@
         border: 0;
         background: none;
         box-shadow: none;
-    }
+        
+        .block-title {
+            text-shadow: $text-shadow-white-med;
+        }
+    
+    } // &.block-remove-background-padding
     
 } // .block
 

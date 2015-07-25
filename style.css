@@ -1927,6 +1927,8 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
     border: 0;
     background: none;
     box-shadow: none; }
+    .block.block-remove-background-padding .block-title {
+      text-shadow: 0 0 3px #FFFFFF, 1px 1px 1px #FFFFFF, 0 0 3px #FFFFFF, 2px 2px 1px #FFFFFF; }
 
 .content {
   float: left;
