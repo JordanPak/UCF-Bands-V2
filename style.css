@@ -2186,10 +2186,18 @@ body.masonry-page .pagination {
         box-shadow: 0 0 10px 10px #FFFFFF;
         transition: all ease-in-out 200ms; }
   .events-shortcode-wrap .entry-wrapper .right-info {
-    display: block; }
+    display: block;
+    cursor: default; }
     .events-shortcode-wrap .entry-wrapper .right-info i.fa {
       width: 15px;
       text-align: center; }
+    .events-shortcode-wrap .entry-wrapper .right-info .location a {
+      color: inherit;
+      border-bottom: 2px solid transparent;
+      transition: all ease-in-out 200ms; }
+      .events-shortcode-wrap .entry-wrapper .right-info .location a:hover {
+        color: inherit;
+        border-bottom: 2px solid #FFCA06; }
   .events-shortcode-wrap .entry-wrapper .event-title {
     margin-bottom: 2px; }
 
@@ -2204,7 +2212,8 @@ body.masonry-page .pagination {
   font-weight: 700;
   color: #FFFFFF;
   text-align: center;
-  line-height: 1.66em; }
+  line-height: 1.66em;
+  cursor: default; }
   .date-badge.date-badge-ucf-gray {
     background-color: #221E1F;
     border-color: #000000;

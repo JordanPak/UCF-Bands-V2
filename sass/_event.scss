@@ -60,11 +60,25 @@
         
         .right-info {
             display: block;
+            cursor: default;
             
             i.fa {
                 width: 15px;
                 text-align: center;
             }
+            
+            .location a {
+                color: inherit;
+                border-bottom: 2px solid rgba(0,0,0,0);
+                
+                @include transition-ease-in-out();
+                
+                &:hover {
+                    color: inherit;
+                    border-bottom: 2px solid $ucf-gold;
+                }
+                
+            } // a
             
         } // .right-info
         
@@ -89,6 +103,7 @@
     color: $white;
     text-align: center;
     line-height: 1.66em;
+    cursor: default;
     
     &.date-badge-ucf-gray {
         background-color: $ucf-gray;
