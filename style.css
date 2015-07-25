@@ -2167,14 +2167,15 @@ body.masonry-page .pagination {
 .date-badge {
   float: left;
   margin-right: 20px;
-  padding: 8px 15px;
+  padding: 8px 18px;
   background-color: whitesmoke;
   border: 1px solid #a59a9d;
   font-family: "Droid Serif", "Georgia", "Times", serif;
-  font-size: 1.2em;
+  font-size: 1em;
   font-weight: 700;
   color: #FFFFFF;
-  text-align: center; }
+  text-align: center;
+  line-height: 1.66em; }
   .date-badge.date-badge-ucf-gray {
     background-color: #221E1F;
     border-color: #000000;
@@ -2195,6 +2196,10 @@ body.masonry-page .pagination {
     background-color: #428BCA;
     border-color: #3071a9;
     text-shadow: 0 0 3px #3071a9, 1px 1px 1px #3071a9, 0 0 3px #3071a9, 2px 2px 1px #3071a9; }
+  .date-badge .day {
+    font-size: 1.66em; }
+    .date-badge .day.day-multi {
+      font-size: 1.33em; }
 
 * {
   box-sizing: border-box; }

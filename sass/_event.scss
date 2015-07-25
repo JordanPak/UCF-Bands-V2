@@ -31,14 +31,15 @@
 .date-badge {
     float: left;
     margin-right: $space-default-half;
-    padding: 8px 15px;
+    padding: 8px 18px;
     background-color: $ucf-gray-light;
     border: 1px solid $ucf-gray-med;
     font-family: $font-family-serif;
-    font-size: 1.2em;
+    font-size: 1em;
     font-weight: 700;
     color: $white;
     text-align: center;
+    line-height: 1.66em;
     
     &.date-badge-ucf-gray {
         background-color: $ucf-gray;
@@ -68,6 +69,14 @@
         background-color: $blue;   
         border-color: $blue-darker;
         text-shadow: $text-shadow-blue-med;
+    }
+    
+    .day {
+        font-size: 1.66em;
+        
+        &.day-multi {
+            font-size: 1.33em;   
+        }
     }
     
 } // .date-badge
