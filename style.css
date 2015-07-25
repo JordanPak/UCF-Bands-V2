@@ -2159,6 +2159,12 @@ body.masonry-page .pagination {
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
   border: 1px solid #D4D4D4; }
 
+.date-badge {
+  float: left;
+  margin-right: 20px;
+  padding: 20px;
+  border: 2px solid whitesmoke; }
+
 * {
   box-sizing: border-box; }
 
