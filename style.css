@@ -2186,8 +2186,7 @@ body.masonry-page .pagination {
         box-shadow: 0 0 10px 10px #FFFFFF;
         transition: all ease-in-out 200ms; }
   .events-shortcode-wrap .entry-wrapper .right-info {
-    display: block;
-    float: left; }
+    display: block; }
     .events-shortcode-wrap .entry-wrapper .right-info i.fa {
       width: 15px;
       text-align: center; }
