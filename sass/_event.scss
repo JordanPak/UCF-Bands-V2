@@ -23,5 +23,12 @@
     margin-right: $space-default-half;
     padding: $space-default-half;
     border: 2px solid $ucf-gray-light;
+    font-family: $font-family-serif;
+    font-size: 1.2em;
+    
+    &.date-badge-ucf-gray {
+        color: $ucf-gray;
+        border-color: $ucf-gray;
+    }
     
 } // .date-badge

@@ -2163,7 +2163,12 @@ body.masonry-page .pagination {
   float: left;
   margin-right: 20px;
   padding: 20px;
-  border: 2px solid whitesmoke; }
+  border: 2px solid whitesmoke;
+  font-family: "Droid Serif", "Georgia", "Times", serif;
+  font-size: 1.2em; }
+  .date-badge.date-badge-ucf-gray {
+    color: #221E1F;
+    border-color: #221E1F; }
 
 * {
   box-sizing: border-box; }
