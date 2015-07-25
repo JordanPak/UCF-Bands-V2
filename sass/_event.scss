@@ -16,14 +16,33 @@
         
         .more-info {
             display: inline-block;
+            position: relative;
+            z-index: 100;
             float: right;
             
             a {
                 color: $ucf-gray-med-light;
                 
                 &:hover {
-                    color: $ucf-gray;   
-                }
+                    color: $ucf-gray;
+                    
+                    .see-event-details {
+                        display: inline;
+                    }
+                    
+                } // a:hover
+                
+                .see-event-details {
+                    display: none;
+                    position: absolute;
+                    right: 0;
+                    width: 160px;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    background: $ucf-gray-light;
+                    border-radius: 15px;
+                    box-shadow: 0 0 10px 10px $white;
+                } // .see-event-details
                  
             } // a
             
