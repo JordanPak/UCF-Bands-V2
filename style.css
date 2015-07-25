@@ -2188,6 +2188,9 @@ body.masonry-page .pagination {
   .events-shortcode-wrap .entry-wrapper .right-info {
     display: block;
     float: left; }
+    .events-shortcode-wrap .entry-wrapper .right-info i.fa {
+      width: 15px;
+      text-align: center; }
   .events-shortcode-wrap .entry-wrapper .event-title {
     margin-bottom: 2px; }
 
