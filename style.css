@@ -2167,7 +2167,7 @@ body.masonry-page .pagination {
 .date-badge {
   float: left;
   margin-right: 20px;
-  padding: 20px;
+  padding: 8px 15px;
   background-color: whitesmoke;
   border: 1px solid #a59a9d;
   font-family: "Droid Serif", "Georgia", "Times", serif;
