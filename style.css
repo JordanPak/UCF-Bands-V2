@@ -2150,6 +2150,15 @@ body.masonry-page .pagination {
 .post-type-archive-announcement .entry-content {
   margin-top: 20px; }
 
+.events-shortcode-wrap .block-title {
+  margin-bottom: 20px; }
+.events-shortcode-wrap .entry-wrapper {
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #FFFFFF;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+  border: 1px solid #D4D4D4; }
+
 * {
   box-sizing: border-box; }
 

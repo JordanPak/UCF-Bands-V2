@@ -4,4 +4,16 @@
 
 .events-shortcode-wrap {
     
-}
+    .block-title {
+        margin-bottom: $space-default-half;
+    }
+    
+    .entry-wrapper {
+        margin-bottom: $space-default-half;
+        padding: $space-default-half;
+        
+        @include block();
+    } // .entry-wrapper
+    
+} // .events-shortcode-wrap
+
