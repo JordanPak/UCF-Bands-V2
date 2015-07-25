@@ -30,6 +30,27 @@
     
     &.date-badge-ucf-gray {
         background-color: $ucf-gray;
+        border-color: $black;
+    }
+    
+    &.date-badge-gold {
+        background-color: $ucf-gold;
+        border-color: $ucf-gold-darker;
+    }
+    
+    &.date-badge-green {
+        background-color: $green;  
+        border-color: $green-darker;
+    }
+    
+    &.date-badge-red {
+        background-color: $red;
+        border-color: $red-darker;
+    }
+    
+    &.date-badge-blue {
+        background-color: $blue;   
+        border-color: $blue-darker;
     }
     
 } // .date-badge

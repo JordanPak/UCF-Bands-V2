@@ -2169,7 +2169,20 @@ body.masonry-page .pagination {
   font-weight: 700;
   color: #FFFFFF; }
   .date-badge.date-badge-ucf-gray {
-    background-color: #221E1F; }
+    background-color: #221E1F;
+    border-color: #000000; }
+  .date-badge.date-badge-gold {
+    background-color: #FFCA06;
+    border-color: #EFBC00; }
+  .date-badge.date-badge-green {
+    background-color: #5CB85C;
+    border-color: #449d44; }
+  .date-badge.date-badge-red {
+    background-color: #D41F1A;
+    border-color: #a71814; }
+  .date-badge.date-badge-blue {
+    background-color: #428BCA;
+    border-color: #3071a9; }
 
 * {
   box-sizing: border-box; }
