@@ -2158,11 +2158,15 @@ body.masonry-page .pagination {
   background-color: #FFFFFF;
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
   border: 1px solid #D4D4D4; }
-  .events-shortcode-wrap .entry-wrapper .event-title {
-    margin-bottom: 2px; }
+  .events-shortcode-wrap .entry-wrapper .more-info {
+    display: inline-block;
+    float: right;
+    color: #d5d0d1; }
   .events-shortcode-wrap .entry-wrapper .right-info {
     display: block;
     float: left; }
+  .events-shortcode-wrap .entry-wrapper .event-title {
+    margin-bottom: 2px; }
 
 .date-badge {
   float: left;

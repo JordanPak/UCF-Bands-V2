@@ -14,13 +14,25 @@
         
         @include block();
         
-        .event-title {
-            margin-bottom: 2px;    
-        }
+        .more-info {
+            display: inline-block;
+            float: right;
+            color: $ucf-gray-med-light;
+            
+            a {
+                
+                
+            }
+            
+        } // .more-info
         
         .right-info {
             display: block;
             float: left;
+        }
+        
+        .event-title {
+            margin-bottom: 2px;    
         }
         
     } // .entry-wrapper
