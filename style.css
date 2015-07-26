@@ -2150,15 +2150,16 @@ body.masonry-page .pagination {
 .post-type-archive-announcement .entry-content {
   margin-top: 20px; }
 
-.events-shortcode-wrap .block-title {
+.block-title {
   margin-bottom: 20px; }
-.events-shortcode-wrap .entry-wrapper {
+
+.entry-wrapper {
   margin-bottom: 20px;
   padding: 20px;
   background-color: #FFFFFF;
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
   border: 1px solid #D4D4D4; }
-  .events-shortcode-wrap .entry-wrapper .more-info {
+  .entry-wrapper .more-info {
     display: inline-block;
     position: relative;
     right: -5px;
@@ -2166,14 +2167,14 @@ body.masonry-page .pagination {
     float: right;
     padding-right: 5px;
     transition: all ease-in-out 200ms; }
-    .events-shortcode-wrap .entry-wrapper .more-info a {
+    .entry-wrapper .more-info a {
       color: #d5d0d1;
       transition: all ease-in-out 200ms; }
-      .events-shortcode-wrap .entry-wrapper .more-info a:hover {
+      .entry-wrapper .more-info a:hover {
         color: #FFCA06; }
-        .events-shortcode-wrap .entry-wrapper .more-info a:hover .event-details {
+        .entry-wrapper .more-info a:hover .event-details {
           display: inline; }
-      .events-shortcode-wrap .entry-wrapper .more-info a .event-details {
+      .entry-wrapper .more-info a .event-details {
         display: none;
         position: absolute;
         right: 0;
@@ -2185,20 +2186,20 @@ body.masonry-page .pagination {
         border-radius: 15px;
         box-shadow: 0 0 10px 10px #FFFFFF;
         transition: all ease-in-out 200ms; }
-  .events-shortcode-wrap .entry-wrapper .right-info {
+  .entry-wrapper .right-info {
     display: block;
     cursor: default; }
-    .events-shortcode-wrap .entry-wrapper .right-info i.fa {
+    .entry-wrapper .right-info i.fa {
       width: 15px;
       text-align: center; }
-    .events-shortcode-wrap .entry-wrapper .right-info .location a {
+    .entry-wrapper .right-info .location a {
       color: inherit;
       border-bottom: 2px solid transparent;
       transition: all ease-in-out 200ms; }
-      .events-shortcode-wrap .entry-wrapper .right-info .location a:hover {
+      .entry-wrapper .right-info .location a:hover {
         color: inherit;
         border-bottom: 2px solid #FFCA06; }
-  .events-shortcode-wrap .entry-wrapper .event-title {
+  .entry-wrapper .event-title {
     margin-bottom: 2px; }
 
 .date-badge {

@@ -2,92 +2,92 @@
 //  UCFBANDS V2 | EVENT  //
 //=======================//
 
-.events-shortcode-wrap {
     
-    .block-title {
-        margin-bottom: $space-default-half;
-    }
-    
-    .entry-wrapper {
-        margin-bottom: $space-default-half;
-        padding: $space-default-half;
-        
-        @include block();
-        
-        .more-info {
-            display: inline-block;
-            position: relative;
-            right: -5px;
-            z-index: 100;
-            float: right;
-            padding-right: 5px;
-            
-            @include transition-ease-in-out();
-            
-            a {
-                color: $ucf-gray-med-light;
-                
-                &:hover {
-                    color: $ucf-gold;
-                    
-                    .event-details {
-                        display: inline;
-                    }
-                    
-                } // a:hover
-                
-                @include transition-ease-in-out();
-                
+.block-title {
+    margin-bottom: $space-default-half;
+}
+
+.entry-wrapper {
+    margin-bottom: $space-default-half;
+    padding: $space-default-half;
+
+    @include block();
+
+    .more-info {
+        display: inline-block;
+        position: relative;
+        right: -5px;
+        z-index: 100;
+        float: right;
+        padding-right: 5px;
+
+        @include transition-ease-in-out();
+
+        a {
+            color: $ucf-gray-med-light;
+
+            &:hover {
+                color: $ucf-gold;
+
                 .event-details {
-                    display: none;
-                    position: absolute;
-                    right: 0;
-                    width: 135px;
-                    padding-left: 10px;
-                    padding-right: 15px;
-                    color: $white;
-                    background: $ucf-gray;
-                    border-radius: 15px;
-                    box-shadow: 0 0 10px 10px $white;
-                    
-                    @include transition-ease-in-out();
-                    
-                } // .see-event-details
-                 
-            } // a
-            
-        } // .more-info
-        
-        .right-info {
-            display: block;
-            cursor: default;
-            
-            i.fa {
-                width: 15px;
-                text-align: center;
-            }
-            
-            .location a {
-                color: inherit;
-                border-bottom: 2px solid rgba(0,0,0,0);
-                
-                @include transition-ease-in-out();
-                
-                &:hover {
-                    color: inherit;
-                    border-bottom: 2px solid $ucf-gold;
+                    display: inline;
                 }
-                
-            } // a
-            
-        } // .right-info
-        
-        .event-title {
-            margin-bottom: 2px;    
+
+            } // a:hover
+
+            @include transition-ease-in-out();
+
+            .event-details {
+                display: none;
+                position: absolute;
+                right: 0;
+                width: 135px;
+                padding-left: 10px;
+                padding-right: 15px;
+                color: $white;
+                background: $ucf-gray;
+                border-radius: 15px;
+                box-shadow: 0 0 10px 10px $white;
+
+                @include transition-ease-in-out();
+
+            } // .see-event-details
+
+        } // a
+
+    } // .more-info
+
+    .right-info {
+        display: block;
+        cursor: default;
+
+        i.fa {
+            width: 15px;
+            text-align: center;
         }
-        
-    } // .entry-wrapper
+
+        .location a {
+            color: inherit;
+            border-bottom: 2px solid rgba(0,0,0,0);
+
+            @include transition-ease-in-out();
+
+            &:hover {
+                color: inherit;
+                border-bottom: 2px solid $ucf-gold;
+            }
+
+        } // a
+
+    } // .right-info
+
+    .event-title {
+        margin-bottom: 2px;    
+    }
+
+} // .entry-wrapper
     
+.events-shortcode-wrap {
 } // .events-shortcode-wrap
 
 
