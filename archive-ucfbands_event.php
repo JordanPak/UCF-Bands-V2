@@ -32,7 +32,7 @@ function ucfbands_page_header_manual() {
 
         <div class="page-header-inner">
 
-            <h1 class="entry-title" itemprop="headline">Events</h1>
+            <h1 class="entry-title" itemprop="headline">Upcoming Events&nbsp;&nbsp;<i class="fa fa-calendar"></i></h1>
 
         </div>
 
