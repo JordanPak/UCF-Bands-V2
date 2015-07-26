@@ -2201,6 +2201,10 @@ body.masonry-page .pagination {
         border-bottom: 2px solid #FFCA06; }
   .entry-wrapper .event-title {
     margin-bottom: 2px; }
+  .entry-wrapper hr {
+    margin: 20px 0; }
+  .entry-wrapper .event-details-excerpt p:last-child {
+    margin-bottom: 0; }
 
 .post-type-archive-ucfbands_event .entry-wrapper.masonry-block {
   padding: 20px; }

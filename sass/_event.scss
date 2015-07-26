@@ -84,6 +84,14 @@
     .event-title {
         margin-bottom: 2px;    
     }
+    
+    hr {
+        margin: $space-default-half 0;
+    }
+    
+    .event-details-excerpt p:last-child {
+        margin-bottom: 0;   
+    }
 
 } // .entry-wrapper
 
