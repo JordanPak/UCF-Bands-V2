@@ -74,8 +74,8 @@ function archive_masonry_grid() {
 
 
         
-        // GET EVENTS LISTING //
-        echo ucfbands_events_listing( $events, true );
+            // GET EVENTS LISTING //
+            echo ucfbands_events_listing( $events, true );
                
         
         // End Grid

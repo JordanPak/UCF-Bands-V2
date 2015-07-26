@@ -2202,6 +2202,9 @@ body.masonry-page .pagination {
   .entry-wrapper .event-title {
     margin-bottom: 2px; }
 
+.post-type-archive-ucfbands_event .entry-wrapper.masonry-block {
+  padding: 20px; }
+
 .date-badge {
   float: left;
   margin-right: 20px;
