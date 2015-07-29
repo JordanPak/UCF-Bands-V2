@@ -139,7 +139,14 @@ add_action( 'genesis_entry_header', 'ucfbands_event_single_featured_image', 15 )
  * @author Jordan Pakrosnis
  */
 function ucfbands_event_single_featured_image() {
-
+    
+    // Check for Image
+    if ( has_post_thumbnail() )
+        the_post_thumbnail();
+    
+    else // If none, use HR
+        echo '<hr>';
+        
     
 } // ucfbands_event_single_featured_image()
 
