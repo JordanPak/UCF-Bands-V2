@@ -2251,6 +2251,14 @@ body.masonry-page .pagination {
   background-color: #FFFFFF;
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
   border: 1px solid #D4D4D4; }
+.single-ucfbands_event .entry-title {
+  font-size: 42px; }
+.single-ucfbands_event .date-badge {
+  margin-right: 40px;
+  padding: 12px 22px;
+  font-size: 1.33em;
+  font-weight: 700;
+  line-height: 1.66em; }
 
 * {
   box-sizing: border-box; }
