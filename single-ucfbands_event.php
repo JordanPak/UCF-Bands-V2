@@ -72,6 +72,22 @@ add_action( 'genesis_entry_header', 'ucfbands_event_single_time_location' );
  */
 function ucfbands_event_single_time_location() {
     
+    $event_meta = $GLOBALS["event_meta"];
+
+    
+    // Event Location Logic
+    $location = '<span class="location">';
+
+        if ( $event_meta['location_name'] == '' )
+            $location .= 'TBA';
+
+        else
+            $location .= '<a href="' . get_permalink( $event ) .'" title="Location Details" rel="Location Details">' . $event_meta['location_name'] . '</a>';
+
+
+    $location .= '</span>';
+    
+    
     
     // WRAPPER
     echo '<span class="event-time-location">';
@@ -87,6 +103,14 @@ function ucfbands_event_single_time_location() {
         );
 
         echo $event_time;
+    
+    
+        // SPACER
+        echo '&nbsp | &nbsp';
+
+    
+        //-- EVENT LOCATION --//
+        echo '<i class="fa fa-map-marker"></i> ' . $location;
     
     
     // Close Wrapper
