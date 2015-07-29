@@ -187,11 +187,13 @@ function ucfbands_event_single_content_location() {
     // Column Wrapper & Title
     echo '<div class="one-third"><h2><i class="fa fa-map-marker"></i>&nbsp;&nbsp;Location</h2>';
     
-    // Google Map
-    ucfbands_event_google_map( $event_meta['location_google_map_latitude'], $event_meta['location_google_map_longitude'] );
+        // Google Map
+        ucfbands_event_google_map( $event_meta['location_google_map_latitude'], $event_meta['location_google_map_longitude'] );
+
+        // Address
+        $address = ucfbands_event_address( $event_meta['location_address'] );
+        echo $address;
     
-    // Address
-    ucfbands_event_address( $event_meta['location_address'] );
     
     echo '</div>';
     
