@@ -190,6 +190,9 @@ function ucfbands_event_single_content_location() {
     // Google Map
     ucfbands_event_google_map( $event_meta['location_google_map_latitude'], $event_meta['location_google_map_longitude'] );
     
+    // Address
+    ucfbands_event_address( $event_meta['location_address'] );
+    
     echo '</div>';
     
 } // ucfbands_event_single_content()
