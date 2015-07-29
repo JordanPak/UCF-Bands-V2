@@ -33,7 +33,7 @@ function ucfbands_event_single_data() {
     
     // Get Event meta
     global $event_meta;
-    $event_meta = ucfbands_event_get_meta( $event );
+    $event_meta = ucfbands_event_get_meta( $event, true, true, true );
     
 } // ucfbands_event_single_data() 
 
@@ -161,6 +161,9 @@ add_action( 'genesis_entry_content', 'ucfbands_event_single_content_location', 5
  * @author Jordan Pakrosnis
  */
 function ucfbands_event_single_content_location() {
+
+    $event_meta = $GLOBALS["event_meta"];
+    
     
     //-- POST CONTENT --//
     echo '<div class="two-thirds first">';
@@ -173,6 +176,7 @@ function ucfbands_event_single_content_location() {
     // Column Wrapper & Title
     echo '<div class="one-third"><h2><i class="fa fa-map-marker"></i>&nbsp;&nbsp;Location</h2>';
     
+    echo $event_meta['location_google_map']->content;
     
     echo '
     <address>
