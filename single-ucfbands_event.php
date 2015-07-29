@@ -63,14 +63,14 @@ function ucfbands_event_single_date_badge() {
 
 
 // DATE & TIME
-add_action( 'genesis_entry_header', 'ucfbands_event_single_date_time' );
+add_action( 'genesis_entry_header', 'ucfbands_event_single_time_location' );
 
 /**
- * UCFBands Event - Date & Time for Single
+ * UCFBands Event - Time & Location for Single
  *
  * @author Jordan Pakrosnis
  */
-function ucfbands_event_single_date_time() {
+function ucfbands_event_single_time_location() {
     
     $event_time = ucfbands_event_time(
         $event_meta['is_all_day_event'],
@@ -82,7 +82,7 @@ function ucfbands_event_single_date_time() {
     
     echo $event_time;
     
-} // ucfbands_event_single_data() 
+} // ucfbands_event_single_time_location() 
 
 
 
