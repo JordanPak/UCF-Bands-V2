@@ -80,7 +80,7 @@ function ucfbands_event_single_date_time() {
         $event_meta['show_finish_time']
     );
     
-    echo '<b>' . $event_time . '</b>';
+    echo $event_time;
     
 } // ucfbands_event_single_data() 
 
