@@ -1667,6 +1667,9 @@ body.font-style-athletic .button.button-lg {
 i.mkmc-note {
   border-bottom: 1px solid #FFCA06; }
 
+#googleMap * {
+  box-shadow: none; }
+
 body {
   background: #221E1F; }
   @media only screen and (max-width: 768px) {
