@@ -37,6 +37,28 @@ function ucfbands_event_single_data() {
 
 
 
+// DATE & TIME
+add_action( 'genesis_entry_header', 'ucfbands_event_single_time' );
+
+/**
+ * UCFBands Event - Get Post & Data
+ *
+ * @author Jordan Pakrosnis
+ */
+function ucfbands_event_single_time() {
+    
+    echo ucfbands_event_time(
+        $event_meta['is_all_day_event'],
+        $event_meta['start_date_time'],
+        $event_meta['finish_date_time'],
+        $event_meta['is_time_tba'],
+        $event_meta['show_finish_time']
+    );
+    
+} // ucfbands_event_single_data() 
+
+
+
 
 //-- LOAD FRAMEWORK --//
 genesis();
