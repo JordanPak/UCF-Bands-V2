@@ -6,11 +6,11 @@
  *  @author Jordan Pakrosnis
 */
 
-// REMOVE SIDEBAR & STANDARD LOOP //
+// REMOVE SIDEBAR & POST INFO //
 remove_action( 'genesis_sidebar', 'genesis_do_sidebar' );
+remove_action( 'genesis_entry_header', 'genesis_post_info', 12 );
 
-
-// Add full-width-content Body Class
+// FULL-WIDTH CLASS
 require_once( CHILD_DIR . '/inc/full-width-content.php' );
 
 
