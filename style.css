@@ -2279,6 +2279,8 @@ body.masonry-page .pagination {
   margin: 40px 0;
   border-top: 4px solid #141414;
   border-bottom: 4px solid #141414; }
+.single-ucfbands_event .event-header-hr {
+  margin: 40px; }
 .single-ucfbands_event .entry-content {
   padding: 0 40px; }
 .single-ucfbands_event address {
