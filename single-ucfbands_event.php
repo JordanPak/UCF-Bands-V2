@@ -72,15 +72,26 @@ add_action( 'genesis_entry_header', 'ucfbands_event_single_time_location' );
  */
 function ucfbands_event_single_time_location() {
     
-    $event_time = ucfbands_event_time(
-        $event_meta['is_all_day_event'],
-        $event_meta['start_date_time'],
-        $event_meta['finish_date_time'],
-        $event_meta['is_time_tba'],
-        $event_meta['show_finish_time']
-    );
     
-    echo $event_time;
+    // WRAPPER
+    echo '<span class="event-time-location">';
+    
+    
+        //-- EVENT TIME --//
+        $event_time = ucfbands_event_time(
+            $event_meta['is_all_day_event'],
+            $event_meta['start_date_time'],
+            $event_meta['finish_date_time'],
+            $event_meta['is_time_tba'],
+            $event_meta['show_finish_time']
+        );
+
+        echo $event_time;
+    
+    
+    // Close Wrapper
+    echo '</span>';
+    
     
 } // ucfbands_event_single_time_location() 
 
