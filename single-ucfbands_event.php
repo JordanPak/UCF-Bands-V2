@@ -212,7 +212,7 @@ add_action( 'genesis_entry_content', 'ucfbands_event_single_schedule_repitoire',
 function ucfbands_event_single_schedule_repitoire() {
     
     // Wrap
-    echo '<div class="event-schedule-location-repitoire clearfix">';
+    echo '<div class="event-schedule-repitoire clearfix">';
     
         // HR
         echo '<hr>';
