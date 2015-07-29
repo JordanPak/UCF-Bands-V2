@@ -198,18 +198,6 @@ function ucfbands_event_single_content_location() {
     
     echo '</div>';
     
-} // ucfbands_event_single_content()
-
-
-
-add_action( 'genesis_entry_content', 'ucfbands_event_single_schedule_repitoire', 15 );
-
-/**
- * UCFBands Event Single - Schedule and Repitoire
- *
- * @author Jordan Pakrosnis
- */
-function ucfbands_event_single_schedule_repitoire() {
     
     // Wrap
     echo '<div class="event-schedule-repitoire clearfix">';
@@ -229,9 +217,9 @@ function ucfbands_event_single_schedule_repitoire() {
     
     
     // Wrap Close
-    echo '</div>';
+    echo '</div>';    
     
-} // ucfbands_event_single_schedule_repitoire()
+} // ucfbands_event_single_content()
 
 
 
