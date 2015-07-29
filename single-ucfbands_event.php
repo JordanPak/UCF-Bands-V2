@@ -18,7 +18,7 @@ require_once( CHILD_DIR . '/inc/full-width-content.php' );
 
 
 // GET POST & META
-add_action( 'genesis_entry_header', 'ucfbands_event_single_data' );
+add_action( 'genesis_before_entry', 'ucfbands_event_single_data' );
 
 /**
  * UCFBands Event - Get Post & Data
@@ -27,8 +27,8 @@ add_action( 'genesis_entry_header', 'ucfbands_event_single_data' );
  */
 function ucfbands_event_single_data() {
     
-    // Get Post
-    $event = get_post();
+    // Get Post ID
+    $event = get_the_ID();
     
     // Get Event meta
     $event_meta = ucfbands_event_get_meta( $event );
