@@ -160,7 +160,11 @@
 } // .date-badge
 
 
+//-- EVENT SINGLE --//
+.single-ucfbands_event {
 
-.content article.ucfbands_event {
-    @include block();
-}
+    .content {
+        @include block();
+    }
+    
+} // .single-ucfbands_event

@@ -2247,7 +2247,7 @@ body.masonry-page .pagination {
     .date-badge .day.day-multi {
       font-size: 1.33em; }
 
-.content article.ucfbands_event {
+.single-ucfbands_event .content {
   background-color: #FFFFFF;
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
   border: 1px solid #D4D4D4; }
