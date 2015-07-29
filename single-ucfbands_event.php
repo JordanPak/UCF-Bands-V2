@@ -6,6 +6,17 @@
  *  @author Jordan Pakrosnis
 */
 
+
+// GOOGLE MAPS API
+add_action( 'wp_enqueue_scripts', 'ucfbands_google_maps_api' );
+function ucfbands_google_maps_api() {
+    
+    wp_enqueue_script( 'google-maps-api', 'http://maps.googleapis.com/maps/api/js', array(), CHILD_THEME_VERSION );
+    
+} // ucfbands_google_maps_api()
+
+
+
 // REMOVE SIDEBAR, POST INFO, & META //
 remove_action( 'genesis_sidebar', 'genesis_do_sidebar' );
 remove_action( 'genesis_entry_content', 'genesis_do_post_content' );
@@ -176,7 +187,8 @@ function ucfbands_event_single_content_location() {
     // Column Wrapper & Title
     echo '<div class="one-third"><h2><i class="fa fa-map-marker"></i>&nbsp;&nbsp;Location</h2>';
     
-    echo $event_meta['location_google_map']->content;
+    echo $event_meta['location_google_map'] . '<br><br>';
+    echo print_r( $event_meta['location_google_map'] );
     
     echo '
     <address>
