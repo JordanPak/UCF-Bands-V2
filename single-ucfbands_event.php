@@ -31,9 +31,34 @@ function ucfbands_event_single_data() {
     $event = get_the_ID();
     
     // Get Event meta
+    global $event_meta;
     $event_meta = ucfbands_event_get_meta( $event );
     
 } // ucfbands_event_single_data() 
+
+
+
+// DATE BADGE
+add_action( 'genesis_entry_header', 'ucfbands_event_single_date_badge', 5 );
+
+/**
+ * UCFBands Event - Date Badge for Single
+ *
+ * @author Jordan Pakrosnis
+ */
+function ucfbands_event_single_date_badge() {
+    
+    $event_meta = $GLOBALS["event_meta"];
+    
+    $event_date = ucfbands_event_date_badge(
+        $event_meta['start_date_time'],
+        $event_meta['finish_date_time'],
+        $event_meta['icon_background_color']
+    );
+    
+    echo $event_date;
+    
+} // ucfbands_event_single_date_badge()
 
 
 
