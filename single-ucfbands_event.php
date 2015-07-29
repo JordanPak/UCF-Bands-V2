@@ -190,13 +190,7 @@ function ucfbands_event_single_content_location() {
     // Google Map
     ucfbands_event_google_map( $event_meta['location_google_map_latitude'], $event_meta['location_google_map_longitude'] );
     
-    echo '
-    <address>
-    <b>University of Central Florida</b><br>
-    4000 Central Florida Blvd<br>
-    Orlando, FL 32817
-    </address>
-    </div>';
+    echo '</div>';
     
 } // ucfbands_event_single_content()
 
