@@ -2283,6 +2283,11 @@ body.masonry-page .pagination {
   padding: 0 40px; }
 .single-ucfbands_event .event-schedule-location-repitoire {
   clear: both; }
+.single-ucfbands_event #googleMap {
+  margin: 20px 0;
+  background-color: #FFFFFF;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+  border: 1px solid #D4D4D4; }
 
 * {
   box-sizing: border-box; }

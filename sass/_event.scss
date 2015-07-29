@@ -221,4 +221,10 @@
         clear: both;
     }
     
+    #googleMap {
+        margin: $space-default-half 0;
+        
+        @include block();
+    }
+    
 } // .single-ucfbands_event
