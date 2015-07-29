@@ -145,7 +145,7 @@ function ucfbands_event_single_featured_image() {
         the_post_thumbnail();
     
     else // If none, use HR
-        echo '<hr>';
+        echo '<hr class="event-header-hr">';
         
     
 } // ucfbands_event_single_featured_image()

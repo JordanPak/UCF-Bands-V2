@@ -162,9 +162,18 @@
 
 //-- EVENT SINGLE --//
 .single-ucfbands_event {
-
+    
     .content {
         @include block();
+        
+        article {
+            padding: 0;
+        }
+        
+    } // .content
+    
+    .entry-header {
+        padding: $space-default $space-default 0 $space-default;   
     }
     
     .entry-title {
@@ -189,6 +198,20 @@
     
     .fb-share-button {
         float: right;
+    }
+    
+    .attachment-post-thumbnail {
+        margin: $space-default 0;
+        border-top: 4px solid $ucf-gray-darker;
+        border-bottom: 4px solid $ucf-gray-darker;
+    }
+    
+    .event-header-hr {
+        margin: $space-default;
+    }
+    
+    .entry-content {
+        padding: 0 $space-default;
     }
     
 } // .single-ucfbands_event

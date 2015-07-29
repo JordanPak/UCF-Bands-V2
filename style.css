@@ -2251,6 +2251,10 @@ body.masonry-page .pagination {
   background-color: #FFFFFF;
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
   border: 1px solid #D4D4D4; }
+  .single-ucfbands_event .content article {
+    padding: 0; }
+.single-ucfbands_event .entry-header {
+  padding: 40px 40px 0 40px; }
 .single-ucfbands_event .entry-title {
   font-size: 42px; }
 .single-ucfbands_event .date-badge {
@@ -2265,6 +2269,14 @@ body.masonry-page .pagination {
   margin-right: 40px; }
 .single-ucfbands_event .fb-share-button {
   float: right; }
+.single-ucfbands_event .attachment-post-thumbnail {
+  margin: 40px 0;
+  border-top: 4px solid #141414;
+  border-bottom: 4px solid #141414; }
+.single-ucfbands_event .event-header-hr {
+  margin: 40px; }
+.single-ucfbands_event .entry-content {
+  padding: 0 40px; }
 
 * {
   box-sizing: border-box; }
