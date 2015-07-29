@@ -2260,7 +2260,8 @@ body.masonry-page .pagination {
 .single-ucfbands_event .entry-header {
   padding: 40px 40px 0 40px; }
 .single-ucfbands_event .entry-title {
-  font-size: 42px; }
+  font-size: 42px;
+  cursor: default; }
 .single-ucfbands_event .date-badge {
   margin-right: 40px;
   padding: 12px 22px;
@@ -2268,7 +2269,8 @@ body.masonry-page .pagination {
   font-weight: 700;
   line-height: 1.66em; }
 .single-ucfbands_event .event-time-location {
-  font-size: 1.33em; }
+  font-size: 1.33em;
+  cursor: default; }
 .single-ucfbands_event .event-time {
   margin-right: 40px; }
 .single-ucfbands_event .fb-share-button {
