@@ -151,5 +151,21 @@ function ucfbands_event_single_featured_image() {
 } // ucfbands_event_single_featured_image()
 
 
+
+
+add_action( 'genesis_after_entry', 'ucfbands_event_single_schedule_location_repitoire' );
+
+/**
+ * UCFBands Event Single - Schedule, Location, and Repitoire
+ *
+ * @author Jordan Pakrosnis
+ */
+function ucfbands_event_single_schedule_location_repitoire() {
+    
+    
+} // ucfbands_event_single_schedule_location_repitoire()
+
+
+
 //-- LOAD FRAMEWORK --//
 genesis();
