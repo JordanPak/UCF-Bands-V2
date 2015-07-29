@@ -102,6 +102,7 @@
         @include block();
     }
     
+//    .type-page h1, .type-ucfbands_event h1 {
     .type-page h1 {
         border-bottom: 1px solid $ucf-gray-light;
         padding-bottom: $space-default-half;

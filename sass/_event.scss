@@ -158,3 +158,9 @@
     } // .day
     
 } // .date-badge
+
+
+
+.content article.ucfbands_event {
+    @include block();
+}
