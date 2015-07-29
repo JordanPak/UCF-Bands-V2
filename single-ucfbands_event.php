@@ -8,6 +8,7 @@
 
 // REMOVE SIDEBAR, POST INFO, & META //
 remove_action( 'genesis_sidebar', 'genesis_do_sidebar' );
+remove_action( 'genesis_entry_content', 'genesis_do_post_content' );
 remove_action( 'genesis_entry_header', 'genesis_post_info', 12 );
 remove_action( 'genesis_entry_footer', 'genesis_post_meta' );
 
@@ -151,19 +152,18 @@ function ucfbands_event_single_featured_image() {
 } // ucfbands_event_single_featured_image()
 
 
-// Remove default Post Content
-remove_action( 'genesis_entry_content', 'genesis_do_post_content' );
-add_action( 'genesis_entry_content', 'ucfbands_event_single_content', 5 );
+
+add_action( 'genesis_entry_content', 'ucfbands_event_single_content_location', 5 );
 
 /**
- * UCFBands Event Single - Schedule, Location, and Repitoire
+ * UCFBands Event Single - Content & Location
  *
  * @author Jordan Pakrosnis
  */
-function ucfbands_event_single_content() {
+function ucfbands_event_single_content_location() {
     
     // EVENT DETAILS (Content)
-    echo '<div class="two-thirds first"><h2>Event Details</h2>';
+    echo '<div class="two-thirds first">';
         
         the_content();
     
@@ -182,14 +182,14 @@ function ucfbands_event_single_content() {
 
 
 
-add_action( 'genesis_entry_content', 'ucfbands_event_single_schedule_location_repitoire', 15 );
+add_action( 'genesis_entry_content', 'ucfbands_event_single_schedule_repitoire', 15 );
 
 /**
- * UCFBands Event Single - Schedule, Location, and Repitoire
+ * UCFBands Event Single - Schedule and Repitoire
  *
  * @author Jordan Pakrosnis
  */
-function ucfbands_event_single_schedule_location_repitoire() {
+function ucfbands_event_single_schedule_repitoire() {
     
     // Wrap
     echo '<div class="event-schedule-location-repitoire clearfix">';
@@ -211,7 +211,7 @@ function ucfbands_event_single_schedule_location_repitoire() {
     // Wrap Close
     echo '</div>';
     
-} // ucfbands_event_single_schedule_location_repitoire()
+} // ucfbands_event_single_schedule_repitoire()
 
 
 
