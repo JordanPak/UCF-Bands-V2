@@ -162,6 +162,15 @@ add_action( 'genesis_after_entry', 'ucfbands_event_single_schedule_location_repi
  */
 function ucfbands_event_single_schedule_location_repitoire() {
     
+    // Wrap
+    echo '<div class="event-schedule-location-repitoire">';
+    
+        // HR
+        echo '<hr>';
+    
+    
+    // Wrap Close
+    echo '</div>';
     
 } // ucfbands_event_single_schedule_location_repitoire()
 
