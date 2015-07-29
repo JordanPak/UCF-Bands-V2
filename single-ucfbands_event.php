@@ -169,6 +169,20 @@ function ucfbands_event_single_schedule_location_repitoire() {
         echo '<hr>';
     
     
+        // Schedule
+        echo '<div class="one-third first"><h2>Schedule</h2>';
+        echo '</div>';
+    
+    
+        // Program
+        echo '<div class="one-third"><h2>Program</h2>';
+        echo '</div>';    
+    
+    
+        // Location
+        echo '<div class="one-third"><h2>Location</h2>';
+        echo '</div>';    
+    
     // Wrap Close
     echo '</div>';
     

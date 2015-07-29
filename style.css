@@ -598,7 +598,8 @@ th {
 .two-fourths,
 .two-sixths,
 .two-thirds {
-  float: left; }
+  float: left;
+  margin-left: 2.564102564102564%; }
 
 .one-half,
 .three-sixths,
