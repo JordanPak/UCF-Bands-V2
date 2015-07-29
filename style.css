@@ -2263,6 +2263,8 @@ body.masonry-page .pagination {
   font-size: 1.33em; }
 .single-ucfbands_event .event-time {
   margin-right: 40px; }
+.single-ucfbands_event .fb-share-button {
+  float: right; }
 
 * {
   box-sizing: border-box; }
