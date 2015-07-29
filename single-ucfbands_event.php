@@ -191,7 +191,7 @@ function ucfbands_event_single_content_location() {
         ucfbands_event_google_map( $event_meta['location_google_map_latitude'], $event_meta['location_google_map_longitude'] );
 
         // Address
-        $address = ucfbands_event_address( $event_meta['location_address'] );
+        $address = ucfbands_event_address( $event_meta['location_address'], $event_meta['location_name'] );
         echo $address;
     
     
