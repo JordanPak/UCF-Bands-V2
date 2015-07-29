@@ -131,5 +131,18 @@ function ucfbands_event_single_time_location() {
 
 
 
+add_action( 'genesis_entry_header', 'ucfbands_event_single_featured_image', 15 );
+
+/**
+ * UCFBands Event - Featured Image
+ *
+ * @author Jordan Pakrosnis
+ */
+function ucfbands_event_single_featured_image() {
+
+    
+} // ucfbands_event_single_featured_image()
+
+
 //-- LOAD FRAMEWORK --//
 genesis();
