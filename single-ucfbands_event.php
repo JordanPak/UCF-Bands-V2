@@ -82,7 +82,7 @@ function ucfbands_event_single_time_location() {
             $location .= 'TBA';
 
         else
-            $location .= '<a href="' . get_permalink( $event ) .'" title="Location Details" rel="Location Details">' . $event_meta['location_name'] . '</a>';
+            $location .= $event_meta['location_name'];
 
 
     $location .= '</span>';
@@ -103,10 +103,7 @@ function ucfbands_event_single_time_location() {
         );
 
         echo $event_time;
-    
-    
-        // SPACER
-        echo '&nbsp | &nbsp';
+
 
     
         //-- EVENT LOCATION --//
@@ -116,6 +113,8 @@ function ucfbands_event_single_time_location() {
     // Close Wrapper
     echo '</span>';
     
+    
+    echo '<hr>';
     
 } // ucfbands_event_single_time_location() 
 

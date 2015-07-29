@@ -2259,6 +2259,10 @@ body.masonry-page .pagination {
   font-size: 1.33em;
   font-weight: 700;
   line-height: 1.66em; }
+.single-ucfbands_event .event-time-location {
+  font-size: 1.33em; }
+.single-ucfbands_event .event-time {
+  margin-right: 40px; }
 
 * {
   box-sizing: border-box; }
