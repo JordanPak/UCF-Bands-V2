@@ -153,7 +153,7 @@ function ucfbands_event_single_featured_image() {
 
 
 
-add_action( 'genesis_after_entry', 'ucfbands_event_single_schedule_location_repitoire' );
+add_action( 'genesis_entry_content', 'ucfbands_event_single_schedule_location_repitoire', 15 );
 
 /**
  * UCFBands Event Single - Schedule, Location, and Repitoire
@@ -170,18 +170,14 @@ function ucfbands_event_single_schedule_location_repitoire() {
     
     
         // Schedule
-        echo '<div class="one-third first"><h2>Schedule</h2>';
+        echo '<div class="one-half first"><h2>Schedule</h2>';
         echo '</div>';
     
     
         // Program
-        echo '<div class="one-third"><h2>Program</h2>';
+        echo '<div class="one-half"><h2>Program</h2>';
         echo '</div>';    
     
-    
-        // Location
-        echo '<div class="one-third"><h2>Location</h2>';
-        echo '</div>';    
     
     // Wrap Close
     echo '</div>';

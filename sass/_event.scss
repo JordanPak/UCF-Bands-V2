@@ -206,16 +206,16 @@
         border-bottom: 4px solid $ucf-gray-darker;
     }
     
-    .event-header-hr {
-        margin: $space-default;
-    }
-    
     .entry-content {
         padding: 0 $space-default;
-    }
+        
+        p {
+
+        }
+        
+    } // .entry-content
     
     .event-schedule-location-repitoire {
-        padding: 0 $space-default $space-default $space-default;   
     }
     
 } // .single-ucfbands_event
