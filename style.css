@@ -2276,6 +2276,8 @@ body.masonry-page .pagination {
   border-bottom: 4px solid #141414; }
 .single-ucfbands_event .entry-content {
   padding: 0 40px; }
+.single-ucfbands_event .event-schedule-location-repitoire {
+  clear: both; }
 
 * {
   box-sizing: border-box; }
