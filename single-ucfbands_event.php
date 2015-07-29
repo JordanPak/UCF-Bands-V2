@@ -10,6 +10,9 @@
 remove_action( 'genesis_sidebar', 'genesis_do_sidebar' );
 
 
+// Add full-width-content Body Class
+require_once( CHILD_DIR . '/inc/full-width-content.php' );
+
 
 
 
