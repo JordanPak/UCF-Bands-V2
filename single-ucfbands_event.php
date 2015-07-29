@@ -164,28 +164,72 @@ function ucfbands_event_single_featured_image() {
 
 
 
-add_action( 'genesis_entry_content', 'ucfbands_event_single_content_location', 5 );
+add_action( 'genesis_entry_content', 'ucfbands_event_single_content', 5 );
 
 /**
- * UCFBands Event Single - Content & Location
+ * UCFBands Event Single - Content with Location, Schedule, and Program Data
  *
  * @author Jordan Pakrosnis
  */
-function ucfbands_event_single_content_location() {
+function ucfbands_event_single_content() {
 
     $event_meta = $GLOBALS["event_meta"];
     
     
+    // CONDITIONAL LAYOUT SETUP //
+    
+    // Defaults
+    $show_content =             true;
+    $show_schedule =            true;
+    $show_program =             true;
+    $show_hr =                  true;
+    $wrap_schedule_program =    true;
+    
+    // Content
+    if ( get_the_content() == '' ) {
+        $show_content =             false;
+        $width_location =           'one-third first';
+        $width_schedule =           'one-third';
+        $width_program =            'one-third';
+        $show_hr =                  false;
+        $wrap_schedule_program =    false;
+    }
+    else {
+        $width_content =            'two-thirds first';
+        $width_location =           'one-third';
+        $width_schedule =           'one-half first';
+        $width_program =            'one-half';
+        $show_hr =                  true;
+        $wrap_schedule_program =    true;
+    }
+    
+    // Schedule
+    if ( $event_meta['schedule'] == null ) {
+        $show_schedule = false;
+        $width_program .= ' first';
+    }
+    
+    if ( $event_meta['program'] == null ) {
+        $show_program = false;
+    }
+    
+    if ( ($show_schedule == false) && ($show_program == false) )
+        $show_hr = false;
+    
+    
+    
     //-- POST CONTENT --//
-    echo '<div class="two-thirds first">';
-        the_content();
-    echo '</div>';
+    if ( $show_content ) {
+        echo '<div class="' . $width_content . '">';
+            the_content();
+        echo '</div>';
+    }
     
     
     //-- LOCATION --//
     
     // Column Wrapper & Title
-    echo '<div class="one-third"><h2><i class="fa fa-map-marker"></i>&nbsp;&nbsp;Location</h2>';
+    echo '<div class="' . $width_location . '"><h2><i class="fa fa-map-marker"></i>&nbsp;&nbsp;Location</h2>';
         
         // Google Map
         if ( ($event_meta['location_google_map_latitude'] != '') || ($event_meta['location_google_map_longitude'] != '') )
@@ -200,24 +244,31 @@ function ucfbands_event_single_content_location() {
     
     
     // Wrap
-    echo '<div class="event-schedule-repitoire clearfix">';
+    if ( $wrap_schedule_program )
+        echo '<div class="event-schedule-repitoire clearfix">';
     
         // HR
-        echo '<hr>';
+        if ( $show_hr )
+            echo '<hr>';
     
     
         // Schedule
-        echo '<div class="one-half first"><h2><i class="fa fa-list"></i>&nbsp;&nbsp;Schedule</h2>';
-        echo '</div>';
+        if ( $show_schedule ) {
+            echo '<div class="' . $width_schedule . '"><h2><i class="fa fa-list"></i>&nbsp;&nbsp;Schedule</h2>';
+            echo '</div>';
+        } // show schedule
     
     
         // Program
-        echo '<div class="one-half"><h2>Program</h2>';
-        echo '</div>';    
+        if ( $show_program ) {
+            echo '<div class="' . $width_schedule . '"><h2>Program</h2>';
+            echo '</div>';
+        } // show program
     
     
     // Wrap Close
-    echo '</div>';    
+    if ( $wrap_schedule_program )
+        echo '</div>';    
     
 } // ucfbands_event_single_content()
 
