@@ -219,7 +219,7 @@ function ucfbands_event_single_schedule_repitoire() {
     
     
         // Schedule
-        echo '<div class="one-half first"><h2>Schedule</h2>';
+        echo '<div class="one-half first"><h2><i class="fa fa-list"></i>&nbsp;&nbsp;Schedule</h2>';
         echo '</div>';
     
     
