@@ -17,7 +17,7 @@ require_once( CHILD_DIR . '/inc/full-width-content.php' );
 
 
 
-// GET POST & META
+
 add_action( 'genesis_before_entry', 'ucfbands_event_single_data' );
 
 /**
@@ -38,7 +38,7 @@ function ucfbands_event_single_data() {
 
 
 
-// DATE BADGE
+
 add_action( 'genesis_entry_header', 'ucfbands_event_single_date_badge', 5 );
 
 /**
@@ -76,7 +76,7 @@ function ucfbands_event_single_date_badge() {
 
 
 
-// DATE & TIME
+
 add_action( 'genesis_entry_header', 'ucfbands_event_single_time_location' );
 
 /**
@@ -127,11 +127,7 @@ function ucfbands_event_single_time_location() {
     // Close Wrapper
     echo '</span>';
     
-    
-    echo '<hr>';
-    
 } // ucfbands_event_single_time_location() 
-
 
 
 
