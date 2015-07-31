@@ -211,7 +211,7 @@ function ucfbands_event_single_content() {
         $width_program .= ' first';
     }
     
-    if ( $event_meta['program'] == null ) {
+    if ( $event_meta['program_group'] == null ) {
         $show_program = false;
     }
     
