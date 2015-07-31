@@ -70,7 +70,6 @@ function ucfbands_event_single_date_badge() {
     
     echo $event_date;
     
-    
     // FACEBOOK SHARE BUTTON
 //    echo '<div id="fb-root"></div>
 //<script>(function(d, s, id) {
