@@ -206,7 +206,7 @@ function ucfbands_event_single_content() {
     }
     
     // Schedule
-    if ( $event_meta['schedule'] == null ) {
+    if ( $event_meta['schedule_group'] == null ) {
         $show_schedule = false;
         $width_program .= ' first';
     }
