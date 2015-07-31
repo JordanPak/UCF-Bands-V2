@@ -257,6 +257,20 @@ function ucfbands_event_single_content() {
         // Schedule
         if ( $show_schedule ) {
             echo '<div class="' . $width_schedule . '"><h2><i class="fa fa-list"></i>&nbsp;&nbsp;Schedule</h2>';
+            
+                $schedule_items = $event_meta['schedule_group'];
+            
+                //-- SCHEDULE ITEM LOOP --//
+                foreach ( $schedule_items as $schedule_item ) {
+                    
+                    // Get Item Meta
+                    $time =     esc_attr( $schedule_item['time'] );
+                    $thing =    esc_attr( $schedule_item['thing'] );
+                    $sub_item = esc_attr( $schedule_item['sub-item'] );
+                    
+                } // foreach Item Loop
+            
+            
             echo '</div>';
         } // show schedule
     
