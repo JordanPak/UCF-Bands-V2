@@ -282,9 +282,13 @@ function ucfbands_event_single_content() {
                             // Check for sub-items
                             if ( $sub_items != '' ) {
                                 
-                                foreach ( $sub_items as $sub_item ) {
-                                    echo $sub_item;
-                                }
+                                // Nested UL
+                                echo '<ul>';
+
+                                    foreach ( $sub_items as $sub_item )
+                                        echo '<li>' . $sub_item . '</li>';
+                                
+                                echo '</ul>';
                                 
                             } // if sub-items
                         
