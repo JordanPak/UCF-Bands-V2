@@ -276,7 +276,7 @@ function ucfbands_event_single_content() {
                         echo '<li>';
                         
                             // Time & Thing
-                            echo '<b>' . $time . ':&nbsp;&nbsp;</b>' . $thing;
+                            echo '<b>' . $time . '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b>' . $thing;
                         
                         
                             // Check for sub-items
