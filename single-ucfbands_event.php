@@ -267,9 +267,9 @@ function ucfbands_event_single_content() {
                     foreach ( $schedule_items as $schedule_item ) {
 
                         // Get Item Meta
-                        $time =     esc_attr( $schedule_item['time'] );
-                        $thing =    esc_attr( $schedule_item['thing'] );
-                        $sub_item = esc_attr( $schedule_item['sub-item'] );
+                        $time =         esc_attr( $schedule_item['time'] );
+                        $thing =        esc_attr( $schedule_item['thing'] );
+                        $sub_items =    $schedule_item['sub_item'];
                         
                         
                         // Start List Item
@@ -277,7 +277,16 @@ function ucfbands_event_single_content() {
                         
                             // Time & Thing
                             echo '<b>' . $time . ':&nbsp;&nbsp;</b>' . $thing;
-
+                        
+                        
+                            // Check for sub-items
+                            if ( $sub_items != '' ) {
+                                
+                                foreach ( $sub_items as $sub_item ) {
+                                    echo $sub_item;
+                                }
+                                
+                            } // if sub-items
                         
                         echo '</li>';
 
