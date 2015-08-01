@@ -1847,12 +1847,11 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
   padding: 12px 0 8px 0;
   display: block;
   width: 100%; }
-
-@media only screen and (max-width: 768px) {
-  .header-full-width .title-area {
-    float: left;
-    width: auto;
-    padding: 0; } }
+  @media only screen and (max-width: 768px) {
+    .title-area {
+      float: left;
+      width: auto;
+      padding: 0; } }
 
 .header-image .site-title > a {
   margin: 0;
