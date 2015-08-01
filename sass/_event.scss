@@ -280,6 +280,45 @@
         font-size: .85em;
     }
     
+    
+    // CENTERED Style
+    &.style-centered {
+        text-align: center;
+
+        .guest-composer {
+            padding-left: 0px;
+        }
+
+        ul {
+
+            li {
+                padding: 5px;
+            } // li
+
+        } // ul
+
+        > ul > li {
+            border-bottom: 0;
+        }
+
+        .piece-title {
+            font-weight: 700;
+        }
+
+        .piece-composer {
+            float: none;
+            font-size: 1em;
+            
+            &::before {
+                content: '-';
+                margin: 0 5px;
+            }
+            
+        } // .piece-composer        
+        
+    } // .style-centered
+    
+    
 } // .event-program
 
 
