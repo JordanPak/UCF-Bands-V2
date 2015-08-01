@@ -2286,8 +2286,6 @@ body.masonry-page .pagination {
 .event-program {
   padding: 25px;
   background-color: whitesmoke;
-  border: 1px solid #D4D4D4;
-  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.075);
   text-shadow: 1px 1px #FFFFFF; }
   .event-program h2 {
     text-align: center;
@@ -2328,7 +2326,7 @@ body.masonry-page .pagination {
     float: right;
     font-size: .85em; }
   .event-program.style-dotted ul li {
-    padding: 10px 5px 3px 5px; }
+    padding: 10px 8px 3px 8px; }
   .event-program.style-dotted ul ul {
     margin: 0;
     padding: 0; }
