@@ -328,15 +328,22 @@ function ucfbands_event_single_content() {
                     foreach ( $program as $piece ) {
 
                         // Get Item Meta
-                        $piece_name =   esc_attr( $piece['piece'] );
-                        $piece_notes =  $piece['piece_note'];
+                        $piece_title =      esc_attr( $piece['title'] );
+                        $piece_composer =   esc_attr( $piece['composer'] );
+                        $piece_notes =                $piece['piece_note'];
                         
                         
                         // Piece List Item
                         echo '<li>';
                         
-                            // Piece Name
-                            echo $piece_name;
+                            // Piece Title
+                            echo '<span class="piece-title">' . $piece_title . '</span>';
+                        
+                            // Separator
+                            echo '<span class="piece-separator">&nbsp;&nbsp;&nbsp;&nbsp;</span>';
+                        
+                            // Piece Composer
+                            echo '<span class="piece-composer">' . $piece_composer . '</span>';
 
                         
                             // Check for Piece Notes
