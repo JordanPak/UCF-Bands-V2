@@ -46,6 +46,10 @@ function ucfbands_event_single_data() {
     global $event_meta;
     $event_meta = ucfbands_event_get_meta( $event, true, true, true );
     
+    // Set Athletic Font Style if needed
+//    if ( $event_meta['icon_background_color'] == 'gold' ) 
+//        require_once( CHILD_DIR . '/inc/font-style-athletic.php' );
+    
 } // ucfbands_event_single_data() 
 
 
