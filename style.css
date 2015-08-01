@@ -2283,6 +2283,36 @@ body.masonry-page .pagination {
       list-style-image: none;
       cursor: default; }
 
+.event-program {
+  text-align: center; }
+  .event-program .guest-composer {
+    font-style: italic;
+    cursor: default; }
+  .event-program ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none; }
+    .event-program ul li {
+      list-style-type: none;
+      list-style-image: none;
+      padding: 4px;
+      line-height: 1.4em;
+      font-weight: 400;
+      cursor: default;
+      transition: all ease-in-out 100ms; }
+      .event-program ul li:hover {
+        background-color: whitesmoke;
+        text-shadow: 1px 1px #FFFFFF; }
+    .event-program ul ul {
+      margin: 0;
+      padding: 0;
+      font-size: .85em;
+      font-style: italic; }
+      .event-program ul ul li {
+        margin: 0;
+        padding: 0;
+        font-weight: 300; }
+
 .single-ucfbands_event .content {
   background-color: #FFFFFF;
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);

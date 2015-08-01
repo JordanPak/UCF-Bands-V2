@@ -316,7 +316,8 @@ function ucfbands_event_single_content() {
             
                 
                 // Guest Composer
-                echo '<span class="guest-composer">' . $event_meta['program_guest_composer'] . '</span>';
+                if ( $event_meta['program_guest_composer'] )
+                    echo '<span class="guest-composer">' . $event_meta['program_guest_composer'] . '</span>';
             
             
                 // Start UL
@@ -331,22 +332,28 @@ function ucfbands_event_single_content() {
                         $piece_notes =  $piece['piece_note'];
                         
                         
-                        // Output Piece Name
-                        echo '<li>' . $piece_name . '</li>';
+                        // Piece List Item
+                        echo '<li>';
+                        
+                            // Piece Name
+                            echo $piece_name;
 
                         
-                        // Check for Piece Notes
-                        if ( $piece_notes != '' ) {
+                            // Check for Piece Notes
+                            if ( $piece_notes != '' ) {
 
-                            // Nested UL
-                            echo '<ul>';
+                                // Nested UL
+                                echo '<ul>';
 
-                                foreach ( $piece_notes as $piece_note )
-                                    echo '<li>' . $piece_note . '</li>';
+                                    foreach ( $piece_notes as $piece_note )
+                                        echo '<li>' . $piece_note . '</li>';
 
-                            echo '</ul>';
+                                echo '</ul>';
 
-                        } // if Piece Note(s)                        
+                            } // if Piece Note(s)
+                        
+                        // End Piece List Item
+                        echo '</li>';
                         
                     } // foreach program as piece
             

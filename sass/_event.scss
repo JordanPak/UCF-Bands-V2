@@ -220,6 +220,56 @@
 } // .event-schedule
 
 
+.event-program {
+    text-align: center;
+    
+    .guest-composer {
+        font-style: italic;
+        cursor: default;
+    }
+    
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        
+        li {
+            list-style-type: none;
+            list-style-image: none;
+            padding: 4px;
+            line-height: 1.4em;
+            font-weight: 400;
+            cursor: default;
+            
+            @include transition-ease-in-out(100ms);
+            
+            &:hover {
+                background-color: $ucf-gray-light;
+                text-shadow: 1px 1px $white;
+            }
+            
+        } // li
+        
+        ul {
+            margin: 0;
+            padding: 0;
+            font-size: .85em;
+            font-style: italic;
+            
+            li {
+                margin: 0;
+                padding: 0;
+                font-weight: 300;
+            }
+            
+        } // ul (Piece Notes)
+        
+    } // ul
+    
+} // .event-program
+
+
+
 //-- EVENT SINGLE --//
 .single-ucfbands_event {
     
