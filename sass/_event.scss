@@ -1,0 +1,561 @@
+//=======================//
+//  UCFBANDS V2 | EVENT  //
+//=======================//
+
+    
+.block-title {
+    margin-bottom: $space-default-half;
+}
+
+.entry-wrapper {
+    margin-bottom: $space-default-half;
+    padding: $space-default-half;
+
+    @include block();
+
+    .more-info {
+        display: inline-block;
+        position: relative;
+        right: -5px;
+        z-index: 100;
+        float: right;
+        padding-right: 5px;
+
+        @include transition-ease-in-out();
+
+        a {
+            color: $ucf-gray-med-light;
+
+            &:hover {
+                color: $ucf-gold;
+
+                .event-details {
+                    display: inline;
+                }
+
+            } // a:hover
+
+            @include transition-ease-in-out();
+
+            .event-details {
+                display: none;
+                position: absolute;
+                right: 0;
+                width: 135px;
+                padding-left: 10px;
+                padding-right: 15px;
+                color: $white;
+                background: $ucf-gray;
+                border-radius: 15px;
+                box-shadow: 0 0 10px 10px $white;
+
+                @include transition-ease-in-out();
+
+            } // .see-event-details
+
+        } // a
+
+    } // .more-info
+
+    .right-info {
+        display: block;
+        cursor: default;
+
+        i.fa {
+            width: 15px;
+            text-align: center;
+        }
+
+        .location a {
+            color: inherit;
+            border-bottom: 2px solid rgba(0,0,0,0);
+
+            @include transition-ease-in-out();
+
+            &:hover {
+                color: inherit;
+                border-bottom: 2px solid $ucf-gold;
+            }
+
+        } // a
+
+    } // .right-info
+
+    .event-title {
+        margin-bottom: 2px;    
+    }
+    
+    hr {
+        margin: $space-default-half 0;
+    }
+    
+    .event-details-excerpt p:last-child {
+        margin-bottom: 0;   
+    }
+
+} // .entry-wrapper
+
+
+.post-type-archive-ucfbands_event .entry-wrapper.masonry-block {
+    padding: $space-default-half;
+}
+    
+.events-shortcode-wrap {
+} // .events-shortcode-wrap
+
+
+.date-badge {
+    float: left;
+    margin-right: $space-default-half;
+    padding: 8px 18px;
+    background-color: $ucf-gray-light;
+    border: 1px solid $ucf-gray-med;
+    font-family: $font-family-serif;
+    font-size: 1em;
+    font-weight: 700;
+    color: $white;
+    text-align: center;
+    line-height: 1.66em;
+    cursor: default;
+    
+    &.date-badge-ucf-gray {
+        background-color: $ucf-gray;
+        border-color: $black;
+        text-shadow: $text-shadow-dark-med;
+    }
+    
+    &.date-badge-gold {
+        background-color: $ucf-gold;
+        border-color: $ucf-gold-darker;
+        text-shadow: $text-shadow-gold-med;
+    }
+    
+    &.date-badge-green {
+        background-color: $green;  
+        border-color: $green-darker;
+        text-shadow: $text-shadow-green-med;
+    }
+    
+    &.date-badge-red {
+        background-color: $red;
+        border-color: $red-darker;
+        text-shadow: $text-shadow-red-med;
+    }
+    
+    &.date-badge-blue {
+        background-color: $blue;   
+        border-color: $blue-darker;
+        text-shadow: $text-shadow-blue-med;
+    }
+    
+    .day {
+        font-size: 1.66em;
+        
+        &.day-multi {
+            font-size: 1.33em;   
+        }
+        
+    } // .day
+    
+} // .date-badge
+
+
+.event-schedule {
+    
+   > ul {
+       margin-left: 0;
+       margin-bottom: 0;
+       position: relative;
+       top: -4px;
+       left: -6px;
+    
+       > li {
+           list-style-image: none;
+           list-style-type: none;
+           margin: 0;
+           padding: 4px 6px;
+           border-bottom: 1px solid $ucf-gray-med-light;
+           cursor: default;
+           
+           @include transition-ease-in-out(100ms);
+            
+           span {
+               font-size: .9em;
+               font-weight: 700;
+           }
+           
+           
+           &:last-child {
+               border-bottom: 0;
+           }
+           
+//           &:nth-child(even) {
+//               background-color: $ucf-gray-light;
+//           }
+
+           &:hover {
+               background-color: $ucf-gray-light;
+               color: $black;
+               text-shadow: 1px 1px $white;
+           }
+           
+       } // li
+       
+       
+       ul { // Sub-items
+           margin-top: 4px;
+           font-size: .9em;
+           line-height: 1.33em;
+
+           li {
+               margin-bottom: 4px;
+               list-style-image: none;
+               cursor: default;
+           }
+
+        } // Sub-Items UL
+        
+    } // Items UL
+    
+} // .event-schedule
+
+
+.event-program {
+    padding: $space-default-half + 5px;
+    background-color: $ucf-gray-light;
+    text-shadow: 1px 1px $white;
+    
+    h2 {
+        text-align: center;
+        margin: 0;
+    }
+    
+    .guest-composer {
+        display: block;
+        text-align: center;
+        font-style: italic;
+        cursor: default;
+    }
+    
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        
+        li {
+            list-style-type: none;
+            list-style-image: none;
+            padding: 8px 5px;
+            line-height: 1.4em;
+            font-weight: 400;
+            cursor: default;
+
+             
+            @include transition-ease-in-out(120ms);
+            
+            &:hover {
+                background-color: $white;
+            }
+            
+        } // li
+        
+        ul {
+            margin: 0;
+            padding: 0;
+            font-size: .85em;
+            font-style: italic;
+            
+            li {
+                margin: 0;
+                padding: 0;
+                font-weight: 300;
+            }
+            
+        } // ul (Piece Notes)
+        
+    } // ul
+        
+    > ul > li {
+        border-bottom: 1px solid $ucf-gray-med-light;   
+    }
+    
+    .piece-title {
+        font-weight: 700;
+    }
+    
+    .piece-composer {
+        float: right;
+        font-size: .85em;
+    }
+    
+    
+    // DOTTED Style
+    &.style-dotted {
+
+        ul {
+
+            li {
+                padding: 10px 8px 3px 8px;
+            } // li
+
+            ul {
+                margin: 0;
+                padding: 0;
+
+                li {
+                    margin: 0;
+                    padding: 0;
+                }
+
+            } // ul (Piece Notes)
+
+        } // ul
+
+        > ul > li {
+            border-bottom: 1px dotted $ucf-gray-med-light;   
+        }      
+        
+    } // .style-dotted
+    
+    
+    // CENTERED Style
+    &.style-centered {
+        text-align: center;
+
+        .guest-composer {
+            padding-left: 0px;
+        }
+
+        ul {
+
+            li {
+                padding: 5px;
+            } // li
+
+        } // ul
+
+        > ul > li {
+            border-bottom: 0;
+        }
+
+        .piece-title {
+            font-weight: 700;
+        }
+
+        .piece-composer {
+            float: none;
+            font-size: 1em;
+            
+            &::before {
+                content: '-';
+                margin: 0 5px;
+            }
+            
+        } // .piece-composer        
+        
+    } // .style-centered
+    
+
+    // SIMPLE Style
+    &.style-simple {
+
+        .guest-composer {
+            padding-left: 5px;
+        }
+
+        ul {
+
+            li {
+                padding: 0px;
+            } // li
+
+        } // ul
+
+        > ul > li {
+            border-bottom: 0;
+            padding: 8px 5px;
+        }
+
+        .piece-title {
+            font-weight: 700;
+        }
+
+        .piece-composer {
+            float: none;
+            font-size: 1em;
+            
+            &::before {
+                content: '-';
+                margin: 0 5px;
+            }
+            
+        } // .piece-composer        
+        
+    } // .style-simple    
+    
+} // .event-program
+
+
+
+//-- EVENT SINGLE --//
+.single-ucfbands_event {
+    
+    .content {
+        position: relative;
+        
+        @include block();
+        
+        article {
+            padding: 0;
+        }
+        
+    } // .content
+    
+    .entry-header {
+        padding: $space-default $space-default 0 $space-default;
+        
+        .header-left {
+            float: left;
+            width: 75%;
+            
+            @media only screen and (max-width: $breakpoint-medium) {
+                float: none;
+                width: 100%;   
+            }
+            
+        } // .header-left
+        
+        .header-right {
+            float: right;
+            width: 25%;
+            text-align: right;
+            
+            @media only screen and (max-width: $breakpoint-medium) {
+                float: none;
+                width: 100%;
+                margin: ($space-default-half + 10px) 0 $space-default-half 0;
+                clear: both;
+                text-align: left;
+            }
+            
+        } // .header-right
+        
+
+        @media only screen and (max-width: $breakpoint-extra-small) {
+            padding: $space-default-half; 
+        }
+        
+    } // .entry-header 
+    
+    .entry-title {
+        font-size: 42px;
+        cursor: default;
+        margin: 0;
+        
+        @media only screen and (max-width: $breakpoint-extra-small) {
+            font-size: 36px;
+        } // breakpoint extra-small 
+        
+    } // .entry-title
+    
+    .date-badge {
+        margin: 0 $space-default $space-default-half 0;
+        padding: 12px 22px;
+        font-size: 1.33em;
+        font-weight: 700;
+        line-height: 1.66em;
+
+        @media only screen and (max-width: $breakpoint-extra-small) {
+            font-size: 1.2em;
+            margin-right: $space-default-half + 10px;
+        } // breakpoint extra-small    
+        
+        @media only screen and (max-width: $breakpoint-extra-extra-small) {
+            display: block;
+            width: 100%;
+        } // breakpoint extra-extra-small        
+        
+    } // .date-badge
+    
+    .event-ticket-price {
+    }
+    
+    .event-time-location {
+        display: inline-block;
+        margin-top: 10px;
+        font-size: 1.33em;
+        cursor: default;
+        
+        @media only screen and (max-width: $breakpoint-extra-small) {
+            
+            span {
+                display: inline-block;
+                clear: both;
+                width: 100%;
+            }
+            
+        } // breakpoint extra-small
+        
+    } // .event-time-location
+    
+    .event-time {
+        margin-right: $space-default;   
+    }
+    
+    .fb-share-button {
+        float: right;
+    }
+    
+    .attachment-post-thumbnail {
+        margin: $space-default-half 0 ($space-default-half + 10px) 0;
+        border-top: 4px solid $ucf-gray-darker;
+        border-bottom: 4px solid $ucf-gray-darker;
+
+        @media only screen and (max-width: $breakpoint-extra-small) {
+            margin: 0; 
+        }        
+        
+    } // .attachment-post-thumbnail
+    
+    .event-header-hr {
+        margin: $space-default;
+    }
+    
+    .entry-content {
+        padding: 0 $space-default;
+    
+        @media only screen and (max-width: $breakpoint-extra-small) {
+            padding: $space-default-half; 
+        }    
+        
+    } // .entry-content
+    
+    address {
+        font-style: normal;
+    }
+    
+    .event-schedule-repitoire {
+        clear: both;
+    }
+    
+    #googleMap {
+        margin: $space-default-half 0;
+        
+        @include block();
+    }
+    
+} // .single-ucfbands_event
+
+
+body.font-style-athletic.single-ucfbands_event {
+    
+    .entry-title {
+        letter-spacing: 0;
+    }
+
+    .date-badge {
+        font-family: $font-family-athletic;
+        letter-spacing: .1em;
+    }
+    
+} // Athletic Typography on Event Single

@@ -75,8 +75,29 @@
             background-color: $blue-darker;
             border-color: $blue-darkest;
         }
+        
+        @if $background-color == $white {
+            color: $white;
+        }
 
     } // :hover
+    
+    &.no-hover {
+        
+        &:hover {
+            background-color: inherit;
+            text-shadow: inherit;
+            color: inherit;
+            border-color: inherit;
+            cursor: default;
+        }
+        
+        &.button-white {
+            color: $body-text;
+            border-color: $body-text;
+        }
+        
+    } // .no-hover
     
 } // button()
 
