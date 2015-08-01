@@ -227,6 +227,10 @@
     box-shadow: 0 1px 6px rgba(0, 0, 0, 0.075);
     text-shadow: 1px 1px $white;
     
+    h2 {
+        text-align: center;
+    }
+    
     .guest-composer {
         font-style: italic;
         cursor: default;
