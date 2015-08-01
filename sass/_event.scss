@@ -412,8 +412,21 @@
     } // .content
     
     .entry-header {
-        padding: $space-default $space-default 0 $space-default;   
-    }
+        padding: $space-default $space-default 0 $space-default;
+        
+        .header-left {
+            float: left;
+            width: 75%;
+        }
+        
+        .header-right {
+            float: right;
+            width: 25%;
+            
+            text-align: right;
+        }
+        
+    } // .entry-header 
     
     .entry-title {
         font-size: 42px;
@@ -429,9 +442,6 @@
     } // .date-badge
     
     .event-ticket-price {
-        position: absolute;
-        top: $space-default;
-        right: $space-default;
     }
     
     .event-time-location {

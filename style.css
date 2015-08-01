@@ -2430,6 +2430,13 @@ body.masonry-page .pagination {
     padding: 0; }
 .single-ucfbands_event .entry-header {
   padding: 40px 40px 0 40px; }
+  .single-ucfbands_event .entry-header .header-left {
+    float: left;
+    width: 75%; }
+  .single-ucfbands_event .entry-header .header-right {
+    float: right;
+    width: 25%;
+    text-align: right; }
 .single-ucfbands_event .entry-title {
   font-size: 42px;
   cursor: default; }
@@ -2439,10 +2446,6 @@ body.masonry-page .pagination {
   font-size: 1.33em;
   font-weight: 700;
   line-height: 1.66em; }
-.single-ucfbands_event .event-ticket-price {
-  position: absolute;
-  top: 40px;
-  right: 40px; }
 .single-ucfbands_event .event-time-location {
   font-size: 1.33em;
   cursor: default; }
