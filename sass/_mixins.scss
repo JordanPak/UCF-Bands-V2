@@ -78,6 +78,23 @@
 
     } // :hover
     
+    &.no-hover {
+        
+        &:hover {
+            background-color: inherit;
+            text-shadow: inherit;
+            color: inherit;
+            border-color: inherit;
+            cursor: default;
+        }
+        
+        &.button-white {
+            color: $body-text;
+            border-color: $body-text;
+        }
+        
+    } // .no-hover
+    
 } // button()
 
 
