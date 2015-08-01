@@ -256,7 +256,7 @@ function ucfbands_event_single_content() {
     
         // Schedule
         if ( $show_schedule ) {
-            echo '<div class="' . $width_schedule . '"><h2><i class="fa fa-list"></i>&nbsp;&nbsp;Schedule</h2>';
+            echo '<div class="' . $width_schedule . ' event-schedule"><h2><i class="fa fa-list"></i>&nbsp;&nbsp;Schedule</h2>';
             
                 // Start UL
                 echo '<ul>';
@@ -276,7 +276,7 @@ function ucfbands_event_single_content() {
                         echo '<li>';
                         
                             // Time & Thing
-                            echo '<b>' . $time . '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b>' . $thing;
+                            echo '<span>' . $time . '</span>&nbsp;&nbsp;&nbsp;&nbsp;' . $thing;
                         
                         
                             // Check for sub-items

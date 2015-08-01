@@ -2251,6 +2251,23 @@ body.masonry-page .pagination {
     .date-badge .day.day-multi {
       font-size: 1.33em; }
 
+.event-schedule > ul {
+  margin-left: 0; }
+  .event-schedule > ul > li {
+    list-style-image: none;
+    list-style-type: none;
+    margin-bottom: 4px; }
+    .event-schedule > ul > li span {
+      font-size: .9em;
+      font-weight: 700; }
+  .event-schedule > ul ul {
+    margin-top: 4px;
+    font-size: .9em;
+    line-height: 1.33em; }
+    .event-schedule > ul ul li {
+      margin-bottom: 4px;
+      list-style-image: none; }
+
 .single-ucfbands_event .content {
   background-color: #FFFFFF;
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
