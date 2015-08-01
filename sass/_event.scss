@@ -229,12 +229,15 @@
     
     h2 {
         text-align: center;
+        margin: 0;
     }
     
     .guest-composer {
+        display: block;
+        text-align: center;
         font-style: italic;
         cursor: default;
-        padding-left: 5px;
+//        padding-left: 5px;
     }
     
     ul {
