@@ -2318,6 +2318,16 @@ body.masonry-page .pagination {
 .event-program .piece-composer {
   float: right;
   font-size: .85em; }
+.event-program.style-dotted ul li {
+  padding: 10px 5px 3px 5px; }
+.event-program.style-dotted ul ul {
+  margin: 0;
+  padding: 0; }
+  .event-program.style-dotted ul ul li {
+    margin: 0;
+    padding: 0; }
+.event-program.style-dotted > ul > li {
+  border-bottom: 1px dotted #d5d0d1; }
 .event-program.style-centered {
   text-align: center; }
   .event-program.style-centered .guest-composer {

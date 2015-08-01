@@ -283,17 +283,29 @@
     
     // DOTTED Style
     &.style-dotted {
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+
+        ul {
+
+            li {
+                padding: 10px 5px 3px 5px;
+            } // li
+
+            ul {
+                margin: 0;
+                padding: 0;
+
+                li {
+                    margin: 0;
+                    padding: 0;
+                }
+
+            } // ul (Piece Notes)
+
+        } // ul
+
+        > ul > li {
+            border-bottom: 1px dotted $ucf-gray-med-light;   
+        }      
         
     } // .style-dotted
     
