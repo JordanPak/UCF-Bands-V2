@@ -311,20 +311,24 @@ function ucfbands_event_single_content() {
             echo '<div class="' . $width_program . '"><h2>Program</h2>';
             
             
+                // Get Program with Items
+                $program = $event_meta['program_group'];
+            
+                
+                // Guest Composer
+                echo '<span class="guest-composer">' . $event_meta['program_guest_composer'] . '</span>';
+            
+            
                 // Start UL
                 echo '<ul>';
                     
-                    // Get Program with Items
-                    $program = $event_meta['program_group'];            
-            
-            
+
                     //-- PROGRAM LOOP --//
                     foreach ( $program as $piece ) {
 
                         // Get Item Meta
                         $piece_name =   esc_attr( $piece['piece'] );
-                        $piece_note =   $schedule_item['piece_note'];
-                        
+                        $piece_note =   $schedule_item['piece_note'];                 
                         
                     } // foreach program as piece
             
