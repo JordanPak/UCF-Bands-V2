@@ -2262,14 +2262,17 @@ body.masonry-page .pagination {
     margin: 0;
     padding: 4px 6px;
     border-bottom: 1px solid #d5d0d1;
-    cursor: default; }
+    cursor: default;
+    transition: all ease-in-out 100ms; }
     .event-schedule > ul > li span {
       font-size: .9em;
       font-weight: 700; }
     .event-schedule > ul > li:last-child {
       border-bottom: 0; }
-    .event-schedule > ul > li:nth-child(even) {
-      background-color: whitesmoke; }
+    .event-schedule > ul > li:hover {
+      background-color: whitesmoke;
+      color: #000000;
+      text-shadow: 1px 1px #FFFFFF; }
   .event-schedule > ul ul {
     margin-top: 4px;
     font-size: .9em;
