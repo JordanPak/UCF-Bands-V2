@@ -304,10 +304,24 @@ function ucfbands_event_single_content() {
         } // show schedule
     
     
-        // Program
+        //-- PROGRAM --//
         if ( $show_program ) {
+            
+            // Wrapper
             echo '<div class="' . $width_schedule . '"><h2>Program</h2>';
+            
+            
+                // Start UL
+                echo '<ul>';
+                    
+                    // Get Program with Items
+                    $program = $event_meta['program_group'];            
+            
+            
+            
+            // Close Wrapper
             echo '</div>';
+            
         } // show program
     
     
