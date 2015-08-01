@@ -473,3 +473,17 @@
     }
     
 } // .single-ucfbands_event
+
+
+body.font-style-athletic.single-ucfbands_event {
+    
+    .entry-title {
+        letter-spacing: 0;
+    }
+
+    .date-badge {
+        font-family: $font-family-athletic;
+        letter-spacing: .1em;
+    }
+    
+} // Athletic Typography on Event Single

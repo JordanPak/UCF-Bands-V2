@@ -2464,6 +2464,12 @@ body.masonry-page .pagination {
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
   border: 1px solid #D4D4D4; }
 
+body.font-style-athletic.single-ucfbands_event .entry-title {
+  letter-spacing: 0; }
+body.font-style-athletic.single-ucfbands_event .date-badge {
+  font-family: "Oswald", "Roboto", sans-serif;
+  letter-spacing: .1em; }
+
 * {
   box-sizing: border-box; }
 

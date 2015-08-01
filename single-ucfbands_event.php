@@ -46,11 +46,32 @@ function ucfbands_event_single_data() {
     global $event_meta;
     $event_meta = ucfbands_event_get_meta( $event, true, true, true );
     
-    // Set Athletic Font Style if needed
-//    if ( $event_meta['icon_background_color'] == 'gold' ) 
-//        require_once( CHILD_DIR . '/inc/font-style-athletic.php' );
-    
 } // ucfbands_event_single_data() 
+
+
+
+
+add_filter( 'body_class', 'body_class_athletic_font' );
+
+/**
+ * UCFBands Event - Set Athletic Font if Athletic Event
+ *
+ * @author Jordan Pakrosnis
+ */
+function body_class_athletic_font( $classes ) {
+
+    // Get Post ID
+    $event = get_the_ID();
+    
+    // Get Event meta
+    $event_meta = ucfbands_event_get_meta( $event );
+    
+    if ( $event_meta['icon_background_color'] == 'gold' )
+        $classes[] = 'font-style-athletic';   
+    
+    return $classes;
+    
+} // body_class_athletic_font()
 
 
 
@@ -385,7 +406,6 @@ function ucfbands_event_single_content() {
         echo '</div>';    
     
 } // ucfbands_event_single_content()
-
 
 
 
