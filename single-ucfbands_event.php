@@ -328,9 +328,30 @@ function ucfbands_event_single_content() {
 
                         // Get Item Meta
                         $piece_name =   esc_attr( $piece['piece'] );
-                        $piece_note =   $schedule_item['piece_note'];                 
+                        $piece_notes =  $piece['piece_note'];
+                        
+                        
+                        // Output Piece Name
+                        echo '<li>' . $piece_name . '</li>';
+
+                        
+                        // Check for Piece Notes
+                        if ( $piece_notes != '' ) {
+
+                            // Nested UL
+                            echo '<ul>';
+
+                                foreach ( $piece_notes as $piece_note )
+                                    echo '<li>' . $piece_note . '</li>';
+
+                            echo '</ul>';
+
+                        } // if Piece Note(s)                        
                         
                     } // foreach program as piece
+            
+                // Close UL
+                echo '</ul>';
             
             // Close Wrapper
             echo '</div>';
