@@ -433,7 +433,7 @@
             @media only screen and (max-width: $breakpoint-medium) {
                 float: none;
                 width: 100%;
-                margin-top: $space-default-half + 10px;
+                margin: ($space-default-half + 10px) 0 $space-default-half 0;
                 clear: both;
                 text-align: left;
             }
@@ -449,7 +449,7 @@
     }
     
     .date-badge {
-        margin-right: $space-default;
+        margin: 0 $space-default $space-default-half 0;
         padding: 12px 22px;
         font-size: 1.33em;
         font-weight: 700;
@@ -475,7 +475,7 @@
     }
     
     .attachment-post-thumbnail {
-        margin: $space-default 0;
+        margin: $space-default-half 0 ($space-default-half + 10px) 0;
         border-top: 4px solid $ucf-gray-darker;
         border-bottom: 4px solid $ucf-gray-darker;
     }
