@@ -183,42 +183,36 @@ function ucfbands_event_single_content() {
     // CONDITIONAL LAYOUT SETUP //
     
     // Defaults
-    $show_content =             true;
-    $show_schedule =            true;
-    $show_program =             true;
-    $show_hr =                  true;
-    $wrap_schedule_program =    true;
+    $show_content =                 false;
+    $show_schedule =                true;
+    $show_program =                 true;
+    $show_hr =                      false;
+    $show_schedule_program_wrap =   false;
     
     // Content
-    if ( get_the_content() == '' ) {
-        $show_content =             false;
-        $width_location =           'one-third first';
-        $width_schedule =           'one-third';
-        $width_program =            'one-third';
-        $show_hr =                  false;
-        $wrap_schedule_program =    false;
+    if ( get_the_content() != '' ) {
+        $show_content =     true;
+        $show_hr      =     true;
+        $show_schedule_program_wrap = true;
+        
+        $width_content =    'two-thirds first';
+        $width_location =   'one-third';
+        $width_schedule =   'one-half first';
+        $width_program =    'one-half';
     }
     else {
-        $width_content =            'two-thirds first';
-        $width_location =           'one-third';
-        $width_schedule =           'one-half first';
-        $width_program =            'one-half';
-        $show_hr =                  true;
-        $wrap_schedule_program =    true;
+        $width_location =   'one-third first';
+        $width_schedule =   'one-third';
+        $width_program =    'one-third';
     }
     
     // Schedule
-    if ( $event_meta['schedule_group'] == null ) {
-        $show_schedule = false;
-        $width_program .= ' first';
-    }
+    if ( $event_meta['schedule_group'] == null )
+        $show_schedule =    false;   
     
-    if ( $event_meta['program_group'] == null ) {
-        $show_program = false;
-    }
-    
-    if ( ($show_schedule == false) && ($show_program == false) )
-        $show_hr = false;
+    // Program
+    if ( $event_meta['program_group'] == null )
+        $show_program =     false;   
     
     
     
@@ -248,7 +242,7 @@ function ucfbands_event_single_content() {
     
     
     // Wrap
-    if ( $wrap_schedule_program )
+    if ( $show_schedule_program_wrap )
         echo '<div class="event-schedule-repitoire clearfix">';
     
         // HR
