@@ -72,6 +72,8 @@ function ucfbands_event_single_date_badge() {
         $event_meta['icon_background_color']
     );
     
+    $event_price = $event_meta['ticket_price'];
+    
     echo $event_date;
     
     // FACEBOOK SHARE BUTTON
@@ -87,7 +89,7 @@ function ucfbands_event_single_date_badge() {
 //    echo '<div class="fb-share-button" data-href="' . get_permalink() . '" data-layout="button"></div>';
     
     // Purchase Tickets Placeholder
-    echo '<a style="float: right;" class="button button-med" href="#"><i class="fa fa-ticket"></i>&nbsp;&nbsp;Tickets &nbsp;|&nbsp; $5</a>';
+    echo '<a style="float: right;" class="button button-med" href="#"><i class="fa fa-ticket"></i>&nbsp;&nbsp;Tickets &nbsp;|&nbsp; $' . $event_price . '</a>';
     
     
 } // ucfbands_event_single_date_badge()
