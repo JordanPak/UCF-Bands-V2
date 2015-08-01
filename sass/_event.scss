@@ -281,6 +281,23 @@
     }
     
     
+    // DOTTED Style
+    &.style-dotted {
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    } // .style-dotted
+    
+    
     // CENTERED Style
     &.style-centered {
         text-align: center;
@@ -318,6 +335,43 @@
         
     } // .style-centered
     
+
+    // SIMPLE Style
+    &.style-simple {
+
+        .guest-composer {
+            padding-left: 5px;
+        }
+
+        ul {
+
+            li {
+                padding: 0px;
+            } // li
+
+        } // ul
+
+        > ul > li {
+            border-bottom: 0;
+            padding: 8px 5px;
+        }
+
+        .piece-title {
+            font-weight: 700;
+        }
+
+        .piece-composer {
+            float: none;
+            font-size: 1em;
+            
+            &::before {
+                content: '-';
+                margin: 0 5px;
+            }
+            
+        } // .piece-composer        
+        
+    } // .style-simple    
     
 } // .event-program
 

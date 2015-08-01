@@ -307,8 +307,9 @@ function ucfbands_event_single_content() {
         //-- PROGRAM --//
         if ( $show_program ) {
             
-            // Wrapper
-            echo '<div class="' . $width_program . ' event-program style-centered"><h2>Program</h2>';
+            
+            // WRAPPER (Style classes: "style-centered", "style-simple")
+            echo '<div class="' . $width_program . ' event-program"><h2>Program</h2>';
             
             
                 // Get Program with Items
