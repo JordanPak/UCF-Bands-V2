@@ -1628,7 +1628,8 @@ hr {
     .button.button-white:hover {
       background-color: #FFCA06;
       border-color: #EFBC00;
-      text-shadow: 0 0 3px #EFBC00, 1px 1px 1px #EFBC00, 0 0 3px #EFBC00, 2px 2px 1px #EFBC00; }
+      text-shadow: 0 0 3px #EFBC00, 1px 1px 1px #EFBC00, 0 0 3px #EFBC00, 2px 2px 1px #EFBC00;
+      color: #FFFFFF; }
     .button.button-white.no-hover:hover {
       background-color: inherit;
       text-shadow: inherit;
