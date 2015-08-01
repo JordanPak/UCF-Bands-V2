@@ -145,6 +145,7 @@ function ucfbands_event_single_time_location() {
 
 
 
+
 add_action( 'genesis_entry_header', 'ucfbands_event_single_featured_image', 15 );
 
 /**
@@ -163,6 +164,7 @@ function ucfbands_event_single_featured_image() {
         
     
 } // ucfbands_event_single_featured_image()
+
 
 
 
@@ -254,7 +256,7 @@ function ucfbands_event_single_content() {
             echo '<hr>';
     
     
-        // Schedule
+        //-- SCHEDULE --//
         if ( $show_schedule ) {
             echo '<div class="' . $width_schedule . ' event-schedule"><h2><i class="fa fa-list"></i>&nbsp;&nbsp;Schedule</h2>';
             
@@ -314,6 +316,7 @@ function ucfbands_event_single_content() {
         echo '</div>';    
     
 } // ucfbands_event_single_content()
+
 
 
 
