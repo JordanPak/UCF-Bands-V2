@@ -401,6 +401,8 @@
 .single-ucfbands_event {
     
     .content {
+        position: relative;
+        
         @include block();
         
         article {
@@ -427,7 +429,9 @@
     } // .date-badge
     
     .event-ticket-price {
-        float: right;
+        position: absolute;
+        top: $space-default;
+        right: $space-default;
     }
     
     .event-time-location {

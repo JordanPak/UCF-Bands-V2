@@ -2423,6 +2423,7 @@ body.masonry-page .pagination {
       margin: 0 5px; }
 
 .single-ucfbands_event .content {
+  position: relative;
   background-color: #FFFFFF;
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
   border: 1px solid #D4D4D4; }
@@ -2440,7 +2441,9 @@ body.masonry-page .pagination {
   font-weight: 700;
   line-height: 1.66em; }
 .single-ucfbands_event .event-ticket-price {
-  float: right; }
+  position: absolute;
+  top: 40px;
+  right: 40px; }
 .single-ucfbands_event .event-time-location {
   font-size: 1.33em;
   cursor: default; }

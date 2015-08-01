@@ -93,31 +93,7 @@ function ucfbands_event_single_date_badge() {
         $event_meta['icon_background_color']
     );
     
-    $event_ticket_price =   $event_meta['ticket_price'];
-    $event_ticket_link =    esc_url( $event_meta['ticket_link'] );
-    
     echo $event_date;
-    
-    
-    // EVENT ADMISSION/TICKET PRICE
-    if ( ($event_ticket_price != '') && ($event_ticket_price != '0.00') ) {
-        
-        // Free Admission
-        if ( ($event_ticket_price == '0.01') || ($event_ticket_price == '00.01') ) {
-            
-            // If there's a Ticket Link
-            if ( $event_ticket_link )
-                echo '<a class="event-ticket-price button button-med button-white" href="' . $event_ticket_link . '" target="_BLANK"><i class="fa fa-ticket"></i>&nbsp;&nbsp;Free Admission</a>';
-            
-            else
-                echo '<span class="event-ticket-price button button-med button-white no-hover" href="#"><i class="fa fa-ticket"></i>&nbsp;&nbsp;Free Admission</span>';
-        }
-        
-        else
-            echo '<a class="event-ticket-price button button-med" href="' . $event_ticket_link . '" target="_BLANK"><i class="fa fa-ticket"></i>&nbsp;&nbsp;Tickets &nbsp;|&nbsp; $' . $event_ticket_price . '</a>';
-        
-        
-    } // if there's an event price
     
 } // ucfbands_event_single_date_badge()
 
@@ -173,6 +149,34 @@ function ucfbands_event_single_time_location() {
     
     // Close Wrapper
     echo '</span>';
+
+    
+    
+    $event_ticket_price =   $event_meta['ticket_price'];
+    $event_ticket_link =    esc_url( $event_meta['ticket_link'] );
+    
+    
+    // EVENT ADMISSION/TICKET PRICE
+    if ( ($event_ticket_price != '') && ($event_ticket_price != '0.00') ) {
+        
+        // Free Admission
+        if ( ($event_ticket_price == '0.01') || ($event_ticket_price == '00.01') ) {
+            
+            // If there's a Ticket Link
+            if ( $event_ticket_link )
+                echo '<a class="event-ticket-price button button-med button-white" href="' . $event_ticket_link . '" target="_BLANK"><i class="fa fa-ticket"></i>&nbsp;&nbsp;Free Admission</a>';
+            
+            else
+                echo '<span class="event-ticket-price button button-med button-white no-hover" href="#"><i class="fa fa-ticket"></i>&nbsp;&nbsp;Free Admission</span>';
+        }
+        
+        else
+            echo '<a class="event-ticket-price button button-med" href="' . $event_ticket_link . '" target="_BLANK"><i class="fa fa-ticket"></i>&nbsp;&nbsp;Tickets &nbsp;|&nbsp; $' . $event_ticket_price . '</a>';
+        
+        
+    } // if there's an event price    
+    
+    
     
 } // ucfbands_event_single_time_location() 
 
