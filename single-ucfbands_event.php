@@ -117,16 +117,11 @@ function ucfbands_event_single_time_location() {
 
     
     // Event Location Logic
-    $location = '<span class="location">';
+    if ( $event_meta['location_name'] == '' )
+        $location .= 'TBA';
 
-        if ( $event_meta['location_name'] == '' )
-            $location .= 'TBA';
-
-        else
-            $location .= $event_meta['location_name'];
-
-
-    $location .= '</span>';
+    else
+        $location .= $event_meta['location_name'];
     
     
     
@@ -148,7 +143,7 @@ function ucfbands_event_single_time_location() {
 
     
         //-- EVENT LOCATION --//
-        echo '<i class="fa fa-map-marker"></i> ' . $location;
+        echo '<span class="location"><i class="fa fa-map-marker"></i> ' . $location . '</span>';
     
     
     // Close Wrapper

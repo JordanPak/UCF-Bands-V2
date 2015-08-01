@@ -446,7 +446,12 @@
         font-size: 42px;
         cursor: default;
         margin: 0;
-    }
+        
+        @media only screen and (max-width: $breakpoint-extra-small) {
+            font-size: 36px;
+        } // breakpoint extra-small 
+        
+    } // .entry-title
     
     .date-badge {
         margin: 0 $space-default $space-default-half 0;
@@ -454,6 +459,17 @@
         font-size: 1.33em;
         font-weight: 700;
         line-height: 1.66em;
+
+        @media only screen and (max-width: $breakpoint-extra-small) {
+            font-size: 1.2em;
+            margin-right: $space-default-half + 10px;
+        } // breakpoint extra-small    
+        
+        @media only screen and (max-width: $breakpoint-extra-extra-small) {
+            display: block;
+            width: 100%;
+        } // breakpoint extra-extra-small        
+        
     } // .date-badge
     
     .event-ticket-price {
@@ -464,7 +480,18 @@
         margin-top: 10px;
         font-size: 1.33em;
         cursor: default;
-    }
+        
+        @media only screen and (max-width: $breakpoint-extra-small) {
+            
+            span {
+                display: inline-block;
+                clear: both;
+                width: 100%;
+            }
+            
+        } // breakpoint extra-small
+        
+    } // .event-time-location
     
     .event-time {
         margin-right: $space-default;   
