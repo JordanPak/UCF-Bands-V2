@@ -107,14 +107,14 @@ function ucfbands_event_single_date_badge() {
             
             // If there's a Ticket Link
             if ( $event_ticket_link )
-                echo '<a style="float: right;" class="button button-med button-white" href="' . $event_ticket_link . '" target="_BLANK"><i class="fa fa-ticket"></i>&nbsp;&nbsp;Free Admission</a>';
+                echo '<a class="event-ticket-price button button-med button-white" href="' . $event_ticket_link . '" target="_BLANK"><i class="fa fa-ticket"></i>&nbsp;&nbsp;Free Admission</a>';
             
             else
-                echo '<span style="float: right;" class="button button-med button-white no-hover" href="#"><i class="fa fa-ticket"></i>&nbsp;&nbsp;Free Admission</span>';
+                echo '<span class="event-ticket-price button button-med button-white no-hover" href="#"><i class="fa fa-ticket"></i>&nbsp;&nbsp;Free Admission</span>';
         }
         
         else
-            echo '<a style="float: right;" class="button button-med" href="' . $event_ticket_link . '" target="_BLANK"><i class="fa fa-ticket"></i>&nbsp;&nbsp;Tickets &nbsp;|&nbsp; $' . $event_ticket_price . '</a>';
+            echo '<a class="event-ticket-price button button-med" href="' . $event_ticket_link . '" target="_BLANK"><i class="fa fa-ticket"></i>&nbsp;&nbsp;Tickets &nbsp;|&nbsp; $' . $event_ticket_price . '</a>';
         
         
     } // if there's an event price
