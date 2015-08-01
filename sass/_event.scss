@@ -417,20 +417,35 @@
         .header-left {
             float: left;
             width: 75%;
-        }
+            
+            @media only screen and (max-width: $breakpoint-medium) {
+                float: none;
+                width: 100%;   
+            }
+            
+        } // .header-left
         
         .header-right {
             float: right;
             width: 25%;
-            
             text-align: right;
-        }
+            
+            @media only screen and (max-width: $breakpoint-medium) {
+                float: none;
+                width: 100%;
+                margin-top: $space-default-half + 10px;
+                clear: both;
+                text-align: left;
+            }
+            
+        } // .header-right
         
     } // .entry-header 
     
     .entry-title {
         font-size: 42px;
         cursor: default;
+        margin: 0;
     }
     
     .date-badge {
@@ -445,6 +460,8 @@
     }
     
     .event-time-location {
+        display: inline-block;
+        margin-top: 10px;
         font-size: 1.33em;
         cursor: default;
     }
