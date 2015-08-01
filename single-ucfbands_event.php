@@ -308,7 +308,7 @@ function ucfbands_event_single_content() {
         if ( $show_program ) {
             
             // Wrapper
-            echo '<div class="' . $width_schedule . '"><h2>Program</h2>';
+            echo '<div class="' . $width_program . '"><h2>Program</h2>';
             
             
                 // Start UL
@@ -318,6 +318,15 @@ function ucfbands_event_single_content() {
                     $program = $event_meta['program_group'];            
             
             
+                    //-- PROGRAM LOOP --//
+                    foreach ( $program as $piece ) {
+
+                        // Get Item Meta
+                        $piece_name =   esc_attr( $piece['piece'] );
+                        $piece_note =   $schedule_item['piece_note'];
+                        
+                        
+                    } // foreach program as piece
             
             // Close Wrapper
             echo '</div>';
