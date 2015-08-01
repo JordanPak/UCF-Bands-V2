@@ -340,7 +340,7 @@ function ucfbands_event_single_content() {
                             echo '<span class="piece-title">' . $piece_title . '</span>';
                         
                             // Separator
-                            echo '<span class="piece-separator">&nbsp;&nbsp;&nbsp;&nbsp;</span>';
+//                            echo '<span class="piece-separator">&nbsp;&nbsp;&nbsp;&nbsp;</span>';
                         
                             // Piece Composer
                             echo '<span class="piece-composer">' . $piece_composer . '</span>';

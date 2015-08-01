@@ -2285,7 +2285,8 @@ body.masonry-page .pagination {
 
 .event-program .guest-composer {
   font-style: italic;
-  cursor: default; }
+  cursor: default;
+  padding-left: 5px; }
 .event-program ul {
   margin: 0;
   padding: 0;
@@ -2293,7 +2294,7 @@ body.masonry-page .pagination {
   .event-program ul li {
     list-style-type: none;
     list-style-image: none;
-    padding: 4px;
+    padding: 8px 5px;
     line-height: 1.4em;
     font-weight: 400;
     cursor: default;
@@ -2310,6 +2311,13 @@ body.masonry-page .pagination {
       margin: 0;
       padding: 0;
       font-weight: 300; }
+.event-program > ul > li {
+  border-bottom: 1px solid #d5d0d1; }
+.event-program .piece-title {
+  font-weight: 700; }
+.event-program .piece-composer {
+  float: right;
+  font-size: .85em; }
 
 .single-ucfbands_event .content {
   background-color: #FFFFFF;
