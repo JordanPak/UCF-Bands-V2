@@ -221,6 +221,11 @@
 
 
 .event-program {
+    padding: $space-default-half + 5px;
+    background-color: $ucf-gray-light;
+    border: 1px solid $border-gray;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.075);
+    text-shadow: 1px 1px $white;
     
     .guest-composer {
         font-style: italic;
@@ -242,11 +247,10 @@
             cursor: default;
 
              
-            @include transition-ease-in-out(100ms);
+            @include transition-ease-in-out(120ms);
             
             &:hover {
-                background-color: $ucf-gray-light;
-                text-shadow: 1px 1px $white;
+                background-color: $white;
             }
             
         } // li

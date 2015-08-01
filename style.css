@@ -2283,82 +2283,87 @@ body.masonry-page .pagination {
       list-style-image: none;
       cursor: default; }
 
-.event-program .guest-composer {
-  font-style: italic;
-  cursor: default;
-  padding-left: 5px; }
-.event-program ul {
-  margin: 0;
-  padding: 0;
-  list-style-type: none; }
-  .event-program ul li {
-    list-style-type: none;
-    list-style-image: none;
-    padding: 8px 5px;
-    line-height: 1.4em;
-    font-weight: 400;
+.event-program {
+  padding: 25px;
+  background-color: whitesmoke;
+  border: 1px solid #D4D4D4;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.075);
+  text-shadow: 1px 1px #FFFFFF; }
+  .event-program .guest-composer {
+    font-style: italic;
     cursor: default;
-    transition: all ease-in-out 100ms; }
-    .event-program ul li:hover {
-      background-color: whitesmoke;
-      text-shadow: 1px 1px #FFFFFF; }
-  .event-program ul ul {
+    padding-left: 5px; }
+  .event-program ul {
     margin: 0;
     padding: 0;
-    font-size: .85em;
-    font-style: italic; }
-    .event-program ul ul li {
+    list-style-type: none; }
+    .event-program ul li {
+      list-style-type: none;
+      list-style-image: none;
+      padding: 8px 5px;
+      line-height: 1.4em;
+      font-weight: 400;
+      cursor: default;
+      transition: all ease-in-out 120ms; }
+      .event-program ul li:hover {
+        background-color: #FFFFFF; }
+    .event-program ul ul {
       margin: 0;
       padding: 0;
-      font-weight: 300; }
-.event-program > ul > li {
-  border-bottom: 1px solid #d5d0d1; }
-.event-program .piece-title {
-  font-weight: 700; }
-.event-program .piece-composer {
-  float: right;
-  font-size: .85em; }
-.event-program.style-dotted ul li {
-  padding: 10px 5px 3px 5px; }
-.event-program.style-dotted ul ul {
-  margin: 0;
-  padding: 0; }
-  .event-program.style-dotted ul ul li {
+      font-size: .85em;
+      font-style: italic; }
+      .event-program ul ul li {
+        margin: 0;
+        padding: 0;
+        font-weight: 300; }
+  .event-program > ul > li {
+    border-bottom: 1px solid #d5d0d1; }
+  .event-program .piece-title {
+    font-weight: 700; }
+  .event-program .piece-composer {
+    float: right;
+    font-size: .85em; }
+  .event-program.style-dotted ul li {
+    padding: 10px 5px 3px 5px; }
+  .event-program.style-dotted ul ul {
     margin: 0;
     padding: 0; }
-.event-program.style-dotted > ul > li {
-  border-bottom: 1px dotted #d5d0d1; }
-.event-program.style-centered {
-  text-align: center; }
-  .event-program.style-centered .guest-composer {
-    padding-left: 0px; }
-  .event-program.style-centered ul li {
-    padding: 5px; }
-  .event-program.style-centered > ul > li {
-    border-bottom: 0; }
-  .event-program.style-centered .piece-title {
+    .event-program.style-dotted ul ul li {
+      margin: 0;
+      padding: 0; }
+  .event-program.style-dotted > ul > li {
+    border-bottom: 1px dotted #d5d0d1; }
+  .event-program.style-centered {
+    text-align: center; }
+    .event-program.style-centered .guest-composer {
+      padding-left: 0px; }
+    .event-program.style-centered ul li {
+      padding: 5px; }
+    .event-program.style-centered > ul > li {
+      border-bottom: 0; }
+    .event-program.style-centered .piece-title {
+      font-weight: 700; }
+    .event-program.style-centered .piece-composer {
+      float: none;
+      font-size: 1em; }
+      .event-program.style-centered .piece-composer::before {
+        content: '-';
+        margin: 0 5px; }
+  .event-program.style-simple .guest-composer {
+    padding-left: 5px; }
+  .event-program.style-simple ul li {
+    padding: 0px; }
+  .event-program.style-simple > ul > li {
+    border-bottom: 0;
+    padding: 8px 5px; }
+  .event-program.style-simple .piece-title {
     font-weight: 700; }
-  .event-program.style-centered .piece-composer {
+  .event-program.style-simple .piece-composer {
     float: none;
     font-size: 1em; }
-    .event-program.style-centered .piece-composer::before {
+    .event-program.style-simple .piece-composer::before {
       content: '-';
       margin: 0 5px; }
-.event-program.style-simple .guest-composer {
-  padding-left: 5px; }
-.event-program.style-simple ul li {
-  padding: 0px; }
-.event-program.style-simple > ul > li {
-  border-bottom: 0;
-  padding: 8px 5px; }
-.event-program.style-simple .piece-title {
-  font-weight: 700; }
-.event-program.style-simple .piece-composer {
-  float: none;
-  font-size: 1em; }
-  .event-program.style-simple .piece-composer::before {
-    content: '-';
-    margin: 0 5px; }
 
 .single-ucfbands_event .content {
   background-color: #FFFFFF;
