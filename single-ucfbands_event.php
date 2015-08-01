@@ -153,15 +153,17 @@ function ucfbands_event_single_time_location() {
     echo '</div>';
 
     
-    // Open Header-Right Wrapper
-    echo '<div class="header-right">';
     
-        $event_ticket_price =   $event_meta['ticket_price'];
-        $event_ticket_link =    esc_url( $event_meta['ticket_link'] );
+    $event_ticket_price =   $event_meta['ticket_price'];
+    $event_ticket_link =    esc_url( $event_meta['ticket_link'] );
 
+    
+    // EVENT ADMISSION/TICKET PRICE
+    if ( ($event_ticket_price != '') && ($event_ticket_price != '0.00') ) {
+    
+        // Open Header-Right Wrapper, as needed
+        echo '<div class="header-right">';
 
-        // EVENT ADMISSION/TICKET PRICE
-        if ( ($event_ticket_price != '') && ($event_ticket_price != '0.00') ) {
 
             // Free Admission
             if ( ($event_ticket_price == '0.01') || ($event_ticket_price == '00.01') ) {
@@ -178,11 +180,11 @@ function ucfbands_event_single_time_location() {
                 echo '<a class="event-ticket-price button button-med" href="' . $event_ticket_link . '" target="_BLANK"><i class="fa fa-ticket"></i>&nbsp;&nbsp;Tickets&nbsp;&nbsp;|&nbsp;&nbsp;$' . $event_ticket_price . '</a>';
 
 
-        } // if there's an event price    
+        // Close Header-Right Wrapper
+        echo '</div>';
+        
+    } // if there's an event price    
     
-    
-    // Close Header-Right Wrapper
-    echo '</div>';
     
     
 } // ucfbands_event_single_time_location() 
