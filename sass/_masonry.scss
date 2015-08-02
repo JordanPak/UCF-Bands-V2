@@ -19,8 +19,8 @@
     float: left;
     
     @media only screen and (max-width: $breakpoint-medium) {
-        margin-bottom: $space-default-half;
-        padding: $space-default-half;
+        margin-bottom: 0; //$space-default-half;
+        padding: $space-default; //$space-default-half;
     }
 
 } // .masonry-block
@@ -37,7 +37,12 @@
     // Gutter Sizer
     .masonry-6col-gutter-sizer {
         width: $masonry-gutter-width;
-    }
+        
+        @media only screen and (max-width: $breakpoint-medium) {
+            width: 0%;
+        }
+        
+    } // .masonry-6col-gutter-sizer
 
     
     // One Third
@@ -49,7 +54,7 @@
         }
         
         @media only screen and (max-width: $breakpoint-medium) {
-            width: $masonry-6col-block-width--six-sixths;
+            width: $masonry-6col-block-width--six-sixths-blockless;
         }
         
     } // one-third

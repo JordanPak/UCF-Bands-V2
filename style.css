@@ -1821,6 +1821,9 @@ body {
 body.masonry-page .content-sidebar-wrap {
   padding: 3%;
   padding-right: 0; }
+  @media only screen and (max-width: 1200px) {
+    body.masonry-page .content-sidebar-wrap {
+      padding: 0; } }
 
 body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
   padding: 0; }
@@ -2727,13 +2730,16 @@ body.font-style-athletic.single-ucfbands_event .date-badge {
   float: left; }
   @media only screen and (max-width: 1200px) {
     .masonry-block {
-      margin-bottom: 20px;
-      padding: 20px; } }
+      margin-bottom: 0;
+      padding: 40px; } }
 
 .masonry-6col-grid .masonry-6col-grid-sizer, .masonry-6col-grid .masonry-block {
   width: 13.66667%; }
 .masonry-6col-grid .masonry-6col-gutter-sizer {
   width: 3%; }
+  @media only screen and (max-width: 1200px) {
+    .masonry-6col-grid .masonry-6col-gutter-sizer {
+      width: 0%; } }
 .masonry-6col-grid .masonry-block-size--one-third {
   width: 30.33333%; }
   @media only screen and (max-width: 1700px) {
@@ -2741,7 +2747,7 @@ body.font-style-athletic.single-ucfbands_event .date-badge {
       width: 47.0%; } }
   @media only screen and (max-width: 1200px) {
     .masonry-6col-grid .masonry-block-size--one-third {
-      width: 97.0%; } }
+      width: 100.0%; } }
 .masonry-6col-grid .masonry-block-size--one-half {
   width: 47.0%; }
   @media only screen and (max-width: 1200px) {
