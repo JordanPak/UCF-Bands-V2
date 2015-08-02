@@ -445,11 +445,22 @@
                 text-align: left;
             }
             
+            @media only screen and (max-width: $breakpoint-extra-small) {
+                margin-top: $space-default-half + 10px;
+                padding: 0 $space-default-half + 10px;
+                text-align: center;
+            }            
+            
         } // .header-right
         
 
+        @media only screen and (max-width: $breakpoint-small) {
+            padding: $space-default-half + 10px; 
+        }
+        
         @media only screen and (max-width: $breakpoint-extra-small) {
-            padding: $space-default-half; 
+            padding: 0 0 ($space-default-half + 10px) 0;
+            text-align: center;
         }
         
     } // .entry-header 
@@ -460,6 +471,7 @@
         margin: 0;
         
         @media only screen and (max-width: $breakpoint-extra-small) {
+            padding: $space-default-half + 10px;
             font-size: 36px;
         } // breakpoint extra-small 
         
@@ -473,15 +485,26 @@
         line-height: 1.66em;
 
         @media only screen and (max-width: $breakpoint-extra-small) {
-            font-size: 1.2em;
-            margin-right: $space-default-half + 10px;
-        } // breakpoint extra-small    
-        
-        @media only screen and (max-width: $breakpoint-extra-extra-small) {
             display: block;
+            margin: 0 0 ($space-default-half + 10px) 0;
             width: 100%;
-        } // breakpoint extra-extra-small        
-        
+            font-size: 1.5em;
+            border-width: 0 0 1px 0;
+            
+            br {
+                display: none;   
+            }
+            
+            .month {
+                margin-right: $space-default-half - 10px;
+            }
+            
+            .day {
+                font-size: 1em;   
+            }
+            
+        } // breakpoint extra-small    
+
     } // .date-badge
     
     .event-ticket-price {
@@ -494,8 +517,10 @@
         cursor: default;
         
         @media only screen and (max-width: $breakpoint-extra-small) {
+            margin: 0;
             
             span {
+                margin: 0;
                 display: inline-block;
                 clear: both;
                 width: 100%;
@@ -528,7 +553,7 @@
         margin: 0 $space-default;
         
         @media only screen and (max-width: $breakpoint-extra-small) {
-            margin: $space-default-half;
+            margin: 0 ($space-default-half + 10px);
         }
     
     } // .event-header-hr
@@ -537,7 +562,7 @@
         padding: $space-default;
     
         @media only screen and (max-width: $breakpoint-extra-small) {
-            padding: $space-default-half; 
+            padding: $space-default-half + 10px; 
         }    
         
     } // .entry-content

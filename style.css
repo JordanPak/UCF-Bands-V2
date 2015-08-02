@@ -1813,6 +1813,9 @@ body {
   @media only screen and (max-width: 980px) {
     .content-sidebar-wrap {
       padding: 20px; } }
+  @media only screen and (max-width: 768px) {
+    .content-sidebar-wrap {
+      min-height: 0; } }
 
 body.masonry-page .content-sidebar-wrap {
   padding: 3%;
@@ -2506,15 +2509,25 @@ body.masonry-page .pagination {
         margin-top: 40px;
         clear: both;
         text-align: left; } }
+    @media only screen and (max-width: 600px) {
+      .single-ucfbands_event .entry-header .header-right {
+        margin-top: 30px;
+        padding: 0 30px;
+        text-align: center; } }
+  @media only screen and (max-width: 768px) {
+    .single-ucfbands_event .entry-header {
+      padding: 30px; } }
   @media only screen and (max-width: 600px) {
     .single-ucfbands_event .entry-header {
-      padding: 20px; } }
+      padding: 0 0 30px 0;
+      text-align: center; } }
 .single-ucfbands_event .entry-title {
   font-size: 42px;
   cursor: default;
   margin: 0; }
   @media only screen and (max-width: 600px) {
     .single-ucfbands_event .entry-title {
+      padding: 30px;
       font-size: 36px; } }
 .single-ucfbands_event .date-badge {
   margin-right: 40px;
@@ -2524,22 +2537,30 @@ body.masonry-page .pagination {
   line-height: 1.66em; }
   @media only screen and (max-width: 600px) {
     .single-ucfbands_event .date-badge {
-      font-size: 1.2em;
-      margin-right: 30px; } }
-  @media only screen and (max-width: 380px) {
-    .single-ucfbands_event .date-badge {
       display: block;
-      width: 100%; } }
+      margin: 0 0 30px 0;
+      width: 100%;
+      font-size: 1.5em;
+      border-width: 0 0 1px 0; }
+      .single-ucfbands_event .date-badge br {
+        display: none; }
+      .single-ucfbands_event .date-badge .month {
+        margin-right: 10px; }
+      .single-ucfbands_event .date-badge .day {
+        font-size: 1em; } }
 .single-ucfbands_event .event-time-location {
   display: inline-block;
   margin-top: 10px;
   font-size: 1.33em;
   cursor: default; }
   @media only screen and (max-width: 600px) {
-    .single-ucfbands_event .event-time-location span {
-      display: inline-block;
-      clear: both;
-      width: 100%; } }
+    .single-ucfbands_event .event-time-location {
+      margin: 0; }
+      .single-ucfbands_event .event-time-location span {
+        margin: 0;
+        display: inline-block;
+        clear: both;
+        width: 100%; } }
 .single-ucfbands_event .event-time {
   margin-right: 40px; }
 .single-ucfbands_event .fb-share-button {
@@ -2555,12 +2576,12 @@ body.masonry-page .pagination {
   margin: 0 40px; }
   @media only screen and (max-width: 600px) {
     .single-ucfbands_event .event-header-hr {
-      margin: 20px; } }
+      margin: 0 30px; } }
 .single-ucfbands_event .entry-content {
   padding: 40px; }
   @media only screen and (max-width: 600px) {
     .single-ucfbands_event .entry-content {
-      padding: 20px; } }
+      padding: 30px; } }
 .single-ucfbands_event address {
   font-style: normal; }
 .single-ucfbands_event .event-schedule-repitoire {
