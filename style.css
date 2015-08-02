@@ -1839,7 +1839,7 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
     background-color: #FFFFFF;
     box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
     border: 1px solid #D4D4D4; }
-  @media only screen and (max-width: 1500px) {
+  @media only screen and (max-width: 1700px) {
     .sidebar-primary {
       clear: both;
       width: 100%;
@@ -2161,7 +2161,7 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
     border-bottom: 1px solid whitesmoke;
     padding-bottom: 20px;
     margin-bottom: 20px; }
-  @media only screen and (max-width: 1500px) {
+  @media only screen and (max-width: 1700px) {
     .content {
       margin: 0;
       width: 100%; } }
@@ -2736,9 +2736,12 @@ body.font-style-athletic.single-ucfbands_event .date-badge {
   width: 3%; }
 .masonry-6col-grid .masonry-block-size--one-third {
   width: 30.33333%; }
-  @media only screen and (max-width: 1200px) {
+  @media only screen and (max-width: 1700px) {
     .masonry-6col-grid .masonry-block-size--one-third {
       width: 47.0%; } }
+  @media only screen and (max-width: 1200px) {
+    .masonry-6col-grid .masonry-block-size--one-third {
+      width: 97.0%; } }
 .masonry-6col-grid .masonry-block-size--one-half {
   width: 47.0%; }
   @media only screen and (max-width: 1200px) {

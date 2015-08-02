@@ -43,9 +43,13 @@
     // One Third
     .masonry-block-size--one-third {
         width: $masonry-6col-block-width--two-sixths;
+
+        @media only screen and (max-width: $breakpoint-extra-large) {
+            width: $masonry-6col-block-width--three-sixths;
+        }
         
         @media only screen and (max-width: $breakpoint-medium) {
-            width: $masonry-6col-block-width--three-sixths;
+            width: $masonry-6col-block-width--six-sixths;
         }
         
     } // one-third
