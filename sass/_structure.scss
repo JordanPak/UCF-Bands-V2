@@ -87,6 +87,10 @@ body {
     @media only screen and (max-width: $breakpoint-small-medium) {
         padding: $space-default-half;
     }
+
+    @media only screen and (max-width: $breakpoint-small) {
+        min-height: 0;
+    }
     
 } // .content-sidebar-wrap
 

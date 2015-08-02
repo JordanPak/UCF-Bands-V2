@@ -296,6 +296,11 @@
 
             li {
                 padding: 10px 8px 3px 8px;
+                
+                @media only screen and (max-width: $breakpoint-extra-small) {
+                    padding: 18px 8px 5px 8px;   
+                }
+                
             } // li
 
             ul {
@@ -389,9 +394,24 @@
                 margin: 0 5px;
             }
             
-        } // .piece-composer        
+        } // .piece-composer
         
-    } // .style-simple    
+    } // .style-simple
+    
+    
+    @media only screen and (max-width: $breakpoint-extra-small) {
+
+        .piece-composer {
+            float: none;
+            
+            &::before {
+                content: ' - ';
+                margin: 0 3px;
+            }
+        
+        } // .piece-composer
+        
+    } // Extra-Small Breakpoint
     
 } // .event-program
 
@@ -407,12 +427,15 @@
         
         article {
             padding: 0;
+            margin-bottom: 0;
         }
         
     } // .content
     
     .entry-header {
-        padding: $space-default $space-default 0 $space-default;
+        padding: $space-default;
+        
+        @include clearfix();
         
         .header-left {
             float: left;
@@ -421,6 +444,10 @@
             @media only screen and (max-width: $breakpoint-medium) {
                 float: none;
                 width: 100%;   
+            }
+            
+            &.full-width {
+                width: 100%;
             }
             
         } // .header-left
@@ -433,16 +460,27 @@
             @media only screen and (max-width: $breakpoint-medium) {
                 float: none;
                 width: 100%;
-                margin: ($space-default-half + 10px) 0 $space-default-half 0;
+                margin-top: $space-default;
                 clear: both;
                 text-align: left;
             }
             
+            @media only screen and (max-width: $breakpoint-extra-small) {
+                margin-top: $space-default-half + 10px;
+                padding: 0 $space-default-half + 10px;
+                text-align: center;
+            }            
+            
         } // .header-right
         
 
+        @media only screen and (max-width: $breakpoint-small) {
+            padding: $space-default-half + 10px; 
+        }
+        
         @media only screen and (max-width: $breakpoint-extra-small) {
-            padding: $space-default-half; 
+            padding: 0 0 ($space-default-half + 10px) 0;
+            text-align: center;
         }
         
     } // .entry-header 
@@ -453,28 +491,40 @@
         margin: 0;
         
         @media only screen and (max-width: $breakpoint-extra-small) {
+            padding: $space-default-half + 10px;
             font-size: 36px;
         } // breakpoint extra-small 
         
     } // .entry-title
     
     .date-badge {
-        margin: 0 $space-default $space-default-half 0;
+        margin-right: $space-default;
         padding: 12px 22px;
         font-size: 1.33em;
         font-weight: 700;
         line-height: 1.66em;
 
         @media only screen and (max-width: $breakpoint-extra-small) {
-            font-size: 1.2em;
-            margin-right: $space-default-half + 10px;
-        } // breakpoint extra-small    
-        
-        @media only screen and (max-width: $breakpoint-extra-extra-small) {
             display: block;
+            margin: 0 0 ($space-default-half + 10px) 0;
             width: 100%;
-        } // breakpoint extra-extra-small        
-        
+            font-size: 1.77em;
+            border-width: 0 0 1px 0;
+            
+            br {
+                display: none;   
+            }
+            
+            .month {
+                margin-right: $space-default-half - 10px;
+            }
+            
+            .day {
+                font-size: 1em;   
+            }
+            
+        } // breakpoint extra-small    
+
     } // .date-badge
     
     .event-ticket-price {
@@ -487,8 +537,10 @@
         cursor: default;
         
         @media only screen and (max-width: $breakpoint-extra-small) {
+            margin: 0;
             
             span {
+                margin: 0;
                 display: inline-block;
                 clear: both;
                 width: 100%;
@@ -507,7 +559,7 @@
     }
     
     .attachment-post-thumbnail {
-        margin: $space-default-half 0 ($space-default-half + 10px) 0;
+        margin: 0;
         border-top: 4px solid $ucf-gray-darker;
         border-bottom: 4px solid $ucf-gray-darker;
 
@@ -518,14 +570,19 @@
     } // .attachment-post-thumbnail
     
     .event-header-hr {
-        margin: $space-default;
-    }
+        margin: 0 $space-default;
+        
+        @media only screen and (max-width: $breakpoint-extra-small) {
+            margin: 0 ($space-default-half + 10px);
+        }
+    
+    } // .event-header-hr
     
     .entry-content {
-        padding: 0 $space-default;
+        padding: $space-default;
     
         @media only screen and (max-width: $breakpoint-extra-small) {
-            padding: $space-default-half; 
+            padding: $space-default-half + 10px; 
         }    
         
     } // .entry-content
