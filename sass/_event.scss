@@ -296,6 +296,11 @@
 
             li {
                 padding: 10px 8px 3px 8px;
+                
+                @media only screen and (max-width: $breakpoint-extra-small) {
+                    padding: 18px 8px 5px 8px;   
+                }
+                
             } // li
 
             ul {
@@ -391,7 +396,22 @@
             
         } // .piece-composer
         
-    } // .style-simple    
+    } // .style-simple
+    
+    
+    @media only screen and (max-width: $breakpoint-extra-small) {
+
+        .piece-composer {
+            float: none;
+            
+            &::before {
+                content: ' - ';
+                margin: 0 3px;
+            }
+        
+        } // .piece-composer
+        
+    } // Extra-Small Breakpoint
     
 } // .event-program
 

@@ -2432,6 +2432,9 @@ body.masonry-page .pagination {
     font-size: .85em; }
   .event-program.style-dotted ul li {
     padding: 10px 8px 3px 8px; }
+    @media only screen and (max-width: 600px) {
+      .event-program.style-dotted ul li {
+        padding: 18px 8px 5px 8px; } }
   .event-program.style-dotted ul ul {
     margin: 0;
     padding: 0; }
@@ -2471,6 +2474,12 @@ body.masonry-page .pagination {
     .event-program.style-simple .piece-composer::before {
       content: '-';
       margin: 0 5px; }
+  @media only screen and (max-width: 600px) {
+    .event-program .piece-composer {
+      float: none; }
+      .event-program .piece-composer::before {
+        content: ' - ';
+        margin: 0 3px; } }
 
 .single-ucfbands_event .content {
   position: relative;
