@@ -412,9 +412,7 @@
     } // .content
     
     .entry-header {
-        padding: $space-default $space-default 0 $space-default;
-        height: auto;
-        overflow: auto;
+        padding: $space-default;
         
         .header-left {
             float: left;
@@ -465,7 +463,7 @@
     } // .entry-title
     
     .date-badge {
-        margin: 0 $space-default $space-default-half 0;
+        margin-right: $space-default;
         padding: 12px 22px;
         font-size: 1.33em;
         font-weight: 700;
@@ -513,7 +511,7 @@
     }
     
     .attachment-post-thumbnail {
-        margin: $space-default-half 0 ($space-default-half + 10px) 0;
+        margin: 0;
         border-top: 4px solid $ucf-gray-darker;
         border-bottom: 4px solid $ucf-gray-darker;
 
@@ -524,11 +522,16 @@
     } // .attachment-post-thumbnail
     
     .event-header-hr {
-        margin: $space-default;
-    }
+        margin: 0 $space-default;
+        
+        @media only screen and (max-width: $breakpoint-extra-small) {
+            margin: $space-default-half;
+        }
+    
+    } // .event-header-hr
     
     .entry-content {
-        padding: 0 $space-default;
+        padding: $space-default;
     
         @media only screen and (max-width: $breakpoint-extra-small) {
             padding: $space-default-half; 
