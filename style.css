@@ -1847,6 +1847,97 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
     .sidebar-primary .widget {
       padding: 20px; } }
 
+.one-half, .three-sixths, .two-fourths {
+  float: left;
+  margin-left: 2.564102564102564%;
+  width: 48.717948717948715%; }
+  @media only screen and (max-width: 1200px) {
+    .one-half, .three-sixths, .two-fourths {
+      float: none;
+      clear: both;
+      width: 100%;
+      margin-left: 0; } }
+
+.one-third, .two-sixths {
+  float: left;
+  margin-left: 2.564102564102564%;
+  width: 31.623931623931625%; }
+  @media only screen and (max-width: 1200px) {
+    .one-third, .two-sixths {
+      float: none;
+      clear: both;
+      width: 100%;
+      margin-left: 0; } }
+
+.four-sixths, .two-thirds {
+  float: left;
+  margin-left: 2.564102564102564%;
+  width: 65.81196581196582%; }
+  @media only screen and (max-width: 1200px) {
+    .four-sixths, .two-thirds {
+      float: none;
+      clear: both;
+      width: 100%;
+      margin-left: 0; } }
+
+.one-fourth {
+  float: left;
+  margin-left: 2.564102564102564%;
+  width: 23.076923076923077%; }
+  @media only screen and (max-width: 1200px) {
+    .one-fourth {
+      float: none;
+      clear: both;
+      width: 100%;
+      margin-left: 0; } }
+
+.three-fourths {
+  float: left;
+  margin-left: 2.564102564102564%;
+  width: 74.35897435897436%; }
+  @media only screen and (max-width: 1200px) {
+    .three-fourths {
+      float: none;
+      clear: both;
+      width: 100%;
+      margin-left: 0; } }
+
+.one-sixth {
+  float: left;
+  margin-left: 2.564102564102564%;
+  width: 14.52991452991453%; }
+  @media only screen and (max-width: 1200px) {
+    .one-sixth {
+      float: none;
+      clear: both;
+      width: 100%;
+      margin-left: 0; } }
+
+.five-sixths {
+  float: left;
+  margin-left: 2.564102564102564%;
+  width: 82.90598290598291%; }
+  @media only screen and (max-width: 1200px) {
+    .five-sixths {
+      float: none;
+      clear: both;
+      width: 100%;
+      margin-left: 0; } }
+
+.one-whole {
+  float: left;
+  clear: both;
+  margin-left: 0;
+  width: 100%;
+  margin-left: 0;
+  clear: both; }
+  @media only screen and (max-width: 1200px) {
+    .one-whole {
+      float: none;
+      clear: both;
+      width: 100%;
+      margin-left: 0; } }
+
 #top-bar {
   position: fixed;
   width: 100%;

@@ -132,3 +132,41 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
     } // breakpoint-medium
     
 } // .sidebar-primary
+
+
+
+//===========//
+//  COLUMNS  //
+//===========//
+
+.one-half, .three-sixths, .two-fourths {
+    @include col( 'one-half' );
+}
+
+.one-third, .two-sixths {
+    @include col( 'one-third' );
+}
+
+.four-sixths, .two-thirds {
+    @include col( 'two-thirds' );
+}
+
+.one-fourth {
+    @include col( 'one-fourth' );
+}
+
+.three-fourths {
+    @include col( 'three-fourths' );
+}
+
+.one-sixth {
+    @include col( 'one-sixth' );
+}
+
+.five-sixths {
+    @include col( 'five-sixths' );
+}
+
+.one-whole {
+    @include col( 'one-whole' );
+}
