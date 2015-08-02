@@ -42,6 +42,15 @@
     } // Small-Medium Breakpoint
     
     
+    // Extra-Small Breakpoint
+    @media only screen and (max-width: $breakpoint-extra-small) {
+        
+        .entry, .sidebar-primary .widget, .site-footer {
+            padding: $space-default-half + 10px;
+        }
+        
+    } // Extra-Small Breakpoint
+    
 } // blockless-layout()
 
 
