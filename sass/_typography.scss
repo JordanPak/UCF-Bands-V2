@@ -156,6 +156,8 @@ hr {
  
 .button {
 
+    padding: 8px 18px;
+    
     @include button();
     @include transition-ease-in-out(175ms);
 
