@@ -1833,7 +1833,7 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
       float: none;
       clear: both;
       width: 100%;
-      margin-left: 0; } }
+      margin: 0 0 40px 0; } }
   .sidebar-primary .widget {
     background-color: #FFFFFF;
     box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
@@ -1846,6 +1846,108 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
   @media only screen and (max-width: 1200px) {
     .sidebar-primary .widget {
       padding: 20px; } }
+
+.one-half, .three-sixths, .two-fourths {
+  float: left;
+  margin-left: 2.564102564102564%;
+  width: 48.717948717948715%; }
+  @media only screen and (max-width: 1200px) {
+    .one-half, .three-sixths, .two-fourths {
+      float: none;
+      clear: both;
+      width: 100%;
+      margin: 0 0 40px 0; } }
+
+.one-third, .two-sixths {
+  float: left;
+  margin-left: 2.564102564102564%;
+  width: 31.623931623931625%; }
+  @media only screen and (max-width: 1200px) {
+    .one-third, .two-sixths {
+      float: none;
+      clear: both;
+      width: 100%;
+      margin: 0 0 40px 0; } }
+
+.four-sixths, .two-thirds {
+  float: left;
+  margin-left: 2.564102564102564%;
+  width: 65.81196581196582%; }
+  @media only screen and (max-width: 1200px) {
+    .four-sixths, .two-thirds {
+      float: none;
+      clear: both;
+      width: 100%;
+      margin: 0 0 40px 0; } }
+
+.one-fourth {
+  float: left;
+  margin-left: 2.564102564102564%;
+  width: 23.076923076923077%; }
+  @media only screen and (max-width: 1200px) {
+    .one-fourth {
+      float: none;
+      clear: both;
+      width: 100%;
+      margin: 0 0 40px 0; } }
+
+.three-fourths {
+  float: left;
+  margin-left: 2.564102564102564%;
+  width: 74.35897435897436%; }
+  @media only screen and (max-width: 1200px) {
+    .three-fourths {
+      float: none;
+      clear: both;
+      width: 100%;
+      margin: 0 0 40px 0; } }
+
+.one-sixth {
+  float: left;
+  margin-left: 2.564102564102564%;
+  width: 14.52991452991453%; }
+  @media only screen and (max-width: 1200px) {
+    .one-sixth {
+      float: none;
+      clear: both;
+      width: 100%;
+      margin: 0 0 40px 0; } }
+
+.five-sixths {
+  float: left;
+  margin-left: 2.564102564102564%;
+  width: 82.90598290598291%; }
+  @media only screen and (max-width: 1200px) {
+    .five-sixths {
+      float: none;
+      clear: both;
+      width: 100%;
+      margin: 0 0 40px 0; } }
+
+.one-whole {
+  float: left;
+  clear: both;
+  margin-left: 0;
+  width: 100%;
+  margin-left: 0;
+  clear: both; }
+  @media only screen and (max-width: 1200px) {
+    .one-whole {
+      float: none;
+      clear: both;
+      width: 100%;
+      margin: 0 0 40px 0; } }
+
+.one-half.first, .three-sixths.first, .two-fourths.first,
+.one-third.first, .two-sixths.first,
+.four-sixths.first, .two-thirds.first,
+.one-fourth.first,
+.three-fourths.first,
+.one-sixth.first,
+.five-sixths.first,
+.one-whole.first {
+  clear: both;
+  margin-left: 0; }
 
 #top-bar {
   position: fixed;
@@ -1994,11 +2096,11 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
   padding: 40px; }
   @media only screen and (max-width: 1200px) {
     .entry {
-      margin-bottom: 20px;
+      margin-bottom: 0;
       padding: 20px; } }
   @media only screen and (max-width: 768px) {
     .entry {
-      margin-bottom: 20px;
+      margin-bottom: 0;
       padding: 20px; } }
 
 .entry-content img {
@@ -2049,7 +2151,7 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
       float: none;
       clear: both;
       width: 100%;
-      margin-left: 0; } }
+      margin: 0 0 40px 0; } }
   .content .post, .content .page {
     background-color: #FFFFFF;
     box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
@@ -2595,6 +2697,9 @@ body.masonry-page .pagination {
   font-style: normal; }
 .single-ucfbands_event .event-schedule-repitoire {
   clear: both; }
+  @media only screen and (max-width: 1200px) {
+    .single-ucfbands_event .event-schedule-repitoire hr {
+      display: none; } }
 .single-ucfbands_event #googleMap {
   margin: 20px 0;
   background-color: #FFFFFF;

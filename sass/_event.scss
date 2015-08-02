@@ -593,7 +593,16 @@
     
     .event-schedule-repitoire {
         clear: both;
-    }
+        
+        hr {
+            
+            @media only screen and (max-width: $breakpoint-medium) {
+                display: none;
+            }
+            
+        } // hr
+        
+    } // .event-schedule-repitoire
     
     #googleMap {
         margin: $space-default-half 0;
