@@ -2429,7 +2429,9 @@ body.masonry-page .pagination {
   .single-ucfbands_event .content article {
     padding: 0; }
 .single-ucfbands_event .entry-header {
-  padding: 40px 40px 0 40px; }
+  padding: 40px 40px 0 40px;
+  height: auto;
+  overflow: auto; }
   .single-ucfbands_event .entry-header .header-left {
     float: left;
     width: 75%; }
@@ -2437,6 +2439,8 @@ body.masonry-page .pagination {
       .single-ucfbands_event .entry-header .header-left {
         float: none;
         width: 100%; } }
+    .single-ucfbands_event .entry-header .header-left.full-width {
+      width: 100%; }
   .single-ucfbands_event .entry-header .header-right {
     float: right;
     width: 25%;

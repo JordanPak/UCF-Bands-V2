@@ -413,6 +413,8 @@
     
     .entry-header {
         padding: $space-default $space-default 0 $space-default;
+        height: auto;
+        overflow: auto;
         
         .header-left {
             float: left;
@@ -421,6 +423,10 @@
             @media only screen and (max-width: $breakpoint-medium) {
                 float: none;
                 width: 100%;   
+            }
+            
+            &.full-width {
+                width: 100%;
             }
             
         } // .header-left

@@ -94,9 +94,20 @@ function ucfbands_event_single_date_badge() {
     );
     
     
+    // Get Ticket Info
+    $event_ticket_price =   $event_meta['ticket_price'];
+    $event_ticket_link =    esc_url( $event_meta['ticket_link'] );
+    
+    
+    $header_class_extra = '';
+    
+    // If there's no ticket info, add class to make header-left 100%
+    if ( ($event_ticket_price == '') || ($event_ticket_price == '0.00') )
+        $header_class_extra = ' full-width';
+    
     // Header-Left Wrapper
-    echo '<div class="header-left">';
-
+    echo '<div class="header-left' . $header_class_extra . '">';
+        
         echo $event_date;
     
 } // ucfbands_event_single_date_badge()
