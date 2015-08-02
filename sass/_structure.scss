@@ -170,3 +170,19 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
 .one-whole {
     @include col( 'one-whole' );
 }
+
+.one-half, .three-sixths, .two-fourths,
+.one-third, .two-sixths,
+.four-sixths, .two-thirds,
+.one-fourth,
+.three-fourths,
+.one-sixth,
+.five-sixths,
+.one-whole {
+    
+    &.first {
+        clear: both;
+        margin-left: 0;
+    }
+    
+} // All Column Widths

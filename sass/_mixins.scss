@@ -251,7 +251,7 @@ body.single-ucfbands_event
 //  COLUMNS  //
 //===========//
 
-@mixin col($width, $is-first: false) {
+@mixin col( $width, $is-first: false ) {
     
     float: left;
     

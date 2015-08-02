@@ -1938,6 +1938,17 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
       width: 100%;
       margin-left: 0; } }
 
+.one-half.first, .three-sixths.first, .two-fourths.first,
+.one-third.first, .two-sixths.first,
+.four-sixths.first, .two-thirds.first,
+.one-fourth.first,
+.three-fourths.first,
+.one-sixth.first,
+.five-sixths.first,
+.one-whole.first {
+  clear: both;
+  margin-left: 0; }
+
 #top-bar {
   position: fixed;
   width: 100%;
