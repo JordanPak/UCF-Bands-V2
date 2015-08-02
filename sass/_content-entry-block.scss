@@ -10,12 +10,12 @@
     padding: $space-default;
     
     @media only screen and (max-width: $breakpoint-medium) {
-        margin-bottom: $space-default-half;
+        margin-bottom: 0;
         padding: $space-default-half;
     }
     
     @media only screen and (max-width: $breakpoint-small) {
-        margin-bottom: $space-default-half;
+        margin-bottom: 0;
         padding: $space-default-half;
     }
     

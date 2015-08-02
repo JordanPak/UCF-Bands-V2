@@ -1833,7 +1833,7 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
       float: none;
       clear: both;
       width: 100%;
-      margin-left: 0; } }
+      margin: 0 0 40px 0; } }
   .sidebar-primary .widget {
     background-color: #FFFFFF;
     box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
@@ -1856,7 +1856,7 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
       float: none;
       clear: both;
       width: 100%;
-      margin-left: 0; } }
+      margin: 0 0 40px 0; } }
 
 .one-third, .two-sixths {
   float: left;
@@ -1867,7 +1867,7 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
       float: none;
       clear: both;
       width: 100%;
-      margin-left: 0; } }
+      margin: 0 0 40px 0; } }
 
 .four-sixths, .two-thirds {
   float: left;
@@ -1878,7 +1878,7 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
       float: none;
       clear: both;
       width: 100%;
-      margin-left: 0; } }
+      margin: 0 0 40px 0; } }
 
 .one-fourth {
   float: left;
@@ -1889,7 +1889,7 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
       float: none;
       clear: both;
       width: 100%;
-      margin-left: 0; } }
+      margin: 0 0 40px 0; } }
 
 .three-fourths {
   float: left;
@@ -1900,7 +1900,7 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
       float: none;
       clear: both;
       width: 100%;
-      margin-left: 0; } }
+      margin: 0 0 40px 0; } }
 
 .one-sixth {
   float: left;
@@ -1911,7 +1911,7 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
       float: none;
       clear: both;
       width: 100%;
-      margin-left: 0; } }
+      margin: 0 0 40px 0; } }
 
 .five-sixths {
   float: left;
@@ -1922,7 +1922,7 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
       float: none;
       clear: both;
       width: 100%;
-      margin-left: 0; } }
+      margin: 0 0 40px 0; } }
 
 .one-whole {
   float: left;
@@ -1936,7 +1936,7 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
       float: none;
       clear: both;
       width: 100%;
-      margin-left: 0; } }
+      margin: 0 0 40px 0; } }
 
 .one-half.first, .three-sixths.first, .two-fourths.first,
 .one-third.first, .two-sixths.first,
@@ -2096,11 +2096,11 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
   padding: 40px; }
   @media only screen and (max-width: 1200px) {
     .entry {
-      margin-bottom: 20px;
+      margin-bottom: 0;
       padding: 20px; } }
   @media only screen and (max-width: 768px) {
     .entry {
-      margin-bottom: 20px;
+      margin-bottom: 0;
       padding: 20px; } }
 
 .entry-content img {
@@ -2151,7 +2151,7 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
       float: none;
       clear: both;
       width: 100%;
-      margin-left: 0; } }
+      margin: 0 0 40px 0; } }
   .content .post, .content .page {
     background-color: #FFFFFF;
     box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
@@ -2697,6 +2697,9 @@ body.masonry-page .pagination {
   font-style: normal; }
 .single-ucfbands_event .event-schedule-repitoire {
   clear: both; }
+  @media only screen and (max-width: 1200px) {
+    .single-ucfbands_event .event-schedule-repitoire hr {
+      display: none; } }
 .single-ucfbands_event #googleMap {
   margin: 20px 0;
   background-color: #FFFFFF;
