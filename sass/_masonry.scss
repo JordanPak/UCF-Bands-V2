@@ -116,13 +116,17 @@
     .masonry-block-size--one-fourth {
         width: $masonry-4col-block-width--one-fourth;   
     
-        @media only screen and (max-width: $breakpoint-large) {
+        @media only screen and (max-width: $breakpoint-extra-large) {
             width: $masonry-4col-block-width--two-fourths;
         }
         
         @media only screen and (max-width: $breakpoint-medium) {
             width: $masonry-4col-block-width--two-fourths;
         } 
+        
+        @media only screen and (max-width: $breakpoint-small-medium) {
+            width: $masonry-4col-block-width--four-fourths;
+        }         
         
     } // one-fourth
     

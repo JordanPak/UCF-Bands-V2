@@ -2767,12 +2767,15 @@ body.font-style-athletic.single-ucfbands_event .date-badge {
   width: 3%; }
 .masonry-4col-grid .masonry-block-size--one-fourth {
   width: 22%; }
-  @media only screen and (max-width: 1366px) {
+  @media only screen and (max-width: 1700px) {
     .masonry-4col-grid .masonry-block-size--one-fourth {
       width: 47%; } }
   @media only screen and (max-width: 1200px) {
     .masonry-4col-grid .masonry-block-size--one-fourth {
       width: 47%; } }
+  @media only screen and (max-width: 980px) {
+    .masonry-4col-grid .masonry-block-size--one-fourth {
+      width: 97%; } }
 .masonry-4col-grid .masonry-block-size--one-half {
   width: 47%; }
   @media only screen and (max-width: 1200px) {
