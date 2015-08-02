@@ -2427,7 +2427,8 @@ body.masonry-page .pagination {
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
   border: 1px solid #D4D4D4; }
   .single-ucfbands_event .content article {
-    padding: 0; }
+    padding: 0;
+    margin-bottom: 0; }
 .single-ucfbands_event .entry-header {
   padding: 40px; }
   .single-ucfbands_event .entry-header:before {
@@ -2454,7 +2455,7 @@ body.masonry-page .pagination {
       .single-ucfbands_event .entry-header .header-right {
         float: none;
         width: 100%;
-        margin: 30px 0 20px 0;
+        margin-top: 40px;
         clear: both;
         text-align: left; } }
   @media only screen and (max-width: 600px) {
