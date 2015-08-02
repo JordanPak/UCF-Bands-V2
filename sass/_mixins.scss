@@ -7,12 +7,48 @@
 //  BLOCXLESS LAYOUT  //
 //====================//
 
+
 @mixin blockless-layout() {
     
+    // Small-Medium Breakpoint
+    @media only screen and (max-width: $breakpoint-small-medium) {
     
+        .site-inner {
+            background: $white;
+            box-shadow: none;
+        }
+        
+        .content-sidebar-wrap {
+            padding: 0;   
+        }
+        
+        .content .page {
+            border: 0;   
+            box-shadow: none;
+        }
+        
+        .entry {
+            padding: $space-default;
+        }
+        
+        .sidebar-primary .widget {
+            margin: 0;
+            padding: $space-default;
+            background: none;
+            border: 0;
+            box-shadow: none;
+        }
+        
+    } // Small-Medium Breakpoint
     
     
 } // blockless-layout()
+
+
+// Apply
+body.page-template-default {
+    @include blockless-layout();
+} // Apply Blockless Layout
 
 
 
