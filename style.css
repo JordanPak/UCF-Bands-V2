@@ -2430,6 +2430,13 @@ body.masonry-page .pagination {
     padding: 0; }
 .single-ucfbands_event .entry-header {
   padding: 40px; }
+  .single-ucfbands_event .entry-header:before {
+    content: " ";
+    display: table; }
+  .single-ucfbands_event .entry-header:after {
+    clear: both;
+    content: " ";
+    display: table; }
   .single-ucfbands_event .entry-header .header-left {
     float: left;
     width: 75%; }

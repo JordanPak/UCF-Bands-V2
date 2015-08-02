@@ -389,7 +389,7 @@
                 margin: 0 5px;
             }
             
-        } // .piece-composer        
+        } // .piece-composer
         
     } // .style-simple    
     
@@ -413,6 +413,8 @@
     
     .entry-header {
         padding: $space-default;
+        
+        @include clearfix();
         
         .header-left {
             float: left;
