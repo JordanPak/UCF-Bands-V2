@@ -55,7 +55,9 @@
 
 
 // Apply
-body.page-template-default {
+body.page-template-default,
+body.page-template-page_section
+{
     @include blockless-layout();
 } // Apply Blockless Layout
 
