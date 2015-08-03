@@ -124,6 +124,12 @@ $masonry-6col-block-width--three-sixths:    ($masonry-6col-base-column-width * 3
 $masonry-6col-block-width--four-sixths:     ($masonry-6col-base-column-width * 4) - $masonry-gutter-width; // Two Thirds
 $masonry-6col-block-width--six-sixths:      ($masonry-6col-base-column-width * 6) - $masonry-gutter-width; // One Whole
 
+// Blockless Layout Widths
+$masonry-6col-block-width--two-sixths-blockless:    ($masonry-6col-base-column-width * 2);
+$masonry-6col-block-width--three-sixths-blockless:  ($masonry-6col-base-column-width * 3);
+$masonry-6col-block-width--four-sixths-blockless:   ($masonry-6col-base-column-width * 4);
+$masonry-6col-block-width--six-sixths-blockless:    ($masonry-6col-base-column-width * 6);
+
 
 
 // 4-Col Layout Sizer
@@ -135,6 +141,12 @@ $masonry-4col-block-width--one-fourth:      ($masonry-4col-base-column-width * 1
 $masonry-4col-block-width--two-fourths:     ($masonry-4col-base-column-width * 2) - $masonry-gutter-width; // One Half
 $masonry-4col-block-width--three-fourths:   ($masonry-4col-base-column-width * 3) - $masonry-gutter-width; // Three Fourths
 $masonry-4col-block-width--four-fourths:    ($masonry-4col-base-column-width * 4) - $masonry-gutter-width; // One Whole
+
+// Blockless Layout Widths
+$masonry-4col-block-width--one-fourth-blockless:    ($masonry-4col-base-column-width * 1);
+$masonry-4col-block-width--two-fourths-blockless:   ($masonry-4col-base-column-width * 2);
+$masonry-4col-block-width--three-fourths-blockless: ($masonry-4col-base-column-width * 3);
+$masonry-4col-block-width--four-fourths-blockless:  ($masonry-4col-base-column-width * 4);
 
 
 
@@ -164,7 +176,7 @@ $font-family-athletic:      'Oswald', 'Roboto', sans-serif;
     $breakpoint-small-medium:       980px;      // Small Medium up to Medium
     $breakpoint-medium:             1200px;     // Medium up to Large (Desktop)
     $breakpoint-large:              1366px;     // Large (Desktop) to Extra Large
-    $breakpoint-extra-large:        1500px;     // Extra Large to Extra Extra Large)
+    $breakpoint-extra-large:        1700px;     // Extra Large to Extra Extra Large)
     $breakpoint-extra-extra-large:  1920px;     // Extra Extra Large and Greater
     
     $breakpoint-height-large:       850px;      // To be used with menu fixing vs absolute
