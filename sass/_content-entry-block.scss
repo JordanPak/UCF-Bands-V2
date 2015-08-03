@@ -91,6 +91,14 @@
         .block-title {
             text-shadow: $text-shadow-white-med;
         }
+        
+        @include breakpoint( small-medium ) {
+            padding: $space-default;
+        }
+        
+        @include breakpoint( small ) {
+            padding: $space-default-half + 10px;   
+        }
     
     } // &.block-remove-background-padding
     

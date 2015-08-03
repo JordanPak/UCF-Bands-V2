@@ -2130,6 +2130,12 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
     box-shadow: none; }
     .block.block-remove-background-padding .block-title {
       text-shadow: 0 0 3px #FFFFFF, 1px 1px 1px #FFFFFF, 0 0 3px #FFFFFF, 2px 2px 1px #FFFFFF; }
+    @media (max-width: 980px) {
+      .block.block-remove-background-padding {
+        padding: 40px; } }
+    @media (max-width: 768px) {
+      .block.block-remove-background-padding {
+        padding: 30px; } }
 
 .content {
   float: left;
