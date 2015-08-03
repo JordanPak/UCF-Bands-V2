@@ -2171,6 +2171,9 @@ body.masonry-page .pagination {
 @media (max-width: 980px) {
   .pagination {
     padding: 0 40px; } }
+@media (max-width: 768px) {
+  .pagination {
+    padding: 0 30px; } }
 
 .site-footer {
   position: fixed;

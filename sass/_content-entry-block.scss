@@ -155,4 +155,8 @@ body.masonry-page .pagination {
         padding: 0 $space-default;   
     }
     
+    @include breakpoint( small ) {
+        padding: 0 ($space-default-half + 10px);   
+    }
+    
 } // .pagination
