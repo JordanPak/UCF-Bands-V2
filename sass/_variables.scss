@@ -123,7 +123,12 @@ $masonry-6col-block-width--two-sixths:      ($masonry-6col-base-column-width * 2
 $masonry-6col-block-width--three-sixths:    ($masonry-6col-base-column-width * 3) - $masonry-gutter-width; // One Half
 $masonry-6col-block-width--four-sixths:     ($masonry-6col-base-column-width * 4) - $masonry-gutter-width; // Two Thirds
 $masonry-6col-block-width--six-sixths:      ($masonry-6col-base-column-width * 6) - $masonry-gutter-width; // One Whole
-$masonry-6col-block-width--six-sixths-blockless: ($masonry-6col-base-column-width * 6);
+
+// Blockless Layout Widths
+$masonry-6col-block-width--two-sixths-blockless:    ($masonry-6col-base-column-width * 2);
+$masonry-6col-block-width--three-sixths-blockless:  ($masonry-6col-base-column-width * 3);
+$masonry-6col-block-width--four-sixths-blockless:   ($masonry-6col-base-column-width * 4);
+$masonry-6col-block-width--six-sixths-blockless:    ($masonry-6col-base-column-width * 6);
 
 
 

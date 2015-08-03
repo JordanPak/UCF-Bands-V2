@@ -65,7 +65,7 @@
         width: $masonry-6col-block-width--three-sixths;
         
         @media only screen and (max-width: $breakpoint-medium) {
-            width: $masonry-6col-block-width--six-sixths;
+            width: $masonry-6col-block-width--six-sixths-blockless;
         }
         
     } // one-half
@@ -76,7 +76,7 @@
         width: $masonry-6col-block-width--four-sixths;
 
         @media only screen and (max-width: $breakpoint-medium) {
-            width: $masonry-6col-block-width--six-sixths;
+            width: $masonry-6col-block-width--six-sixths-blockless;
         }
         
     } // two-thirds
@@ -84,7 +84,7 @@
     
     // One Whole
     .masonry-block-size--one-whole {
-        width: $masonry-6col-block-width--six-sixths;
+        width: $masonry-6col-block-width--six-sixths-blockless;
     }
     
     
