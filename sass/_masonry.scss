@@ -19,8 +19,12 @@
     float: left;
     
     @media only screen and (max-width: $breakpoint-small-medium) {
-        margin-bottom: 0; //$space-default-half;
-        padding: $space-default; //$space-default-half;
+        margin-bottom: 0;
+        padding: $space-default;
+    }
+
+    @media only screen and (max-width: $breakpoint-extra-small) {
+        padding: $space-default-half + 10px;
     }
     
     &.block {
