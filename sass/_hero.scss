@@ -137,7 +137,7 @@
     
     } // extra-small
     
-    @media only screen and (max-width: $breakpoint-extra-extra-small) {
+    @include breakpoint( extra-extra-small ) {
         
         &.hero-lg, &.hero-med, &.hero-sm {
             padding: ($space-default-half + 10px);

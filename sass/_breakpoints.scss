@@ -33,8 +33,8 @@
     
     //-- WIDTHS --//
     
-    @if $class == 'extra-extra-small' {
-        @media only screen and (max-width: $breakpoint-extra-extra-small) { @content; }
+    @if $class == extra-extra-small {
+        @media (max-width: $breakpoint-extra-extra-small) { @content; }
     }
 
     @if $class == extra-small {
@@ -79,8 +79,8 @@
     
     //-- NOT FOUND --//
     
-    @else {
-        @warn "Breakpoint mixin supports: extra-extra-small, extra-small, small, small-medium, medium, large, extra-large, and extra-extra-large";
-    }
-    
+//    @else {
+//        @warn "Breakpoint mixin supports: extra-extra-small, extra-small, small, small-medium, medium, large, extra-large, and extra-extra-large";
+//    }
+
 } // breakpoint()

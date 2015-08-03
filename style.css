@@ -2299,7 +2299,7 @@ body.masonry-page .pagination {
       font-size: 2.75em; }
     .hero p {
       font-size: 1.2em; } }
-  @media only screen and (max-width: 380px) {
+  @media (max-width: 380px) {
     .hero.hero-lg, .hero.hero-med, .hero.hero-sm {
       padding: 30px; }
       .hero.hero-lg h2, .hero.hero-med h2, .hero.hero-sm h2 {
