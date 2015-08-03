@@ -1994,6 +1994,10 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
     .site-header {
       position: absolute; } }
 
+@media only screen and (max-width: 768px) {
+  .header-full-width .title-area {
+    width: auto; } }
+
 .site-header .header-widget-area {
   float: none;
   text-align: left;
