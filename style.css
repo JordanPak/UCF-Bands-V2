@@ -2146,6 +2146,10 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
     background-color: #FFFFFF;
     box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
     border: 1px solid #D4D4D4; }
+    @media (max-width: 980px) {
+      .content .post, .content .page {
+        border: 0;
+        box-shadow: none; } }
   .content .type-page h1 {
     border-bottom: 1px solid whitesmoke;
     padding-bottom: 20px;

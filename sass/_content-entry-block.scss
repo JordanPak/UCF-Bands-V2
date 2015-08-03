@@ -102,10 +102,16 @@
     @include col('three-fourths', true);
     
     .post, .page {
+        
         @include block();
-    }
+        
+        @include breakpoint( small-medium ) {
+            border: 0;
+            box-shadow: none;
+        }
+        
+    } // .post, .page
     
-//    .type-page h1, .type-ucfbands_event h1 {
     .type-page h1 {
         border-bottom: 1px solid $ucf-gray-light;
         padding-bottom: $space-default-half;
