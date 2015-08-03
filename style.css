@@ -2753,7 +2753,7 @@ body.font-style-athletic.single-ucfbands_event .date-badge {
   .masonry-6col-grid .masonry-block-size--one-half,
   .masonry-6col-grid .masonry-block-size--two-thirds,
   .masonry-6col-grid .masonry-block-size--one-whole {
-    width: 97.0%; } }
+    width: 100.0%; } }
 
 .masonry-4col-grid .masonry-4col-grid-sizer, .masonry-4col-grid .masonry-block {
   width: 22%; }
@@ -2766,20 +2766,20 @@ body.font-style-athletic.single-ucfbands_event .date-badge {
       width: 47%; } }
   @media only screen and (max-width: 1200px) {
     .masonry-4col-grid .masonry-block-size--one-fourth {
-      width: 47%; } }
+      width: 50%; } }
   @media only screen and (max-width: 980px) {
     .masonry-4col-grid .masonry-block-size--one-fourth {
-      width: 97%; } }
+      width: 100%; } }
 .masonry-4col-grid .masonry-block-size--one-half {
   width: 47%; }
   @media only screen and (max-width: 1200px) {
     .masonry-4col-grid .masonry-block-size--one-half {
-      width: 97%; } }
+      width: 100%; } }
 .masonry-4col-grid .masonry-block-size--three-fourths {
   width: 72%; }
   @media only screen and (max-width: 1366px) {
     .masonry-4col-grid .masonry-block-size--three-fourths {
-      width: 97%; } }
+      width: 100%; } }
 .masonry-4col-grid .masonry-block-size--one-whole {
   width: 97%; }
 @media only screen and (max-width: 768px) {
@@ -2787,7 +2787,7 @@ body.font-style-athletic.single-ucfbands_event .date-badge {
   .masonry-4col-grid .masonry-block-size--one-half,
   .masonry-4col-grid .masonry-block-size--three-fourths,
   .masonry-4col-grid .masonry-block-size--one-whole {
-    width: 97%; } }
+    width: 100%; } }
 
 .masonry-breaker-block {
   margin: 0;

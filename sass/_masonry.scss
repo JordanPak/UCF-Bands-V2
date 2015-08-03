@@ -28,7 +28,7 @@
         @media only screen and (max-width: $breakpoint-medium) {
             border: 0;
             box-shadow: none;
-        }
+        } // Medium Breakpoint
         
     } // .block
 
@@ -104,7 +104,7 @@
     .masonry-block-size--one-whole {
         
         @media only screen and (max-width: $breakpoint-small) {
-            width: $masonry-6col-block-width--six-sixths;
+            width: $masonry-6col-block-width--six-sixths-blockless;
         }        
         
     } // Global Queries    
@@ -135,11 +135,11 @@
         }
         
         @media only screen and (max-width: $breakpoint-medium) {
-            width: $masonry-4col-block-width--two-fourths;
+            width: $masonry-4col-block-width--two-fourths-blockless;
         } 
         
         @media only screen and (max-width: $breakpoint-small-medium) {
-            width: $masonry-4col-block-width--four-fourths;
+            width: $masonry-4col-block-width--four-fourths-blockless;
         }         
         
     } // one-fourth
@@ -150,7 +150,7 @@
         width: $masonry-4col-block-width--two-fourths;
         
         @media only screen and (max-width: $breakpoint-medium) {
-            width: $masonry-4col-block-width--four-fourths;
+            width: $masonry-4col-block-width--four-fourths-blockless;
         }
         
     } // one-half
@@ -161,7 +161,7 @@
         width: $masonry-4col-block-width--three-fourths;   
     
         @media only screen and (max-width: $breakpoint-large) {
-            width: $masonry-4col-block-width--four-fourths;
+            width: $masonry-4col-block-width--four-fourths-blockless;
         }
         
     } // three-fourths
@@ -180,7 +180,7 @@
     .masonry-block-size--one-whole {
         
         @media only screen and (max-width: $breakpoint-small) {
-            width: $masonry-4col-block-width--four-fourths;
+            width: $masonry-4col-block-width--four-fourths-blockless;
         }        
         
     } // Global Queries
