@@ -1,0 +1,53 @@
+//========================================//
+//  UCFBANDS V2 | RESPONSIVE BREAKPOINTS  //
+//========================================//
+
+
+
+//=============//
+//  VARIABLES  //
+//=============//
+
+//  BREAKPOINT                      Width       DESCRIPTION
+//  ----------------------------------------------------------------------------------
+    $breakpoint-extra-extra-small:  380px;      // Extra Extra Small up to Extra Small
+    $breakpoint-extra-small:        600px;      // Extra Small up tp Small
+    $breakpoint-small:              768px;      // Small up to Small Medium
+    $breakpoint-small-medium:       980px;      // Small Medium up to Medium
+    $breakpoint-medium:             1200px;     // Medium up to Large (Desktop)
+    $breakpoint-large:              1366px;     // Large (Desktop) to Extra Large
+    $breakpoint-extra-large:        1700px;     // Extra Large to Extra Extra Large)
+    $breakpoint-extra-extra-large:  1920px;     // Extra Extra Large and Greater
+    
+    $breakpoint-height-large:       850px;      // To be used with menu fixing vs absolute
+    $breakpoint-height-medium:      740px;      
+
+
+
+//=========//
+//  MIXIN  //
+//=========//
+
+@mixin breakpoint($class) {
+    
+  @if $class == xs {
+    @media (max-width: 767px) { @content; }
+  }
+ 
+  @else if $class == sm {
+    @media (min-width: 768px) { @content; }
+  }
+ 
+  @else if $class == md {
+    @media (min-width: 992px) { @content; }
+  }
+ 
+  @else if $class == lg {
+    @media (min-width: 1200px) { @content; }
+  }
+ 
+  @else {
+    @warn "Breakpoint mixin supports: xs, sm, md, lg";
+  }
+    
+} // breakpoint()
