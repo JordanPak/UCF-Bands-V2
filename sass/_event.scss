@@ -12,6 +12,18 @@
     padding: $space-default-half;
 
     @include block();
+    
+    @include breakpoint( small-medium ) {
+        padding: $space-default-half $space-default;
+        border: 0;
+        box-shadow: none;
+        background: $ucf-gray-light;
+        text-shadow: $text-shadow-white-sm;
+    }
+    
+    @include breakpoint( extra-small ) {
+        padding: $space-default-half ($space-default-half + 10px);   
+    }
 
     .more-info {
         display: inline-block;

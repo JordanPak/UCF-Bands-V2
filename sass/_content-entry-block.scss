@@ -93,12 +93,22 @@
         }
         
         @include breakpoint( small-medium ) {
-            padding: $space-default;
-        }
+            padding: $space-default 0;
+            
+            .block-title {
+                padding: $space-default $space-default 0 $space-default;
+            }
+            
+        } // small-medium
         
-        @include breakpoint( small ) {
-            padding: $space-default-half + 10px;   
-        }
+        @include breakpoint( extra-small ) {
+            padding: ($space-default-half + 10px) 0;
+            
+            .block-title {
+                padding: ($space-default-half + 10px) ($space-default-half + 10px) 0 ($space-default-half + 10px);
+            }
+            
+        } // small
     
     } // &.block-remove-background-padding
     
