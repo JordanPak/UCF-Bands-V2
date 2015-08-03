@@ -59,6 +59,15 @@
     
 } // .site-header
 
+// Mobile Fix
+.header-full-width .title-area {
+    
+    @media only screen and (max-width: $breakpoint-small) {
+        width: auto;
+    }
+    
+} // .header-full-width .title-area
+
 .site-header .header-widget-area {
     float: none;
     text-align: left;
