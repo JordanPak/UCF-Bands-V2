@@ -1325,7 +1325,7 @@ li.comment {
 
   .sidebar .widget.enews-widget {
     padding: 40px; } }
-@media only screen and (max-width: 980px) {
+@media (max-width: 980px) {
   body .site-inner {
     background: #FFFFFF;
     box-shadow: none; }
@@ -1349,7 +1349,7 @@ li.comment {
     background: none; }
   body.single-ucfbands_event .entry {
     background: none; } }
-@media only screen and (max-width: 600px) {
+@media (max-width: 600px) {
   body .entry, body .sidebar-primary .widget, body .site-footer {
     padding: 30px; } }
 
@@ -1474,7 +1474,7 @@ h1, h2, h3, h4, h5, h6 {
 h1.section-page-title {
   margin-bottom: 40px;
   text-shadow: 0 0 8px #FFFFFF, 0 0 2px #FFFFFF, 1px 1px 2px #FFFFFF, 2px 2px 3px #FFFFFF; }
-  @media only screen and (max-width: 768px) {
+  @media (max-width: 768px) {
     h1.section-page-title {
       text-align: center;
       margin-top: 20px; } }
@@ -1756,7 +1756,7 @@ i.mkmc-note {
 
 body {
   background: #221E1F; }
-  @media only screen and (max-width: 768px) {
+  @media (max-width: 768px) {
     body {
       padding-top: 74px; } }
 
@@ -1775,10 +1775,10 @@ body {
   border-left: 5px solid #FFCA06;
   background: whitesmoke;
   box-shadow: inset 1px 0 #a89c9f, inset 7px 0 5px -7px rgba(0, 0, 0, 0.5); }
-  @media only screen and (max-width: 1200px) {
+  @media (max-width: 1200px) {
     .site-inner {
       margin-left: 230px; } }
-  @media only screen and (max-width: 768px) {
+  @media (max-width: 768px) {
     .site-inner {
       margin-left: 0;
       border-left: 0;
@@ -1791,17 +1791,17 @@ body {
   background-image: url("images/pegasus-bg.png");
   background-repeat: no-repeat;
   background-position: -100px 25px; }
-  @media only screen and (max-width: 980px) {
+  @media (max-width: 980px) {
     .content-sidebar-wrap {
       padding: 30px; } }
-  @media only screen and (max-width: 768px) {
+  @media (max-width: 768px) {
     .content-sidebar-wrap {
       min-height: 0; } }
 
 body.masonry-page .content-sidebar-wrap {
   padding: 3%;
   padding-right: 0; }
-  @media only screen and (max-width: 980px) {
+  @media (max-width: 980px) {
     body.masonry-page .content-sidebar-wrap {
       padding: 0; } }
 
@@ -1812,7 +1812,7 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
   float: left;
   margin-left: 2.564102564102564%;
   width: 23.076923076923077%; }
-  @media only screen and (max-width: 1200px) {
+  @media (max-width: 1200px) {
     .sidebar-primary {
       float: none;
       clear: both;
@@ -1822,12 +1822,12 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
     background-color: #FFFFFF;
     box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
     border: 1px solid #D4D4D4; }
-  @media only screen and (max-width: 1700px) {
+  @media (max-width: 1700px) {
     .sidebar-primary {
       clear: both;
       width: 100%;
       margin: 0; } }
-  @media only screen and (max-width: 1200px) {
+  @media (max-width: 1200px) {
     .sidebar-primary .widget {
       padding: 20px; } }
 
@@ -1835,7 +1835,7 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
   float: left;
   margin-left: 2.564102564102564%;
   width: 48.717948717948715%; }
-  @media only screen and (max-width: 1200px) {
+  @media (max-width: 1200px) {
     .one-half, .three-sixths, .two-fourths {
       float: none;
       clear: both;
@@ -1846,7 +1846,7 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
   float: left;
   margin-left: 2.564102564102564%;
   width: 31.623931623931625%; }
-  @media only screen and (max-width: 1200px) {
+  @media (max-width: 1200px) {
     .one-third, .two-sixths {
       float: none;
       clear: both;
@@ -1857,7 +1857,7 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
   float: left;
   margin-left: 2.564102564102564%;
   width: 65.81196581196582%; }
-  @media only screen and (max-width: 1200px) {
+  @media (max-width: 1200px) {
     .four-sixths, .two-thirds {
       float: none;
       clear: both;
@@ -1868,7 +1868,7 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
   float: left;
   margin-left: 2.564102564102564%;
   width: 23.076923076923077%; }
-  @media only screen and (max-width: 1200px) {
+  @media (max-width: 1200px) {
     .one-fourth {
       float: none;
       clear: both;
@@ -1879,7 +1879,7 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
   float: left;
   margin-left: 2.564102564102564%;
   width: 74.35897435897436%; }
-  @media only screen and (max-width: 1200px) {
+  @media (max-width: 1200px) {
     .three-fourths {
       float: none;
       clear: both;
@@ -1890,7 +1890,7 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
   float: left;
   margin-left: 2.564102564102564%;
   width: 14.52991452991453%; }
-  @media only screen and (max-width: 1200px) {
+  @media (max-width: 1200px) {
     .one-sixth {
       float: none;
       clear: both;
@@ -1901,7 +1901,7 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
   float: left;
   margin-left: 2.564102564102564%;
   width: 82.90598290598291%; }
-  @media only screen and (max-width: 1200px) {
+  @media (max-width: 1200px) {
     .five-sixths {
       float: none;
       clear: both;
@@ -1915,7 +1915,7 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
   width: 100%;
   margin-left: 0;
   clear: both; }
-  @media only screen and (max-width: 1200px) {
+  @media (max-width: 1200px) {
     .one-whole {
       float: none;
       clear: both;
@@ -1939,7 +1939,7 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
   height: 2px;
   background: #000000;
   z-index: 5000; }
-  @media only screen and (max-width: 768px) {
+  @media (max-width: 768px) {
     #top-bar {
       display: none; } }
 
@@ -1957,10 +1957,10 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
   .site-header .wrap {
     margin: 0;
     padding: 0; }
-  @media only screen and (max-width: 1200px) {
+  @media (max-width: 1200px) {
     .site-header {
       width: 230px; } }
-  @media only screen and (max-width: 768px) {
+  @media (max-width: 768px) {
     .site-header {
       top: 0;
       width: 100%;
@@ -1974,7 +1974,7 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
     .site-header {
       position: absolute; } }
 
-@media only screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .header-full-width .title-area {
     width: auto; } }
 
@@ -1988,7 +1988,7 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
   padding: 12px 0 8px 0;
   display: block;
   width: 100%; }
-  @media only screen and (max-width: 768px) {
+  @media (max-width: 768px) {
     .title-area {
       float: left;
       width: auto;
@@ -2006,10 +2006,10 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
   transition: all ease-in-out 200ms; }
   .header-image .site-title > a:hover {
     background-color: #141414; }
-  @media only screen and (max-width: 1200px) {
+  @media (max-width: 1200px) {
     .header-image .site-title > a {
       min-height: 100px; } }
-  @media only screen and (max-width: 768px) {
+  @media (max-width: 768px) {
     .header-image .site-title > a {
       min-height: 0;
       height: 70px;
@@ -2037,10 +2037,10 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
     padding-left: 72px; }
   .page-header.page-header-lg .page-header-inner {
     padding: 72px; }
-    @media only screen and (max-width: 768px) {
+    @media (max-width: 768px) {
       .page-header.page-header-lg .page-header-inner {
         padding: 65px 40px; } }
-    @media only screen and (max-width: 600px) {
+    @media (max-width: 600px) {
       .page-header.page-header-lg .page-header-inner {
         padding: 50px 40px; } }
     @media only screen and (max-width: 380px) {
@@ -2056,7 +2056,7 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
     text-shadow: 0 0 8px #000000, 0 0 2px #000000, 1px 1px 2px rgba(0, 0, 0, 0.5), 2px 2px 3px rgba(0, 0, 0, 0.4);
     font-size: 2.75em;
     cursor: default; }
-    @media only screen and (max-width: 600px) {
+    @media (max-width: 600px) {
       .page-header h1.entry-title {
         font-size: 2.5em; } }
   .page-header .conductor-name {
@@ -2071,7 +2071,7 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
     .page-header a h1.entry-title:hover {
       color: #FFCA06;
       cursor: pointer; }
-  @media only screen and (max-width: 768px) {
+  @media (max-width: 768px) {
     .page-header {
       background-position: top center;
       text-align: center;
@@ -2082,10 +2082,10 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
 .entry {
   margin-bottom: 40px;
   padding: 40px; }
-  @media only screen and (max-width: 1200px) {
+  @media (max-width: 1200px) {
     .entry {
       padding: 30px; } }
-  @media only screen and (max-width: 768px) {
+  @media (max-width: 768px) {
     .entry {
       margin-bottom: 0;
       padding: 20px; } }
@@ -2096,13 +2096,13 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
   .entry-content img.no-border {
     border: none;
     box-shadow: none; }
-  @media only screen and (max-width: 600px) {
+  @media (max-width: 600px) {
     .entry-content img {
       clear: both;
       float: none;
       margin-left: 0;
       margin-right: 0; } }
-@media only screen and (max-width: 600px) {
+@media (max-width: 600px) {
   .entry-content .wp-caption {
     clear: both;
     float: none;
@@ -2133,7 +2133,7 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
   clear: both;
   margin-left: 0;
   width: 74.35897435897436%; }
-  @media only screen and (max-width: 1200px) {
+  @media (max-width: 1200px) {
     .content {
       float: none;
       clear: both;
@@ -2147,7 +2147,7 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
     border-bottom: 1px solid whitesmoke;
     padding-bottom: 20px;
     margin-bottom: 20px; }
-  @media only screen and (max-width: 1700px) {
+  @media (max-width: 1700px) {
     .content {
       margin: 0;
       width: 100%; } }
@@ -2190,12 +2190,12 @@ body.masonry-page .pagination {
       border: none; }
       .site-footer address a:hover {
         color: #FFFFFF; }
-  @media only screen and (max-width: 1200px) {
+  @media (max-width: 1200px) {
     .site-footer {
       width: 230px;
       padding: 20px;
       font-size: .8em; } }
-  @media only screen and (max-width: 768px) {
+  @media (max-width: 768px) {
     .site-footer {
       position: static;
       padding: 40px;
@@ -2285,21 +2285,25 @@ body.masonry-page .pagination {
     letter-spacing: .05em; }
     .hero .button.button-outline.button-white:hover {
       text-shadow: none; }
-  @media only screen and (max-width: 1200px) {
+  @media (max-width: 1200px) {
     .hero.hero-lg {
       padding: 80px; }
       .hero.hero-lg h2 {
         font-size: 3.2em; } }
-  @media only screen and (max-width: 600px) {
+  @media (max-width: 600px) {
     .hero.hero-med, .hero.hero-lg {
       padding: 40px; }
+      .hero.hero-med h2, .hero.hero-lg h2 {
+        font-size: 2.75em; }
     .hero h2 {
       font-size: 2.75em; }
     .hero p {
       font-size: 1.2em; } }
-  @media only screen and (max-width: 380px) {
+  @media (max-width: 380px) {
     .hero.hero-lg, .hero.hero-med, .hero.hero-sm {
       padding: 30px; }
+      .hero.hero-lg h2, .hero.hero-med h2, .hero.hero-sm h2 {
+        font-size: 2em; }
     .hero h2 {
       font-size: 2em; }
     .hero p {
@@ -2521,7 +2525,7 @@ body.masonry-page .pagination {
     font-size: .85em; }
   .event-program.style-dotted ul li {
     padding: 10px 8px 3px 8px; }
-    @media only screen and (max-width: 600px) {
+    @media (max-width: 600px) {
       .event-program.style-dotted ul li {
         padding: 18px 8px 5px 8px; } }
   .event-program.style-dotted ul ul {
@@ -2563,7 +2567,7 @@ body.masonry-page .pagination {
     .event-program.style-simple .piece-composer::before {
       content: '-';
       margin: 0 5px; }
-  @media only screen and (max-width: 600px) {
+  @media (max-width: 600px) {
     .event-program .piece-composer {
       float: none; }
       .event-program .piece-composer::before {
@@ -2590,7 +2594,7 @@ body.masonry-page .pagination {
   .single-ucfbands_event .entry-header .header-left {
     float: left;
     width: 75%; }
-    @media only screen and (max-width: 1200px) {
+    @media (max-width: 1200px) {
       .single-ucfbands_event .entry-header .header-left {
         float: none;
         width: 100%; } }
@@ -2600,22 +2604,22 @@ body.masonry-page .pagination {
     float: right;
     width: 25%;
     text-align: right; }
-    @media only screen and (max-width: 1200px) {
+    @media (max-width: 1200px) {
       .single-ucfbands_event .entry-header .header-right {
         float: none;
         width: 100%;
         margin-top: 40px;
         clear: both;
         text-align: left; } }
-    @media only screen and (max-width: 600px) {
+    @media (max-width: 600px) {
       .single-ucfbands_event .entry-header .header-right {
         margin-top: 30px;
         padding: 0 30px;
         text-align: center; } }
-  @media only screen and (max-width: 768px) {
+  @media (max-width: 768px) {
     .single-ucfbands_event .entry-header {
       padding: 30px; } }
-  @media only screen and (max-width: 600px) {
+  @media (max-width: 600px) {
     .single-ucfbands_event .entry-header {
       padding: 0 0 30px 0;
       text-align: center; } }
@@ -2623,7 +2627,7 @@ body.masonry-page .pagination {
   font-size: 42px;
   cursor: default;
   margin: 0; }
-  @media only screen and (max-width: 600px) {
+  @media (max-width: 600px) {
     .single-ucfbands_event .entry-title {
       padding: 30px;
       font-size: 36px; } }
@@ -2633,7 +2637,7 @@ body.masonry-page .pagination {
   font-size: 1.33em;
   font-weight: 700;
   line-height: 1.66em; }
-  @media only screen and (max-width: 600px) {
+  @media (max-width: 600px) {
     .single-ucfbands_event .date-badge {
       display: block;
       margin: 0 0 30px 0;
@@ -2651,7 +2655,7 @@ body.masonry-page .pagination {
   margin-top: 10px;
   font-size: 1.33em;
   cursor: default; }
-  @media only screen and (max-width: 600px) {
+  @media (max-width: 600px) {
     .single-ucfbands_event .event-time-location {
       margin: 0; }
       .single-ucfbands_event .event-time-location span {
@@ -2667,24 +2671,24 @@ body.masonry-page .pagination {
   margin: 0;
   border-top: 4px solid #141414;
   border-bottom: 4px solid #141414; }
-  @media only screen and (max-width: 600px) {
+  @media (max-width: 600px) {
     .single-ucfbands_event .attachment-post-thumbnail {
       margin: 0; } }
 .single-ucfbands_event .event-header-hr {
   margin: 0 40px; }
-  @media only screen and (max-width: 600px) {
+  @media (max-width: 600px) {
     .single-ucfbands_event .event-header-hr {
       margin: 0 30px; } }
 .single-ucfbands_event .entry-content {
   padding: 40px; }
-  @media only screen and (max-width: 600px) {
+  @media (max-width: 600px) {
     .single-ucfbands_event .entry-content {
       padding: 30px; } }
 .single-ucfbands_event address {
   font-style: normal; }
 .single-ucfbands_event .event-schedule-repitoire {
   clear: both; }
-  @media only screen and (max-width: 1200px) {
+  @media (max-width: 1200px) {
     .single-ucfbands_event .event-schedule-repitoire hr {
       display: none; } }
 .single-ucfbands_event #googleMap {
@@ -2711,14 +2715,14 @@ body.font-style-athletic.single-ucfbands_event .date-badge {
   margin-bottom: 40px;
   padding: 40px;
   float: left; }
-  @media only screen and (max-width: 980px) {
+  @media (max-width: 980px) {
     .masonry-block {
       margin-bottom: 0;
       padding: 40px; } }
-  @media only screen and (max-width: 600px) {
+  @media (max-width: 600px) {
     .masonry-block {
       padding: 30px; } }
-  @media only screen and (max-width: 980px) {
+  @media (max-width: 980px) {
     .masonry-block.block {
       border: 0;
       box-shadow: none; } }
@@ -2727,39 +2731,39 @@ body.font-style-athletic.single-ucfbands_event .date-badge {
   width: 13.66667%; }
 .masonry-6col-grid .masonry-6col-gutter-sizer {
   width: 3%; }
-  @media only screen and (max-width: 980px) {
+  @media (max-width: 980px) {
     .masonry-6col-grid .masonry-6col-gutter-sizer {
       width: 0%; } }
 .masonry-6col-grid .masonry-block-size--one-third {
   width: 30.33333%; }
-  @media only screen and (max-width: 1700px) {
+  @media (max-width: 1700px) {
     .masonry-6col-grid .masonry-block-size--one-third {
       width: 47.0%; } }
-  @media only screen and (max-width: 1200px) {
+  @media (max-width: 1200px) {
     .masonry-6col-grid .masonry-block-size--one-third {
       width: 97.0%; } }
-  @media only screen and (max-width: 980px) {
+  @media (max-width: 980px) {
     .masonry-6col-grid .masonry-block-size--one-third {
       width: 100.0%; } }
 .masonry-6col-grid .masonry-block-size--one-half {
   width: 47.0%; }
-  @media only screen and (max-width: 1200px) {
+  @media (max-width: 1200px) {
     .masonry-6col-grid .masonry-block-size--one-half {
       width: 97.0%; } }
-  @media only screen and (max-width: 980px) {
+  @media (max-width: 980px) {
     .masonry-6col-grid .masonry-block-size--one-half {
       width: 100.0%; } }
 .masonry-6col-grid .masonry-block-size--two-thirds {
   width: 63.66667%; }
-  @media only screen and (max-width: 1200px) {
+  @media (max-width: 1200px) {
     .masonry-6col-grid .masonry-block-size--two-thirds {
       width: 97.0%; } }
-  @media only screen and (max-width: 980px) {
+  @media (max-width: 980px) {
     .masonry-6col-grid .masonry-block-size--two-thirds {
       width: 100.0%; } }
 .masonry-6col-grid .masonry-block-size--one-whole {
   width: 100.0%; }
-@media only screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .masonry-6col-grid .masonry-block-size--one-third,
   .masonry-6col-grid .masonry-block-size--one-half,
   .masonry-6col-grid .masonry-block-size--two-thirds,
@@ -2772,34 +2776,34 @@ body.font-style-athletic.single-ucfbands_event .date-badge {
   width: 3%; }
 .masonry-4col-grid .masonry-block-size--one-fourth {
   width: 22%; }
-  @media only screen and (max-width: 1700px) {
+  @media (max-width: 1700px) {
     .masonry-4col-grid .masonry-block-size--one-fourth {
       width: 47%; } }
-  @media only screen and (max-width: 1200px) {
+  @media (max-width: 1200px) {
     .masonry-4col-grid .masonry-block-size--one-fourth {
       width: 47%; } }
-  @media only screen and (max-width: 980px) {
+  @media (max-width: 980px) {
     .masonry-4col-grid .masonry-block-size--one-fourth {
       width: 100%; } }
 .masonry-4col-grid .masonry-block-size--one-half {
   width: 47%; }
-  @media only screen and (max-width: 1200px) {
+  @media (max-width: 1200px) {
     .masonry-4col-grid .masonry-block-size--one-half {
       width: 97%; } }
-  @media only screen and (max-width: 980px) {
+  @media (max-width: 980px) {
     .masonry-4col-grid .masonry-block-size--one-half {
       width: 100%; } }
 .masonry-4col-grid .masonry-block-size--three-fourths {
   width: 72%; }
-  @media only screen and (max-width: 1200px) {
+  @media (max-width: 1200px) {
     .masonry-4col-grid .masonry-block-size--three-fourths {
       width: 97%; } }
-  @media only screen and (max-width: 980px) {
+  @media (max-width: 980px) {
     .masonry-4col-grid .masonry-block-size--three-fourths {
       width: 100%; } }
 .masonry-4col-grid .masonry-block-size--one-whole {
   width: 97%; }
-@media only screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .masonry-4col-grid .masonry-block-size--one-fourth,
   .masonry-4col-grid .masonry-block-size--one-half,
   .masonry-4col-grid .masonry-block-size--three-fourths,
@@ -2812,7 +2816,7 @@ body.font-style-athletic.single-ucfbands_event .date-badge {
 
 .nav-primary {
   background: none; }
-  @media only screen and (max-width: 768px) {
+  @media (max-width: 768px) {
     .nav-primary {
       display: none; } }
 
@@ -2835,7 +2839,7 @@ body.font-style-athletic.single-ucfbands_event .date-badge {
     transition: all ease-in-out 300ms; }
     .nav-primary .genesis-nav-menu .menu-item a:hover {
       background-color: #141414; }
-    @media only screen and (max-width: 1200px) {
+    @media (max-width: 1200px) {
       .nav-primary .genesis-nav-menu .menu-item a {
         padding: 13px;
         font-size: 1em; } }
@@ -2875,14 +2879,14 @@ body.font-style-athletic.single-ucfbands_event .date-badge {
   .menu-btn:hover, .menu-btn:focus {
     background-color: #FFCA06;
     border-color: #EFBC00; }
-  @media only screen and (max-width: 768px) {
+  @media (max-width: 768px) {
     .menu-btn {
       display: block; } }
 
 nav.pushy.nav-primary {
   background: #221E1F;
   border-left: 4px solid #FFCA06; }
-  @media only screen and (max-width: 768px) {
+  @media (max-width: 768px) {
     nav.pushy.nav-primary.nav-primary {
       display: block; } }
   nav.pushy.nav-primary .menu-item:first-child {
@@ -2897,11 +2901,11 @@ nav.section-menu {
   margin: 0;
   padding: 0;
   border: none; }
-  @media only screen and (max-width: 1200px) {
+  @media (max-width: 1200px) {
     nav.section-menu {
       position: static;
       margin-bottom: -5px; } }
-  @media only screen and (max-width: 1200px) {
+  @media (max-width: 1200px) {
     nav.section-menu ul {
       background: #221E1F;
       border-top: 4px solid #141414; } }
@@ -2910,13 +2914,13 @@ nav.section-menu {
     float: left;
     margin: 0;
     padding: 0; }
-    @media only screen and (max-width: 1200px) {
+    @media (max-width: 1200px) {
       nav.section-menu ul li {
         width: 33%; } }
-    @media only screen and (max-width: 768px) {
+    @media (max-width: 768px) {
       nav.section-menu ul li {
         width: 33%; } }
-    @media only screen and (max-width: 600px) {
+    @media (max-width: 600px) {
       nav.section-menu ul li {
         width: 50%; } }
     @media only screen and (max-width: 380px) {
@@ -2939,7 +2943,7 @@ nav.section-menu {
         text-decoration: none;
         box-shadow: inset 0px -5px #FFCA06;
         color: #FFCA06; }
-      @media only screen and (max-width: 1200px) {
+      @media (max-width: 1200px) {
         nav.section-menu ul li a {
           width: 100%;
           text-align: center;

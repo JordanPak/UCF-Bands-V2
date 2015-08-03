@@ -9,11 +9,11 @@
     margin-bottom: $space-default;
     padding: $space-default;
     
-    @media only screen and (max-width: $breakpoint-medium) {
+    @include breakpoint( medium ) {
         padding: $space-default-half + 10px;
     }
     
-    @media only screen and (max-width: $breakpoint-small) {
+    @include breakpoint( small ) {
         margin-bottom: 0;
         padding: $space-default-half;
     }
@@ -32,7 +32,7 @@
             box-shadow: none;
         }
         
-        @media only screen and (max-width: $breakpoint-extra-small) {
+        @include breakpoint( extra-small ) {
             clear: both;
             float: none;
             margin-left: 0;
@@ -43,7 +43,7 @@
     
     .wp-caption {
         
-        @media only screen and (max-width: $breakpoint-extra-small) {
+        @include breakpoint( extra-small ) {
             clear: both;
             float: none;
             margin-left: 0;
@@ -108,7 +108,7 @@
         margin-bottom: $space-default-half;
     }
     
-    @media only screen and (max-width: $breakpoint-extra-large) {
+    @include breakpoint( extra-large ) {
         margin: 0;
         width: 100%;
     }

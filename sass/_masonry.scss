@@ -18,18 +18,18 @@
     padding: $space-default;
     float: left;
     
-    @media only screen and (max-width: $breakpoint-small-medium) {
+    @include breakpoint( small-medium ) {
         margin-bottom: 0;
         padding: $space-default;
     }
 
-    @media only screen and (max-width: $breakpoint-extra-small) {
+    @include breakpoint( extra-small ) {
         padding: $space-default-half + 10px;
     }
     
     &.block {
         
-        @media only screen and (max-width: $breakpoint-small-medium) {
+        @include breakpoint( small-medium ) {
             border: 0;
             box-shadow: none;
         } // Medium Breakpoint
@@ -51,7 +51,7 @@
     .masonry-6col-gutter-sizer {
         width: $masonry-gutter-width;
         
-        @media only screen and (max-width: $breakpoint-small-medium) {
+        @include breakpoint( small-medium ) {
             width: 0%;
         }
         
@@ -62,15 +62,15 @@
     .masonry-block-size--one-third {
         width: $masonry-6col-block-width--two-sixths;
 
-        @media only screen and (max-width: $breakpoint-extra-large) {
+        @include breakpoint( extra-large ) {
             width: $masonry-6col-block-width--three-sixths;
         }
         
-        @media only screen and (max-width: $breakpoint-medium) {
+        @include breakpoint( medium ) {
             width: $masonry-6col-block-width--six-sixths;
         }
         
-        @media only screen and (max-width: $breakpoint-small-medium) {
+        @include breakpoint( small-medium ) {
             width: $masonry-6col-block-width--six-sixths-blockless;
         }
         
@@ -81,11 +81,11 @@
     .masonry-block-size--one-half {
         width: $masonry-6col-block-width--three-sixths;
         
-        @media only screen and (max-width: $breakpoint-medium) {
+        @include breakpoint( medium ) {
             width: $masonry-6col-block-width--six-sixths;
         }
         
-        @media only screen and (max-width: $breakpoint-small-medium) {
+        @include breakpoint( small-medium ) {
             width: $masonry-6col-block-width--six-sixths-blockless;
         }
         
@@ -96,11 +96,11 @@
     .masonry-block-size--two-thirds {
         width: $masonry-6col-block-width--four-sixths;
 
-        @media only screen and (max-width: $breakpoint-medium) {
+        @include breakpoint( medium ) {
             width: $masonry-6col-block-width--six-sixths;
         }
         
-        @media only screen and (max-width: $breakpoint-small-medium) {
+        @include breakpoint( small-medium ) {
             width: $masonry-6col-block-width--six-sixths-blockless;
         }
         
@@ -119,7 +119,7 @@
     .masonry-block-size--two-thirds,
     .masonry-block-size--one-whole {
         
-        @media only screen and (max-width: $breakpoint-small) {
+        @include breakpoint( small ) {
             width: $masonry-6col-block-width--six-sixths-blockless;
         }        
         
@@ -146,15 +146,15 @@
     .masonry-block-size--one-fourth {
         width: $masonry-4col-block-width--one-fourth;   
     
-        @media only screen and (max-width: $breakpoint-extra-large) {
+        @include breakpoint( extra-large ) {
             width: $masonry-4col-block-width--two-fourths;
         }
         
-        @media only screen and (max-width: $breakpoint-medium) {
+        @include breakpoint( medium ) {
             width: $masonry-4col-block-width--two-fourths;
         } 
         
-        @media only screen and (max-width: $breakpoint-small-medium) {
+        @include breakpoint( small-medium ) {
             width: $masonry-4col-block-width--four-fourths-blockless;
         }         
         
@@ -165,11 +165,11 @@
     .masonry-block-size--one-half {
         width: $masonry-4col-block-width--two-fourths;
         
-        @media only screen and (max-width: $breakpoint-medium) {
+        @include breakpoint( medium ) {
             width: $masonry-4col-block-width--four-fourths;
         }
 
-        @media only screen and (max-width: $breakpoint-small-medium) {
+        @include breakpoint( small-medium ) {
             width: $masonry-4col-block-width--four-fourths-blockless;
         }        
         
@@ -180,11 +180,11 @@
     .masonry-block-size--three-fourths {
         width: $masonry-4col-block-width--three-fourths;   
     
-        @media only screen and (max-width: $breakpoint-medium) {
+        @include breakpoint( medium ) {
             width: $masonry-4col-block-width--four-fourths;
         }
 
-        @media only screen and (max-width: $breakpoint-small-medium) {
+        @include breakpoint( small-medium ) {
             width: $masonry-4col-block-width--four-fourths-blockless;
         }    
         
@@ -203,7 +203,7 @@
     .masonry-block-size--three-fourths,
     .masonry-block-size--one-whole {
         
-        @media only screen and (max-width: $breakpoint-small) {
+        @include breakpoint( small ) {
             width: $masonry-4col-block-width--four-fourths-blockless;
         }        
         

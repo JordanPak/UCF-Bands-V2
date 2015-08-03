@@ -23,11 +23,11 @@
         .page-header-inner {
             padding: ($space-default + 32px);// $space-default;
         
-            @media only screen and (max-width: $breakpoint-small) {
+            @include breakpoint( small ) {
                 padding: ($space-default + 25px) $space-default;
             }
             
-            @media only screen and (max-width: $breakpoint-extra-small) {
+            @include breakpoint( extra-small ) {
                 padding: ($space-default + 10px) $space-default;
             }
             
@@ -52,7 +52,7 @@
         font-size: 2.75em;
         cursor: default;
         
-        @media only screen and (max-width: $breakpoint-extra-small) {
+        @include breakpoint( extra-small ) {
             font-size: 2.5em;
         }
         
@@ -83,7 +83,7 @@
     } // a
     
     
-    @media only screen and (max-width: $breakpoint-small) {
+    @include breakpoint( small ) {
         
         background-position: top center;
         text-align: center;

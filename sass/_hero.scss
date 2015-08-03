@@ -103,7 +103,7 @@
     }
     
     // MEDIA QUERIES
-    @media only screen and (max-width: $breakpoint-medium) {
+    @include breakpoint( medium ) {
         
         &.hero-lg {
             padding: ($space-default * 2);
@@ -116,11 +116,16 @@
     
     } // medium
     
-    @media only screen and (max-width: $breakpoint-extra-small) {
+    @include breakpoint( extra-small ) {
         
         &.hero-med, &.hero-lg {
             padding: $space-default;
-        }
+            
+            h2 {
+                font-size: 2.75em;
+            }
+            
+        } // .hero-lg
         
         h2 {
             font-size: 2.75em;
@@ -132,11 +137,16 @@
     
     } // extra-small
     
-    @media only screen and (max-width: $breakpoint-extra-extra-small) {
+    @include breakpoint( extra-extra-small ) {
         
         &.hero-lg, &.hero-med, &.hero-sm {
             padding: ($space-default-half + 10px);
-        }
+            
+            h2 {
+                font-size: 2em;
+            }
+            
+        } // .hero-lg
         
         h2 {
             font-size: 2em;

@@ -297,7 +297,7 @@
             li {
                 padding: 10px 8px 3px 8px;
                 
-                @media only screen and (max-width: $breakpoint-extra-small) {
+                @include breakpoint( extra-small ) {
                     padding: 18px 8px 5px 8px;   
                 }
                 
@@ -399,7 +399,7 @@
     } // .style-simple
     
     
-    @media only screen and (max-width: $breakpoint-extra-small) {
+    @include breakpoint( extra-small ) {
 
         .piece-composer {
             float: none;
@@ -441,7 +441,7 @@
             float: left;
             width: 75%;
             
-            @media only screen and (max-width: $breakpoint-medium) {
+            @include breakpoint( medium ) {
                 float: none;
                 width: 100%;   
             }
@@ -457,7 +457,7 @@
             width: 25%;
             text-align: right;
             
-            @media only screen and (max-width: $breakpoint-medium) {
+            @include breakpoint( medium ) {
                 float: none;
                 width: 100%;
                 margin-top: $space-default;
@@ -465,7 +465,7 @@
                 text-align: left;
             }
             
-            @media only screen and (max-width: $breakpoint-extra-small) {
+            @include breakpoint( extra-small ) {
                 margin-top: $space-default-half + 10px;
                 padding: 0 $space-default-half + 10px;
                 text-align: center;
@@ -474,11 +474,11 @@
         } // .header-right
         
 
-        @media only screen and (max-width: $breakpoint-small) {
+        @include breakpoint( small ) {
             padding: $space-default-half + 10px; 
         }
         
-        @media only screen and (max-width: $breakpoint-extra-small) {
+        @include breakpoint( extra-small ) {
             padding: 0 0 ($space-default-half + 10px) 0;
             text-align: center;
         }
@@ -490,7 +490,7 @@
         cursor: default;
         margin: 0;
         
-        @media only screen and (max-width: $breakpoint-extra-small) {
+        @include breakpoint( extra-small ) {
             padding: $space-default-half + 10px;
             font-size: 36px;
         } // breakpoint extra-small 
@@ -504,7 +504,7 @@
         font-weight: 700;
         line-height: 1.66em;
 
-        @media only screen and (max-width: $breakpoint-extra-small) {
+        @include breakpoint( extra-small ) {
             display: block;
             margin: 0 0 ($space-default-half + 10px) 0;
             width: 100%;
@@ -536,7 +536,7 @@
         font-size: 1.33em;
         cursor: default;
         
-        @media only screen and (max-width: $breakpoint-extra-small) {
+        @include breakpoint( extra-small ) {
             margin: 0;
             
             span {
@@ -563,7 +563,7 @@
         border-top: 4px solid $ucf-gray-darker;
         border-bottom: 4px solid $ucf-gray-darker;
 
-        @media only screen and (max-width: $breakpoint-extra-small) {
+        @include breakpoint( extra-small ) {
             margin: 0; 
         }        
         
@@ -572,7 +572,7 @@
     .event-header-hr {
         margin: 0 $space-default;
         
-        @media only screen and (max-width: $breakpoint-extra-small) {
+        @include breakpoint( extra-small ) {
             margin: 0 ($space-default-half + 10px);
         }
     
@@ -581,7 +581,7 @@
     .entry-content {
         padding: $space-default;
     
-        @media only screen and (max-width: $breakpoint-extra-small) {
+        @include breakpoint( extra-small ) {
             padding: $space-default-half + 10px; 
         }    
         
@@ -596,7 +596,7 @@
         
         hr {
             
-            @media only screen and (max-width: $breakpoint-medium) {
+            @include breakpoint( medium ) {
                 display: none;
             }
             

@@ -11,7 +11,7 @@ body {
 //@mixin blockless-layout() {
     
     // Small-Medium Breakpoint
-    @media only screen and (max-width: $breakpoint-small-medium) {
+    @include breakpoint( small-medium ) {
     
         .site-inner {
             background: $white;
@@ -60,7 +60,7 @@ body {
     
     
     // Extra-Small Breakpoint
-    @media only screen and (max-width: $breakpoint-extra-small) {
+    @include breakpoint( extra-small ) {
         
         .entry, .sidebar-primary .widget, .site-footer {
             padding: $space-default-half + 10px;
@@ -311,7 +311,7 @@ body {
         clear: both;
     }
     
-    @media only screen and (max-width: $breakpoint-medium) {
+    @include breakpoint( medium ) {
         float: none;
         clear: both;
         width: 100%;
