@@ -33,9 +33,37 @@
     @if $class == extra-extra-small {
         @media (max-width: $breakpoint-extra-extra-small) { @content; }
     }
+
+    @if $class == extra-small {
+        @media (max-width: $breakpoint-extra-small) { @content; }
+    }
+
+    @if $class == small {
+        @media (max-width: $breakpoint-small) { @content; }
+    }
+    
+    @if $class == small-medium {
+        @media (max-width: $breakpoint-small-medium) { @content; }
+    }
+    
+    @if $class == medium {
+        @media (max-width: $breakpoint-medium) { @content; }
+    }
+    
+    @if $class == large {
+        @media (max-width: $breakpoint-large) { @content; }
+    }
+    
+    @if $class == extra-large {
+        @media (max-width: $breakpoint-extra-large) { @content; }
+    }
+
+    @if $class == extra-extra-large {
+        @media (max-width: $breakpoint-extra-extra-large) { @content; }
+    }
     
     @else {
-        @warn "Breakpoint mixin supports: xs, sm, md, lg";
+        @warn "Breakpoint mixin supports: extra-extra-small, extra-small, small, small-medium, medium, large, extra-large, and extra-extra-large";
     }
     
 } // breakpoint()
