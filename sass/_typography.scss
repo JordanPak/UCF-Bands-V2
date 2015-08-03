@@ -42,7 +42,7 @@ h1 {
         margin-bottom: $space-default;
         text-shadow: $text-shadow-white-lg;
         
-        @media only screen and (max-width: $breakpoint-small) {
+        @include breakpoint( small ) {
             text-align: center;
             margin-top: $space-default-half;
         }

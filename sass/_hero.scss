@@ -103,7 +103,7 @@
     }
     
     // MEDIA QUERIES
-    @media only screen and (max-width: $breakpoint-medium) {
+    @include breakpoint( medium ) {
         
         &.hero-lg {
             padding: ($space-default * 2);
@@ -116,7 +116,7 @@
     
     } // medium
     
-    @media only screen and (max-width: $breakpoint-extra-small) {
+    @include breakpoint( extra-small ) {
         
         &.hero-med, &.hero-lg {
             padding: $space-default;

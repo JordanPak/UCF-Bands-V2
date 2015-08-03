@@ -8,7 +8,7 @@
 .nav-primary {
     background: none;
     
-    @media only screen and (max-width: $breakpoint-small) {
+    @include breakpoint( small ) {
         display: none;
     }
     
@@ -45,7 +45,7 @@
                 background-color: $ucf-gray-darker;
             }
             
-            @media only screen and (max-width: $breakpoint-medium) {
+            @include breakpoint( medium ) {
                 padding: 13px;
                 font-size: 1em;
             }
@@ -107,7 +107,7 @@
     }
     
     
-    @media only screen and (max-width: $breakpoint-small) {
+    @include breakpoint( small ) {
         display: block; 
     }
     
@@ -120,7 +120,7 @@ nav.pushy.nav-primary {
    
     &.nav-primary {
         
-        @media only screen and (max-width: $breakpoint-small) {
+        @include breakpoint( small ) {
             display: block; 
         }
         
@@ -152,13 +152,13 @@ nav.section-menu {
 	padding: 0;
 	border: none;
     
-    @media only screen and (max-width: $breakpoint-medium) {
+    @include breakpoint( medium ) {
         position: static;
         margin-bottom: -5px;
     }
     
     ul {
-        @media only screen and (max-width: $breakpoint-medium) {
+        @include breakpoint( medium ) {
             background: $ucf-gray;
             border-top: 4px solid $ucf-gray-darker;
         }
@@ -169,15 +169,15 @@ nav.section-menu {
             margin: 0;
             padding: 0;
             
-            @media only screen and (max-width: $breakpoint-medium) {
+            @include breakpoint( medium ) {
                 width: 33%;
             }
             
-            @media only screen and (max-width: $breakpoint-small) {
+            @include breakpoint( small ) {
                 width: 33%;   
             }
             
-            @media only screen and (max-width: $breakpoint-extra-small) {
+            @include breakpoint( extra-small ) {
                 width: 50%;
             }
             
@@ -206,7 +206,7 @@ nav.section-menu {
                     color: $ucf-gold;
                 }
                 
-                @media only screen and (max-width: $breakpoint-medium) {
+                @include breakpoint( medium ) {
                     width: 100%;
                     text-align: center;
                     text-shadow: none;

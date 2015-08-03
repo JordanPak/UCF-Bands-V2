@@ -9,7 +9,7 @@
     background: $black;
     z-index: 5000;
     
-    @media only screen and (max-width: $breakpoint-small) {
+    @include breakpoint( small ) {
         display: none;
     }
     
@@ -34,11 +34,11 @@
         padding: 0;
     }
     
-    @media only screen and (max-width: $breakpoint-medium) {
+    @include breakpoint( medium ) {
         width: $site-header-width-med;
     }
     
-    @media only screen and (max-width: $breakpoint-small) {
+    @include breakpoint( small ) {
         top: 0;
         width: 100%;
         min-height: 0;
@@ -62,7 +62,7 @@
 // Mobile Fix
 .header-full-width .title-area {
     
-    @media only screen and (max-width: $breakpoint-small) {
+    @include breakpoint( small ) {
         width: auto;
     }
     
@@ -80,7 +80,7 @@
     display: block;
     width: 100%;
     
-    @media only screen and (max-width: $breakpoint-small) {
+    @include breakpoint( small ) {
         float: left;
         width: auto;
         padding: 0;
@@ -104,11 +104,11 @@
         background-color: $ucf-gray-darker;
     }
     
-    @media only screen and (max-width: $breakpoint-medium) {
+    @include breakpoint( medium ) {
         min-height: 100px;
     }
     
-    @media only screen and (max-width: $breakpoint-small) {
+    @include breakpoint( small ) {
         min-height: 0;
         height: $site-header-mobile-height;
         width: 125px;
