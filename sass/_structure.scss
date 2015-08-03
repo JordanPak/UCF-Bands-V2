@@ -98,7 +98,7 @@ body.masonry-page .content-sidebar-wrap {
     padding: $masonry-gutter-width;
     padding-right: 0;
     
-    @media only screen and (max-width: $breakpoint-medium) {
+    @media only screen and (max-width: $breakpoint-small-medium) {
         padding: 0;
     }
     

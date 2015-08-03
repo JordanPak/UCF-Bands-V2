@@ -18,14 +18,14 @@
     padding: $space-default;
     float: left;
     
-    @media only screen and (max-width: $breakpoint-medium) {
+    @media only screen and (max-width: $breakpoint-small-medium) {
         margin-bottom: 0; //$space-default-half;
         padding: $space-default; //$space-default-half;
     }
     
     &.block {
         
-        @media only screen and (max-width: $breakpoint-medium) {
+        @media only screen and (max-width: $breakpoint-small-medium) {
             border: 0;
             box-shadow: none;
         } // Medium Breakpoint
@@ -47,7 +47,7 @@
     .masonry-6col-gutter-sizer {
         width: $masonry-gutter-width;
         
-        @media only screen and (max-width: $breakpoint-medium) {
+        @media only screen and (max-width: $breakpoint-small-medium) {
             width: 0%;
         }
         
@@ -63,6 +63,10 @@
         }
         
         @media only screen and (max-width: $breakpoint-medium) {
+            width: $masonry-6col-block-width--six-sixths;
+        }
+        
+        @media only screen and (max-width: $breakpoint-small-medium) {
             width: $masonry-6col-block-width--six-sixths-blockless;
         }
         
@@ -74,6 +78,10 @@
         width: $masonry-6col-block-width--three-sixths;
         
         @media only screen and (max-width: $breakpoint-medium) {
+            width: $masonry-6col-block-width--six-sixths;
+        }
+        
+        @media only screen and (max-width: $breakpoint-small-medium) {
             width: $masonry-6col-block-width--six-sixths-blockless;
         }
         
@@ -85,6 +93,10 @@
         width: $masonry-6col-block-width--four-sixths;
 
         @media only screen and (max-width: $breakpoint-medium) {
+            width: $masonry-6col-block-width--six-sixths;
+        }
+        
+        @media only screen and (max-width: $breakpoint-small-medium) {
             width: $masonry-6col-block-width--six-sixths-blockless;
         }
         
@@ -135,7 +147,7 @@
         }
         
         @media only screen and (max-width: $breakpoint-medium) {
-            width: $masonry-4col-block-width--two-fourths-blockless;
+            width: $masonry-4col-block-width--two-fourths;
         } 
         
         @media only screen and (max-width: $breakpoint-small-medium) {
@@ -150,8 +162,12 @@
         width: $masonry-4col-block-width--two-fourths;
         
         @media only screen and (max-width: $breakpoint-medium) {
-            width: $masonry-4col-block-width--four-fourths-blockless;
+            width: $masonry-4col-block-width--four-fourths;
         }
+
+        @media only screen and (max-width: $breakpoint-small-medium) {
+            width: $masonry-4col-block-width--four-fourths-blockless;
+        }        
         
     } // one-half
     
@@ -160,9 +176,13 @@
     .masonry-block-size--three-fourths {
         width: $masonry-4col-block-width--three-fourths;   
     
-        @media only screen and (max-width: $breakpoint-large) {
-            width: $masonry-4col-block-width--four-fourths-blockless;
+        @media only screen and (max-width: $breakpoint-medium) {
+            width: $masonry-4col-block-width--four-fourths;
         }
+
+        @media only screen and (max-width: $breakpoint-small-medium) {
+            width: $masonry-4col-block-width--four-fourths-blockless;
+        }    
         
     } // three-fourths
     
