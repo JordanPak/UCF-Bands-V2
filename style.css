@@ -2168,6 +2168,10 @@ body.masonry-page .pagination {
   margin: 0;
   text-align: center; }
 
+@media (max-width: 980px) {
+  .pagination {
+    padding: 0 40px; } }
+
 .site-footer {
   position: fixed;
   margin: 0;

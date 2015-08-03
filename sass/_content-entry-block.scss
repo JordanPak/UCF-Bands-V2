@@ -2,8 +2,9 @@
 //  UCFBANDS V2 | CONTENT, ENTRY, & BLOCK  //
 //=========================================//
 
-
-//-- ENTRY --//
+//=========//
+//  ENTRY  //
+//=========//
 
 .entry {
     margin-bottom: $space-default;
@@ -64,7 +65,9 @@
 
 
 
-//-- BLOCK --//
+//=========//
+//  BLOCK  //
+//=========//
 
 .block {
     
@@ -95,7 +98,9 @@
 
 
 
-//-- CONTENT --//
+//===========//
+//  CONTENT  //
+//===========//
 
 .content {
     
@@ -137,3 +142,17 @@ body.masonry-page .pagination {
     margin: 0;
     text-align: center;
 }
+
+
+
+//==============//
+//  PAGINATION  //
+//==============//
+
+.pagination {
+    
+    @include breakpoint( small-medium ) {
+        padding: 0 $space-default;   
+    }
+    
+} // .pagination
