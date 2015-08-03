@@ -1793,7 +1793,7 @@ body {
   background-position: -100px 25px; }
   @media only screen and (max-width: 980px) {
     .content-sidebar-wrap {
-      padding: 20px; } }
+      padding: 30px; } }
   @media only screen and (max-width: 768px) {
     .content-sidebar-wrap {
       min-height: 0; } }
@@ -2084,8 +2084,7 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
   padding: 40px; }
   @media only screen and (max-width: 1200px) {
     .entry {
-      margin-bottom: 0;
-      padding: 20px; } }
+      padding: 30px; } }
   @media only screen and (max-width: 768px) {
     .entry {
       margin-bottom: 0;
