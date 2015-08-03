@@ -146,15 +146,26 @@
 
 .pagination {
     
+    li {
+        
+        a {
+            @include button();   
+        } // a
+        
+        &.active a {
+            @include button( $white, $text-shadow-gold-med, $ucf-gold, $ucf-gold-darker);  
+        }
+
+    } // li
+        
     @include breakpoint( small-medium ) {
-//        padding: 0 $space-default $space-default $space-default;
         padding: 0 $space-default;
-        margin-bottom: $space-default;
+        margin: 0 0 $space-default 0;
     }
     
     @include breakpoint( small ) {
         padding: 0 ($space-default-half + 10px);
-        margin-bottom: $space-default-half + 10px;
+        margin-bottom: 0 0 $space-default-half + 10px 0;
     }
     
 } // .pagination
