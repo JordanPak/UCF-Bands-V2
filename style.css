@@ -2085,6 +2085,9 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
   @media (max-width: 1200px) {
     .entry {
       padding: 30px; } }
+  @media (max-width: 980px) {
+    .entry {
+      margin-bottom: 0; } }
   @media (max-width: 768px) {
     .entry {
       margin-bottom: 0;
