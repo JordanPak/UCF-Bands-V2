@@ -2716,6 +2716,10 @@ body.font-style-athletic.single-ucfbands_event .date-badge {
     .masonry-block {
       margin-bottom: 0;
       padding: 40px; } }
+  @media only screen and (max-width: 1200px) {
+    .masonry-block.block {
+      border: 0;
+      box-shadow: none; } }
 
 .masonry-6col-grid .masonry-6col-grid-sizer, .masonry-6col-grid .masonry-block {
   width: 13.66667%; }
