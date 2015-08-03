@@ -72,14 +72,20 @@
 
 
 // Apply
-body.page-template-default,
-body.page-template-page_section,
-body.page-template-page_grid,
-page-template-page_section_grid,
-body.single-ucfbands_event
-{
-    @include blockless-layout();
-} // Apply Blockless Layout
+body {
+    
+    &.page-template-default,
+    &.page-template-default,
+    &.page-template-page_section,
+    &.page-template-page_grid,
+    &.page-template-page_section_grid,
+    &.single-ucfbands_event {
+        
+        @include blockless-layout();
+    
+    } // Apply Blockless Layout
+    
+} // body
 
 
 

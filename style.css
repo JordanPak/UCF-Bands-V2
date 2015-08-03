@@ -1326,71 +1326,31 @@ li.comment {
   .sidebar .widget.enews-widget {
     padding: 40px; } }
 @media only screen and (max-width: 980px) {
-  body.page-template-default .site-inner,
-  body.page-template-page_section .site-inner,
-  body.page-template-page_grid .site-inner,
-  page-template-page_section_grid .site-inner,
-  body.single-ucfbands_event .site-inner {
+  body.page-template-default .site-inner, body.page-template-default .site-inner, body.page-template-page_section .site-inner, body.page-template-page_grid .site-inner, body.page-template-page_section_grid .site-inner, body.single-ucfbands_event .site-inner {
     background: #FFFFFF;
     box-shadow: none; }
-  body.page-template-default .content-sidebar-wrap,
-  body.page-template-page_section .content-sidebar-wrap,
-  body.page-template-page_grid .content-sidebar-wrap,
-  page-template-page_section_grid .content-sidebar-wrap,
-  body.single-ucfbands_event .content-sidebar-wrap {
+  body.page-template-default .content-sidebar-wrap, body.page-template-default .content-sidebar-wrap, body.page-template-page_section .content-sidebar-wrap, body.page-template-page_grid .content-sidebar-wrap, body.page-template-page_section_grid .content-sidebar-wrap, body.single-ucfbands_event .content-sidebar-wrap {
     padding: 0;
     background-image: none; }
-  body.page-template-default .content .page,
-  body.page-template-page_section .content .page,
-  body.page-template-page_grid .content .page,
-  page-template-page_section_grid .content .page,
-  body.single-ucfbands_event .content .page {
+  body.page-template-default .content .page, body.page-template-default .content .page, body.page-template-page_section .content .page, body.page-template-page_grid .content .page, body.page-template-page_section_grid .content .page, body.single-ucfbands_event .content .page {
     border: 0;
     box-shadow: none; }
-  body.page-template-default .entry,
-  body.page-template-page_section .entry,
-  body.page-template-page_grid .entry,
-  page-template-page_section_grid .entry,
-  body.single-ucfbands_event .entry {
+  body.page-template-default .entry, body.page-template-default .entry, body.page-template-page_section .entry, body.page-template-page_grid .entry, body.page-template-page_section_grid .entry, body.single-ucfbands_event .entry {
     padding: 40px; }
-  body.page-template-default .sidebar-primary .widget,
-  body.page-template-page_section .sidebar-primary .widget,
-  body.page-template-page_grid .sidebar-primary .widget,
-  page-template-page_section_grid .sidebar-primary .widget,
-  body.single-ucfbands_event .sidebar-primary .widget {
+  body.page-template-default .sidebar-primary .widget, body.page-template-default .sidebar-primary .widget, body.page-template-page_section .sidebar-primary .widget, body.page-template-page_grid .sidebar-primary .widget, body.page-template-page_section_grid .sidebar-primary .widget, body.single-ucfbands_event .sidebar-primary .widget {
     margin: 0;
     padding: 40px;
     background: none;
     border: 0;
     box-shadow: none; }
-  body.page-template-default.single-ucfbands_event .content,
-  body.page-template-page_section.single-ucfbands_event .content,
-  body.page-template-page_grid.single-ucfbands_event .content,
-  page-template-page_section_grid.single-ucfbands_event .content,
-  body.single-ucfbands_event.single-ucfbands_event .content {
+  body.page-template-default.single-ucfbands_event .content, body.page-template-default.single-ucfbands_event .content, body.page-template-page_section.single-ucfbands_event .content, body.page-template-page_grid.single-ucfbands_event .content, body.page-template-page_section_grid.single-ucfbands_event .content, body.single-ucfbands_event.single-ucfbands_event .content {
     border: 0;
     box-shadow: none;
     background: none; }
-  body.page-template-default.single-ucfbands_event .entry,
-  body.page-template-page_section.single-ucfbands_event .entry,
-  body.page-template-page_grid.single-ucfbands_event .entry,
-  page-template-page_section_grid.single-ucfbands_event .entry,
-  body.single-ucfbands_event.single-ucfbands_event .entry {
+  body.page-template-default.single-ucfbands_event .entry, body.page-template-default.single-ucfbands_event .entry, body.page-template-page_section.single-ucfbands_event .entry, body.page-template-page_grid.single-ucfbands_event .entry, body.page-template-page_section_grid.single-ucfbands_event .entry, body.single-ucfbands_event.single-ucfbands_event .entry {
     background: none; } }
 @media only screen and (max-width: 600px) {
-  body.page-template-default .entry, body.page-template-default .sidebar-primary .widget, body.page-template-default .site-footer,
-  body.page-template-page_section .entry,
-  body.page-template-page_section .sidebar-primary .widget,
-  body.page-template-page_section .site-footer,
-  body.page-template-page_grid .entry,
-  body.page-template-page_grid .sidebar-primary .widget,
-  body.page-template-page_grid .site-footer,
-  page-template-page_section_grid .entry,
-  page-template-page_section_grid .sidebar-primary .widget,
-  page-template-page_section_grid .site-footer,
-  body.single-ucfbands_event .entry,
-  body.single-ucfbands_event .sidebar-primary .widget,
-  body.single-ucfbands_event .site-footer {
+  body.page-template-default .entry, body.page-template-default .sidebar-primary .widget, body.page-template-default .site-footer, body.page-template-default .entry, body.page-template-default .sidebar-primary .widget, body.page-template-default .site-footer, body.page-template-page_section .entry, body.page-template-page_section .sidebar-primary .widget, body.page-template-page_section .site-footer, body.page-template-page_grid .entry, body.page-template-page_grid .sidebar-primary .widget, body.page-template-page_grid .site-footer, body.page-template-page_section_grid .entry, body.page-template-page_section_grid .sidebar-primary .widget, body.page-template-page_section_grid .site-footer, body.single-ucfbands_event .entry, body.single-ucfbands_event .sidebar-primary .widget, body.single-ucfbands_event .site-footer {
     padding: 30px; } }
 
 /*! Pushy - v0.9.2 - 2014-9-13
