@@ -2293,6 +2293,8 @@ body.masonry-page .pagination {
   @media only screen and (max-width: 600px) {
     .hero.hero-med, .hero.hero-lg {
       padding: 40px; }
+      .hero.hero-med h2, .hero.hero-lg h2 {
+        font-size: 2.75em; }
     .hero h2 {
       font-size: 2.75em; }
     .hero p {
@@ -2300,6 +2302,8 @@ body.masonry-page .pagination {
   @media only screen and (max-width: 380px) {
     .hero.hero-lg, .hero.hero-med, .hero.hero-sm {
       padding: 30px; }
+      .hero.hero-lg h2, .hero.hero-med h2, .hero.hero-sm h2 {
+        font-size: 2em; }
     .hero h2 {
       font-size: 2em; }
     .hero p {

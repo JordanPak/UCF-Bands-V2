@@ -120,7 +120,12 @@
         
         &.hero-med, &.hero-lg {
             padding: $space-default;
-        }
+            
+            h2 {
+                font-size: 2.75em;
+            }
+            
+        } // .hero-lg
         
         h2 {
             font-size: 2.75em;
@@ -136,7 +141,12 @@
         
         &.hero-lg, &.hero-med, &.hero-sm {
             padding: ($space-default-half + 10px);
-        }
+            
+            h2 {
+                font-size: 2em;
+            }
+            
+        } // .hero-lg
         
         h2 {
             font-size: 2em;
