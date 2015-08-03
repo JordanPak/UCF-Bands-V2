@@ -7,8 +7,8 @@
 //  BLOCXLESS LAYOUT  //
 //====================//
 
-
-@mixin blockless-layout() {
+body {
+//@mixin blockless-layout() {
     
     // Small-Medium Breakpoint
     @media only screen and (max-width: $breakpoint-small-medium) {
@@ -68,23 +68,23 @@
         
     } // Extra-Small Breakpoint
     
-} // blockless-layout()
+//} // blockless-layout()
+}
 
-
-// Apply
-body {
-    
-    &.page-template-default,
-    &.page-template-page_section,
-    &.page-template-page_grid,
-    &.page-template-page_section_grid,
-    &.single-ucfbands_event {
-        
-        @include blockless-layout();
-    
-    } // Apply Blockless Layout
-    
-} // body
+//// Apply
+//body {
+//    
+//    &.page-template-default,
+//    &.page-template-page_section,
+//    &.page-template-page_grid,
+//    &.page-template-page_section_grid,
+//    &.single-ucfbands_event {
+//        
+//        @include blockless-layout();
+//    
+//    } // Apply Blockless Layout
+//    
+//} // body
 
 
 
