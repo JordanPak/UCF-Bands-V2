@@ -30,6 +30,9 @@
 
 @mixin breakpoint( $class ) {
     
+    
+    //-- WIDTHS --//
+    
     @if $class == extra-extra-small {
         @media (max-width: $breakpoint-extra-extra-small) { @content; }
     }
@@ -61,6 +64,20 @@
     @if $class == extra-extra-large {
         @media (max-width: $breakpoint-extra-extra-large) { @content; }
     }
+    
+    
+    //-- WIDTH & HEIGHT --//
+    
+    @if $class == height-medium-width-medium {
+        @media (max-height: $breakpoint-height-medium) and (max-width: $breakpoint-medium) { @content; }   
+    }
+    
+    @if $class == height-large-width-large {
+        @media (max-height: $breakpoint-height-large) and (max-width: $breakpoint-large) { @content; }   
+    }    
+    
+    
+    //-- NOT FOUND --//
     
     @else {
         @warn "Breakpoint mixin supports: extra-extra-small, extra-small, small, small-medium, medium, large, extra-large, and extra-extra-large";
