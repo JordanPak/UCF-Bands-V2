@@ -93,10 +93,10 @@
         }
         
         @include breakpoint( small-medium ) {
-            padding: $space-default 0;
+            padding: ($space-default-half + 5px) 0;
             
             .block-title {
-                padding: $space-default $space-default 0 $space-default;
+                padding: ($space-default-half + 5px) $space-default 0 $space-default;
             }
             
         } // small-medium
