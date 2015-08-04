@@ -20,8 +20,17 @@
     
     @include breakpoint( small-medium ) {
         margin-bottom: 0;
-        padding: $space-default;
-    }
+        padding: ($space-default-half + 5px) $space-default;
+        
+        &:nth-child(3) { // 3rd because of sizer divs
+            padding-top: $space-default;
+        }
+        
+        &:last-child {
+            padding-bottom: $space-default;
+        }
+    
+    } // small-medium
 
     @include breakpoint( extra-small ) {
         padding: $space-default-half + 10px;

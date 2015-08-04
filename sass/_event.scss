@@ -12,6 +12,18 @@
     padding: $space-default-half;
 
     @include block();
+    
+    @include breakpoint( small-medium ) {
+        padding: $space-default-half $space-default;
+        border: 0;
+        box-shadow: none;
+        background: $ucf-gray-light;
+        text-shadow: $text-shadow-white-sm;
+    }
+    
+    @include breakpoint( extra-small ) {
+        padding: $space-default-half ($space-default-half + 10px);   
+    }
 
     .more-info {
         display: inline-block;
@@ -98,7 +110,17 @@
 
 .post-type-archive-ucfbands_event .entry-wrapper.masonry-block {
     padding: $space-default-half;
-}
+    
+    @include breakpoint( small-medium ) {
+        padding: $space-default;
+        background: none;
+    }
+    
+    @include breakpoint( extra-small ) {
+        padding: $space-default-half + 10px;   
+    }
+    
+} // .post-type-archive-ucfbands_event .entry-wrapper.masonry-block
     
 .events-shortcode-wrap {
 } // .events-shortcode-wrap
@@ -473,10 +495,6 @@
             
         } // .header-right
         
-
-        @include breakpoint( small ) {
-            padding: $space-default-half + 10px; 
-        }
         
         @include breakpoint( extra-small ) {
             padding: 0 0 ($space-default-half + 10px) 0;
