@@ -2229,6 +2229,14 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
     padding: 0 30px;
     margin-bottom: 0 0 30px 0; } }
 
+.widget:before {
+  content: " ";
+  display: table; }
+.widget:after {
+  clear: both;
+  content: " ";
+  display: table; }
+
 .widget-title {
   font-size: 24px; }
 

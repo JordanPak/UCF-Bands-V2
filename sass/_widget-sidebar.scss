@@ -2,10 +2,13 @@
 //  UCFBands V2 | WIDGETS & SIDEBARS  //
 //====================================//
 
+.widget {
+    @include clearfix();
+}
+
 .widget-title {
     font-size: 24px;
 }
-
 
 //-- ENEWS WIDGET --//
 .sidebar .widget.enews-widget {
