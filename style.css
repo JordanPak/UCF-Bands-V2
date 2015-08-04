@@ -2234,6 +2234,40 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
 
 .sidebar .widget.enews-widget {
   background: #221E1F; }
+  .sidebar .widget.enews-widget:before {
+    content: " ";
+    display: table; }
+  .sidebar .widget.enews-widget:after {
+    clear: both;
+    content: " ";
+    display: table; }
+  .sidebar .widget.enews-widget .widget-title, .sidebar .widget.enews-widget p {
+    text-align: center;
+    margin: 0; }
+  .sidebar .widget.enews-widget .widget-title {
+    font-size: 2em;
+    font-weight: 700; }
+    @media (max-width: 1700px) {
+      .sidebar .widget.enews-widget .widget-title {
+        font-size: 2.3em; } }
+  .sidebar .widget.enews-widget p {
+    margin-bottom: 20px;
+    color: #FFCA06; }
+    @media (max-width: 1700px) {
+      .sidebar .widget.enews-widget p {
+        margin-bottom: 30px; } }
+  @media (max-width: 1700px) {
+    .sidebar .widget.enews-widget input {
+      display: block;
+      float: left;
+      width: 32%;
+      margin-left: 2%;
+      margin-bottom: 0; }
+      .sidebar .widget.enews-widget input#subbox1 {
+        margin-left: 0; } }
+  @media (max-width: 980px) {
+    .sidebar .widget.enews-widget input {
+      width: 47%; } }
   .sidebar .widget.enews-widget input[type="submit"] {
     font-weight: 700; }
 
