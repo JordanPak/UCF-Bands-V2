@@ -110,7 +110,17 @@
 
 .post-type-archive-ucfbands_event .entry-wrapper.masonry-block {
     padding: $space-default-half;
-}
+    
+    @include breakpoint( small-medium ) {
+        padding: $space-default;
+        background: none;
+    }
+    
+    @include breakpoint( extra-small ) {
+        padding: $space-default-half + 10px;   
+    }
+    
+} // .post-type-archive-ucfbands_event .entry-wrapper.masonry-block
     
 .events-shortcode-wrap {
 } // .events-shortcode-wrap

@@ -2483,6 +2483,13 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
 
 .post-type-archive-ucfbands_event .entry-wrapper.masonry-block {
   padding: 20px; }
+  @media (max-width: 980px) {
+    .post-type-archive-ucfbands_event .entry-wrapper.masonry-block {
+      padding: 40px;
+      background: none; } }
+  @media (max-width: 600px) {
+    .post-type-archive-ucfbands_event .entry-wrapper.masonry-block {
+      padding: 30px; } }
 
 .date-badge {
   float: left;
