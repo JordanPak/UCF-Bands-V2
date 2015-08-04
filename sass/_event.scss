@@ -495,10 +495,6 @@
             
         } // .header-right
         
-
-        @include breakpoint( small ) {
-            padding: $space-default-half + 10px; 
-        }
         
         @include breakpoint( extra-small ) {
             padding: 0 0 ($space-default-half + 10px) 0;

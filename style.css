@@ -2701,9 +2701,6 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
         margin-top: 30px;
         padding: 0 30px;
         text-align: center; } }
-  @media (max-width: 768px) {
-    .single-ucfbands_event .entry-header {
-      padding: 30px; } }
   @media (max-width: 600px) {
     .single-ucfbands_event .entry-header {
       padding: 0 0 30px 0;
