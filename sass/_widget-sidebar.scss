@@ -1,0 +1,84 @@
+//====================================//
+//  UCFBands V2 | WIDGETS & SIDEBARS  //
+//====================================//
+
+.widget {
+    @include clearfix();
+}
+
+.widget-title {
+    font-size: 24px;
+}
+
+//-- ENEWS WIDGET --//
+.sidebar .widget.enews-widget {
+    
+    @include clearfix();
+    
+    background: $ucf-gray;
+    
+    .widget-title, p {
+        margin: 0;
+        text-align: center;
+    }
+    
+    .widget-title {
+        font-size: 2em;
+        font-weight: 700;
+        
+        @include breakpoint( extra-large ) {
+            font-size: 2.3em;
+        }
+    
+    } // .widget-title
+    
+    p {
+        margin-bottom: $space-default-half;
+        color: $ucf-gold;
+        font-style: italic;
+    
+        @include breakpoint( extra-large ) {
+            margin-bottom: $space-default-half + 10px;   
+        }
+    
+    } // p
+    
+    input {
+        
+        @include breakpoint( extra-large ) {
+            display: block;
+            float: left;
+            width: 32%;
+            margin-left: 2%;
+            margin-bottom: 0;
+        
+            &#subbox1 {
+                margin-left: 0;   
+            }
+        
+        } // extra-large
+        
+        @include breakpoint( small-medium ) {
+            width: 32%;
+        } // small-medium
+        
+        
+        @include breakpoint( extra-small ) {
+            float: none;
+            margin: 0 0 10px 0;
+            width: 100%;
+        }
+        
+    } // input
+    
+    input[type="submit"] {
+        font-weight: 700;
+        text-shadow: $text-shadow-gold-med;
+        
+        &:hover {
+            text-shadow: none;
+        }
+        
+    } // submit
+
+} // .widget.enews-widget
