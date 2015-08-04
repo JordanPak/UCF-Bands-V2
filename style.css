@@ -2610,6 +2610,8 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
     .event-schedule > ul > li span {
       font-size: .9em;
       font-weight: 700; }
+    .event-schedule > ul > li p {
+      display: inline; }
     .event-schedule > ul > li:last-child {
       border-bottom: 0; }
     .event-schedule > ul > li:hover {
@@ -2624,6 +2626,8 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
       margin-bottom: 4px;
       list-style-image: none;
       cursor: default; }
+      .event-schedule > ul ul li p {
+        display: inline; }
 
 .event-program {
   padding: 25px;
