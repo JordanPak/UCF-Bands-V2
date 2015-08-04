@@ -1,3 +1,18 @@
 //====================================//
 //  UCFBands V2 | WIDGETS & SIDEBARS  //
 //====================================//
+
+.widget-title {
+    font-size: 24px;
+}
+
+
+//-- ENEWS WIDGET --//
+.sidebar .widget.enews-widget {
+    background: $ucf-gray;
+    
+    input[type="submit"] {
+        font-weight: 700;   
+    }
+
+} // .widget.enews-widget
