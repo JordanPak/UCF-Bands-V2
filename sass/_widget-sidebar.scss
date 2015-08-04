@@ -15,8 +15,8 @@
     background: $ucf-gray;
     
     .widget-title, p {
-        text-align: center;
         margin: 0;
+        text-align: center;
     }
     
     .widget-title {
@@ -32,6 +32,7 @@
     p {
         margin-bottom: $space-default-half;
         color: $ucf-gold;
+        font-style: italic;
     
         @include breakpoint( extra-large ) {
             margin-bottom: $space-default-half + 10px;   
@@ -55,13 +56,26 @@
         } // extra-large
         
         @include breakpoint( small-medium ) {
-            width: 47%;   
+            width: 32%;
+        } // small-medium
+        
+        
+        @include breakpoint( extra-small ) {
+            float: none;
+            margin: 0 0 10px 0;
+            width: 100%;
         }
         
     } // input
     
     input[type="submit"] {
-        font-weight: 700;   
-    }
+        font-weight: 700;
+        text-shadow: $text-shadow-gold-med;
+        
+        &:hover {
+            text-shadow: none;
+        }
+        
+    } // submit
 
 } // .widget.enews-widget
