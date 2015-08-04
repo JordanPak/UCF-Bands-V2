@@ -41,10 +41,17 @@ h1 {
     &.section-page-title {
         margin-bottom: $space-default;
         text-shadow: $text-shadow-white-lg;
+
+        @include breakpoint( small-medium ) {
+            display: block;
+//            width: 100%;
+            margin: $space-default $space-default 0 $space-default;
+            padding-bottom: $space-default-half;
+            border-bottom: 1px solid $ucf-gray-light;
+        }
         
-        @include breakpoint( small ) {
-            text-align: center;
-            margin-top: $space-default-half;
+        @include breakpoint( extra-small ) {
+            margin: ($space-default-half + 10px) ($space-default-half + 10px) 0 ($space-default-half + 10px);
         }
         
     } // .section-page-title
