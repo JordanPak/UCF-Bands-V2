@@ -96,6 +96,7 @@ function archive_masonry_grid() {
             $staff_meta = ucfbands_staff_get_meta( $staff_member );
             
             
+            // Format Biography
             apply_filters( 'the_content', $staff_meta['biography'] ) ;
 
             ?>
