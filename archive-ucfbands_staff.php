@@ -104,6 +104,14 @@ function archive_masonry_grid() {
             <div class="block masonry-block masonry-block-size--one-half">
 
                 
+                <!-- POST THUMBNAIL -->
+                <?php
+                
+                if ( has_post_thumbnail() )
+                    the_post_thumbnail( 'medium' );
+                ?>
+                    
+                
                 <!-- BLOCK TITLE -->
                 <h3 class="block-header"><?php the_title(); ?></h3>
                 
