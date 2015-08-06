@@ -56,7 +56,6 @@ function archive_masonry_grid() {
     $staff_args = array(
         'post_type'         => 'ucfbands_staff',
         'fields'            => 'ids',
-        'orderby'           => 'meta_value_num',
         'order'             => 'ASC',
         'posts_per_page'    => 20,
         'paged'             => true,
@@ -80,15 +79,25 @@ function archive_masonry_grid() {
             echo '<div class="masonry-' . $masonry_column_layout . '-grid-sizer"></div>';
             echo '<div class="masonry-' . $masonry_column_layout . '-gutter-sizer"></div>';
 
-
         
-        // LOOP THROUGH POSTS //
-        while ( $staff->have_posts() ): $staff->the_post(); //global $post;
+        // Get Posts
+        $staff = $staff->get_posts();
+    
+        
+        //-- LOOP --//
+        foreach( $staff as $staff_member ) {
             
-                    
-            // Get the current post
-            $post = get_post();
             
+            // Get Current Post
+            $staff_member_post = get_post( $staff_member );
+
+
+            // Get "Default" event meta (params get what we want)
+            $staff_meta = ucfbands_staff_get_meta( $staff_member );
+            
+            
+            apply_filters( 'the_content', $staff_meta['biography'] ) ;
+
             ?>
             
             <!-- MASONRY BLOCK -->
@@ -101,8 +110,8 @@ function archive_masonry_grid() {
                 
                 <!-- BLOCK CONTENT -->
                 <div class="entry-content">
-                
-                    <?php echo $post->post_content; ?>
+
+                    <?php echo wpautop( $staff_meta['biography'] ); ?>
                 
                 </div><!-- /.entry-content -->
 
@@ -112,7 +121,7 @@ function archive_masonry_grid() {
 
             <?php
         
-        endwhile;
+        } // end foreach
                
         
         // End Grid
