@@ -108,7 +108,7 @@ function archive_masonry_grid() {
                 <?php
                 
                 if ( has_post_thumbnail() )
-                    the_post_thumbnail( 'medium' );
+                    the_post_thumbnail( 'medium', array( 'class' => 'alignright' ) ); 
                 ?>
                     
                 
@@ -118,7 +118,30 @@ function archive_masonry_grid() {
                 
                 <!-- BLOCK CONTENT -->
                 <div class="entry-content">
+                    
+                    <p>
+                    
+                        <!-- Position -->
+                        <?php echo '<b><i>' . $staff_meta['position'] . '</i></b>'; ?>
 
+
+                        <!-- Contact Info -->
+                        <?php if ( $staff_meta['email'] ) { ?>
+
+                            <br><i class="fa fa-envelope"></i> <a href="mailto:<?php echo $staff_meta['email']; ?>" target="_blank"><?php echo $staff_meta['email']; ?></a>
+                        
+                        <?php } // endif ?>
+                        
+                        
+                        <?php if ( $staff_meta['phone'] ) { ?>
+                    
+                            <br><i class="fa fa-phone"></i> <?php echo $staff_meta['phone']; ?>     
+                    
+                        <?php } //endif ?>
+                        
+                    </p>
+
+                    <!-- Biography -->
                     <?php echo wpautop( $staff_meta['biography'] ); ?>
                 
                 </div><!-- /.entry-content -->
