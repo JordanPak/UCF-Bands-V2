@@ -1,0 +1,24 @@
+//=======================//
+//  UCFBANDS V2 | STAFF  //
+//=======================//
+
+.post-type-archive-ucfbands_staff {
+    
+    .block-header {
+        margin: 0;
+    }
+    
+    img.staff-img {    
+        border: 1px solid $ucf-gray-light;
+        box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        
+        @include breakpoint( extra-small ) {
+            clear: both;
+            float: none;
+            margin-left: 0;
+            margin-right: 0;
+        } // breakpoint-extra-small
+        
+    } // img
+    
+} // .post-type-archive-ucfbands_staff

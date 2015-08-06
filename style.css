@@ -2442,6 +2442,18 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
   box-shadow: none;
   padding-left: -40px; }
 
+.post-type-archive-ucfbands_staff .block-header {
+  margin: 0; }
+.post-type-archive-ucfbands_staff img.staff-img {
+  border: 1px solid whitesmoke;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); }
+  @media (max-width: 600px) {
+    .post-type-archive-ucfbands_staff img.staff-img {
+      clear: both;
+      float: none;
+      margin-left: 0;
+      margin-right: 0; } }
+
 .announcements-wrap h2 {
   margin-bottom: 25px; }
 

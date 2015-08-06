@@ -105,15 +105,11 @@ function archive_masonry_grid() {
 
                 
                 <!-- POST THUMBNAIL -->
-                <?php
-                
-                if ( has_post_thumbnail() )
-                    the_post_thumbnail( 'medium', array( 'class' => 'alignright' ) ); 
-                ?>
+                <?php echo get_the_post_thumbnail( $staff_member, 'medium', array( 'class' => 'alignright staff-img' ) ); ?>
                     
                 
                 <!-- BLOCK TITLE -->
-                <h3 class="block-header"><?php the_title(); ?></h3>
+                <h3 class="block-header"><?php echo $staff_member_post->post_title; ?></h3>
                 
                 
                 <!-- BLOCK CONTENT -->
@@ -122,7 +118,7 @@ function archive_masonry_grid() {
                     <p>
                     
                         <!-- Position -->
-                        <?php echo '<b><i>' . $staff_meta['position'] . '</i></b>'; ?>
+                        <span class="staff-position"><b><i><?php echo $staff_meta['position']; ?></i></b></span><br>
 
 
                         <!-- Contact Info -->
