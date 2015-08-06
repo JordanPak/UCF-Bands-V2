@@ -51,33 +51,23 @@ function archive_masonry_grid() {
     
     
     //-- CPT QUERY --//
-      
-    // Taxonomy Query
-    $tax_query = array(
-        array(
-            'taxonomy'  => 'band',
-            'field'     => 'slug',
-            'terms'     => 'all-bands',
-        ),
-    );
     
     // Query Options
-    $announcements_args = array(
-        'post_type'         => 'announcement',
-        'tax_query'         => $tax_query,
+    $staff_args = array(
+        'post_type'         => 'ucfbands_staff',
         'fields'            => 'ids',
         'orderby'           => 'meta_value_num',
-        'order'             => 'DSC',
-        'posts_per_page'    => 16,
+        'order'             => 'ASC',
+        'posts_per_page'    => 20,
 //        'paged'             => true,
     );
     
     // Query/Get Post IDs
-    $announcements = new WP_Query( $announcements_args );
+    $staff = new WP_Query( $staff_args );
     
     
-    // If there's announcements, do the grid
-    if ( $announcements->have_posts() ):
+    // If there's Staff, do the grid
+    if ( $staff->have_posts() ):
         
         
         // MASONRY GRID CONTAINER //
@@ -93,7 +83,7 @@ function archive_masonry_grid() {
 
         
         // LOOP THROUGH POSTS //
-        while ( $announcements->have_posts() ): $announcements->the_post(); //global $post;
+        while ( $staff->have_posts() ): $staff->the_post(); //global $post;
             
                     
             // Get the current post
@@ -102,7 +92,7 @@ function archive_masonry_grid() {
             ?>
             
             <!-- MASONRY BLOCK -->
-            <div class="block masonry-block masonry-block-size--one-third">
+            <div class="block masonry-block masonry-block-size--one-half">
 
                 
                 <!-- BLOCK TITLE -->
@@ -144,10 +134,10 @@ function archive_masonry_grid() {
             <ul>
                 
                 <!-- Previous Posts -->
-                <li><?php previous_posts_link( 'Newer Announcements' ); ?></li>
+                <li><?php previous_posts_link( 'Previous' ); ?></li>
                 
                 <!-- Older Announcements -->
-                <li><?php next_posts_link( 'Older Announcements' ); ?></li>
+                <li><?php next_posts_link( 'Next' ); ?></li>
 
             </ul>
         </div><!-- /.archive-pagination.pagination -->
