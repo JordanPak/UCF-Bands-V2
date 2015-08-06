@@ -59,7 +59,7 @@ function archive_masonry_grid() {
         'orderby'           => 'meta_value_num',
         'order'             => 'ASC',
         'posts_per_page'    => 20,
-//        'paged'             => true,
+        'paged'             => true,
     );
     
     // Query/Get Post IDs
@@ -97,12 +97,6 @@ function archive_masonry_grid() {
                 
                 <!-- BLOCK TITLE -->
                 <h3 class="block-header"><?php the_title(); ?></h3>
-                
-                
-                <!-- DATE -->
-                <span class="announcement-date">
-                    <i class="fa fa-calendar"></i>&nbsp; <?php echo mysql2date( 'F j, Y', $post->post_date ) ?>
-                </span>
                 
                 
                 <!-- BLOCK CONTENT -->
