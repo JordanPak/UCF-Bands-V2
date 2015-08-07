@@ -1,5 +1,9 @@
 jQuery(document).ready(function($) {
     $( ".accordion" ).accordion({
-        collapsible: true
+        collapsible: true,
+        heightStyle: "content",
+        autoHeight: false,
+        clearStyle: true,
+        active: false,
     });
 });
