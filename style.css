@@ -2877,6 +2877,9 @@ body.font-style-athletic.single-ucfbands_event .date-badge {
   font-family: "Oswald", "Roboto", sans-serif;
   letter-spacing: .1em; }
 
+ul.rehearsal-announcements {
+  margin-bottom: 0; }
+
 @media (max-width: 980px) {
   .accordion {
     padding: 40px;
