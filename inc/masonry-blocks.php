@@ -107,8 +107,8 @@ function show_masonry_grid() {
 
                     
                     // Parse block content into Markdown HTML
-                    if ($block_render_html) {   
-                        echo $block_content;
+                    if ($block_render_html) {
+                        echo apply_filters('the_content', $block_content); 
                     }
                     
                     else {

@@ -89,7 +89,7 @@ function ucfbands_blocks_metabox() {
 		'name' => __( 'Render as HTML', 'ucfbands-blocks' ),
 		'id'   => 'render_html',
 		'type' => 'checkbox',
-        'desc' => 'Renders content as HTML instead of Github-Flavored Markdown',
+        'desc' => 'Renders content as HTML instead of Github-Flavored Markdown. Shortcodes will still work.',
 	) );    
     
 	$cmb_group->add_group_field( $group_field_id, array(
