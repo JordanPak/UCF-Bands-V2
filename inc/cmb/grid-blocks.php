@@ -81,10 +81,17 @@ function ucfbands_blocks_metabox() {
 	$cmb_group->add_group_field( $group_field_id, array(
 		'name' => __( 'Block Content', 'ucfbands-blocks' ),
 		'id'   => 'block-content',
-		'type' => 'textarea', //'type' => 'wysiwyg'
-        'desc' => 'This text area supports <b><a href="https://help.github.com/articles/github-flavored-markdown/" target="_BLANK">GithHub Flavored Markdown</a></b> and shortcodes. Markdown is required to format the block text.'
+		'type' => 'textarea_code', //'type' => 'wysiwyg'
+        'desc' => 'This text area supports <b><a href="https://help.github.com/articles/github-flavored-markdown/" target="_BLANK">GithHub Flavored Markdown</a></b> and shortcodes. Markdown is required to format the block text. However, this functionality can be removed below.'
 	) );
 
+	$cmb_group->add_group_field( $group_field_id, array(
+		'name' => __( 'Render as HTML', 'ucfbands-blocks' ),
+		'id'   => 'render_html',
+		'type' => 'checkbox',
+        'desc' => 'Renders content as HTML instead of Github-Flavored Markdown',
+	) );    
+    
 	$cmb_group->add_group_field( $group_field_id, array(
 		'name' => __( 'Remove Block Background &amp; Padding', 'ucfbands-blocks' ),
 		'id'   => 'remove-background',

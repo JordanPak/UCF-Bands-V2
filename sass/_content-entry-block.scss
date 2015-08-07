@@ -156,6 +156,9 @@
     
 } // .error404
 
+.contact-google-map {
+    @include block();
+}
 
 
 //==============//

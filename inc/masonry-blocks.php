@@ -56,7 +56,8 @@ function show_masonry_grid() {
         $block_icon                         = esc_attr( $block['icon'] );
         $block_width                        = esc_attr( $block['width'] );
         $block_is_featured                  = esc_attr( $block['featured'] );
-        $block_content                      = esc_attr( $block['block-content'] );
+        $block_content                      = $block['block-content'];
+        $block_render_html                  = esc_attr( $block['render_html'] );
         $block_remove_background_padding    = esc_attr( $block['remove-background'] );
         $block_is_breaker                   = esc_attr( $block['breaker'] );
        
@@ -104,14 +105,17 @@ function show_masonry_grid() {
                     <!-- BLOCK MARKDOWN CONTENT -->
                     <?php 
 
-                    // ALTERNATIVE: echo do_shortcode( $Parsedown->text( $block_content ) );
-
+                    
                     // Parse block content into Markdown HTML
-                    $block_content = $Parsedown->text($block_content);
-
-
-                    // Apply 'the_content' filter to render shortcodes
-                    echo apply_filters('the_content', $block_content);
+                    if ($block_render_html) {   
+                        echo $block_content;
+                    }
+                    
+                    else {
+                        $block_content = $Parsedown->text($block_content);
+                        echo apply_filters('the_content', $block_content);    
+                    }
+                    
 
                     ?>
                 

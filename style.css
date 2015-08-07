@@ -2186,6 +2186,11 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
   border: 1px solid #D4D4D4; }
 
+.contact-google-map {
+  background-color: #FFFFFF;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+  border: 1px solid #D4D4D4; }
+
 .pagination li a {
   text-transform: none;
   color: #FFFFFF;
