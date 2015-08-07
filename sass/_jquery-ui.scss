@@ -2,6 +2,20 @@
 //  UCFBANDS V2 | JQUERY UI  //
 //===========================//
 
+.accordion {
+    
+    @include breakpoint( small-medium ) {
+        padding: $space-default;
+        padding-top: 0;
+    }
+    
+    @include breakpoint( extra-small ) {
+        padding: $space-default-half + 10px;
+        padding-top: 0;
+    }
+    
+} // .accordion
+
 .ui-accordion-header {
     
     @include block();
