@@ -1,0 +1,43 @@
+//===========================//
+//  UCFBANDS V2 | JQUERY UI  //
+//===========================//
+
+.ui-accordion-header {
+    
+    @include block();
+    
+    margin-bottom: 10px;
+    padding: 12px;
+    color: $white;
+    background: $ucf-gray;
+    border: 1px solid $ucf-gray;
+    cursor: pointer;
+    
+    @include transition-ease-in-out(150ms);
+    
+    &:hover {
+        color: $ucf-gold;   
+    }
+    
+    &.ui-accordion-header-active {
+        margin: 0;
+        background: $ucf-gold;
+        border: 1px solid $ucf-gold-darker;
+        text-shadow: $text-shadow-gold-med;
+        
+        &:hover {
+            color: $white;
+        }
+        
+    } // active
+    
+} // .ui-accordion-header
+
+.ui-accordion-content {
+    
+    @include block();
+    
+    margin-bottom: $space-default-half;
+    padding: $space-default-half;
+}
+
