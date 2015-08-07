@@ -65,10 +65,51 @@ function archive_masonry_grid() {
     $staff = new WP_Query( $staff_args );
     
     
+    
     // If there's Staff, do the grid
     if ( $staff->have_posts() ):
+
         
+        // Get Posts
+        $staff = $staff->get_posts();
+    
+    
+    
+        //-- SORT POSTS --//
+    
+        $staff_faculty = array();
+        $staff_not_faculty = array();
+    
+    
+        foreach( $staff as $staff_member ) {
+           
+                        
+            // Get Current Post
+            $staff_member_post = get_post( $staff_member );
+
+
+            // Get "Default" event meta (params get what we want)
+            $staff_meta = ucfbands_staff_get_meta( $staff_member );
+            
+            if( $staff_meta['is_faculty'] == true)
+                $staff_faculty[] = $staff_member;
+            else
+                $staff_not_faculty[] = $staff_member;
+            
+        } // foreach Staff
+         
+
         
+    
+        //-- FACULTY --//
+        
+        // Title
+        echo '<h1 class="entry-title section-page-title" itemprop="headline">' . Faculty . '</h1>';
+    
+    
+        // "To Staff" Button
+    
+                
         // MASONRY GRID CONTAINER //
     
         // Column Layout
@@ -78,14 +119,10 @@ function archive_masonry_grid() {
         echo '<section class="masonry-' . $masonry_column_layout . '-grid">';
             echo '<div class="masonry-' . $masonry_column_layout . '-grid-sizer"></div>';
             echo '<div class="masonry-' . $masonry_column_layout . '-gutter-sizer"></div>';
-
-        
-        // Get Posts
-        $staff = $staff->get_posts();
     
         
-        //-- LOOP --//
-        foreach( $staff as $staff_member ) {
+        // POST LOOP //
+        foreach( $staff_faculty as $staff_member ) {
             
             
             // Get Current Post
@@ -155,6 +192,40 @@ function archive_masonry_grid() {
         // End Grid
         echo '</section>';
         
+    
+//        //-- SORT POSTS --//
+//        
+//        $staff_faculty = array();
+//        $staff_not_faculty = array();
+//    
+//    
+//        foreach( $staff as $staff_member ) {
+//           
+//                        
+//            // Get Current Post
+//            $staff_member_post = get_post( $staff_member );
+//
+//
+//            // Get "Default" event meta (params get what we want)
+//            $staff_meta = ucfbands_staff_get_meta( $staff_member );
+//            
+//            
+//            echo $staff_member . '<br>';
+//            echo $staff_meta['position'] . '<br>';
+//            echo $staff_meta['email'] . '<br>';
+//            echo $staff_meta['is_faculty'] . '<br><br><br>';
+//            
+//            
+//            if( $staff_meta['is_faculty'] == true)
+//                $staff_faculty[] = $staff_member;
+//            else
+//                $staff_not_faculty[] = $staff_member;
+//            
+//        }
+//        
+//    
+//        echo print_r($staff_faculty);
+//        echo var_dump($staff_not_faculty);
     
     
         // PAGINATION //
