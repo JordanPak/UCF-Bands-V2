@@ -2029,6 +2029,7 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
 .page-header {
   position: relative;
   overflow: visible;
+  background-size: cover;
   background-color: #221E1F;
   background-repeat: no-repeat;
   background-position: top right;
@@ -2079,6 +2080,9 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
     .page-header a h1.entry-title:hover {
       color: #FFCA06;
       cursor: pointer; }
+  @media (max-width: 1920px) {
+    .page-header {
+      background-size: auto; } }
   @media (max-width: 768px) {
     .page-header {
       background-position: top center;

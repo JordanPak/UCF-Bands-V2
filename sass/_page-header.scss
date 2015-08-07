@@ -5,6 +5,7 @@
 .page-header {
     position: relative;
     overflow: visible;//auto;
+    background-size: cover;
     background-color: $ucf-gray;
     background-repeat: no-repeat;
     background-position: top right;
@@ -86,6 +87,9 @@
         
     } // a
     
+    @include breakpoint( extra-extra-large ) {
+        background-size: auto;   
+    }
     
     @include breakpoint( small ) {
         
