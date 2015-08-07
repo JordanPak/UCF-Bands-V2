@@ -64,9 +64,20 @@ function ucfbands_global_styles() {
 add_action( 'wp_enqueue_scripts', 'ucfbands_global_scripts' );
 function ucfbands_global_scripts() {
     
-    // Pushy
-    wp_enqueue_script( 'pushy', get_stylesheet_directory_uri() . '/inc/js/pushy.min.js', array( 'jquery' ), CHILD_THEME_VERSION );
-    
+    if ( !is_admin() ) {
+        
+        // Pushy
+        wp_enqueue_script( 'pushy', get_stylesheet_directory_uri() . '/inc/js/pushy.min.js', array( 'jquery' ), CHILD_THEME_VERSION );
+        
+        // jQuery UI Accordion
+        wp_enqueue_script( 'jquery-ui-accordion' );
+        
+        // Accordion Init
+        wp_enqueue_script( 'accordion-init', get_stylesheet_directory_uri() . '/inc/js/accordion-init.js', array('jquery')
+		);        
+
+    } // if admin
+        
 } // ucfbands_global_scripts()
 
 
