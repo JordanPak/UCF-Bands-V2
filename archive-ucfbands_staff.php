@@ -104,10 +104,11 @@ function archive_masonry_grid() {
         //-- FACULTY --//
         
         // Title
-        echo '<h1 class="entry-title section-page-title" itemprop="headline">' . Faculty . '</h1>';
+        echo '<h1 style="display:inline-block;" class="entry-title section-page-title" itemprop="headline">' . Faculty . '</h1>';
     
     
         // "To Staff" Button
+        echo '<a style="margin-right: 3%;" class="alignright button" href="#staff">To Staff&nbsp;&nbsp;<i style="position: relative; top: -2px;" class="fa fa-sort-down"></i></a>';
     
                 
         // MASONRY GRID CONTAINER //
