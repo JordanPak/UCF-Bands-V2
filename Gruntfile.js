@@ -35,6 +35,7 @@ module.exports = function (grunt) {
 	// NPM Stuff
     grunt.loadNpmTasks('grunt-contrib-sass');
 	grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-postcss');
     
     // Grunt Registrations
     grunt.registerTask('dist', ['sass:dist']);
