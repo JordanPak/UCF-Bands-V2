@@ -108,7 +108,7 @@ function archive_masonry_grid() {
     
     
         // "To Staff" Button
-        echo '<a class="alignright button" href="#staff">To Staff&nbsp;&nbsp;<i style="position: relative; top: -2px;" class="fa fa-sort-down"></i></a>';
+        echo '<a class="alignright to-staff-button button" href="#staff">To Staff&nbsp;&nbsp;<i style="position: relative; top: -2px;" class="fa fa-sort-down"></i></a>';
     
     
                 
@@ -155,7 +155,7 @@ function archive_masonry_grid() {
                 <!-- BLOCK CONTENT -->
                 <div class="entry-content">
                     
-                    <p>
+                    <p class="staff-meta">
                     
                         <!-- Position -->
                         <span class="staff-position"><b><i><?php echo $staff_meta['position']; ?></i></b></span><br>
@@ -200,7 +200,7 @@ function archive_masonry_grid() {
         //-- STAFF --//
         
         // Title
-        echo '<br><h1 id="staff" style="display:inline-block;" class="entry-title section-page-title" itemprop="headline">Staff</h1>';
+        echo '<h1 id="staff" style="display:inline-block;" class="entry-title section-page-title" itemprop="headline">Staff</h1>';
     
 
         // MASONRY GRID CONTAINER //
@@ -246,7 +246,7 @@ function archive_masonry_grid() {
                 <!-- BLOCK CONTENT -->
                 <div class="entry-content">
                     
-                    <p>
+                    <p class="staff-meta">
                     
                         <!-- Position -->
                         <span class="staff-position"><b><i><?php echo $staff_meta['position']; ?></i></b></span><br>

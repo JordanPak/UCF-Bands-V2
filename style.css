@@ -2443,7 +2443,13 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
   padding-left: -40px; }
 
 .post-type-archive-ucfbands_staff .block-header {
+  display: inline-block;
   margin: 0; }
+  @media (max-width: 600px) {
+    .post-type-archive-ucfbands_staff .block-header {
+      width: 100%; } }
+.post-type-archive-ucfbands_staff .staff-meta {
+  display: inline-block; }
 .post-type-archive-ucfbands_staff img.staff-img {
   border: 1px solid whitesmoke;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); }
@@ -2453,6 +2459,17 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
       float: none;
       margin-left: 0;
       margin-right: 0; } }
+.post-type-archive-ucfbands_staff .section-page-title {
+  display: inline-block; }
+.post-type-archive-ucfbands_staff .to-staff-button {
+  float: right;
+  margin-right: 3%; }
+  @media (max-width: 980px) {
+    .post-type-archive-ucfbands_staff .to-staff-button {
+      margin: 40px; } }
+  @media (max-width: 600px) {
+    .post-type-archive-ucfbands_staff .to-staff-button {
+      margin: 30px; } }
 
 .announcements-wrap h2 {
   margin-bottom: 25px; }

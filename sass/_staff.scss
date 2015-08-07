@@ -5,7 +5,17 @@
 .post-type-archive-ucfbands_staff {
     
     .block-header {
+        display: inline-block;
         margin: 0;
+        
+        @include breakpoint( extra-small ) {
+            width: 100%;
+        }
+    
+    } // .block-header
+    
+    .staff-meta {
+        display: inline-block; // Breaks stuff down instead of broken text-wrapping.
     }
     
     img.staff-img {    
@@ -20,5 +30,24 @@
         } // breakpoint-extra-small
         
     } // img
+
+    .section-page-title {
+        display: inline-block;
+    }
+
+    .to-staff-button {
+        float: right;
+        margin-right: 3%;
+        
+        @include breakpoint( small-medium ) {
+            margin: $space-default;
+        }
+        
+        @include breakpoint( extra-small ) {
+            margin: $space-default-half + 10px; 
+        }
+        
+    } // .to-staff-button
+    
     
 } // .post-type-archive-ucfbands_staff
