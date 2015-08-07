@@ -5,13 +5,14 @@
 .page-header {
     position: relative;
     overflow: visible;//auto;
+    background-size: cover;
     background-color: $ucf-gray;
     background-repeat: no-repeat;
     background-position: top right;
     background-attachment: fixed;
     border-bottom: 5px solid $ucf-gray-darker;
     
-    @include site-inner-inset-shadow(true, true, true);
+    @include site-inner-inset-shadow(true, true);
     
     .page-header-inner {
         padding: $space-default;
@@ -36,6 +37,10 @@
             }
             
         } // .page-header-inner
+        
+        &.nav-background-fade {
+            @include site-inner-inset-shadow(true, true, true);   
+        }
         
     } // .page-header-lg
     
@@ -82,6 +87,9 @@
         
     } // a
     
+    @include breakpoint( extra-extra-large ) {
+        background-size: auto;   
+    }
     
     @include breakpoint( small ) {
         

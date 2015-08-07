@@ -24,7 +24,7 @@ function ucfbands_page_header_manual() {
 
     ?>
 
-    <section class="page-header page-header-lg">
+    <section style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/images/page-header-bg/page-header-bg-su-seal.jpg');" class="page-header page-header-lg">
 
         <div class="page-header-inner">
 

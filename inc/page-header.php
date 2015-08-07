@@ -21,9 +21,12 @@ function ucfbands_custom_page_header() {
     $page_parents = get_post_ancestors( $post );
     
     // If the first spot is not null, there's a parent.
-    if( $page_parents[0] != '' ) {
+    if( $page_parents[0] != '' )
         $page_has_parent = true;
-    }
+    
+    else
+        $page_has_parent = false;
+    
     
     // SET VARS: Page has no parent (dashboard?)
     if( $page_has_parent == false ) {
@@ -129,17 +132,12 @@ function ucfbands_custom_page_header() {
     }
     
     
-    // REMOVE PAGE HEADER BACKGROUND FADE
-    if ($remove_page_header_background_fade == true) {
-        $page_header_section_classes .= ' remove-background-fade';   
-    }
-    
-    
     // CONFIGURE SECTION MENU
     $current_template = basename( get_page_template() );
     
     if ( ($current_template == 'page_section.php') || ($current_template == 'page_section_grid.php') ) {
         $display_section_menu = true;
+        $page_header_section_classes .= ' nav-background-fade';
     }
         
     if ($display_section_menu == true) {
@@ -156,6 +154,12 @@ function ucfbands_custom_page_header() {
         
     } // if
     
+    
+    // REMOVE PAGE HEADER BACKGROUND FADE
+    if ($remove_page_header_background_fade == true) {
+        $page_header_section_classes .= ' remove-background-fade';   
+    }
+        
     
     // DISPLAY PAGE HEADER //
     if ($remove_page_header == false) {
