@@ -2559,9 +2559,9 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
     display: inline-block;
     position: relative;
     right: -5px;
-    z-index: 100;
     float: right;
     padding-right: 5px;
+    text-shadow: none;
     -webkit-transition: all ease-in-out 200ms;
     transition: all ease-in-out 200ms; }
     .entry-wrapper .more-info a {
@@ -2569,7 +2569,8 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
       -webkit-transition: all ease-in-out 200ms;
       transition: all ease-in-out 200ms; }
       .entry-wrapper .more-info a:hover {
-        color: #FFCA06; }
+        color: #FFCA06;
+        text-shadow: none; }
         .entry-wrapper .more-info a:hover .event-details {
           display: inline; }
       .entry-wrapper .more-info a .event-details {
@@ -2585,6 +2586,9 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
         box-shadow: 0 0 10px 10px #FFFFFF;
         -webkit-transition: all ease-in-out 200ms;
         transition: all ease-in-out 200ms; }
+      .entry-wrapper .more-info a i.fa {
+        z-index: 50;
+        position: relative; }
   .entry-wrapper .right-info {
     display: block;
     cursor: default; }
