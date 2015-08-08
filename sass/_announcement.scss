@@ -49,6 +49,21 @@
     text-transform: uppercase;
 } 
 
+.single-announcement {
+    
+    .content .entry {
+        @include block();
+    }
+    
+    .announcement-date {
+        display: inline-block;
+        float: none;
+        padding: 0;
+        margin-bottom: $space-default;
+    }
+    
+} // .single-announcement
+
 .post-type-archive-announcement {
     
     .block-header {
