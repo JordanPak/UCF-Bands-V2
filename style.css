@@ -2518,6 +2518,16 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
   font-weight: 700;
   text-transform: uppercase; }
 
+.single-announcement .content .entry {
+  background-color: #FFFFFF;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+  border: 1px solid #D4D4D4; }
+.single-announcement .announcement-date {
+  display: inline-block;
+  float: none;
+  padding: 0;
+  margin-bottom: 40px; }
+
 .post-type-archive-announcement .block-header {
   margin: 0; }
 .post-type-archive-announcement .announcement-date {
