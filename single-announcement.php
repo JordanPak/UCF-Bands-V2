@@ -15,11 +15,10 @@ remove_action( 'genesis_entry_footer', 'genesis_post_meta' );
 add_action( 'genesis_before_entry_content', 'ucfbands_announcement_single_date' );
 
 function ucfbands_announcement_single_date() {
+    
+    // Get Post 
+    $post = get_post();
 
-    $post_ID = get_the_id();
-    $post = get_post($post_ID);
-
-    echo $post_ID;
     ?>
 
 
