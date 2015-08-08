@@ -1492,6 +1492,7 @@ p a,
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   color: #333333;
   border-bottom: 2px solid transparent;
+  -webkit-transition: all ease-in-out 200ms;
   transition: all ease-in-out 200ms; }
   p a:hover,
   h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
@@ -1536,6 +1537,7 @@ hr {
   text-shadow: 0 0 3px #000000, 1px 1px 1px rgba(0, 0, 0, 0.4), 0 0 3px #000000, 2px 2px 1px rgba(0, 0, 0, 0.4);
   background-color: #221E1F;
   border: 1px solid #000000;
+  -webkit-transition: all ease-in-out 175ms;
   transition: all ease-in-out 175ms; }
   .button:hover {
     background-color: #FFCA06;
@@ -2008,6 +2010,7 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
   background-position: center;
   background-size: 81.5%;
   border: none;
+  -webkit-transition: all ease-in-out 200ms;
   transition: all ease-in-out 200ms; }
   .header-image .site-title > a:hover {
     background-color: #141414; }
@@ -2076,6 +2079,7 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
     text-shadow: 0 0 3px #000000, 1px 1px 1px rgba(0, 0, 0, 0.4), 0 0 3px #000000, 2px 2px 1px rgba(0, 0, 0, 0.4);
     cursor: default; }
   .page-header a h1.entry-title {
+    -webkit-transition: all ease-in-out 200ms;
     transition: all ease-in-out 200ms; }
     .page-header a h1.entry-title:hover {
       color: #FFCA06;
@@ -2317,6 +2321,7 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
   .site-footer a {
     color: #FFFFFF;
     border-bottom: 2px solid transparent;
+    -webkit-transition: all ease-in-out 200ms;
     transition: all ease-in-out 200ms; }
     .site-footer a:hover {
       border-color: #FFCA06; }
@@ -2366,6 +2371,7 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
     border: none;
     color: #FFFFFF;
     background-color: rgba(0, 0, 0, 0.5);
+    -webkit-transition: all ease-in-out 200ms;
     transition: all ease-in-out 200ms; }
     #footer-social a:hover {
       color: #FFCA06; }
@@ -2546,9 +2552,11 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
     z-index: 100;
     float: right;
     padding-right: 5px;
+    -webkit-transition: all ease-in-out 200ms;
     transition: all ease-in-out 200ms; }
     .entry-wrapper .more-info a {
       color: #d5d0d1;
+      -webkit-transition: all ease-in-out 200ms;
       transition: all ease-in-out 200ms; }
       .entry-wrapper .more-info a:hover {
         color: #FFCA06; }
@@ -2565,6 +2573,7 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
         background: #221E1F;
         border-radius: 15px;
         box-shadow: 0 0 10px 10px #FFFFFF;
+        -webkit-transition: all ease-in-out 200ms;
         transition: all ease-in-out 200ms; }
   .entry-wrapper .right-info {
     display: block;
@@ -2575,6 +2584,7 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
     .entry-wrapper .right-info .location a {
       color: inherit;
       border-bottom: 2px solid transparent;
+      -webkit-transition: all ease-in-out 200ms;
       transition: all ease-in-out 200ms; }
       .entry-wrapper .right-info .location a:hover {
         color: inherit;
@@ -2647,6 +2657,7 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
     padding: 4px 6px;
     border-bottom: 1px solid #d5d0d1;
     cursor: default;
+    -webkit-transition: all ease-in-out 100ms;
     transition: all ease-in-out 100ms; }
     .event-schedule > ul > li span {
       font-size: .9em;
@@ -2693,6 +2704,7 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
       line-height: 1.4em;
       font-weight: 400;
       cursor: default;
+      -webkit-transition: all ease-in-out 120ms;
       transition: all ease-in-out 120ms; }
       .event-program ul li:hover {
         background-color: #FFFFFF; }
@@ -2911,6 +2923,7 @@ ul.rehearsal-announcements {
   background: #221E1F;
   border: 1px solid #221E1F;
   cursor: pointer;
+  -webkit-transition: all ease-in-out 150ms;
   transition: all ease-in-out 150ms; }
   .ui-accordion-header:hover {
     color: #FFCA06; }
@@ -3066,6 +3079,7 @@ ul.rehearsal-announcements {
     font-weight: 400;
     font-size: 1.2em;
     text-shadow: 0 0 3px #000000, 1px 1px 1px rgba(0, 0, 0, 0.4), 0 0 3px #000000, 2px 2px 1px rgba(0, 0, 0, 0.4);
+    -webkit-transition: all ease-in-out 300ms;
     transition: all ease-in-out 300ms; }
     .nav-primary .genesis-nav-menu .menu-item a:hover {
       background-color: #141414; }
@@ -3168,6 +3182,7 @@ nav.section-menu {
       font-weight: 700;
       text-decoration: none;
       text-shadow: 0 0 3px #000000, 1px 1px 1px rgba(0, 0, 0, 0.4), 0 0 3px #000000, 2px 2px 1px rgba(0, 0, 0, 0.4);
+      -webkit-transition: all ease-in-out 200ms;
       transition: all ease-in-out 200ms; }
       nav.section-menu ul li a:hover {
         text-decoration: none;
