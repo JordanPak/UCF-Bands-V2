@@ -66,6 +66,12 @@
     }
     
     
+    //-- HEIGHTS --//
+    @if $class == height-large {
+        @media (max-height: $breakpoint-height-large) { @content; }
+    }
+    
+    
     //-- WIDTH & HEIGHT --//
     
     @if $class == height-medium-width-medium {

@@ -2335,6 +2335,9 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
       border: none; }
       .site-footer address a:hover {
         color: #FFFFFF; }
+    @media (max-height: 900px) {
+      .site-footer address {
+        display: none; } }
   @media (max-width: 1200px) {
     .site-footer {
       width: 230px;

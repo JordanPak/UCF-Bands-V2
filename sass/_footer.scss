@@ -44,6 +44,10 @@
         
         } // a
         
+        @include breakpoint( height-large ) {
+            display: none;   
+        }
+        
     } // address
     
     @include breakpoint( medium ) {
