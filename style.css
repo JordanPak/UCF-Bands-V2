@@ -1967,19 +1967,20 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
   @media (max-width: 1200px) {
     .site-header {
       width: 230px; } }
+  @media (max-height: 740px) and (max-width: 1200px) {
+    .site-header {
+      position: absolute; } }
+  @media (max-height: 850px) and (max-width: 1366px) {
+    .site-header {
+      position: absolute; } }
   @media (max-width: 768px) {
     .site-header {
+      position: fixed;
       top: 0;
       width: 100%;
       min-height: 0;
       padding-left: 10px;
       border-bottom: 4px solid #FFCA06; } }
-  @media only screen and (max-height: 740px) and (max-height: 1200px) {
-    .site-header {
-      position: absolute; } }
-  @media only screen and (max-height: 850px) and (max-height: 1366px) {
-    .site-header {
-      position: absolute; } }
 
 @media (max-width: 768px) {
   .header-full-width .title-area {

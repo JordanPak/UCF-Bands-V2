@@ -69,7 +69,7 @@
     //-- WIDTH & HEIGHT --//
     
     @if $class == height-medium-width-medium {
-        @media (max-height: $breakpoint-height-medium) and (max-width: $breakpoint-medium) { @content; }   
+        @media (max-height: $breakpoint-height-medium) and (max-width: $breakpoint-medium) { @content; }
     }
     
     @if $class == height-large-width-large {
