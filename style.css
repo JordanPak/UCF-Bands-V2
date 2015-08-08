@@ -1970,7 +1970,7 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
   @media (max-height: 740px) and (max-width: 1200px) {
     .site-header {
       position: absolute; } }
-  @media (max-height: 850px) and (max-width: 1366px) {
+  @media (max-height: 900px) {
     .site-header {
       position: absolute; } }
   @media (max-width: 768px) {
@@ -2344,7 +2344,7 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
     .site-footer {
       z-index: 750;
       box-shadow: 0 -20px 20px -20px #000000; } }
-  @media (max-height: 850px) and (max-width: 1366px) {
+  @media (max-height: 900px) {
     .site-footer {
       z-index: 750;
       box-shadow: 0 -20px 20px -20px #000000; } }
