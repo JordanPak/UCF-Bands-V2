@@ -19,8 +19,8 @@
     $breakpoint-extra-large:        1700px;     // Extra Large to Extra Extra Large)
     $breakpoint-extra-extra-large:  1920px;     // Extra Extra Large and Greater
     
-    $breakpoint-height-large:       850px;      // To be used with menu fixing vs absolute
-    $breakpoint-height-medium:      740px;      
+    $breakpoint-height-large:       890px;      // To be used with menu fixing vs absolute
+    $breakpoint-height-medium:      710px;      
 
 
 
@@ -66,15 +66,28 @@
     }
     
     
-    //-- WIDTH & HEIGHT --//
-    
-    @if $class == height-medium-width-medium {
-        @media (max-height: $breakpoint-height-medium) and (max-width: $breakpoint-medium) { @content; }   
+    //-- HEIGHTS --//
+    @if $class == height-large {
+        @media (max-height: $breakpoint-height-large) { @content; }
     }
     
-    @if $class == height-large-width-large {
-        @media (max-height: $breakpoint-height-large) and (max-width: $breakpoint-large) { @content; }   
-    }    
+    
+    //-- WIDTH & HEIGHT --//
+    
+    // > Large Width with Heights < Large
+    @if $class == large-width-with-small-height {
+        @media (min-width: $breakpoint-medium) and (max-height: $breakpoint-height-large) { @content; }
+    }
+    
+    // Widths < Medium with Heights > Large
+    @if $class == smaller-than-medium-width-with-large-height {
+        @media (max-width: $breakpoint-medium) and (min-height: $breakpoint-height-medium) { @content; }
+    }
+    
+    // < Medium Width with < Medium Height
+    @if $class == smaller-than-medium-width-with-smaller-than-medium-height {
+        @media (max-width: $breakpoint-medium) and (max-height: $breakpoint-height-medium) { @content; }   
+    }
     
     
     //-- NOT FOUND --//

@@ -29,6 +29,26 @@
         
     } // a
     
+    .address-placeholder {
+        display: none;
+        margin-bottom: $space-default-half - 10px;
+        padding: 10px;
+        border-radius: 7px;
+        border: none;
+        color: $white;
+        text-align: center;
+        background-color: rgba(0,0,0,0.5);
+        
+        @include breakpoint( height-large ) {
+            display: block;
+        }
+        
+        @include breakpoint( smaller-than-medium-width-with-large-height ) {
+            display: none;   
+        }
+        
+    } // .address-placeholder
+    
     address {
         box-sizing: border-box;
         font-style: normal;
@@ -44,12 +64,34 @@
         
         } // a
         
+        @include breakpoint( height-large ) {
+            display: none;   
+        }
+        
+        @include breakpoint( smaller-than-medium-width-with-large-height ) {
+            display: inherit;
+        }
+        
     } // address
+    
+    // If the height is too small for the width with full menu
     
     @include breakpoint( medium ) {
         width: $site-header-width-med;
         padding: $space-default-half;
         font-size: .8em;
+    }
+
+    @include breakpoint( large-width-with-small-height ) {
+        z-index: 750;
+        padding: $space-default-half $space-default;
+        box-shadow: 0 -20px 20px -20px $black;
+    }
+    
+    @include breakpoint( smaller-than-medium-width-with-smaller-than-medium-height ) {
+        z-index: 750;
+        padding: $space-default-half $space-default;
+        box-shadow: 0 -20px 20px -20px $black;           
     }
     
     @include breakpoint( small ) {
@@ -57,6 +99,8 @@
         padding: $space-default;
         width: 100%;
         border-top: 5px solid $ucf-gray-darkest;
+        box-shadow: none;
+        z-index: 0;
         font-size: 1em;
         
         .wrap {
@@ -65,17 +109,16 @@
         
     } // breakpoint-small
     
-    // If the height is too small for the width with full menu
-    @media only screen and (max-height: $breakpoint-height-medium) and (max-height: $breakpoint-large) {
-        z-index: 750;
-        box-shadow: 0 -20px 20px -20px $black;
-    } 
-    
-    // If the height is too small for the width with full menu
-    @media only screen and (max-height: $breakpoint-height-large) and (min-height: $breakpoint-medium) {
-        z-index: 750;
-        box-shadow: 0 -20px 20px -20px $black;
-    }  
+    br {
+        
+        @include breakpoint( large-width-with-small-height ) {
+            display: none;   
+        }
+        @include breakpoint( smaller-than-medium-width-with-smaller-than-medium-height ) {
+            display: none; 
+        }
+        
+    } // br
     
 } // .site-footer
 
@@ -99,6 +142,14 @@
         
         &:hover {
             color: $ucf-gold;
+        }
+        
+        @include breakpoint( height-large ) {
+            display: none;
+        }
+        
+        @include breakpoint( smaller-than-medium-width-with-large-height ) {
+            display: inline-block;
         }
         
     } // a

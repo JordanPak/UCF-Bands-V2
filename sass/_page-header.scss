@@ -32,10 +32,6 @@
                 padding: ($space-default + 10px) $space-default;
             }
             
-            @media only screen and (max-width: $breakpoint-extra-extra-small) {
-                padding: $space-default-half;
-            }
-            
         } // .page-header-inner
         
         &.nav-background-fade {

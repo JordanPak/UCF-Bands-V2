@@ -248,6 +248,9 @@ function ucfbands_footer() {
     echo '<br>';
     
     
+    // Address Max-Height Placeholder
+    echo '<p class="address-placeholder"><a href="' . esc_url( $footer_address_url ) . '" target="_BLANK">Contact &amp; Address</a></p>';
+    
     // Address
     echo '<address><a href="' . esc_url( $footer_address_url ) . '" target="_BLANK">';
     
