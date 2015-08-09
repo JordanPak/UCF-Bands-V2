@@ -67,6 +67,14 @@ body {
         border-bottom: 5px solid $ucf-gold;
     }
     
+    @include breakpoint( height-large-width-large ) {
+        background-color: red;   
+    }
+    
+    @include breakpoint( height-medium-width-medium ) {
+        background-color: blue;   
+    }
+    
 } // .site-inner
 
 

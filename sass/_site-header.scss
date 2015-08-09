@@ -39,13 +39,16 @@
     }
 
     // If the height is too small for the width with full menu
-    @include breakpoint( height-medium-width-medium ) {
+    @include breakpoint( large-width-with-small-height ) {
         position: absolute;
     }    
     
-    // If the height is too small for the width with full menu
-    @include breakpoint( height-large-width-large ) {
-        position: absolute;
+    @include breakpoint( smaller-than-medium-width-with-large-height ) {
+        position: fixed;
+    }
+    
+    @include breakpoint( smaller-than-medium-width-with-smaller-than-medium-height ) {
+        position: absolute;   
     }
     
     @include breakpoint( small ) {

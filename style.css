@@ -1967,10 +1967,13 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
   @media (max-width: 1200px) {
     .site-header {
       width: 230px; } }
-  @media (max-height: 740px) and (max-width: 1200px) {
+  @media (min-width: 1200px) and (max-height: 890px) {
     .site-header {
       position: absolute; } }
-  @media (max-height: 890px) {
+  @media (max-width: 1200px) and (min-height: 710px) {
+    .site-header {
+      position: fixed; } }
+  @media (max-width: 1200px) and (max-height: 710px) {
     .site-header {
       position: absolute; } }
   @media (max-width: 768px) {
@@ -2338,6 +2341,9 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
     @media (max-height: 890px) {
       .site-footer .address-placeholder {
         display: block; } }
+    @media (max-width: 1200px) and (min-height: 710px) {
+      .site-footer .address-placeholder {
+        display: none; } }
   .site-footer address {
     box-sizing: border-box;
     font-style: normal;
@@ -2350,18 +2356,23 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
     @media (max-height: 890px) {
       .site-footer address {
         display: none; } }
+    @media (max-width: 1200px) and (min-height: 710px) {
+      .site-footer address {
+        display: inherit; } }
   @media (max-width: 1200px) {
     .site-footer {
       width: 230px;
       padding: 20px;
       font-size: .8em; } }
-  @media (max-height: 740px) and (max-width: 1200px) {
+  @media (min-width: 1200px) and (max-height: 890px) {
     .site-footer {
       z-index: 750;
+      padding: 20px 40px;
       box-shadow: 0 -20px 20px -20px #000000; } }
-  @media (max-height: 890px) {
+  @media (max-width: 1200px) and (max-height: 710px) {
     .site-footer {
       z-index: 750;
+      padding: 20px 40px;
       box-shadow: 0 -20px 20px -20px #000000; } }
   @media (max-width: 768px) {
     .site-footer {
@@ -2374,7 +2385,10 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
       font-size: 1em; }
       .site-footer .wrap {
         padding: 0; } }
-  @media (max-height: 890px) {
+  @media (min-width: 1200px) and (max-height: 890px) {
+    .site-footer br {
+      display: none; } }
+  @media (max-width: 1200px) and (max-height: 710px) {
     .site-footer br {
       display: none; } }
 
@@ -2399,6 +2413,9 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
     @media (max-height: 890px) {
       #footer-social a {
         display: none; } }
+    @media (max-width: 1200px) and (min-height: 710px) {
+      #footer-social a {
+        display: inline-block; } }
 
 .hero {
   display: block;

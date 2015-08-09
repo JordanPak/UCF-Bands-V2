@@ -43,6 +43,10 @@
             display: block;
         }
         
+        @include breakpoint( smaller-than-medium-width-with-large-height ) {
+            display: none;   
+        }
+        
     } // .address-placeholder
     
     address {
@@ -64,25 +68,31 @@
             display: none;   
         }
         
+        @include breakpoint( smaller-than-medium-width-with-large-height ) {
+            display: inherit;
+        }
+        
     } // address
+    
+    // If the height is too small for the width with full menu
     
     @include breakpoint( medium ) {
         width: $site-header-width-med;
         padding: $space-default-half;
         font-size: .8em;
     }
-       
-    // If the height is too small for the width with full menu
-    @include breakpoint( height-medium-width-medium ) {
+
+    @include breakpoint( large-width-with-small-height ) {
         z-index: 750;
+        padding: $space-default-half $space-default;
         box-shadow: 0 -20px 20px -20px $black;
-    } 
+    }
     
-    // If the height is too small for the width with full menu
-    @include breakpoint( height-large-width-large ) {
+    @include breakpoint( smaller-than-medium-width-with-smaller-than-medium-height ) {
         z-index: 750;
-        box-shadow: 0 -20px 20px -20px $black;
-    }  
+        padding: $space-default-half $space-default;
+        box-shadow: 0 -20px 20px -20px $black;           
+    }
     
     @include breakpoint( small ) {
         position: static;
@@ -101,8 +111,11 @@
     
     br {
         
-        @include breakpoint( height-large ) {
+        @include breakpoint( large-width-with-small-height ) {
             display: none;   
+        }
+        @include breakpoint( smaller-than-medium-width-with-smaller-than-medium-height ) {
+            display: none; 
         }
         
     } // br
@@ -133,6 +146,10 @@
         
         @include breakpoint( height-large ) {
             display: none;
+        }
+        
+        @include breakpoint( smaller-than-medium-width-with-large-height ) {
+            display: inline-block;
         }
         
     } // a
