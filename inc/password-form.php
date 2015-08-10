@@ -8,10 +8,24 @@
 function ucfbands_password_form( $post = 0, $do_block = false ) {
     $post = get_post( $post );
     $label = 'pwbox-' . ( empty($post->ID) ? rand() : $post->ID );
-    $output = '<form action="' . esc_url( site_url( 'wp-login.php?action=postpass', 'login_post' ) ) . '" class="post-password-form ucfbands-password-form" method="post">
+    
+    // Output String
+    $output = '';
+    
+    // If Block
+    if ( $do_block )
+        $output .= '<div class="block masonry-block masonry-block-width--one-third">';
+    
+    
+    // Output Form
+    $output .= '<form action="' . esc_url( site_url( 'wp-login.php?action=postpass', 'login_post' ) ) . '" class="post-password-form ucfbands-password-form" method="post">
     <p>' . __( 'Enter the password, mkay?' ) . '</p>
     <p><label for="' . $label . '">' . __( 'Password:' ) . ' <input name="post_password" id="' . $label . '" type="password" size="20" /></label> <input type="submit" name="Submit" value="' . esc_attr__( 'Submit' ) . '" /></p></form>
     ';
+    
+    
+    if ( $do_block )
+        $output .= '</div>';
  
     /**
      * Filter the HTML output for the protected post password form.

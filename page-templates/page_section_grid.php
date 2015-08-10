@@ -37,7 +37,7 @@ function ucfbands_grid_page_content() {
     
     // Password Protection					
     if ( post_password_required( $post ))
-        echo ucfbands_password_form();
+        echo ucfbands_password_form( $post, true );
 
     else
         echo apply_filters( 'the_content', $post->post_content );
