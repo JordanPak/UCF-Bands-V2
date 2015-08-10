@@ -28,7 +28,17 @@ input[type="submit"],
         margin-bottom: $space-default-half;
     }
     
-
-    
+    input {
+        display: block;
+        float: left;
+        width: 66%;
+        
+        &[type="submit"] {
+            padding: 18px 24px;
+            width: 33%;
+            font-weight: 700;
+        }
+        
+    } // input
     
 } // .ucfbands-password-form

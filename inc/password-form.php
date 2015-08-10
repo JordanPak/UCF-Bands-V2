@@ -14,13 +14,13 @@ function ucfbands_password_form( $post = 0, $do_block = false ) {
     
     // If Block
     if ( $do_block )
-        $output .= '<div class="block masonry-block masonry-block-width--one-third">';
+        $output .= '<div class="block block-featured masonry-block masonry-block-width--one-third">';
     
     
     // Output Form
     $output .= '<form action="' . esc_url( site_url( 'wp-login.php?action=postpass', 'login_post' ) ) . '" class="post-password-form ucfbands-password-form" method="post">
     <h2 class="form-title"><i class="fa fa-shield"></i> ' . __( 'State the Password' ) . '</h2>
-    <p><label for="' . $label . '">' . __( '' ) . ' <input name="post_password" id="' . $label . '" type="password" size="20" /></label> <input type="submit" name="Submit" value="' . esc_attr__( 'Submit' ) . '" /></p></form>
+    <p><label for="' . $label . '">' . __( '' ) . ' <input name="post_password" id="' . $label . '" type="password" size="20" /></label> <input type="submit" name="Submit" value="' . esc_attr__( 'Enter' ) . '" /></p></form>
     ';
     
     

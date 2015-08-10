@@ -1475,6 +1475,14 @@ input[type="submit"],
 
 .ucfbands-password-form .form-title {
   margin-bottom: 20px; }
+.ucfbands-password-form input {
+  display: block;
+  float: left;
+  width: 66%; }
+  .ucfbands-password-form input[type="submit"] {
+    padding: 18px 24px;
+    width: 33%;
+    font-weight: 700; }
 
 body {
   font-family: "Roboto", "Arial", sans-serif;
