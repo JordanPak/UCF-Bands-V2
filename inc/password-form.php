@@ -5,7 +5,7 @@
  *  @author Jordan Pakrosnis
  */
 
-function ucfbands_password_form( $post = 0 ) {
+function ucfbands_password_form( $post = 0, $do_block = false ) {
     $post = get_post( $post );
     $label = 'pwbox-' . ( empty($post->ID) ? rand() : $post->ID );
     $output = '<form action="' . esc_url( site_url( 'wp-login.php?action=postpass', 'login_post' ) ) . '" class="post-password-form ucfbands-password-form" method="post">
