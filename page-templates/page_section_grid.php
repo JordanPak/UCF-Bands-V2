@@ -33,12 +33,14 @@ function body_class_disable_grid_padding( $classes ) {
 add_action( 'genesis_before_content', 'ucfbands_grid_page_content', 11);
 function ucfbands_grid_page_content() {
     
+    $post = get_post();
+    
     // Password Protection					
-    if ( post_password_required( get_post() ) )
+    if ( post_password_required( $post ) )
         echo ucfbands_password_form( $post, true );
 
     else
-        echo apply_filters( 'the_content', get_post()->post_content );
+        echo apply_filters( 'the_content', $post->post_content );
     
 } // ucfbands_grid_page_content()
 
