@@ -3272,14 +3272,23 @@ nav.section-menu {
 
 .musicdistro-wrap .musicdistro-masonry-block {
   padding: 0; }
+  @media (max-width: 980px) {
+    .musicdistro-wrap .musicdistro-masonry-block {
+      margin-bottom: 20px; } }
 .musicdistro-wrap .musicdistro-type-heading {
   margin: 0;
   padding: 20px 40px;
   background: #221E1F;
   border-bottom: 5px solid #141414;
   color: #FFFFFF; }
+  @media (max-width: 600px) {
+    .musicdistro-wrap .musicdistro-type-heading {
+      padding: 20px 30px; } }
 .musicdistro-wrap .musicdistro-type-body {
   padding: 40px; }
+  @media (max-width: 600px) {
+    .musicdistro-wrap .musicdistro-type-body {
+      padding: 20px 30px; } }
 .musicdistro-wrap .musicdistro-arrangement {
   display: block;
   padding: 20px 0;
@@ -3318,11 +3327,27 @@ nav.section-menu {
       color: #FFFFFF; }
 .musicdistro-wrap .musicdistro-form-block p {
   margin-bottom: 10px; }
+@media (max-width: 980px) {
+  .musicdistro-wrap .musicdistro-form-block {
+    margin-bottom: 40px; } }
 .musicdistro-wrap .musicdistro-instrument-form select {
   margin: 0;
   width: 60%; }
+  @media (max-width: 600px) {
+    .musicdistro-wrap .musicdistro-instrument-form select {
+      width: 48%; } }
+  @media (max-width: 380px) {
+    .musicdistro-wrap .musicdistro-instrument-form select {
+      margin-bottom: 10px;
+      width: 100%; } }
 .musicdistro-wrap .musicdistro-instrument-form button[type="submit"] {
   width: 35%;
   font-weight: 700; }
+  @media (max-width: 600px) {
+    .musicdistro-wrap .musicdistro-instrument-form button[type="submit"] {
+      width: 48%; } }
+  @media (max-width: 380px) {
+    .musicdistro-wrap .musicdistro-instrument-form button[type="submit"] {
+      width: 100%; } }
 
 /*# sourceMappingURL=style.css.map */
