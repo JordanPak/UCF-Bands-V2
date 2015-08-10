@@ -1,0 +1,134 @@
+//=============================//
+//  UCFBANDS V2 | MUSICDISTRO  //
+//=============================//
+
+.musicdistro-wrap {
+    
+    .musicdistro-masonry-block {
+        padding: 0;
+        
+        @include breakpoint( small-medium ) {
+            margin-bottom: $space-default-half;   
+        }
+        
+    } // .musicdistro-masonry-block
+    
+    .musicdistro-type-heading {
+        margin: 0;
+        padding: $space-default-half $space-default;
+        background: $ucf-gray;
+        border-bottom: 5px solid $ucf-gray-darker;
+        color: $white;
+        
+        @include breakpoint( extra-small ) {
+            padding: $space-default-half ($space-default-half + 10px);   
+        }
+        
+    } // .musicdistro-type-heading
+    
+    .musicdistro-type-body {
+        padding: $space-default;
+        
+        @include breakpoint( extra-small ) {
+            padding: $space-default-half ($space-default-half + 10px);   
+        }        
+        
+    } // .musicdistro-type-body
+    
+    .musicdistro-arrangement {
+        display: block;
+        padding: $space-default-half 0;
+        width: 100%;
+        clear: both;
+        border-bottom: 1px solid $border-gray;
+        
+        &:first-child {
+            padding-top: 0;   
+        }
+        
+        &:last-child {
+            padding-bottom: 0;
+            border-bottom: 0;
+        }
+        
+        @include clearfix();
+        
+    } // .musicdistro-arrangement
+    
+    .musicdistro-arrangement-title {
+        display: inline-block;
+        font-weight: 700;
+    }
+    
+    .musicdistro-arrangement-buttons {
+        display: inline-block;
+        float: right;
+        
+        a {
+            background-color: $ucf-gray-light;
+            padding: 8px 10px;
+            color: $ucf-gray;
+            font-weight: 700;
+            border: 0;
+            border-radius: 6px;
+            
+            @include transition-ease-in-out(150ms);
+            
+            &:hover {
+                background: $ucf-gray;
+                color: $white;
+            }
+            
+        } // a (button)
+        
+    } // .musicdistro-arrangement-buttons
+    
+    .musicdistro-form-block {
+        
+        p {
+            margin-bottom: 10px;
+        }
+        
+        @include breakpoint( small-medium ) {
+            margin-bottom: $space-default;   
+        }        
+        
+    } // .musicdistro-form-block
+    
+    
+    .musicdistro-instrument-form {
+        
+        select {
+            margin: 0;
+            width: 60%;
+            
+            @include breakpoint( extra-small ) {
+                width: 48%;   
+            }
+            
+            @include breakpoint( extra-extra-small ) {
+                margin-bottom: 10px;
+                width: 100%;
+            }
+            
+        } // select
+        
+        button[type="submit"] {
+            width: 35%;
+            font-weight: 700;
+
+            @include breakpoint( extra-small ) {
+                width: 48%;   
+            }
+            
+            @include breakpoint( extra-extra-small ) {
+                width: 100%;   
+            }
+            
+        } // submit button
+        
+    } // .musicdistro-instrument-form 
+    
+    
+    
+} // .musicdistro-wrap

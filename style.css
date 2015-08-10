@@ -1459,6 +1459,20 @@ li.comment {
 @media screen and (max-width: 768px) {
   .pushy {
     font-size: 1.0em; } }
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+.button {
+  background-color: #221E1F;
+  text-shadow: 0 0 3px #000000, 1px 1px 1px rgba(0, 0, 0, 0.4), 0 0 3px #000000, 2px 2px 1px rgba(0, 0, 0, 0.4); }
+  button:hover,
+  input[type="button"]:hover,
+  input[type="reset"]:hover,
+  input[type="submit"]:hover,
+  .button:hover {
+    text-shadow: 0 0 3px #EFBC00, 1px 1px 1px #EFBC00, 0 0 3px #EFBC00, 2px 2px 1px #EFBC00; }
+
 body {
   font-family: "Roboto", "Arial", sans-serif;
   font-weight: 400;
@@ -3269,5 +3283,85 @@ nav.section-menu {
             color: #221E1F; }
         nav.section-menu ul li .sub-menu li.current-menu-item a:hover {
           color: #221E1F; }
+
+.musicdistro-wrap .musicdistro-masonry-block {
+  padding: 0; }
+  @media (max-width: 980px) {
+    .musicdistro-wrap .musicdistro-masonry-block {
+      margin-bottom: 20px; } }
+.musicdistro-wrap .musicdistro-type-heading {
+  margin: 0;
+  padding: 20px 40px;
+  background: #221E1F;
+  border-bottom: 5px solid #141414;
+  color: #FFFFFF; }
+  @media (max-width: 600px) {
+    .musicdistro-wrap .musicdistro-type-heading {
+      padding: 20px 30px; } }
+.musicdistro-wrap .musicdistro-type-body {
+  padding: 40px; }
+  @media (max-width: 600px) {
+    .musicdistro-wrap .musicdistro-type-body {
+      padding: 20px 30px; } }
+.musicdistro-wrap .musicdistro-arrangement {
+  display: block;
+  padding: 20px 0;
+  width: 100%;
+  clear: both;
+  border-bottom: 1px solid #D4D4D4; }
+  .musicdistro-wrap .musicdistro-arrangement:first-child {
+    padding-top: 0; }
+  .musicdistro-wrap .musicdistro-arrangement:last-child {
+    padding-bottom: 0;
+    border-bottom: 0; }
+  .musicdistro-wrap .musicdistro-arrangement:before {
+    content: " ";
+    display: table; }
+  .musicdistro-wrap .musicdistro-arrangement:after {
+    clear: both;
+    content: " ";
+    display: table; }
+.musicdistro-wrap .musicdistro-arrangement-title {
+  display: inline-block;
+  font-weight: 700; }
+.musicdistro-wrap .musicdistro-arrangement-buttons {
+  display: inline-block;
+  float: right; }
+  .musicdistro-wrap .musicdistro-arrangement-buttons a {
+    background-color: whitesmoke;
+    padding: 8px 10px;
+    color: #221E1F;
+    font-weight: 700;
+    border: 0;
+    border-radius: 6px;
+    -webkit-transition: all ease-in-out 150ms;
+    transition: all ease-in-out 150ms; }
+    .musicdistro-wrap .musicdistro-arrangement-buttons a:hover {
+      background: #221E1F;
+      color: #FFFFFF; }
+.musicdistro-wrap .musicdistro-form-block p {
+  margin-bottom: 10px; }
+@media (max-width: 980px) {
+  .musicdistro-wrap .musicdistro-form-block {
+    margin-bottom: 40px; } }
+.musicdistro-wrap .musicdistro-instrument-form select {
+  margin: 0;
+  width: 60%; }
+  @media (max-width: 600px) {
+    .musicdistro-wrap .musicdistro-instrument-form select {
+      width: 48%; } }
+  @media (max-width: 380px) {
+    .musicdistro-wrap .musicdistro-instrument-form select {
+      margin-bottom: 10px;
+      width: 100%; } }
+.musicdistro-wrap .musicdistro-instrument-form button[type="submit"] {
+  width: 35%;
+  font-weight: 700; }
+  @media (max-width: 600px) {
+    .musicdistro-wrap .musicdistro-instrument-form button[type="submit"] {
+      width: 48%; } }
+  @media (max-width: 380px) {
+    .musicdistro-wrap .musicdistro-instrument-form button[type="submit"] {
+      width: 100%; } }
 
 /*# sourceMappingURL=style.css.map */
