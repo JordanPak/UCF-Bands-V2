@@ -2,6 +2,8 @@
 //  UCFBands V2 | FORMS  //
 //=======================//
 
+//-- DEFAULT --//
+
 button,
 input[type="button"],
 input[type="reset"],
@@ -15,3 +17,20 @@ input[type="submit"],
     }
     
 } // default button fix
+
+
+
+//-- PASSWORD FORM --//
+
+.ucfbands-password-form {
+    
+//    label {
+//        display: none;
+//        
+//        input {
+//            display: inline-block;
+//        }
+//        
+//    } // label
+    
+} // .ucfbands-password-form
