@@ -1,10 +1,11 @@
 <?php
+
+add_filter( 'the_password_form', 'ucfbands_password_form' );
 /**
  *  UCFBands Custom Password Form. Modified from get_the_password_form().
  *  
  *  @author Jordan Pakrosnis
  */
-
 function ucfbands_password_form( $post = 0, $do_block = false ) {
     $post = get_post( $post );
     $label = 'pwbox-' . ( empty($post->ID) ? rand() : $post->ID );
@@ -38,6 +39,7 @@ function ucfbands_password_form( $post = 0, $do_block = false ) {
      *
      * @param string $output The password form HTML output.
      */
-    return apply_filters( 'the_password_form', $output );
+    return $output;
 
 } // ucfbands_password_form()
+
