@@ -1459,6 +1459,20 @@ li.comment {
 @media screen and (max-width: 768px) {
   .pushy {
     font-size: 1.0em; } }
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+.button {
+  background-color: #221E1F;
+  text-shadow: 0 0 3px #000000, 1px 1px 1px rgba(0, 0, 0, 0.4), 0 0 3px #000000, 2px 2px 1px rgba(0, 0, 0, 0.4); }
+  button:hover,
+  input[type="button"]:hover,
+  input[type="reset"]:hover,
+  input[type="submit"]:hover,
+  .button:hover {
+    text-shadow: 0 0 3px #EFBC00, 1px 1px 1px #EFBC00, 0 0 3px #EFBC00, 2px 2px 1px #EFBC00; }
+
 body {
   font-family: "Roboto", "Arial", sans-serif;
   font-weight: 400;
