@@ -60,7 +60,12 @@ function show_masonry_grid() {
         $block_render_html                  = esc_attr( $block['render_html'] );
         $block_remove_background_padding    = esc_attr( $block['remove-background'] );
         $block_is_breaker                   = esc_attr( $block['breaker'] );
-       
+        
+        
+        // If there's only one block and there's no content; display nothing.
+        if ( (sizeof($blocks) == 1) && ($block_content == '') )
+            break;
+        
         
         // If the block isn't a "breaker", proceed as normal
         if ($block_is_breaker == false) {
