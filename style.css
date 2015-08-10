@@ -3270,4 +3270,23 @@ nav.section-menu {
         nav.section-menu ul li .sub-menu li.current-menu-item a:hover {
           color: #221E1F; }
 
+.musicdistro-wrap .musicdistro-masonry-block {
+  padding: 0; }
+.musicdistro-wrap .musicdistro-type-heading {
+  margin: 0;
+  padding: 20px 40px;
+  background: #221E1F;
+  border-bottom: 5px solid #141414;
+  color: #FFFFFF; }
+.musicdistro-wrap .musicdistro-type-body {
+  padding: 40px; }
+.musicdistro-wrap .musicdistro-form-block p {
+  margin-bottom: 10px; }
+.musicdistro-wrap .musicdistro-instrument-form select {
+  margin: 0;
+  width: 60%; }
+.musicdistro-wrap .musicdistro-instrument-form button[type="submit"] {
+  width: 35%;
+  font-weight: 700; }
+
 /*# sourceMappingURL=style.css.map */

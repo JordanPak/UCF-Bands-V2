@@ -1,0 +1,49 @@
+//=============================//
+//  UCFBANDS V2 | MUSICDISTRO  //
+//=============================//
+
+.musicdistro-wrap {
+    
+    .musicdistro-masonry-block {
+        padding: 0;
+    } // .musicdistro-masonry-block
+    
+    
+    .musicdistro-type-heading {
+        margin: 0;
+        padding: $space-default-half $space-default;
+        background: $ucf-gray;
+        border-bottom: 5px solid $ucf-gray-darker;
+        color: $white;
+    }
+    
+    .musicdistro-type-body {
+        padding: $space-default;   
+    }
+    
+    .musicdistro-form-block {
+        
+        p {
+            margin-bottom: 10px;
+        }
+        
+    } // .musicdistro-form-block
+    
+    
+    .musicdistro-instrument-form {
+        
+        select {
+            margin: 0;
+            width: 60%;   
+        }
+        
+        button[type="submit"] {
+            width: 35%;
+            font-weight: 700;
+        }
+        
+    } // .musicdistro-instrument-form 
+    
+    
+    
+} // .musicdistro-wrap
