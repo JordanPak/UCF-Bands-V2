@@ -1495,6 +1495,14 @@ input[type="submit"],
     padding: 18px 24px;
     width: 33%;
     font-weight: 700; }
+    @media (max-width: 600px) {
+      .ucfbands-password-form input[type="submit"] {
+        margin: 0;
+        width: 100%; } }
+  @media (max-width: 600px) {
+    .ucfbands-password-form input {
+      margin: 0 0 10px 0;
+      width: 100%; } }
 
 body {
   font-family: "Roboto", "Arial", sans-serif;

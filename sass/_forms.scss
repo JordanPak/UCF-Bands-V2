@@ -27,7 +27,8 @@ input[type="submit"],
     background-color: $ucf-gray-light;
     
     @include clearfix;
-}
+    
+} // .ucfbands-password-form-wrap
 
 .ucfbands-password-form {
     
@@ -45,6 +46,17 @@ input[type="submit"],
             padding: 18px 24px;
             width: 33%;
             font-weight: 700;
+            
+            @include breakpoint( extra-small ) {
+                margin: 0;
+                width: 100%;
+            }
+            
+        } // submit
+        
+        @include breakpoint( extra-small ) {
+            margin: 0 0 10px 0;
+            width: 100%;
         }
         
     } // input
