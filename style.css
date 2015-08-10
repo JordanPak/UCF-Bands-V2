@@ -3291,6 +3291,13 @@ nav.section-menu {
   .musicdistro-wrap .musicdistro-arrangement:last-child {
     padding-bottom: 0;
     border-bottom: 0; }
+  .musicdistro-wrap .musicdistro-arrangement:before {
+    content: " ";
+    display: table; }
+  .musicdistro-wrap .musicdistro-arrangement:after {
+    clear: both;
+    content: " ";
+    display: table; }
 .musicdistro-wrap .musicdistro-arrangement-title {
   display: inline-block;
   font-weight: 700; }

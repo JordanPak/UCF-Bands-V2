@@ -27,9 +27,6 @@
         clear: both;
         border-bottom: 1px solid $border-gray;
         
-//        padding: $space-default-half 0 6px 0;
-//        border-bottom: 1px dotted $border-gray;
-        
         &:first-child {
             padding-top: 0;   
         }
@@ -38,6 +35,8 @@
             padding-bottom: 0;
             border-bottom: 0;
         }
+        
+        @include clearfix();
         
     } // .musicdistro-arrangement
     
