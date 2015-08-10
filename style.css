@@ -3297,6 +3297,18 @@ nav.section-menu {
 .musicdistro-wrap .musicdistro-arrangement-buttons {
   display: inline-block;
   float: right; }
+  .musicdistro-wrap .musicdistro-arrangement-buttons a {
+    background-color: whitesmoke;
+    padding: 8px 10px;
+    color: #221E1F;
+    font-weight: 700;
+    border: 0;
+    border-radius: 6px;
+    -webkit-transition: all ease-in-out 150ms;
+    transition: all ease-in-out 150ms; }
+    .musicdistro-wrap .musicdistro-arrangement-buttons a:hover {
+      background: #221E1F;
+      color: #FFFFFF; }
 .musicdistro-wrap .musicdistro-form-block p {
   margin-bottom: 10px; }
 .musicdistro-wrap .musicdistro-instrument-form select {

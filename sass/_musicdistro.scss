@@ -27,6 +27,9 @@
         clear: both;
         border-bottom: 1px solid $border-gray;
         
+//        padding: $space-default-half 0 6px 0;
+//        border-bottom: 1px dotted $border-gray;
+        
         &:first-child {
             padding-top: 0;   
         }
@@ -46,6 +49,24 @@
     .musicdistro-arrangement-buttons {
         display: inline-block;
         float: right;
+        
+        a {
+            background-color: $ucf-gray-light;
+            padding: 8px 10px;
+            color: $ucf-gray;
+            font-weight: 700;
+            border: 0;
+            border-radius: 6px;
+            
+            @include transition-ease-in-out(150ms);
+            
+            &:hover {
+                background: $ucf-gray;
+                color: $white;
+            }
+            
+        } // a (button)
+        
     } // .musicdistro-arrangement-buttons
     
     .musicdistro-form-block {
