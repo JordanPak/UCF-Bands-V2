@@ -42,7 +42,6 @@ function ucfbands_grid_page_content() {
     else
         echo apply_filters( 'the_content', $post->post_content );
     
-    
 } // ucfbands_grid_page_content()
 
 
