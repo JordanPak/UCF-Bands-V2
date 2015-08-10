@@ -3280,6 +3280,23 @@ nav.section-menu {
   color: #FFFFFF; }
 .musicdistro-wrap .musicdistro-type-body {
   padding: 40px; }
+.musicdistro-wrap .musicdistro-arrangement {
+  display: block;
+  padding: 20px 0;
+  width: 100%;
+  clear: both;
+  border-bottom: 1px solid #D4D4D4; }
+  .musicdistro-wrap .musicdistro-arrangement:first-child {
+    padding-top: 0; }
+  .musicdistro-wrap .musicdistro-arrangement:last-child {
+    padding-bottom: 0;
+    border-bottom: 0; }
+.musicdistro-wrap .musicdistro-arrangement-title {
+  display: inline-block;
+  font-weight: 700; }
+.musicdistro-wrap .musicdistro-arrangement-buttons {
+  display: inline-block;
+  float: right; }
 .musicdistro-wrap .musicdistro-form-block p {
   margin-bottom: 10px; }
 .musicdistro-wrap .musicdistro-instrument-form select {

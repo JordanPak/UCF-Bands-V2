@@ -8,7 +8,6 @@
         padding: 0;
     } // .musicdistro-masonry-block
     
-    
     .musicdistro-type-heading {
         margin: 0;
         padding: $space-default-half $space-default;
@@ -20,6 +19,34 @@
     .musicdistro-type-body {
         padding: $space-default;   
     }
+    
+    .musicdistro-arrangement {
+        display: block;
+        padding: $space-default-half 0;
+        width: 100%;
+        clear: both;
+        border-bottom: 1px solid $border-gray;
+        
+        &:first-child {
+            padding-top: 0;   
+        }
+        
+        &:last-child {
+            padding-bottom: 0;
+            border-bottom: 0;
+        }
+        
+    } // .musicdistro-arrangement
+    
+    .musicdistro-arrangement-title {
+        display: inline-block;
+        font-weight: 700;
+    }
+    
+    .musicdistro-arrangement-buttons {
+        display: inline-block;
+        float: right;
+    } // .musicdistro-arrangement-buttons
     
     .musicdistro-form-block {
         
