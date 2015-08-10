@@ -15,7 +15,7 @@ function ucfbands_password_form( $post = 0, $do_block = false ) {
     
     // If Block
     if ( $do_block )
-        $output .= '<div class="block block-featured masonry-block masonry-block-width--one-third">';
+        $output .= '<div class="block block-featured masonry-block">';
     
     
     // Output Form
