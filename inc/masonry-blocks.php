@@ -63,7 +63,7 @@ function show_masonry_grid() {
         
         
         // If there's only one block and there's no content; display nothing.
-        if ( (sizeof($blocks) == 1) && ($block_content == '') )
+        if ( (sizeof($blocks) == 1) && ($block_content == '') && ($block_title == '') )
             break;
         
         
