@@ -107,14 +107,14 @@ function ucfbands_page_settings_metabox() {
     
 	$cmb->add_field( array(
 		'name'        => 'Slider Shortcode',
-        'desc'        => 'Slider will be placed below the page header',
+        'desc'        => 'Slider will be placed below the page header. Cannot be password protected.',
 		'id'          => $prefix . 'slider_shortcode',
 		'type'        => 'text',
 	) );    
     
 	$cmb->add_field( array(
 		'name'        => 'Pre-Content Shortcode',
-        'desc'        => 'Shortcode will be executed after the header and before the page content or blocks.',
+        'desc'        => 'Shortcode will be executed after the header and before the page content or blocks. Cannot be password protected.',
 		'id'          => $prefix . 'pre_content_shortcode',
 		'type'        => 'textarea_small',
 	) ); 

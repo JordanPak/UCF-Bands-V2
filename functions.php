@@ -25,9 +25,6 @@ require_once( CHILD_DIR . '/inc/theme-settings/footer.php' );
 require_once( CHILD_DIR . '/inc/cmb/grid-blocks.php' );
 require_once( CHILD_DIR . '/inc/cmb/page-settings.php' );
 
-// SHORTCODES
-//require_once( CHILD_DIR . '/inc/shortcodes/file.php' );
-
 
 // CHILD THEME STUFF
 define( 'CHILD_THEME_NAME', 'UCFBands' );
@@ -36,15 +33,8 @@ define( 'CHILD_THEME_VERSION', '2.0.0' );
 
 
 
-//// FOR TESTING - SHOW TEMPLATE
-//add_action( 'genesis_after_content', 'show_page_template');
-//function show_page_template() {
-//    
-//    //echo '<h2>' . basename(get_page_template()) . '</h2>';
-//    $post = get_post();
-//    echo '<h2 style="color: red;">' . $post->post_name . '</h2>';
-//}
-
+// PASSWORD PROTECTION
+require_once( CHILD_DIR . '/inc/password-form.php' );
 
 
 // ENQUEUE GLOBAL STYLES
