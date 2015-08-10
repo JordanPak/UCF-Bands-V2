@@ -3383,22 +3383,25 @@ nav.section-menu {
 @media (max-width: 980px) {
   .musicdistro-wrap .musicdistro-form-block {
     margin-bottom: 40px; } }
+.musicdistro-wrap .musicdistro-instrument-form select, .musicdistro-wrap .musicdistro-instrument-form button {
+  display: block;
+  float: left;
+  margin: 0; }
 .musicdistro-wrap .musicdistro-instrument-form select {
-  margin: 0;
   width: 60%; }
   @media (max-width: 600px) {
     .musicdistro-wrap .musicdistro-instrument-form select {
-      width: 48%; } }
+      width: 50%; } }
   @media (max-width: 380px) {
     .musicdistro-wrap .musicdistro-instrument-form select {
       margin-bottom: 10px;
       width: 100%; } }
 .musicdistro-wrap .musicdistro-instrument-form button[type="submit"] {
-  width: 35%;
+  width: 40%;
   font-weight: 700; }
   @media (max-width: 600px) {
     .musicdistro-wrap .musicdistro-instrument-form button[type="submit"] {
-      width: 48%; } }
+      width: 50%; } }
   @media (max-width: 380px) {
     .musicdistro-wrap .musicdistro-instrument-form button[type="submit"] {
       width: 100%; } }
