@@ -29,11 +29,13 @@ function body_class_disable_grid_padding( $classes ) {
 }
 
 
-// Page Content
+// Grid Page Content
 add_action( 'genesis_before_content', 'ucfbands_grid_page_content', 11);
 function ucfbands_grid_page_content() {
     
-    echo '<p><b>JIMBO</b></p>';
+    $post = get_post();
+    
+    echo apply_filters( 'the_content', $post->post_content );
     
 } // ucfbands_grid_page_content()
 
