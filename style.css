@@ -1483,6 +1483,12 @@ input[type="submit"],
     clear: both;
     content: " ";
     display: table; }
+  @media (max-width: 980px) {
+    .ucfbands-password-form-wrap.masonry-block {
+      margin-bottom: 40px;
+      padding: 40px;
+      width: 100%;
+      background-color: whitesmoke; } }
 
 .ucfbands-password-form .form-title {
   margin-bottom: 20px;

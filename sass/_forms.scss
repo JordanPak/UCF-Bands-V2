@@ -28,6 +28,17 @@ input[type="submit"],
     
     @include clearfix;
     
+    &.masonry-block {
+        
+        @include breakpoint( small-medium ) {
+            margin-bottom: $space-default;
+            padding: $space-default;
+            width: 100%;
+            background-color: $ucf-gray-light;
+        }
+        
+    } // &.masonry-block
+    
 } // .ucfbands-password-form-wrap
 
 .ucfbands-password-form {
