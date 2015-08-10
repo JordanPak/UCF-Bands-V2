@@ -30,6 +30,17 @@ function body_class_disable_grid_padding( $classes ) {
 }
 
 
+// Grid Page Content
+add_action( 'genesis_before_content', 'ucfbands_grid_page_content', 11);
+function ucfbands_grid_page_content() {
+    
+    $post = get_post();
+    
+    echo apply_filters( 'the_content', $post->post_content );
+    
+} // ucfbands_grid_page_content()
+
+
 // Masonry Init & Output
 require_once( CHILD_DIR . '/inc/masonry.php' );
 require_once( CHILD_DIR . '/inc/masonry-blocks.php' );
