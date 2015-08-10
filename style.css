@@ -1473,8 +1473,20 @@ input[type="submit"],
   .button:hover {
     text-shadow: 0 0 3px #EFBC00, 1px 1px 1px #EFBC00, 0 0 3px #EFBC00, 2px 2px 1px #EFBC00; }
 
+.ucfbands-password-form-wrap {
+  padding: 40px;
+  background-color: whitesmoke; }
+  .ucfbands-password-form-wrap:before {
+    content: " ";
+    display: table; }
+  .ucfbands-password-form-wrap:after {
+    clear: both;
+    content: " ";
+    display: table; }
+
 .ucfbands-password-form .form-title {
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  text-shadow: 1px 1px #FFFFFF; }
 .ucfbands-password-form input {
   display: block;
   float: left;

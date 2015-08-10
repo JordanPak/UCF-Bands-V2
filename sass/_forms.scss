@@ -22,10 +22,18 @@ input[type="submit"],
 
 //-- PASSWORD FORM --//
 
+.ucfbands-password-form-wrap {
+    padding: $space-default;
+    background-color: $ucf-gray-light;
+    
+    @include clearfix;
+}
+
 .ucfbands-password-form {
     
     .form-title {
         margin-bottom: $space-default-half;
+        text-shadow: 1px 1px $white;
     }
     
     input {
