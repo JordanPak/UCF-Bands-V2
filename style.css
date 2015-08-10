@@ -1473,6 +1473,9 @@ input[type="submit"],
   .button:hover {
     text-shadow: 0 0 3px #EFBC00, 1px 1px 1px #EFBC00, 0 0 3px #EFBC00, 2px 2px 1px #EFBC00; }
 
+.ucfbands-password-form .form-title {
+  margin-bottom: 20px; }
+
 body {
   font-family: "Roboto", "Arial", sans-serif;
   font-weight: 400;

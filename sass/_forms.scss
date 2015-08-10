@@ -24,13 +24,11 @@ input[type="submit"],
 
 .ucfbands-password-form {
     
-//    label {
-//        display: none;
-//        
-//        input {
-//            display: inline-block;
-//        }
-//        
-//    } // label
+    .form-title {
+        margin-bottom: $space-default-half;
+    }
+    
+
+    
     
 } // .ucfbands-password-form
