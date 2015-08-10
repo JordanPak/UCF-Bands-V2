@@ -34,9 +34,9 @@ function ucfbands_blocks_metabox() {
 	$group_field_id = $cmb_group->add_field( array(
 		'id'          => $prefix . 'meta',
 		'type'        => 'group',
-		'description' => '',
+		'description' => 'Note: If there is only <b>one block with no title or content, the block will not be displayed</b>. This is because there is a minimum of one block.',
 		'options'     => array(
-			'group_title'   => __( 'Block', 'ucfbands-blocks' ),
+            'group_title'   => __( 'Block {#}', 'ucfbands-blocks' ), // since version 1.1.4, {#} gets replaced by row number
 			'add_button'    => __( 'Add Another Block', 'ucfbands-blocks' ),
 			'remove_button' => __( 'Remove', 'ucfbands-blocks' ),
 			'sortable'      => true
