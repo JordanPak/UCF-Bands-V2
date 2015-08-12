@@ -1,0 +1,34 @@
+//============================//
+//  UCFBands V2 | FooGallery  //
+//============================//
+
+.foogallery-container {
+} // .foogallery-container
+
+
+.foogallery-stack-album {
+
+    .topbar {
+        margin: 0 !important;
+        padding: ($space-default-half + 10px) !important;
+        background: $ucf-gray !important;
+        color: $white !important;
+        
+        h2, h3 {
+            color: $white !important;
+        }
+        
+    } // .topbar
+    
+    .back { 
+        background: $ucf-gold !important;
+        color: $white !important;
+        font-weight: 700 !important;
+    }
+    
+    li {
+        transform: none !important;
+        box-shadow: none !important;
+    }
+    
+} // .foogallery-stack-album

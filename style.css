@@ -3406,4 +3406,19 @@ nav.section-menu {
     .musicdistro-wrap .musicdistro-instrument-form button[type="submit"] {
       width: 100%; } }
 
+.foogallery-stack-album .topbar {
+  margin: 0 !important;
+  padding: 30px !important;
+  background: #221E1F !important;
+  color: #FFFFFF !important; }
+  .foogallery-stack-album .topbar h2, .foogallery-stack-album .topbar h3 {
+    color: #FFFFFF !important; }
+.foogallery-stack-album .back {
+  background: #FFCA06 !important;
+  color: #FFFFFF !important;
+  font-weight: 700 !important; }
+.foogallery-stack-album li {
+  transform: none !important;
+  box-shadow: none !important; }
+
 /*# sourceMappingURL=style.css.map */
