@@ -3430,7 +3430,7 @@ nav.section-menu {
   color: #FFFFFF; }
   .foogallery-archive .foogallery-archive-title {
     display: inline-block;
-    padding: 20px 0;
+    padding: 10px 0;
     margin-right: 20px;
     font-weight: bold; }
   .foogallery-archive ul {
@@ -3439,7 +3439,7 @@ nav.section-menu {
       display: inline-block; }
       .foogallery-archive ul li a {
         display: inline-block;
-        padding: 20px;
+        padding: 10px 20px;
         color: #FFFFFF; }
         .foogallery-archive ul li a:hover {
           background: #221E1F; }
