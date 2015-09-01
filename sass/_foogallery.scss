@@ -26,13 +26,34 @@
         color: $white !important;
         box-shadow: none !important;
 
+        @include breakpoint( medium ) {
+            background: $ucf-gray-darkest !important;
+        }
+
         h2 {
             color: $white !important;
-        }
+            font-size: 24px !important;
+
+            @include breakpoint( small-medium ) {
+                width: 75% !important;
+            }
+
+            @include breakpoint( extra-small ) {
+
+            }
+
+        } // h2
 
         h3 {
             color: $ucf-gold !important;
-        }
+
+            @include breakpoint( small-medium ) {
+                display: block !important;
+                text-align: left !important;
+                padding: 0 !important;
+            }
+
+        } // h3
 
     } // .topbar
 
@@ -46,6 +67,11 @@
         &:hover {
             background: $ucf-gold-darker !important;
             // color: $ucf-gold-darker !important;
+        }
+
+        @include breakpoint( small-medium ) {
+            left: inherit !important;
+            right: $space-default !important;
         }
 
     } // .back
