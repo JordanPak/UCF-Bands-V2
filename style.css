@@ -3431,6 +3431,12 @@ nav.section-menu {
   transform: none !important;
   box-shadow: none !important; }
 
+.tp-grid li {
+  -webkit-transition: all ease-in-out 150ms !important;
+  transition: all ease-in-out 150ms !important; }
+  .tp-grid li:hover {
+    border-color: #FFCA06 !important; }
+
 .foogallery-archive {
   display: block;
   margin: 0;

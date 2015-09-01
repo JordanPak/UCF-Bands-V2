@@ -57,6 +57,19 @@
 
 } // .foogallery-stack-album
 
+
+.tp-grid li { // Open Gallery Item
+
+    -webkit-transition: all ease-in-out 150ms !important;
+            transition: all ease-in-out 150ms !important;
+
+    &:hover {
+        border-color: $ucf-gold !important;
+    }
+
+} // .tp-grid li
+
+
 .foogallery-archive {
     display: block;
     margin: 0;
