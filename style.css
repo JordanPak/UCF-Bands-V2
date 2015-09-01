@@ -3421,4 +3421,26 @@ nav.section-menu {
   transform: none !important;
   box-shadow: none !important; }
 
+.foogallery-archive {
+  display: block;
+  margin: 0;
+  padding: 0 30px;
+  background: #FFCA06;
+  color: #FFFFFF; }
+  .foogallery-archive .foogallery-archive-title {
+    display: inline-block;
+    padding: 20px 0;
+    margin-right: 40px;
+    font-weight: bold; }
+  .foogallery-archive ul {
+    display: inline-block; }
+    .foogallery-archive ul li {
+      display: inline-block; }
+      .foogallery-archive ul li a {
+        display: inline-block;
+        padding: 20px;
+        color: #FFFFFF; }
+        .foogallery-archive ul li a:hover {
+          background: #221E1F; }
+
 /*# sourceMappingURL=style.css.map */

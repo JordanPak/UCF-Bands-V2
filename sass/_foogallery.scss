@@ -13,22 +13,60 @@
         padding: ($space-default-half + 10px) !important;
         background: $ucf-gray !important;
         color: $white !important;
-        
+
         h2, h3 {
             color: $white !important;
         }
-        
+
     } // .topbar
-    
-    .back { 
+
+    .back {
         background: $ucf-gold !important;
         color: $white !important;
         font-weight: 700 !important;
     }
-    
+
     li {
         transform: none !important;
         box-shadow: none !important;
     }
-    
+
 } // .foogallery-stack-album
+
+.foogallery-archive {
+    display: block;
+    margin: 0;
+    padding: 0 ($space-default-half + 10px);
+    background: $ucf-gold;
+    color: $white;
+
+    .foogallery-archive-title {
+        display: inline-block;
+        padding: $space-default-half 0;
+        margin-right: $space-default;
+        font-weight: bold;
+    }
+
+    ul {
+        display: inline-block;
+
+        li {
+            display: inline-block;
+            // margin-right: $space-default-half;
+
+            a {
+                display: inline-block;
+                padding: $space-default-half;
+                color: $white;
+
+                &:hover {
+                    background: $ucf-gray;
+                }
+
+            } // a
+
+        } // li
+
+    } // ul
+
+} // .foogallery-archive
