@@ -15,8 +15,12 @@
         color: $white !important;
         box-shadow: none !important;
 
-        h2, h3 {
+        h2 {
             color: $white !important;
+        }
+
+        h3 {
+            color: $ucf-gold !important;
         }
 
     } // .topbar
@@ -25,7 +29,15 @@
         background: $ucf-gold !important;
         color: $white !important;
         font-weight: 700 !important;
-    }
+
+        @include transition-ease-in-out();
+
+        &:hover {
+            background: $ucf-gold-darker !important;
+            // color: $ucf-gold-darker !important;
+        }
+
+    } // .back
 
     li {
         transform: none !important;
@@ -38,8 +50,9 @@
     display: block;
     margin: 0;
     padding: 0 ($space-default-half + 10px);
-    background: $ucf-gold;
+    background: $ucf-gold-darker;
     color: $white;
+    text-align: center;
 
     .foogallery-archive-title {
         display: inline-block;
@@ -61,7 +74,7 @@
                 color: $white;
 
                 &:hover {
-                    background: $ucf-gray;
+                    background: $ucf-gold;
                 }
 
             } // a
