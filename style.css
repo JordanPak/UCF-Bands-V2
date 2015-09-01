@@ -3406,6 +3406,9 @@ nav.section-menu {
     .musicdistro-wrap .musicdistro-instrument-form button[type="submit"] {
       width: 100%; } }
 
+.fbx-modal.fbx-rounded .fbx-inner, .fbx-modal.fbx-rounded .fbx-item-current, .fbx-modal.fbx-rounded .fbx-item-next, .fbx-modal.fbx-rounded .fbx-item-image, .fbx-modal.fbx-rounded .fbx-next, .fbx-modal.fbx-rounded .fbx-prev {
+  border-radius: 0 !important; }
+
 .foogallery-stack-album .topbar {
   margin: 0 !important;
   padding: 30px !important;

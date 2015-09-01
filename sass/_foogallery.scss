@@ -5,6 +5,17 @@
 .foogallery-container {
 } // .foogallery-container
 
+.fbx-modal {
+
+    &.fbx-rounded {
+
+        .fbx-inner, .fbx-item-current, .fbx-item-next, .fbx-item-image, .fbx-next, .fbx-prev {
+            border-radius: 0 !important;
+        }
+
+    } // &.fbx-rounded
+
+} // .fbx-modal
 
 .foogallery-stack-album {
 
