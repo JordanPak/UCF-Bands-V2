@@ -3410,7 +3410,8 @@ nav.section-menu {
   margin: 0 !important;
   padding: 30px !important;
   background: #221E1F !important;
-  color: #FFFFFF !important; }
+  color: #FFFFFF !important;
+  box-shadow: none !important; }
   .foogallery-stack-album .topbar h2, .foogallery-stack-album .topbar h3 {
     color: #FFFFFF !important; }
 .foogallery-stack-album .back {
@@ -3430,7 +3431,7 @@ nav.section-menu {
   .foogallery-archive .foogallery-archive-title {
     display: inline-block;
     padding: 20px 0;
-    margin-right: 40px;
+    margin-right: 20px;
     font-weight: bold; }
   .foogallery-archive ul {
     display: inline-block; }

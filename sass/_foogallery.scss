@@ -13,6 +13,7 @@
         padding: ($space-default-half + 10px) !important;
         background: $ucf-gray !important;
         color: $white !important;
+        box-shadow: none !important;
 
         h2, h3 {
             color: $white !important;
@@ -43,7 +44,7 @@
     .foogallery-archive-title {
         display: inline-block;
         padding: $space-default-half 0;
-        margin-right: $space-default;
+        margin-right: $space-default-half;
         font-weight: bold;
     }
 

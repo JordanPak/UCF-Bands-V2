@@ -40,34 +40,34 @@ require_once( CHILD_DIR . '/inc/password-form.php' );
 // ENQUEUE GLOBAL STYLES
 add_action( 'wp_enqueue_scripts', 'ucfbands_global_styles' );
 function ucfbands_global_styles() {
-    
+
     // Google Fonts
     wp_enqueue_style( 'google-fonts', '//fonts.googleapis.com/css?family=Droid+Serif:400,700|Roboto:400,400italic,700,700italic|Oswald', array(), CHILD_THEME_VERSION );
-    
+
     // Font Awesome
     wp_enqueue_style( 'font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css', array(), CHILD_THEME_VERSION );
-    
+
 } // ucfbands_global_styles()
 
 
 // ENQUEUE GLOBAL SCRIPTS
 add_action( 'wp_enqueue_scripts', 'ucfbands_global_scripts' );
 function ucfbands_global_scripts() {
-    
+
     if ( !is_admin() ) {
-        
+
         // Pushy
         wp_enqueue_script( 'pushy', get_stylesheet_directory_uri() . '/inc/js/pushy.min.js', array( 'jquery' ), CHILD_THEME_VERSION );
-        
+
         // jQuery UI Accordion
         wp_enqueue_script( 'jquery-ui-accordion' );
-        
+
         // Accordion Init
         wp_enqueue_script( 'accordion-init', get_stylesheet_directory_uri() . '/inc/js/accordion-init.js', array('jquery')
-		);        
+		);
 
     } // if admin
-        
+
 } // ucfbands_global_scripts()
 
 
@@ -93,23 +93,23 @@ remove_theme_support( 'genesis-inpost-layouts' );
 
 //// Unregister content/sidebar layout setting
 //genesis_unregister_layout( 'content-sidebar' );
- 
+
 // Unregister sidebar/content layout setting
 genesis_unregister_layout( 'sidebar-content' );
- 
+
 // Unregister content/sidebar/sidebar layout setting
 genesis_unregister_layout( 'content-sidebar-sidebar' );
- 
+
 // Unregister sidebar/sidebar/content layout setting
 genesis_unregister_layout( 'sidebar-sidebar-content' );
- 
+
 // Unregister sidebar/content/sidebar layout setting
 genesis_unregister_layout( 'sidebar-content-sidebar' );
- 
+
 // Unregister full-width content layout setting
 genesis_unregister_layout( 'full-width-content' );
 
-    
+
 //-----------------//
 //  MORE UCFBANDS  //
 //-----------------//
