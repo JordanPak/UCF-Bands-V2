@@ -3158,6 +3158,22 @@ hr {
         color: #FFFFFF;
         color: #141414; }
 
+.entry-content ul.dropdown-menu {
+  margin: 0;
+  border-radius: 0;
+  background-color: #FFFFFF;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+  border: 1px solid #D4D4D4; }
+  .entry-content ul.dropdown-menu li {
+    font-size: 16px;
+    list-style-type: none;
+    list-style-image: none; }
+  .entry-content ul.dropdown-menu > li > a {
+    padding: 6px 20px; }
+
+.caret {
+  margin-left: 10px; }
+
 body.font-style-athletic .button.button-lg {
   font-family: "Oswald", "Roboto", sans-serif; }
 
