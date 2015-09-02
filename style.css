@@ -3207,6 +3207,31 @@ body.font-style-athletic .button.button-lg {
 i.mkmc-note {
   border-bottom: 1px solid #FFCA06; }
 
+.modal-content {
+  border-radius: 0;
+  margin-top: 40px; }
+
+.modal-header {
+  padding: 30px; }
+  .modal-header br {
+    display: none; }
+  .modal-header a.close {
+    float: right;
+    cursor: pointer;
+    padding: 3px 10px;
+    color: #221E1F;
+    background: whitesmoke; }
+    .modal-header a.close:hover {
+      background: #FFCA06;
+      color: #FFFFFF; }
+
+.modal-title {
+  font-size: 24px;
+  line-height: normal; }
+
+.modal-body {
+  padding: 30px; }
+
 #googleMap * {
   box-shadow: none; }
 

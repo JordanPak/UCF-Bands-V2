@@ -1,0 +1,40 @@
+//========================//
+//  UCFBands V2 | Modals  //
+//========================//
+
+.modal-content {
+    border-radius: 0;
+    margin-top: $space-default;
+} // .modal-content
+
+.modal-header {
+    padding: ($space-default-half + 10px);
+
+    br {
+        display: none;
+    }
+
+    a.close {
+        float: right;
+        cursor: pointer;
+        padding: 3px 10px;
+        color: $ucf-gray;
+        background: $ucf-gray-light;
+
+        &:hover {
+            background: $ucf-gold;
+            color: $white;
+        }
+
+    } // a.close
+
+} // .modal-header
+
+.modal-title {
+    font-size: 24px;
+    line-height: normal;
+}
+
+.modal-body {
+    padding: $space-default-half + 10px;
+}
