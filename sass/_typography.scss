@@ -11,19 +11,19 @@ body {
     font-family: $font-family-sans-serif;
     font-weight: 400;
     font-size: 16px;
-    
+
     &.font-style-athletic {
-        
+
         h1, h2, h3, h4, h5, h6 {
-            font-family: $font-family-athletic;   
+            font-family: $font-family-athletic;
         }
-        
+
         h1 {
             letter-spacing: .035em;
         }
-    
+
     } // .font-style-athletic
-    
+
 } // body
 
 
@@ -37,7 +37,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    
+
     &.section-page-title {
         margin-bottom: $space-default;
         text-shadow: $text-shadow-white-lg;
@@ -48,13 +48,13 @@ h1 {
             padding-bottom: $space-default-half;
             border-bottom: 1px solid $ucf-gray-light;
         }
-        
+
         @include breakpoint( extra-small ) {
             margin: ($space-default-half + 10px) ($space-default-half + 10px) 0 ($space-default-half + 10px);
         }
-        
+
     } // .section-page-title
-    
+
 } // h1
 
 
@@ -66,21 +66,30 @@ h1 {
 a {
     color: $ucf-gold;
     text-decoration: none;
-}
+
+    &:active {
+        text-decoration: none;
+    }
+
+    &:hover {
+        text-decoration: none;
+    }
+
+} // a
 
 p a,
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a
 {
     color: $body-text;
     border-bottom: 2px solid $trans-full;
-    
+
     @include transition-ease-in-out;
-    
+
     &:hover {
         color: inherit;
         border-bottom-color: $ucf-gold;
     }
-       
+
 } // header anchords
 
 p a {
@@ -89,19 +98,19 @@ p a {
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
     border-bottom-width: 3px;
-    
+
     &:hover {
         color: $ucf-gray;
     }
-    
+
 } // header anchors
 
 .entry-title a {
-    
+
     &:hover {
         color: $ucf-gray;
     }
-    
+
 } // .entry-title a
 
 
@@ -115,11 +124,11 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
     > li {
         list-style-image: url('images/bullets/bullet-gold.png');
     }
-    
+
     &.blue > li {
             list-style-image: url('images/bullets/bullet-blue.png');
     }
-    
+
     &.green > li {
             list-style-image: url('images/bullets/bullet-green.png');
     }
@@ -131,15 +140,15 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
     &.gold > li {
             list-style-image: url('images/bullets/bullet-gold.png');
     }
-    
+
     &.black > li {
             list-style-image: url('images/bullets/bullet-black.png');
     }
-    
+
     &.checkmark > li {
             list-style-image: url('images/bullets/bullet-checkmark.png');
     }
-    
+
 } // .entry-content ul
 
 
@@ -159,36 +168,36 @@ hr {
 //===========//
 //  BUTTONS  //
 //===========//
- 
+
 .button {
 
     padding: 8px 18px;
-    
+
     @include button();
     @include transition-ease-in-out(175ms);
 
-    
+
     //-- SIZES --//
-    
+
     // Extra Small
     &.button-xsm {
         padding: 2px 4px;
         font-size: .45em;
         font-weight: normal;
     }
-    
+
     // Small
     &.button-sm {
         padding: ($space-default-half - 17px) ($space-default-half - 10px);
         font-size: .75em;
     }
-    
+
     // Medium
     &.button-med {
         padding: ($space-default-half - 12px) ($space-default-half - 2px);
         font-weight: 700;
     }
-    
+
     // Large
     &.button-lg {
         padding: ($space-default-half - 10px) $space-default-half;
@@ -196,56 +205,56 @@ hr {
         font-weight: normal;
         font-family: $font-family-serif;
     }
-    
-    
+
+
     //-- ALTERNATIVE COLORS --//
-    
+
     &.button-gold {
         @include button($white, $text-shadow-gold-med, $ucf-gold, $ucf-gold-darker);
     }
-    
+
     &.button-red {
         @include button($white, $text-shadow-red-med, $red, $red-darker);
     }
-    
+
     &.button-green {
         @include button($white, $text-shadow-green-med, $green, $green-darker);
     }
-    
+
     &.button-blue {
         @include button($white, $text-shadow-blue-med, $blue, $blue-darker);
     }
-    
+
     &.button-white {
         @include button($ucf-gray-med, none, $white, $ucf-gray-med);
     }
-    
-    
+
+
     //-- OUTLINE --//
     &.button-outline {
-        
-        @include button-outline();   
-        
+
+        @include button-outline();
+
         &.button-gold {
             @include button-outline($ucf-gold);
         }
-        
+
         &.button-red {
             @include button-outline($red);
         }
-        
+
         &.button-green {
             @include button-outline($green);
         }
-        
+
         &.button-blue {
             @include button-outline($blue);
         }
-        
+
         &.button-white {
-            @include button-outline($white);   
+            @include button-outline($white);
         }
-        
+
     } // .button-outline
 
 } // .button
@@ -253,30 +262,30 @@ hr {
 
 // Athletic Font family on Lg button
 body {
-    
+
     &.font-style-athletic {
-        
+
         .button {
-            
+
             &.button-lg {
                 font-family: $font-family-athletic;
             }
-            
+
         } // .button
-        
+
     } // .font-style-athletic
-    
+
 } // body
 
 
 .block-title {
-    
+
     .button-xsm {
         position: relative;
         top: -4px;
         margin-left: 4px;
     }
-    
+
 } // .block-title
 
 
@@ -284,7 +293,7 @@ body {
 //=================//
 //  CONTENT BOXES  //
 //=================//
- 
+
 .content-box-blue,
 .content-box-gray,
 .content-box-green,
@@ -295,7 +304,7 @@ body {
     padding: $space-default-half;
     border: 1px solid $ucf-gray;
 }
- 
+
 .content-box-gray {
 }
 
@@ -306,15 +315,15 @@ body {
 .content-box-blue {
     border-color: $blue;
 }
- 
+
 .content-box-green {
     border-color: $green;
 }
- 
+
 .content-box-red {
     border-color: $red;
 }
- 
+
 
 
 //================//

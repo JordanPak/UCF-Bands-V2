@@ -1,28 +1,28 @@
-/* # Genesis Sample Child Theme  
+/* # Genesis Sample Child Theme
 Theme Name: UCFBands V2
 Theme URI: http://ucfbands.com/
 Description: Theme for the University of Central Florida's bands, built on the Genesis Framework.
 Author: Jordan Pakrosnis
-Author URI: http://JordanPak.com/  
-Template: genesis  
-Template Version: 2.1.2  
-License: GPL-2.0+  
-License URI: http://www.gnu.org/licenses/gpl-2.0.html  
+Author URI: http://JordanPak.com/
+Template: genesis
+Template Version: 2.1.2
+License: GPL-2.0+
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
+
+// Bootstrap (Specific Components)
+@import 'bootstrap';
 
 // Default Genesis Sample Styling
 @import 'default';
-
 
 // Variables & Mixins
 @import 'breakpoints';
 @import 'variables';
 @import 'mixins';
 
-
 // Plugins
 @import 'pushy';
-
 
 // UCFBands Custom
 @import 'forms';
