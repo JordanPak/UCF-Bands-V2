@@ -56,6 +56,9 @@ function ucfbands_global_scripts() {
 
     if ( !is_admin() ) {
 
+        // Bootstrap (Custom Stuff)
+        wp_enqueue_script( 'bootstrap-custom', get_stylesheet_directory_uri() . '/inc/js/bootstrap.min.js', array( 'jquery' ), CHILD_THEME_VERSION );
+
         // Pushy
         wp_enqueue_script( 'pushy', get_stylesheet_directory_uri() . '/inc/js/pushy.min.js', array( 'jquery' ), CHILD_THEME_VERSION );
 
