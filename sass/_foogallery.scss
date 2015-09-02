@@ -87,6 +87,7 @@
             transition: all ease-in-out 150ms !important;
 
     box-shadow: 0 0 8px rgba(0,0,0,0.1) !important;
+    z-index: 9500 !important;
 
     &:hover {
         border-color: $ucf-gold !important;
