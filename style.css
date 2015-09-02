@@ -3449,9 +3449,28 @@ nav.section-menu {
 
 .tp-grid li {
   -webkit-transition: all ease-in-out 150ms !important;
-  transition: all ease-in-out 150ms !important; }
+  transition: all ease-in-out 150ms !important;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1) !important; }
   .tp-grid li:hover {
     border-color: #FFCA06 !important; }
+    .tp-grid li:hover .tp-title {
+      background: rgba(0, 0, 0, 0.8) !important;
+      box-shadow: inset -10px 0 #FFCA06 !important; }
+
+.tp-info, .tp-title {
+  font-size: 18px !important;
+  width: 80% !important;
+  background: rgba(0, 0, 0, 0.7) !important;
+  color: #FFFFFF !important;
+  -webkit-transition: all ease-in-out 150ms;
+  transition: all ease-in-out 150ms; }
+  .tp-info span:nth-child(2), .tp-title span:nth-child(2) {
+    padding: 0 10px !important;
+    display: none !important; }
+
+.tp-title {
+  padding: 12px 24px 12px 12px !important;
+  box-shadow: inset -10px 0 whitesmoke !important; }
 
 .foogallery-archive {
   display: block;
