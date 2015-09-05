@@ -67,14 +67,10 @@ a {
     color: $ucf-gold;
     text-decoration: none;
 
-    &:active {
+    &:active, &:hover, &:focus {
         text-decoration: none;
     }
-
-    &:hover {
-        text-decoration: none;
-    }
-
+    
 } // a
 
 p a,
