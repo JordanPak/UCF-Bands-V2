@@ -7,16 +7,16 @@
     width: 100%;
     height: 2px;
     background: $black;
-    z-index: 5000;
-    
+    z-index: 9800;
+
     @include breakpoint( small ) {
         display: none;
     }
-    
+
 } // #top-bar
 
 .site-header {
-	z-index: 700;
+	z-index: 9700;
     position: fixed;
     margin: 0;
     padding: 0;
@@ -24,16 +24,16 @@
     color: $white;
     text-align: center;
     background: $ucf-gray;
-    
+
     a {
         color: $white;
     }
-    
+
     .wrap {
         margin: 0;
         padding: 0;
     }
-    
+
     @include breakpoint( medium ) {
         width: $site-header-width-med;
     }
@@ -41,16 +41,16 @@
     // If the height is too small for the width with full menu
     @include breakpoint( large-width-with-small-height ) {
         position: absolute;
-    }    
-    
+    }
+
     @include breakpoint( smaller-than-medium-width-with-large-height ) {
         position: fixed;
     }
-    
+
     @include breakpoint( smaller-than-medium-width-with-smaller-than-medium-height ) {
-        position: absolute;   
+        position: absolute;
     }
-    
+
     @include breakpoint( small ) {
         position: fixed;
         top: 0;
@@ -59,16 +59,16 @@
         padding-left: 10px;
         border-bottom: 4px solid $ucf-gold;
     } // breakpoint-small
-    
+
 } // .site-header
 
 // Mobile Fix
 .header-full-width .title-area {
-    
+
     @include breakpoint( small ) {
         width: auto;
     }
-    
+
 } // .header-full-width .title-area
 
 .site-header .header-widget-area {
@@ -82,13 +82,13 @@
     padding: 12px 0 8px 0;
     display: block;
     width: 100%;
-    
+
     @include breakpoint( small ) {
         float: left;
         width: auto;
         padding: 0;
     }
-    
+
 } // .title-area
 
 .header-image .site-title > a {
@@ -100,29 +100,29 @@
     background-position: center;
     background-size: 81.5%;
     border: none;
-    
+
     @include transition-ease-in-out();
-    
+
     &:hover {
         background-color: $ucf-gray-darker;
     }
-    
+
     @include breakpoint( medium ) {
         min-height: 100px;
     }
-    
+
     @include breakpoint( small ) {
         min-height: 0;
         height: $site-header-mobile-height;
         width: 125px;
         background-size: 100%;
-        
+
         &:hover {
             background-color: $ucf-gray;
         }
-        
+
     } // breakpoint-small
-    
+
 } // .header-image .site-title > a
 
 .site-description {
