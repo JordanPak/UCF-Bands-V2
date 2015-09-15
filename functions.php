@@ -145,3 +145,14 @@ if ( file_exists(  __DIR__ . '/cmb2/init.php' ) ) {
 } elseif ( file_exists(  __DIR__ . '/CMB2/init.php' ) ) {
   require_once  __DIR__ . '/CMB2/init.php';
 }
+
+
+//------------------------------//
+//  REMOVE USELESS ADMIN MENUS  //
+//------------------------------//
+
+function ucfbands_remove_admin_menus(){
+    remove_menu_page( 'edit.php' );             // Posts
+    remove_menu_page( 'edit-comments.php' );    //Comments
+}
+add_action( 'admin_menu', 'ucfbands_remove_admin_menus' );
