@@ -3507,6 +3507,9 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
     -webkit-transition: all ease-in-out 100ms;
     transition: all ease-in-out 100ms; }
     .event-schedule > ul > li span {
+      display: inline-block;
+      width: 66px;
+      margin-right: 10px;
       font-size: .9em;
       font-weight: 700; }
     .event-schedule > ul > li p {
@@ -3527,6 +3530,11 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
       cursor: default; }
       .event-schedule > ul ul li p {
         display: inline; }
+
+.schedule-shortcode .event-schedule > ul {
+  border: 4px solid whitesmoke; }
+  .schedule-shortcode .event-schedule > ul > li {
+    padding: 9px 12px; }
 
 .event-program {
   padding: 25px;
