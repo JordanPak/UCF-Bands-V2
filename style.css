@@ -3531,10 +3531,25 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
       .event-schedule > ul ul li p {
         display: inline; }
 
-.schedule-shortcode .event-schedule > ul {
+.button-schedule-download {
+  display: block;
+  width: 100%;
+  text-align: center;
+  background: whitesmoke !important;
+  color: #221E1F !important;
+  border: none !important;
+  border-top: 4px solid whitesmoke !important; }
+  .button-schedule-download:hover {
+    background: #FFCA06 !important;
+    color: #FFFFFF !important; }
+
+.schedule-shortcode .event-schedule {
   border: 4px solid whitesmoke; }
-  .schedule-shortcode .event-schedule > ul > li {
-    padding: 9px 12px; }
+  .schedule-shortcode .event-schedule > ul {
+    top: 0;
+    left: 0; }
+    .schedule-shortcode .event-schedule > ul > li {
+      padding: 9px 12px; }
 
 .event-program {
   padding: 25px;

@@ -258,14 +258,32 @@
 
 } // .event-schedule
 
+.button-schedule-download {
+    display: block;
+    width: 100%;
+    text-align: center;
+    background: $ucf-gray-light !important;
+    color: $ucf-gray !important;
+    border: none !important;
+    border-top: 4px solid $ucf-gray-light !important;
+
+    &:hover {
+        background: $ucf-gold !important;
+        color: $white !important;
+    }
+
+} // .button-schedule-download
+
 .schedule-shortcode .event-schedule {
+    border: 4px solid $ucf-gray-light;
 
     > ul {
-        border: 4px solid $ucf-gray-light;
+        top: 0;
+        left: 0;
 
         > li {
             padding: 9px 12px;
-        } // > li
+        }
 
     } // > ul
 
