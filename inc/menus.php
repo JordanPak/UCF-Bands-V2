@@ -15,6 +15,8 @@ add_theme_support( 'genesis-menus', array(
     'wind-ensemble'     => __( 'Wind Ensemble Section Menu', 'genesis' ),
     'marching-knights'  => __( 'Marching Knights Section Menu', 'genesis' ),
     'jammin-knights'    => __( 'Jammin\' Knights Section Menu', 'genesis' ),
+    'armory'            => __( 'Armory Section Menu', 'genesis' ),
+    'dungeon'           => __( 'Dungeon Section Menu', 'genesis' ),
     'mkmc'              => __( 'MKMC Section Menu', 'genesis' )
 ) );
 
@@ -40,7 +42,7 @@ add_action( 'genesis_header', 'ucfbands_mobile_menu_button', 14 );
  * @author Jordan Pakrosnis
  */
 function ucfbands_mobile_menu_button() {
-    
+
     // Output Button
     ?>
 
@@ -52,7 +54,7 @@ function ucfbands_mobile_menu_button() {
     </button>
 
     <?php
-    
+
 } // ucfbands_mobile_menu_button()
 
 
@@ -68,7 +70,7 @@ function ucfbands_mobile_menu() {
 
     // Configure Menu
     $mobile_menu_args = array(
-        'menu'              => 'primary',
+        'menu'              => 'Main Menu',
         'container'         => 'nav',
         'container_class'   => 'pushy pushy-right nav-primary',
         'menu_id'           => 'mobile-menu',
@@ -76,21 +78,21 @@ function ucfbands_mobile_menu() {
         'echo'              => true,
         'depth'             => 1,
     );
-    
+
     // Output Menu
     wp_nav_menu( $mobile_menu_args );
-    
-    
+
+
     // Output Site Overlay
     echo '<div class="site-overlay"></div>';
-    
+
 } // ucfbands_mobile_menu()
 
 
 
 /**
  * Section Menu Configuration & Output
- * 
+ *
  * @author Jordan Pakrosnis
  */
 function section_menu_configuration() {
@@ -121,5 +123,5 @@ function section_menu_configuration() {
         wp_nav_menu( $section_menu_args );
 
     } // add_section_menu()
-    
+
 } // section_menu_configuration()

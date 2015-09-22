@@ -3493,10 +3493,7 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
 
 .event-schedule > ul {
   margin-left: 0;
-  margin-bottom: 0;
-  position: relative;
-  top: -4px;
-  left: -6px; }
+  margin-bottom: 0; }
   .event-schedule > ul > li {
     list-style-image: none;
     list-style-type: none;
@@ -3507,6 +3504,9 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
     -webkit-transition: all ease-in-out 100ms;
     transition: all ease-in-out 100ms; }
     .event-schedule > ul > li span {
+      display: inline-block;
+      width: 65px;
+      margin-right: 10px;
       font-size: .9em;
       font-weight: 700; }
     .event-schedule > ul > li p {
@@ -3527,6 +3527,26 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
       cursor: default; }
       .event-schedule > ul ul li p {
         display: inline; }
+
+.button-schedule-download {
+  display: block;
+  width: 100%;
+  text-align: center;
+  background: whitesmoke !important;
+  color: #221E1F !important;
+  border: none !important;
+  border-top: 4px solid whitesmoke !important; }
+  .button-schedule-download:hover {
+    background: #FFCA06 !important;
+    color: #FFFFFF !important; }
+
+.schedule-shortcode .event-schedule {
+  border: 4px solid whitesmoke; }
+  .schedule-shortcode .event-schedule > ul {
+    top: 0;
+    left: 0; }
+    .schedule-shortcode .event-schedule > ul > li {
+      padding: 9px 12px; }
 
 .event-program {
   padding: 25px;
@@ -3852,7 +3872,10 @@ ul.rehearsal-announcements {
     .masonry-6col-grid .masonry-block-size--two-thirds {
       width: 100.0%; } }
 .masonry-6col-grid .masonry-block-size--one-whole {
-  width: 100.0%; }
+  width: 97.0%; }
+  @media (max-width: 980px) {
+    .masonry-6col-grid .masonry-block-size--one-whole {
+      width: 100.0%; } }
 @media (max-width: 768px) {
   .masonry-6col-grid .masonry-block-size--one-third,
   .masonry-6col-grid .masonry-block-size--one-half,
@@ -3893,6 +3916,9 @@ ul.rehearsal-announcements {
       width: 100%; } }
 .masonry-4col-grid .masonry-block-size--one-whole {
   width: 97%; }
+  @media (max-width: 980px) {
+    .masonry-4col-grid .masonry-block-size--one-whole {
+      width: 100%; } }
 @media (max-width: 768px) {
   .masonry-4col-grid .masonry-block-size--one-fourth,
   .masonry-4col-grid .masonry-block-size--one-half,
