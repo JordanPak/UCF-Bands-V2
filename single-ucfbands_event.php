@@ -327,7 +327,14 @@ function ucfbands_event_single_content() {
         //-- PROGRAM --//
         if ( $show_program ) {
 
-            echo '<div class="' . $width_program . '">';
+            if ( $show_schedule ) {
+                echo '<div class="' . $width_program . '">';
+            }
+
+            else {
+                $width_program .= ' first';
+                echo '<div class="' . $width_program . '">';
+            }
 
                 // Get Program & Guest Composer
                 $program =                  $event_meta['program_group'];
