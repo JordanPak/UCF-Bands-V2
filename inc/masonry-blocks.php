@@ -8,11 +8,11 @@ add_action( 'genesis_after_content', 'show_masonry_grid');
  * @link http://ucfbands.com/
  */
 function show_masonry_grid() {
-    
-    // PASSWORD PROTECTION	
+
+    // PASSWORD PROTECTION
     if ( post_password_required( get_post() ) == false ) {
-    
-    
+
+
         // Include Parsedown
         require_once( CHILD_DIR . '/inc/parsedown/Parsedown.php' );
         $Parsedown = new Parsedown();
@@ -22,7 +22,7 @@ function show_masonry_grid() {
         $post = get_post();
 
         // Get blocks attached to this page.
-        $blocks = get_post_meta( $post->ID, '_ucfbands_blocks_meta', true );   
+        $blocks = get_post_meta( $post->ID, '_ucfbands_blocks_meta', true );
 
         // Leave if there's no boxes
         if ( empty( $blocks ) ) {
@@ -52,7 +52,7 @@ function show_masonry_grid() {
 
 
         //-- BLOCK LOOP --//
-        foreach ( $blocks as $block ) {       
+        foreach ( $blocks as $block ) {
 
             // Get Block Meta Data
             $block_title                        = esc_attr( $block['title'] );
@@ -88,9 +88,9 @@ function show_masonry_grid() {
 
                 // Block Icon?
                 if ($block_icon) {
-                    $block_icon = '&nbsp;&nbsp;<i class="fa fa-' . $block_icon . '"></i>';
+                    $block_icon = '<i class="fa fa-' . $block_icon . '"></i>&nbsp;&nbsp;';
                 } else {
-                    $block_icon = '';   
+                    $block_icon = '';
                 }
 
                 ?>
@@ -101,7 +101,7 @@ function show_masonry_grid() {
 
                     <!-- BLOCK TITLE & ICON -->
                     <?php if ($block_title != '') { ?>
-                        <h2 class="block-header"><?php echo $block_title . $block_icon; ?></h2>
+                        <h2 class="block-header"><?php echo $block_icon . $block_title; ?></h2>
                     <?php } ?>
 
                     <?php // FOR TESTING: Show Block Width ?>
@@ -111,17 +111,17 @@ function show_masonry_grid() {
                     <div class="entry-content">
 
                         <!-- BLOCK MARKDOWN CONTENT -->
-                        <?php 
+                        <?php
 
 
                         // Parse block content into Markdown HTML
                         if ($block_render_html) {
-                            echo apply_filters('the_content', $block_content); 
+                            echo apply_filters('the_content', $block_content);
                         }
 
                         else {
                             $block_content = $Parsedown->text($block_content);
-                            echo apply_filters('the_content', $block_content);    
+                            echo apply_filters('the_content', $block_content);
                         }
 
 
@@ -144,7 +144,7 @@ function show_masonry_grid() {
                 <!-- MASONRY BLOCK -->
                 <div class="masonry-block masonry-block-size--one-whole masonry-breaker-block"></div><!-- /BLOCK -->
 
-                <?php   
+                <?php
 
             } // else
 
@@ -155,9 +155,9 @@ function show_masonry_grid() {
 
         // End Masonry Grid Container
         echo '</div>';
-        
-        
+
+
     } // PASSWORD PROTECTION
-    
+
 
 } // show_masonry_grid()
