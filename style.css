@@ -3300,7 +3300,7 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
     .post-type-archive-ucfbands_staff .block-header {
       width: 100%; } }
 .post-type-archive-ucfbands_staff .staff-meta {
-  display: inline-block; }
+  display: inline; }
 .post-type-archive-ucfbands_staff img.staff-img {
   border: 1px solid whitesmoke;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); }
