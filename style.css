@@ -2479,6 +2479,9 @@ hr {
         color: #FFFFFF;
         color: #141414; }
 
+.entry-content .dropdown {
+  display: inline-block; }
+
 .entry-content ul.dropdown-menu {
   margin: 0;
   border-radius: 0;

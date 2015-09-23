@@ -70,7 +70,7 @@ a {
     &:active, &:hover, &:focus {
         text-decoration: none;
     }
-    
+
 } // a
 
 p a,
@@ -253,6 +253,10 @@ hr {
     } // .button-outline
 
 } // .button
+
+.entry-content .dropdown {
+    display: inline-block;
+}
 
 .entry-content ul.dropdown-menu {
     margin: 0;
