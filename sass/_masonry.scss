@@ -39,34 +39,13 @@
     &.block {
 
         @include breakpoint( small-medium ) {
+            padding-bottom: $space-default + 10px;
+            padding-top: $space-default + 10px;
             border: 0;
+            border-bottom: 1px solid $border-gray;
             box-shadow: none;
-
-//            &.block-featured {
-//
-//                .block-header {
-//                    border-top: 3px solid $ucf-gold;
-//                    border-left: 1px solid $border-gray;
-//                    border-right: 1px solid $border-gray;
-//                    margin: 0;
-//                    padding: $space-default-half;
-//                    background: $ucf-gray-light;
-//                    text-shadow: 1px 1px 0 $white;
-//                }
-//
-//                .entry-content {
-//                    padding: 0 $space-default-half $space-default-half $space-default-half;
-//                    border-left: 1px solid $border-gray;
-//                    border-right: 1px solid $border-gray;
-//                    border-bottom: 3px solid $ucf-gray;
-//                    background: $ucf-gray-light;
-//                    text-shadow: 1px 1px 0 $white;
-//                }
-//
-//            } // .block-featured
-
-        } // Medium Breakpoint
-
+        }
+        
     } // .block
 
 } // .masonry-block
