@@ -3841,7 +3841,11 @@ ul.rehearsal-announcements {
       padding-top: 50px;
       border: 0;
       border-bottom: 1px solid #D4D4D4;
-      box-shadow: none; } }
+      box-shadow: none; }
+      .masonry-block.block.musicdistro-masonry-block, .masonry-block.block.musicdistro-form-block {
+        border: 0; }
+      .masonry-block.block:last-child {
+        border: 0; } }
 
 .masonry-6col-grid .masonry-6col-grid-sizer, .masonry-6col-grid .masonry-block {
   width: 13.66667%; }

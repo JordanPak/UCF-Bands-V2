@@ -44,8 +44,18 @@
             border: 0;
             border-bottom: 1px solid $border-gray;
             box-shadow: none;
-        }
-        
+
+            &.musicdistro-masonry-block,
+            &.musicdistro-form-block {
+                border: 0;
+            }
+
+            &:last-child {
+                border: 0;
+            }
+
+        } // small-medium
+
     } // .block
 
 } // .masonry-block
