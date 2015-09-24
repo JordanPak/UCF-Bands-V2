@@ -120,7 +120,7 @@ function show_masonry_grid() {
                         }
 
                         else {
-                            $block_content = $Parsedown->text($block_content);
+                            $block_content = $Parsedown->setUrlsLinked(false)->text($block_content);
                             echo apply_filters('the_content', $block_content);
                         }
 
