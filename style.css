@@ -4158,9 +4158,12 @@ nav.section-menu {
   position: relative !important;
   top: -70px !important;
   color: #FFFFFF;
-  font-size: 1.5em !important;
+  font-size: 1.55em !important;
   font-weight: 700;
   font-family: "Roboto", "Arial", sans-serif !important;
-  text-shadow: 0 0 3px #000000, 1px 1px 1px rgba(0, 0, 0, 0.4), 0 0 3px #000000, 2px 2px 1px rgba(0, 0, 0, 0.4) !important; }
+  text-shadow: 0 0 8px #000000, 0 0 2px #000000, 1px 1px 2px rgba(0, 0, 0, 0.5), 2px 2px 3px rgba(0, 0, 0, 0.4) !important; }
+  @media (max-width: 980px) {
+    .envira-album-title {
+      font-size: 1.2em !important; } }
 
 /*# sourceMappingURL=style.css.map */
