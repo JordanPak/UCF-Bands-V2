@@ -4155,8 +4155,12 @@ nav.section-menu {
       width: 100%; } }
 
 .envira-album-title {
+  position: relative !important;
+  top: -70px !important;
   color: #FFFFFF;
-  font-size: 1.3em !important;
-  font-weight: 700; }
+  font-size: 1.5em !important;
+  font-weight: 700;
+  font-family: "Roboto", "Arial", sans-serif !important;
+  text-shadow: 0 0 3px #000000, 1px 1px 1px rgba(0, 0, 0, 0.4), 0 0 3px #000000, 2px 2px 1px rgba(0, 0, 0, 0.4) !important; }
 
 /*# sourceMappingURL=style.css.map */
