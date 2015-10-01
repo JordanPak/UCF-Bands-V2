@@ -4171,4 +4171,16 @@ nav.section-menu {
   -moz-border-radius: 0 !important;
   border-radius: 0 !important; }
 
+a.envirabox-close {
+  width: 31px !important;
+  height: 32px !important;
+  background-image: url("images/envira-close.png") !important;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #FFFFFF !important;
+  border-radius: 9999px !important;
+  right: -11px !important;
+  top: -15px !important;
+  box-shadow: 0 0 14px rgba(0, 0, 0, 0.75) !important; }
+
 /*# sourceMappingURL=style.css.map */
