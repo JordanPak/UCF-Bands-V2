@@ -4166,4 +4166,9 @@ nav.section-menu {
     .envira-album-title {
       font-size: 1.2em !important; } }
 
+.envirabox-skin {
+  padding: 10px !important;
+  -moz-border-radius: 0 !important;
+  border-radius: 0 !important; }
+
 /*# sourceMappingURL=style.css.map */
