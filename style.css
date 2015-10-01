@@ -4154,4 +4154,9 @@ nav.section-menu {
     .musicdistro-wrap .musicdistro-instrument-form button[type="submit"] {
       width: 100%; } }
 
+.envira-album-title {
+  color: #FFFFFF;
+  font-size: 1.3em !important;
+  font-weight: 700; }
+
 /*# sourceMappingURL=style.css.map */
