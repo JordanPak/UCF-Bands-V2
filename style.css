@@ -4183,4 +4183,7 @@ a.envirabox-close {
   top: -15px !important;
   box-shadow: 0 0 14px rgba(0, 0, 0, 0.75) !important; }
 
+#envirabox-buttons ul {
+  background: rgba(0, 0, 0, 0.75) !important; }
+
 /*# sourceMappingURL=style.css.map */
