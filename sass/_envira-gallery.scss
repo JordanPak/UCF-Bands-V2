@@ -1,3 +1,18 @@
 //================================//
 //  UCFBands V2 | Envira Gallery  //
 //===========================----=//
+
+.envira-album-title {
+    position: relative !important;
+    top: -70px !important;
+    color: $white;
+    font-size: 1.55em !important;
+    font-weight: 700;
+    font-family: $font-family-sans-serif !important;
+    text-shadow: $text-shadow-dark-lg !important;
+
+    @include breakpoint( small-medium ) {
+        font-size: 1.2em !important;
+    }
+
+} // .envira-album-title
