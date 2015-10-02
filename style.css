@@ -4192,9 +4192,15 @@ nav.section-menu {
     .musicdistro-wrap .musicdistro-instrument-form button[type="submit"] {
       width: 100%; } }
 
+.envira-gallery-wrap .envira-gallery-public .envira-gallery-item > .envira-gallery-link {
+  border: 2px solid #111111 !important; }
+
 .envira-album-title {
+  padding: 0 20px !important;
   position: relative !important;
-  top: -70px !important;
+  margin: 0 !important;
+  height: 60px !important;
+  margin-top: -60px !important;
   color: #FFFFFF;
   font-size: 1.55em !important;
   font-weight: 700;
@@ -4202,7 +4208,9 @@ nav.section-menu {
   text-shadow: 0 0 8px #000000, 0 0 2px #000000, 1px 1px 2px rgba(0, 0, 0, 0.5), 2px 2px 3px rgba(0, 0, 0, 0.4) !important; }
   @media (max-width: 980px) {
     .envira-album-title {
-      font-size: 1.2em !important; } }
+      font-size: 1.2em !important;
+      height: 70px !important;
+      margin-top: -70px !important; } }
 
 .envirabox-skin {
   padding: 10px !important;
@@ -4220,6 +4228,21 @@ a.envirabox-close {
   right: -11px !important;
   top: -15px !important;
   box-shadow: 0 0 14px rgba(0, 0, 0, 0.75) !important; }
+
+.envirabox-nav span {
+  width: 31px !important;
+  height: 32px !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-color: #FFFFFF !important;
+  border-radius: 9999px !important;
+  box-shadow: 0 0 14px rgba(0, 0, 0, 0.75) !important; }
+
+.envirabox-next span {
+  background-image: url("images/envira-next.png") !important; }
+
+.envirabox-prev span {
+  background-image: url("images/envira-prev.png") !important; }
 
 #envirabox-buttons ul {
   background: rgba(0, 0, 0, 0.75) !important; }

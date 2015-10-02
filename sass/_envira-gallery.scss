@@ -2,9 +2,16 @@
 //  UCFBands V2 | Envira Gallery  //
 //===========================----=//
 
+.envira-gallery-wrap .envira-gallery-public .envira-gallery-item>.envira-gallery-link {
+    border: 2px solid $ucf-gray-darkest !important;
+}
+
 .envira-album-title {
-    position: relative !important;
-    top: -70px !important;
+    padding: 0 $space-default-half !important;
+    position: relative !important; // Lay Over Photos
+    margin: 0 !important;
+    height: ($space-default + $space-default-half) !important;
+    margin-top: -($space-default + $space-default-half) !important;
     color: $white;
     font-size: 1.55em !important;
     font-weight: 700;
@@ -13,6 +20,8 @@
 
     @include breakpoint( small-medium ) {
         font-size: 1.2em !important;
+        height: ($space-default + $space-default-half + 10px) !important;
+        margin-top: -($space-default + $space-default-half + 10px) !important;
     }
 
 } // .envira-album-title
@@ -35,6 +44,24 @@ a.envirabox-close {
     right: -11px !important;
     top: -15px !important;
     box-shadow: 0 0 14px rgba(0,0,0,0.75) !important;
+}
+
+.envirabox-nav span {
+    width: 31px !important;
+    height: 32px !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    background-color: $white !important;
+    border-radius: 9999px !important;
+    box-shadow: 0 0 14px rgba(0,0,0,0.75) !important;
+}
+
+.envirabox-next span {
+    background-image: url('images/envira-next.png') !important;
+}
+
+.envirabox-prev span {
+    background-image: url('images/envira-prev.png') !important;    
 }
 
 #envirabox-buttons ul {
