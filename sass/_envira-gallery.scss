@@ -2,6 +2,10 @@
 //  UCFBands V2 | Envira Gallery  //
 //===========================----=//
 
+.envira-gallery-wrap .envira-gallery-public .envira-gallery-item>.envira-gallery-link {
+    border: 2px solid $ucf-gray-darkest !important;
+}
+
 .envira-album-title {
     position: relative !important;
     top: -70px !important;

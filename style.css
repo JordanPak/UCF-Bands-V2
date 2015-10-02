@@ -4192,6 +4192,9 @@ nav.section-menu {
     .musicdistro-wrap .musicdistro-instrument-form button[type="submit"] {
       width: 100%; } }
 
+.envira-gallery-wrap .envira-gallery-public .envira-gallery-item > .envira-gallery-link {
+  border: 2px solid #111111 !important; }
+
 .envira-album-title {
   position: relative !important;
   top: -70px !important;
