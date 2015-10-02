@@ -7,9 +7,10 @@
 }
 
 .envira-album-title {
+    padding: 0 $space-default-half !important;
     position: relative !important; // Lay Over Photos
     margin: 0 !important;
-    height: 60px !important;
+    height: ($space-default + $space-default-half) !important;
     margin-top: -($space-default + $space-default-half) !important;
     color: $white;
     font-size: 1.55em !important;
@@ -19,6 +20,8 @@
 
     @include breakpoint( small-medium ) {
         font-size: 1.2em !important;
+        height: ($space-default + $space-default-half + 10px) !important;
+        margin-top: -($space-default + $space-default-half + 10px) !important;
     }
 
 } // .envira-album-title
