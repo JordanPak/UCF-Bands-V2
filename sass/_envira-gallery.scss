@@ -46,6 +46,24 @@ a.envirabox-close {
     box-shadow: 0 0 14px rgba(0,0,0,0.75) !important;
 }
 
+.envirabox-nav span {
+    width: 31px !important;
+    height: 32px !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    background-color: $white !important;
+    border-radius: 9999px !important;
+    box-shadow: 0 0 14px rgba(0,0,0,0.75) !important;
+}
+
+.envirabox-next span {
+    background-image: url('images/envira-next.png') !important;
+}
+
+.envirabox-prev span {
+    background-image: url('images/envira-prev.png') !important;    
+}
+
 #envirabox-buttons ul {
     background: rgba(0,0,0,0.75) !important;
 }
