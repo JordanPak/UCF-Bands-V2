@@ -7,8 +7,10 @@
 }
 
 .envira-album-title {
-    position: relative !important;
-    top: -70px !important;
+    position: relative !important; // Lay Over Photos
+    margin: 0 !important;
+    height: 60px !important;
+    margin-top: -($space-default + $space-default-half) !important;
     color: $white;
     font-size: 1.55em !important;
     font-weight: 700;

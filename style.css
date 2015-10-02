@@ -4197,7 +4197,9 @@ nav.section-menu {
 
 .envira-album-title {
   position: relative !important;
-  top: -70px !important;
+  margin: 0 !important;
+  height: 60px !important;
+  margin-top: -60px !important;
   color: #FFFFFF;
   font-size: 1.55em !important;
   font-weight: 700;
