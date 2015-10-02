@@ -1,0 +1,42 @@
+//================================//
+//  UCFBands V2 | Envira Gallery  //
+//===========================----=//
+
+.envira-album-title {
+    position: relative !important;
+    top: -70px !important;
+    color: $white;
+    font-size: 1.55em !important;
+    font-weight: 700;
+    font-family: $font-family-sans-serif !important;
+    text-shadow: $text-shadow-dark-lg !important;
+
+    @include breakpoint( small-medium ) {
+        font-size: 1.2em !important;
+    }
+
+} // .envira-album-title
+
+.envirabox-skin {
+    padding: 10px !important;
+    -moz-border-radius: 0 !important;
+    border-radius: 0 !important;
+} // .envirabox-skin
+
+
+a.envirabox-close {
+    width: 31px !important;
+    height: 32px !important;
+    background-image: url('images/envira-close.png') !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: $white !important;
+    border-radius: 9999px !important;
+    right: -11px !important;
+    top: -15px !important;
+    box-shadow: 0 0 14px rgba(0,0,0,0.75) !important;
+}
+
+#envirabox-buttons ul {
+    background: rgba(0,0,0,0.75) !important;
+}
