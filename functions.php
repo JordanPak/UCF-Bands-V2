@@ -117,6 +117,13 @@ genesis_unregister_layout( 'full-width-content' );
 //  MORE UCFBANDS  //
 //-----------------//
 
+// Favicon
+add_filter( 'genesis_pre_load_favicon', 'ucfbands_favicon_filter' );
+function ucfbands_favicon_filter( $favicon_url ) {
+	return site_url() . '/wp-content/themes/ucfbands/images/favicon.ico';
+}
+
+
 // Font Style Check
 require_once( CHILD_DIR . '/inc/font-style.php' );
 
