@@ -44,7 +44,7 @@ function ucfbands_event_single_data() {
 
     // Get Event meta
     global $event_meta;
-    $event_meta = ucfbands_event_get_meta( $event, true, true, true );
+    $event_meta = ucfbands_event_get_meta( $event, true, true );
 
 } // ucfbands_event_single_data()
 
@@ -128,11 +128,11 @@ function ucfbands_event_single_time_location() {
 
 
     // Event Location Logic
-    if ( $event_meta['location_name'] == '' )
+    if ( $event_meta['location'] == '' )
         $location .= 'TBA';
 
     else
-        $location .= $event_meta['location_name'];
+        $location .= ucfbands_location_get_name( $event_meta['location'] );
 
 
 
