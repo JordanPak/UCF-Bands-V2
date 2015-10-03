@@ -11,11 +11,11 @@ input[type="submit"],
 .button {
 	background-color: $ucf-gray;
     text-shadow: $text-shadow-dark-med;
-    
+
     &:hover {
         text-shadow: $text-shadow-gold-med;
     }
-    
+
 } // default button fix
 
 
@@ -25,51 +25,60 @@ input[type="submit"],
 .ucfbands-password-form-wrap {
     padding: $space-default;
     background-color: $ucf-gray-light;
-    
+
     @include clearfix;
-    
+
     &.masonry-block {
-        
+
         @include breakpoint( small-medium ) {
             margin-bottom: $space-default;
             padding: $space-default;
             width: 100%;
             background-color: $ucf-gray-light;
         }
-        
+
     } // &.masonry-block
-    
+
 } // .ucfbands-password-form-wrap
 
 .ucfbands-password-form {
-    
+
     .form-title {
         margin-bottom: $space-default-half;
         text-shadow: 1px 1px $white;
     }
-    
+
     input {
         display: block;
         float: left;
         width: 66%;
-        
+
         &[type="submit"] {
             padding: 18px 24px;
             width: 33%;
             font-weight: 700;
-            
+
             @include breakpoint( extra-small ) {
                 margin: 0;
                 width: 100%;
             }
-            
+
         } // submit
-        
+
         @include breakpoint( extra-small ) {
             margin: 0 0 10px 0;
             width: 100%;
         }
-        
+
     } // input
-    
+
 } // .ucfbands-password-form
+
+
+//================//
+//  GRAVITY FORMS //
+//================//
+
+.gform_wrapper ul li.gfield {
+	margin-bottom: $space-default-half + 10px !important;
+}

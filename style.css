@@ -2211,6 +2211,9 @@ input[type="submit"],
       margin: 0 0 10px 0;
       width: 100%; } }
 
+.gform_wrapper ul li.gfield {
+  margin-bottom: 30px !important; }
+
 body {
   font-family: "Roboto", "Arial", sans-serif;
   font-weight: 400;
@@ -2264,20 +2267,22 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 .entry-title a:hover {
   color: #221E1F; }
 
-.entry-content ul > li {
-  list-style-image: url("images/bullets/bullet-gold.png"); }
-.entry-content ul.blue > li {
-  list-style-image: url("images/bullets/bullet-blue.png"); }
-.entry-content ul.green > li {
-  list-style-image: url("images/bullets/bullet-green.png"); }
-.entry-content ul.red > li {
-  list-style-image: url("images/bullets/bullet-red.png"); }
-.entry-content ul.gold > li {
-  list-style-image: url("images/bullets/bullet-gold.png"); }
-.entry-content ul.black > li {
-  list-style-image: url("images/bullets/bullet-black.png"); }
-.entry-content ul.checkmark > li {
-  list-style-image: url("images/bullets/bullet-checkmark.png"); }
+.entry-content ul {
+  margin-left: 30px; }
+  .entry-content ul > li {
+    list-style-image: url("images/bullets/bullet-gold.png"); }
+  .entry-content ul.blue > li {
+    list-style-image: url("images/bullets/bullet-blue.png"); }
+  .entry-content ul.green > li {
+    list-style-image: url("images/bullets/bullet-green.png"); }
+  .entry-content ul.red > li {
+    list-style-image: url("images/bullets/bullet-red.png"); }
+  .entry-content ul.gold > li {
+    list-style-image: url("images/bullets/bullet-gold.png"); }
+  .entry-content ul.black > li {
+    list-style-image: url("images/bullets/bullet-black.png"); }
+  .entry-content ul.checkmark > li {
+    list-style-image: url("images/bullets/bullet-checkmark.png"); }
 
 hr {
   margin: 40px 0;
@@ -2567,6 +2572,9 @@ body {
 
 .ucfbands-slider-wrap {
   box-shadow: inset 2px 0 #000000, inset 7px 0 5px -7px rgba(0, 0, 0, 0.5), 0 1px 0 #000000, 0 6px 0 #FFCA06, 0 7px 0 #a59a9d, 0 8px 6px rgba(0, 0, 0, 0.175); }
+  @media (max-width: 980px) {
+    .ucfbands-slider-wrap {
+      margin-bottom: 10px; } }
 
 .site-inner,
 .wrap {
@@ -4184,94 +4192,59 @@ nav.section-menu {
     .musicdistro-wrap .musicdistro-instrument-form button[type="submit"] {
       width: 100%; } }
 
-.fbx-modal.fbx-rounded .fbx-inner, .fbx-modal.fbx-rounded .fbx-item-current, .fbx-modal.fbx-rounded .fbx-item-next, .fbx-modal.fbx-rounded .fbx-item-image, .fbx-modal.fbx-rounded .fbx-next, .fbx-modal.fbx-rounded .fbx-prev {
+.envira-gallery-wrap .envira-gallery-public .envira-gallery-item > .envira-gallery-link {
+  border: 2px solid #111111 !important; }
+
+.envira-album-title {
+  padding: 0 20px !important;
+  position: relative !important;
+  margin: 0 !important;
+  height: 60px !important;
+  margin-top: -60px !important;
+  color: #FFFFFF;
+  font-size: 1.55em !important;
+  font-weight: 700;
+  font-family: "Roboto", "Arial", sans-serif !important;
+  text-shadow: 0 0 8px #000000, 0 0 2px #000000, 1px 1px 2px rgba(0, 0, 0, 0.5), 2px 2px 3px rgba(0, 0, 0, 0.4) !important; }
+  @media (max-width: 980px) {
+    .envira-album-title {
+      font-size: 1.2em !important;
+      height: 70px !important;
+      margin-top: -70px !important; } }
+
+.envirabox-skin {
+  padding: 10px !important;
+  -moz-border-radius: 0 !important;
   border-radius: 0 !important; }
 
-.foogallery-stack-album .topbar {
-  margin: 0 !important;
-  padding: 30px !important;
-  background: #221E1F !important;
-  color: #FFFFFF !important;
-  box-shadow: none !important; }
-  @media (max-width: 1200px) {
-    .foogallery-stack-album .topbar {
-      background: #111111 !important; } }
-  .foogallery-stack-album .topbar h2 {
-    color: #FFFFFF !important;
-    font-size: 24px !important; }
-    @media (max-width: 980px) {
-      .foogallery-stack-album .topbar h2 {
-        width: 75% !important; } }
-  .foogallery-stack-album .topbar h3 {
-    color: #FFCA06 !important; }
-    @media (max-width: 980px) {
-      .foogallery-stack-album .topbar h3 {
-        display: block !important;
-        text-align: left !important;
-        padding: 0 !important; } }
-.foogallery-stack-album .back {
-  background: #FFCA06 !important;
-  color: #FFFFFF !important;
-  font-weight: 700 !important;
-  -webkit-transition: all ease-in-out 200ms;
-  transition: all ease-in-out 200ms; }
-  .foogallery-stack-album .back:hover {
-    background: #EFBC00 !important; }
-  @media (max-width: 980px) {
-    .foogallery-stack-album .back {
-      left: inherit !important;
-      right: 40px !important; } }
-.foogallery-stack-album li {
-  transform: none !important;
-  box-shadow: none !important; }
+a.envirabox-close {
+  width: 31px !important;
+  height: 32px !important;
+  background-image: url("images/envira-close.png") !important;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #FFFFFF !important;
+  border-radius: 9999px !important;
+  right: -11px !important;
+  top: -15px !important;
+  box-shadow: 0 0 14px rgba(0, 0, 0, 0.75) !important; }
 
-.tp-grid li {
-  -webkit-transition: all ease-in-out 150ms !important;
-  transition: all ease-in-out 150ms !important;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1) !important;
-  z-index: 9500 !important; }
-  .tp-grid li:hover {
-    border-color: #FFCA06 !important; }
-    .tp-grid li:hover .tp-title {
-      background: rgba(0, 0, 0, 0.8) !important;
-      box-shadow: inset -10px 0 #FFCA06 !important; }
+.envirabox-nav span {
+  width: 31px !important;
+  height: 32px !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-color: #FFFFFF !important;
+  border-radius: 9999px !important;
+  box-shadow: 0 0 14px rgba(0, 0, 0, 0.75) !important; }
 
-.tp-info, .tp-title {
-  font-size: 18px !important;
-  width: 80% !important;
-  background: rgba(0, 0, 0, 0.7) !important;
-  color: #FFFFFF !important;
-  -webkit-transition: all ease-in-out 150ms;
-  transition: all ease-in-out 150ms; }
-  .tp-info span:nth-child(2), .tp-title span:nth-child(2) {
-    padding: 0 10px !important;
-    display: none !important; }
+.envirabox-next span {
+  background-image: url("images/envira-next.png") !important; }
 
-.tp-title {
-  padding: 12px 24px 12px 12px !important;
-  box-shadow: inset -10px 0 whitesmoke !important; }
+.envirabox-prev span {
+  background-image: url("images/envira-prev.png") !important; }
 
-.foogallery-archive {
-  display: block;
-  margin: 0;
-  padding: 0 30px;
-  background: #EFBC00;
-  color: #FFFFFF;
-  text-align: center; }
-  .foogallery-archive .foogallery-archive-title {
-    display: inline-block;
-    padding: 10px 0;
-    margin-right: 20px;
-    font-weight: bold; }
-  .foogallery-archive ul {
-    display: inline-block; }
-    .foogallery-archive ul li {
-      display: inline-block; }
-      .foogallery-archive ul li a {
-        display: inline-block;
-        padding: 10px 20px;
-        color: #FFFFFF; }
-        .foogallery-archive ul li a:hover {
-          background: #FFCA06; }
+#envirabox-buttons ul {
+  background: rgba(0, 0, 0, 0.75) !important; }
 
 /*# sourceMappingURL=style.css.map */

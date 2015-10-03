@@ -19,11 +19,11 @@
 
 body {
     background: $ucf-gray;
-    
+
     @include breakpoint( small ) {
-        padding-top: $site-header-mobile-height + 4px; // Header Height + border 
+        padding-top: $site-header-mobile-height + 4px; // Header Height + border
     }
-    
+
 } // body
 
 
@@ -34,7 +34,12 @@ body {
 
 .ucfbands-slider-wrap {
     box-shadow: inset 2px 0 $black, inset 7px 0 5px -7px rgba(0,0,0,.5), 0 1px 0 $black, 0 6px 0 $ucf-gold, 0 7px 0 $ucf-gray-med, 0 8px 6px $trans-shadow;
-}
+
+    @include breakpoint( small-medium ) {
+        margin-bottom: 10px;
+    }
+
+} // .ucfbands-slider-wrap
 
 
 
@@ -56,17 +61,17 @@ body {
     background: $ucf-gray-light;
 
     @include site-inner-inset-shadow();
-    
+
     @include breakpoint( medium ) {
         margin-left: $site-header-width-med;
     }
-    
+
     @include breakpoint( small ) {
         margin-left: 0;
         border-left: 0;
         border-bottom: 5px solid $ucf-gold;
     }
-    
+
 } // .site-inner
 
 
@@ -79,11 +84,11 @@ body {
     padding: $space-default;
     overflow: auto;
     min-height: 1000px;
-    
+
     background-image: url('images/pegasus-bg.png');
     background-repeat: no-repeat;
     background-position: -100px 25px;
-    
+
     @include breakpoint( small-medium ) {
         padding: $space-default-half + 10px;
     }
@@ -91,17 +96,17 @@ body {
     @include breakpoint( small ) {
         min-height: 0;
     }
-    
+
 } // .content-sidebar-wrap
 
 body.masonry-page .content-sidebar-wrap {
     padding: $masonry-gutter-width;
     padding-right: 0;
-    
+
     @include breakpoint( small-medium ) {
         padding: 0;
     }
-    
+
 } // body.masonry-page .content-sidebar-wrap
 
 
@@ -117,25 +122,25 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
 
 .sidebar-primary {
     @include col('one-fourth');
-    
+
     .widget {
         @include block();
     }
-    
+
     @include breakpoint( extra-large ) {
         clear: both;
         width: 100%;
         margin: 0;
     }
-    
+
     @include breakpoint( medium ) {
-        
+
         .widget {
-            padding: $space-default-half;   
+            padding: $space-default-half;
         }
-        
+
     } // breakpoint-medium
-    
+
 } // .sidebar-primary
 
 
@@ -184,10 +189,10 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
 .one-sixth,
 .five-sixths,
 .one-whole {
-    
+
     &.first {
         clear: both;
         margin-left: 0;
     }
-    
+
 } // All Column Widths
