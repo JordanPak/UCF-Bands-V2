@@ -44,7 +44,7 @@ function ucfbands_event_single_data() {
 
     // Get Event meta
     global $event_meta;
-    $event_meta = ucfbands_event_get_meta( $event, true, true, true );
+    $event_meta = ucfbands_event_get_meta( $event, true, true );
 
 } // ucfbands_event_single_data()
 
@@ -128,11 +128,11 @@ function ucfbands_event_single_time_location() {
 
 
     // Event Location Logic
-    if ( $event_meta['location_name'] == '' )
+    if ( $event_meta['location'] == '' )
         $location .= 'TBA';
 
     else
-        $location .= $event_meta['location_name'];
+        $location .= ucfbands_location_get_name( $event_meta['location'] );
 
 
 
@@ -287,13 +287,10 @@ function ucfbands_event_single_content() {
     echo '<div class="' . $width_location . '"><h2><i class="fa fa-map-marker"></i>&nbsp;&nbsp;Location</h2>';
 
         // Google Map
-        if ( ($event_meta['location_google_map_latitude'] != '') || ($event_meta['location_google_map_longitude'] != '') )
-            ucfbands_event_google_map( $event_meta['location_google_map_latitude'], $event_meta['location_google_map_longitude'] );
+        echo ucfbands_location_get_google_map( $event_meta['location'] );
 
         // Address
-        $address = ucfbands_event_address( $event_meta['location_address'], $event_meta['location_name'] );
-        echo $address;
-
+        echo ucfbands_location_get_address( $event_meta['location'] );
 
     echo '</div>';
 
