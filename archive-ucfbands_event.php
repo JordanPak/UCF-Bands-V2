@@ -55,7 +55,7 @@ function archive_masonry_grid() {
 
 
     //-- CPT QUERY --//
-    $events = ucfbands_event_query( 20, 'all-bands' );
+    $events = ucfbands_event_query( 60, 'all-bands' );
 
 
     // If there's events, do the grid
