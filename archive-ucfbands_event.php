@@ -2,7 +2,7 @@
 
 /*
  *  UCFBands Theme Archive: Events
- *    
+ *
  *  @author Jordan Pakrosnis
 */
 
@@ -52,18 +52,18 @@ add_action( 'genesis_before_content', 'archive_masonry_grid');
  * @link http://ucfbands.com/
  */
 function archive_masonry_grid() {
-    
-    
+
+
     //-- CPT QUERY --//
     $events = ucfbands_event_query( 20, 'all-bands' );
-    
-    
+
+
     // If there's events, do the grid
     if ( $events->have_posts() ):
-        
-        
+
+
         // MASONRY GRID CONTAINER //
-    
+
         // Column Layout
         $masonry_column_layout = '6col';
 
@@ -73,37 +73,37 @@ function archive_masonry_grid() {
             echo '<div class="masonry-' . $masonry_column_layout . '-gutter-sizer"></div>';
 
 
-        
+
             // GET EVENTS LISTING //
             echo ucfbands_events_listing( $events, true );
-               
-        
+
+
         // End Grid
         echo '</section>';
-        
-    
-    
+
+
+
         // PAGINATION //
-        ?>    
-        
+        ?>
+
         <!-- Pagination Container -->
         <div class="archive-pagination pagination">
             <ul>
-                
+
                 <!-- Previous Posts -->
-                <li><?php previous_posts_link( 'Newer Announcements' ); ?></li>
-                
+                <li><?php previous_posts_link( 'Older Events' ); ?></li>
+
                 <!-- Older Announcements -->
-                <li><?php next_posts_link( 'Older Announcements' ); ?></li>
+                <li><?php next_posts_link( 'Future Events' ); ?></li>
 
             </ul>
         </div><!-- /.archive-pagination.pagination -->
-        
+
         <?php
-    
-    
+
+
     endif; // if posts found
-    
+
 
 } // archive_masonry_grid()
 
