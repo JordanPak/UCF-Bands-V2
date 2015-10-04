@@ -3448,7 +3448,10 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
         color: inherit;
         border-bottom: 2px solid #FFCA06; }
   .entry-wrapper .event-title {
-    margin-bottom: 2px; }
+    margin-bottom: 2px;
+    font-family: "Roboto", "Arial", sans-serif;
+    font-weight: 700;
+    font-size: 16px; }
   .entry-wrapper hr {
     margin: 20px 0; }
   .entry-wrapper .event-details-excerpt p:last-child {
