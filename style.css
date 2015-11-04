@@ -2842,7 +2842,7 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
 .page-header {
   position: relative;
   overflow: visible;
-  background-size: cover;
+  background-size: contain;
   background-color: #221E1F;
   background-repeat: no-repeat;
   background-position: top right;
