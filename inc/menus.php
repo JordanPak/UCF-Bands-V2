@@ -14,6 +14,7 @@ add_theme_support( 'genesis-menus', array(
     'symphonic-band'    => __( 'Symphonic Band Section Menu', 'genesis' ),
     'wind-ensemble'     => __( 'Wind Ensemble Section Menu', 'genesis' ),
     'marching-knights'  => __( 'Marching Knights Section Menu', 'genesis' ),
+    'mk-alumni'         => __( 'MK Alumni Section Menu', 'genesis' ),
     'jammin-knights'    => __( 'Jammin\' Knights Section Menu', 'genesis' ),
     'armory'            => __( 'Armory Section Menu', 'genesis' ),
     'dungeon'           => __( 'Dungeon Section Menu', 'genesis' ),
