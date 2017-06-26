@@ -18,15 +18,10 @@ function ucfbands_custom_page_header() {
     // SET PAGE HEADER VARS //
     
     // Get array of parent IDs
-    $page_parents = get_post_ancestors( $post );
+    $page_parents = get_post_ancestors( get_the_ID() );
     
     // If the first spot is not null, there's a parent.
-    if( $page_parents[0] != '' )
-        $page_has_parent = true;
-    
-    else
-        $page_has_parent = false;
-    
+    $page_has_parent = ( ! empty( $page_parents ) );
     
     // SET VARS: Page has no parent (dashboard?)
     if( $page_has_parent == false ) {
