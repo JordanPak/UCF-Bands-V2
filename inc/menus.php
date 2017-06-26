@@ -11,6 +11,7 @@
 add_theme_support( 'genesis-menus', array(
     'primary'           => __( 'Primary Navigation Menu', 'genesis' ),
     'concert-band'      => __( 'Concert Band Section Menu', 'genesis' ),
+    'university-band'   => __( 'University Band Section Menu', 'genesus' ),
     'symphonic-band'    => __( 'Symphonic Band Section Menu', 'genesis' ),
     'wind-ensemble'     => __( 'Wind Ensemble Section Menu', 'genesis' ),
     'marching-knights'  => __( 'Marching Knights Section Menu', 'genesis' ),
