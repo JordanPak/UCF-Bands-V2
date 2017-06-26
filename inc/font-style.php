@@ -17,12 +17,11 @@ add_filter( 'body_class', 'body_class_font_style' );
 function body_class_font_style( $classes ) {
     
     // Get Parent meta if child
-    $page_parents = get_post_ancestors( $post );
-    
-    if ($page_parents[0] != '') {
+    $page_parents = get_post_ancestors( get_the_ID() );
+
+    if ( ! empty( $page_parents ) ) {
         $post_ID = end( $page_parents );
     }
-    
     else {
         $post_ID = get_the_ID();   
     }
