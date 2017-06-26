@@ -15,11 +15,10 @@ add_action( 'genesis_before_content', 'ucfbands_page_title');
 function ucfbands_page_title() {
     
     
-    $page_parents = get_post_ancestors( $post );
+    $page_parents = get_post_ancestors( get_the_ID() );
     
     // Only Run if Sub-page
-    if( $page_parents[0] != '' ) {
-        
+    if ( empty( $page_parents ) ) {
         
         // GET ID
         $post_ID = get_the_ID();
@@ -49,7 +48,9 @@ function ucfbands_page_title() {
                     $icon_before = '';
                     $icon_after = '&nbsp;&nbsp;' . $icon;
                 }
-            } // if icon set
+            } else {
+                $icon_before = $icon_after = '';
+            }
 
 
             // OUTPUT TITLE

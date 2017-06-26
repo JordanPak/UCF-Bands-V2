@@ -125,7 +125,7 @@ add_action( 'genesis_entry_header', 'ucfbands_event_single_time_location' );
 function ucfbands_event_single_time_location() {
 
     $event_meta = $GLOBALS["event_meta"];
-
+    $location = '';
 
     // Event Location Logic
     if ( $event_meta['location'] == '' )
@@ -347,7 +347,7 @@ function ucfbands_event_single_content() {
 
 
     // Wrap Close
-    if ( $wrap_schedule_program )
+    if ( $show_schedule_program_wrap )
         echo '</div>';
 
 } // ucfbands_event_single_content()

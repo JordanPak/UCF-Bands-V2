@@ -38,6 +38,8 @@ function add_post_title_icon( $title ) {
             $icon_before = '';
             $icon_after = '&nbsp;&nbsp;' . $icon;
         }
+    } else {
+        $icon_before = $icon_after = '';
     }
     
     // Concat title with icon
