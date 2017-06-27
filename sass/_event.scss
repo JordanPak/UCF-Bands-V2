@@ -295,6 +295,7 @@
     background-color: $ucf-gray-light;
     text-shadow: 1px 1px $white;
 
+
     h2 {
         text-align: center;
         margin: 0;
@@ -306,6 +307,21 @@
         font-style: italic;
         cursor: default;
     }
+
+    // band heading/conductor
+    h4 {
+        margin: 13px 0 10px;
+        text-align: center;
+
+        span {
+            display: block;
+            font-size: 14px;
+            font-weight: 700;
+            font-family: $font-family-sans-serif;
+            font-style: italic;
+        }
+    }
+
 
     ul {
         margin: 0;
