@@ -54,6 +54,20 @@ function show_masonry_grid() {
         //-- BLOCK LOOP --//
         foreach ( $blocks as $block ) {
 
+            // set defaults
+            $defaults = array(
+                'title' => null,
+                'icon' => null,
+                'width' => null,
+                'featured' => null,
+                'block-content' => null,
+                'render_html' => null,
+                'remove-background' => null,
+                'breaker' => null,
+            );
+            $block = wp_parse_args( $block, $defaults );
+
+
             // Get Block Meta Data
             $block_title                        = esc_attr( $block['title'] );
             $block_icon                         = esc_attr( $block['icon'] );
