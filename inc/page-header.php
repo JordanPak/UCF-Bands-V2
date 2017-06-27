@@ -118,7 +118,11 @@ function ucfbands_custom_page_header() {
         $conductor_director_output .= '</span>';
     
     } // If Conductor/Director name(s) are entered
-    
+    else {
+        $conductor_director_output = '';
+    }
+
+
         
     // CONFIGURE FEATURED IMAGE BACKGROUND
     $page_featured_image = wp_get_attachment_url( get_post_thumbnail_id( $post_ID ) );
