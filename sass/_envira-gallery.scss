@@ -7,21 +7,23 @@
 }
 
 .envira-album-title {
-    padding: 0 $space-default-half !important;
-    position: relative !important; // Lay Over Photos
+    position: absolute !important;
+    top: auto;
+    bottom: 0;
     margin: 0 !important;
-    height: ($space-default + $space-default-half) !important;
-    margin-top: -($space-default + $space-default-half) !important;
+    padding: ($space-default * 0.75) !important;
+    width: 100% !important;
+    font-size: 1.25em !important;
+    line-height: 1.2 !important;
     color: $white;
-    font-size: 1.55em !important;
     font-weight: 700;
     font-family: $font-family-sans-serif !important;
     text-shadow: $text-shadow-dark-lg !important;
+    pointer-events: none;
 
-    @include breakpoint( small-medium ) {
+    @include breakpoint( medium ) {
         font-size: 1.2em !important;
-        height: ($space-default + $space-default-half + 10px) !important;
-        margin-top: -($space-default + $space-default-half + 10px) !important;
+        padding: $space-default-half !important;
     }
 
 } // .envira-album-title
