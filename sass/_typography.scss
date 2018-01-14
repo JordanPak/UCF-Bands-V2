@@ -203,7 +203,6 @@ hr {
     &.button-xsm {
         padding: 5px 8px;
         font-size: .45em;
-        font-weight: normal;
     }
 
     // Small
@@ -214,16 +213,13 @@ hr {
 
     // Medium
     &.button-med {
-        padding: ($space-default-half - 12px) ($space-default-half - 2px);
-        font-weight: 700;
+        padding: 12px 22px;
     }
 
     // Large
     &.button-lg {
-        padding: ($space-default-half - 10px) $space-default-half;
-        font-size: 1.20em; // 1.125em;
-        font-weight: normal;
-        font-family: $font-family-serif;
+        padding: 16px 34px;
+        font-size: 18px;
     }
 
 
@@ -307,21 +303,21 @@ hr {
 
 
 // Athletic Font family on Lg button
-body {
+// body {
 
-    &.font-style-athletic {
+//     &.font-style-athletic {
 
-        .button {
+//         .button {
 
-            &.button-lg {
-                font-family: $font-family-athletic;
-            }
+//             &.button-lg {
+//                 font-family: $font-family-athletic;
+//             }
 
-        } // .button
+//         } // .button
 
-    } // .font-style-athletic
+//     } // .font-style-athletic
 
-} // body
+// } // body
 
 
 .block-title {

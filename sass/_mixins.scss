@@ -117,14 +117,20 @@ body {
 ){
     
     // DEFAULTS
-    text-transform: none;
-    
+    text-transform: uppercase;
+    font-family: $font-family-heading;
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 1.4;
+    text-align: center;
     
     // REGULAR STUFF
     color: $text-color;
-    text-shadow: $text-shadow;
     background-color: $background-color;
-    border: 1px solid $border-color;
+    
+    // disable border and text shadow
+    // text-shadow: $text-shadow;
+    // border: 1px solid $border-color;
     
     
     // HOVER //
@@ -133,29 +139,29 @@ body {
         // Defaults
         background-color: $ucf-gold;
         border-color: $ucf-gold-darker;
-        text-shadow: $text-shadow-gold-med;
+        // text-shadow: $text-shadow-gold-med;
         
         // Text Shadow, Background, & Border
         @if $background-color == $ucf-gold {
-            text-shadow: $text-shadow-dark-med;
+            // text-shadow: $text-shadow-dark-med;
             background-color: $black;
             border-color: $black;
         }
         
         @if $background-color == $green {
-            text-shadow: $text-shadow-green-med;
+            // text-shadow: $text-shadow-green-med;
             background-color: $green-darker;
             border-color: $green-darkest;
         }        
 
         @if $background-color == $red {
-            text-shadow: $text-shadow-red-med;
+            // text-shadow: $text-shadow-red-med;
             background-color: $red-darker;
             border-color: $red-darkest;
         }
         
         @if $background-color == $blue {
-            text-shadow: $text-shadow-blue-med;
+            // text-shadow: $text-shadow-blue-med;
             background-color: $blue-darker;
             border-color: $blue-darkest;
         }

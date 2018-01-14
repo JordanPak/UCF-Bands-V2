@@ -10,11 +10,11 @@ input[type="reset"],
 input[type="submit"],
 .button {
 	background-color: $ucf-gray;
-    text-shadow: $text-shadow-dark-med;
+    // text-shadow: $text-shadow-dark-med;
 
-    &:hover {
-        text-shadow: $text-shadow-gold-med;
-    }
+    // &:hover {
+    //     text-shadow: $text-shadow-gold-med;
+    // }
 
 } // default button fix
 

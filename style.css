@@ -2160,14 +2160,7 @@ input[type="button"],
 input[type="reset"],
 input[type="submit"],
 .button {
-  background-color: #221E1F;
-  text-shadow: 0 0 3px #000000, 1px 1px 1px rgba(0, 0, 0, 0.4), 0 0 3px #000000, 2px 2px 1px rgba(0, 0, 0, 0.4); }
-  button:hover,
-  input[type="button"]:hover,
-  input[type="reset"]:hover,
-  input[type="submit"]:hover,
-  .button:hover {
-    text-shadow: 0 0 3px #EFBC00, 1px 1px 1px #EFBC00, 0 0 3px #EFBC00, 2px 2px 1px #EFBC00; }
+  background-color: #221E1F; }
 
 .ucfbands-password-form-wrap {
   padding: 40px;
@@ -2299,17 +2292,19 @@ hr {
 
 .button {
   padding: 8px 18px;
-  text-transform: none;
+  text-transform: uppercase;
+  font-family: "Montserrat", "Roboto", sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: 1.4;
+  text-align: center;
   color: #FFFFFF;
-  text-shadow: 0 0 3px #000000, 1px 1px 1px rgba(0, 0, 0, 0.4), 0 0 3px #000000, 2px 2px 1px rgba(0, 0, 0, 0.4);
   background-color: #221E1F;
-  border: 1px solid #000000;
   -webkit-transition: all ease-in-out 175ms;
   transition: all ease-in-out 175ms; }
   .button:hover {
     background-color: #FFCA06;
-    border-color: #EFBC00;
-    text-shadow: 0 0 3px #EFBC00, 1px 1px 1px #EFBC00, 0 0 3px #EFBC00, 2px 2px 1px #EFBC00; }
+    border-color: #EFBC00; }
   .button.no-hover:hover {
     background-color: inherit;
     text-shadow: inherit;
@@ -2321,30 +2316,27 @@ hr {
     border-color: #333333; }
   .button.button-xsm {
     padding: 5px 8px;
-    font-size: .45em;
-    font-weight: normal; }
+    font-size: .45em; }
   .button.button-sm {
     padding: 3px 10px;
     font-size: .75em; }
   .button.button-med {
-    padding: 8px 18px;
-    font-weight: 700; }
+    padding: 12px 22px; }
   .button.button-lg {
-    padding: 10px 20px;
-    font-size: 1.20em;
-    font-weight: normal;
-    font-family: "Montserrat", "Roboto", sans-serif; }
+    padding: 16px 34px;
+    font-size: 18px; }
   .button.button-gold {
-    text-transform: none;
+    text-transform: uppercase;
+    font-family: "Montserrat", "Roboto", sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 1.4;
+    text-align: center;
     color: #FFFFFF;
-    text-shadow: 0 0 3px #EFBC00, 1px 1px 1px #EFBC00, 0 0 3px #EFBC00, 2px 2px 1px #EFBC00;
-    background-color: #FFCA06;
-    border: 1px solid #EFBC00; }
+    background-color: #FFCA06; }
     .button.button-gold:hover {
       background-color: #FFCA06;
       border-color: #EFBC00;
-      text-shadow: 0 0 3px #EFBC00, 1px 1px 1px #EFBC00, 0 0 3px #EFBC00, 2px 2px 1px #EFBC00;
-      text-shadow: 0 0 3px #000000, 1px 1px 1px rgba(0, 0, 0, 0.4), 0 0 3px #000000, 2px 2px 1px rgba(0, 0, 0, 0.4);
       background-color: #000000;
       border-color: #000000; }
     .button.button-gold.no-hover:hover {
@@ -2357,16 +2349,17 @@ hr {
       color: #333333;
       border-color: #333333; }
   .button.button-red {
-    text-transform: none;
+    text-transform: uppercase;
+    font-family: "Montserrat", "Roboto", sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 1.4;
+    text-align: center;
     color: #FFFFFF;
-    text-shadow: 0 0 3px #a71814, 1px 1px 1px #a71814, 0 0 3px #a71814, 2px 2px 1px #a71814;
-    background-color: #D41F1A;
-    border: 1px solid #a71814; }
+    background-color: #D41F1A; }
     .button.button-red:hover {
       background-color: #FFCA06;
       border-color: #EFBC00;
-      text-shadow: 0 0 3px #EFBC00, 1px 1px 1px #EFBC00, 0 0 3px #EFBC00, 2px 2px 1px #EFBC00;
-      text-shadow: 0 0 3px #a71814, 1px 1px 1px #a71814, 0 0 3px #a71814, 2px 2px 1px #a71814;
       background-color: #a71814;
       border-color: #79120f; }
     .button.button-red.no-hover:hover {
@@ -2379,16 +2372,17 @@ hr {
       color: #333333;
       border-color: #333333; }
   .button.button-green {
-    text-transform: none;
+    text-transform: uppercase;
+    font-family: "Montserrat", "Roboto", sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 1.4;
+    text-align: center;
     color: #FFFFFF;
-    text-shadow: 0 0 3px #449d44, 1px 1px 1px #449d44, 0 0 3px #449d44, 2px 2px 1px #449d44;
-    background-color: #5CB85C;
-    border: 1px solid #449d44; }
+    background-color: #5CB85C; }
     .button.button-green:hover {
       background-color: #FFCA06;
       border-color: #EFBC00;
-      text-shadow: 0 0 3px #EFBC00, 1px 1px 1px #EFBC00, 0 0 3px #EFBC00, 2px 2px 1px #EFBC00;
-      text-shadow: 0 0 3px #449d44, 1px 1px 1px #449d44, 0 0 3px #449d44, 2px 2px 1px #449d44;
       background-color: #449d44;
       border-color: #357935; }
     .button.button-green.no-hover:hover {
@@ -2401,16 +2395,17 @@ hr {
       color: #333333;
       border-color: #333333; }
   .button.button-blue {
-    text-transform: none;
+    text-transform: uppercase;
+    font-family: "Montserrat", "Roboto", sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 1.4;
+    text-align: center;
     color: #FFFFFF;
-    text-shadow: 0 0 3px #3071a9, 1px 1px 1px #3071a9, 0 0 3px #3071a9, 2px 2px 1px #3071a9;
-    background-color: #428BCA;
-    border: 1px solid #3071a9; }
+    background-color: #428BCA; }
     .button.button-blue:hover {
       background-color: #FFCA06;
       border-color: #EFBC00;
-      text-shadow: 0 0 3px #EFBC00, 1px 1px 1px #EFBC00, 0 0 3px #EFBC00, 2px 2px 1px #EFBC00;
-      text-shadow: 0 0 3px #3071a9, 1px 1px 1px #3071a9, 0 0 3px #3071a9, 2px 2px 1px #3071a9;
       background-color: #3071a9;
       border-color: #245682; }
     .button.button-blue.no-hover:hover {
@@ -2423,15 +2418,17 @@ hr {
       color: #333333;
       border-color: #333333; }
   .button.button-white {
-    text-transform: none;
+    text-transform: uppercase;
+    font-family: "Montserrat", "Roboto", sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 1.4;
+    text-align: center;
     color: #a59a9d;
-    text-shadow: none;
-    background-color: #FFFFFF;
-    border: 1px solid #a59a9d; }
+    background-color: #FFFFFF; }
     .button.button-white:hover {
       background-color: #FFCA06;
       border-color: #EFBC00;
-      text-shadow: 0 0 3px #EFBC00, 1px 1px 1px #EFBC00, 0 0 3px #EFBC00, 2px 2px 1px #EFBC00;
       color: #FFFFFF; }
     .button.button-white.no-hover:hover {
       background-color: inherit;
@@ -2509,9 +2506,6 @@ hr {
 
 .caret {
   margin-left: 10px; }
-
-body.font-style-athletic .button.button-lg {
-  font-family: "Open Sans", sans-serif; }
 
 .block-title .button-xsm {
   position: relative;
@@ -3037,15 +3031,17 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
   box-shadow: 0 2px 38px rgba(0, 0, 0, 0.08); }
 
 .pagination li a {
-  text-transform: none;
+  text-transform: uppercase;
+  font-family: "Montserrat", "Roboto", sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: 1.4;
+  text-align: center;
   color: #FFFFFF;
-  text-shadow: 0 0 3px #000000, 1px 1px 1px rgba(0, 0, 0, 0.4), 0 0 3px #000000, 2px 2px 1px rgba(0, 0, 0, 0.4);
-  background-color: #221E1F;
-  border: 1px solid #000000; }
+  background-color: #221E1F; }
   .pagination li a:hover {
     background-color: #FFCA06;
-    border-color: #EFBC00;
-    text-shadow: 0 0 3px #EFBC00, 1px 1px 1px #EFBC00, 0 0 3px #EFBC00, 2px 2px 1px #EFBC00; }
+    border-color: #EFBC00; }
   .pagination li a.no-hover:hover {
     background-color: inherit;
     text-shadow: inherit;
@@ -3056,16 +3052,17 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
     color: #333333;
     border-color: #333333; }
 .pagination li.active a {
-  text-transform: none;
+  text-transform: uppercase;
+  font-family: "Montserrat", "Roboto", sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: 1.4;
+  text-align: center;
   color: #FFFFFF;
-  text-shadow: 0 0 3px #EFBC00, 1px 1px 1px #EFBC00, 0 0 3px #EFBC00, 2px 2px 1px #EFBC00;
-  background-color: #FFCA06;
-  border: 1px solid #EFBC00; }
+  background-color: #FFCA06; }
   .pagination li.active a:hover {
     background-color: #FFCA06;
     border-color: #EFBC00;
-    text-shadow: 0 0 3px #EFBC00, 1px 1px 1px #EFBC00, 0 0 3px #EFBC00, 2px 2px 1px #EFBC00;
-    text-shadow: 0 0 3px #000000, 1px 1px 1px rgba(0, 0, 0, 0.4), 0 0 3px #000000, 2px 2px 1px rgba(0, 0, 0, 0.4);
     background-color: #000000;
     border-color: #000000; }
   .pagination li.active a.no-hover:hover {
