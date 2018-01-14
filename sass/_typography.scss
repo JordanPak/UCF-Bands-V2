@@ -147,27 +147,27 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
     }
 
     &.blue > li {
-            list-style-image: url('images/bullets/bullet-blue.png');
+        list-style-image: url('images/bullets/bullet-blue.png');
     }
 
     &.green > li {
-            list-style-image: url('images/bullets/bullet-green.png');
+        list-style-image: url('images/bullets/bullet-green.png');
     }
 
     &.red > li {
-            list-style-image: url('images/bullets/bullet-red.png');
+        list-style-image: url('images/bullets/bullet-red.png');
     }
 
     &.gold > li {
-            list-style-image: url('images/bullets/bullet-gold.png');
+        list-style-image: url('images/bullets/bullet-gold.png');
     }
 
     &.black > li {
-            list-style-image: url('images/bullets/bullet-black.png');
+        list-style-image: url('images/bullets/bullet-black.png');
     }
 
     &.checkmark > li {
-            list-style-image: url('images/bullets/bullet-checkmark.png');
+        list-style-image: url('images/bullets/bullet-checkmark.png');
     }
 
 } // .entry-content ul
@@ -201,7 +201,7 @@ hr {
 
     // Extra Small
     &.button-xsm {
-        padding: 2px 4px;
+        padding: 5px 8px;
         font-size: .45em;
         font-weight: normal;
     }
@@ -328,10 +328,9 @@ body {
 
     .button-xsm {
         position: relative;
-        top: -4px;
+        top: -6px;
         margin-left: 4px;
     }
-
 } // .block-title
 
 

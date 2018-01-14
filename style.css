@@ -2320,7 +2320,7 @@ hr {
     color: #333333;
     border-color: #333333; }
   .button.button-xsm {
-    padding: 2px 4px;
+    padding: 5px 8px;
     font-size: .45em;
     font-weight: normal; }
   .button.button-sm {
@@ -2515,7 +2515,7 @@ body.font-style-athletic .button.button-lg {
 
 .block-title .button-xsm {
   position: relative;
-  top: -4px;
+  top: -6px;
   margin-left: 4px; }
 
 .content-box-blue,
