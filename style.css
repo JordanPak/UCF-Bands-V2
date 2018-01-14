@@ -2235,6 +2235,17 @@ h1.section-page-title {
 
 h2 {
   font-size: 28px; }
+  h2.block-header, h2.block-title {
+    margin-bottom: 30px; }
+    h2.block-header:after, h2.block-title:after {
+      content: '';
+      display: block;
+      margin-top: 5px;
+      width: 40px;
+      height: 3px;
+      background: #FFCA06; }
+    .block-remove-background-padding h2.block-header:after, .block-remove-background-padding h2.block-title:after {
+      display: none; }
 
 a {
   color: #FFCA06;

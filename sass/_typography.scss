@@ -40,30 +40,46 @@ h1, h2, h3, h4, h5, h6 {
     // letter-spacing: 0.5px;
 }
 
-h1 {
+h1.section-page-title {
+    margin-bottom: $space-default;
+    text-shadow: $text-shadow-white-lg;
 
-    &.section-page-title {
-        margin-bottom: $space-default;
-        text-shadow: $text-shadow-white-lg;
+    @include breakpoint( small-medium ) {
+        display: block;
+        margin: $space-default $space-default 0 $space-default;
+        padding-bottom: $space-default-half;
+        border-bottom: 1px solid $ucf-gray-light;
+    }
 
-        @include breakpoint( small-medium ) {
-            display: block;
-            margin: $space-default $space-default 0 $space-default;
-            padding-bottom: $space-default-half;
-            border-bottom: 1px solid $ucf-gray-light;
-        }
-
-        @include breakpoint( extra-small ) {
-            margin: ($space-default-half + 10px) ($space-default-half + 10px) 0 ($space-default-half + 10px);
-        }
-
-    } // .section-page-title
-
-} // h1
+    @include breakpoint( extra-small ) {
+        margin: ($space-default-half + 10px) ($space-default-half + 10px) 0 ($space-default-half + 10px);
+    }
+}
 
 h2 {
     font-size: 28px;
-}
+
+    &.block-header, &.block-title {
+        margin-bottom: 30px;
+
+        &:after {
+            content: '';
+            display: block;
+            margin-top: 5px;
+            width: 40px;
+            height: 3px;
+            background: $ucf-gold;
+        }
+
+        .block-remove-background-padding & {
+            // margin-bottom
+
+            &:after {
+                display: none;
+            }
+        }
+    }
+} // h2
 
 
 
