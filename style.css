@@ -3109,24 +3109,26 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
 .site-footer {
   position: fixed;
   margin: 0;
-  padding: 40px;
+  padding: 30px;
   left: 0;
   bottom: 0;
   width: 290px;
-  background: #221E1F;
-  color: #a59a9d;
+  background: #171314;
+  color: #737373;
   text-align: left;
-  font-size: .9em;
-  line-height: 1.25em;
-  font-family: "Droid Serif", "Georgia", "Times", serif;
-  text-shadow: 0 0 3px #000000, 1px 1px 1px rgba(0, 0, 0, 0.4), 0 0 3px #000000, 2px 2px 1px rgba(0, 0, 0, 0.4); }
+  font-size: 13px;
+  letter-spacing: 0.33px;
+  line-height: 1.5; }
+  .site-footer:hover {
+    color: #D4D4D4; }
   .site-footer a {
-    color: #FFFFFF;
+    color: #D4D4D4;
     border-bottom: 2px solid rgba(0, 0, 0, 0);
     -webkit-transition: all ease-in-out 200ms;
     transition: all ease-in-out 200ms; }
     .site-footer a:hover {
-      border-color: #FFCA06; }
+      border-color: #FFCA06;
+      color: #FFFFFF; }
   .site-footer .address-placeholder {
     display: none;
     margin-bottom: 10px;
