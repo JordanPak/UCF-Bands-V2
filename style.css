@@ -3224,9 +3224,8 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
   color: #FFFFFF;
   border-bottom: 5px solid #EFBC00;
   box-shadow: 4px 0 4px rgba(0, 0, 0, 0.5);
-  background-attachment: fixed !important;
-  background-position: center !important;
-  background-clip: border-box !important; }
+  background-size: cover !important;
+  background-position: top center !important; }
   .hero.hero-sm {
     padding: 40px; }
   .hero.hero-med {
