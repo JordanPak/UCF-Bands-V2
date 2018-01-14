@@ -60,7 +60,7 @@ body {
     border-left: 5px solid $ucf-gold;
     background: $ucf-gray-light;
 
-    @include site-inner-inset-shadow();
+    // @include site-inner-inset-shadow();
 
     @include breakpoint( medium ) {
         margin-left: $site-header-width-med;
@@ -84,10 +84,13 @@ body {
     padding: $space-default;
     overflow: auto;
     min-height: 1000px;
+    background: linear-gradient( to bottom, $white, #f3f3f3 3.33%, #e2e2e2 );
+    box-shadow: inset 4px 0 20px rgba( $black, 0.15 ), inset 1px 0 0 #ffcf71;
 
-    background-image: url('images/pegasus-bg.png');
-    background-repeat: no-repeat;
-    background-position: -100px 25px;
+    // PEGASUS thing
+    // background-image: url('images/pegasus-bg.png');
+    // background-repeat: no-repeat;
+    // background-position: -100px 25px;
 
     @include breakpoint( small-medium ) {
         padding: $space-default-half + 10px;
