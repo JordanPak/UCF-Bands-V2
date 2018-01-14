@@ -172,9 +172,14 @@ nav.section-menu {
         font-size: 0;
 
         @include breakpoint( medium ) {
-            padding: 10px 20px;
+            padding: 10px 15px;
             background: $ucf-gray-darker;
             border-top: 2px solid #0e0e0e;
+            text-align: left;
+        }
+
+        @include breakpoint( small ) {
+            text-align: center;
         }
 
         li {
@@ -182,21 +187,21 @@ nav.section-menu {
             margin: 0;
             padding: 0;
 
-            @include breakpoint( medium ) {
-                width: 33.3333%;
-            }
+            // @include breakpoint( medium ) {
+            //     width: 33.3333%;
+            // }
 
-            @include breakpoint( small ) {
-                width: 33.3333%;
-            }
+            // @include breakpoint( small ) {
+            //     width: 33.3333%;
+            // }
 
-            @include breakpoint( extra-small ) {
-                width: 50%;
-            }
+            // @include breakpoint( extra-small ) {
+            //     width: 50%;
+            // }
 
-            @media only screen and (max-width: $breakpoint-extra-extra-small) {
-                width: 100%;
-            }
+            // @media only screen and (max-width: $breakpoint-extra-extra-small) {
+            //     width: 100%;
+            // }
 
             a {
                 display: inline-block;
@@ -217,7 +222,7 @@ nav.section-menu {
                 }
 
                 @include breakpoint( medium ) {
-                    padding: 12px;
+                    padding: 12px 15px;
                     width: 100%;
                     text-shadow: none;
                     box-shadow: none;

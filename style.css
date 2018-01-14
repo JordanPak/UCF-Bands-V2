@@ -4088,25 +4088,17 @@ nav.section-menu {
     font-size: 0; }
     @media (max-width: 1200px) {
       nav.section-menu ul {
-        padding: 10px 20px;
+        padding: 10px 15px;
         background: #141414;
-        border-top: 2px solid #0e0e0e; } }
+        border-top: 2px solid #0e0e0e;
+        text-align: left; } }
+    @media (max-width: 768px) {
+      nav.section-menu ul {
+        text-align: center; } }
     nav.section-menu ul li {
       display: inline-block;
       margin: 0;
       padding: 0; }
-      @media (max-width: 1200px) {
-        nav.section-menu ul li {
-          width: 33.3333%; } }
-      @media (max-width: 768px) {
-        nav.section-menu ul li {
-          width: 33.3333%; } }
-      @media (max-width: 600px) {
-        nav.section-menu ul li {
-          width: 50%; } }
-      @media only screen and (max-width: 380px) {
-        nav.section-menu ul li {
-          width: 100%; } }
       nav.section-menu ul li a {
         display: inline-block;
         margin: 0;
@@ -4124,7 +4116,7 @@ nav.section-menu {
           color: #FFCA06; }
         @media (max-width: 1200px) {
           nav.section-menu ul li a {
-            padding: 12px;
+            padding: 12px 15px;
             width: 100%;
             text-shadow: none;
             box-shadow: none; }
