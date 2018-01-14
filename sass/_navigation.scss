@@ -43,7 +43,7 @@
             @include transition-ease-in-out(300ms);
 
             &:hover {
-                background-color: $ucf-gray-darker;
+                background-color: #171314;
             }
 
             @include breakpoint( medium ) {

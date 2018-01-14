@@ -3272,6 +3272,9 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
     padding: 120px; }
     .hero.hero-lg h2 {
       font-size: 4.2em; }
+    .home .pre-content-shortcode .hero.hero-lg {
+      padding-top: 150px;
+      padding-bottom: 150px; }
   .hero.hero-gold {
     border-top: 5px solid #FFCA06;
     background: #EFBC00; }
@@ -3865,7 +3868,7 @@ ul.rehearsal-announcements {
   clear: both; }
 
 .masonry-block {
-  margin-bottom: 40px;
+  margin-bottom: 60px;
   padding: 40px;
   float: left; }
   @media (max-width: 980px) {
@@ -3876,6 +3879,9 @@ ul.rehearsal-announcements {
         padding-top: 40px; }
       .masonry-block:last-child {
         padding-bottom: 40px; } }
+  @media (max-width: 1366px) {
+    .masonry-block {
+      margin-bottom: 40px; } }
   @media (max-width: 600px) {
     .masonry-block {
       padding: 30px; } }
@@ -4005,7 +4011,7 @@ ul.rehearsal-announcements {
       -webkit-transition: all ease-in-out 300ms;
       transition: all ease-in-out 300ms; }
       .nav-primary .genesis-nav-menu .menu-item a:hover {
-        background-color: #141414; }
+        background-color: #171314; }
       @media (max-width: 1200px) {
         .nav-primary .genesis-nav-menu .menu-item a {
           padding: 13px;

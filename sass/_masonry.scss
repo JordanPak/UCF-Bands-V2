@@ -14,7 +14,7 @@
 }
 
 .masonry-block {
-    margin-bottom: $space-default;
+    margin-bottom: $space-default + 20px;
     padding: $space-default;
     float: left;
 
@@ -31,6 +31,10 @@
         }
 
     } // small-medium
+
+    @include breakpoint( large ) {
+        margin-bottom: $space-default;
+    }
 
     @include breakpoint( extra-small ) {
         padding: $space-default-half + 10px;
