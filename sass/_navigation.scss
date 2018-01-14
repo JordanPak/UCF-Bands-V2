@@ -16,6 +16,7 @@
 
 
 .nav-primary .genesis-nav-menu {
+    position: relative;
 
     .menu-item {
         // text-align: center;
@@ -70,17 +71,23 @@
     display: none;
     position: relative;
     float: right;
-	margin-top: 18px;
-    margin-right: 18px;
+    // margin: 12px 20px 0 0;
+	// margin-top: 18px;
+    // margin-right: 18px;
     padding: 9px 10px;
-    margin-bottom: 8px;
-	background-color: $ucf-gray-darker;
+    // margin-bottom: 8px;
+    margin: 0;
+    width: $site-header-mobile-height;
+    height: $site-header-mobile-height;
+    background-color: $ucf-gray-darker;
+    background-color: $ucf-gold;
     background-image: none;
     border: 1px solid $ucf-gold;
 	border-radius: 0px;
 
     .icon-bar {
         display: block;
+        margin: 0 auto;
         width: 22px;
         height: 2px;
         border-radius: 1px;

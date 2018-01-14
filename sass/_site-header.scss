@@ -24,7 +24,6 @@
     color: $white;
     text-align: center;
     background: $ucf-gray;
-    background: linear-gradient( to bottom, $black, $ucf-gray 200px );
 
     a {
         color: $white;
@@ -56,6 +55,7 @@
         position: fixed;
         top: 0;
         width: 100%;
+        height: $site-header-mobile-height;
         min-height: 0;
         padding-left: 10px;
         border-bottom: 4px solid $ucf-gold;
@@ -85,50 +85,93 @@
     width: 100%;
 
     @include breakpoint( small ) {
-        float: left;
+        // float: left;
+        position: absolute;
+        left: 10px;
         width: auto;
         padding: 0;
     }
-
 } // .title-area
 
 .header-image .site-title > a {
+    position: relative;
     margin: 0 0 30px 0;
-    padding: 0;
+    // padding: 0 0 30px 0;
     // min-height: 150px;
     // height: auto;
     width: 100%;
     background: none;
+    // background: linear-gradient( to bottom, #060606, $ucf-gray );
     border: none;
+
+    // gradient background
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: -60px;
+        right: 0;
+        background: linear-gradient( to bottom, #060606, $ucf-gray );
+        @include transition-ease-in-out();
+    }
 
     @include transition-ease-in-out();
 
     &:hover {
-        background-color: $ucf-gray-darker;
-    }
 
-    @include breakpoint( medium ) {
-        min-height: 100px;
-    }
-
-    @include breakpoint( small ) {
-        min-height: 0;
-        height: $site-header-mobile-height;
-        width: 125px;
-        background-size: 100%;
-
-        &:hover {
-            background-color: $ucf-gray;
+        &:before {
+            top: -50px;
+            bottom: -10px;
         }
 
-    } // breakpoint-small
+        svg {
+            border-bottom-width: 7px;
+            border-bottom-color: $white;
+        }
+    }
 
     svg {
+        position: relative;
         margin-left: 30px;
         display: block;
         width: 90px;
         border-bottom: 5px solid $ucf-gold;
+        @include transition-ease-in-out();
     }
+
+    @include breakpoint( medium ) {
+        // min-height: 100px;
+
+        svg {
+            margin-left: 14px;
+        }
+    }
+
+    @include breakpoint( small ) {
+        min-height: 0;
+        // height: $site-header-mobile-height;
+        width: 125px;
+        width: auto;
+        margin: 0;
+
+        &:before {
+            display: none;
+        }
+
+        svg {
+            margin: 0;
+            width: 60px;
+            height: auto;
+            border-bottom-width: 4px;
+        }
+        // background-size: 100%;
+
+        // &:hover {
+        //     background-color: $ucf-gray;
+        // }
+
+    } // breakpoint-small
 
 } // .header-image .site-title > a
 

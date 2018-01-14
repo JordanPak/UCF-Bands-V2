@@ -21,7 +21,7 @@ body {
     background: $ucf-gray;
 
     @include breakpoint( small ) {
-        padding-top: $site-header-mobile-height + 4px; // Header Height + border
+        padding-top: $site-header-mobile-height; // + 4px; // Header Height + border
     }
 
 } // body
