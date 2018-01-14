@@ -10,7 +10,8 @@
 body {
     font-family: $font-family-sans-serif;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 15px;
+    -webkit-font-smoothing: antialiased;
 
     &.font-style-athletic {
 
@@ -34,6 +35,9 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: $font-family-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    // letter-spacing: 0.5px;
 }
 
 h1 {
@@ -56,6 +60,10 @@ h1 {
     } // .section-page-title
 
 } // h1
+
+h2 {
+    font-size: 28px;
+}
 
 
 

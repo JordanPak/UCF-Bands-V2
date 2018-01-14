@@ -42,7 +42,8 @@ add_action( 'wp_enqueue_scripts', 'ucfbands_global_styles' );
 function ucfbands_global_styles() {
 
     // Google Fonts
-    wp_enqueue_style( 'google-fonts', '//fonts.googleapis.com/css?family=Droid+Serif:400,700|Roboto:400,400italic,700,700italic|Oswald', array(), CHILD_THEME_VERSION );
+    // wp_enqueue_style( 'google-fonts', '//fonts.googleapis.com/css?family=Droid+Serif:400,700|Roboto:400,400italic,700,700italic|Oswald', array(), CHILD_THEME_VERSION );
+    wp_enqueue_style( 'google-fonts', '//fonts.googleapis.com/css?family=Montserrat:700,700i|Roboto:400,400i|Oswald', array(), CHILD_THEME_VERSION );
 
     // Font Awesome
     wp_enqueue_style( 'font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css', array(), CHILD_THEME_VERSION );

@@ -156,5 +156,6 @@ $masonry-4col-block-width--four-fourths-blockless:  ($masonry-4col-base-column-w
 //=================//
 
 $font-family-sans-serif:    'Roboto', 'Arial', sans-serif;
-$font-family-serif:         'Droid Serif', 'Georgia', 'Times', serif;
+$font-family-heading:       'Montserrat', 'Roboto', sans-serif;
+$font-family-serif:         $font-family-heading;
 $font-family-athletic:      'Oswald', 'Roboto', sans-serif;
