@@ -69,11 +69,7 @@
     display: none;
     position: relative;
     float: right;
-    // margin: 12px 20px 0 0;
-	// margin-top: 18px;
-    // margin-right: 18px;
     padding: 9px 10px;
-    // margin-bottom: 8px;
     margin: 0;
     width: $site-header-mobile-height;
     height: $site-header-mobile-height;
@@ -116,7 +112,6 @@
     @include breakpoint( small ) {
         display: block;
     }
-
 } // .menu-btn
 
 
@@ -129,8 +124,7 @@ nav.pushy.nav-primary {
         @include breakpoint( small ) {
             display: block;
         }
-
-    } // .nav-primary
+    }
 
     .menu-item {
 
@@ -142,8 +136,7 @@ nav.pushy.nav-primary {
             padding: 14px;
         }
 
-    } // .menu-item
-
+    }
 } // nav.pushy
 
 
@@ -156,7 +149,8 @@ nav.section-menu {
     bottom: -5px;
     margin: 0;
 	padding: 0;
-	border: none;
+    border: none;
+    font-family: $font-family-heading;
 
     @include breakpoint( medium ) {
         position: static;
@@ -164,6 +158,8 @@ nav.section-menu {
     }
 
     ul {
+        font-size: 0;
+
         @include breakpoint( medium ) {
             background: $ucf-gray;
             border-top: 4px solid $ucf-gray-darker;
@@ -175,11 +171,11 @@ nav.section-menu {
             padding: 0;
 
             @include breakpoint( medium ) {
-                width: 33%;
+                width: 33.3333%;
             }
 
             @include breakpoint( small ) {
-                width: 33%;
+                width: 33.3333%;
             }
 
             @include breakpoint( extra-small ) {
@@ -197,7 +193,7 @@ nav.section-menu {
                 padding-top: 9px;
                 padding-bottom: 13px;
                 color: $white;
-                font-size: 1.05em;
+                font-size: 14px;
                 letter-spacing: .03em;
                 font-weight: 700;
                 text-decoration: none;
