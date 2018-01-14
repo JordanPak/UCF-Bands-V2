@@ -18,25 +18,26 @@
 .nav-primary .genesis-nav-menu {
 
     .menu-item {
-        text-align: center;
+        // text-align: center;
         display: block;
         width: 100%;
-        border-bottom: 1px solid $ucf-gray-darker;
+        // border-bottom: 1px solid $ucf-gray-darker;
 
-        &:first-child {
-            border-top: 1px solid $ucf-gray-darker;
-        }
+        // &:first-child {
+        //     border-top: 1px solid $ucf-gray-darker;
+        // }
 
-        &:last-child {
-            border-bottom: none;
-        }
+        // &:last-child {
+        //     border-bottom: none;
+        // }
 
         a {
-            padding: 18px;
+            padding: 18px 18px 18px 30px;
             color: $white;
             font-family: $font-family-serif;
             font-weight: 400;
-            font-size: 1.2em;
+            font-size: 18px;
+            letter-spacing: 0.3px;
             text-shadow: $text-shadow-dark-med;
 
             @include transition-ease-in-out(300ms);

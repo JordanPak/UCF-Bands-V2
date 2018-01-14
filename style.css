@@ -3961,20 +3961,15 @@ ul.rehearsal-announcements {
       display: none; } }
 
 .nav-primary .genesis-nav-menu .menu-item {
-  text-align: center;
   display: block;
-  width: 100%;
-  border-bottom: 1px solid #141414; }
-  .nav-primary .genesis-nav-menu .menu-item:first-child {
-    border-top: 1px solid #141414; }
-  .nav-primary .genesis-nav-menu .menu-item:last-child {
-    border-bottom: none; }
+  width: 100%; }
   .nav-primary .genesis-nav-menu .menu-item a {
-    padding: 18px;
+    padding: 18px 18px 18px 30px;
     color: #FFFFFF;
     font-family: "Droid Serif", "Georgia", "Times", serif;
     font-weight: 400;
-    font-size: 1.2em;
+    font-size: 18px;
+    letter-spacing: 0.3px;
     text-shadow: 0 0 3px #000000, 1px 1px 1px rgba(0, 0, 0, 0.4), 0 0 3px #000000, 2px 2px 1px rgba(0, 0, 0, 0.4);
     -webkit-transition: all ease-in-out 300ms;
     transition: all ease-in-out 300ms; }
