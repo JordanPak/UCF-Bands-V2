@@ -65,9 +65,9 @@ function be_ucfbands_footer_settings_defaults_sanitization_filters() {
 		'no_html', 
 		GENESIS_SETTINGS_FIELD,
 		array(
-			'ucfbands_footer_facebook_url',
-			'ucfbands_footer_twitter_url',
-            'ucfbands_footer_youtube_url',
+			// 'ucfbands_footer_facebook_url',
+			// 'ucfbands_footer_twitter_url',
+            // 'ucfbands_footer_youtube_url',
             'ucfbands_footer_address_url',
             'ucfbands_footer_address_name',
             'ucfbands_footer_address_name2',
@@ -121,21 +121,23 @@ add_action( 'genesis_theme_settings_metaboxes', 'be_ucfbands_footer_settings_met
 function be_ucfbands_footer_settings_box() {
 	?>
 
+    <!--
     <p><b>Social</b></p>
     
-    <p><?php _e( 'Facebook URL:', 'be-genesis-child' );?><br>
-        <input type="text" name="<?php echo GENESIS_SETTINGS_FIELD; ?>[ucfbands_footer_facebook_url]" value="<?php echo esc_url( genesis_get_option('ucfbands_footer_facebook_url') ); ?>" size="50" >
+    <p><?php //_e( 'Facebook URL:', 'be-genesis-child' );?><br>
+        <input type="text" name="<?php //echo GENESIS_SETTINGS_FIELD; ?>[ucfbands_footer_facebook_url]" value="<?php //echo esc_url( genesis_get_option('ucfbands_footer_facebook_url') ); ?>" size="50" >
     </p>
 
-    <p><?php _e( 'Twitter URL:', 'be-genesis-child' );?><br>
-        <input type="text" name="<?php echo GENESIS_SETTINGS_FIELD; ?>[ucfbands_footer_twitter_url]" value="<?php echo esc_url( genesis_get_option('ucfbands_footer_twitter_url') ); ?>" size="50" >
+    <p><?php //_e( 'Twitter URL:', 'be-genesis-child' );?><br>
+        <input type="text" name="<?php //echo GENESIS_SETTINGS_FIELD; ?>[ucfbands_footer_twitter_url]" value="<?php //echo esc_url( genesis_get_option('ucfbands_footer_twitter_url') ); ?>" size="50" >
     </p>
 
-    <p><?php _e( 'YouTube URL:', 'be-genesis-child' );?><br>
-        <input type="text" name="<?php echo GENESIS_SETTINGS_FIELD; ?>[ucfbands_footer_youtube_url]" value="<?php echo esc_url( genesis_get_option('ucfbands_footer_youtube_url') ); ?>" size="50" >
+    <p><?php //_e( 'YouTube URL:', 'be-genesis-child' );?><br>
+        <input type="text" name="<?php //echo GENESIS_SETTINGS_FIELD; ?>[ucfbands_footer_youtube_url]" value="<?php //echo esc_url( genesis_get_option('ucfbands_footer_youtube_url') ); ?>" size="50" >
     </p>
 
     <hr>
+    -->
 
     <p><b>Address</b></p>
 
@@ -201,10 +203,10 @@ function ucfbands_footer() {
     
     //-- GET OPTIONS --//
     
-    // Social
-    $footer_facebook_url = genesis_get_option( 'ucfbands_footer_facebook_url', GENESIS_SETTINGS_FIELD );
-    $footer_twitter_url = genesis_get_option( 'ucfbands_footer_twitter_url', GENESIS_SETTINGS_FIELD );
-    $footer_youtube_url = genesis_get_option( 'ucfbands_footer_youtube_url', GENESIS_SETTINGS_FIELD );
+    // // Social
+    // $footer_facebook_url = genesis_get_option( 'ucfbands_footer_facebook_url', GENESIS_SETTINGS_FIELD );
+    // $footer_twitter_url = genesis_get_option( 'ucfbands_footer_twitter_url', GENESIS_SETTINGS_FIELD );
+    // $footer_youtube_url = genesis_get_option( 'ucfbands_footer_youtube_url', GENESIS_SETTINGS_FIELD );
     
     // Address & Google Map
     $footer_address_url = genesis_get_option( 'ucfbands_footer_address_url', GENESIS_SETTINGS_FIELD );
@@ -225,27 +227,27 @@ function ucfbands_footer() {
     
     //-- OUTPUT OPTIONS --//
 
-    // Social
-    if ( $footer_facebook_url || $footer_twitter_url || $footer_youtube_url ) {
+    // // Social
+    // if ( $footer_facebook_url || $footer_twitter_url || $footer_youtube_url ) {
     
-        echo '<div id="footer-social">';
+    //     echo '<div id="footer-social">';
         
-        if ( $footer_facebook_url ) {
-            echo '<a href="' . $footer_facebook_url . '" target="_BLANK"><i class="fa fa-facebook fa-lg"></i></a>';
-        }
-        if ( $footer_twitter_url ) {
-            echo '<a href="' . esc_url( $footer_twitter_url ) . '" target="_BLANK"><i class="fa fa-twitter fa-lg"></i></a>';
-        }
-        if ( $footer_youtube_url ) {
-            echo '<a href="' . esc_url( $footer_youtube_url ) . '" target="_BLANK"><i class="fa fa-youtube-play fa-lg"></i></a>';
-        }
+    //     if ( $footer_facebook_url ) {
+    //         echo '<a href="' . $footer_facebook_url . '" target="_BLANK"><i class="fa fa-facebook fa-lg"></i></a>';
+    //     }
+    //     if ( $footer_twitter_url ) {
+    //         echo '<a href="' . esc_url( $footer_twitter_url ) . '" target="_BLANK"><i class="fa fa-twitter fa-lg"></i></a>';
+    //     }
+    //     if ( $footer_youtube_url ) {
+    //         echo '<a href="' . esc_url( $footer_youtube_url ) . '" target="_BLANK"><i class="fa fa-youtube-play fa-lg"></i></a>';
+    //     }
         
-        echo '</div>'; // #footer-social
+    //     echo '</div>'; // #footer-social
         
-    } // Social
+    // } // Social
     
     
-    echo '<br>';
+    // echo '<br>';
     
     
     // Address Max-Height Placeholder
