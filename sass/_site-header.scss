@@ -24,6 +24,7 @@
     color: $white;
     text-align: center;
     background: $ucf-gray;
+    background: linear-gradient( to bottom, $black, $ucf-gray 200px );
 
     a {
         color: $white;
@@ -79,7 +80,7 @@
 
 .title-area {
     margin: 0;
-    padding: 12px 0 8px 0;
+    padding: 0; //12px 0 8px 0;
     display: block;
     width: 100%;
 
@@ -92,13 +93,12 @@
 } // .title-area
 
 .header-image .site-title > a {
-    margin: 0;
+    margin: 0 0 30px 0;
     padding: 0;
-    min-height: 150px;
-    height: auto;
+    // min-height: 150px;
+    // height: auto;
     width: 100%;
-    background-position: center;
-    background-size: 81.5%;
+    background: none;
     border: none;
 
     @include transition-ease-in-out();
@@ -122,6 +122,13 @@
         }
 
     } // breakpoint-small
+
+    svg {
+        margin-left: 30px;
+        display: block;
+        width: 90px;
+        border-bottom: 5px solid $ucf-gold;
+    }
 
 } // .header-image .site-title > a
 
