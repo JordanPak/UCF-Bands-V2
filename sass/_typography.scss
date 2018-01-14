@@ -13,17 +13,17 @@ body {
     font-size: 15px;
     -webkit-font-smoothing: antialiased;
 
-    &.font-style-athletic {
+    // &.font-style-athletic {
 
-        h1, h2, h3, h4, h5, h6 {
-            font-family: $font-family-athletic;
-        }
+    //     h1, h2, h3, h4, h5, h6 {
+    //         font-family: $font-family-athletic;
+    //     }
 
-        h1 {
-            letter-spacing: .035em;
-        }
+    //     h1 {
+    //         letter-spacing: .035em;
+    //     }
 
-    } // .font-style-athletic
+    // } // .font-style-athletic
 
 } // body
 
