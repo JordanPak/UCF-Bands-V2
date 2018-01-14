@@ -2291,7 +2291,7 @@ hr {
   border-bottom: 1px solid #d5d0d1; }
 
 .button {
-  padding: 8px 18px;
+  padding: 12px 22px;
   text-transform: uppercase;
   font-family: "Montserrat", "Roboto", sans-serif;
   font-weight: 700;
@@ -3367,11 +3367,13 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
   margin-bottom: 25px; }
 
 .announcement-wrap {
-  margin-bottom: 20px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid whitesmoke; }
+  margin: 25px 0;
+  padding-bottom: 25px;
+  border-bottom: 2px solid whitesmoke; }
   .announcement-wrap:first-child {
     padding-top: 20px; }
+  .announcement-wrap:first-of-type {
+    margin-top: 35px; }
   .announcement-wrap:last-child {
     margin-bottom: 0;
     padding-bottom: 0;
@@ -3500,34 +3502,30 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
   margin-right: 20px;
   padding: 8px 18px;
   background-color: whitesmoke;
-  border: 1px solid #a59a9d;
+  border-bottom: 3px solid #a59a9d;
   font-family: "Montserrat", "Roboto", sans-serif;
   font-size: 1em;
   font-weight: 700;
   color: #FFFFFF;
   text-align: center;
   line-height: 1.66em;
+  text-transform: uppercase;
   cursor: default; }
   .date-badge.date-badge-ucf-gray {
     background-color: #221E1F;
-    border-color: #000000;
-    text-shadow: 0 0 3px #000000, 1px 1px 1px rgba(0, 0, 0, 0.4), 0 0 3px #000000, 2px 2px 1px rgba(0, 0, 0, 0.4); }
+    border-color: #000000; }
   .date-badge.date-badge-gold {
     background-color: #FFCA06;
-    border-color: #EFBC00;
-    text-shadow: 0 0 3px #EFBC00, 1px 1px 1px #EFBC00, 0 0 3px #EFBC00, 2px 2px 1px #EFBC00; }
+    border-color: #EFBC00; }
   .date-badge.date-badge-green {
     background-color: #5CB85C;
-    border-color: #449d44;
-    text-shadow: 0 0 3px #449d44, 1px 1px 1px #449d44, 0 0 3px #449d44, 2px 2px 1px #449d44; }
+    border-color: #449d44; }
   .date-badge.date-badge-red {
     background-color: #D41F1A;
-    border-color: #a71814;
-    text-shadow: 0 0 3px #a71814, 1px 1px 1px #a71814, 0 0 3px #a71814, 2px 2px 1px #a71814; }
+    border-color: #a71814; }
   .date-badge.date-badge-blue {
     background-color: #428BCA;
-    border-color: #3071a9;
-    text-shadow: 0 0 3px #3071a9, 1px 1px 1px #3071a9, 0 0 3px #3071a9, 2px 2px 1px #3071a9; }
+    border-color: #3071a9; }
   .date-badge .day {
     font-size: 1.66em; }
     .date-badge .day.day-multi {

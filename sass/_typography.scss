@@ -191,7 +191,7 @@ hr {
 //===========//
 
 .button {
-    padding: 8px 18px;
+    padding: 12px 22px;
 
     @include button();
     @include transition-ease-in-out(175ms);

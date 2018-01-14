@@ -11,12 +11,17 @@
 } // .announcements-wrap
 
 .announcement-wrap {
-    margin-bottom: ($space-default-half);// + 5px);
-    padding-bottom: $space-default-half;
-    border-bottom: 1px solid $ucf-gray-light;
+    margin: 25px 0;
+    padding-bottom: 25px;
+    // margin-bottom: ($space-default-half);// + 5px);
+    // padding-bottom: $space-default-half;
+    border-bottom: 2px solid $ucf-gray-light;
     
     &:first-child {
         padding-top: $space-default-half;
+    }
+    &:first-of-type {
+        margin-top: 35px;
     }
     
     &:last-child {
