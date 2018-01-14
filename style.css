@@ -2869,11 +2869,20 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
   background-color: #221E1F;
   background-repeat: no-repeat;
   background-position: top right;
-  background-attachment: fixed;
-  border-bottom: 5px solid #141414;
-  box-shadow: inset 1px 0 #000000, inset 7px 0 5px -7px rgba(0, 0, 0, 0.5);
-  box-shadow: inset 1px 0 #000000, inset 7px 0 5px -7px rgba(0, 0, 0, 0.5), inset 750px 0 300px -250px rgba(0, 0, 0, 0.55); }
+  border-bottom: 5px solid #141414; }
+  .page-header:before, .page-header:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0; }
+  .page-header:before {
+    background: rgba(0, 0, 0, 0.4);
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.6), transparent); }
   .page-header .page-header-inner {
+    position: relative;
+    z-index: 1;
     padding: 40px;
     padding-left: 72px; }
   .page-header.page-header-lg .page-header-inner {
@@ -2884,19 +2893,19 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
     @media (max-width: 600px) {
       .page-header.page-header-lg .page-header-inner {
         padding: 50px 40px; } }
-  .page-header.page-header-lg.nav-background-fade {
-    box-shadow: inset 1px 0 #000000, inset 7px 0 5px -7px rgba(0, 0, 0, 0.5);
-    box-shadow: inset 1px 0 #000000, inset 7px 0 5px -7px rgba(0, 0, 0, 0.5), inset 750px 0 300px -250px rgba(0, 0, 0, 0.55);
-    box-shadow: inset 1px 0 #000000, inset 7px 0 5px -7px rgba(0, 0, 0, 0.5), inset 750px 0 300px -250px rgba(0, 0, 0, 0.55), inset 0 -50px 75px rgba(0, 0, 0, 0.8); }
-  .page-header.remove-background-fade {
-    box-shadow: inset 1px 0 #000000, inset 7px 0 5px -7px rgba(0, 0, 0, 0.5); }
+  .page-header.page-header-lg.nav-background-fade:after {
+    background: rgba(0, 0, 0, 0.4);
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.66), transparent 50%); }
+  .page-header.remove-background-fade:before, .page-header.remove-background-fade:after {
+    background: none; }
   .page-header h1.entry-title {
     display: block;
     margin: 0;
     padding: 0;
     color: #FFFFFF;
-    text-shadow: 0 0 8px #000000, 0 0 2px #000000, 1px 1px 2px rgba(0, 0, 0, 0.5), 2px 2px 3px rgba(0, 0, 0, 0.4);
+    text-shadow: 5px 5px 40px rgba(0, 0, 0, 0.7);
     font-size: 2.75em;
+    font-size: 49px;
     cursor: default; }
     @media (max-width: 600px) {
       .page-header h1.entry-title {
@@ -2905,7 +2914,7 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
     display: inline-block;
     margin: 2px 0 0 4px;
     color: #FFFFFF;
-    text-shadow: 0 0 3px #000000, 1px 1px 1px rgba(0, 0, 0, 0.4), 0 0 3px #000000, 2px 2px 1px rgba(0, 0, 0, 0.4);
+    text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.75);
     cursor: default; }
   .page-header a h1.entry-title {
     -webkit-transition: all ease-in-out 200ms;
@@ -4061,6 +4070,7 @@ nav.pushy.nav-primary {
 
 nav.section-menu {
   position: absolute;
+  z-index: 1;
   right: 0;
   bottom: -5px;
   margin: 0;
@@ -4069,14 +4079,15 @@ nav.section-menu {
   font-family: "Montserrat", "Roboto", sans-serif; }
   @media (max-width: 1200px) {
     nav.section-menu {
-      position: static;
+      position: relative;
       margin-bottom: -5px; } }
   nav.section-menu ul {
     font-size: 0; }
     @media (max-width: 1200px) {
       nav.section-menu ul {
-        background: #221E1F;
-        border-top: 4px solid #141414; } }
+        padding: 10px 20px;
+        background: #141414;
+        border-top: 2px solid #0e0e0e; } }
     nav.section-menu ul li {
       display: inline-block;
       margin: 0;
@@ -4096,9 +4107,7 @@ nav.section-menu {
       nav.section-menu ul li a {
         display: inline-block;
         margin: 0;
-        padding: 15px;
-        padding-top: 9px;
-        padding-bottom: 13px;
+        padding: 17px;
         color: #FFFFFF;
         font-size: 14px;
         letter-spacing: .03em;
@@ -4112,13 +4121,18 @@ nav.section-menu {
           color: #FFCA06; }
         @media (max-width: 1200px) {
           nav.section-menu ul li a {
+            padding: 12px;
             width: 100%;
-            text-align: center;
             text-shadow: none;
-            box-shadow: inset 0 -5px 0 #141414; } }
+            box-shadow: none; }
+            nav.section-menu ul li a:hover {
+              box-shadow: none; } }
       nav.section-menu ul li.current-menu-item a {
         color: #FFCA06;
         box-shadow: inset 0px -5px #FFCA06; }
+        @media (max-width: 1200px) {
+          nav.section-menu ul li.current-menu-item a {
+            box-shadow: none; } }
       nav.section-menu ul li .sub-menu {
         width: 150px;
         background-color: #FFFFFF;

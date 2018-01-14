@@ -91,7 +91,7 @@ function ucfbands_custom_page_header() {
     if ($conductor_name) {
         
         // Span opening, icon, and space
-        $conductor_director_output = '<span class="conductor-name"><i class="fa fa-user"></i>&nbsp;&nbsp;';
+        $conductor_director_output = '<span class="conductor-name">';
         
         // If "Conductor"
         if( $conductor_or_director == 'conductor' ) {

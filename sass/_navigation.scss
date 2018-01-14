@@ -135,16 +135,15 @@ nav.pushy.nav-primary {
         a {
             padding: 14px;
         }
-
     }
 } // nav.pushy
 
 
 
 // SECTION MENU //
-
 nav.section-menu {
     position: absolute;
+    z-index: 1;
     right: 0;
     bottom: -5px;
     margin: 0;
@@ -153,7 +152,7 @@ nav.section-menu {
     font-family: $font-family-heading;
 
     @include breakpoint( medium ) {
-        position: static;
+        position: relative;
         margin-bottom: -5px;
     }
 
@@ -161,8 +160,9 @@ nav.section-menu {
         font-size: 0;
 
         @include breakpoint( medium ) {
-            background: $ucf-gray;
-            border-top: 4px solid $ucf-gray-darker;
+            padding: 10px 20px;
+            background: $ucf-gray-darker;
+            border-top: 2px solid #0e0e0e;
         }
 
         li {
@@ -189,15 +189,12 @@ nav.section-menu {
             a {
                 display: inline-block;
                 margin: 0;
-                padding: 15px;
-                padding-top: 9px;
-                padding-bottom: 13px;
+                padding: 17px;
                 color: $white;
                 font-size: 14px;
                 letter-spacing: .03em;
                 font-weight: 700;
                 text-decoration: none;
-                // text-shadow: $text-shadow-dark-med;
 
                 @include transition-ease-in-out();
 
@@ -208,12 +205,15 @@ nav.section-menu {
                 }
 
                 @include breakpoint( medium ) {
+                    padding: 12px;
                     width: 100%;
-                    text-align: center;
                     text-shadow: none;
-                    box-shadow: inset 0 -5px 0 $ucf-gray-darker;
-                } // breakpoint-medium
+                    box-shadow: none;
 
+                    &:hover {
+                        box-shadow: none;
+                    }
+                }
             } // a
 
             &.current-menu-item {
@@ -221,6 +221,10 @@ nav.section-menu {
                 a {
                     color: $ucf-gold;
                     box-shadow: inset 0px -5px $ucf-gold;
+
+                    @include breakpoint( medium ) {
+                        box-shadow: none;
+                    }
                 }
 
             } // .current-menu-item
@@ -258,11 +262,7 @@ nav.section-menu {
                     } // .current-menu-item
 
                 } // li
-
             } // .sub-menu
-
         } // li
-
     } // ul
-
 } // nav.section-menu
