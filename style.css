@@ -2233,7 +2233,7 @@ h2 {
     h2.block-header:after, h2.block-title:after {
       content: '';
       display: block;
-      margin-top: 5px;
+      margin-top: 6px;
       width: 40px;
       height: 3px;
       background: #FFCA06; }
@@ -2511,6 +2511,8 @@ hr {
   position: relative;
   top: -6px;
   margin-left: 4px; }
+  .block-title .button-xsm.button-white {
+    border: 1px solid #d5d0d1; }
 
 .content-box-blue,
 .content-box-gray,
@@ -3145,7 +3147,7 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
 .site-footer {
   position: fixed;
   margin: 0;
-  padding: 30px;
+  padding: 15px;
   left: 0;
   bottom: 0;
   width: 270px;

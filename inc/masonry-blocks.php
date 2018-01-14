@@ -102,7 +102,7 @@ function show_masonry_grid() {
 
                 // Block Icon?
                 if ($block_icon) {
-                    $block_icon = '<i class="fa fa-' . $block_icon . '"></i>&nbsp;&nbsp;';
+                    $block_icon = '&nbsp;<i class="fa fa-' . $block_icon . '"></i>';
                 } else {
                     $block_icon = '';
                 }
@@ -115,7 +115,7 @@ function show_masonry_grid() {
 
                     <!-- BLOCK TITLE & ICON -->
                     <?php if ($block_title != '') { ?>
-                        <h2 class="block-header"><?php echo $block_icon . $block_title; ?></h2>
+                        <h2 class="block-header"><?php echo $block_title . $block_icon; ?></h2>
                     <?php } ?>
 
                     <?php // FOR TESTING: Show Block Width ?>

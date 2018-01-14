@@ -65,14 +65,13 @@ h2 {
         &:after {
             content: '';
             display: block;
-            margin-top: 5px;
+            margin-top: 6px;
             width: 40px;
             height: 3px;
             background: $ucf-gold;
         }
 
         .block-remove-background-padding & {
-            // margin-bottom
 
             &:after {
                 display: none;
@@ -326,6 +325,10 @@ hr {
         position: relative;
         top: -6px;
         margin-left: 4px;
+
+        &.button-white {
+            border: 1px solid $ucf-gray-med-light;
+        }
     }
 } // .block-title
 
