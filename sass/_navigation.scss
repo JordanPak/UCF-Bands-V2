@@ -38,6 +38,7 @@
             font-family: $font-family-serif;
             font-size: 16px;
             letter-spacing: 0.3px;
+            border: none;
 
             @include transition-ease-in-out(300ms);
 
@@ -116,8 +117,15 @@
 
 
 nav.pushy.nav-primary {
+    padding-top: $site-header-mobile-height;
     background: $ucf-gray;
+    background: linear-gradient( to bottom, $ucf-gray, #080808 );
     border-left: 4px solid $ucf-gold;
+    box-shadow: 0 0 10px rgba( $black, 0 );
+    
+    &.pushy-open {
+        box-shadow: 0 0 40px rgba( $black, 0.66 );
+    }
 
     &.nav-primary {
 
@@ -129,14 +137,18 @@ nav.pushy.nav-primary {
     .menu-item {
 
         &:first-child {
-            border-top: 0;
+            margin-top: 10px;
         }
-
+        
         a {
-            padding: 14px;
+            padding: 18px 30px;
         }
     }
 } // nav.pushy
+
+.pushy-active .site-overlay {
+    cursor: pointer;
+}
 
 
 
