@@ -85,7 +85,7 @@
     @include breakpoint( medium ) {
         width: $site-header-width-med;
         padding: $space-default-half;
-        font-size: .8em;
+        // font-size: ;
     }
 
     @include breakpoint( large-width-with-small-height ) {
@@ -107,7 +107,7 @@
         border-top: 5px solid $ucf-gray-darkest;
         box-shadow: none;
         z-index: 0;
-        font-size: 1em;
+        // font-size: 14px;
         
         .wrap {
             padding: 0;
