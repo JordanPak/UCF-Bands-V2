@@ -80,12 +80,11 @@
 
 .title-area {
     margin: 0;
-    padding: 0; //12px 0 8px 0;
+    padding: 0;
     display: block;
     width: 100%;
 
     @include breakpoint( small ) {
-        // float: left;
         position: absolute;
         left: 10px;
         width: auto;
@@ -96,12 +95,8 @@
 .header-image .site-title > a {
     position: relative;
     margin: 0 0 30px 0;
-    // padding: 0 0 30px 0;
-    // min-height: 150px;
-    // height: auto;
     width: 100%;
     background: none;
-    // background: linear-gradient( to bottom, #060606, $ucf-gray );
     border: none;
 
     // gradient background
@@ -141,7 +136,6 @@
     }
 
     @include breakpoint( medium ) {
-        // min-height: 100px;
 
         svg {
             margin-left: 14px;
@@ -150,7 +144,6 @@
 
     @include breakpoint( small ) {
         min-height: 0;
-        // height: $site-header-mobile-height;
         width: 125px;
         width: auto;
         margin: 0;
@@ -165,14 +158,7 @@
             height: auto;
             border-bottom-width: 4px;
         }
-        // background-size: 100%;
-
-        // &:hover {
-        //     background-color: $ucf-gray;
-        // }
-
     } // breakpoint-small
-
 } // .header-image .site-title > a
 
 .site-description {
