@@ -2983,7 +2983,7 @@ body.content-sidebar-wrap-disable-padding .content-sidebar-wrap {
     background: none;
     box-shadow: none; }
     .block.block-remove-background-padding .block-title {
-      text-shadow: 0 0 3px #FFFFFF, 1px 1px 1px #FFFFFF, 0 0 3px #FFFFFF, 2px 2px 1px #FFFFFF; }
+      text-shadow: 0 1px 10px #FFFFFF, 0 1px 10px #FFFFFF, 0 1px 0 #FFFFFF; }
     @media (max-width: 980px) {
       .block.block-remove-background-padding {
         padding: 25px 0; }
