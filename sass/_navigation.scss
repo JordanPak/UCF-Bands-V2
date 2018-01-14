@@ -36,10 +36,8 @@
             padding: 18px 18px 18px 30px;
             color: $white;
             font-family: $font-family-serif;
-            font-weight: 400;
-            font-size: 18px;
+            font-size: 16px;
             letter-spacing: 0.3px;
-            text-shadow: $text-shadow-dark-med;
 
             @include transition-ease-in-out(300ms);
 
@@ -173,7 +171,6 @@ nav.section-menu {
 
         li {
             display: inline-block;
-            float: left;
             margin: 0;
             padding: 0;
 
@@ -204,7 +201,7 @@ nav.section-menu {
                 letter-spacing: .03em;
                 font-weight: 700;
                 text-decoration: none;
-                text-shadow: $text-shadow-dark-med;
+                // text-shadow: $text-shadow-dark-med;
 
                 @include transition-ease-in-out();
 
